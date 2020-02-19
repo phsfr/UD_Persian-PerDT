@@ -7292,15 +7292,17 @@
 # sent_id = test-s404
 # text = تقریباً نیمی از آنان دربارهٔ میانگین نمراتشان گزافه‌گویی کرده‌اند.
 1	تقریباً	تقریباً	ADV	SADV	attachment=ISO|senID=48738	2	PREDEP	_	_
-2	نیمی	نیم	N	IANM	attachment=ISO|number=SING|senID=48738	9	SBJ	_	_
+2	نیمی	نیم	N	IANM	attachment=ISO|number=SING|senID=48738	10	SBJ	_	_
 3	از	از	PREP	PREP	attachment=ISO|senID=48738	2	NPP	_	_
 4	آنان	آنان	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=48738	3	POSDEP	_	_
-5	دربارهٔ	درباره	PREP	PREP	attachment=ISO|senID=48738	9	ADV	_	_
+5	دربارهٔ	درباره	PREP	PREP	attachment=ISO|senID=48738	10	ADV	_	_
 6	میانگین	میانگین	N	IANM	attachment=ISO|number=SING|senID=48738	5	POSDEP	_	_
-7	نمراتشان	نمره	N	IANM	attachment=ISO|number=PLUR|senID=48738	6	MOZ	_	_
-8	گزافه‌گویی	گزافه‌گویی	N	IANM	attachment=ISO|number=SING|senID=48738	9	NVE	_	_
-9	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=48738	0	ROOT	_	_
-10	.	.	PUNC	PUNC	attachment=ISO|senID=48738	9	PUNC	_	_
+7-8	نمراتشان	_	_	_	_	_	_	_	_
+7	نمرات	نمره	N	IANM	attachment=ISO|number=PLUR|senID=48738	6	MOZ	_	_
+8	شان	آنها	PRON	PRO	Number=Plur|Person=3|PronType=Prs	7	nmod:poss	_	_
+9	گزافه‌گویی	گزافه‌گویی	N	IANM	attachment=ISO|number=SING|senID=48738	10	NVE	_	_
+10	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=48738	0	ROOT	_	_
+11	.	.	PUNC	PUNC	attachment=ISO|senID=48738	10	PUNC	_	_
 
 # sent_id = test-s405
 # text = شیخ شهید برای سازماندهی جنبش انقلابی خود افراد فعال، توانمند، و از نظر جسمی و روحی افراد آمادهٔ ایثار و فداکاری را گزینش می‌کرد.
@@ -14458,29 +14460,31 @@
 12	کودکان	کودک	N	ANM	attachment=ISO|number=PLUR|senID=51430	11	NEZ	_	_
 13	تهیه	تهیه	N	IANM	attachment=ISO|number=SING|senID=51430	14	NVE	_	_
 14	شده است	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=51430	7	PRD	_	_
-15	را	را	POSTP	POSTP	attachment=ISO|senID=51430	25	OBJ	_	_
-16	در	در	PREP	PREP	attachment=ISO|senID=51430	25	MOS	_	_
+15	را	را	POSTP	POSTP	attachment=ISO|senID=51430	26	OBJ	_	_
+16	در	در	PREP	PREP	attachment=ISO|senID=51430	26	MOS	_	_
 17	اختیار	اختیار	N	IANM	attachment=ISO|number=SING|senID=51430	16	POSDEP	_	_
 18	شرکت‌هایی	شرکت	N	IANM	attachment=ISO|number=PLUR|senID=51430	17	MOZ	_	_
 19	که	که	SUBR	SUBR	attachment=ISO|senID=51430	18	NCL	_	_
-20	درخواست	درخواست	N	IANM	attachment=ISO|number=SING|senID=51430	23	PREDEP	_	_
+20	درخواست	درخواست	N	IANM	attachment=ISO|number=SING|senID=51430	24	PREDEP	_	_
 21	پخش	پخش	N	IANM	attachment=ISO|number=SING|senID=51430	20	MOZ	_	_
-22	تبلیغاتشان	تبلیغ	N	IANM	attachment=ISO|number=PLUR|senID=51430	21	MOZ	_	_
-23	را	را	POSTP	POSTP	attachment=ISO|senID=51430	24	OBJ	_	_
-24	دارند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=51430	19	PRD	_	_
-25	گذاشت	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=51430	26	PREDEP	_	_
-26	و	و	CONJ	CONJ	attachment=ISO|senID=51430	36	VCONJ	_	_
-27	در	در	PREP	PREP	attachment=ISO|senID=51430	36	ADV	_	_
-28	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=51430	27	POSDEP	_	_
-29	عدم	عدم	N	IANM	attachment=ISO|number=SING|senID=51430	28	MOZ	_	_
-30	اجرای	اجرا	N	IANM	attachment=ISO|number=SING|senID=51430	29	MOZ	_	_
-31	آنها	آنها	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=51430	30	MOZ	_	_
-32	از	از	PREP	PREP	attachment=ISO|senID=51430	35	NPP	_	_
-33	پخش	پخش	N	IANM	attachment=ISO|number=SING|senID=51430	32	POSDEP	_	_
-34	تبلیغ	تبلیغ	N	IANM	attachment=ISO|number=SING|senID=51430	33	MOZ	_	_
-35	ممانعت	ممانعت	N	IANM	attachment=ISO|number=SING|senID=51430	36	NVE	_	_
-36	ورزید	ورزید#ورز	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=51430	4	VCL	_	_
-37	.	.	PUNC	PUNC	attachment=ISO|senID=51430	4	PUNC	_	_
+22-23	تبلیغاتشان	_	_	_	_	_	_	_	_
+22	تبلیغات	تبلیغ	N	IANM	attachment=ISO|number=PLUR|senID=51430	21	MOZ	_	_
+23	شان	آنها	PRON	PRO	Number=Plur|Person=3|PronType=Prs	22	nmod:poss	_	_
+24	را	را	POSTP	POSTP	attachment=ISO|senID=51430	25	OBJ	_	_
+25	دارند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=51430	19	PRD	_	_
+26	گذاشت	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=51430	27	PREDEP	_	_
+27	و	و	CONJ	CONJ	attachment=ISO|senID=51430	37	VCONJ	_	_
+28	در	در	PREP	PREP	attachment=ISO|senID=51430	37	ADV	_	_
+29	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=51430	28	POSDEP	_	_
+30	عدم	عدم	N	IANM	attachment=ISO|number=SING|senID=51430	29	MOZ	_	_
+31	اجرای	اجرا	N	IANM	attachment=ISO|number=SING|senID=51430	30	MOZ	_	_
+32	آنها	آنها	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=51430	31	MOZ	_	_
+33	از	از	PREP	PREP	attachment=ISO|senID=51430	36	NPP	_	_
+34	پخش	پخش	N	IANM	attachment=ISO|number=SING|senID=51430	33	POSDEP	_	_
+35	تبلیغ	تبلیغ	N	IANM	attachment=ISO|number=SING|senID=51430	34	MOZ	_	_
+36	ممانعت	ممانعت	N	IANM	attachment=ISO|number=SING|senID=51430	37	NVE	_	_
+37	ورزید	ورزید#ورز	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=51430	4	VCL	_	_
+38	.	.	PUNC	PUNC	attachment=ISO|senID=51430	4	PUNC	_	_
 
 # sent_id = test-s776
 # text = هر کسی زیبایی قرآن را درک کند، به زیبایی با خدا مناجات خواهد کرد.
@@ -16252,17 +16256,19 @@
 3	تشکر	تشکر	N	IANM	attachment=ISO|number=SING|senID=52399	4	NVE	_	_
 4	می‌نمایم	نمود#نما	V	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=52399	0	ROOT	_	_
 5	که	که	SUBR	SUBR	attachment=ISO|senID=52399	4	VCL	_	_
-6	با	با	PREP	PREP	attachment=ISO|senID=52399	15	ADV	_	_
-7	زحماتشان	زحمت	N	IANM	attachment=ISO|number=PLUR|senID=52399	6	POSDEP	_	_
-8	این	این	PREM	DEMAJ	attachment=ISO|senID=52399	9	NPREMOD	_	_
-9	طور	طور	N	IANM	attachment=ISO|number=SING|senID=52399	15	ADV	_	_
-10	اسب‌ها	اسب	N	ANM	attachment=ISO|number=PLUR|senID=52399	11	PREDEP	_	_
-11	را	را	POSTP	POSTP	attachment=ISO|senID=52399	15	OBJ	_	_
-12	وارد	وارد	ADJ	AJP	attachment=ISO|senID=52399	15	NVE	_	_
-13	عرصهٔ	عرصه	N	IANM	attachment=ISO|number=SING|senID=52399	12	NEZ	_	_
-14	اسب‌دوانی	اسب‌دوانی	N	IANM	attachment=ISO|number=SING|senID=52399	13	MOZ	_	_
-15	کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=52399	5	PRD	_	_
-16	.	.	PUNC	PUNC	attachment=ISO|senID=52399	4	PUNC	_	_
+6	با	با	PREP	PREP	attachment=ISO|senID=52399	16	ADV	_	_
+7-8	زحماتشان	_	_	_	_	_	_	_	_
+7	زحمات	زحمت	N	IANM	attachment=ISO|number=PLUR|senID=52399	6	POSDEP	_	_
+8	شان	آنها	PRON	PRO	Number=Plur|Person=3|PronType=Prs	7	nmod:poss	_	_
+9	این	این	PREM	DEMAJ	attachment=ISO|senID=52399	10	NPREMOD	_	_
+10	طور	طور	N	IANM	attachment=ISO|number=SING|senID=52399	16	ADV	_	_
+11	اسب‌ها	اسب	N	ANM	attachment=ISO|number=PLUR|senID=52399	12	PREDEP	_	_
+12	را	را	POSTP	POSTP	attachment=ISO|senID=52399	16	OBJ	_	_
+13	وارد	وارد	ADJ	AJP	attachment=ISO|senID=52399	16	NVE	_	_
+14	عرصهٔ	عرصه	N	IANM	attachment=ISO|number=SING|senID=52399	13	NEZ	_	_
+15	اسب‌دوانی	اسب‌دوانی	N	IANM	attachment=ISO|number=SING|senID=52399	14	MOZ	_	_
+16	کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=52399	5	PRD	_	_
+17	.	.	PUNC	PUNC	attachment=ISO|senID=52399	4	PUNC	_	_
 
 # sent_id = test-s872
 # text = ای مردم هر که بخشندگی کرد، بزرگی یافت.

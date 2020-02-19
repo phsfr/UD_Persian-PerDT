@@ -17398,20 +17398,22 @@
 
 # sent_id = dev-s905
 # text = بر علیه مخالفینت دشمنی و خباثت نکن و آنها را به خدا واگذار.
-1	بر	بر	PREP	PREP	attachment=ISO|senID=47150	4	NPP	_	_
+1	بر	بر	PREP	PREP	attachment=ISO|senID=47150	5	NPP	_	_
 2	علیه	علیه	PREP	PREP	attachment=ISO|senID=47150	1	POSDEP	_	_
-3	مخالفینت	مخالف	N	ANM	attachment=ISO|number=PLUR|senID=47150	2	POSDEP	_	_
-4	دشمنی	دشمنی	N	IANM	attachment=ISO|number=SING|senID=47150	7	NVE	_	_
-5	و	و	CONJ	CONJ	attachment=ISO|senID=47150	4	NCONJ	_	_
-6	خباثت	خباثت	N	IANM	attachment=ISO|number=SING|senID=47150	5	POSDEP	_	_
-7	نکن	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=HA|senID=47150	8	PREDEP	_	_
-8	و	و	CONJ	CONJ	attachment=ISO|senID=47150	13	VCONJ	_	_
-9	آنها	آنها	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=47150	10	PREDEP	_	_
-10	را	را	POSTP	POSTP	attachment=ISO|senID=47150	13	OBJ	_	_
-11	به	به	PREP	PREP	attachment=ISO|senID=47150	13	VPP	_	_
-12	خدا	خدا	N	ANM	attachment=ISO|number=SING|senID=47150	11	POSDEP	_	_
-13	واگذار	وا#گذاشت#گذار	V	ACT	person=2|attachment=ISO|number=SING|tma=HA|senID=47150	0	ROOT	_	_
-14	.	.	PUNC	PUNC	attachment=ISO|senID=47150	13	PUNC	_	_
+3-4	مخالفینت	_	_	_	_	_	_	_	_
+3	مخالفین	مخالف	N	ANM	attachment=ISO|number=PLUR|senID=47150	2	POSDEP	_	_
+4	ت	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	3	nmod:poss	_	_
+5	دشمنی	دشمنی	N	IANM	attachment=ISO|number=SING|senID=47150	8	NVE	_	_
+6	و	و	CONJ	CONJ	attachment=ISO|senID=47150	5	NCONJ	_	_
+7	خباثت	خباثت	N	IANM	attachment=ISO|number=SING|senID=47150	6	POSDEP	_	_
+8	نکن	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=HA|senID=47150	9	PREDEP	_	_
+9	و	و	CONJ	CONJ	attachment=ISO|senID=47150	14	VCONJ	_	_
+10	آنها	آنها	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=47150	11	PREDEP	_	_
+11	را	را	POSTP	POSTP	attachment=ISO|senID=47150	14	OBJ	_	_
+12	به	به	PREP	PREP	attachment=ISO|senID=47150	14	VPP	_	_
+13	خدا	خدا	N	ANM	attachment=ISO|number=SING|senID=47150	12	POSDEP	_	_
+14	واگذار	وا#گذاشت#گذار	V	ACT	person=2|attachment=ISO|number=SING|tma=HA|senID=47150	0	ROOT	_	_
+15	.	.	PUNC	PUNC	attachment=ISO|senID=47150	14	PUNC	_	_
 
 # sent_id = dev-s906
 # text = پوست کف دست و سر زانوانت خراش خورده بود.

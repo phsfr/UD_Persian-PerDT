@@ -20,6 +20,27 @@ def is_potentioal_pronounContained(noun,lemma,line,file_type,noun_num='SING'):
                 sing_noun=orig_noun[:-3]
                 if  sing_noun==lemma:
                     return True,pron,orig_noun
+            if orig_noun.endswith('ات'):# another form of plural noun -> ات جمع عربی like انتقادات
+                sing_noun=orig_noun[:-2]
+                if  sing_noun==lemma:
+                    return True,pron,orig_noun
+                if  sing_noun+'ه'==lemma: #some words loose their ending ه when they are concatinated with ات like نمره-> نمرات or آیه-> آیات
+                    return True,pron,orig_noun
+            if orig_noun.endswith('جات'):# another form of plural noun -> جات جمع عربی like ترشیجات
+                sing_noun=orig_noun[:-3]
+                if  sing_noun==lemma:
+                    return True,pron,orig_noun  
+            if orig_noun.endswith('ین'):# another form of plural noun -> ین جمع عربی like مدرسین
+                sing_noun=orig_noun[:-2]
+                if  sing_noun==lemma:
+                    return True,pron,orig_noun    
+            if orig_noun.endswith('ون'):# another form of plural noun -> ون جمع عربی like انقلابیون
+                sing_noun=orig_noun[:-2]
+                if  sing_noun==lemma:
+                    return True,pron,orig_noun 
+            if orig_noun in mokasar_nouns: #checking nouns in their mokasar form like بیت-> ابیات روایت-> روایات
+                if mokasar_nouns[orig_noun]==lemma:
+                    return True,pron,orig_noun 
             if orig_noun==lemma:
                 return True,pron,orig_noun
     for pron in he_ye_prons:
@@ -199,7 +220,9 @@ if __name__=="__main__":
     alef_vav_prons=['یم', 'یت', 'یش', 'یشان', 'یتان', 'یمان']
                 #lemma,number,person
     pro_info={'م':['من','Sing','1']    , 'ام':['من','Sing','1'] , 'ت':['تو','Sing','2'] , 'ات':['تو','Sing','2'] , 'ش':['او','Sing','3'], 'اش':['او','Sing','3'] , 'مان':['ما','Plur','1'] , 'تان':['شما','Plur','2'] , 'شان':['آنها','Plur','3']}
-
+                   #plural  singular
+    mokasar_nouns={'روایات':'روایت', 'ابیات':'بیت', 'نعمات':'نعمت','زحمات':'زحمت','تجربیات':'تجربه','جزئیات':'جزء'}
+    
     dadegan_train_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll"
     dadegan_test_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll"
     dadegan_dev_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/dev.conll"
