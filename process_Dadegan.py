@@ -97,8 +97,11 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             features=elems[5]
             feature_parts=features.split('|')
             seperated_feature={}
+            number='SING'
             for part in feature_parts:
                 key_val=part.split('=')
+                if key_val[0]=='number':
+                    number=key_val[1]
                 seperated_feature[key_val[0]]=key_val[1]
             hParent=elems[6]
             rParent=elems[7]
@@ -139,8 +142,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             #seperating concatinated pronouns to nouns 
             line_added=False
             if pos=='N' and word_form!=word_lemma:
-                numbr='SING'
-                result,pronoun,orig_noun=is_potentioal_pronounContained(word_form,word_lemma,line,file_type,numbr)
+                result,pronoun,orig_noun=is_potentioal_pronounContained(word_form,word_lemma,line,file_type,number)
                 if result==True: 
                     log_pron_noun.write(word_form+'\t'+orig_noun+'\t'+word_lemma+'\t'+pronoun+'\n')
                     log_pron_noun.flush()

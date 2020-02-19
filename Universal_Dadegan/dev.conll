@@ -87,34 +87,32 @@
 
 # sent_id = dev-s4
 # text = به نظر او طرح و گنجاندن موضوعات غیرنظامی در دستور کار امنیتی" انسجام فکری و نظری" این رشتهٔ مطالعاتی را از هم می‌پاشد.
-1	به	به	PREP	PREP	attachment=ISO|senID=23511	26	ADV	_	_
+1	به	به	PREP	PREP	attachment=ISO|senID=23511	25	ADV	_	_
 2	نظر	نظر	N	IANM	attachment=ISO|number=SING|senID=23511	1	POSDEP	_	_
 3	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=23511	2	MOZ	_	_
-4	طرح	طرح	N	IANM	attachment=ISO|number=SING|senID=23511	26	SBJ	_	_
+4	طرح	طرح	N	IANM	attachment=ISO|number=SING|senID=23511	25	SBJ	_	_
 5	و	و	CONJ	CONJ	attachment=ISO|senID=23511	4	NCONJ	_	_
 6	گنجاندن	گنجاندن	N	IANM	attachment=ISO|number=SING|senID=23511	5	POSDEP	_	_
-7-8	موضوعات	_	_	_	_	_	_	_	_
-7	موضوع	موضوع	N	IANM	attachment=ISO|number=PLUR|senID=23511	4	MOZ	_	_
-8	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	7	nmod:poss	_	_
-9	غیرنظامی	غیرنظامی	ADJ	AJP	attachment=ISO|senID=23511	7	NPOSTMOD	_	_
-10	در	در	PREP	PREP	attachment=ISO|senID=23511	4	NPP	_	_
-11	دستور	دستور	N	IANM	attachment=ISO|number=SING|senID=23511	10	POSDEP	_	_
-12	کار	کار	N	IANM	attachment=ISO|number=SING|senID=23511	11	MOZ	_	_
-13	امنیتی	امنیتی	ADJ	AJP	attachment=ISO|senID=23511	12	NPOSTMOD	_	_
-14	"	"	PUNC	PUNC	attachment=ISO|senID=23511	15	PUNC	_	_
-15	انسجام	انسجام	N	IANM	attachment=ISO|number=SING|senID=23511	23	PREDEP	_	_
-16	فکری	فکری	ADJ	AJP	attachment=ISO|senID=23511	15	NPOSTMOD	_	_
-17	و	و	CONJ	CONJ	attachment=ISO|senID=23511	16	AJCONJ	_	_
-18	نظری	نظری	ADJ	AJP	attachment=ISO|senID=23511	17	POSDEP	_	_
-19	"	"	PUNC	PUNC	attachment=ISO|senID=23511	15	PUNC	_	_
-20	این	این	PREM	DEMAJ	attachment=ISO|senID=23511	21	NPREMOD	_	_
-21	رشتهٔ	رشته	N	IANM	attachment=ISO|number=SING|senID=23511	15	MOZ	_	_
-22	مطالعاتی	مطالعاتی	ADJ	AJP	attachment=ISO|senID=23511	21	POSDEP	_	_
-23	را	را	POSTP	POSTP	attachment=ISO|senID=23511	26	OBJ	_	_
-24	از	از	PREP	PREP	attachment=ISO|senID=23511	26	VPRT	_	_
-25	هم	هم	PR	RECPR	attachment=ISO|senID=23511	24	POSDEP	_	_
-26	می‌پاشد	پاشید#پاش	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23511	0	ROOT	_	_
-27	.	.	PUNC	PUNC	attachment=ISO|senID=23511	26	PUNC	_	_
+7	موضوعات	موضوع	N	IANM	attachment=ISO|number=PLUR|senID=23511	4	MOZ	_	_
+8	غیرنظامی	غیرنظامی	ADJ	AJP	attachment=ISO|senID=23511	7	NPOSTMOD	_	_
+9	در	در	PREP	PREP	attachment=ISO|senID=23511	4	NPP	_	_
+10	دستور	دستور	N	IANM	attachment=ISO|number=SING|senID=23511	9	POSDEP	_	_
+11	کار	کار	N	IANM	attachment=ISO|number=SING|senID=23511	10	MOZ	_	_
+12	امنیتی	امنیتی	ADJ	AJP	attachment=ISO|senID=23511	11	NPOSTMOD	_	_
+13	"	"	PUNC	PUNC	attachment=ISO|senID=23511	14	PUNC	_	_
+14	انسجام	انسجام	N	IANM	attachment=ISO|number=SING|senID=23511	22	PREDEP	_	_
+15	فکری	فکری	ADJ	AJP	attachment=ISO|senID=23511	14	NPOSTMOD	_	_
+16	و	و	CONJ	CONJ	attachment=ISO|senID=23511	15	AJCONJ	_	_
+17	نظری	نظری	ADJ	AJP	attachment=ISO|senID=23511	16	POSDEP	_	_
+18	"	"	PUNC	PUNC	attachment=ISO|senID=23511	14	PUNC	_	_
+19	این	این	PREM	DEMAJ	attachment=ISO|senID=23511	20	NPREMOD	_	_
+20	رشتهٔ	رشته	N	IANM	attachment=ISO|number=SING|senID=23511	14	MOZ	_	_
+21	مطالعاتی	مطالعاتی	ADJ	AJP	attachment=ISO|senID=23511	20	POSDEP	_	_
+22	را	را	POSTP	POSTP	attachment=ISO|senID=23511	25	OBJ	_	_
+23	از	از	PREP	PREP	attachment=ISO|senID=23511	25	VPRT	_	_
+24	هم	هم	PR	RECPR	attachment=ISO|senID=23511	23	POSDEP	_	_
+25	می‌پاشد	پاشید#پاش	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23511	0	ROOT	_	_
+26	.	.	PUNC	PUNC	attachment=ISO|senID=23511	25	PUNC	_	_
 
 # sent_id = dev-s5
 # text = یعنی ما به این ترتیب فقط یک سطل آب را در کویر پاشیده‌ایم.
@@ -1227,15 +1225,13 @@
 18	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23860	11	VCL	_	_
 19	،	،	PUNC	PUNC	attachment=ISO|senID=23860	18	PUNC	_	_
 20	چنانچه	چنانچه	SUBR	SUBR	attachment=ISO|senID=23860	18	AJUCL	_	_
-21	در	در	PREP	PREP	attachment=ISO|senID=23860	27	ADV	_	_
-22-23	تبلیغات	_	_	_	_	_	_	_	_
-22	تبلیغ	تبلیغ	N	IANM	attachment=ISO|number=PLUR|senID=23860	21	POSDEP	_	_
-23	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	22	nmod:poss	_	_
-24	غربی	غربی	ADJ	AJP	attachment=ISO|senID=23860	22	NPOSTMOD	_	_
-25	امروزه	امروزه	N	IANM	attachment=ISO|number=SING|senID=23860	27	ADV	_	_
-26	مرسوم	مرسوم	ADJ	AJP	attachment=ISO|senID=23860	27	MOS	_	_
-27	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23860	20	PRD	_	_
-28	.	.	PUNC	PUNC	attachment=ISO|senID=23860	6	PUNC	_	_
+21	در	در	PREP	PREP	attachment=ISO|senID=23860	26	ADV	_	_
+22	تبلیغات	تبلیغ	N	IANM	attachment=ISO|number=PLUR|senID=23860	21	POSDEP	_	_
+23	غربی	غربی	ADJ	AJP	attachment=ISO|senID=23860	22	NPOSTMOD	_	_
+24	امروزه	امروزه	N	IANM	attachment=ISO|number=SING|senID=23860	26	ADV	_	_
+25	مرسوم	مرسوم	ADJ	AJP	attachment=ISO|senID=23860	26	MOS	_	_
+26	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23860	20	PRD	_	_
+27	.	.	PUNC	PUNC	attachment=ISO|senID=23860	6	PUNC	_	_
 
 # sent_id = dev-s35
 # text = متأسفانه اساتید ما نیز از کتابت دور شده‌اند.
@@ -1541,46 +1537,42 @@
 # text = " یک اتفاق" نام مستندی اجتماعی در خصوص مسائل، معضلات و مشکلات اجتماع است که بر اساس پرونده‌های واقعی و پس از تصویب طرح در 26 قسمت 45 دقیقه‌ای برای گروه اجتماعی شبکهٔ تهران ساخته می‌شود.
 1	"	"	PUNC	PUNC	attachment=ISO|senID=23994	3	PUNC	_	_
 2	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=23994	3	NPREMOD	_	_
-3	اتفاق	اتفاق	N	IANM	attachment=ISO|number=SING|senID=23994	18	SBJ	_	_
+3	اتفاق	اتفاق	N	IANM	attachment=ISO|number=SING|senID=23994	16	SBJ	_	_
 4	"	"	PUNC	PUNC	attachment=ISO|senID=23994	3	PUNC	_	_
-5	نام	نام	N	IANM	attachment=ISO|number=SING|senID=23994	18	MOS	_	_
+5	نام	نام	N	IANM	attachment=ISO|number=SING|senID=23994	16	MOS	_	_
 6	مستندی	مستند	N	IANM	attachment=ISO|number=SING|senID=23994	5	MOZ	_	_
 7	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=23994	6	NPOSTMOD	_	_
 8	در	در	PREP	PREP	attachment=ISO|senID=23994	6	NPP	_	_
 9	خصوص	خصوص	N	IANM	attachment=ISO|number=SING|senID=23994	8	POSDEP	_	_
 10	مسائل	مسأله	N	IANM	attachment=ISO|number=PLUR|senID=23994	9	MOZ	_	_
 11	،	،	PUNC	PUNC	attachment=ISO|senID=23994	10	PUNC	_	_
-12-13	معضلات	_	_	_	_	_	_	_	_
-12	معضل	معضل	N	IANM	attachment=ISO|number=PLUR|senID=23994	10	NCONJ	_	_
-13	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	12	nmod:poss	_	_
-14	و	و	CONJ	CONJ	attachment=ISO|senID=23994	12	NCONJ	_	_
-15-16	مشکلات	_	_	_	_	_	_	_	_
-15	مشکل	مشکل	N	IANM	attachment=ISO|number=PLUR|senID=23994	14	POSDEP	_	_
-16	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	15	nmod:poss	_	_
-17	اجتماع	اجتماع	N	IANM	attachment=ISO|number=SING|senID=23994	10	MOZ	_	_
-18	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23994	0	ROOT	_	_
-19	که	که	SUBR	SUBR	attachment=ISO|senID=23994	6	NCL	_	_
-20	بر	بر	PREP	PREP	attachment=ISO|senID=23994	39	ADV	_	_
-21	اساس	اساس	N	IANM	attachment=ISO|number=SING|senID=23994	20	POSDEP	_	_
-22	پرونده‌های	پرونده	N	IANM	attachment=ISO|number=PLUR|senID=23994	21	MOZ	_	_
-23	واقعی	واقعی	ADJ	AJP	attachment=ISO|senID=23994	22	NPOSTMOD	_	_
-24	و	و	CONJ	CONJ	attachment=ISO|senID=23994	20	PCONJ	_	_
-25	پس	پس	N	IANM	attachment=ISO|number=SING|senID=23994	24	POSDEP	_	_
-26	از	از	PREP	PREP	attachment=ISO|senID=23994	25	POSDEP	_	_
-27	تصویب	تصویب	N	IANM	attachment=ISO|number=SING|senID=23994	26	POSDEP	_	_
-28	طرح	طرح	N	IANM	attachment=ISO|number=SING|senID=23994	27	MOZ	_	_
-29	در	در	PREP	PREP	attachment=ISO|senID=23994	39	ADV	_	_
-30	26	26	PRENUM	PRENUM	attachment=ISO|senID=23994	31	NPREMOD	_	_
-31	قسمت	قسمت	N	IANM	attachment=ISO|number=SING|senID=23994	29	POSDEP	_	_
-32	45	45	PRENUM	PRENUM	attachment=ISO|senID=23994	33	PREDEP	_	_
-33	دقیقه‌ای	دقیقه‌ای	ADJ	AJP	attachment=ISO|senID=23994	31	NPOSTMOD	_	_
-34	برای	برای	PREP	PREP	attachment=ISO|senID=23994	39	ADV	_	_
-35	گروه	گروه	N	IANM	attachment=ISO|number=SING|senID=23994	34	POSDEP	_	_
-36	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=23994	35	NPOSTMOD	_	_
-37	شبکهٔ	شبکه	N	IANM	attachment=ISO|number=SING|senID=23994	35	MOZ	_	_
-38	تهران	تهران	N	IANM	attachment=ISO|number=SING|senID=23994	37	MOZ	_	_
-39	ساخته می‌شود	ساخت#ساز	V	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=23994	19	PRD	_	_
-40	.	.	PUNC	PUNC	attachment=ISO|senID=23994	18	PUNC	_	_
+12	معضلات	معضل	N	IANM	attachment=ISO|number=PLUR|senID=23994	10	NCONJ	_	_
+13	و	و	CONJ	CONJ	attachment=ISO|senID=23994	12	NCONJ	_	_
+14	مشکلات	مشکل	N	IANM	attachment=ISO|number=PLUR|senID=23994	13	POSDEP	_	_
+15	اجتماع	اجتماع	N	IANM	attachment=ISO|number=SING|senID=23994	10	MOZ	_	_
+16	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23994	0	ROOT	_	_
+17	که	که	SUBR	SUBR	attachment=ISO|senID=23994	6	NCL	_	_
+18	بر	بر	PREP	PREP	attachment=ISO|senID=23994	37	ADV	_	_
+19	اساس	اساس	N	IANM	attachment=ISO|number=SING|senID=23994	18	POSDEP	_	_
+20	پرونده‌های	پرونده	N	IANM	attachment=ISO|number=PLUR|senID=23994	19	MOZ	_	_
+21	واقعی	واقعی	ADJ	AJP	attachment=ISO|senID=23994	20	NPOSTMOD	_	_
+22	و	و	CONJ	CONJ	attachment=ISO|senID=23994	18	PCONJ	_	_
+23	پس	پس	N	IANM	attachment=ISO|number=SING|senID=23994	22	POSDEP	_	_
+24	از	از	PREP	PREP	attachment=ISO|senID=23994	23	POSDEP	_	_
+25	تصویب	تصویب	N	IANM	attachment=ISO|number=SING|senID=23994	24	POSDEP	_	_
+26	طرح	طرح	N	IANM	attachment=ISO|number=SING|senID=23994	25	MOZ	_	_
+27	در	در	PREP	PREP	attachment=ISO|senID=23994	37	ADV	_	_
+28	26	26	PRENUM	PRENUM	attachment=ISO|senID=23994	29	NPREMOD	_	_
+29	قسمت	قسمت	N	IANM	attachment=ISO|number=SING|senID=23994	27	POSDEP	_	_
+30	45	45	PRENUM	PRENUM	attachment=ISO|senID=23994	31	PREDEP	_	_
+31	دقیقه‌ای	دقیقه‌ای	ADJ	AJP	attachment=ISO|senID=23994	29	NPOSTMOD	_	_
+32	برای	برای	PREP	PREP	attachment=ISO|senID=23994	37	ADV	_	_
+33	گروه	گروه	N	IANM	attachment=ISO|number=SING|senID=23994	32	POSDEP	_	_
+34	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=23994	33	NPOSTMOD	_	_
+35	شبکهٔ	شبکه	N	IANM	attachment=ISO|number=SING|senID=23994	33	MOZ	_	_
+36	تهران	تهران	N	IANM	attachment=ISO|number=SING|senID=23994	35	MOZ	_	_
+37	ساخته می‌شود	ساخت#ساز	V	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=23994	17	PRD	_	_
+38	.	.	PUNC	PUNC	attachment=ISO|senID=23994	16	PUNC	_	_
 
 # sent_id = dev-s46
 # text = دادگاه فدرال آمریکا چندی پیش عناصر بلک‌واتر را که نقش آنان در کشتار متعمدانهٔ 14 غیرنظامی عراقی در سال 2007 به اثبات رسیده بود، تبرئه کرد.
@@ -1884,37 +1876,35 @@
 5	این	این	PREM	DEMAJ	attachment=ISO|senID=24093	6	NPREMOD	_	_
 6	بنیاد	بنیاد	N	IANM	attachment=ISO|number=SING|senID=24093	8	SBJ	_	_
 7	متعهد	متعهد	ADJ	AJP	attachment=ISO|senID=24093	8	MOS	_	_
-8	شد	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=24093	20	PREDEP	_	_
-9-10	اقدامات	_	_	_	_	_	_	_	_
-9	اقدام	اقدام	N	IANM	attachment=ISO|number=PLUR|senID=24093	12	PREDEP	_	_
-10	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	9	nmod:poss	_	_
-11	صهیونیستها	صهیونیست	N	ANM	attachment=ISO|number=PLUR|senID=24093	9	MOZ	_	_
-12	را	را	POSTP	POSTP	attachment=ISO|senID=24093	19	OBJ	_	_
-13	در	در	PREP	PREP	attachment=ISO|senID=24093	9	NPP	_	_
-14	رابطه	رابطه	N	IANM	attachment=ISO|number=SING|senID=24093	13	POSDEP	_	_
-15	با	با	PREP	PREP	attachment=ISO|senID=24093	14	NPP	_	_
-16	این	این	PREM	DEMAJ	attachment=ISO|senID=24093	17	NPREMOD	_	_
-17	مسجد	مسجد	N	IANM	attachment=ISO|number=SING|senID=24093	15	POSDEP	_	_
-18	فاش	فاش	ADJ	AJP	attachment=ISO|senID=24093	19	MOS	_	_
-19	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=24093	7	ACL	_	_
-20	و	و	CONJ	CONJ	attachment=ISO|senID=24093	27	VCONJ	_	_
-21	در	در	PREP	PREP	attachment=ISO|senID=24093	27	ADV	_	_
-22	عین	عین	N	IANM	attachment=ISO|number=SING|senID=24093	21	POSDEP	_	_
-23	حال	حال	N	IANM	attachment=ISO|number=SING|senID=24093	22	MOZ	_	_
-24	از	از	PREP	PREP	attachment=ISO|senID=24093	27	VPP	_	_
-25	کشورهای	کشور	N	IANM	attachment=ISO|number=PLUR|senID=24093	24	POSDEP	_	_
-26	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=24093	25	NPOSTMOD	_	_
-27	خواست	خواست#خواه	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24093	0	ROOT	_	_
-28	در	در	PREP	PREP	attachment=ISO|senID=24093	36	ADV	_	_
-29	دفاع	دفاع	N	IANM	attachment=ISO|number=SING|senID=24093	28	POSDEP	_	_
-30	از	از	PREP	PREP	attachment=ISO|senID=24093	29	NPP	_	_
-31	نخستین	نخستین	PRENUM	PRENUM	attachment=ISO|senID=24093	32	NPREMOD	_	_
-32	قبلهٔ	قبله	N	IANM	attachment=ISO|number=SING|senID=24093	30	POSDEP	_	_
-33	مسلمانان	مسلمان	N	ANM	attachment=ISO|number=PLUR|senID=24093	32	MOZ	_	_
-34	به	به	PREP	PREP	attachment=ISO|senID=24093	36	ADV	_	_
-35	پا	پا	N	IANM	attachment=ISO|number=SING|senID=24093	34	POSDEP	_	_
-36	خیزند	خاست#خیز	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=24093	27	AJUCL	_	_
-37	.	.	PUNC	PUNC	attachment=ISO|senID=24093	27	PUNC	_	_
+8	شد	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=24093	19	PREDEP	_	_
+9	اقدامات	اقدام	N	IANM	attachment=ISO|number=PLUR|senID=24093	11	PREDEP	_	_
+10	صهیونیستها	صهیونیست	N	ANM	attachment=ISO|number=PLUR|senID=24093	9	MOZ	_	_
+11	را	را	POSTP	POSTP	attachment=ISO|senID=24093	18	OBJ	_	_
+12	در	در	PREP	PREP	attachment=ISO|senID=24093	9	NPP	_	_
+13	رابطه	رابطه	N	IANM	attachment=ISO|number=SING|senID=24093	12	POSDEP	_	_
+14	با	با	PREP	PREP	attachment=ISO|senID=24093	13	NPP	_	_
+15	این	این	PREM	DEMAJ	attachment=ISO|senID=24093	16	NPREMOD	_	_
+16	مسجد	مسجد	N	IANM	attachment=ISO|number=SING|senID=24093	14	POSDEP	_	_
+17	فاش	فاش	ADJ	AJP	attachment=ISO|senID=24093	18	MOS	_	_
+18	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=24093	7	ACL	_	_
+19	و	و	CONJ	CONJ	attachment=ISO|senID=24093	26	VCONJ	_	_
+20	در	در	PREP	PREP	attachment=ISO|senID=24093	26	ADV	_	_
+21	عین	عین	N	IANM	attachment=ISO|number=SING|senID=24093	20	POSDEP	_	_
+22	حال	حال	N	IANM	attachment=ISO|number=SING|senID=24093	21	MOZ	_	_
+23	از	از	PREP	PREP	attachment=ISO|senID=24093	26	VPP	_	_
+24	کشورهای	کشور	N	IANM	attachment=ISO|number=PLUR|senID=24093	23	POSDEP	_	_
+25	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=24093	24	NPOSTMOD	_	_
+26	خواست	خواست#خواه	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24093	0	ROOT	_	_
+27	در	در	PREP	PREP	attachment=ISO|senID=24093	35	ADV	_	_
+28	دفاع	دفاع	N	IANM	attachment=ISO|number=SING|senID=24093	27	POSDEP	_	_
+29	از	از	PREP	PREP	attachment=ISO|senID=24093	28	NPP	_	_
+30	نخستین	نخستین	PRENUM	PRENUM	attachment=ISO|senID=24093	31	NPREMOD	_	_
+31	قبلهٔ	قبله	N	IANM	attachment=ISO|number=SING|senID=24093	29	POSDEP	_	_
+32	مسلمانان	مسلمان	N	ANM	attachment=ISO|number=PLUR|senID=24093	31	MOZ	_	_
+33	به	به	PREP	PREP	attachment=ISO|senID=24093	35	ADV	_	_
+34	پا	پا	N	IANM	attachment=ISO|number=SING|senID=24093	33	POSDEP	_	_
+35	خیزند	خاست#خیز	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=24093	26	AJUCL	_	_
+36	.	.	PUNC	PUNC	attachment=ISO|senID=24093	26	PUNC	_	_
 
 # sent_id = dev-s55
 # text = اگر کسی در مقابل انقلاب ایستاد انقلاب با او شوخی ندارد.
@@ -2470,8 +2460,8 @@
 
 # sent_id = dev-s74
 # text = وی در سالروز شهادت امام حسین( ع) جنایات رژیم صهیونیستی در فلسطین و لبنان و تهدیدهای این رژیم بر ضد مقدسات اسلامی و مسیحی در مناطق اشغالی را یادآوری کرد.
-1	وی	وی	PR	SEPER	person=3|attachment=ISO|number=SING|senID=24326	33	SBJ	_	_
-2	در	در	PREP	PREP	attachment=ISO|senID=24326	33	ADV	_	_
+1	وی	وی	PR	SEPER	person=3|attachment=ISO|number=SING|senID=24326	32	SBJ	_	_
+2	در	در	PREP	PREP	attachment=ISO|senID=24326	32	ADV	_	_
 3	سالروز	سالروز	N	IANM	attachment=ISO|number=SING|senID=24326	2	POSDEP	_	_
 4	شهادت	شهادت	N	IANM	attachment=ISO|number=SING|senID=24326	3	MOZ	_	_
 5	امام	امام	IDEN	IDEN	attachment=ISO|number=SING|senID=24326	6	PREDEP	_	_
@@ -2479,7 +2469,7 @@
 7	(	(	PUNC	PUNC	attachment=ISO|senID=24326	8	PUNC	_	_
 8	ع	ع	N	IANM	attachment=ISO|number=SING|senID=24326	6	POSDEP	_	_
 9	)	)	PUNC	PUNC	attachment=ISO|senID=24326	8	PUNC	_	_
-10	جنایات	جنایت	N	IANM	attachment=ISO|number=PLUR|senID=24326	31	PREDEP	_	_
+10	جنایات	جنایت	N	IANM	attachment=ISO|number=PLUR|senID=24326	30	PREDEP	_	_
 11	رژیم	رژیم	N	IANM	attachment=ISO|number=SING|senID=24326	10	MOZ	_	_
 12	صهیونیستی	صهیونیستی	ADJ	AJP	attachment=ISO|senID=24326	11	NPOSTMOD	_	_
 13	در	در	PREP	PREP	attachment=ISO|senID=24326	10	NPP	_	_
@@ -2492,19 +2482,17 @@
 20	رژیم	رژیم	N	IANM	attachment=ISO|number=SING|senID=24326	18	MOZ	_	_
 21	بر	بر	PREP	PREP	attachment=ISO|senID=24326	18	NPP	_	_
 22	ضد	ضد	PREP	PREP	attachment=ISO|senID=24326	21	POSDEP	_	_
-23-24	مقدسات	_	_	_	_	_	_	_	_
-23	مقدس	مقدس	N	IANM	attachment=ISO|number=PLUR|senID=24326	22	POSDEP	_	_
-24	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	23	nmod:poss	_	_
-25	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=24326	23	NPOSTMOD	_	_
-26	و	و	CONJ	CONJ	attachment=ISO|senID=24326	25	AJCONJ	_	_
-27	مسیحی	مسیحی	ADJ	AJP	attachment=ISO|senID=24326	26	POSDEP	_	_
-28	در	در	PREP	PREP	attachment=ISO|senID=24326	18	NPP	_	_
-29	مناطق	منطقه	N	IANM	attachment=ISO|number=PLUR|senID=24326	28	POSDEP	_	_
-30	اشغالی	اشغالی	ADJ	AJP	attachment=ISO|senID=24326	29	NPOSTMOD	_	_
-31	را	را	POSTP	POSTP	attachment=ISO|senID=24326	33	OBJ	_	_
-32	یادآوری	یادآوری	N	IANM	attachment=ISO|number=SING|senID=24326	33	NVE	_	_
-33	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24326	0	ROOT	_	_
-34	.	.	PUNC	PUNC	attachment=ISO|senID=24326	33	PUNC	_	_
+23	مقدسات	مقدس	N	IANM	attachment=ISO|number=PLUR|senID=24326	22	POSDEP	_	_
+24	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=24326	23	NPOSTMOD	_	_
+25	و	و	CONJ	CONJ	attachment=ISO|senID=24326	24	AJCONJ	_	_
+26	مسیحی	مسیحی	ADJ	AJP	attachment=ISO|senID=24326	25	POSDEP	_	_
+27	در	در	PREP	PREP	attachment=ISO|senID=24326	18	NPP	_	_
+28	مناطق	منطقه	N	IANM	attachment=ISO|number=PLUR|senID=24326	27	POSDEP	_	_
+29	اشغالی	اشغالی	ADJ	AJP	attachment=ISO|senID=24326	28	NPOSTMOD	_	_
+30	را	را	POSTP	POSTP	attachment=ISO|senID=24326	32	OBJ	_	_
+31	یادآوری	یادآوری	N	IANM	attachment=ISO|number=SING|senID=24326	32	NVE	_	_
+32	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24326	0	ROOT	_	_
+33	.	.	PUNC	PUNC	attachment=ISO|senID=24326	32	PUNC	_	_
 
 # sent_id = dev-s75
 # text = طبعاً محکومان به جرم اعمال ضدانقلابی را باید از قوهٔ قضائیه استعلام کرد.
@@ -2777,7 +2765,7 @@
 # sent_id = dev-s83
 # text = دمیده شدن روح جدید در جهان اسلام، ایجاد عزت نفس و غرور ملی، کاستن از احساس تحقیر مسلمانان در مقابل دنیای غرب، ایجاد فضای اخوت و برادری میان مسلمانان، ایجاد امید به آینده در میان مسلمانان برای ایجاد تمدن اسلامی و پررنگ شدن نقش دین در روابط بین‌الملل از جمله تأثیرات ماندگار و کلان انقلاب اسلامی بر جهان عرب بوده است.
 1	دمیده	دمیده	N	IANM	attachment=ISO|number=SING|senID=24424	2	PREDEP	_	_
-2	شدن	شدن	N	IANM	attachment=ISO|number=SING|senID=24424	65	SBJ	_	_
+2	شدن	شدن	N	IANM	attachment=ISO|number=SING|senID=24424	64	SBJ	_	_
 3	روح	روح	N	IANM	attachment=ISO|number=SING|senID=24424	2	MOZ	_	_
 4	جدید	جدید	ADJ	AJP	attachment=ISO|senID=24424	3	NPOSTMOD	_	_
 5	در	در	PREP	PREP	attachment=ISO|senID=24424	2	NPP	_	_
@@ -2828,21 +2816,19 @@
 50	در	در	PREP	PREP	attachment=ISO|senID=24424	48	NPP	_	_
 51	روابط	رابطه	N	IANM	attachment=ISO|number=PLUR|senID=24424	50	POSDEP	_	_
 52	بین‌الملل	بین‌الملل	ADJ	AJP	attachment=ISO|senID=24424	51	NPOSTMOD	_	_
-53	از	از	PREP	PREP	attachment=ISO|senID=24424	65	MOS	_	_
+53	از	از	PREP	PREP	attachment=ISO|senID=24424	64	MOS	_	_
 54	جمله	جمله	N	IANM	attachment=ISO|number=SING|senID=24424	53	POSDEP	_	_
-55-56	تأثیرات	_	_	_	_	_	_	_	_
-55	تأثیر	تأثیر	N	IANM	attachment=ISO|number=PLUR|senID=24424	53	POSDEP	_	_
-56	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	55	nmod:poss	_	_
-57	ماندگار	ماندگار	ADJ	AJP	attachment=ISO|senID=24424	55	NPOSTMOD	_	_
-58	و	و	CONJ	CONJ	attachment=ISO|senID=24424	57	AJCONJ	_	_
-59	کلان	کلان	ADJ	AJP	attachment=ISO|senID=24424	58	POSDEP	_	_
-60	انقلاب	انقلاب	N	IANM	attachment=ISO|number=SING|senID=24424	55	MOZ	_	_
-61	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=24424	60	NPOSTMOD	_	_
-62	بر	بر	PREP	PREP	attachment=ISO|senID=24424	55	NPP	_	_
-63	جهان	جهان	N	IANM	attachment=ISO|number=SING|senID=24424	62	POSDEP	_	_
-64	عرب	عرب	ADJ	AJP	attachment=ISO|senID=24424	63	NPOSTMOD	_	_
-65	بوده است	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=24424	0	ROOT	_	_
-66	.	.	PUNC	PUNC	attachment=ISO|senID=24424	65	PUNC	_	_
+55	تأثیرات	تأثیر	N	IANM	attachment=ISO|number=PLUR|senID=24424	53	POSDEP	_	_
+56	ماندگار	ماندگار	ADJ	AJP	attachment=ISO|senID=24424	55	NPOSTMOD	_	_
+57	و	و	CONJ	CONJ	attachment=ISO|senID=24424	56	AJCONJ	_	_
+58	کلان	کلان	ADJ	AJP	attachment=ISO|senID=24424	57	POSDEP	_	_
+59	انقلاب	انقلاب	N	IANM	attachment=ISO|number=SING|senID=24424	55	MOZ	_	_
+60	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=24424	59	NPOSTMOD	_	_
+61	بر	بر	PREP	PREP	attachment=ISO|senID=24424	55	NPP	_	_
+62	جهان	جهان	N	IANM	attachment=ISO|number=SING|senID=24424	61	POSDEP	_	_
+63	عرب	عرب	ADJ	AJP	attachment=ISO|senID=24424	62	NPOSTMOD	_	_
+64	بوده است	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=24424	0	ROOT	_	_
+65	.	.	PUNC	PUNC	attachment=ISO|senID=24424	64	PUNC	_	_
 
 # sent_id = dev-s84
 # text = بعد از ظهر با پیکان استیشن از محوطهٔ شهربانی خرم‌آباد اینجانب را حرکت دادند و بعد از ظهر فردایش در دوراهی بعد از شهرستان بم، فاصلهٔ 365 کیلومتر را تا ایرانشهر طی کرده، شبانه به ایرانشهر رسیدیم.
@@ -3225,26 +3211,24 @@
 # sent_id = dev-s106
 # text = این رسومات تا 50 سال پیش در برخی شهرها وجود داشت اما اکنون به ندرت چنین مراسمی دیده می‌شود.
 1	این	این	PREM	DEMAJ	attachment=ISO|senID=28001	2	NPREMOD	_	_
-2-3	رسومات	_	_	_	_	_	_	_	_
-2	رسوم	رسوم	N	IANM	attachment=ISO|number=PLUR|senID=28001	12	SBJ	_	_
-3	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	_
-4	تا	تا	PREP	PREP	attachment=ISO|senID=28001	12	ADV	_	_
-5	50	50	PRENUM	PRENUM	attachment=ISO|senID=28001	6	NPREMOD	_	_
-6	سال	سال	N	IANM	attachment=ISO|number=SING|senID=28001	4	POSDEP	_	_
-7	پیش	پیش	ADJ	AJP	attachment=ISO|senID=28001	6	NPOSTMOD	_	_
-8	در	در	PREP	PREP	attachment=ISO|senID=28001	11	NPP	_	_
-9	برخی	برخی	PREM	AMBAJ	attachment=ISO|senID=28001	10	NPREMOD	_	_
-10	شهرها	شهر	N	IANM	attachment=ISO|number=PLUR|senID=28001	8	POSDEP	_	_
-11	وجود	وجود	N	IANM	attachment=ISO|number=SING|senID=28001	12	NVE	_	_
-12	داشت	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=28001	13	PREDEP	_	_
-13	اما	اما	CONJ	CONJ	attachment=ISO|senID=28001	19	VCONJ	_	_
-14	اکنون	اکنون	N	IANM	attachment=ISO|number=SING|senID=28001	19	ADV	_	_
-15	به	به	PREP	PREP	attachment=ISO|senID=28001	19	ADV	_	_
-16	ندرت	ندرت	N	IANM	attachment=ISO|number=SING|senID=28001	15	POSDEP	_	_
-17	چنین	چنین	PREM	DEMAJ	attachment=ISO|senID=28001	18	NPREMOD	_	_
-18	مراسمی	مراسم	N	IANM	attachment=ISO|number=SING|senID=28001	19	SBJ	_	_
-19	دیده می‌شود	دید#بین	V	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=28001	0	ROOT	_	_
-20	.	.	PUNC	PUNC	attachment=ISO|senID=28001	19	PUNC	_	_
+2	رسومات	رسوم	N	IANM	attachment=ISO|number=PLUR|senID=28001	11	SBJ	_	_
+3	تا	تا	PREP	PREP	attachment=ISO|senID=28001	11	ADV	_	_
+4	50	50	PRENUM	PRENUM	attachment=ISO|senID=28001	5	NPREMOD	_	_
+5	سال	سال	N	IANM	attachment=ISO|number=SING|senID=28001	3	POSDEP	_	_
+6	پیش	پیش	ADJ	AJP	attachment=ISO|senID=28001	5	NPOSTMOD	_	_
+7	در	در	PREP	PREP	attachment=ISO|senID=28001	10	NPP	_	_
+8	برخی	برخی	PREM	AMBAJ	attachment=ISO|senID=28001	9	NPREMOD	_	_
+9	شهرها	شهر	N	IANM	attachment=ISO|number=PLUR|senID=28001	7	POSDEP	_	_
+10	وجود	وجود	N	IANM	attachment=ISO|number=SING|senID=28001	11	NVE	_	_
+11	داشت	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=28001	12	PREDEP	_	_
+12	اما	اما	CONJ	CONJ	attachment=ISO|senID=28001	18	VCONJ	_	_
+13	اکنون	اکنون	N	IANM	attachment=ISO|number=SING|senID=28001	18	ADV	_	_
+14	به	به	PREP	PREP	attachment=ISO|senID=28001	18	ADV	_	_
+15	ندرت	ندرت	N	IANM	attachment=ISO|number=SING|senID=28001	14	POSDEP	_	_
+16	چنین	چنین	PREM	DEMAJ	attachment=ISO|senID=28001	17	NPREMOD	_	_
+17	مراسمی	مراسم	N	IANM	attachment=ISO|number=SING|senID=28001	18	SBJ	_	_
+18	دیده می‌شود	دید#بین	V	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=28001	0	ROOT	_	_
+19	.	.	PUNC	PUNC	attachment=ISO|senID=28001	18	PUNC	_	_
 
 # sent_id = dev-s107
 # text = به هزار زحمت کارم را پیش بردم.
@@ -3387,8 +3371,8 @@
 5	که	که	SUBR	SUBR	attachment=ISO|senID=28628	4	VCL	_	_
 6	محل	محل	N	IANM	attachment=ISO|number=SING|senID=28628	8	PREDEP	_	_
 7	زندگی‌شان	زندگی	N	IANM	attachment=ISO|number=SING|senID=28628	6	MOZ	_	_
-8	را	را	POSTP	POSTP	attachment=ISO|senID=28628	29	VPP	_	_
-9	با	با	PREP	PREP	attachment=ISO|senID=28628	28	NPP	_	_
+8	را	را	POSTP	POSTP	attachment=ISO|senID=28628	28	VPP	_	_
+9	با	با	PREP	PREP	attachment=ISO|senID=28628	27	NPP	_	_
 10	وسایل	وسیله	N	IANM	attachment=ISO|number=PLUR|senID=28628	9	POSDEP	_	_
 11	دست‌ساز	دست‌ساز	ADJ	AJP	attachment=ISO|senID=28628	10	NPOSTMOD	_	_
 12	هنری	هنری	ADJ	AJP	attachment=ISO|senID=28628	10	NPOSTMOD	_	_
@@ -3398,19 +3382,17 @@
 16	زیبای	زیبا	ADJ	AJP	attachment=ISO|senID=28628	15	NPOSTMOD	_	_
 17	فیروزه‌ای	فیروزه‌ای	ADJ	AJP	attachment=ISO|senID=28628	15	NPOSTMOD	_	_
 18	و	و	CONJ	CONJ	attachment=ISO|senID=28628	15	NCONJ	_	_
-19-20	تزئینات	_	_	_	_	_	_	_	_
-19	تزئین	تزئین	N	IANM	attachment=ISO|number=PLUR|senID=28628	18	POSDEP	_	_
-20	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	19	nmod:poss	_	_
-21	کاملاً	کاملاً	ADV	SADV	attachment=ISO|senID=28628	22	APREMOD	_	_
-22	سنتی	سنتی	ADJ	AJP	attachment=ISO|senID=28628	19	NPOSTMOD	_	_
-23	چه	چه	ADV	SADV	attachment=ISO|senID=28628	24	PREDEP	_	_
-24	ایرانی	ایرانی	ADJ	AJP	attachment=ISO|senID=28628	19	NPOSTMOD	_	_
-25	و	و	CONJ	CONJ	attachment=ISO|senID=28628	24	AJCONJ	_	_
-26	چه	چه	ADV	SADV	attachment=ISO|senID=28628	27	PREDEP	_	_
-27	شرقی	شرقی	ADJ	AJP	attachment=ISO|senID=28628	25	POSDEP	_	_
-28	آرایش	آرایش	N	IANM	attachment=ISO|number=SING|senID=28628	29	OBJ	_	_
-29	دهند	داد#ده	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=28628	5	PRD	_	_
-30	.	.	PUNC	PUNC	attachment=ISO|senID=28628	4	PUNC	_	_
+19	تزئینات	تزئین	N	IANM	attachment=ISO|number=PLUR|senID=28628	18	POSDEP	_	_
+20	کاملاً	کاملاً	ADV	SADV	attachment=ISO|senID=28628	21	APREMOD	_	_
+21	سنتی	سنتی	ADJ	AJP	attachment=ISO|senID=28628	19	NPOSTMOD	_	_
+22	چه	چه	ADV	SADV	attachment=ISO|senID=28628	23	PREDEP	_	_
+23	ایرانی	ایرانی	ADJ	AJP	attachment=ISO|senID=28628	19	NPOSTMOD	_	_
+24	و	و	CONJ	CONJ	attachment=ISO|senID=28628	23	AJCONJ	_	_
+25	چه	چه	ADV	SADV	attachment=ISO|senID=28628	26	PREDEP	_	_
+26	شرقی	شرقی	ADJ	AJP	attachment=ISO|senID=28628	24	POSDEP	_	_
+27	آرایش	آرایش	N	IANM	attachment=ISO|number=SING|senID=28628	28	OBJ	_	_
+28	دهند	داد#ده	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=28628	5	PRD	_	_
+29	.	.	PUNC	PUNC	attachment=ISO|senID=28628	4	PUNC	_	_
 
 # sent_id = dev-s115
 # text = دلم می‌خواست سرم پایین باشد و خواندن کتاب در چنین وضعیتی بهترین کار بود.
@@ -3532,28 +3514,26 @@
 # sent_id = dev-s120
 # text = باید از طریق تنظیمات افزونه، واژه‌نامهٔ دادگان آن بخش را حذف کنید و واژه‌نامهٔ درست به برنامه اضافه شود.
 1	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=28694	0	ROOT	_	_
-2	از	از	PREP	PREP	attachment=ISO|senID=28694	14	ADV	_	_
+2	از	از	PREP	PREP	attachment=ISO|senID=28694	13	ADV	_	_
 3	طریق	طریق	N	IANM	attachment=ISO|number=SING|senID=28694	2	POSDEP	_	_
-4-5	تنظیمات	_	_	_	_	_	_	_	_
-4	تنظیم	تنظیم	N	IANM	attachment=ISO|number=PLUR|senID=28694	3	MOZ	_	_
-5	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
-6	افزونه	افزونه	N	IANM	attachment=ISO|number=SING|senID=28694	4	MOZ	_	_
-7	،	،	PUNC	PUNC	attachment=ISO|senID=28694	6	PUNC	_	_
-8	واژه‌نامهٔ	واژه‌نامه	N	IANM	attachment=ISO|number=SING|senID=28694	12	PREDEP	_	_
-9	دادگان	داده	N	IANM	attachment=ISO|number=PLUR|senID=28694	8	MOZ	_	_
-10	آن	آن	PREM	DEMAJ	attachment=ISO|senID=28694	11	NPREMOD	_	_
-11	بخش	بخش	N	IANM	attachment=ISO|number=SING|senID=28694	9	MOZ	_	_
-12	را	را	POSTP	POSTP	attachment=ISO|senID=28694	14	OBJ	_	_
-13	حذف	حذف	N	IANM	attachment=ISO|number=SING|senID=28694	14	NVE	_	_
-14	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=28694	15	PREDEP	_	_
-15	و	و	CONJ	CONJ	attachment=ISO|senID=28694	21	VCONJ	_	_
-16	واژه‌نامهٔ	واژه‌نامه	N	IANM	attachment=ISO|number=SING|senID=28694	21	SBJ	_	_
-17	درست	درست	ADJ	AJP	attachment=ISO|senID=28694	16	NPOSTMOD	_	_
-18	به	به	PREP	PREP	attachment=ISO|senID=28694	20	AJPP	_	_
-19	برنامه	برنامه	N	IANM	attachment=ISO|number=SING|senID=28694	18	POSDEP	_	_
-20	اضافه	اضافه	ADJ	AJP	attachment=ISO|senID=28694	21	MOS	_	_
-21	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=28694	1	VCL	_	_
-22	.	.	PUNC	PUNC	attachment=ISO|senID=28694	1	PUNC	_	_
+4	تنظیمات	تنظیم	N	IANM	attachment=ISO|number=PLUR|senID=28694	3	MOZ	_	_
+5	افزونه	افزونه	N	IANM	attachment=ISO|number=SING|senID=28694	4	MOZ	_	_
+6	،	،	PUNC	PUNC	attachment=ISO|senID=28694	5	PUNC	_	_
+7	واژه‌نامهٔ	واژه‌نامه	N	IANM	attachment=ISO|number=SING|senID=28694	11	PREDEP	_	_
+8	دادگان	داده	N	IANM	attachment=ISO|number=PLUR|senID=28694	7	MOZ	_	_
+9	آن	آن	PREM	DEMAJ	attachment=ISO|senID=28694	10	NPREMOD	_	_
+10	بخش	بخش	N	IANM	attachment=ISO|number=SING|senID=28694	8	MOZ	_	_
+11	را	را	POSTP	POSTP	attachment=ISO|senID=28694	13	OBJ	_	_
+12	حذف	حذف	N	IANM	attachment=ISO|number=SING|senID=28694	13	NVE	_	_
+13	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=28694	14	PREDEP	_	_
+14	و	و	CONJ	CONJ	attachment=ISO|senID=28694	20	VCONJ	_	_
+15	واژه‌نامهٔ	واژه‌نامه	N	IANM	attachment=ISO|number=SING|senID=28694	20	SBJ	_	_
+16	درست	درست	ADJ	AJP	attachment=ISO|senID=28694	15	NPOSTMOD	_	_
+17	به	به	PREP	PREP	attachment=ISO|senID=28694	19	AJPP	_	_
+18	برنامه	برنامه	N	IANM	attachment=ISO|number=SING|senID=28694	17	POSDEP	_	_
+19	اضافه	اضافه	ADJ	AJP	attachment=ISO|senID=28694	20	MOS	_	_
+20	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=28694	1	VCL	_	_
+21	.	.	PUNC	PUNC	attachment=ISO|senID=28694	1	PUNC	_	_
 
 # sent_id = dev-s121
 # text = بشار اسد کاخ سفید را تحقیر کرد.
@@ -3722,17 +3702,15 @@
 
 # sent_id = dev-s133
 # text = شرکت‌های انگلیسی مصنوعات رژیم صهیونیستی را تعدیل می‌کنند.
-1	شرکت‌های	شرکت	N	IANM	attachment=ISO|number=PLUR|senID=43456	9	SBJ	_	_
+1	شرکت‌های	شرکت	N	IANM	attachment=ISO|number=PLUR|senID=43456	8	SBJ	_	_
 2	انگلیسی	انگلیسی	ADJ	AJP	attachment=ISO|senID=43456	1	NPOSTMOD	_	_
-3-4	مصنوعات	_	_	_	_	_	_	_	_
-3	مصنوع	مصنوع	N	IANM	attachment=ISO|number=PLUR|senID=43456	7	PREDEP	_	_
-4	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	3	nmod:poss	_	_
-5	رژیم	رژیم	N	IANM	attachment=ISO|number=SING|senID=43456	3	MOZ	_	_
-6	صهیونیستی	صهیونیستی	ADJ	AJP	attachment=ISO|senID=43456	5	NPOSTMOD	_	_
-7	را	را	POSTP	POSTP	attachment=ISO|senID=43456	9	OBJ	_	_
-8	تعدیل	تعدیل	N	IANM	attachment=ISO|number=SING|senID=43456	9	NVE	_	_
-9	می‌کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=43456	0	ROOT	_	_
-10	.	.	PUNC	PUNC	attachment=ISO|senID=43456	9	PUNC	_	_
+3	مصنوعات	مصنوع	N	IANM	attachment=ISO|number=PLUR|senID=43456	6	PREDEP	_	_
+4	رژیم	رژیم	N	IANM	attachment=ISO|number=SING|senID=43456	3	MOZ	_	_
+5	صهیونیستی	صهیونیستی	ADJ	AJP	attachment=ISO|senID=43456	4	NPOSTMOD	_	_
+6	را	را	POSTP	POSTP	attachment=ISO|senID=43456	8	OBJ	_	_
+7	تعدیل	تعدیل	N	IANM	attachment=ISO|number=SING|senID=43456	8	NVE	_	_
+8	می‌کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=43456	0	ROOT	_	_
+9	.	.	PUNC	PUNC	attachment=ISO|senID=43456	8	PUNC	_	_
 
 # sent_id = dev-s134
 # text = در صورتی که برای ما مشتری پیدا نمایید 5% برای شما کمیسیون تعلق خواهیم داد.
@@ -3875,22 +3853,20 @@
 
 # sent_id = dev-s144
 # text = لاک همچنین میان تصورات بسیط و مرکب از هر دو نوع تمایز می‌گذاشت.
-1	لاک	لاک	N	ANM	attachment=ISO|number=SING|senID=43566	14	SBJ	_	_
-2	همچنین	همچنین	ADV	SADV	attachment=ISO|senID=43566	14	ADV	_	_
-3	میان	میان	PREP	PREP	attachment=ISO|senID=43566	13	NPP	_	_
-4-5	تصورات	_	_	_	_	_	_	_	_
-4	تصور	تصور	N	IANM	attachment=ISO|number=PLUR|senID=43566	3	POSDEP	_	_
-5	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
-6	بسیط	بسیط	ADJ	AJP	attachment=ISO|senID=43566	4	NPOSTMOD	_	_
-7	و	و	CONJ	CONJ	attachment=ISO|senID=43566	6	AJCONJ	_	_
-8	مرکب	مرکب	ADJ	AJP	attachment=ISO|senID=43566	7	POSDEP	_	_
-9	از	از	PREP	PREP	attachment=ISO|senID=43566	4	NPP	_	_
-10	هر	هر	PREM	AMBAJ	attachment=ISO|senID=43566	12	NPREMOD	_	_
-11	دو	دو	PRENUM	PRENUM	attachment=ISO|senID=43566	12	NPREMOD	_	_
-12	نوع	نوع	N	IANM	attachment=ISO|number=SING|senID=43566	9	POSDEP	_	_
-13	تمایز	تمایز	N	IANM	attachment=ISO|number=SING|senID=43566	14	NVE	_	_
-14	می‌گذاشت	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=43566	0	ROOT	_	_
-15	.	.	PUNC	PUNC	attachment=ISO|senID=43566	14	PUNC	_	_
+1	لاک	لاک	N	ANM	attachment=ISO|number=SING|senID=43566	13	SBJ	_	_
+2	همچنین	همچنین	ADV	SADV	attachment=ISO|senID=43566	13	ADV	_	_
+3	میان	میان	PREP	PREP	attachment=ISO|senID=43566	12	NPP	_	_
+4	تصورات	تصور	N	IANM	attachment=ISO|number=PLUR|senID=43566	3	POSDEP	_	_
+5	بسیط	بسیط	ADJ	AJP	attachment=ISO|senID=43566	4	NPOSTMOD	_	_
+6	و	و	CONJ	CONJ	attachment=ISO|senID=43566	5	AJCONJ	_	_
+7	مرکب	مرکب	ADJ	AJP	attachment=ISO|senID=43566	6	POSDEP	_	_
+8	از	از	PREP	PREP	attachment=ISO|senID=43566	4	NPP	_	_
+9	هر	هر	PREM	AMBAJ	attachment=ISO|senID=43566	11	NPREMOD	_	_
+10	دو	دو	PRENUM	PRENUM	attachment=ISO|senID=43566	11	NPREMOD	_	_
+11	نوع	نوع	N	IANM	attachment=ISO|number=SING|senID=43566	8	POSDEP	_	_
+12	تمایز	تمایز	N	IANM	attachment=ISO|number=SING|senID=43566	13	NVE	_	_
+13	می‌گذاشت	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=43566	0	ROOT	_	_
+14	.	.	PUNC	PUNC	attachment=ISO|senID=43566	13	PUNC	_	_
 
 # sent_id = dev-s145
 # text = با چرخش میل بادامک، پمپ بنزین سوخت موجود در باک بنزین را به کاربراتور تلمبه می‌کند.
@@ -5857,27 +5833,25 @@
 27	آشنایی	آشنایی	N	IANM	attachment=ISO|number=SING|senID=26642	28	OBJ	_	_
 28	داشته باشد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=26642	21	VCL	_	_
 29	که	که	CONJ	CONJ	attachment=ISO|senID=26642	23	NCL	_	_
-30	خانه‌ای	خانه	N	IANM	attachment=ISO|number=SING|senID=26642	48	SBJ	_	_
+30	خانه‌ای	خانه	N	IANM	attachment=ISO|number=SING|senID=26642	47	SBJ	_	_
 31	که	که	SUBR	SUBR	attachment=ISO|senID=26642	30	NCL	_	_
 32	می‌سازد	ساخت#ساز	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=26642	31	PRD	_	_
 33	و	و	CONJ	CONJ	attachment=ISO|senID=26642	30	NCONJ	_	_
-34-35	ارتباطات	_	_	_	_	_	_	_	_
-34	ارتباط	ارتباط	N	IANM	attachment=ISO|number=PLUR|senID=26642	33	POSDEP	_	_
-35	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	34	nmod:poss	_	_
-36	فضایی‌ای	فضایی	ADJ	AJP	attachment=ISO|senID=26642	34	NPOSTMOD	_	_
-37	که	که	CONJ	CONJ	attachment=ISO|senID=26642	34	NCL	_	_
-38	در	در	PREP	PREP	attachment=ISO|senID=26642	41	ADV	_	_
-39	آنجا	آنجا	N	IANM	attachment=ISO|number=SING|senID=26642	38	POSDEP	_	_
-40	تعریف	تعریف	N	IANM	attachment=ISO|number=SING|senID=26642	41	NVE	_	_
-41	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=26642	37	PRD	_	_
-42	،	،	PUNC	PUNC	attachment=ISO|senID=26642	41	PUNC	_	_
-43	چیزی	چیز	N	IANM	attachment=ISO|number=SING|senID=26642	48	MOS	_	_
-44	خلاف	خلاف	ADJ	AJP	attachment=ISO|senID=26642	43	NPOSTMOD	_	_
-45	مناسبات	مناسبت	N	IANM	attachment=ISO|number=PLUR|senID=26642	44	NEZ	_	_
-46	متعارف	متعارف	ADJ	AJP	attachment=ISO|senID=26642	45	NPOSTMOD	_	_
-47	اخلاقی	اخلاقی	ADJ	AJP	attachment=ISO|senID=26642	45	NPOSTMOD	_	_
-48	باشد	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=26642	29	PRD	_	_
-49	.	.	PUNC	PUNC	attachment=ISO|senID=26642	4	PUNC	_	_
+34	ارتباطات	ارتباط	N	IANM	attachment=ISO|number=PLUR|senID=26642	33	POSDEP	_	_
+35	فضایی‌ای	فضایی	ADJ	AJP	attachment=ISO|senID=26642	34	NPOSTMOD	_	_
+36	که	که	CONJ	CONJ	attachment=ISO|senID=26642	34	NCL	_	_
+37	در	در	PREP	PREP	attachment=ISO|senID=26642	40	ADV	_	_
+38	آنجا	آنجا	N	IANM	attachment=ISO|number=SING|senID=26642	37	POSDEP	_	_
+39	تعریف	تعریف	N	IANM	attachment=ISO|number=SING|senID=26642	40	NVE	_	_
+40	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=26642	36	PRD	_	_
+41	،	،	PUNC	PUNC	attachment=ISO|senID=26642	40	PUNC	_	_
+42	چیزی	چیز	N	IANM	attachment=ISO|number=SING|senID=26642	47	MOS	_	_
+43	خلاف	خلاف	ADJ	AJP	attachment=ISO|senID=26642	42	NPOSTMOD	_	_
+44	مناسبات	مناسبت	N	IANM	attachment=ISO|number=PLUR|senID=26642	43	NEZ	_	_
+45	متعارف	متعارف	ADJ	AJP	attachment=ISO|senID=26642	44	NPOSTMOD	_	_
+46	اخلاقی	اخلاقی	ADJ	AJP	attachment=ISO|senID=26642	44	NPOSTMOD	_	_
+47	باشد	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=26642	29	PRD	_	_
+48	.	.	PUNC	PUNC	attachment=ISO|senID=26642	4	PUNC	_	_
 
 # sent_id = dev-s248
 # text = فروپاشی آرام آرام این جان‌مایه از آن است که جهان به پایان خود نزدیک می‌شود.
@@ -5966,18 +5940,16 @@
 16	در	در	PREP	PREP	attachment=ISO|senID=26673	14	NPP	_	_
 17	آمریکا	آمریکا	N	IANM	attachment=ISO|number=SING|senID=26673	16	POSDEP	_	_
 18	می‌پرداخت	پرداخت#پرداز	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=26673	19	PREDEP	_	_
-19	و	و	CONJ	CONJ	attachment=ISO|senID=26673	28	VCONJ	_	_
-20-21	مشکلات	_	_	_	_	_	_	_	_
-20	مشکل	مشکل	N	IANM	attachment=ISO|number=PLUR|senID=26673	25	PREDEP	_	_
-21	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	20	nmod:poss	_	_
-22	آنها	آنها	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=26673	20	MOZ	_	_
-23	در	در	PREP	PREP	attachment=ISO|senID=26673	20	NPP	_	_
-24	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=26673	23	POSDEP	_	_
-25	را	را	POSTP	POSTP	attachment=ISO|senID=26673	28	OBJ	_	_
-26	به	به	PREP	PREP	attachment=ISO|senID=26673	28	VPRT	_	_
-27	تصویر	تصویر	N	IANM	attachment=ISO|number=SING|senID=26673	26	POSDEP	_	_
-28	می‌کشید	کشید#کش	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=26673	11	PRD	_	_
-29	.	.	PUNC	PUNC	attachment=ISO|senID=26673	10	PUNC	_	_
+19	و	و	CONJ	CONJ	attachment=ISO|senID=26673	27	VCONJ	_	_
+20	مشکلات	مشکل	N	IANM	attachment=ISO|number=PLUR|senID=26673	24	PREDEP	_	_
+21	آنها	آنها	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=26673	20	MOZ	_	_
+22	در	در	PREP	PREP	attachment=ISO|senID=26673	20	NPP	_	_
+23	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=26673	22	POSDEP	_	_
+24	را	را	POSTP	POSTP	attachment=ISO|senID=26673	27	OBJ	_	_
+25	به	به	PREP	PREP	attachment=ISO|senID=26673	27	VPRT	_	_
+26	تصویر	تصویر	N	IANM	attachment=ISO|number=SING|senID=26673	25	POSDEP	_	_
+27	می‌کشید	کشید#کش	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=26673	11	PRD	_	_
+28	.	.	PUNC	PUNC	attachment=ISO|senID=26673	10	PUNC	_	_
 
 # sent_id = dev-s251
 # text = هر چه بود دلی بود که می‌خواند و می‌نواخت و دل‌هایی که به جان خریدار آن آواها و نغمه‌ها بودند.
@@ -6812,16 +6784,14 @@
 
 # sent_id = dev-s299
 # text = ما به آنان زبان حیوانات را آموزاندیم.
-1	ما	ما	PR	SEPER	person=1|attachment=ISO|number=PLUR|senID=30969	8	SBJ	_	_
-2	به	به	PREP	PREP	attachment=ISO|senID=30969	8	VPP	_	_
+1	ما	ما	PR	SEPER	person=1|attachment=ISO|number=PLUR|senID=30969	7	SBJ	_	_
+2	به	به	PREP	PREP	attachment=ISO|senID=30969	7	VPP	_	_
 3	آنان	آنان	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=30969	2	POSDEP	_	_
-4	زبان	زبان	N	IANM	attachment=ISO|number=SING|senID=30969	7	PREDEP	_	_
-5-6	حیوانات	_	_	_	_	_	_	_	_
-5	حیوان	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=30969	4	MOZ	_	_
-6	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	5	nmod:poss	_	_
-7	را	را	POSTP	POSTP	attachment=ISO|senID=30969	8	OBJ	_	_
-8	آموزاندیم	آموزاند#آموزان	V	ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=30969	0	ROOT	_	_
-9	.	.	PUNC	PUNC	attachment=ISO|senID=30969	8	PUNC	_	_
+4	زبان	زبان	N	IANM	attachment=ISO|number=SING|senID=30969	6	PREDEP	_	_
+5	حیوانات	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=30969	4	MOZ	_	_
+6	را	را	POSTP	POSTP	attachment=ISO|senID=30969	7	OBJ	_	_
+7	آموزاندیم	آموزاند#آموزان	V	ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=30969	0	ROOT	_	_
+8	.	.	PUNC	PUNC	attachment=ISO|senID=30969	7	PUNC	_	_
 
 # sent_id = dev-s300
 # text = هر جوان مؤمنی که قرآن بخواند، قرآن با گوشت و خونش آمیخته خواهد شد.
@@ -7645,39 +7615,35 @@
 7	چیزها	چیز	N	IANM	attachment=ISO|number=PLUR|senID=31389	8	PREDEP	_	_
 8	را	را	POSTP	POSTP	attachment=ISO|senID=31389	10	OBJ	_	_
 9	خراب	خراب	ADJ	AJP	attachment=ISO|senID=31389	10	MOS	_	_
-10	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31389	17	VCONJ	_	_
+10	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31389	16	VCONJ	_	_
 11	،	،	PUNC	PUNC	attachment=ISO|senID=31389	10	PUNC	_	_
-12	تعهد	تعهد	N	IANM	attachment=ISO|number=SING|senID=31389	17	OBJ	_	_
-13	به	به	PREP	PREP	attachment=ISO|senID=31389	17	VPP	_	_
-14-15	تعهدات	_	_	_	_	_	_	_	_
-14	تعهد	تعهد	N	IANM	attachment=ISO|number=PLUR|senID=31389	13	POSDEP	_	_
-15	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	14	nmod:poss	_	_
-16	دولت	دولت	N	IANM	attachment=ISO|number=SING|senID=31389	14	MOZ	_	_
-17	می‌انبازد	انباشت#انباز	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31389	18	PREDEP	_	_
-18	و	و	CONJ	CONJ	attachment=ISO|senID=31389	24	VCONJ	_	_
-19	تعهد	تعهد	N	IANM	attachment=ISO|number=SING|senID=31389	24	OBJ	_	_
-20	از	از	PREP	PREP	attachment=ISO|senID=31389	24	VPP	_	_
-21-22	تعهدات	_	_	_	_	_	_	_	_
-21	تعهد	تعهد	N	IANM	attachment=ISO|number=PLUR|senID=31389	20	POSDEP	_	_
-22	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	21	nmod:poss	_	_
-23	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=31389	21	MOZ	_	_
-24	برمی‌دارد	بر#داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31389	0	ROOT	_	_
-25	بدون	بدون	PREP	PREP	attachment=ISO|senID=31389	24	ADV	_	_
-26	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=31389	25	POSDEP	_	_
-27	که	که	SUBR	SUBR	attachment=ISO|senID=31389	26	NCL	_	_
-28	دولت	دولت	N	ANM	attachment=ISO|number=SING|senID=31389	29	SBJ	_	_
-29	بتواند	توانست#توان	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=31389	27	PRD	_	_
-30	سطح	سطح	N	IANM	attachment=ISO|number=SING|senID=31389	33	PREDEP	_	_
-31	پیچیدگی	پیچیدگی	N	IANM	attachment=ISO|number=SING|senID=31389	30	MOZ	_	_
-32	خود	خود	PR	CREFX	attachment=ISO|senID=31389	31	MOZ	_	_
-33	را	را	POSTP	POSTP	attachment=ISO|senID=31389	39	OBJ	_	_
-34	با	با	PREP	PREP	attachment=ISO|senID=31389	38	AJPP	_	_
-35	سطح	سطح	N	IANM	attachment=ISO|number=SING|senID=31389	34	POSDEP	_	_
-36	پیچیدگی	پیچیدگی	N	IANM	attachment=ISO|number=SING|senID=31389	35	MOZ	_	_
-37	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=31389	36	MOZ	_	_
-38	متناسب	متناسب	ADJ	AJP	attachment=ISO|senID=31389	39	MOS	_	_
-39	سازد	ساخت#ساز	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=31389	29	VCL	_	_
-40	.	.	PUNC	PUNC	attachment=ISO|senID=31389	24	PUNC	_	_
+12	تعهد	تعهد	N	IANM	attachment=ISO|number=SING|senID=31389	16	OBJ	_	_
+13	به	به	PREP	PREP	attachment=ISO|senID=31389	16	VPP	_	_
+14	تعهدات	تعهد	N	IANM	attachment=ISO|number=PLUR|senID=31389	13	POSDEP	_	_
+15	دولت	دولت	N	IANM	attachment=ISO|number=SING|senID=31389	14	MOZ	_	_
+16	می‌انبازد	انباشت#انباز	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31389	17	PREDEP	_	_
+17	و	و	CONJ	CONJ	attachment=ISO|senID=31389	22	VCONJ	_	_
+18	تعهد	تعهد	N	IANM	attachment=ISO|number=SING|senID=31389	22	OBJ	_	_
+19	از	از	PREP	PREP	attachment=ISO|senID=31389	22	VPP	_	_
+20	تعهدات	تعهد	N	IANM	attachment=ISO|number=PLUR|senID=31389	19	POSDEP	_	_
+21	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=31389	20	MOZ	_	_
+22	برمی‌دارد	بر#داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31389	0	ROOT	_	_
+23	بدون	بدون	PREP	PREP	attachment=ISO|senID=31389	22	ADV	_	_
+24	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=31389	23	POSDEP	_	_
+25	که	که	SUBR	SUBR	attachment=ISO|senID=31389	24	NCL	_	_
+26	دولت	دولت	N	ANM	attachment=ISO|number=SING|senID=31389	27	SBJ	_	_
+27	بتواند	توانست#توان	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=31389	25	PRD	_	_
+28	سطح	سطح	N	IANM	attachment=ISO|number=SING|senID=31389	31	PREDEP	_	_
+29	پیچیدگی	پیچیدگی	N	IANM	attachment=ISO|number=SING|senID=31389	28	MOZ	_	_
+30	خود	خود	PR	CREFX	attachment=ISO|senID=31389	29	MOZ	_	_
+31	را	را	POSTP	POSTP	attachment=ISO|senID=31389	37	OBJ	_	_
+32	با	با	PREP	PREP	attachment=ISO|senID=31389	36	AJPP	_	_
+33	سطح	سطح	N	IANM	attachment=ISO|number=SING|senID=31389	32	POSDEP	_	_
+34	پیچیدگی	پیچیدگی	N	IANM	attachment=ISO|number=SING|senID=31389	33	MOZ	_	_
+35	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=31389	34	MOZ	_	_
+36	متناسب	متناسب	ADJ	AJP	attachment=ISO|senID=31389	37	MOS	_	_
+37	سازد	ساخت#ساز	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=31389	27	VCL	_	_
+38	.	.	PUNC	PUNC	attachment=ISO|senID=31389	22	PUNC	_	_
 
 # sent_id = dev-s339
 # text = پیاده می‌شود می‌آید سراغم.
@@ -7734,22 +7700,20 @@
 
 # sent_id = dev-s343
 # text = در صورت استمرار این شیوه‌ها، یقیناً قسمت اعظمی از انتظارات جامعه برآورده خواهد شد.
-1	در	در	PREP	PREP	attachment=ISO|senID=31442	14	ADV	_	_
+1	در	در	PREP	PREP	attachment=ISO|senID=31442	13	ADV	_	_
 2	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=31442	1	POSDEP	_	_
 3	استمرار	استمرار	N	IANM	attachment=ISO|number=SING|senID=31442	2	MOZ	_	_
 4	این	این	PREM	DEMAJ	attachment=ISO|senID=31442	5	NPREMOD	_	_
 5	شیوه‌ها	شیوه	N	IANM	attachment=ISO|number=PLUR|senID=31442	3	MOZ	_	_
 6	،	،	PUNC	PUNC	attachment=ISO|senID=31442	5	PUNC	_	_
-7	یقیناً	یقیناً	ADV	SADV	attachment=ISO|senID=31442	14	ADV	_	_
-8	قسمت	قسمت	N	IANM	attachment=ISO|number=SING|senID=31442	14	SBJ	_	_
+7	یقیناً	یقیناً	ADV	SADV	attachment=ISO|senID=31442	13	ADV	_	_
+8	قسمت	قسمت	N	IANM	attachment=ISO|number=SING|senID=31442	13	SBJ	_	_
 9	اعظمی	عظیم	ADJ	AJCM	attachment=ISO|senID=31442	8	NPOSTMOD	_	_
 10	از	از	PREP	PREP	attachment=ISO|senID=31442	9	COMPPP	_	_
-11-12	انتظارات	_	_	_	_	_	_	_	_
-11	انتظار	انتظار	N	IANM	attachment=ISO|number=PLUR|senID=31442	10	POSDEP	_	_
-12	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	11	nmod:poss	_	_
-13	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=31442	11	MOZ	_	_
-14	برآورده خواهد شد	بر#آورد#آور	V	PASS	person=3|attachment=ISO|number=SING|tma=AY|senID=31442	0	ROOT	_	_
-15	.	.	PUNC	PUNC	attachment=ISO|senID=31442	14	PUNC	_	_
+11	انتظارات	انتظار	N	IANM	attachment=ISO|number=PLUR|senID=31442	10	POSDEP	_	_
+12	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=31442	11	MOZ	_	_
+13	برآورده خواهد شد	بر#آورد#آور	V	PASS	person=3|attachment=ISO|number=SING|tma=AY|senID=31442	0	ROOT	_	_
+14	.	.	PUNC	PUNC	attachment=ISO|senID=31442	13	PUNC	_	_
 
 # sent_id = dev-s344
 # text = آن قدر آکنده‌ام اکنون از حسی تلخ، که چشم بستم و آن را در ادامهٔ این چند خط منتشر کردم.
@@ -7978,17 +7942,15 @@
 2	همچنین	همچنین	ADV	SADV	attachment=ISO|senID=31599	4	ADV	_	_
 3	شعرهایی	شعر	N	IANM	attachment=ISO|number=PLUR|senID=31599	4	OBJ	_	_
 4	نوشته	نوشت#نویس	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=31599	5	PREDEP	_	_
-5	و	و	CONJ	CONJ	attachment=ISO|senID=31599	13	VCONJ	_	_
-6	بنا	بنا	N	IANM	attachment=ISO|number=SING|senID=31599	13	ADV	_	_
+5	و	و	CONJ	CONJ	attachment=ISO|senID=31599	12	VCONJ	_	_
+6	بنا	بنا	N	IANM	attachment=ISO|number=SING|senID=31599	12	ADV	_	_
 7	بر	بر	PREP	PREP	attachment=ISO|senID=31599	6	NPP	_	_
 8	آن	آن	PREM	DEMAJ	attachment=ISO|senID=31599	9	NPREMOD	_	_
-9-10	احساسات	_	_	_	_	_	_	_	_
-9	احساس	احساس	N	IANM	attachment=ISO|number=PLUR|senID=31599	7	POSDEP	_	_
-10	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	9	nmod:poss	_	_
-11	،	،	PUNC	PUNC	attachment=ISO|senID=31599	9	PUNC	_	_
-12	نغمه‌هایی	نغمه	N	IANM	attachment=ISO|number=PLUR|senID=31599	13	OBJ	_	_
-13	سراییده است	سرایید#سرا	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=31599	0	ROOT	_	_
-14	.	.	PUNC	PUNC	attachment=ISO|senID=31599	13	PUNC	_	_
+9	احساسات	احساس	N	IANM	attachment=ISO|number=PLUR|senID=31599	7	POSDEP	_	_
+10	،	،	PUNC	PUNC	attachment=ISO|senID=31599	9	PUNC	_	_
+11	نغمه‌هایی	نغمه	N	IANM	attachment=ISO|number=PLUR|senID=31599	12	OBJ	_	_
+12	سراییده است	سرایید#سرا	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=31599	0	ROOT	_	_
+13	.	.	PUNC	PUNC	attachment=ISO|senID=31599	12	PUNC	_	_
 
 # sent_id = dev-s359
 # text = هی می‌سابید و می‌سابید.
@@ -8466,32 +8428,30 @@
 2	بهداشت	بهداشت	N	IANM	attachment=ISO|number=SING|senID=31914	1	MOZ	_	_
 3	گفت	گفت#گو	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=31914	0	ROOT	_	_
 4	این	این	PREM	DEMAJ	attachment=ISO|senID=31914	5	NPREMOD	_	_
-5	وزارت‌خانه	وزارت‌خانه	N	IANM	attachment=ISO|number=SING|senID=31914	28	SBJ	_	_
-6	از	از	PREP	PREP	attachment=ISO|senID=31914	27	NPP	_	_
+5	وزارت‌خانه	وزارت‌خانه	N	IANM	attachment=ISO|number=SING|senID=31914	27	SBJ	_	_
+6	از	از	PREP	PREP	attachment=ISO|senID=31914	26	NPP	_	_
 7	تولید	تولید	N	IANM	attachment=ISO|number=SING|senID=31914	6	POSDEP	_	_
 8	و	و	CONJ	CONJ	attachment=ISO|senID=31914	7	NCONJ	_	_
 9	عرضه	عرضه	N	IANM	attachment=ISO|number=SING|senID=31914	8	POSDEP	_	_
 10	گندم‌هایی	گندم	N	IANM	attachment=ISO|number=PLUR|senID=31914	7	MOZ	_	_
 11	که	که	SUBR	SUBR	attachment=ISO|senID=31914	10	NCL	_	_
-12	آرسنیک	آرسنیک	N	IANM	attachment=ISO|number=SING|senID=31914	25	SBJ	_	_
+12	آرسنیک	آرسنیک	N	IANM	attachment=ISO|number=SING|senID=31914	24	SBJ	_	_
 13	و	و	CONJ	CONJ	attachment=ISO|senID=31914	12	NCONJ	_	_
 14	یا	یا	CONJ	CONJ	attachment=ISO|senID=31914	13	POSDEP	_	_
 15	سایر	سایر	N	IANM	attachment=ISO|number=SING|senID=31914	13	POSDEP	_	_
-16-17	فلزات	_	_	_	_	_	_	_	_
-16	فلز	فلز	N	IANM	attachment=ISO|number=PLUR|senID=31914	15	MOZ	_	_
-17	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	16	nmod:poss	_	_
-18	موجود	موجود	ADJ	AJP	attachment=ISO|senID=31914	16	NPOSTMOD	_	_
-19	در	در	PREP	PREP	attachment=ISO|senID=31914	18	NEZ	_	_
-20	آنها	آنها	PR	DEMON	attachment=ISO|number=PLUR|senID=31914	19	POSDEP	_	_
-21	بالاتر	بالا	ADJ	AJCM	attachment=ISO|senID=31914	25	MOS	_	_
-22	از	از	PREP	PREP	attachment=ISO|senID=31914	21	COMPPP	_	_
-23	حد	حد	N	IANM	attachment=ISO|number=SING|senID=31914	22	POSDEP	_	_
-24	استاندارد	استاندارد	ADJ	AJP	attachment=ISO|senID=31914	23	NPOSTMOD	_	_
-25	باشد	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=31914	11	PRD	_	_
-26	،	،	PUNC	PUNC	attachment=ISO|senID=31914	25	PUNC	_	_
-27	ممانعت	ممانعت	N	IANM	attachment=ISO|number=SING|senID=31914	28	NVE	_	_
-28	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31914	3	VCL	_	_
-29	.	.	PUNC	PUNC	attachment=ISO|senID=31914	3	PUNC	_	_
+16	فلزات	فلز	N	IANM	attachment=ISO|number=PLUR|senID=31914	15	MOZ	_	_
+17	موجود	موجود	ADJ	AJP	attachment=ISO|senID=31914	16	NPOSTMOD	_	_
+18	در	در	PREP	PREP	attachment=ISO|senID=31914	17	NEZ	_	_
+19	آنها	آنها	PR	DEMON	attachment=ISO|number=PLUR|senID=31914	18	POSDEP	_	_
+20	بالاتر	بالا	ADJ	AJCM	attachment=ISO|senID=31914	24	MOS	_	_
+21	از	از	PREP	PREP	attachment=ISO|senID=31914	20	COMPPP	_	_
+22	حد	حد	N	IANM	attachment=ISO|number=SING|senID=31914	21	POSDEP	_	_
+23	استاندارد	استاندارد	ADJ	AJP	attachment=ISO|senID=31914	22	NPOSTMOD	_	_
+24	باشد	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=31914	11	PRD	_	_
+25	،	،	PUNC	PUNC	attachment=ISO|senID=31914	24	PUNC	_	_
+26	ممانعت	ممانعت	N	IANM	attachment=ISO|number=SING|senID=31914	27	NVE	_	_
+27	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31914	3	VCL	_	_
+28	.	.	PUNC	PUNC	attachment=ISO|senID=31914	3	PUNC	_	_
 
 # sent_id = dev-s388
 # text = من رؤیای نوجوانی‌ام را دریافتم و همیشه در همان جهت استقامت کردم.
@@ -9657,28 +9617,26 @@
 2	امیدوار	امیدوار	ADJ	AJP	attachment=ISO|senID=44386	3	MOS	_	_
 3	بود	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=44386	1	VCL	_	_
 4	که	که	SUBR	SUBR	attachment=ISO|senID=44386	3	VCL	_	_
-5	کریم	کریم	N	ANM	attachment=ISO|number=SING|senID=44386	24	SBJ	_	_
+5	کریم	کریم	N	ANM	attachment=ISO|number=SING|senID=44386	23	SBJ	_	_
 6	امامی	امامی	N	ANM	attachment=ISO|number=SING|senID=44386	5	MOZ	_	_
 7	هم	هم	ADV	SADV	attachment=ISO|senID=44386	5	POSDEP	_	_
 8	ترجمه‌های	ترجمه	N	IANM	attachment=ISO|number=PLUR|senID=44386	10	PREDEP	_	_
 9	خود	خود	PR	CREFX	attachment=ISO|senID=44386	8	MOZ	_	_
-10	را	را	POSTP	POSTP	attachment=ISO|senID=44386	24	OBJ	_	_
-11	بر	بر	PREP	PREP	attachment=ISO|senID=44386	24	ADV	_	_
+10	را	را	POSTP	POSTP	attachment=ISO|senID=44386	23	OBJ	_	_
+11	بر	بر	PREP	PREP	attachment=ISO|senID=44386	23	ADV	_	_
 12	اساس	اساس	N	IANM	attachment=ISO|number=SING|senID=44386	11	POSDEP	_	_
-13-14	نظرات	_	_	_	_	_	_	_	_
-13	نظر	نظر	N	IANM	attachment=ISO|number=PLUR|senID=44386	12	MOZ	_	_
-14	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	13	nmod:poss	_	_
-15	تازهٔ	تازه	ADJ	AJP	attachment=ISO|senID=44386	13	NPOSTMOD	_	_
-16	خود	خود	PR	CREFX	attachment=ISO|senID=44386	13	MOZ	_	_
-17	و	و	CONJ	CONJ	attachment=ISO|senID=44386	13	NCONJ	_	_
-18	نقدهای	نقد	N	IANM	attachment=ISO|number=PLUR|senID=44386	17	POSDEP	_	_
-19	شفاهی	شفاهی	ADJ	AJP	attachment=ISO|senID=44386	18	NPOSTMOD	_	_
-20	و	و	CONJ	CONJ	attachment=ISO|senID=44386	19	AJCONJ	_	_
-21	کتبی	کتبی	ADJ	AJP	attachment=ISO|senID=44386	20	POSDEP	_	_
-22	دیگران	دیگری	N	ANM	attachment=ISO|number=PLUR|senID=44386	18	MOZ	_	_
-23	بازنگری	بازنگری	N	IANM	attachment=ISO|number=SING|senID=44386	24	NVE	_	_
-24	کرده باشد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=44386	4	PRD	_	_
-25	.	.	PUNC	PUNC	attachment=ISO|senID=44386	1	PUNC	_	_
+13	نظرات	نظر	N	IANM	attachment=ISO|number=PLUR|senID=44386	12	MOZ	_	_
+14	تازهٔ	تازه	ADJ	AJP	attachment=ISO|senID=44386	13	NPOSTMOD	_	_
+15	خود	خود	PR	CREFX	attachment=ISO|senID=44386	13	MOZ	_	_
+16	و	و	CONJ	CONJ	attachment=ISO|senID=44386	13	NCONJ	_	_
+17	نقدهای	نقد	N	IANM	attachment=ISO|number=PLUR|senID=44386	16	POSDEP	_	_
+18	شفاهی	شفاهی	ADJ	AJP	attachment=ISO|senID=44386	17	NPOSTMOD	_	_
+19	و	و	CONJ	CONJ	attachment=ISO|senID=44386	18	AJCONJ	_	_
+20	کتبی	کتبی	ADJ	AJP	attachment=ISO|senID=44386	19	POSDEP	_	_
+21	دیگران	دیگری	N	ANM	attachment=ISO|number=PLUR|senID=44386	17	MOZ	_	_
+22	بازنگری	بازنگری	N	IANM	attachment=ISO|number=SING|senID=44386	23	NVE	_	_
+23	کرده باشد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=44386	4	PRD	_	_
+24	.	.	PUNC	PUNC	attachment=ISO|senID=44386	1	PUNC	_	_
 
 # sent_id = dev-s452
 # text = یکی از دخترهای دورهٔ پسادکتری در آزمایشگاه فارماکولوژی در ساعات بعد از کارش بچه‌داری می‌کند.
@@ -9711,16 +9669,14 @@
 
 # sent_id = dev-s454
 # text = همهٔ مایعات روی زمین را بخار خواهد کرد!
-1	همهٔ	همه	N	IANM	attachment=ISO|number=PLUR|senID=44416	6	PREDEP	_	_
-2-3	مایعات	_	_	_	_	_	_	_	_
-2	مایع	مایع	N	IANM	attachment=ISO|number=PLUR|senID=44416	1	MOZ	_	_
-3	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	_
-4	روی	روی	PREP	PREP	attachment=ISO|senID=44416	2	NPP	_	_
-5	زمین	زمین	N	IANM	attachment=ISO|number=SING|senID=44416	4	POSDEP	_	_
-6	را	را	POSTP	POSTP	attachment=ISO|senID=44416	8	OBJ	_	_
-7	بخار	بخار	N	IANM	attachment=ISO|number=SING|senID=44416	8	NVE	_	_
-8	خواهد کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=44416	0	ROOT	_	_
-9	!	!	PUNC	PUNC	attachment=ISO|senID=44416	8	PUNC	_	_
+1	همهٔ	همه	N	IANM	attachment=ISO|number=PLUR|senID=44416	5	PREDEP	_	_
+2	مایعات	مایع	N	IANM	attachment=ISO|number=PLUR|senID=44416	1	MOZ	_	_
+3	روی	روی	PREP	PREP	attachment=ISO|senID=44416	2	NPP	_	_
+4	زمین	زمین	N	IANM	attachment=ISO|number=SING|senID=44416	3	POSDEP	_	_
+5	را	را	POSTP	POSTP	attachment=ISO|senID=44416	7	OBJ	_	_
+6	بخار	بخار	N	IANM	attachment=ISO|number=SING|senID=44416	7	NVE	_	_
+7	خواهد کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=44416	0	ROOT	_	_
+8	!	!	PUNC	PUNC	attachment=ISO|senID=44416	7	PUNC	_	_
 
 # sent_id = dev-s455
 # text = ایرانی‌ها با موفقیت به فناوری ایجاد اختلال ماهواره‌ای دست یافته‌اند و توانسته‌اند توانمندی‌های ناوبری ماهواره‌های آمریکا را ردگیری کنند.
@@ -9986,15 +9942,13 @@
 6	را	را	POSTP	POSTP	attachment=ISO|senID=44805	8	OBJ	_	_
 7	تقبیح	تقبیح	N	IANM	attachment=ISO|number=SING|senID=44805	8	NVE	_	_
 8	خواهند کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=AY|senID=44805	9	PREDEP	_	_
-9	و	و	CONJ	CONJ	attachment=ISO|senID=44805	15	VCONJ	_	_
-10-11	اتهامات	_	_	_	_	_	_	_	_
-10	اتهام	اتهام	N	IANM	attachment=ISO|number=PLUR|senID=44805	15	NVE	_	_
-11	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	10	nmod:poss	_	_
-12	دیگری	دیگر	ADJ	AJP	attachment=ISO|senID=44805	10	NPOSTMOD	_	_
-13	به	به	PREP	PREP	attachment=ISO|senID=44805	10	NPP	_	_
-14	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=44805	13	POSDEP	_	_
-15	خواهند زد	زد#زن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=AY|senID=44805	0	ROOT	_	_
-16	.	.	PUNC	PUNC	attachment=ISO|senID=44805	15	PUNC	_	_
+9	و	و	CONJ	CONJ	attachment=ISO|senID=44805	14	VCONJ	_	_
+10	اتهامات	اتهام	N	IANM	attachment=ISO|number=PLUR|senID=44805	14	NVE	_	_
+11	دیگری	دیگر	ADJ	AJP	attachment=ISO|senID=44805	10	NPOSTMOD	_	_
+12	به	به	PREP	PREP	attachment=ISO|senID=44805	10	NPP	_	_
+13	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=44805	12	POSDEP	_	_
+14	خواهند زد	زد#زن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=AY|senID=44805	0	ROOT	_	_
+15	.	.	PUNC	PUNC	attachment=ISO|senID=44805	14	PUNC	_	_
 
 # sent_id = dev-s469
 # text = شهیدان سرافراز خود را تجلیل و تقدیس بکنید.
@@ -10236,14 +10190,12 @@
 
 # sent_id = dev-s479
 # text = اختلافات در پرسپولیس ریشه دواند.
-1-2	اختلافات	_	_	_	_	_	_	_	_
-1	اختلاف	اختلاف	N	IANM	attachment=ISO|number=PLUR|senID=32504	6	SBJ	_	_
-2	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	1	nmod:poss	_	_
-3	در	در	PREP	PREP	attachment=ISO|senID=32504	6	VPP	_	_
-4	پرسپولیس	پرسپولیس	N	IANM	attachment=ISO|number=SING|senID=32504	3	POSDEP	_	_
-5	ریشه	ریشه	N	IANM	attachment=ISO|number=SING|senID=32504	6	NVE	_	_
-6	دواند	دواند#دوان	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=32504	0	ROOT	_	_
-7	.	.	PUNC	PUNC	attachment=ISO|senID=32504	6	PUNC	_	_
+1	اختلافات	اختلاف	N	IANM	attachment=ISO|number=PLUR|senID=32504	5	SBJ	_	_
+2	در	در	PREP	PREP	attachment=ISO|senID=32504	5	VPP	_	_
+3	پرسپولیس	پرسپولیس	N	IANM	attachment=ISO|number=SING|senID=32504	2	POSDEP	_	_
+4	ریشه	ریشه	N	IANM	attachment=ISO|number=SING|senID=32504	5	NVE	_	_
+5	دواند	دواند#دوان	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=32504	0	ROOT	_	_
+6	.	.	PUNC	PUNC	attachment=ISO|senID=32504	5	PUNC	_	_
 
 # sent_id = dev-s480
 # text = فاش بگویم که شما رشتهٔ تعهد اسلامی را گسیخته‌اید.
@@ -12068,37 +12020,33 @@
 
 # sent_id = dev-s596
 # text = اقدامات خالد اعتراضات افراد زیادی از سطوح رهبری نظیر ملا حسن رستگار را برانگیخته که حتی کتباً اعتراضشان را به دفتر سیاسی ابلاغ داشته‌اند.
-1-2	اقدامات	_	_	_	_	_	_	_	_
-1	اقدام	اقدام	N	IANM	attachment=ISO|number=PLUR|senID=33711	16	SBJ	_	_
-2	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	1	nmod:poss	_	_
-3	خالد	خالد	N	ANM	attachment=ISO|number=SING|senID=33711	1	MOZ	_	_
-4-5	اعتراضات	_	_	_	_	_	_	_	_
-4	اعتراض	اعتراض	N	IANM	attachment=ISO|number=PLUR|senID=33711	15	PREDEP	_	_
-5	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
-6	افراد	فرد	N	ANM	attachment=ISO|number=PLUR|senID=33711	4	MOZ	_	_
-7	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=33711	6	NPOSTMOD	_	_
-8	از	از	PREP	PREP	attachment=ISO|senID=33711	6	NPP	_	_
-9	سطوح	سطح	N	IANM	attachment=ISO|number=PLUR|senID=33711	8	POSDEP	_	_
-10	رهبری	رهبری	N	IANM	attachment=ISO|number=SING|senID=33711	9	MOZ	_	_
-11	نظیر	نظیر	PREP	PREP	attachment=ISO|senID=33711	6	NPP	_	_
-12	ملا	ملا	IDEN	IDEN	attachment=ISO|number=SING|senID=33711	13	PREDEP	_	_
-13	حسن	حسن	N	ANM	attachment=ISO|number=SING|senID=33711	11	POSDEP	_	_
-14	رستگار	رستگار	N	ANM	attachment=ISO|number=SING|senID=33711	13	MOZ	_	_
-15	را	را	POSTP	POSTP	attachment=ISO|senID=33711	16	OBJ	_	_
-16	برانگیخته	بر#انگیخت#انگیز	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=33711	0	ROOT	_	_
-17	که	که	SUBR	SUBR	attachment=ISO|senID=33711	6	NCL	_	_
-18	حتی	حتی	ADV	SADV	attachment=ISO|senID=33711	19	PREDEP	_	_
-19	کتباً	کتباً	ADV	SADV	attachment=ISO|senID=33711	27	ADV	_	_
-20-21	اعتراضشان	_	_	_	_	_	_	_	_
-20	اعتراض	اعتراض	N	IANM	attachment=ISO|number=SING|senID=33711	22	PREDEP	_	_
-21	شان	آنها	PRON	PRO	Number=Plur|Person=3|PronType=Prs	20	nmod:poss	_	_
-22	را	را	POSTP	POSTP	attachment=ISO|senID=33711	27	OBJ	_	_
-23	به	به	PREP	PREP	attachment=ISO|senID=33711	26	NPP	_	_
-24	دفتر	دفتر	N	IANM	attachment=ISO|number=SING|senID=33711	23	POSDEP	_	_
-25	سیاسی	سیاسی	ADJ	AJP	attachment=ISO|senID=33711	24	NPOSTMOD	_	_
-26	ابلاغ	ابلاغ	N	IANM	attachment=ISO|number=SING|senID=33711	27	NVE	_	_
-27	داشته‌اند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=33711	17	PRD	_	_
-28	.	.	PUNC	PUNC	attachment=ISO|senID=33711	27	PUNC	_	_
+1	اقدامات	اقدام	N	IANM	attachment=ISO|number=PLUR|senID=33711	14	SBJ	_	_
+2	خالد	خالد	N	ANM	attachment=ISO|number=SING|senID=33711	1	MOZ	_	_
+3	اعتراضات	اعتراض	N	IANM	attachment=ISO|number=PLUR|senID=33711	13	PREDEP	_	_
+4	افراد	فرد	N	ANM	attachment=ISO|number=PLUR|senID=33711	3	MOZ	_	_
+5	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=33711	4	NPOSTMOD	_	_
+6	از	از	PREP	PREP	attachment=ISO|senID=33711	4	NPP	_	_
+7	سطوح	سطح	N	IANM	attachment=ISO|number=PLUR|senID=33711	6	POSDEP	_	_
+8	رهبری	رهبری	N	IANM	attachment=ISO|number=SING|senID=33711	7	MOZ	_	_
+9	نظیر	نظیر	PREP	PREP	attachment=ISO|senID=33711	4	NPP	_	_
+10	ملا	ملا	IDEN	IDEN	attachment=ISO|number=SING|senID=33711	11	PREDEP	_	_
+11	حسن	حسن	N	ANM	attachment=ISO|number=SING|senID=33711	9	POSDEP	_	_
+12	رستگار	رستگار	N	ANM	attachment=ISO|number=SING|senID=33711	11	MOZ	_	_
+13	را	را	POSTP	POSTP	attachment=ISO|senID=33711	14	OBJ	_	_
+14	برانگیخته	بر#انگیخت#انگیز	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=33711	0	ROOT	_	_
+15	که	که	SUBR	SUBR	attachment=ISO|senID=33711	4	NCL	_	_
+16	حتی	حتی	ADV	SADV	attachment=ISO|senID=33711	17	PREDEP	_	_
+17	کتباً	کتباً	ADV	SADV	attachment=ISO|senID=33711	25	ADV	_	_
+18-19	اعتراضشان	_	_	_	_	_	_	_	_
+18	اعتراض	اعتراض	N	IANM	attachment=ISO|number=SING|senID=33711	20	PREDEP	_	_
+19	شان	آنها	PRON	PRO	Number=Plur|Person=3|PronType=Prs	18	nmod:poss	_	_
+20	را	را	POSTP	POSTP	attachment=ISO|senID=33711	25	OBJ	_	_
+21	به	به	PREP	PREP	attachment=ISO|senID=33711	24	NPP	_	_
+22	دفتر	دفتر	N	IANM	attachment=ISO|number=SING|senID=33711	21	POSDEP	_	_
+23	سیاسی	سیاسی	ADJ	AJP	attachment=ISO|senID=33711	22	NPOSTMOD	_	_
+24	ابلاغ	ابلاغ	N	IANM	attachment=ISO|number=SING|senID=33711	25	NVE	_	_
+25	داشته‌اند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=33711	15	PRD	_	_
+26	.	.	PUNC	PUNC	attachment=ISO|senID=33711	25	PUNC	_	_
 
 # sent_id = dev-s597
 # text = گذرنامهٔ زائران معتاد ابطال می‌شود.
@@ -12341,52 +12289,48 @@
 
 # sent_id = dev-s610
 # text = در صورت هدف قرار گرفتن دیمونا، ابری از تشعشعات رادیواکتیو مناطق اطراف نیروگاه را احاطه خواهد کرد.
-1	در	در	PREP	PREP	attachment=ISO|senID=33852	18	ADV	_	_
+1	در	در	PREP	PREP	attachment=ISO|senID=33852	17	ADV	_	_
 2	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=33852	1	POSDEP	_	_
 3	هدف	هدف	N	IANM	attachment=ISO|number=SING|senID=33852	5	PREDEP	_	_
 4	قرار	قرار	N	IANM	attachment=ISO|number=SING|senID=33852	5	NE	_	_
 5	گرفتن	گرفتن	N	IANM	attachment=ISO|number=SING|senID=33852	2	MOZ	_	_
 6	دیمونا	دیمونا	N	IANM	attachment=ISO|number=SING|senID=33852	5	MOZ	_	_
 7	،	،	PUNC	PUNC	attachment=ISO|senID=33852	6	PUNC	_	_
-8	ابری	ابر	N	IANM	attachment=ISO|number=SING|senID=33852	18	SBJ	_	_
+8	ابری	ابر	N	IANM	attachment=ISO|number=SING|senID=33852	17	SBJ	_	_
 9	از	از	PREP	PREP	attachment=ISO|senID=33852	8	NPP	_	_
-10-11	تشعشعات	_	_	_	_	_	_	_	_
-10	تشعشع	تشعشع	N	IANM	attachment=ISO|number=PLUR|senID=33852	9	POSDEP	_	_
-11	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	10	nmod:poss	_	_
-12	رادیواکتیو	رادیواکتیو	N	IANM	attachment=ISO|number=SING|senID=33852	10	MOZ	_	_
-13	مناطق	منطقه	N	IANM	attachment=ISO|number=PLUR|senID=33852	16	PREDEP	_	_
-14	اطراف	طرف	N	IANM	attachment=ISO|number=SING|senID=33852	13	MOZ	_	_
-15	نیروگاه	نیروگاه	N	IANM	attachment=ISO|number=SING|senID=33852	14	MOZ	_	_
-16	را	را	POSTP	POSTP	attachment=ISO|senID=33852	18	OBJ	_	_
-17	احاطه	احاطه	N	IANM	attachment=ISO|number=SING|senID=33852	18	NVE	_	_
-18	خواهد کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=33852	0	ROOT	_	_
-19	.	.	PUNC	PUNC	attachment=ISO|senID=33852	18	PUNC	_	_
+10	تشعشعات	تشعشع	N	IANM	attachment=ISO|number=PLUR|senID=33852	9	POSDEP	_	_
+11	رادیواکتیو	رادیواکتیو	N	IANM	attachment=ISO|number=SING|senID=33852	10	MOZ	_	_
+12	مناطق	منطقه	N	IANM	attachment=ISO|number=PLUR|senID=33852	15	PREDEP	_	_
+13	اطراف	طرف	N	IANM	attachment=ISO|number=SING|senID=33852	12	MOZ	_	_
+14	نیروگاه	نیروگاه	N	IANM	attachment=ISO|number=SING|senID=33852	13	MOZ	_	_
+15	را	را	POSTP	POSTP	attachment=ISO|senID=33852	17	OBJ	_	_
+16	احاطه	احاطه	N	IANM	attachment=ISO|number=SING|senID=33852	17	NVE	_	_
+17	خواهد کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=33852	0	ROOT	_	_
+18	.	.	PUNC	PUNC	attachment=ISO|senID=33852	17	PUNC	_	_
 
 # sent_id = dev-s611
 # text = امام در اکثر موارد رسیدگی و حل و فصل موضوعات مورد منازعه و اختلاف را به آقای هاشمی احاله می‌کردند.
-1	امام	امام	N	ANM	attachment=ISO|number=SING|senID=33862	21	SBJ	_	_
-2	در	در	PREP	PREP	attachment=ISO|senID=33862	21	ADV	_	_
+1	امام	امام	N	ANM	attachment=ISO|number=SING|senID=33862	20	SBJ	_	_
+2	در	در	PREP	PREP	attachment=ISO|senID=33862	20	ADV	_	_
 3	اکثر	اکثر	PREM	AMBAJ	attachment=ISO|senID=33862	4	NPREMOD	_	_
 4	موارد	مورد	N	IANM	attachment=ISO|number=PLUR|senID=33862	2	POSDEP	_	_
-5	رسیدگی	رسیدگی	N	IANM	attachment=ISO|number=SING|senID=33862	16	PREDEP	_	_
+5	رسیدگی	رسیدگی	N	IANM	attachment=ISO|number=SING|senID=33862	15	PREDEP	_	_
 6	و	و	CONJ	CONJ	attachment=ISO|senID=33862	5	NCONJ	_	_
 7	حل	حل	N	IANM	attachment=ISO|number=SING|senID=33862	6	POSDEP	_	_
 8	و	و	CONJ	CONJ	attachment=ISO|senID=33862	7	NCONJ	_	_
 9	فصل	فصل	N	IANM	attachment=ISO|number=SING|senID=33862	8	POSDEP	_	_
-10-11	موضوعات	_	_	_	_	_	_	_	_
-10	موضوع	موضوع	N	IANM	attachment=ISO|number=PLUR|senID=33862	5	MOZ	_	_
-11	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	10	nmod:poss	_	_
-12	مورد	مورد	PREP	PREP	attachment=ISO|senID=33862	10	NPOSTMOD	_	_
-13	منازعه	منازعه	N	IANM	attachment=ISO|number=SING|senID=33862	12	POSDEP	_	_
-14	و	و	CONJ	CONJ	attachment=ISO|senID=33862	13	NCONJ	_	_
-15	اختلاف	اختلاف	N	IANM	attachment=ISO|number=SING|senID=33862	14	POSDEP	_	_
-16	را	را	POSTP	POSTP	attachment=ISO|senID=33862	21	OBJ	_	_
-17	به	به	PREP	PREP	attachment=ISO|senID=33862	20	NPP	_	_
-18	آقای	آقا	N	ANM	attachment=ISO|number=SING|senID=33862	17	POSDEP	_	_
-19	هاشمی	هاشمی	N	ANM	attachment=ISO|number=SING|senID=33862	18	MOZ	_	_
-20	احاله	احاله	N	IANM	attachment=ISO|number=SING|senID=33862	21	NVE	_	_
-21	می‌کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=33862	0	ROOT	_	_
-22	.	.	PUNC	PUNC	attachment=ISO|senID=33862	21	PUNC	_	_
+10	موضوعات	موضوع	N	IANM	attachment=ISO|number=PLUR|senID=33862	5	MOZ	_	_
+11	مورد	مورد	PREP	PREP	attachment=ISO|senID=33862	10	NPOSTMOD	_	_
+12	منازعه	منازعه	N	IANM	attachment=ISO|number=SING|senID=33862	11	POSDEP	_	_
+13	و	و	CONJ	CONJ	attachment=ISO|senID=33862	12	NCONJ	_	_
+14	اختلاف	اختلاف	N	IANM	attachment=ISO|number=SING|senID=33862	13	POSDEP	_	_
+15	را	را	POSTP	POSTP	attachment=ISO|senID=33862	20	OBJ	_	_
+16	به	به	PREP	PREP	attachment=ISO|senID=33862	19	NPP	_	_
+17	آقای	آقا	N	ANM	attachment=ISO|number=SING|senID=33862	16	POSDEP	_	_
+18	هاشمی	هاشمی	N	ANM	attachment=ISO|number=SING|senID=33862	17	MOZ	_	_
+19	احاله	احاله	N	IANM	attachment=ISO|number=SING|senID=33862	20	NVE	_	_
+20	می‌کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=33862	0	ROOT	_	_
+21	.	.	PUNC	PUNC	attachment=ISO|senID=33862	20	PUNC	_	_
 
 # sent_id = dev-s612
 # text = مطابق کتاب و سنت داوری کن و هر گاه حکمی را در کتاب و سنت نیافتی خود اجتهاد کن!
@@ -12884,20 +12828,18 @@
 
 # sent_id = dev-s644
 # text = تغییرات، نوعی پیروزی برای طبقات سرکوب‌شده در فرانسه را بازنمایاندند.
-1-2	تغییرات	_	_	_	_	_	_	_	_
-1	تغییر	تغییر	N	IANM	attachment=ISO|number=PLUR|senID=34196	12	SBJ	_	_
-2	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	1	nmod:poss	_	_
-3	،	،	PUNC	PUNC	attachment=ISO|senID=34196	1	PUNC	_	_
-4	نوعی	نوع	N	IANM	attachment=ISO|number=SING|senID=34196	5	MESU	_	_
-5	پیروزی	پیروزی	N	IANM	attachment=ISO|number=SING|senID=34196	11	PREDEP	_	_
-6	برای	برای	PREP	PREP	attachment=ISO|senID=34196	5	NPP	_	_
-7	طبقات	طبقه	N	IANM	attachment=ISO|number=PLUR|senID=34196	6	POSDEP	_	_
-8	سرکوب‌شده	سرکوب‌شده	ADJ	AJP	attachment=ISO|senID=34196	7	NPOSTMOD	_	_
-9	در	در	PREP	PREP	attachment=ISO|senID=34196	7	NPP	_	_
-10	فرانسه	فرانسه	N	IANM	attachment=ISO|number=SING|senID=34196	9	POSDEP	_	_
-11	را	را	POSTP	POSTP	attachment=ISO|senID=34196	12	OBJ	_	_
-12	بازنمایاندند	باز#نمایاند#نمایان	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=34196	0	ROOT	_	_
-13	.	.	PUNC	PUNC	attachment=ISO|senID=34196	12	PUNC	_	_
+1	تغییرات	تغییر	N	IANM	attachment=ISO|number=PLUR|senID=34196	11	SBJ	_	_
+2	،	،	PUNC	PUNC	attachment=ISO|senID=34196	1	PUNC	_	_
+3	نوعی	نوع	N	IANM	attachment=ISO|number=SING|senID=34196	4	MESU	_	_
+4	پیروزی	پیروزی	N	IANM	attachment=ISO|number=SING|senID=34196	10	PREDEP	_	_
+5	برای	برای	PREP	PREP	attachment=ISO|senID=34196	4	NPP	_	_
+6	طبقات	طبقه	N	IANM	attachment=ISO|number=PLUR|senID=34196	5	POSDEP	_	_
+7	سرکوب‌شده	سرکوب‌شده	ADJ	AJP	attachment=ISO|senID=34196	6	NPOSTMOD	_	_
+8	در	در	PREP	PREP	attachment=ISO|senID=34196	6	NPP	_	_
+9	فرانسه	فرانسه	N	IANM	attachment=ISO|number=SING|senID=34196	8	POSDEP	_	_
+10	را	را	POSTP	POSTP	attachment=ISO|senID=34196	11	OBJ	_	_
+11	بازنمایاندند	باز#نمایاند#نمایان	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=34196	0	ROOT	_	_
+12	.	.	PUNC	PUNC	attachment=ISO|senID=34196	11	PUNC	_	_
 
 # sent_id = dev-s645
 # text = به ناگاه میخ‌هایی که در سنگ فروکوفته بود در اثر ساعت‌ها انتظار از جا به در آمد و کوهنورد به عمق دره پرتاب شد.
@@ -13378,32 +13320,30 @@
 
 # sent_id = dev-s671
 # text = کسی که اهل زراعت باشد، باید از وقت رفع محصول، آنچه زیاد آمده باشد از اخراجات آن، خمس آن را بدهد.
-1	کسی	کس	N	ANM	attachment=ISO|number=SING|senID=46228	24	SBJ	_	_
+1	کسی	کس	N	ANM	attachment=ISO|number=SING|senID=46228	23	SBJ	_	_
 2	که	که	SUBR	SUBR	attachment=ISO|senID=46228	1	NCL	_	_
 3	اهل	اهل	N	IANM	attachment=ISO|number=SING|senID=46228	5	MOS	_	_
 4	زراعت	زراعت	N	IANM	attachment=ISO|number=SING|senID=46228	3	MOZ	_	_
 5	باشد	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=46228	2	PRD	_	_
 6	،	،	PUNC	PUNC	attachment=ISO|senID=46228	5	PUNC	_	_
 7	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=46228	0	ROOT	_	_
-8	از	از	PREP	PREP	attachment=ISO|senID=46228	24	ADV	_	_
+8	از	از	PREP	PREP	attachment=ISO|senID=46228	23	ADV	_	_
 9	وقت	وقت	N	IANM	attachment=ISO|number=SING|senID=46228	8	POSDEP	_	_
 10	رفع	رفع	N	IANM	attachment=ISO|number=SING|senID=46228	9	MOZ	_	_
 11	محصول	محصول	N	IANM	attachment=ISO|number=SING|senID=46228	10	MOZ	_	_
 12	،	،	PUNC	PUNC	attachment=ISO|senID=46228	11	PUNC	_	_
-13	آنچه	آنچه	N	IANM	attachment=ISO|number=SING|senID=46228	22	PREDEP	_	_
+13	آنچه	آنچه	N	IANM	attachment=ISO|number=SING|senID=46228	21	PREDEP	_	_
 14	زیاد	زیاد	ADJ	AJP	attachment=ISO|senID=46228	15	MOS	_	_
 15	آمده باشد	آمد#آ	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=46228	13	NCL	_	_
 16	از	از	PREP	PREP	attachment=ISO|senID=46228	14	AJPP	_	_
-17-18	اخراجات	_	_	_	_	_	_	_	_
-17	اخراج	اخراج	N	IANM	attachment=ISO|number=PLUR|senID=46228	16	POSDEP	_	_
-18	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	17	nmod:poss	_	_
-19	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=46228	17	MOZ	_	_
-20	،	،	PUNC	PUNC	attachment=ISO|senID=46228	19	PUNC	_	_
-21	خمس	خمس	N	IANM	attachment=ISO|number=SING|senID=46228	23	PREDEP	_	_
-22	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=46228	21	MOZ	_	_
-23	را	را	POSTP	POSTP	attachment=ISO|senID=46228	24	OBJ	_	_
-24	بدهد	داد#ده	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=46228	7	VCL	_	_
-25	.	.	PUNC	PUNC	attachment=ISO|senID=46228	7	PUNC	_	_
+17	اخراجات	اخراج	N	IANM	attachment=ISO|number=PLUR|senID=46228	16	POSDEP	_	_
+18	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=46228	17	MOZ	_	_
+19	،	،	PUNC	PUNC	attachment=ISO|senID=46228	18	PUNC	_	_
+20	خمس	خمس	N	IANM	attachment=ISO|number=SING|senID=46228	22	PREDEP	_	_
+21	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=46228	20	MOZ	_	_
+22	را	را	POSTP	POSTP	attachment=ISO|senID=46228	23	OBJ	_	_
+23	بدهد	داد#ده	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=46228	7	VCL	_	_
+24	.	.	PUNC	PUNC	attachment=ISO|senID=46228	7	PUNC	_	_
 
 # sent_id = dev-s672
 # text = شما با ستمگرها سازش کرده‌اید برای این که خودتان امنیت داشته باشید.
@@ -14010,8 +13950,8 @@
 
 # sent_id = dev-s700
 # text = محققان به منظور معرفی هزاران باکتری که در بدن انسان‌ها زندگی می‌کنند تصاویری از این موجودات را در بدن انسان‌ها شبیه‌سازی کرده‌اند.
-1	محققان	محقق	N	ANM	attachment=ISO|number=PLUR|senID=46521	23	SBJ	_	_
-2	به	به	PREP	PREP	attachment=ISO|senID=46521	23	ADV	_	_
+1	محققان	محقق	N	ANM	attachment=ISO|number=PLUR|senID=46521	22	SBJ	_	_
+2	به	به	PREP	PREP	attachment=ISO|senID=46521	22	ADV	_	_
 3	منظور	منظور	N	IANM	attachment=ISO|number=SING|senID=46521	2	POSDEP	_	_
 4	معرفی	معرفی	N	IANM	attachment=ISO|number=SING|senID=46521	3	MOZ	_	_
 5	هزاران	هزاران	PREM	AMBAJ	attachment=ISO|senID=46521	6	NPREMOD	_	_
@@ -14022,19 +13962,17 @@
 10	انسان‌ها	انسان	N	ANM	attachment=ISO|number=PLUR|senID=46521	9	MOZ	_	_
 11	زندگی	زندگی	N	IANM	attachment=ISO|number=SING|senID=46521	12	NVE	_	_
 12	می‌کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=46521	7	PRD	_	_
-13	تصاویری	تصویر	N	IANM	attachment=ISO|number=PLUR|senID=46521	18	PREDEP	_	_
+13	تصاویری	تصویر	N	IANM	attachment=ISO|number=PLUR|senID=46521	17	PREDEP	_	_
 14	از	از	PREP	PREP	attachment=ISO|senID=46521	13	NPP	_	_
 15	این	این	PREM	DEMAJ	attachment=ISO|senID=46521	16	NPREMOD	_	_
-16-17	موجودات	_	_	_	_	_	_	_	_
-16	موجود	موجود	N	ANM	attachment=ISO|number=PLUR|senID=46521	14	POSDEP	_	_
-17	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	16	nmod:poss	_	_
-18	را	را	POSTP	POSTP	attachment=ISO|senID=46521	23	OBJ	_	_
-19	در	در	PREP	PREP	attachment=ISO|senID=46521	23	ADV	_	_
-20	بدن	بدن	N	IANM	attachment=ISO|number=SING|senID=46521	19	POSDEP	_	_
-21	انسان‌ها	انسان	N	ANM	attachment=ISO|number=PLUR|senID=46521	20	MOZ	_	_
-22	شبیه‌سازی	شبیه‌سازی	N	IANM	attachment=ISO|number=SING|senID=46521	23	NVE	_	_
-23	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=46521	0	ROOT	_	_
-24	.	.	PUNC	PUNC	attachment=ISO|senID=46521	23	PUNC	_	_
+16	موجودات	موجود	N	ANM	attachment=ISO|number=PLUR|senID=46521	14	POSDEP	_	_
+17	را	را	POSTP	POSTP	attachment=ISO|senID=46521	22	OBJ	_	_
+18	در	در	PREP	PREP	attachment=ISO|senID=46521	22	ADV	_	_
+19	بدن	بدن	N	IANM	attachment=ISO|number=SING|senID=46521	18	POSDEP	_	_
+20	انسان‌ها	انسان	N	ANM	attachment=ISO|number=PLUR|senID=46521	19	MOZ	_	_
+21	شبیه‌سازی	شبیه‌سازی	N	IANM	attachment=ISO|number=SING|senID=46521	22	NVE	_	_
+22	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=46521	0	ROOT	_	_
+23	.	.	PUNC	PUNC	attachment=ISO|senID=46521	22	PUNC	_	_
 
 # sent_id = dev-s701
 # text = او روزهای زیادی به دست‌های زن‌هایی که می‌دید دقت کرده بود.
@@ -14702,44 +14640,40 @@
 8	این	این	PR	DEMON	attachment=ISO|number=SING|senID=34497	9	MOS	_	_
 9	بوده	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=34497	0	ROOT	_	_
 10	که	که	SUBR	SUBR	attachment=ISO|senID=34497	8	NCL	_	_
-11	در	در	PREP	PREP	attachment=ISO|senID=34497	31	ADV	_	_
+11	در	در	PREP	PREP	attachment=ISO|senID=34497	29	ADV	_	_
 12	کنار	کنار	N	IANM	attachment=ISO|number=SING|senID=34497	11	POSDEP	_	_
 13	برشمردن	برشمردن	N	IANM	attachment=ISO|number=SING|senID=34497	12	MOZ	_	_
-14-15	اشتباهات	_	_	_	_	_	_	_	_
-14	اشتباه	اشتباه	N	IANM	attachment=ISO|number=PLUR|senID=34497	13	MOZ	_	_
-15	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	14	nmod:poss	_	_
-16	متداول	متداول	ADJ	AJP	attachment=ISO|senID=34497	14	NPOSTMOD	_	_
-17	صورت‌های	صورت	N	IANM	attachment=ISO|number=PLUR|senID=34497	14	MOZ	_	_
-18	مالی	مالی	ADJ	AJP	attachment=ISO|senID=34497	17	NPOSTMOD	_	_
-19	،	،	PUNC	PUNC	attachment=ISO|senID=34497	18	PUNC	_	_
-20	راهکارهای	راهکار	N	IANM	attachment=ISO|number=PLUR|senID=34497	31	OBJ	_	_
-21	مناسب	مناسب	ADJ	AJP	attachment=ISO|senID=34497	20	NPOSTMOD	_	_
-22	و	و	CONJ	CONJ	attachment=ISO|senID=34497	21	AJCONJ	_	_
-23	قابل	قابل	ADJ	AJP	attachment=ISO|senID=34497	22	POSDEP	_	_
-24	اجرا	اجرا	N	IANM	attachment=ISO|number=SING|senID=34497	23	NEZ	_	_
-25	برای	برای	PREP	PREP	attachment=ISO|senID=34497	31	ADV	_	_
-26	کاهش	کاهش	N	IANM	attachment=ISO|number=SING|senID=34497	25	POSDEP	_	_
-27-28	اشتباهات	_	_	_	_	_	_	_	_
-27	اشتباه	اشتباه	N	IANM	attachment=ISO|number=PLUR|senID=34497	26	MOZ	_	_
-28	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	27	nmod:poss	_	_
-29	نیز	نیز	ADV	SADV	attachment=ISO|senID=34497	20	POSDEP	_	_
-30	ارائه	ارائه	N	IANM	attachment=ISO|number=SING|senID=34497	31	NVE	_	_
-31	می‌کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=34497	10	PRD	_	_
-32	نه	نه	ADV	SADV	attachment=ISO|senID=34497	33	PREDEP	_	_
-33	این	این	PR	DEMON	attachment=ISO|number=SING|senID=34497	8	NCONJ	_	_
-34	که	که	SUBR	SUBR	attachment=ISO|senID=34497	33	NCL	_	_
-35	جمع‌بندی	جمع‌بندی	N	IANM	attachment=ISO|number=SING|senID=34497	38	PREDEP	_	_
-36	یادداشت	یادداشت	N	IANM	attachment=ISO|number=SING|senID=34497	35	MOZ	_	_
-37	خود	خود	PR	CREFX	attachment=ISO|senID=34497	36	MOZ	_	_
-38	را	را	POSTP	POSTP	attachment=ISO|senID=34497	45	OBJ	_	_
-39	به	به	PREP	PREP	attachment=ISO|senID=34497	44	NPP	_	_
-40	شخصیت	شخصیت	N	IANM	attachment=ISO|number=SING|senID=34497	39	POSDEP	_	_
-41	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=34497	40	NPOSTMOD	_	_
-42	جامعهٔ	جامعه	N	ANM	attachment=ISO|number=SING|senID=34497	40	MOZ	_	_
-43	حسابداران	حسابدار	N	ANM	attachment=ISO|number=PLUR|senID=34497	42	MOZ	_	_
-44	ارتباط	ارتباط	N	IANM	attachment=ISO|number=SING|senID=34497	45	NVE	_	_
-45	داده باشند	داد#ده	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GEL|senID=34497	34	PRD	_	_
-46	.	.	PUNC	PUNC	attachment=ISO|senID=34497	9	PUNC	_	_
+14	اشتباهات	اشتباه	N	IANM	attachment=ISO|number=PLUR|senID=34497	13	MOZ	_	_
+15	متداول	متداول	ADJ	AJP	attachment=ISO|senID=34497	14	NPOSTMOD	_	_
+16	صورت‌های	صورت	N	IANM	attachment=ISO|number=PLUR|senID=34497	14	MOZ	_	_
+17	مالی	مالی	ADJ	AJP	attachment=ISO|senID=34497	16	NPOSTMOD	_	_
+18	،	،	PUNC	PUNC	attachment=ISO|senID=34497	17	PUNC	_	_
+19	راهکارهای	راهکار	N	IANM	attachment=ISO|number=PLUR|senID=34497	29	OBJ	_	_
+20	مناسب	مناسب	ADJ	AJP	attachment=ISO|senID=34497	19	NPOSTMOD	_	_
+21	و	و	CONJ	CONJ	attachment=ISO|senID=34497	20	AJCONJ	_	_
+22	قابل	قابل	ADJ	AJP	attachment=ISO|senID=34497	21	POSDEP	_	_
+23	اجرا	اجرا	N	IANM	attachment=ISO|number=SING|senID=34497	22	NEZ	_	_
+24	برای	برای	PREP	PREP	attachment=ISO|senID=34497	29	ADV	_	_
+25	کاهش	کاهش	N	IANM	attachment=ISO|number=SING|senID=34497	24	POSDEP	_	_
+26	اشتباهات	اشتباه	N	IANM	attachment=ISO|number=PLUR|senID=34497	25	MOZ	_	_
+27	نیز	نیز	ADV	SADV	attachment=ISO|senID=34497	19	POSDEP	_	_
+28	ارائه	ارائه	N	IANM	attachment=ISO|number=SING|senID=34497	29	NVE	_	_
+29	می‌کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=34497	10	PRD	_	_
+30	نه	نه	ADV	SADV	attachment=ISO|senID=34497	31	PREDEP	_	_
+31	این	این	PR	DEMON	attachment=ISO|number=SING|senID=34497	8	NCONJ	_	_
+32	که	که	SUBR	SUBR	attachment=ISO|senID=34497	31	NCL	_	_
+33	جمع‌بندی	جمع‌بندی	N	IANM	attachment=ISO|number=SING|senID=34497	36	PREDEP	_	_
+34	یادداشت	یادداشت	N	IANM	attachment=ISO|number=SING|senID=34497	33	MOZ	_	_
+35	خود	خود	PR	CREFX	attachment=ISO|senID=34497	34	MOZ	_	_
+36	را	را	POSTP	POSTP	attachment=ISO|senID=34497	43	OBJ	_	_
+37	به	به	PREP	PREP	attachment=ISO|senID=34497	42	NPP	_	_
+38	شخصیت	شخصیت	N	IANM	attachment=ISO|number=SING|senID=34497	37	POSDEP	_	_
+39	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=34497	38	NPOSTMOD	_	_
+40	جامعهٔ	جامعه	N	ANM	attachment=ISO|number=SING|senID=34497	38	MOZ	_	_
+41	حسابداران	حسابدار	N	ANM	attachment=ISO|number=PLUR|senID=34497	40	MOZ	_	_
+42	ارتباط	ارتباط	N	IANM	attachment=ISO|number=SING|senID=34497	43	NVE	_	_
+43	داده باشند	داد#ده	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GEL|senID=34497	32	PRD	_	_
+44	.	.	PUNC	PUNC	attachment=ISO|senID=34497	9	PUNC	_	_
 
 # sent_id = dev-s739
 # text = وزارتخانه‌های بزرگ را به سادگی نمی‌توان ادغام کرد.
@@ -16123,23 +16057,21 @@
 4	استدلال	استدلال	N	IANM	attachment=ISO|number=SING|senID=35404	5	NVE	_	_
 5	می‌شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=35404	0	ROOT	_	_
 6	که	که	SUBR	SUBR	attachment=ISO|senID=35404	5	VCL	_	_
-7	وجود	وجود	N	IANM	attachment=ISO|number=SING|senID=35404	15	SBJ	_	_
+7	وجود	وجود	N	IANM	attachment=ISO|number=SING|senID=35404	14	SBJ	_	_
 8	فرضیه‌های	فرضیه	N	IANM	attachment=ISO|number=PLUR|senID=35404	7	MOZ	_	_
 9	گوناگون	گوناگون	ADJ	AJP	attachment=ISO|senID=35404	8	NPOSTMOD	_	_
 10	و	و	CONJ	CONJ	attachment=ISO|senID=35404	8	NCONJ	_	_
-11-12	اکتشافات	_	_	_	_	_	_	_	_
-11	اکتشاف	اکتشاف	N	IANM	attachment=ISO|number=PLUR|senID=35404	10	POSDEP	_	_
-12	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	11	nmod:poss	_	_
-13	جدید	جدید	ADJ	AJP	attachment=ISO|senID=35404	11	NPOSTMOD	_	_
-14	ثابت	ثابت	ADJ	AJP	attachment=ISO|senID=35404	15	NVE	_	_
-15	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=35404	6	PRD	_	_
-16	که	که	SUBR	SUBR	attachment=ISO|senID=35404	15	VCL	_	_
-17	جهان	جهان	N	IANM	attachment=ISO|number=SING|senID=35404	21	SBJ	_	_
-18	هستی	هستی	N	IANM	attachment=ISO|number=SING|senID=35404	17	MOZ	_	_
-19	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=35404	20	NPREMOD	_	_
-20	خالق	خالق	N	ANM	attachment=ISO|number=SING|senID=35404	21	OBJ	_	_
-21	ندارد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=35404	16	PRD	_	_
-22	.	.	PUNC	PUNC	attachment=ISO|senID=35404	5	PUNC	_	_
+11	اکتشافات	اکتشاف	N	IANM	attachment=ISO|number=PLUR|senID=35404	10	POSDEP	_	_
+12	جدید	جدید	ADJ	AJP	attachment=ISO|senID=35404	11	NPOSTMOD	_	_
+13	ثابت	ثابت	ADJ	AJP	attachment=ISO|senID=35404	14	NVE	_	_
+14	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=35404	6	PRD	_	_
+15	که	که	SUBR	SUBR	attachment=ISO|senID=35404	14	VCL	_	_
+16	جهان	جهان	N	IANM	attachment=ISO|number=SING|senID=35404	20	SBJ	_	_
+17	هستی	هستی	N	IANM	attachment=ISO|number=SING|senID=35404	16	MOZ	_	_
+18	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=35404	19	NPREMOD	_	_
+19	خالق	خالق	N	ANM	attachment=ISO|number=SING|senID=35404	20	OBJ	_	_
+20	ندارد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=35404	15	PRD	_	_
+21	.	.	PUNC	PUNC	attachment=ISO|senID=35404	5	PUNC	_	_
 
 # sent_id = dev-s829
 # text = در سال‌های اخیر، یک روش جدید در جهت توسعهٔ کشورهای فقیر به وجود آمده است.
@@ -16779,15 +16711,13 @@
 2	حق	حق	N	IANM	attachment=ISO|number=SING|senID=35774	3	OBJ	_	_
 3	دارد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=35774	0	ROOT	_	_
 4	که	که	SUBR	SUBR	attachment=ISO|senID=35774	2	NCL	_	_
-5	از	از	PREP	PREP	attachment=ISO|senID=35774	10	NPP	_	_
-6-7	اتفاقات	_	_	_	_	_	_	_	_
-6	اتفاق	اتفاق	N	IANM	attachment=ISO|number=PLUR|senID=35774	5	POSDEP	_	_
-7	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	6	nmod:poss	_	_
-8	تیم	تیم	N	ANM	attachment=ISO|number=SING|senID=35774	6	MOZ	_	_
-9	امید	امید	N	IANM	attachment=ISO|number=SING|senID=35774	8	MOZ	_	_
-10	تعجب	تعجب	N	IANM	attachment=ISO|number=SING|senID=35774	11	NVE	_	_
-11	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=35774	4	PRD	_	_
-12	.	.	PUNC	PUNC	attachment=ISO|senID=35774	3	PUNC	_	_
+5	از	از	PREP	PREP	attachment=ISO|senID=35774	9	NPP	_	_
+6	اتفاقات	اتفاق	N	IANM	attachment=ISO|number=PLUR|senID=35774	5	POSDEP	_	_
+7	تیم	تیم	N	ANM	attachment=ISO|number=SING|senID=35774	6	MOZ	_	_
+8	امید	امید	N	IANM	attachment=ISO|number=SING|senID=35774	7	MOZ	_	_
+9	تعجب	تعجب	N	IANM	attachment=ISO|number=SING|senID=35774	10	NVE	_	_
+10	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=35774	4	PRD	_	_
+11	.	.	PUNC	PUNC	attachment=ISO|senID=35774	3	PUNC	_	_
 
 # sent_id = dev-s866
 # text = اولین اتفاق تکان‌دهندهٔ زندگی‌ام، نخستین باری بود که آمپول زدم.
@@ -17169,17 +17099,15 @@
 7	کرده است	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=36024	0	ROOT	_	_
 8	اجازه	اجازه	N	IANM	attachment=ISO|number=SING|senID=36024	9	OBJ2	_	_
 9	دهد	داد#ده	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=36024	7	VCL	_	_
-10	مجلس	مجلس	N	IANM	attachment=ISO|number=SING|senID=36024	18	SBJ	_	_
+10	مجلس	مجلس	N	IANM	attachment=ISO|number=SING|senID=36024	17	SBJ	_	_
 11	سنا	سنا	N	IANM	attachment=ISO|number=SING|senID=36024	10	MOZ	_	_
-12	در	در	PREP	PREP	attachment=ISO|senID=36024	18	ADV	_	_
-13-14	جریانات	_	_	_	_	_	_	_	_
-13	جریان	جریان	N	IANM	attachment=ISO|number=PLUR|senID=36024	12	POSDEP	_	_
-14	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	13	nmod:poss	_	_
-15	سیاسی	سیاسی	ADJ	AJP	attachment=ISO|senID=36024	13	NPOSTMOD	_	_
-16	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=36024	13	MOZ	_	_
-17	بی‌طرف	بی‌طرف	ADJ	AJP	attachment=ISO|senID=36024	18	TAM	_	_
-18	بماند	ماند#مان	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=36024	9	VCL	_	_
-19	.	.	PUNC	PUNC	attachment=ISO|senID=36024	7	PUNC	_	_
+12	در	در	PREP	PREP	attachment=ISO|senID=36024	17	ADV	_	_
+13	جریانات	جریان	N	IANM	attachment=ISO|number=PLUR|senID=36024	12	POSDEP	_	_
+14	سیاسی	سیاسی	ADJ	AJP	attachment=ISO|senID=36024	13	NPOSTMOD	_	_
+15	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=36024	13	MOZ	_	_
+16	بی‌طرف	بی‌طرف	ADJ	AJP	attachment=ISO|senID=36024	17	TAM	_	_
+17	بماند	ماند#مان	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=36024	9	VCL	_	_
+18	.	.	PUNC	PUNC	attachment=ISO|senID=36024	7	PUNC	_	_
 
 # sent_id = dev-s891
 # text = قدرت پروردگار، مناظری ناب را به ما نشان می‌دهد که با دیدن آنها حیرت می‌کنیم.
@@ -17240,7 +17168,7 @@
 
 # sent_id = dev-s894
 # text = گروه کوهنوردی نسیم شمال به همراه 40 نفر به ارتفاعات دشت و دمن در ماسوله صعود کردند.
-1	گروه	گروه	N	ANM	attachment=ISO|number=PLUR|senID=47039	18	SBJ	_	_
+1	گروه	گروه	N	ANM	attachment=ISO|number=PLUR|senID=47039	17	SBJ	_	_
 2	کوهنوردی	کوهنوردی	N	IANM	attachment=ISO|number=SING|senID=47039	1	MOZ	_	_
 3	نسیم	نسیم	N	IANM	attachment=ISO|number=SING|senID=47039	2	MOZ	_	_
 4	شمال	شمال	N	IANM	attachment=ISO|number=SING|senID=47039	3	MOZ	_	_
@@ -17248,18 +17176,16 @@
 6	همراه	همراه	N	IANM	attachment=ISO|number=SING|senID=47039	5	POSDEP	_	_
 7	40	40	PRENUM	PRENUM	attachment=ISO|senID=47039	8	NPREMOD	_	_
 8	نفر	نفر	N	ANM	attachment=ISO|number=SING|senID=47039	6	MOZ	_	_
-9	به	به	PREP	PREP	attachment=ISO|senID=47039	17	NPP	_	_
-10-11	ارتفاعات	_	_	_	_	_	_	_	_
-10	ارتفاع	ارتفاع	N	IANM	attachment=ISO|number=PLUR|senID=47039	9	POSDEP	_	_
-11	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	10	nmod:poss	_	_
-12	دشت	دشت	N	IANM	attachment=ISO|number=SING|senID=47039	10	MOZ	_	_
-13	و	و	CONJ	CONJ	attachment=ISO|senID=47039	12	NCONJ	_	_
-14	دمن	دمن	N	IANM	attachment=ISO|number=SING|senID=47039	13	POSDEP	_	_
-15	در	در	PREP	PREP	attachment=ISO|senID=47039	10	NPP	_	_
-16	ماسوله	ماسوله	N	IANM	attachment=ISO|number=SING|senID=47039	15	POSDEP	_	_
-17	صعود	صعود	N	IANM	attachment=ISO|number=SING|senID=47039	18	NVE	_	_
-18	کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=47039	0	ROOT	_	_
-19	.	.	PUNC	PUNC	attachment=ISO|senID=47039	18	PUNC	_	_
+9	به	به	PREP	PREP	attachment=ISO|senID=47039	16	NPP	_	_
+10	ارتفاعات	ارتفاع	N	IANM	attachment=ISO|number=PLUR|senID=47039	9	POSDEP	_	_
+11	دشت	دشت	N	IANM	attachment=ISO|number=SING|senID=47039	10	MOZ	_	_
+12	و	و	CONJ	CONJ	attachment=ISO|senID=47039	11	NCONJ	_	_
+13	دمن	دمن	N	IANM	attachment=ISO|number=SING|senID=47039	12	POSDEP	_	_
+14	در	در	PREP	PREP	attachment=ISO|senID=47039	10	NPP	_	_
+15	ماسوله	ماسوله	N	IANM	attachment=ISO|number=SING|senID=47039	14	POSDEP	_	_
+16	صعود	صعود	N	IANM	attachment=ISO|number=SING|senID=47039	17	NVE	_	_
+17	کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=47039	0	ROOT	_	_
+18	.	.	PUNC	PUNC	attachment=ISO|senID=47039	17	PUNC	_	_
 
 # sent_id = dev-s895
 # text = هر کسی که به برادران خود خرده‌گیری کند دوستانش کم خواهند شد.
@@ -17862,50 +17788,46 @@
 
 # sent_id = dev-s922
 # text = تمرینات هوازی نیز همانند تمرینات بی‌هوازی و همانند دیگر تمریناتی که فرد در طول زندگی خود با آن سر و کله می‌زند در صورتی که بیش از حد به بدن اعمال شود می‌تواند منجر به بروز عارضهٔ تمرین‌زدگی شود.
-1-2	تمرینات	_	_	_	_	_	_	_	_
-1	تمرین	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=47320	35	SBJ	_	_
-2	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	1	nmod:poss	_	_
-3	هوازی	هوازی	ADJ	AJP	attachment=ISO|senID=47320	1	NPOSTMOD	_	_
-4	نیز	نیز	ADV	SADV	attachment=ISO|senID=47320	1	POSDEP	_	_
-5	همانند	همانند	PREP	PREP	attachment=ISO|senID=47320	35	ADV	_	_
-6-7	تمرینات	_	_	_	_	_	_	_	_
-6	تمرین	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=47320	5	POSDEP	_	_
-7	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	6	nmod:poss	_	_
-8	بی‌هوازی	بی‌هوازی	ADJ	AJP	attachment=ISO|senID=47320	6	NPOSTMOD	_	_
-9	و	و	CONJ	CONJ	attachment=ISO|senID=47320	5	PCONJ	_	_
-10	همانند	همانند	PREP	PREP	attachment=ISO|senID=47320	9	POSDEP	_	_
-11	دیگر	دیگر	ADJ	AJP	attachment=ISO|senID=47320	12	NPREMOD	_	_
-12	تمریناتی	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=47320	10	POSDEP	_	_
-13	که	که	SUBR	SUBR	attachment=ISO|senID=47320	12	NCL	_	_
-14	فرد	فرد	N	ANM	attachment=ISO|number=SING|senID=47320	24	SBJ	_	_
-15	در	در	PREP	PREP	attachment=ISO|senID=47320	24	ADV	_	_
-16	طول	طول	N	IANM	attachment=ISO|number=SING|senID=47320	15	POSDEP	_	_
-17	زندگی	زندگی	N	IANM	attachment=ISO|number=SING|senID=47320	16	MOZ	_	_
-18	خود	خود	PR	CREFX	attachment=ISO|senID=47320	17	MOZ	_	_
-19	با	با	PREP	PREP	attachment=ISO|senID=47320	24	VPP	_	_
-20	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=47320	19	POSDEP	_	_
-21	سر	سر	N	IANM	attachment=ISO|number=SING|senID=47320	24	NVE	_	_
-22	و	و	CONJ	CONJ	attachment=ISO|senID=47320	21	NCONJ	_	_
-23	کله	کله	N	IANM	attachment=ISO|number=SING|senID=47320	22	POSDEP	_	_
-24	می‌زند	زد#زن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47320	13	PRD	_	_
-25	در	در	PREP	PREP	attachment=ISO|senID=47320	35	ADV	_	_
-26	صورتی	صورت	N	IANM	attachment=ISO|number=SING|senID=47320	25	POSDEP	_	_
-27	که	که	SUBR	SUBR	attachment=ISO|senID=47320	26	NCL	_	_
-28	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=47320	34	ADV	_	_
-29	از	از	PREP	PREP	attachment=ISO|senID=47320	28	COMPPP	_	_
-30	حد	حد	N	IANM	attachment=ISO|number=SING|senID=47320	29	POSDEP	_	_
-31	به	به	PREP	PREP	attachment=ISO|senID=47320	33	NPP	_	_
-32	بدن	بدن	N	IANM	attachment=ISO|number=SING|senID=47320	31	POSDEP	_	_
-33	اعمال	اعمال	N	IANM	attachment=ISO|number=SING|senID=47320	34	NVE	_	_
-34	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320	27	PRD	_	_
-35	می‌تواند	توانست#توان	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47320	0	ROOT	_	_
-36	منجر	منجر	ADJ	AJP	attachment=ISO|senID=47320	41	MOS	_	_
-37	به	به	PREP	PREP	attachment=ISO|senID=47320	36	AJPP	_	_
-38	بروز	بروز	N	IANM	attachment=ISO|number=SING|senID=47320	37	POSDEP	_	_
-39	عارضهٔ	عارضه	N	IANM	attachment=ISO|number=SING|senID=47320	38	MOZ	_	_
-40	تمرین‌زدگی	تمرین‌زدگی	N	IANM	attachment=ISO|number=SING|senID=47320	39	MOZ	_	_
-41	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320	35	VCL	_	_
-42	.	.	PUNC	PUNC	attachment=ISO|senID=47320	35	PUNC	_	_
+1	تمرینات	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=47320	33	SBJ	_	_
+2	هوازی	هوازی	ADJ	AJP	attachment=ISO|senID=47320	1	NPOSTMOD	_	_
+3	نیز	نیز	ADV	SADV	attachment=ISO|senID=47320	1	POSDEP	_	_
+4	همانند	همانند	PREP	PREP	attachment=ISO|senID=47320	33	ADV	_	_
+5	تمرینات	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=47320	4	POSDEP	_	_
+6	بی‌هوازی	بی‌هوازی	ADJ	AJP	attachment=ISO|senID=47320	5	NPOSTMOD	_	_
+7	و	و	CONJ	CONJ	attachment=ISO|senID=47320	4	PCONJ	_	_
+8	همانند	همانند	PREP	PREP	attachment=ISO|senID=47320	7	POSDEP	_	_
+9	دیگر	دیگر	ADJ	AJP	attachment=ISO|senID=47320	10	NPREMOD	_	_
+10	تمریناتی	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=47320	8	POSDEP	_	_
+11	که	که	SUBR	SUBR	attachment=ISO|senID=47320	10	NCL	_	_
+12	فرد	فرد	N	ANM	attachment=ISO|number=SING|senID=47320	22	SBJ	_	_
+13	در	در	PREP	PREP	attachment=ISO|senID=47320	22	ADV	_	_
+14	طول	طول	N	IANM	attachment=ISO|number=SING|senID=47320	13	POSDEP	_	_
+15	زندگی	زندگی	N	IANM	attachment=ISO|number=SING|senID=47320	14	MOZ	_	_
+16	خود	خود	PR	CREFX	attachment=ISO|senID=47320	15	MOZ	_	_
+17	با	با	PREP	PREP	attachment=ISO|senID=47320	22	VPP	_	_
+18	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=47320	17	POSDEP	_	_
+19	سر	سر	N	IANM	attachment=ISO|number=SING|senID=47320	22	NVE	_	_
+20	و	و	CONJ	CONJ	attachment=ISO|senID=47320	19	NCONJ	_	_
+21	کله	کله	N	IANM	attachment=ISO|number=SING|senID=47320	20	POSDEP	_	_
+22	می‌زند	زد#زن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47320	11	PRD	_	_
+23	در	در	PREP	PREP	attachment=ISO|senID=47320	33	ADV	_	_
+24	صورتی	صورت	N	IANM	attachment=ISO|number=SING|senID=47320	23	POSDEP	_	_
+25	که	که	SUBR	SUBR	attachment=ISO|senID=47320	24	NCL	_	_
+26	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=47320	32	ADV	_	_
+27	از	از	PREP	PREP	attachment=ISO|senID=47320	26	COMPPP	_	_
+28	حد	حد	N	IANM	attachment=ISO|number=SING|senID=47320	27	POSDEP	_	_
+29	به	به	PREP	PREP	attachment=ISO|senID=47320	31	NPP	_	_
+30	بدن	بدن	N	IANM	attachment=ISO|number=SING|senID=47320	29	POSDEP	_	_
+31	اعمال	اعمال	N	IANM	attachment=ISO|number=SING|senID=47320	32	NVE	_	_
+32	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320	25	PRD	_	_
+33	می‌تواند	توانست#توان	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47320	0	ROOT	_	_
+34	منجر	منجر	ADJ	AJP	attachment=ISO|senID=47320	39	MOS	_	_
+35	به	به	PREP	PREP	attachment=ISO|senID=47320	34	AJPP	_	_
+36	بروز	بروز	N	IANM	attachment=ISO|number=SING|senID=47320	35	POSDEP	_	_
+37	عارضهٔ	عارضه	N	IANM	attachment=ISO|number=SING|senID=47320	36	MOZ	_	_
+38	تمرین‌زدگی	تمرین‌زدگی	N	IANM	attachment=ISO|number=SING|senID=47320	37	MOZ	_	_
+39	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320	33	VCL	_	_
+40	.	.	PUNC	PUNC	attachment=ISO|senID=47320	33	PUNC	_	_
 
 # sent_id = dev-s923
 # text = حق بزرگ‌تر از تو این است که او را به خاطر سالمندی وی بزرگ داری، و چون در مسلمانی از تو جلوتر است او را حرمت نهی، و در مخاصمت با او مقابلت نکنی، و در راه بر او پیشی نگیری و از او پیش نیفتی، و با او جهالت نورزی، و اگر بر تو جهالت کند، به خاطر اسلام و حرمت او، آن را تحمل کنی و او را اکرام نمایی.
@@ -19390,20 +19312,18 @@
 
 # sent_id = dev-s994
 # text = پیش از صدور کیفرخواست اظهارات وزیر خارجهٔ اسرائیل را استماع خواهد کرد.
-1	پیش	پیش	PREP	PREP	attachment=ISO|senID=36067	12	ADV	_	_
+1	پیش	پیش	PREP	PREP	attachment=ISO|senID=36067	11	ADV	_	_
 2	از	از	PREP	PREP	attachment=ISO|senID=36067	1	POSDEP	_	_
 3	صدور	صدور	N	IANM	attachment=ISO|number=SING|senID=36067	2	POSDEP	_	_
 4	کیفرخواست	کیفرخواست	N	IANM	attachment=ISO|number=SING|senID=36067	3	MOZ	_	_
-5-6	اظهارات	_	_	_	_	_	_	_	_
-5	اظهار	اظهار	N	IANM	attachment=ISO|number=PLUR|senID=36067	10	PREDEP	_	_
-6	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	5	nmod:poss	_	_
-7	وزیر	وزیر	N	ANM	attachment=ISO|number=SING|senID=36067	5	MOZ	_	_
-8	خارجهٔ	خارجه	N	IANM	attachment=ISO|number=SING|senID=36067	7	MOZ	_	_
-9	اسرائیل	اسرائیل	N	IANM	attachment=ISO|number=SING|senID=36067	7	MOZ	_	_
-10	را	را	POSTP	POSTP	attachment=ISO|senID=36067	12	OBJ	_	_
-11	استماع	استماع	N	IANM	attachment=ISO|number=SING|senID=36067	12	NVE	_	_
-12	خواهد کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=36067	0	ROOT	_	_
-13	.	.	PUNC	PUNC	attachment=ISO|senID=36067	12	PUNC	_	_
+5	اظهارات	اظهار	N	IANM	attachment=ISO|number=PLUR|senID=36067	9	PREDEP	_	_
+6	وزیر	وزیر	N	ANM	attachment=ISO|number=SING|senID=36067	5	MOZ	_	_
+7	خارجهٔ	خارجه	N	IANM	attachment=ISO|number=SING|senID=36067	6	MOZ	_	_
+8	اسرائیل	اسرائیل	N	IANM	attachment=ISO|number=SING|senID=36067	6	MOZ	_	_
+9	را	را	POSTP	POSTP	attachment=ISO|senID=36067	11	OBJ	_	_
+10	استماع	استماع	N	IANM	attachment=ISO|number=SING|senID=36067	11	NVE	_	_
+11	خواهد کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=36067	0	ROOT	_	_
+12	.	.	PUNC	PUNC	attachment=ISO|senID=36067	11	PUNC	_	_
 
 # sent_id = dev-s995
 # text = دیروز آمدیم شما را اسکورت بکنیم.
@@ -20009,18 +19929,16 @@
 11	سان	سان	N	IANM	attachment=ISO|number=SING|senID=36409	12	NVE	_	_
 12	دیده است	دید#بین	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=36409	2	PRD	_	_
 13	که	که	SUBR	SUBR	attachment=ISO|senID=36409	9	NCL	_	_
-14	به	به	PREP	PREP	attachment=ISO|senID=36409	23	ADV	_	_
+14	به	به	PREP	PREP	attachment=ISO|senID=36409	22	ADV	_	_
 15	طور	طور	N	IANM	attachment=ISO|number=SING|senID=36409	14	POSDEP	_	_
 16	عمده	عمده	ADJ	AJP	attachment=ISO|senID=36409	15	NPOSTMOD	_	_
-17	از	از	PREP	PREP	attachment=ISO|senID=36409	23	VPP	_	_
-18-19	ایلات	_	_	_	_	_	_	_	_
-18	ایل	ایل	N	IANM	attachment=ISO|number=PLUR|senID=36409	17	POSDEP	_	_
-19	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	18	nmod:poss	_	_
-20	و	و	CONJ	CONJ	attachment=ISO|senID=36409	18	NCONJ	_	_
-21	عشایر	عشیره	N	ANM	attachment=ISO|number=SING|senID=36409	20	POSDEP	_	_
-22	تشکیل	تشکیل	N	IANM	attachment=ISO|number=SING|senID=36409	23	NVE	_	_
-23	می‌شد	داد#ده	V	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=36409	13	PRD	_	_
-24	.	.	PUNC	PUNC	attachment=ISO|senID=36409	1	PUNC	_	_
+17	از	از	PREP	PREP	attachment=ISO|senID=36409	22	VPP	_	_
+18	ایلات	ایل	N	IANM	attachment=ISO|number=PLUR|senID=36409	17	POSDEP	_	_
+19	و	و	CONJ	CONJ	attachment=ISO|senID=36409	18	NCONJ	_	_
+20	عشایر	عشیره	N	ANM	attachment=ISO|number=SING|senID=36409	19	POSDEP	_	_
+21	تشکیل	تشکیل	N	IANM	attachment=ISO|number=SING|senID=36409	22	NVE	_	_
+22	می‌شد	داد#ده	V	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=36409	13	PRD	_	_
+23	.	.	PUNC	PUNC	attachment=ISO|senID=36409	1	PUNC	_	_
 
 # sent_id = dev-s1029
 # text = در ارتباطات میان فردی و اجتماعی، احترام و بردباری را پاس می‌داریم.
@@ -20951,28 +20869,26 @@
 
 # sent_id = dev-s1084
 # text = دفتر تبلیغات اعزامش کرد و او خود را در خاک غریب و آشنانواز« مهران» یافت.
-1	دفتر	دفتر	N	IANM	attachment=ISO|number=SING|senID=36977	6	SBJ	_	_
-2-3	تبلیغات	_	_	_	_	_	_	_	_
-2	تبلیغ	تبلیغ	N	IANM	attachment=ISO|number=PLUR|senID=36977	1	MOZ	_	_
-3	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	_
-4-5	اعزامش	_	_	_	_	_	_	_	_
-4	اعزام	اعزام	N	IANM	attachment=NXT|number=SING|senID=36977	6	NVE	_	_
-5	ش	ش	PR	JOPER	person=3|attachment=PRV|number=SING|senID=36977	6	OBJ	_	_
-6	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=36977	7	PREDEP	_	_
-7	و	و	CONJ	CONJ	attachment=ISO|senID=36977	19	VCONJ	_	_
-8	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=36977	19	SBJ	_	_
-9	خود	خود	PR	CREFX	attachment=ISO|senID=36977	10	PREDEP	_	_
-10	را	را	POSTP	POSTP	attachment=ISO|senID=36977	19	OBJ	_	_
-11	در	در	PREP	PREP	attachment=ISO|senID=36977	19	ADV	_	_
-12	خاک	خاک	N	IANM	attachment=ISO|number=SING|senID=36977	11	POSDEP	_	_
-13	غریب	غریب	ADJ	AJP	attachment=ISO|senID=36977	12	NPOSTMOD	_	_
-14	و	و	CONJ	CONJ	attachment=ISO|senID=36977	13	AJCONJ	_	_
-15	آشنانواز	آشنانواز	ADJ	AJP	attachment=ISO|senID=36977	14	POSDEP	_	_
-16	«	«	PUNC	PUNC	attachment=ISO|senID=36977	17	PUNC	_	_
-17	مهران	مهران	N	IANM	attachment=ISO|number=SING|senID=36977	12	MOZ	_	_
-18	»	»	PUNC	PUNC	attachment=ISO|senID=36977	17	PUNC	_	_
-19	یافت	یافت#یاب	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=36977	0	ROOT	_	_
-20	.	.	PUNC	PUNC	attachment=ISO|senID=36977	19	PUNC	_	_
+1	دفتر	دفتر	N	IANM	attachment=ISO|number=SING|senID=36977	5	SBJ	_	_
+2	تبلیغات	تبلیغ	N	IANM	attachment=ISO|number=PLUR|senID=36977	1	MOZ	_	_
+3-4	اعزامش	_	_	_	_	_	_	_	_
+3	اعزام	اعزام	N	IANM	attachment=NXT|number=SING|senID=36977	5	NVE	_	_
+4	ش	ش	PR	JOPER	person=3|attachment=PRV|number=SING|senID=36977	5	OBJ	_	_
+5	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=36977	6	PREDEP	_	_
+6	و	و	CONJ	CONJ	attachment=ISO|senID=36977	18	VCONJ	_	_
+7	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=36977	18	SBJ	_	_
+8	خود	خود	PR	CREFX	attachment=ISO|senID=36977	9	PREDEP	_	_
+9	را	را	POSTP	POSTP	attachment=ISO|senID=36977	18	OBJ	_	_
+10	در	در	PREP	PREP	attachment=ISO|senID=36977	18	ADV	_	_
+11	خاک	خاک	N	IANM	attachment=ISO|number=SING|senID=36977	10	POSDEP	_	_
+12	غریب	غریب	ADJ	AJP	attachment=ISO|senID=36977	11	NPOSTMOD	_	_
+13	و	و	CONJ	CONJ	attachment=ISO|senID=36977	12	AJCONJ	_	_
+14	آشنانواز	آشنانواز	ADJ	AJP	attachment=ISO|senID=36977	13	POSDEP	_	_
+15	«	«	PUNC	PUNC	attachment=ISO|senID=36977	16	PUNC	_	_
+16	مهران	مهران	N	IANM	attachment=ISO|number=SING|senID=36977	11	MOZ	_	_
+17	»	»	PUNC	PUNC	attachment=ISO|senID=36977	16	PUNC	_	_
+18	یافت	یافت#یاب	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=36977	0	ROOT	_	_
+19	.	.	PUNC	PUNC	attachment=ISO|senID=36977	18	PUNC	_	_
 
 # sent_id = dev-s1085
 # text = 450 دانشجوی این دانشگاه در قالب اردوی کاروان راهیان نور به مناطق جنگی اعزام شدند.
@@ -21194,24 +21110,20 @@
 # sent_id = dev-s1096
 # text = هر جا از سنت‌های الهی فاصله گرفتیم با مشکلات و معضلات زیادی مواجه شده‌ایم.
 1	هر	هر	PREM	AMBAJ	attachment=ISO|senID=37099	2	NPREMOD	_	_
-2	جا	جا	N	IANM	attachment=ISO|number=SING|senID=37099	16	ADV	_	_
+2	جا	جا	N	IANM	attachment=ISO|number=SING|senID=37099	14	ADV	_	_
 3	از	از	PREP	PREP	attachment=ISO|senID=37099	6	NPP	_	_
 4	سنت‌های	سنت	N	IANM	attachment=ISO|number=PLUR|senID=37099	3	POSDEP	_	_
 5	الهی	الهی	ADJ	AJP	attachment=ISO|senID=37099	4	NPOSTMOD	_	_
 6	فاصله	فاصله	N	IANM	attachment=ISO|number=SING|senID=37099	7	NVE	_	_
 7	گرفتیم	گرفت#گیر	V	ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=37099	2	NCL	_	_
-8	با	با	PREP	PREP	attachment=ISO|senID=37099	15	AJPP	_	_
-9-10	مشکلات	_	_	_	_	_	_	_	_
-9	مشکل	مشکل	N	IANM	attachment=ISO|number=PLUR|senID=37099	8	POSDEP	_	_
-10	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	9	nmod:poss	_	_
-11	و	و	CONJ	CONJ	attachment=ISO|senID=37099	9	NCONJ	_	_
-12-13	معضلات	_	_	_	_	_	_	_	_
-12	معضل	معضل	N	IANM	attachment=ISO|number=PLUR|senID=37099	11	POSDEP	_	_
-13	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	12	nmod:poss	_	_
-14	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=37099	9	NPOSTMOD	_	_
-15	مواجه	مواجه	ADJ	AJP	attachment=ISO|senID=37099	16	MOS	_	_
-16	شده‌ایم	کرد#کن	V	PASS	person=1|attachment=ISO|number=PLUR|tma=GN|senID=37099	0	ROOT	_	_
-17	.	.	PUNC	PUNC	attachment=ISO|senID=37099	16	PUNC	_	_
+8	با	با	PREP	PREP	attachment=ISO|senID=37099	13	AJPP	_	_
+9	مشکلات	مشکل	N	IANM	attachment=ISO|number=PLUR|senID=37099	8	POSDEP	_	_
+10	و	و	CONJ	CONJ	attachment=ISO|senID=37099	9	NCONJ	_	_
+11	معضلات	معضل	N	IANM	attachment=ISO|number=PLUR|senID=37099	10	POSDEP	_	_
+12	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=37099	9	NPOSTMOD	_	_
+13	مواجه	مواجه	ADJ	AJP	attachment=ISO|senID=37099	14	MOS	_	_
+14	شده‌ایم	کرد#کن	V	PASS	person=1|attachment=ISO|number=PLUR|tma=GN|senID=37099	0	ROOT	_	_
+15	.	.	PUNC	PUNC	attachment=ISO|senID=37099	14	PUNC	_	_
 
 # sent_id = dev-s1097
 # text = دانشجویان باید مطالبات خود را در چهارچوب موازین و مقررات پیگیری کنند.
@@ -23282,32 +23194,30 @@
 
 # sent_id = dev-s1205
 # text = به گفتهٔ کعبی، بعد از حضور در تمرینات تیم‌های انگلیسی روز 13 تیرماه از لندن مستقیماً به" مالزی" عزیمت خواهم کرد.
-1	به	به	PREP	PREP	attachment=ISO|senID=48395	24	ADV	_	_
+1	به	به	PREP	PREP	attachment=ISO|senID=48395	23	ADV	_	_
 2	گفتهٔ	گفته	N	IANM	attachment=ISO|number=SING|senID=48395	1	POSDEP	_	_
 3	کعبی	کعبی	N	IANM	attachment=ISO|number=SING|senID=48395	2	MOZ	_	_
 4	،	،	PUNC	PUNC	attachment=ISO|senID=48395	3	PUNC	_	_
-5	بعد	بعد	PREP	PREP	attachment=ISO|senID=48395	24	ADV	_	_
+5	بعد	بعد	PREP	PREP	attachment=ISO|senID=48395	23	ADV	_	_
 6	از	از	PREP	PREP	attachment=ISO|senID=48395	5	POSDEP	_	_
 7	حضور	حضور	N	IANM	attachment=ISO|number=SING|senID=48395	6	POSDEP	_	_
 8	در	در	PREP	PREP	attachment=ISO|senID=48395	7	NPP	_	_
-9-10	تمرینات	_	_	_	_	_	_	_	_
-9	تمرین	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=48395	8	POSDEP	_	_
-10	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	9	nmod:poss	_	_
-11	تیم‌های	تیم	N	IANM	attachment=ISO|number=PLUR|senID=48395	9	MOZ	_	_
-12	انگلیسی	انگلیسی	ADJ	AJP	attachment=ISO|senID=48395	11	NPOSTMOD	_	_
-13	روز	روز	N	IANM	attachment=ISO|number=SING|senID=48395	24	ADV	_	_
-14	13	13	N	IANM	attachment=ISO|number=SING|senID=48395	13	MOZ	_	_
-15	تیرماه	تیرماه	N	IANM	attachment=ISO|number=SING|senID=48395	13	MOZ	_	_
-16	از	از	PREP	PREP	attachment=ISO|senID=48395	23	NPP	_	_
-17	لندن	لندن	N	IANM	attachment=ISO|number=SING|senID=48395	16	POSDEP	_	_
-18	مستقیماً	مستقیماً	ADV	SADV	attachment=ISO|senID=48395	24	ADV	_	_
-19	به	به	PREP	PREP	attachment=ISO|senID=48395	23	NPP	_	_
-20	"	"	PUNC	PUNC	attachment=ISO|senID=48395	21	PUNC	_	_
-21	مالزی	مالزی	N	IANM	attachment=ISO|number=SING|senID=48395	19	POSDEP	_	_
-22	"	"	PUNC	PUNC	attachment=ISO|senID=48395	21	PUNC	_	_
-23	عزیمت	عزیمت	N	IANM	attachment=ISO|number=SING|senID=48395	24	NVE	_	_
-24	خواهم کرد	کرد#کن	V	ACT	person=1|attachment=ISO|number=SING|tma=AY|senID=48395	0	ROOT	_	_
-25	.	.	PUNC	PUNC	attachment=ISO|senID=48395	24	PUNC	_	_
+9	تمرینات	تمرین	N	IANM	attachment=ISO|number=PLUR|senID=48395	8	POSDEP	_	_
+10	تیم‌های	تیم	N	IANM	attachment=ISO|number=PLUR|senID=48395	9	MOZ	_	_
+11	انگلیسی	انگلیسی	ADJ	AJP	attachment=ISO|senID=48395	10	NPOSTMOD	_	_
+12	روز	روز	N	IANM	attachment=ISO|number=SING|senID=48395	23	ADV	_	_
+13	13	13	N	IANM	attachment=ISO|number=SING|senID=48395	12	MOZ	_	_
+14	تیرماه	تیرماه	N	IANM	attachment=ISO|number=SING|senID=48395	12	MOZ	_	_
+15	از	از	PREP	PREP	attachment=ISO|senID=48395	22	NPP	_	_
+16	لندن	لندن	N	IANM	attachment=ISO|number=SING|senID=48395	15	POSDEP	_	_
+17	مستقیماً	مستقیماً	ADV	SADV	attachment=ISO|senID=48395	23	ADV	_	_
+18	به	به	PREP	PREP	attachment=ISO|senID=48395	22	NPP	_	_
+19	"	"	PUNC	PUNC	attachment=ISO|senID=48395	20	PUNC	_	_
+20	مالزی	مالزی	N	IANM	attachment=ISO|number=SING|senID=48395	18	POSDEP	_	_
+21	"	"	PUNC	PUNC	attachment=ISO|senID=48395	20	PUNC	_	_
+22	عزیمت	عزیمت	N	IANM	attachment=ISO|number=SING|senID=48395	23	NVE	_	_
+23	خواهم کرد	کرد#کن	V	ACT	person=1|attachment=ISO|number=SING|tma=AY|senID=48395	0	ROOT	_	_
+24	.	.	PUNC	PUNC	attachment=ISO|senID=48395	23	PUNC	_	_
 
 # sent_id = dev-s1206
 # text = چرا خداوند ابرهه را عذاب کرد؟
@@ -24883,33 +24793,31 @@
 # sent_id = dev-s1281
 # text = این اغتشاشات که ناظر به تجزیهٔ امپراتوری و ایجاد دولت‌های مستقل محلی بود، دامنهٔ وسیع یافت و وحدت کشور را به شدت تهدید می‌کرد.
 1	این	این	PREM	DEMAJ	attachment=ISO|senID=38635	2	NPREMOD	_	_
-2-3	اغتشاشات	_	_	_	_	_	_	_	_
-2	اغتشاش	اغتشاش	N	IANM	attachment=ISO|number=PLUR|senID=38635	18	SBJ	_	_
-3	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	_
-4	که	که	SUBR	SUBR	attachment=ISO|senID=38635	2	NCL	_	_
-5	ناظر	ناظر	N	IANM	attachment=ISO|number=SING|senID=38635	14	MOS	_	_
-6	به	به	PREP	PREP	attachment=ISO|senID=38635	5	NPP	_	_
-7	تجزیهٔ	تجزیه	N	IANM	attachment=ISO|number=SING|senID=38635	6	POSDEP	_	_
-8	امپراتوری	امپراتوری	N	IANM	attachment=ISO|number=SING|senID=38635	7	MOZ	_	_
-9	و	و	CONJ	CONJ	attachment=ISO|senID=38635	7	NCONJ	_	_
-10	ایجاد	ایجاد	N	IANM	attachment=ISO|number=SING|senID=38635	9	POSDEP	_	_
-11	دولت‌های	دولت	N	IANM	attachment=ISO|number=PLUR|senID=38635	10	MOZ	_	_
-12	مستقل	مستقل	ADJ	AJP	attachment=ISO|senID=38635	11	NPOSTMOD	_	_
-13	محلی	محلی	ADJ	AJP	attachment=ISO|senID=38635	11	NPOSTMOD	_	_
-14	بود	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38635	4	PRD	_	_
-15	،	،	PUNC	PUNC	attachment=ISO|senID=38635	14	PUNC	_	_
-16	دامنهٔ	دامنه	N	IANM	attachment=ISO|senID=38635	18	OBJ	_	_
-17	وسیع	وسیع	ADJ	AJP	attachment=ISO|senID=38635	16	NPOSTMOD	_	_
-18	یافت	یافت#یاب	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38635	19	PREDEP	_	_
-19	و	و	CONJ	CONJ	attachment=ISO|senID=38635	26	VCONJ	_	_
-20	وحدت	وحدت	N	IANM	attachment=ISO|number=SING|senID=38635	22	PREDEP	_	_
-21	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=38635	20	MOZ	_	_
-22	را	را	POSTP	POSTP	attachment=ISO|senID=38635	26	OBJ	_	_
-23	به	به	PREP	PREP	attachment=ISO|senID=38635	26	ADV	_	_
-24	شدت	شدت	N	IANM	attachment=ISO|number=SING|senID=38635	23	POSDEP	_	_
-25	تهدید	تهدید	N	IANM	attachment=ISO|number=SING|senID=38635	26	NVE	_	_
-26	می‌کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=38635	0	ROOT	_	_
-27	.	.	PUNC	PUNC	attachment=ISO|senID=38635	26	PUNC	_	_
+2	اغتشاشات	اغتشاش	N	IANM	attachment=ISO|number=PLUR|senID=38635	17	SBJ	_	_
+3	که	که	SUBR	SUBR	attachment=ISO|senID=38635	2	NCL	_	_
+4	ناظر	ناظر	N	IANM	attachment=ISO|number=SING|senID=38635	13	MOS	_	_
+5	به	به	PREP	PREP	attachment=ISO|senID=38635	4	NPP	_	_
+6	تجزیهٔ	تجزیه	N	IANM	attachment=ISO|number=SING|senID=38635	5	POSDEP	_	_
+7	امپراتوری	امپراتوری	N	IANM	attachment=ISO|number=SING|senID=38635	6	MOZ	_	_
+8	و	و	CONJ	CONJ	attachment=ISO|senID=38635	6	NCONJ	_	_
+9	ایجاد	ایجاد	N	IANM	attachment=ISO|number=SING|senID=38635	8	POSDEP	_	_
+10	دولت‌های	دولت	N	IANM	attachment=ISO|number=PLUR|senID=38635	9	MOZ	_	_
+11	مستقل	مستقل	ADJ	AJP	attachment=ISO|senID=38635	10	NPOSTMOD	_	_
+12	محلی	محلی	ADJ	AJP	attachment=ISO|senID=38635	10	NPOSTMOD	_	_
+13	بود	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38635	3	PRD	_	_
+14	،	،	PUNC	PUNC	attachment=ISO|senID=38635	13	PUNC	_	_
+15	دامنهٔ	دامنه	N	IANM	attachment=ISO|senID=38635	17	OBJ	_	_
+16	وسیع	وسیع	ADJ	AJP	attachment=ISO|senID=38635	15	NPOSTMOD	_	_
+17	یافت	یافت#یاب	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38635	18	PREDEP	_	_
+18	و	و	CONJ	CONJ	attachment=ISO|senID=38635	25	VCONJ	_	_
+19	وحدت	وحدت	N	IANM	attachment=ISO|number=SING|senID=38635	21	PREDEP	_	_
+20	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=38635	19	MOZ	_	_
+21	را	را	POSTP	POSTP	attachment=ISO|senID=38635	25	OBJ	_	_
+22	به	به	PREP	PREP	attachment=ISO|senID=38635	25	ADV	_	_
+23	شدت	شدت	N	IANM	attachment=ISO|number=SING|senID=38635	22	POSDEP	_	_
+24	تهدید	تهدید	N	IANM	attachment=ISO|number=SING|senID=38635	25	NVE	_	_
+25	می‌کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=38635	0	ROOT	_	_
+26	.	.	PUNC	PUNC	attachment=ISO|senID=38635	25	PUNC	_	_
 
 # sent_id = dev-s1282
 # text = و دو ولایت لیدیه و مصر از این جمله بود، اما والی‌های( ساتراپ‌ها) آنها مورد سوء ظن شاه بودند.
@@ -25705,8 +25613,8 @@
 23	نیز	نیز	ADV	SADV	attachment=ISO|senID=38860	16	POSDEP	_	_
 24	عمل	عمل	N	IANM	attachment=ISO|number=SING|senID=38860	25	NVE	_	_
 25	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=38860	14	VCL	_	_
-26	و	و	CONJ	CONJ	attachment=ISO|senID=38860	54	VCONJ	_	_
-27	اگر	اگر	SUBR	SUBR	attachment=ISO|senID=38860	54	AJUCL	_	_
+26	و	و	CONJ	CONJ	attachment=ISO|senID=38860	53	VCONJ	_	_
+27	اگر	اگر	SUBR	SUBR	attachment=ISO|senID=38860	53	AJUCL	_	_
 28	به	به	PREP	PREP	attachment=ISO|senID=38860	36	NPP	_	_
 29	تأمین	تأمین	N	IANM	attachment=ISO|number=SING|senID=38860	28	POSDEP	_	_
 30	حقوق	حق	N	IANM	attachment=ISO|number=PLUR|senID=38860	29	MOZ	_	_
@@ -25729,31 +25637,25 @@
 47	،	،	PUNC	PUNC	attachment=ISO|senID=38860	46	PUNC	_	_
 48	بی‌اعتنا	بی‌اعتنا	ADJ	AJP	attachment=ISO|senID=38860	49	MOS	_	_
 49	بماند	ماند#مان	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=38860	27	PRD	_	_
-50	تفاوتی	تفاوت	N	IANM	attachment=ISO|number=SING|senID=38860	54	OBJ	_	_
+50	تفاوتی	تفاوت	N	IANM	attachment=ISO|number=SING|senID=38860	53	OBJ	_	_
 51	با	با	PREP	PREP	attachment=ISO|senID=38860	50	NPP	_	_
-52-53	حیوانات	_	_	_	_	_	_	_	_
-52	حیوان	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=38860	51	POSDEP	_	_
-53	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	52	nmod:poss	_	_
-54	ندارد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=38860	0	ROOT	_	_
-55	بلکه	بلکه	SUBR	SUBR	attachment=ISO|senID=38860	54	AJUCL	_	_
-56	از	از	PREP	PREP	attachment=ISO|senID=38860	60	COMPPP	_	_
-57-58	حیوانات	_	_	_	_	_	_	_	_
-57	حیوان	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=38860	56	POSDEP	_	_
-58	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	57	nmod:poss	_	_
-59	نیز	نیز	ADV	SADV	attachment=ISO|senID=38860	57	POSDEP	_	_
-60	پست‌تر	پست	ADJ	AJCM	attachment=ISO|senID=38860	61	MOS	_	_
-61	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=38860	55	PRD	_	_
-62	زیرا	زیرا	SUBR	SUBR	attachment=ISO|senID=38860	61	AJUCL	_	_
-63-64	حیوانات	_	_	_	_	_	_	_	_
-63	حیوان	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=38860	67	SBJ	_	_
-64	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	63	nmod:poss	_	_
-65	نیز	نیز	ADV	SADV	attachment=ISO|senID=38860	63	POSDEP	_	_
-66	حقوق	حق	N	IANM	attachment=ISO|number=PLUR|senID=38860	67	OBJ	_	_
-67	دارند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=38860	68	PREDEP	_	_
-68	اما	اما	CONJ	CONJ	attachment=ISO|senID=38860	70	VCONJ	_	_
-69	تکلیف	تکلیف	N	IANM	attachment=ISO|number=SING|senID=38860	70	OBJ	_	_
-70	ندارند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=38860	62	PRD	_	_
-71	.	.	PUNC	PUNC	attachment=ISO|senID=38860	54	PUNC	_	_
+52	حیوانات	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=38860	51	POSDEP	_	_
+53	ندارد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=38860	0	ROOT	_	_
+54	بلکه	بلکه	SUBR	SUBR	attachment=ISO|senID=38860	53	AJUCL	_	_
+55	از	از	PREP	PREP	attachment=ISO|senID=38860	58	COMPPP	_	_
+56	حیوانات	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=38860	55	POSDEP	_	_
+57	نیز	نیز	ADV	SADV	attachment=ISO|senID=38860	56	POSDEP	_	_
+58	پست‌تر	پست	ADJ	AJCM	attachment=ISO|senID=38860	59	MOS	_	_
+59	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=38860	54	PRD	_	_
+60	زیرا	زیرا	SUBR	SUBR	attachment=ISO|senID=38860	59	AJUCL	_	_
+61	حیوانات	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=38860	64	SBJ	_	_
+62	نیز	نیز	ADV	SADV	attachment=ISO|senID=38860	61	POSDEP	_	_
+63	حقوق	حق	N	IANM	attachment=ISO|number=PLUR|senID=38860	64	OBJ	_	_
+64	دارند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=38860	65	PREDEP	_	_
+65	اما	اما	CONJ	CONJ	attachment=ISO|senID=38860	67	VCONJ	_	_
+66	تکلیف	تکلیف	N	IANM	attachment=ISO|number=SING|senID=38860	67	OBJ	_	_
+67	ندارند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=38860	60	PRD	_	_
+68	.	.	PUNC	PUNC	attachment=ISO|senID=38860	53	PUNC	_	_
 
 # sent_id = dev-s1304
 # text = باید تولید ثروت و قدرت کرد اما نباید تنها خود مصرف کرد بلکه ثروت و قدرت را در راه خدمت به محرومین و اجرای عدالت و اخلاق و گسترش توحید، به کار انداخت.
@@ -26966,24 +26868,22 @@
 
 # sent_id = dev-s1355
 # text = امتیازات نفر اول زن و نفر اول مرد هر کشور در دور مقدماتی جمع زده شد.
-1-2	امتیازات	_	_	_	_	_	_	_	_
-1	امتیاز	امتیاز	N	IANM	attachment=ISO|number=PLUR|senID=39385	16	SBJ	_	_
-2	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	1	nmod:poss	_	_
-3	نفر	نفر	N	ANM	attachment=ISO|number=SING|senID=39385	1	MOZ	_	_
-4	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=39385	3	NPOSTMOD	_	_
-5	زن	زن	N	ANM	attachment=ISO|number=SING|senID=39385	3	NPOSTMOD	_	_
-6	و	و	CONJ	CONJ	attachment=ISO|senID=39385	5	NCONJ	_	_
-7	نفر	نفر	N	ANM	attachment=ISO|number=SING|senID=39385	6	POSDEP	_	_
-8	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=39385	7	NPOSTMOD	_	_
-9	مرد	مرد	N	ANM	attachment=ISO|number=SING|senID=39385	7	MOZ	_	_
-10	هر	هر	PREM	AMBAJ	attachment=ISO|senID=39385	11	NPREMOD	_	_
-11	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=39385	9	MOZ	_	_
-12	در	در	PREP	PREP	attachment=ISO|senID=39385	1	NPP	_	_
-13	دور	دور	N	IANM	attachment=ISO|number=SING|senID=39385	12	POSDEP	_	_
-14	مقدماتی	مقدماتی	ADJ	AJP	attachment=ISO|senID=39385	13	NPOSTMOD	_	_
-15	جمع	جمع	N	IANM	attachment=ISO|number=SING|senID=39385	16	NVE	_	_
-16	زده شد	زد#زن	V	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39385	0	ROOT	_	_
-17	.	.	PUNC	PUNC	attachment=ISO|senID=39385	16	PUNC	_	_
+1	امتیازات	امتیاز	N	IANM	attachment=ISO|number=PLUR|senID=39385	15	SBJ	_	_
+2	نفر	نفر	N	ANM	attachment=ISO|number=SING|senID=39385	1	MOZ	_	_
+3	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=39385	2	NPOSTMOD	_	_
+4	زن	زن	N	ANM	attachment=ISO|number=SING|senID=39385	2	NPOSTMOD	_	_
+5	و	و	CONJ	CONJ	attachment=ISO|senID=39385	4	NCONJ	_	_
+6	نفر	نفر	N	ANM	attachment=ISO|number=SING|senID=39385	5	POSDEP	_	_
+7	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=39385	6	NPOSTMOD	_	_
+8	مرد	مرد	N	ANM	attachment=ISO|number=SING|senID=39385	6	MOZ	_	_
+9	هر	هر	PREM	AMBAJ	attachment=ISO|senID=39385	10	NPREMOD	_	_
+10	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=39385	8	MOZ	_	_
+11	در	در	PREP	PREP	attachment=ISO|senID=39385	1	NPP	_	_
+12	دور	دور	N	IANM	attachment=ISO|number=SING|senID=39385	11	POSDEP	_	_
+13	مقدماتی	مقدماتی	ADJ	AJP	attachment=ISO|senID=39385	12	NPOSTMOD	_	_
+14	جمع	جمع	N	IANM	attachment=ISO|number=SING|senID=39385	15	NVE	_	_
+15	زده شد	زد#زن	V	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39385	0	ROOT	_	_
+16	.	.	PUNC	PUNC	attachment=ISO|senID=39385	15	PUNC	_	_
 
 # sent_id = dev-s1356
 # text = او هر گاه به مرتبه‌ای می‌رسد باز دست از تلاش برنمی‌دارد؛ زیرا آن را کامل نمی‌بیند و مرتبه و مرحلهٔ فراتر آن را چشم می‌دارد.
@@ -27017,19 +26917,17 @@
 
 # sent_id = dev-s1357
 # text = مردم، زیادی نسبت به حیوانات دلسوزی و ترحم می‌کنند.
-1	مردم	مردم	N	ANM	attachment=ISO|number=PLUR|senID=39405	11	SBJ	_	_
+1	مردم	مردم	N	ANM	attachment=ISO|number=PLUR|senID=39405	10	SBJ	_	_
 2	،	،	PUNC	PUNC	attachment=ISO|senID=39405	1	PUNC	_	_
-3	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=39405	11	ADV	_	_
-4	نسبت	نسبت	PREP	PREP	attachment=ISO|senID=39405	8	NPP	_	_
+3	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=39405	10	ADV	_	_
+4	نسبت	نسبت	PREP	PREP	attachment=ISO|senID=39405	7	NPP	_	_
 5	به	به	PREP	PREP	attachment=ISO|senID=39405	4	POSDEP	_	_
-6-7	حیوانات	_	_	_	_	_	_	_	_
-6	حیوان	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=39405	5	POSDEP	_	_
-7	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	6	nmod:poss	_	_
-8	دلسوزی	دلسوزی	N	IANM	attachment=ISO|senID=39405	11	NVE	_	_
-9	و	و	CONJ	CONJ	attachment=ISO|senID=39405	8	NCONJ	_	_
-10	ترحم	ترحم	N	IANM	attachment=ISO|number=SING|senID=39405	9	POSDEP	_	_
-11	می‌کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=39405	0	ROOT	_	_
-12	.	.	PUNC	PUNC	attachment=ISO|senID=39405	11	PUNC	_	_
+6	حیوانات	حیوان	N	ANM	attachment=ISO|number=PLUR|senID=39405	5	POSDEP	_	_
+7	دلسوزی	دلسوزی	N	IANM	attachment=ISO|senID=39405	10	NVE	_	_
+8	و	و	CONJ	CONJ	attachment=ISO|senID=39405	7	NCONJ	_	_
+9	ترحم	ترحم	N	IANM	attachment=ISO|number=SING|senID=39405	8	POSDEP	_	_
+10	می‌کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=39405	0	ROOT	_	_
+11	.	.	PUNC	PUNC	attachment=ISO|senID=39405	10	PUNC	_	_
 
 # sent_id = dev-s1358
 # text = پدرم به کار خیلی علاقه‌مند بود و بیکاری را برای خود مرگ تلقی می‌کرد.
@@ -27354,23 +27252,21 @@
 14	،	،	PUNC	PUNC	attachment=ISO|senID=39585	13	PUNC	_	_
 15	اما	اما	CONJ	CONJ	attachment=ISO|senID=39585	16	VCONJ	_	_
 16	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=39585	4	PRD	_	_
-17	در	در	PREP	PREP	attachment=ISO|senID=39585	31	ADV	_	_
+17	در	در	PREP	PREP	attachment=ISO|senID=39585	30	ADV	_	_
 18	محتوا	محتوا	N	IANM	attachment=ISO|number=SING|senID=39585	17	POSDEP	_	_
 19	و	و	CONJ	CONJ	attachment=ISO|senID=39585	18	NCONJ	_	_
 20	شکل	شکل	N	IANM	attachment=ISO|number=SING|senID=39585	19	POSDEP	_	_
 21	برگزاری	برگزاری	N	IANM	attachment=ISO|senID=39585	18	MOZ	_	_
 22	آنها	آنها	PR	SEPER	attachment=ISO|senID=39585	18	MOZ	_	_
-23	با	با	PREP	PREP	attachment=ISO|senID=39585	30	AJPP	_	_
-24-25	تغییرات	_	_	_	_	_	_	_	_
-24	تغییر	تغییر	N	IANM	attachment=ISO|number=PLUR|senID=39585	23	POSDEP	_	_
-25	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	24	nmod:poss	_	_
-26	جهانی	جهانی	ADJ	AJP	attachment=ISO|senID=39585	24	NPOSTMOD	_	_
-27	و	و	CONJ	CONJ	attachment=ISO|senID=39585	24	NCONJ	_	_
-28	ضرورت‌های	ضرورت	N	IANM	attachment=ISO|number=PLUR|senID=39585	27	POSDEP	_	_
-29	بومی	بومی	ADJ	AJP	attachment=ISO|senID=39585	28	NPOSTMOD	_	_
-30	آشنا	آشنا	ADJ	AJP	attachment=ISO|senID=39585	31	MOS	_	_
-31	شد	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39585	16	VCL	_	_
-32	.	.	PUNC	PUNC	attachment=ISO|senID=39585	3	PUNC	_	_
+23	با	با	PREP	PREP	attachment=ISO|senID=39585	29	AJPP	_	_
+24	تغییرات	تغییر	N	IANM	attachment=ISO|number=PLUR|senID=39585	23	POSDEP	_	_
+25	جهانی	جهانی	ADJ	AJP	attachment=ISO|senID=39585	24	NPOSTMOD	_	_
+26	و	و	CONJ	CONJ	attachment=ISO|senID=39585	24	NCONJ	_	_
+27	ضرورت‌های	ضرورت	N	IANM	attachment=ISO|number=PLUR|senID=39585	26	POSDEP	_	_
+28	بومی	بومی	ADJ	AJP	attachment=ISO|senID=39585	27	NPOSTMOD	_	_
+29	آشنا	آشنا	ADJ	AJP	attachment=ISO|senID=39585	30	MOS	_	_
+30	شد	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39585	16	VCL	_	_
+31	.	.	PUNC	PUNC	attachment=ISO|senID=39585	3	PUNC	_	_
 
 # sent_id = dev-s1376
 # text = مهندس علی علیخانی گفت: با صرف هزینهٔ بیش از 340 میلیارد ریال از 15 پروژهٔ راهداری و راه‌سازی در دههٔ فجر امسال بهره‌برداری خواهیم کرد.
@@ -27441,35 +27337,33 @@
 # sent_id = dev-s1378
 # text = این سؤالات البته هنوز پاسخ دقیقی از سوی مسئولان نیافته‌اند تا در نهایت به این سؤال ختم شود که آیا کشتی نوح در نزدیکی تهران پهلو گرفته است؟
 1	این	این	PREM	DEMAJ	attachment=ISO|senID=39615	2	NPREMOD	_	_
-2-3	سؤالات	_	_	_	_	_	_	_	_
-2	سؤال	سؤال	N	IANM	attachment=ISO|number=PLUR|senID=39615	11	SBJ	_	_
-3	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	_
-4	البته	البته	ADV	SADV	attachment=ISO|senID=39615	11	ADV	_	_
-5	هنوز	هنوز	ADV	SADV	attachment=ISO|senID=39615	11	ADV	_	_
-6	پاسخ	پاسخ	N	IANM	attachment=ISO|number=SING|senID=39615	11	OBJ	_	_
-7	دقیقی	دقیق	ADJ	AJP	attachment=ISO|senID=39615	6	NPOSTMOD	_	_
-8	از	از	PREP	PREP	attachment=ISO|senID=39615	6	NPP	_	_
-9	سوی	سو	N	IANM	attachment=ISO|number=SING|senID=39615	8	POSDEP	_	_
-10	مسئولان	مسئول	N	ANM	attachment=ISO|number=PLUR|senID=39615	9	MOZ	_	_
-11	نیافته‌اند	یافت#یاب	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=39615	0	ROOT	_	_
-12	تا	تا	SUBR	SUBR	attachment=ISO|senID=39615	11	AJUCL	_	_
-13	در	در	PREP	PREP	attachment=ISO|senID=39615	19	ADV	_	_
-14	نهایت	نهایت	N	IANM	attachment=ISO|number=SING|senID=39615	13	POSDEP	_	_
-15	به	به	PREP	PREP	attachment=ISO|senID=39615	18	NPP	_	_
-16	این	این	PREM	DEMAJ	attachment=ISO|senID=39615	17	NPREMOD	_	_
-17	سؤال	سؤال	N	IANM	attachment=ISO|number=SING|senID=39615	15	POSDEP	_	_
-18	ختم	ختم	N	IANM	attachment=ISO|number=SING|senID=39615	19	NVE	_	_
-19	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=39615	12	PRD	_	_
-20	که	که	SUBR	SUBR	attachment=ISO|senID=39615	19	VCL	_	_
-21	آیا	آیا	PART	PART	attachment=ISO|senID=39615	28	PART	_	_
-22	کشتی	کشتی	N	IANM	attachment=ISO|number=SING|senID=39615	28	SBJ	_	_
-23	نوح	نوح	N	ANM	attachment=ISO|number=SING|senID=39615	22	MOZ	_	_
-24	در	در	PREP	PREP	attachment=ISO|senID=39615	28	VPP	_	_
-25	نزدیکی	نزدیکی	N	IANM	attachment=ISO|number=SING|senID=39615	24	POSDEP	_	_
-26	تهران	تهران	N	IANM	attachment=ISO|number=SING|senID=39615	25	MOZ	_	_
-27	پهلو	پهلو	N	IANM	attachment=ISO|number=SING|senID=39615	28	NVE	_	_
-28	گرفته است	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=39615	20	PRD	_	_
-29	؟	؟	PUNC	PUNC	attachment=ISO|senID=39615	11	PUNC	_	_
+2	سؤالات	سؤال	N	IANM	attachment=ISO|number=PLUR|senID=39615	10	SBJ	_	_
+3	البته	البته	ADV	SADV	attachment=ISO|senID=39615	10	ADV	_	_
+4	هنوز	هنوز	ADV	SADV	attachment=ISO|senID=39615	10	ADV	_	_
+5	پاسخ	پاسخ	N	IANM	attachment=ISO|number=SING|senID=39615	10	OBJ	_	_
+6	دقیقی	دقیق	ADJ	AJP	attachment=ISO|senID=39615	5	NPOSTMOD	_	_
+7	از	از	PREP	PREP	attachment=ISO|senID=39615	5	NPP	_	_
+8	سوی	سو	N	IANM	attachment=ISO|number=SING|senID=39615	7	POSDEP	_	_
+9	مسئولان	مسئول	N	ANM	attachment=ISO|number=PLUR|senID=39615	8	MOZ	_	_
+10	نیافته‌اند	یافت#یاب	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=39615	0	ROOT	_	_
+11	تا	تا	SUBR	SUBR	attachment=ISO|senID=39615	10	AJUCL	_	_
+12	در	در	PREP	PREP	attachment=ISO|senID=39615	18	ADV	_	_
+13	نهایت	نهایت	N	IANM	attachment=ISO|number=SING|senID=39615	12	POSDEP	_	_
+14	به	به	PREP	PREP	attachment=ISO|senID=39615	17	NPP	_	_
+15	این	این	PREM	DEMAJ	attachment=ISO|senID=39615	16	NPREMOD	_	_
+16	سؤال	سؤال	N	IANM	attachment=ISO|number=SING|senID=39615	14	POSDEP	_	_
+17	ختم	ختم	N	IANM	attachment=ISO|number=SING|senID=39615	18	NVE	_	_
+18	شود	کرد#کن	V	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=39615	11	PRD	_	_
+19	که	که	SUBR	SUBR	attachment=ISO|senID=39615	18	VCL	_	_
+20	آیا	آیا	PART	PART	attachment=ISO|senID=39615	27	PART	_	_
+21	کشتی	کشتی	N	IANM	attachment=ISO|number=SING|senID=39615	27	SBJ	_	_
+22	نوح	نوح	N	ANM	attachment=ISO|number=SING|senID=39615	21	MOZ	_	_
+23	در	در	PREP	PREP	attachment=ISO|senID=39615	27	VPP	_	_
+24	نزدیکی	نزدیکی	N	IANM	attachment=ISO|number=SING|senID=39615	23	POSDEP	_	_
+25	تهران	تهران	N	IANM	attachment=ISO|number=SING|senID=39615	24	MOZ	_	_
+26	پهلو	پهلو	N	IANM	attachment=ISO|number=SING|senID=39615	27	NVE	_	_
+27	گرفته است	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=39615	19	PRD	_	_
+28	؟	؟	PUNC	PUNC	attachment=ISO|senID=39615	10	PUNC	_	_
 
 # sent_id = dev-s1379
 # text = چرا نمی‌نویسند که اخوان ثالث به واصف باختری پهلو می‌زند؟
@@ -27912,21 +27806,19 @@
 1	گاهی	گاه	N	IANM	attachment=ISO|number=SING|senID=59323	3	ADV	_	_
 2	پیش	پیش	ADV	SADV	attachment=ISO|senID=59323	3	NVE	_	_
 3	می‌آمد	آمد#آ	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=59323	0	ROOT	_	_
-4-5	اتفاقات	_	_	_	_	_	_	_	_
-4	اتفاق	اتفاق	N	IANM	attachment=ISO|number=PLUR|senID=59323	16	SBJ	_	_
-5	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
-6	غیرمنتظره‌ای	غیرمنتظره‌ای	ADJ	AJP	attachment=ISO|senID=59323	4	NPOSTMOD	_	_
-7	که	که	SUBR	SUBR	attachment=ISO|senID=59323	4	NCL	_	_
-8	بر	بر	PREP	PREP	attachment=ISO|senID=59323	11	AJPP	_	_
-9	زبان	زبان	N	IANM	attachment=ISO|number=SING|senID=59323	8	POSDEP	_	_
-10	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=59323	9	MOZ	_	_
-11	جاری	جاری	ADJ	AJP	attachment=ISO|senID=59323	12	MOS	_	_
-12	شده بود	کرد#کن	V	PASS	attachment=ISO|tma=GB|senID=59323	7	PRD	_	_
-13	،	،	PUNC	PUNC	attachment=ISO|senID=59323	12	PUNC	_	_
-14	تحقق	تحقق	N	IANM	attachment=ISO|number=SING|senID=59323	16	NVE	_	_
-15	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59323	16	LVP	_	_
-16	می‌کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=59323	3	VCL	_	_
-17	.	.	PUNC	PUNC	attachment=ISO|senID=59323	3	PUNC	_	_
+4	اتفاقات	اتفاق	N	IANM	attachment=ISO|number=PLUR|senID=59323	15	SBJ	_	_
+5	غیرمنتظره‌ای	غیرمنتظره‌ای	ADJ	AJP	attachment=ISO|senID=59323	4	NPOSTMOD	_	_
+6	که	که	SUBR	SUBR	attachment=ISO|senID=59323	4	NCL	_	_
+7	بر	بر	PREP	PREP	attachment=ISO|senID=59323	10	AJPP	_	_
+8	زبان	زبان	N	IANM	attachment=ISO|number=SING|senID=59323	7	POSDEP	_	_
+9	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=59323	8	MOZ	_	_
+10	جاری	جاری	ADJ	AJP	attachment=ISO|senID=59323	11	MOS	_	_
+11	شده بود	کرد#کن	V	PASS	attachment=ISO|tma=GB|senID=59323	6	PRD	_	_
+12	،	،	PUNC	PUNC	attachment=ISO|senID=59323	11	PUNC	_	_
+13	تحقق	تحقق	N	IANM	attachment=ISO|number=SING|senID=59323	15	NVE	_	_
+14	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59323	15	LVP	_	_
+15	می‌کردند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=59323	3	VCL	_	_
+16	.	.	PUNC	PUNC	attachment=ISO|senID=59323	3	PUNC	_	_
 
 # sent_id = dev-s1396
 # text = زمانی که مخارج دولت به بخش خاصی سرازیر می‌شود، منابع به شکلی ناپایدار تخصیص پیدا خواهند کرد.
@@ -28008,7 +27900,7 @@
 
 # sent_id = dev-s1400
 # text = نظام دولت ملی ممالک متحدهٔ امریکا تنها امپراتوری عصر ما به علت تحولات سیاسی و اجتماعی و اخلاقی داخلی و خارجی ممکن است رو به افول گذاشته و بدون شک بر اثر دگرگونی‌های دو دههٔ اخیر ترک خورده و تزلزل پیدا کرده باشد.
-1	نظام	نظام	N	IANM	attachment=ISO|number=SING|senID=59373	28	SBJ	_	_
+1	نظام	نظام	N	IANM	attachment=ISO|number=SING|senID=59373	27	SBJ	_	_
 2	دولت	دولت	N	IANM	attachment=ISO|number=SING|senID=59373	1	MOZ	_	_
 3	ملی	ملی	ADJ	AJP	attachment=ISO|senID=59373	2	NPOSTMOD	_	_
 4	ممالک	مملکت	N	IANM	attachment=ISO|number=PLUR|senID=59373	2	MOZ	_	_
@@ -28018,41 +27910,39 @@
 8	امپراتوری	امپراتوری	N	IANM	attachment=ISO|number=SING|senID=59373	4	APP	_	_
 9	عصر	عصر	N	IANM	attachment=ISO|number=SING|senID=59373	8	MOZ	_	_
 10	ما	ما	PR	SEPER	person=1|attachment=ISO|number=PLUR|senID=59373	9	MOZ	_	_
-11	به	به	PREP	PREP	attachment=ISO|senID=59373	24	ADV	_	_
+11	به	به	PREP	PREP	attachment=ISO|senID=59373	23	ADV	_	_
 12	علت	علت	N	IANM	attachment=ISO|number=SING|senID=59373	11	POSDEP	_	_
-13-14	تحولات	_	_	_	_	_	_	_	_
-13	تحول	تحول	N	IANM	attachment=ISO|number=PLUR|senID=59373	12	MOZ	_	_
-14	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	13	nmod:poss	_	_
-15	سیاسی	سیاسی	ADJ	AJP	attachment=ISO|senID=59373	13	NPOSTMOD	_	_
-16	و	و	CONJ	CONJ	attachment=ISO|senID=59373	15	AJCONJ	_	_
-17	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=59373	16	POSDEP	_	_
-18	و	و	CONJ	CONJ	attachment=ISO|senID=59373	17	AJCONJ	_	_
-19	اخلاقی	اخلاقی	ADJ	AJP	attachment=ISO|senID=59373	18	POSDEP	_	_
-20	داخلی	داخلی	ADJ	AJP	attachment=ISO|senID=59373	19	AJCONJ	_	_
-21	و	و	CONJ	CONJ	attachment=ISO|senID=59373	20	AJCONJ	_	_
-22	خارجی	خارجی	ADJ	AJP	attachment=ISO|senID=59373	21	POSDEP	_	_
-23	ممکن	ممکن	ADJ	AJP	attachment=ISO|senID=59373	24	MOS	_	_
-24	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=59373	0	ROOT	_	_
-25	رو	رو	N	IANM	attachment=ISO|number=SING|senID=59373	28	MOS	_	_
-26	به	به	PREP	PREP	attachment=ISO|senID=59373	25	NPP	_	_
-27	افول	افول	N	IANM	attachment=ISO|number=SING|senID=59373	26	POSDEP	_	_
-28	گذاشته	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=59373	29	PREDEP	_	_
-29	و	و	CONJ	CONJ	attachment=ISO|senID=59373	39	VCONJ	_	_
-30	بدون	بدون	PREP	PREP	attachment=ISO|senID=59373	39	ADV	_	_
-31	شک	شک	N	IANM	attachment=ISO|number=SING|senID=59373	30	POSDEP	_	_
-32	بر	بر	PREP	PREP	attachment=ISO|senID=59373	39	ADV	_	_
-33	اثر	اثر	N	IANM	attachment=ISO|number=SING|senID=59373	32	POSDEP	_	_
-34	دگرگونی‌های	دگرگون	N	IANM	attachment=ISO|number=PLUR|senID=59373	33	MOZ	_	_
-35	دو	دو	PRENUM	PRENUM	attachment=ISO|senID=59373	36	NPREMOD	_	_
-36	دههٔ	دهه	N	IANM	attachment=ISO|number=SING|senID=59373	34	MOZ	_	_
-37	اخیر	اخیر	ADJ	AJP	attachment=ISO|senID=59373	36	NPOSTMOD	_	_
-38	ترک	ترک	N	IANM	attachment=ISO|number=SING|senID=59373	39	NVE	_	_
-39	خورده	خورد#خور	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=59373	40	PREDEP	_	_
-40	و	و	CONJ	CONJ	attachment=ISO|senID=59373	43	VCONJ	_	_
-41	تزلزل	تزلزل	N	IANM	attachment=ISO|number=SING|senID=59373	43	OBJ	_	_
-42	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59373	43	NVE	_	_
-43	کرده باشد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=59373	24	VCL	_	_
-44	.	.	PUNC	PUNC	attachment=ISO|senID=59373	24	PUNC	_	_
+13	تحولات	تحول	N	IANM	attachment=ISO|number=PLUR|senID=59373	12	MOZ	_	_
+14	سیاسی	سیاسی	ADJ	AJP	attachment=ISO|senID=59373	13	NPOSTMOD	_	_
+15	و	و	CONJ	CONJ	attachment=ISO|senID=59373	14	AJCONJ	_	_
+16	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=59373	15	POSDEP	_	_
+17	و	و	CONJ	CONJ	attachment=ISO|senID=59373	16	AJCONJ	_	_
+18	اخلاقی	اخلاقی	ADJ	AJP	attachment=ISO|senID=59373	17	POSDEP	_	_
+19	داخلی	داخلی	ADJ	AJP	attachment=ISO|senID=59373	18	AJCONJ	_	_
+20	و	و	CONJ	CONJ	attachment=ISO|senID=59373	19	AJCONJ	_	_
+21	خارجی	خارجی	ADJ	AJP	attachment=ISO|senID=59373	20	POSDEP	_	_
+22	ممکن	ممکن	ADJ	AJP	attachment=ISO|senID=59373	23	MOS	_	_
+23	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=59373	0	ROOT	_	_
+24	رو	رو	N	IANM	attachment=ISO|number=SING|senID=59373	27	MOS	_	_
+25	به	به	PREP	PREP	attachment=ISO|senID=59373	24	NPP	_	_
+26	افول	افول	N	IANM	attachment=ISO|number=SING|senID=59373	25	POSDEP	_	_
+27	گذاشته	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=59373	28	PREDEP	_	_
+28	و	و	CONJ	CONJ	attachment=ISO|senID=59373	38	VCONJ	_	_
+29	بدون	بدون	PREP	PREP	attachment=ISO|senID=59373	38	ADV	_	_
+30	شک	شک	N	IANM	attachment=ISO|number=SING|senID=59373	29	POSDEP	_	_
+31	بر	بر	PREP	PREP	attachment=ISO|senID=59373	38	ADV	_	_
+32	اثر	اثر	N	IANM	attachment=ISO|number=SING|senID=59373	31	POSDEP	_	_
+33	دگرگونی‌های	دگرگون	N	IANM	attachment=ISO|number=PLUR|senID=59373	32	MOZ	_	_
+34	دو	دو	PRENUM	PRENUM	attachment=ISO|senID=59373	35	NPREMOD	_	_
+35	دههٔ	دهه	N	IANM	attachment=ISO|number=SING|senID=59373	33	MOZ	_	_
+36	اخیر	اخیر	ADJ	AJP	attachment=ISO|senID=59373	35	NPOSTMOD	_	_
+37	ترک	ترک	N	IANM	attachment=ISO|number=SING|senID=59373	38	NVE	_	_
+38	خورده	خورد#خور	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=59373	39	PREDEP	_	_
+39	و	و	CONJ	CONJ	attachment=ISO|senID=59373	42	VCONJ	_	_
+40	تزلزل	تزلزل	N	IANM	attachment=ISO|number=SING|senID=59373	42	OBJ	_	_
+41	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59373	42	NVE	_	_
+42	کرده باشد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=59373	23	VCL	_	_
+43	.	.	PUNC	PUNC	attachment=ISO|senID=59373	23	PUNC	_	_
 
 # sent_id = dev-s1401
 # text = آگاه باشید که با ذکر خداوند، قلب‌های شما تسکین پیدا خواهد کرد.
@@ -29156,23 +29046,21 @@
 13	حال	حال	N	IANM	attachment=ISO|number=SING|senID=39797	12	MOZ	_	_
 14	آزادشدگان	آزادشده	N	ANM	attachment=ISO|number=SING|senID=39797	13	MOZ	_	_
 15	بوده	بود#باش	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=39797	16	PREDEP	_	_
-16	و	و	CONJ	CONJ	attachment=ISO|senID=39797	30	VCONJ	_	_
-17	از	از	PREP	PREP	attachment=ISO|senID=39797	27	NPP	_	_
+16	و	و	CONJ	CONJ	attachment=ISO|senID=39797	29	VCONJ	_	_
+17	از	از	PREP	PREP	attachment=ISO|senID=39797	26	NPP	_	_
 18	شرایط	شرایط	N	IANM	attachment=ISO|number=PLUR|senID=39797	17	POSDEP	_	_
 19	زندان	زندان	N	IANM	attachment=ISO|number=SING|senID=39797	18	MOZ	_	_
 20	،	،	PUNC	PUNC	attachment=ISO|senID=39797	19	PUNC	_	_
 21	مدت	مدت	N	IANM	attachment=ISO|number=SING|senID=39797	18	NCONJ	_	_
 22	بازداشت	بازداشت	N	IANM	attachment=ISO|number=SING|senID=39797	21	MOZ	_	_
 23	و	و	CONJ	CONJ	attachment=ISO|senID=39797	21	NCONJ	_	_
-24-25	اتفاقات	_	_	_	_	_	_	_	_
-24	اتفاق	اتفاق	N	IANM	attachment=ISO|number=PLUR|senID=39797	23	POSDEP	_	_
-25	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	24	nmod:poss	_	_
-26	پیش‌آمده	پیش‌آمده	ADJ	AJP	attachment=ISO|senID=39797	24	NPOSTMOD	_	_
-27	پرس	پرس	N	IANM	attachment=ISO|number=SING|senID=39797	30	NVE	_	_
-28	و	و	CONJ	CONJ	attachment=ISO|senID=39797	27	NCONJ	_	_
-29	جو	جو	N	IANM	attachment=ISO|number=SING|senID=39797	28	POSDEP	_	_
-30	می‌کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=39797	5	PRD	_	_
-31	.	.	PUNC	PUNC	attachment=ISO|senID=39797	4	PUNC	_	_
+24	اتفاقات	اتفاق	N	IANM	attachment=ISO|number=PLUR|senID=39797	23	POSDEP	_	_
+25	پیش‌آمده	پیش‌آمده	ADJ	AJP	attachment=ISO|senID=39797	24	NPOSTMOD	_	_
+26	پرس	پرس	N	IANM	attachment=ISO|number=SING|senID=39797	29	NVE	_	_
+27	و	و	CONJ	CONJ	attachment=ISO|senID=39797	26	NCONJ	_	_
+28	جو	جو	N	IANM	attachment=ISO|number=SING|senID=39797	27	POSDEP	_	_
+29	می‌کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=39797	5	PRD	_	_
+30	.	.	PUNC	PUNC	attachment=ISO|senID=39797	4	PUNC	_	_
 
 # sent_id = dev-s1452
 # text = رفتم و گفتم این نوحه را شما پخش می‌کنید؟
