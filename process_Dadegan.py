@@ -203,9 +203,9 @@ if __name__=="__main__":
     dadegan_train_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll"
     dadegan_test_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll"
     dadegan_dev_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/dev.conll"
-    UD_train_file="Universal_Dadegan/train.conll"
-    UD_test_file="Universal_Dadegan/test.conll"
-    UD_dev_file="Universal_Dadegan/dev.conll"
+    UD_train_file="Universal_Dadegan/train.conllu"
+    UD_test_file="Universal_Dadegan/test.conllu"
+    UD_dev_file="Universal_Dadegan/dev.conllu"
     convert_to_universal(dadegan_train_path,UD_train_file,"train")
     convert_to_universal(dadegan_test_path,UD_test_file,"test")
     convert_to_universal(dadegan_dev_path,UD_dev_file,"dev")
