@@ -17556,7 +17556,7 @@
 23	.	.	PUNC	PUNC	attachment=ISO|senID=36409	1	PUNC	_	_
 
 1	در	در	PREP	PREP	attachment=ISO|senID=36419	13	ADV	_	_
-2	ارتباطات	ارتباط	N	IANM	attachment=ISO|number=SING|senID=36419	1	POSDEP	_	_
+2	ارتباطات	ارتباط	N	IANM	attachment=ISO|number=PLUR|senID=36419	1	POSDEP	_	_
 3	میان	میان	N	IANM	attachment=ISO|number=SING|senID=36419	4	PREDEP	_	_
 4	فردی	فردی	ADJ	AJP	attachment=ISO|senID=36419	2	NPOSTMOD	_	_
 5	و	و	CONJ	CONJ	attachment=ISO|senID=36419	4	AJCONJ	_	_
@@ -20527,7 +20527,7 @@
 1	30	30	PRENUM	PRENUM	attachment=ISO|senID=48455	2	NPREMOD	_	_
 2	استان	استان	N	IANM	attachment=ISO|number=SING|senID=48455	10	SBJ	_	_
 3	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=48455	2	MOZ	_	_
-4	محصولات	محصول	N	IANM	attachment=ISO|number=SING|senID=48455	6	PREDEP	_	_
+4	محصولات	محصول	N	IANM	attachment=ISO|number=PLUR|senID=48455	6	PREDEP	_	_
 5	خود	خود	PR	CREFX	attachment=ISO|senID=48455	4	MOZ	_	_
 6	را	را	POSTP	POSTP	attachment=ISO|senID=48455	10	OBJ	_	_
 7	در	در	PREP	PREP	attachment=ISO|senID=48455	10	ADV	_	_

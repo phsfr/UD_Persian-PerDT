@@ -19944,22 +19944,20 @@
 
 # sent_id = dev-s1029
 # text = در ارتباطات میان فردی و اجتماعی، احترام و بردباری را پاس می‌داریم.
-1	در	در	PREP	PREP	attachment=ISO|senID=36419	14	ADV	_	_
-2-3	ارتباطات	_	_	_	_	_	_	_	_
-2	ارتباط	ارتباط	N	IANM	attachment=ISO|number=SING|senID=36419	1	POSDEP	_	_
-3	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	2	nmod:poss	_	_
-4	میان	میان	N	IANM	attachment=ISO|number=SING|senID=36419	5	PREDEP	_	_
-5	فردی	فردی	ADJ	AJP	attachment=ISO|senID=36419	2	NPOSTMOD	_	_
-6	و	و	CONJ	CONJ	attachment=ISO|senID=36419	5	AJCONJ	_	_
-7	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=36419	6	POSDEP	_	_
-8	،	،	PUNC	PUNC	attachment=ISO|senID=36419	7	PUNC	_	_
-9	احترام	احترام	N	IANM	attachment=ISO|number=SING|senID=36419	12	PREDEP	_	_
-10	و	و	CONJ	CONJ	attachment=ISO|senID=36419	9	NCONJ	_	_
-11	بردباری	بردباری	N	IANM	attachment=ISO|number=SING|senID=36419	10	POSDEP	_	_
-12	را	را	POSTP	POSTP	attachment=ISO|senID=36419	14	OBJ	_	_
-13	پاس	پاس	N	IANM	attachment=ISO|number=SING|senID=36419	14	NVE	_	_
-14	می‌داریم	داشت#دار	V	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=36419	0	ROOT	_	_
-15	.	.	PUNC	PUNC	attachment=ISO|senID=36419	14	PUNC	_	_
+1	در	در	PREP	PREP	attachment=ISO|senID=36419	13	ADV	_	_
+2	ارتباطات	ارتباط	N	IANM	attachment=ISO|number=PLUR|senID=36419	1	POSDEP	_	_
+3	میان	میان	N	IANM	attachment=ISO|number=SING|senID=36419	4	PREDEP	_	_
+4	فردی	فردی	ADJ	AJP	attachment=ISO|senID=36419	2	NPOSTMOD	_	_
+5	و	و	CONJ	CONJ	attachment=ISO|senID=36419	4	AJCONJ	_	_
+6	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=36419	5	POSDEP	_	_
+7	،	،	PUNC	PUNC	attachment=ISO|senID=36419	6	PUNC	_	_
+8	احترام	احترام	N	IANM	attachment=ISO|number=SING|senID=36419	11	PREDEP	_	_
+9	و	و	CONJ	CONJ	attachment=ISO|senID=36419	8	NCONJ	_	_
+10	بردباری	بردباری	N	IANM	attachment=ISO|number=SING|senID=36419	9	POSDEP	_	_
+11	را	را	POSTP	POSTP	attachment=ISO|senID=36419	13	OBJ	_	_
+12	پاس	پاس	N	IANM	attachment=ISO|number=SING|senID=36419	13	NVE	_	_
+13	می‌داریم	داشت#دار	V	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=36419	0	ROOT	_	_
+14	.	.	PUNC	PUNC	attachment=ISO|senID=36419	13	PUNC	_	_
 
 # sent_id = dev-s1030
 # text = چرا از کانون اصلاح و تربیت فرار کردید؟
@@ -23308,18 +23306,16 @@
 # sent_id = dev-s1211
 # text = 30 استان کشور محصولات خود را در نمایشگاه عرضه کرده‌اند.
 1	30	30	PRENUM	PRENUM	attachment=ISO|senID=48455	2	NPREMOD	_	_
-2	استان	استان	N	IANM	attachment=ISO|number=SING|senID=48455	11	SBJ	_	_
+2	استان	استان	N	IANM	attachment=ISO|number=SING|senID=48455	10	SBJ	_	_
 3	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=48455	2	MOZ	_	_
-4-5	محصولات	_	_	_	_	_	_	_	_
-4	محصول	محصول	N	IANM	attachment=ISO|number=SING|senID=48455	7	PREDEP	_	_
-5	ات	تو	PRON	PRO	Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
-6	خود	خود	PR	CREFX	attachment=ISO|senID=48455	4	MOZ	_	_
-7	را	را	POSTP	POSTP	attachment=ISO|senID=48455	11	OBJ	_	_
-8	در	در	PREP	PREP	attachment=ISO|senID=48455	11	ADV	_	_
-9	نمایشگاه	نمایشگاه	N	IANM	attachment=ISO|number=SING|senID=48455	8	POSDEP	_	_
-10	عرضه	عرضه	N	IANM	attachment=ISO|number=SING|senID=48455	11	NVE	_	_
-11	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=48455	0	ROOT	_	_
-12	.	.	PUNC	PUNC	attachment=ISO|senID=48455	11	PUNC	_	_
+4	محصولات	محصول	N	IANM	attachment=ISO|number=PLUR|senID=48455	6	PREDEP	_	_
+5	خود	خود	PR	CREFX	attachment=ISO|senID=48455	4	MOZ	_	_
+6	را	را	POSTP	POSTP	attachment=ISO|senID=48455	10	OBJ	_	_
+7	در	در	PREP	PREP	attachment=ISO|senID=48455	10	ADV	_	_
+8	نمایشگاه	نمایشگاه	N	IANM	attachment=ISO|number=SING|senID=48455	7	POSDEP	_	_
+9	عرضه	عرضه	N	IANM	attachment=ISO|number=SING|senID=48455	10	NVE	_	_
+10	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=48455	0	ROOT	_	_
+11	.	.	PUNC	PUNC	attachment=ISO|senID=48455	10	PUNC	_	_
 
 # sent_id = dev-s1212
 # text = سپنتا با بررسی سازمان شما و انجام مهندسی مجدد، راهکارهای گوناگونی را به شما عرضه خواهد داشت.
