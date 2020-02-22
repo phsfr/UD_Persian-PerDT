@@ -180,8 +180,89 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     contain_multiWord=True   
             
             #seperating multipart verbs
-            if pos=='V' and ('_' in word_form): 
-                verb_parts=word_form.strip().split('_')
+            if pos=='V' and (' ' in word_form): 
+                verb_parts=word_form.strip().split(' ')  
+                if len(verb_parts)==2: #normalizing two part verbs 
+                    v_first_part=verb_parts[0]
+                    v_first_part_form=v_first_part.strip()
+                    v_second_part=verb_parts[1]
+                    v_second_part_form=v_second_part.strip()
+                    future_form=False
+                    aux_form=False
+                    polarity=''
+                    mood=''
+                    aux_dep_rol='aux'
+                    if v_first_part.startswith('ن') and v_first_part[1:] in list(future_base.keys()): #verb is indicative future (tma=AY) in negative form like نخواهم گفت
+                        future_form=True
+                        polarity='|Polarity=Neg'
+                        v_first_part=v_first_part[1:]
+                    elif v_first_part in list(future_base.keys()):#verb is indicative future (tma=AY) in positive form like خواهم گفت
+                        future_form=True
+                    elif v_second_part in list(tobe_base.keys()):#verb is indicative Pluperfect (tma=GB) like گفته بودند. in this form, negation is conjugated with PP part: نگفته بودند
+                        aux_form=True
+                        aux_number=tobe_base[v_second_part][0]
+                        aux_count=tobe_base[v_second_part][1]
+                        tense='Past'
+                        fpos='V_PA'
+                        aux_lemma='بود#باش'
+                    elif v_second_part in list(become_base.keys()):#verb is Subjunctive Preterite (tma=GEL) like گفته باشم. in this form, negation is conjugated with PP part: نگفته باشم
+                        aux_form=True
+                        aux_number=become_base[v_second_part][0]
+                        aux_count=become_base[v_second_part][1]
+                        mood='Mood=Sub|'
+                        tense='Pres'
+                        fpos='V_PRS'
+                        aux_lemma='بود#باش'
+                    elif v_second_part_form=='است':#verb is indicative Preterite (tma=GS) like گفته است
+                        aux_form=True
+                        tense='Pres'
+                        fpos='V_PRS'
+                        aux_number='Sing'
+                        aux_count='3'
+                        aux_lemma='#است'
+                    elif v_second_part in list(shod_base.keys()):#verb is indicative Preterite (tma=GS) like گفته شدند.
+                        aux_form=True
+                        aux_number=shod_base[v_second_part][0]
+                        aux_count=shod_base[v_second_part][1]
+                        tense='Past'
+                        fpos='V_PA'
+                        aux_lemma='کرد#کن'
+                        aux_dep_rol+=':pass'
+                    #elif v_second_part.startswith('ن') and v_second_part[1:] in list(shod_base.keys()):#verb is indicative Preterite (tma=GS) like گفته شدند.
+                    #    polarity='|Polarity=Neg'
+                    #    v_second_part=v_second_part[1:]
+                    if future_form: #verb is indicative future (tma=AY) like خواهم گفت
+                        num_count=future_base[v_first_part]
+                        num_concate_prons=num_concate_prons+1
+                        tokens_ids[token_id]=token_id+num_concate_prons 
+                        v_p_id=tokens_ids[token_id]-1
+                        v_bon=word_lemma.strip().split('#')
+                        #if v_bon[0]!=v_second_part and v_second_part!='شد':
+                            #print(line)
+                        #    print('ERROR: bon mazi is not the same as verb core: ',v_second_part,v_bon)
+                        added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_first_part_form+'\t'+'خواست#خواه'+'\t'+'AUX'+'\t'+'V_AUX'+'\t'+'Number='+future_base[v_first_part][0]+'|Person='+future_base[v_first_part][1]+polarity+'|Tense=Fut|VerbForm=Fin'+'\t'+str(token_id)+'\t'+'aux'+'\t'+'_'+'\t'+'_'+'\n'
+                        eddited_line=str(token_id)+'\t'+v_second_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PA'+'\t'+'Number=Sing|Person=3|Tense=Past'+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        sent_lines.append(added_line_verb)
+                        sent_lines.append(eddited_line)
+                        line_added=True 
+                        contain_multiWord=True 
+                    if aux_form:
+                        num_concate_prons=num_concate_prons+1
+                        v_p_id=tokens_ids[token_id]+1
+                        #v_bon=word_lemma.strip().split('#')
+                        #v_bon_past=''.join(v_bon[:-1])
+                        #elif v_second_part_form=='است':#verb is indicative Preterite (tma=GS) like گفته است
+                        #    if v_bon_past==v_first_part[:-1] or 'ن'+v_bon_past==v_first_part[:-1] or ((v_first_part[:-1]!='شد' or v_first_part[:-1]!='نشد') and v_bon_past=='کرد'):
+                        #        exc=False
+                        #    else:
+                        #        print(line)
+                        #        print('ERROR: bon mazi is not the same as verb core: ',v_first_part,v_bon_past)
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'Number=Sing|Person=3|Tense=Part'+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_second_part_form+'\t'+aux_lemma+'\t'+'VERB'+'\t'+fpos+'\t'+mood+'Number='+aux_number+'|Person='+aux_count+polarity+'|Tense='+tense+'\t'+str(token_id)+'\t'+aux_dep_rol+'\t'+'_'+'\t'+'_'+'\n'
+                        sent_lines.append(eddited_line)
+                        sent_lines.append(added_line_verb)
+                        line_added=True 
+                        contain_multiWord=True 
                 
             if line_added==False:
                 sent_lines.append(line)
@@ -222,7 +303,16 @@ if __name__=="__main__":
     pro_info={'م':['من','Sing','1']    , 'ام':['من','Sing','1'] , 'ت':['تو','Sing','2'] , 'ات':['تو','Sing','2'] , 'ش':['او','Sing','3'], 'اش':['او','Sing','3'] , 'مان':['ما','Plur','1'] , 'تان':['شما','Plur','2'] , 'شان':['آنها','Plur','3']}
                    #plural  singular
     mokasar_nouns={'روایات':'روایت', 'ابیات':'بیت', 'نعمات':'نعمت','زحمات':'زحمت','تجربیات':'تجربه','جزئیات':'جزء'}
-    
+                       #number,person
+    future_base={'خواهم':['Sing','1'], 'خواهی':['Sing','2'],'خواهد':['Sing','3'],'خواهیم':['Plur','1'],'خواهید':['Plur','2'],'خواهند':['Plur','3']}
+                      #number,person
+    tobe_base={'بودم':['Sing','1'], 'بودی':['Sing','2'],'بود':['Sing','3'],'بودیم':['Plur','1'],'بودید':['Plur','2'],'بودند':['Plur','3']}
+                       #number,person
+    become_base={'باشم':['Sing','1'], 'باشی':['Sing','2'],'باشد':['Sing','3'],'باشیم':['Plur','1'],'باشید':['Plur','2'],'باشند':['Plur','3']}
+                    #number,person
+    shod_base={'شدم':['Sing','1'], 'شدی':['Sing','2'],'شد':['Sing','3'],'شدیم':['Plur','1'],'شدید':['Plur','2'],'شدند':['Plur','3']}
+                      #number,person
+    shavad_base={'شوم':['Sing','1'], 'شوی':['Sing','2'],'شود':['Sing','3'],'شویم':['Plur','1'],'شوید':['Plur','2'],'شوند':['Plur','3']}
     dadegan_train_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll"
     dadegan_test_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll"
     dadegan_dev_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/dev.conll"
