@@ -82,6 +82,8 @@ def process_line_to_write(lin,tokens_ids):
         if old_tok_id=='X':#remove X from the begining of the line (token id shouldn't change but head of parent could be changed)
             new_hParent_id=tokens_ids[int(elems[7])]
             lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
+        elif old_tok_id=='Z':#remove Z from the begining of the line (neither token id nor head of its parent should change)
+            lin=elems[1]+'\t'+'\t'.join(elems[2:])+'\n'
         elif old_tok_id=='Y': #remove Y from the begining of the line (token id of both previous token and the next one could be updated)
             old_tok_parts=elems[1].split('-')
             new_first_token_id=tokens_ids[int(old_tok_parts[0])]
@@ -182,10 +184,10 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             #seperating multipart verbs
             if pos=='V' and (' ' in word_form): 
                 verb_parts=word_form.strip().split(' ')  
+                v_first_part=verb_parts[0]
+                v_second_part=verb_parts[1]
                 if len(verb_parts)==2: #normalizing two part verbs 
-                    v_first_part=verb_parts[0]
                     v_first_part_form=v_first_part.strip()
-                    v_second_part=verb_parts[1]
                     v_second_part_form=v_second_part.strip()
                     future_form=False
                     aux_form=False
@@ -220,14 +222,49 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         aux_number='Sing'
                         aux_count='3'
                         aux_lemma='#است'
-                    elif v_second_part in list(shod_base.keys()):#verb is indicative Preterite (tma=GS) like گفته شدند.
+                    elif v_second_part in list(shod_base.keys()) or (v_second_part.startswith('ن') and v_second_part[1:] in list(shod_base.keys())) or (v_second_part.startswith('می') and v_second_part[3:] in list(shod_base.keys())) or (v_second_part.startswith('نمی') and v_second_part[4:] in list(shod_base.keys())):#verb is indicative Preterite (tma=GS) in positive or negative form like گفته شدند or گفته نشدند
                         aux_form=True
+                        if v_second_part.startswith('نمی'):
+                            v_second_part=v_second_part[4:]
+                            polarity='|Polarity=Neg'
+                        elif v_second_part.startswith('ن'):
+                            v_second_part=v_second_part[1:]
+                            polarity='|Polarity=Neg'
+                        elif v_second_part.startswith('می'):
+                            v_second_part=v_second_part[3:]
                         aux_number=shod_base[v_second_part][0]
                         aux_count=shod_base[v_second_part][1]
                         tense='Past'
                         fpos='V_PA'
                         aux_lemma='کرد#کن'
+                        aux_dep_rol+=':pass' #???
+                    elif v_second_part in list(shavad_base.keys()) or (v_second_part.startswith('ن') and v_second_part[1:] in list(shavad_base.keys())) or (v_second_part.startswith('ب') and v_second_part[1:] in list(shavad_base.keys())):#verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته شوند or گفته نشوند or گفته بشوند
+                        aux_form=True
+                        if v_second_part.startswith('ن'):
+                            v_second_part=v_second_part[1:]
+                            polarity='|Polarity=Neg'
+                        if v_second_part.startswith('ب'):
+                            v_second_part=v_second_part[1:]
+                        aux_number=shavad_base[v_second_part][0]
+                        aux_count=shavad_base[v_second_part][1]
+                        tense='Pres'
+                        fpos='V_SUB'
+                        aux_lemma='کرد#کن'
+                        mood='Mood=Sub|'
                         aux_dep_rol+=':pass'
+                    elif v_second_part.startswith('می') and v_second_part[3:] in list(shavad_base.keys()) or (v_second_part.startswith('نمی') and v_second_part[4:] in list(shavad_base.keys())):#verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته میشوند or گفته نمیشوند
+                        aux_form=True
+                        if v_second_part.startswith('ن'):
+                            v_second_part=v_second_part[4:] #one more character for '\u200c' or half-space char
+                            polarity='|Polarity=Neg'
+                        else:
+                            v_second_part=v_second_part[3:] #one more character for '\u200c' or half-space char
+                        aux_number=shavad_base[v_second_part][0]
+                        aux_count=shavad_base[v_second_part][1]
+                        tense='Pres'
+                        fpos='V_PRS'
+                        aux_lemma='کرد#کن'
+                        aux_dep_rol+=':pass' #؟؟؟
                     #elif v_second_part.startswith('ن') and v_second_part[1:] in list(shod_base.keys()):#verb is indicative Preterite (tma=GS) like گفته شدند.
                     #    polarity='|Polarity=Neg'
                     #    v_second_part=v_second_part[1:]
@@ -263,7 +300,43 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         sent_lines.append(added_line_verb)
                         line_added=True 
                         contain_multiWord=True 
-                
+                if len(verb_parts)==3: #normalizing three part verbs including گفته شده است, گفته شده باشد and گفته شده بود
+                    v_third_part=verb_parts[2]
+                    mood=''
+                    if v_second_part=='شده' or v_second_part=='نشده':
+                        #print('ERROR: second part of multipart verb is not shodeh',v_second_part)
+                        if v_second_part=='نشده':
+                            polarity='|Polarity=Neg'
+                        if v_third_part=='است':#like گرفته شده است
+                            tense='Pres'
+                            fpos='V_PRS'
+                            aux_lemma='#است'
+                            aux_number='Sing'
+                            aux_count='3'
+                        elif v_third_part in list(become_base.keys()):#like گرفته شده باشد
+                            aux_number=become_base[v_third_part][0]
+                            aux_count=become_base[v_third_part][1]
+                            tense='Pres'
+                            mood='Mood=Sub|'
+                            fpos='V_SUB'
+                            aux_lemma='بود#باش'
+                        elif v_third_part in list(tobe_base.keys()):#like گرفته شده بود
+                            aux_number=tobe_base[v_third_part][0]
+                            aux_count=tobe_base[v_third_part][1]
+                            tense='Past'
+                            fpos='V_PA'
+                            aux_lemma='بود#باش'
+                        num_concate_prons=num_concate_prons+2 #since two aux parts are added 
+                        v_p_one_id=tokens_ids[token_id]+1
+                        v_p_two_id=v_p_one_id+1
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'Number=Sing|Person=3|Tense=Part'+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        added_line_verb_one='X'+'\t'+str(v_p_one_id)+'\t'+v_second_part_form+'\t'+'کرد#کن'+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'Number=Sing|Person=3'+polarity+'|Tense=Part'+'\t'+str(token_id)+'\t'+'aux:pass'+'\t'+'_'+'\t'+'_'+'\n'
+                        added_line_verb_two='Z'+'\t'+str(v_p_two_id)+'\t'+v_third_part+'\t'+aux_lemma+'\t'+'VERB'+'\t'+fpos+'\t'+mood+'Number='+aux_number+'|Person='+aux_count+polarity+'|Tense='+tense+'\t'+str(v_p_one_id)+'\t'+'aux'+'\t'+'_'+'\t'+'_'+'\n'
+                        sent_lines.append(eddited_line)
+                        sent_lines.append(added_line_verb_one)
+                        sent_lines.append(added_line_verb_two)
+                        line_added=True 
+                        contain_multiWord=True
             if line_added==False:
                 sent_lines.append(line)
         
