@@ -28,21 +28,22 @@ for line in fr.readlines():
             simple_v_str=word_lemma+'\t'+word_form
             simple_verbs[word_form]=word_lemma
         elif pos!='V' and (' ' in word_form):#for checking errors in word forms
+            print(line)
             fw1.write(line)
             fw1.flush()
 verbs=set(verbs)
-for verb in verbs:
-        v_p=verb.strip().split('\t')
-        new_v_str=v_p[0]+'\t'+v_p[1]
-        for i in range(2,len(v_p)):
-            try:
-                lemm=simple_verbs[v_p[i]]
-            except KeyError:
-                lemm='_'
-                print(v_p[i])
-            new_v_str+='\t'+v_p[i]+'\t'+lemm
-        fw.write(new_v_str+'\n')
-        fw.flush()
+#for verb in verbs:
+#        v_p=verb.strip().split('\t')
+#        new_v_str=v_p[0]+'\t'+v_p[1]
+#        for i in range(2,len(v_p)):
+#            try:
+#                lemm=simple_verbs[v_p[i]]
+#            except KeyError:
+#                lemm='_'
+#                print(v_p[i])
+#            new_v_str+='\t'+v_p[i]+'\t'+lemm
+#        fw.write(new_v_str+'\n')
+#        fw.flush()
 fr.close()
 fw.close()
 fw1.close()
