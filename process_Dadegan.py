@@ -46,6 +46,8 @@ def is_potentioal_pronounContained(noun,lemma,line,file_type,noun_num='SING'):
     for pron in he_ye_prons:
         if noun.endswith(pron):
             orig_noun=noun[:-len(pron)]
+            if orig_noun.endswith('\u200c'): #for adj cases like دستی‌ام
+                orig_noun=orig_noun[:-1]
             if orig_noun.endswith('ه') or orig_noun.endswith('ی'): 
                 if orig_noun.endswith('های'):
                     sing_noun=orig_noun[:-3]
@@ -94,73 +96,76 @@ def process_line_to_write(lin,tokens_ids):
             new_token_id=tokens_ids[int(old_tok_id)]
             lin=str(new_token_id)+'\t'+'\t'.join(elems[1:6])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
     return lin
-def detect_verb_polarity(verb,v_lemma):
+def detect_verb_polarity(verb,v_lemma,line):
     v_parts=v_lemma.strip().split('#')
-    correct_v=[]
-    wrong_v=[]
-    nan_v=[]
+    #correct_v=[]
+    #wrong_v=[]
+    #nan_v=[]
     verb_form=verb
-    #print(verb_form)                                 #common use of افتادن
-    except_lemma={'آورد#آور':['نیاور'],'افتاد#افت':['نیفت','نیافت'],'آمد#آ':['نیای','نیامد'],'افزود#افزا':['نیفز'],'اندیشید#اندیش':['نیندیش'],'انداخت#انداز':['نینداخت','نینداز'],'آفرید#آفرین':['نیافرید'],'آلود#آلا':['نیالود'],'شمرد#شمر':['نمی‌شمارد']}
-    polarity='|Polarity=Pos'
-    if len(v_parts)==2 and ' ' not in verb: #processing simple verbs with 
+    v_past_bon=''
+    v_pres_bon=''                                                           #common use of افتادن
+    except_lemma={'نشست#نشین':['ننشاند'],'آورد#آور':['نیاور'],'افتاد#افت':['نیفت','نیافت'],'آمد#آ':['نیای','نیامد'],'افزود#افزا':['نیفز'],'اندیشید#اندیش':['نیندیش'],'انداخت#انداز':['نینداخت','نینداز'],'آفرید#آفرین':['نیافرید'],'آلود#آلا':['نیالود'],'شمرد#شمر':['نمی‌شمارد'],'بر#آورد#آور':['برنیاور'],'در#آورد#آور':['درنیاور'],'در#آمد#آ':['درنیامد'],'بر#آمد#آ':['برنیاید'],'در#افتاد#افت':['درنیفت']}
+    polarity=''#'|Polarity=Pos'
+    if len(v_parts)==3 and verb.startswith(v_parts[0]):
+        verb=verb[len(v_parts[0]):]
+        v_past_bon=v_parts[1]
+        v_pres_bon=v_parts[2]
+    if len(v_parts)==2:
         v_past_bon=v_parts[0]
         v_pres_bon=v_parts[1]
-        #print(verb)
+    if ' ' not in verb: #and len(v_parts)==2: #processing simple verbs with 
         if verb.startswith('ن') and  (not verb.startswith(v_past_bon)) and (not verb.startswith(v_pres_bon)) :
-            #print(verb)
             verb=verb[1:]
             if verb.startswith('می') and verb.startswith('می'+'\u200c'+v_pres_bon):
-                polarity='|Polarity=Neg'
-                #print(verb_form)
-                correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-                #print(verb_form)
+                polarity='|polarity=NEG'
+                #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif verb.startswith('می') and verb.startswith('می'+'\u200c'+v_past_bon):
-                polarity='|Polarity=Neg'
-                correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+                polarity='|polarity=NEG'
+                #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif verb.startswith(v_past_bon):
-                polarity='|Polarity=Neg'
-                correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+                polarity='|polarity=NEG'
+                #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
                 #print(verb_form+'\t'+v_lemma+'\n')
             elif verb.startswith(v_pres_bon):
-                polarity='|Polarity=Neg'
-                correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+                polarity='|polarity=NEG'
+                #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif v_lemma=='کرد#کن' and (verb.startswith('شد') or verb.startswith('شو') or verb.startswith('می‌شد') or verb.startswith('می‌شو')):
-                polarity='|Polarity=Neg'
-                correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+                polarity='|polarity=NEG'
+                #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif v_lemma in list(except_lemma.keys()):
-                verb_registered=False
+                #verb_registered=False
                 for verb_f in except_lemma[v_lemma]:
                     if verb_form.startswith(verb_f):
-                        polarity='|Polarity=Neg'
-                        correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-                        verb_registered=True
+                        polarity='|polarity=NEG'
+                        #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+                        #verb_registered=True
                         break
-                if not verb_registered:
-                    print('ERROR: verb without category!',verb_form)
+                #if not verb_registered:
+                #    print('ERROR: verb without category!',verb_form)
             else:
-                wrong_v.append(verb_form+'\t'+v_lemma+'\n')
+                polarity='|polarity=NEG' 
+                #wrong_v.append(verb_form+'\t'+v_lemma+'\t'+line+'\n')
         elif verb.startswith('نیست') or verb.startswith('نتوان') or verb.startswith('نمی‌توان'):
-            polarity='|Polarity=Neg'
-            correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-        else:
-            polarity='|Polarity=Pos'
-            correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-    else:
-        polarity='|Polarity=NAN'
-        nan_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-    wrong_v=set(wrong_v)  
-    correct_v=set(correct_v) 
-    nan_v=set(nan_v)     
-    for v in wrong_v:
-        fwvw.write(v)
-        fwvw.flush()
-    for v in correct_v:
-        fwvc.write(v)
-        fwvc.flush()
-    for v in nan_v:
-        fwvnan.write(v)
-        fwvnan.flush()
+            polarity='|polarity=NEG' #neg_polarity='|Polarity=Neg'
+            #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+        #else:
+        #    polarity='|Polarity=Pos'
+        #    correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+    #else:
+    #    polarity='|Polarity=NAN'
+    #    nan_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
+    #wrong_v=set(wrong_v)  
+    #correct_v=set(correct_v) 
+    #nan_v=set(nan_v)     
+    #for v in wrong_v:
+    #    fwvw.write(v)
+    #    fwvw.flush()
+    #for v in correct_v:
+    #    fwvc.write(v)
+    #    fwvc.flush()
+    #for v in nan_v:
+    #    fwvnan.write(v)
+    #    fwvnan.flush()
     return polarity   
 def convert_to_universal(old_fileP,new_fileP,file_type):
     fr=open(old_fileP,'r',encoding="utf-8")
@@ -176,6 +181,8 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
     prev_attachment=''
     prev_token_id=-1
     prev_word_form=''
+    prev_tok_form=''
+    prev_pos=''
     for line in fr.readlines():
         if line.strip()!='':
             elems=line.strip().split('\t')
@@ -248,10 +255,28 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     sent_lines.append(eddited_line)
                     sent_lines.append(added_line)
                     line_added=True 
-                    contain_multiWord=True   
+                    contain_multiWord=True 
+            #seperating concatinated pronouns to adjectives                    
+            if pos=='ADJ' and word_form!=word_lemma:
+                result,pronoun,orig_noun=is_potentioal_pronounContained(word_form,word_lemma,line,file_type,number)
+                if result==True: 
+                    log_pron_adj.write(word_form+'\t'+orig_noun+'\t'+word_lemma+'\t'+pronoun+'\n')
+                    log_pron_adj.flush()
+                    num_concate_prons=num_concate_prons+1
+                    pron_id=token_id+num_concate_prons
+                    other_parts='\t'.join("_"*len(elems[2:]))
+                    dadegan_senID='|senID='+seperated_feature['senID']
+                    added_line_multiword=str(token_id)+'-'+str(pron_id)+'\t'+word_form+'\t'+other_parts+'\n'
+                    eddited_line=str(token_id)+'\t'+orig_noun+'\t'+word_lemma+'\t'+pos+'\t'+cpos+'\t'+features+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                    added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PRON'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+str(token_id)+'\t'+'nmod:poss'+'\t'+semanticRoles+'\n'
+                    sent_lines.append(added_line_multiword)
+                    sent_lines.append(eddited_line)
+                    sent_lines.append(added_line)
+                    line_added=True 
+                    contain_multiWord=True                     
             #detecting verb polarity
-            if pos=='V':
-                polarity_v=detect_verb_polarity(word_form,word_lemma)
+            #if pos=='V':
+            #    polarity_v=detect_verb_polarity(word_form,word_lemma,line)
             #seperating multipart verbs
             if pos=='V' and (' ' in word_form): 
                 verb_parts=word_form.strip().split(' ')  
@@ -308,13 +333,16 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         aux_lemma='بود#باش'
                         if v_second_part=='باش': #for imparative verb occurance two times in corpus: داشته باش
                             mood=''
-                    elif v_second_part_form=='است':#verb is indicative Preterite (tma=GS) like گفته است
+                    elif v_second_part_form=='است' or v_second_part_form=='می‌گردند':#verb is indicative Preterite (tma=GS) like گفته است and one occurance of the verb پذیرفته می‌گردند 
                         aux_form=True
                         tense='Pres'
                         fpos='V_PRS'
                         aux_number='SING'
                         aux_count='3'
                         aux_lemma='#است'
+                        if v_second_part_form=='می‌گردند': #one occurance of the verb پذیرفته می‌گردند in senID=40176
+                            aux_number='PLUR'
+                            aux_lemma='گشت#گرد'
                     elif v_second_part in list(shod_base.keys()) or (v_second_part.startswith('ن') and v_second_part[1:] in list(shod_base.keys())) or (v_second_part.startswith('می') and v_second_part[3:] in list(shod_base.keys())) or (v_second_part.startswith('نمی') and v_second_part[4:] in list(shod_base.keys())):#verb is indicative Preterite (tma=GS) in positive or negative form like گفته شدند or گفته نشدند
                         aux_form=True
                         if v_second_part.startswith('نمی'):
@@ -391,7 +419,11 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         v_p_id=tokens_ids[token_id]+1
                         old_dadegan_info_aux='|senID='+seperated_feature['senID']
                         old_dadegan_info_v='|tma='+seperated_feature['tma']+'|dadeg_pos='+pos+'|dadeg_fpos='+cpos+'|senID='+seperated_feature['senID']
-                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        if v_second_part_form=='است' and word_lemma=='داد#ده' and prev_tok_form=='انجام':#changeing lemma of شده or نشده in انجام شده است phrase from داد#ده to کرد#کن
+                            old_dadegan_info_v+='|dadeg_lemma='+word_lemma
+                            word_lemma='کرد#کن'
+                        polarity_v=detect_verb_polarity(v_first_part,word_lemma,line)
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3'+polarity_v+'|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
                         added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_second_part_form+'\t'+aux_lemma+'\t'+'AUX'+'\t'+fpos+'\t'+mood+'number='+aux_number+'|person='+aux_count+polarity+'|tense='+tense+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+aux_dep_rol+'\t'+'_'+'\t'+'_'+'\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb)
@@ -402,7 +434,8 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         v_p_id=tokens_ids[token_id]+1
                         old_dadegan_info_aux='|senID='+seperated_feature['senID']
                         old_dadegan_info_v='|tma='+seperated_feature['tma']+'|dadeg_pos='+pos+'|dadeg_fpos='+cpos+'|senID='+seperated_feature['senID']
-                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        polarity_v=detect_verb_polarity(v_first_part,word_lemma,line)
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3'+polarity_v+'|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
                         added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_second_part_form+'\t'+'کرد#کن'+'\t'+'AUX'+'\t'+'V_PP'+'\t'+'number='+aux_number+'|person='+aux_count+polarity+'|verbForm=Part'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux:pass'+'\t'+'_'+'\t'+'_'+'\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb)
@@ -480,8 +513,19 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         contain_multiWord=True
                     
             if line_added==False:
+                if pos=='V':
+                    old_dadegan_lem=''
+                    if prev_tok_form=='انجام' and cpos=='PASS' and word_lemma=='داد#ده':
+                        old_dadegan_lem+='|dadeg_lemma='+word_lemma
+                        word_lemma='کرد#کن'
+                    polarity_v=detect_verb_polarity(word_form,word_lemma,line)
+                    line='\t'.join(elems[:2])+'\t'+word_lemma+'\t'+'\t'.join(elems[3:5])+'\t'+elems[5]+polarity_v+old_dadegan_lem+'\t'+'\t'.join(elems[6:])
+                    #print(line)
                 sent_lines.append(line)
-        
+            #if prev_pos=='PUNC' and prev_tok_form not in punc_attach_after:
+            #    noSpace=
+            prev_tok_form=word_form
+            prev_pos=pos
         else:
             UD_file.write('# sent_id = '+file_type+'-s'+str(sent_id)+'\n')
             UD_file.write('# text = '+sent_text.strip()+'\n')
@@ -497,6 +541,8 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             num_concate_prons=0
             parent_changed=[]
             tokens_ids={0:0}
+            prev_tok_form=''
+            prev_pos=''
         
     if len(sent_lines)>0: #to write down the last sentence 
             UD_file.write('# sent_id = s'+str(sent_id)+'\n')
@@ -510,6 +556,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
     
 if __name__=="__main__":
     log_pron_noun=open("pronoun-nouns.txt",'w',encoding="utf-8")
+    log_pron_adj=open("pronoun-adjs.txt",'w',encoding="utf-8")
     fwvw=open("polarity_v_wrong.txt",'w',encoding="utf-8")
     fwvc=open("polarity_v_correct.txt",'w',encoding="utf-8")
     fwvnan=open("polarity_v_nan.txt",'w',encoding="utf-8")
@@ -532,6 +579,7 @@ if __name__=="__main__":
     shodeh_base={'شده‌ام':['SING','1'], 'شده‌ای':['SING','2'],'شده‌ایم':['PLUR','1'],'شده‌اید':['PLUR','2'],'شده‌اند':['PLUR','3']}
                       #number,person
     shavad_base={'شوم':['SING','1'], 'شوی':['SING','2'],'شود':['SING','3'],'شویم':['PLUR','1'],'شوید':['PLUR','2'],'شوند':['PLUR','3']}
+    punc_attach_after=['«','(','[']
     dadegan_train_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll"
     dadegan_test_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll"
     dadegan_dev_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/dev.conll"
@@ -542,6 +590,7 @@ if __name__=="__main__":
     convert_to_universal(dadegan_test_path,UD_test_file,"test")
     convert_to_universal(dadegan_dev_path,UD_dev_file,"dev")
     log_pron_noun.close()
+    log_pron_adj.close()
     fwvw.close()
     fwvc.close()
     fwvnan.close()
