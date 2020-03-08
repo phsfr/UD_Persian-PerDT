@@ -73,28 +73,61 @@ def is_potentioal_pronounContained(noun,lemma,line,file_type,noun_num='SING'):
    
     return False,'',''
 
-def process_line_to_write(lin,tokens_ids):
+def process_line_to_write(lin,tokens_ids,space_toks):
     elems=lin.strip().split('\t')
+    contain_noSpace=False
+    if elems[-1]=='spaceAfter=NO':
+        contain_noSpace=True
     old_tok_id=elems[0]
+    pos_map={'V':'VERB','N':'NOUN','SUBR':'SCONJ','PR':'PRON','ADJ':'ADJ','ADV':'ADV','PUNC':'PUNCT','CONJ':'CCONJ','AUX':'AUX','ADR':'INTJ'  ,'IDEN':'IDEN','PART':'PART','POSNUM':'POSNUM','PREM':'PREM','PRENUM':'PRENUM','PREP':'PREP','PSUS':'PSUS','POSTP':'POSTP'}
     if '-' in old_tok_id:
         old_tok_parts=old_tok_id.split('-')
-        new_token_id=tokens_ids[int(old_tok_parts[0])]
-        lin=str(new_token_id)+'-'+old_tok_parts[1]+'\t'+'\t'.join(elems[1:])+'\n'
+        old_tok_int=int(old_tok_parts[0]) 
+        new_token_id=tokens_ids[old_tok_int]
+        if old_tok_int in space_toks and (not contain_noSpace):
+            space_toks.remove(old_tok_int)
+            lin=str(new_token_id)+'-'+old_tok_parts[1]+'\t'+'\t'.join(elems[1:-1])+'\t'+'spaceAfter=NO'+'\n'
+        else:
+            lin=str(new_token_id)+'-'+old_tok_parts[1]+'\t'+'\t'.join(elems[1:])+'\n'
     else:
         if old_tok_id=='X':#remove X from the begining of the line (token id shouldn't change but head of parent could be changed)
             new_hParent_id=tokens_ids[int(elems[7])]
-            lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
+            old_pos=elems[4]
+            old_cpos=elems[5]
+            old_dadegan_pos='|dadeg_pos='+old_pos
+            lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
+            if elems[1] in space_toks and (not contain_noSpace):
+                space_toks.remove(elems[1])
+                lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:-1])+'\t'+'spaceAfter=NO'+'\n'
+            #lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
         elif old_tok_id=='Z':#remove Z from the begining of the line (neither token id nor head of its parent should change)
-            lin=elems[1]+'\t'+'\t'.join(elems[2:])+'\n'
+            old_pos=elems[4]
+            old_cpos=elems[5]
+            old_dadegan_pos='|dadeg_pos='+old_pos
+            lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:])+'\n'
+            if elems[1] in space_toks and (not contain_noSpace):
+                space_toks.remove(elems[1])
+                lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
+            #lin=elems[1]+'\t'+'\t'.join(elems[2:])+'\n'
         elif old_tok_id=='Y': #remove Y from the begining of the line (token id of both previous token and the next one could be updated)
             old_tok_parts=elems[1].split('-')
             new_first_token_id=tokens_ids[int(old_tok_parts[0])]
             new_second_token_id=tokens_ids[int(old_tok_parts[1])]
-            lin=str(new_first_token_id)+'-'+str(new_second_token_id)+'\t'+'\t'.join(elems[2:])+'\n'         
+            lin=str(new_first_token_id)+'-'+str(new_second_token_id)+'\t'+'\t'.join(elems[2:])+'\n'   
+            if int(old_tok_parts[0]) in space_toks and (not contain_noSpace):
+                space_toks.remove(int(old_tok_parts[0]))
+                lin=str(new_first_token_id)+'-'+str(new_second_token_id)+'\t'+'\t'.join(elems[2:-1])+'\t'+'spaceAfter=NO'+'\n' 
         else:
             new_hParent_id=tokens_ids[int(elems[6])]
             new_token_id=tokens_ids[int(old_tok_id)]
-            lin=str(new_token_id)+'\t'+'\t'.join(elems[1:6])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
+            old_pos=elems[3]
+            old_cpos=elems[4]
+            old_dadegan_pos='|dadeg_pos='+old_pos
+            lin=str(new_token_id)+'\t'+'\t'.join(elems[1:3])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[5]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
+            if int(old_tok_id) in space_toks and (not contain_noSpace):
+                space_toks.remove(int(old_tok_id))
+                lin=str(new_token_id)+'\t'+'\t'.join(elems[1:3])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[5]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
+            #lin=str(new_token_id)+'\t'+'\t'.join(elems[1:6])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
     return lin
 def detect_verb_polarity(verb,v_lemma,line):
     v_parts=v_lemma.strip().split('#')
@@ -147,25 +180,6 @@ def detect_verb_polarity(verb,v_lemma,line):
                 #wrong_v.append(verb_form+'\t'+v_lemma+'\t'+line+'\n')
         elif verb.startswith('نیست') or verb.startswith('نتوان') or verb.startswith('نمی‌توان'):
             polarity='|polarity=NEG' #neg_polarity='|Polarity=Neg'
-            #correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-        #else:
-        #    polarity='|Polarity=Pos'
-        #    correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-    #else:
-    #    polarity='|Polarity=NAN'
-    #    nan_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
-    #wrong_v=set(wrong_v)  
-    #correct_v=set(correct_v) 
-    #nan_v=set(nan_v)     
-    #for v in wrong_v:
-    #    fwvw.write(v)
-    #    fwvw.flush()
-    #for v in correct_v:
-    #    fwvc.write(v)
-    #    fwvc.flush()
-    #for v in nan_v:
-    #    fwvnan.write(v)
-    #    fwvnan.flush()
     return polarity   
 def convert_to_universal(old_fileP,new_fileP,file_type):
     fr=open(old_fileP,'r',encoding="utf-8")
@@ -183,8 +197,22 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
     prev_word_form=''
     prev_tok_form=''
     prev_pos=''
-    for line in fr.readlines():
+    space_after_toks=[]
+    noSpace=False
+    noSpace_current_punct=False
+    paired=False
+    punc_stack=[] #defining a stack for paired punctuation marks such as " 
+    file_lines=fr.readlines()
+    for indx,line in enumerate(file_lines):
         if line.strip()!='':
+            next_tok_form=''
+            next_tok_pos=''
+            if indx+1<len(file_lines):#extracting next token form for punctiations placed after multipart verbs
+                next_line=file_lines[indx+1]
+                if next_line.strip()!='':
+                    nex_elems=next_line.strip().split('\t')
+                    next_tok_form=nex_elems[1]
+                    next_tok_pos=nex_elems[3]
             elems=line.strip().split('\t')
             token_id=int(elems[0])
             word_form=elems[1].strip()
@@ -207,8 +235,45 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             attachment=seperated_feature['attachment']
             tokens_ids[token_id]=token_id
             if contain_multiWord:
-                tokens_ids[token_id]=token_id+num_concate_prons      
-            if pos=='PUNC' or attachment=='PRV': #punctuations should be concated to the previous word
+                tokens_ids[token_id]=token_id+num_concate_prons 
+            if next_tok_pos=='PUNC' and next_tok_form not in punc_attach_after:
+                #sent_text=sent_text+' '+word_form
+                if ' ' in word_form or attachment=='PRV':
+                    noSpace=True
+            if word_form=='"' and pos=='PUNC':#Reseting spaceAfter feature for the second or third " punct in the same sentence 
+            #    noSpace_current_punct=False 
+            #    paired=True
+                if len(punc_stack)==1:
+                    punc_stack.pop()
+                    noSpace_current_punct=False
+                    if (' ' not in prev_tok_form) and (prev_attachment!='PRV'):
+                        space_after_toks.append(token_id-1)
+                    sent_text=sent_text+word_form
+                elif len(punc_stack)==0:
+                    noSpace_current_punct=True
+                    punc_stack.append(word_form)
+                    sent_text=sent_text+' '+word_form 
+                else:
+                    print('Error in punc stack size')
+                
+            #elif prev_pos=='PUNC' and prev_tok_form=='"' and len(punc_stack)==0:
+            #    noSpace_current_punct=True 
+                #paired=False
+                #if len(punc_stack)==0:
+            #    punc_stack.append(prev_tok_form)
+            #    space_after_toks.append(token_id)
+            #    sent_text=sent_text+word_form                
+            elif prev_pos=='PUNC' and prev_tok_form=='"' and len(punc_stack)==1:
+                sent_text=sent_text+word_form 
+            elif pos=='PUNC' and word_form not in punc_attach_after:
+                sent_text=sent_text+word_form
+                if (' ' not in prev_tok_form) and (prev_attachment!='PRV'): #for multipart verbs where no space feature should be attached to the last part of the verb
+                    #noSpace=True
+                #else:
+                    space_after_toks.append(token_id-1)
+            elif prev_pos=='PUNC' and prev_tok_form in punc_attach_after:
+                sent_text=sent_text+word_form
+            elif attachment=='PRV': #punctuations should be concated to the previous word
                 sent_text=sent_text+word_form
             elif '_' in word_form: #to replace _ in multiwords with space or half-space (now replace with space)
                 sent_text=sent_text+' '+word_form.replace('_',' ')
@@ -233,6 +298,8 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     new_word_form=prev_word_form+word_form
                 multi_words.append(new_word_form)
                 new_line_multiword='Y'+'\t'+str(prev_token_id)+'-'+str(token_id)+'\t'+new_word_form+'\t'+other_parts+'\n'
+                if noSpace:
+                    new_line_multiword='Y'+'\t'+str(prev_token_id)+'-'+str(token_id)+'\t'+new_word_form+'\t'+'\t'.join("_"*(len(elems[2:])-1))+'\t'+'spaceAfter=NO'+'\n'
                 last_line=sent_lines.pop(-1)
                 sent_lines.append(new_line_multiword)
                 sent_lines.append(last_line)
@@ -250,7 +317,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     dadegan_senID='|senID='+seperated_feature['senID']
                     added_line_multiword=str(token_id)+'-'+str(pron_id)+'\t'+word_form+'\t'+other_parts+'\n'
                     eddited_line=str(token_id)+'\t'+orig_noun+'\t'+word_lemma+'\t'+pos+'\t'+cpos+'\t'+features+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
-                    added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PRON'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+str(token_id)+'\t'+'nmod:poss'+'\t'+semanticRoles+'\n'
+                    added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PR'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+str(token_id)+'\t'+'nmod:poss'+'\t'+semanticRoles+'\n'
                     sent_lines.append(added_line_multiword)
                     sent_lines.append(eddited_line)
                     sent_lines.append(added_line)
@@ -268,7 +335,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     dadegan_senID='|senID='+seperated_feature['senID']
                     added_line_multiword=str(token_id)+'-'+str(pron_id)+'\t'+word_form+'\t'+other_parts+'\n'
                     eddited_line=str(token_id)+'\t'+orig_noun+'\t'+word_lemma+'\t'+pos+'\t'+cpos+'\t'+features+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
-                    added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PRON'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+str(token_id)+'\t'+'nmod:poss'+'\t'+semanticRoles+'\n'
+                    added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PR'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+hParent+'\t'+'MOZ'+'\t'+semanticRoles+'\n'
                     sent_lines.append(added_line_multiword)
                     sent_lines.append(eddited_line)
                     sent_lines.append(added_line)
@@ -409,7 +476,9 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         old_dadegan_info_aux='|senID='+seperated_feature['senID']
                         old_dadegan_info_v='|tma='+seperated_feature['tma']+'|dadeg_pos='+pos+'|dadeg_fpos='+cpos+'|senID='+seperated_feature['senID']
                         added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_first_part_form+'\t'+aux_v_prefix+'خواست#خواه'+'\t'+'AUX'+'\t'+'V_AUX'+'\t'+'number='+future_base[v_first_part][0]+'|person='+future_base[v_first_part][1]+polarity+'|tense=Fut|verbForm=Fin'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux'+'\t'+'_'+'\t'+'_'+'\n'
-                        eddited_line=str(token_id)+'\t'+v_second_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PA'+'\t'+'number=SING|person=3|tense=Past'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        eddited_line=str(token_id)+'\t'+v_second_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_PA'+'\t'+'number=SING|person=3|tense=Past'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        if noSpace:
+                            eddited_line=str(token_id)+'\t'+v_second_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_PA'+'\t'+'number=SING|person=3|tense=Past'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+'\t'.join(elems[8:-1])+'\t'+'spaceAfter=NO'+'\n'
                         sent_lines.append(added_line_verb)
                         sent_lines.append(eddited_line)
                         line_added=True 
@@ -423,8 +492,11 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                             old_dadegan_info_v+='|dadeg_lemma='+word_lemma
                             word_lemma='کرد#کن'
                         polarity_v=detect_verb_polarity(v_first_part,word_lemma,line)
-                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3'+polarity_v+'|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
-                        added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_second_part_form+'\t'+aux_lemma+'\t'+'AUX'+'\t'+fpos+'\t'+mood+'number='+aux_number+'|person='+aux_count+polarity+'|tense='+tense+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+aux_dep_rol+'\t'+'_'+'\t'+'_'+'\n'
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_PP'+'\t'+'number=SING|person=3'+polarity_v+'|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        spaceAft='_'
+                        if noSpace:
+                            spaceAft='spaceAfter=NO'
+                        added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_second_part_form+'\t'+aux_lemma+'\t'+'AUX'+'\t'+fpos+'\t'+mood+'number='+aux_number+'|person='+aux_count+polarity+'|tense='+tense+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+aux_dep_rol+'\t'+'_'+'\t'+spaceAft+'\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb)
                         line_added=True 
@@ -435,8 +507,11 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         old_dadegan_info_aux='|senID='+seperated_feature['senID']
                         old_dadegan_info_v='|tma='+seperated_feature['tma']+'|dadeg_pos='+pos+'|dadeg_fpos='+cpos+'|senID='+seperated_feature['senID']
                         polarity_v=detect_verb_polarity(v_first_part,word_lemma,line)
-                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3'+polarity_v+'|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
-                        added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_second_part_form+'\t'+'کرد#کن'+'\t'+'AUX'+'\t'+'V_PP'+'\t'+'number='+aux_number+'|person='+aux_count+polarity+'|verbForm=Part'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux:pass'+'\t'+'_'+'\t'+'_'+'\n'
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_PP'+'\t'+'number=SING|person=3'+polarity_v+'|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        spaceAft='_'
+                        if noSpace:
+                            spaceAft='spaceAfter=NO'
+                        added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_second_part_form+'\t'+'کرد#کن'+'\t'+'AUX'+'\t'+'V_PP'+'\t'+'number='+aux_number+'|person='+aux_count+polarity+'|verbForm=Part'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux:pass'+'\t'+'_'+'\t'+spaceAft+'\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb)
                         line_added=True 
@@ -448,7 +523,9 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         old_dadegan_info_aux='|senID='+seperated_feature['senID']
                         old_dadegan_info_v='|tma='+seperated_feature['tma']+'|dadeg_pos='+pos+'|dadeg_fpos='+cpos+'|senID='+seperated_feature['senID']
                         added_line_verb='X'+'\t'+str(v_p_id)+'\t'+v_first_part_form+'\t'+'خواست#خواه'+'\t'+'AUX'+'\t'+'V_AUX'+'\t'+'number=SING|person=3|polarity=NEG'+'|tense=Fut|verbForm=Fin'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux'+'\t'+'_'+'\t'+'_'+'\n'
-                        eddited_line=str(token_id)+'\t'+v_second_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_SUB'+'\t'+'mood=Sub|number=SING|person=3|tense=Pres'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        eddited_line=str(token_id)+'\t'+v_second_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_SUB'+'\t'+'mood=Sub|number=SING|person=3|tense=Pres'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        if noSpace:
+                            eddited_line=str(token_id)+'\t'+v_second_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_SUB'+'\t'+'mood=Sub|number=SING|person=3|tense=Pres'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+'\t'.join(elems[8:-1])+'\t'+'spaceAfter=NO'+'\n'
                         sent_lines.append(added_line_verb)
                         sent_lines.append(eddited_line)
                         line_added=True 
@@ -484,9 +561,12 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         v_p_two_id=v_p_one_id+1
                         old_dadegan_info_aux='|senID='+seperated_feature['senID']
                         old_dadegan_info_v='|tma='+seperated_feature['tma']+'|dadeg_pos='+pos+'|dadeg_fpos='+cpos+'|senID='+seperated_feature['senID']
-                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_PP'+'\t'+'number=SING|person=3|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
                         added_line_verb_one='X'+'\t'+str(v_p_one_id)+'\t'+v_second_part_form+'\t'+'کرد#کن'+'\t'+'AUX'+'\t'+'V_PP'+'\t'+'number=SING|person=3'+polarity+'|tense=Part'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux:pass'+'\t'+'_'+'\t'+'_'+'\n'
-                        added_line_verb_two='Z'+'\t'+str(v_p_two_id)+'\t'+v_third_part+'\t'+aux_lemma+'\t'+'AUX'+'\t'+fpos+'\t'+mood+'number='+aux_number+'|person='+aux_count+polarity+'|tense='+tense+old_dadegan_info_aux+'\t'+str(v_p_one_id)+'\t'+'aux'+'\t'+'_'+'\t'+'_'+'\n'
+                        spaceAft='_'
+                        if noSpace:
+                            spaceAft='spaceAfter=NO'
+                        added_line_verb_two='Z'+'\t'+str(v_p_two_id)+'\t'+v_third_part+'\t'+aux_lemma+'\t'+'AUX'+'\t'+fpos+'\t'+mood+'number='+aux_number+'|person='+aux_count+polarity+'|tense='+tense+old_dadegan_info_aux+'\t'+str(v_p_one_id)+'\t'+'aux'+'\t'+'_'+'\t'+spaceAft+'\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb_one)
                         sent_lines.append(added_line_verb_two)
@@ -503,9 +583,12 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         v_p_two_id=v_p_one_id+1
                         old_dadegan_info_aux='|senID='+seperated_feature['senID']
                         old_dadegan_info_v='|tma='+seperated_feature['tma']+'|dadeg_pos='+pos+'|dadeg_fpos='+cpos+'|senID='+seperated_feature['senID']
-                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'VERB'+'\t'+'V_PP'+'\t'+'number=SING|person=3|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                        eddited_line=str(token_id)+'\t'+v_first_part+'\t'+word_lemma+'\t'+'V'+'\t'+'V_PP'+'\t'+'number=SING|person=3|tense=Part'+old_dadegan_info_v+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
                         added_line_verb_one='Z'+'\t'+str(v_p_one_id)+'\t'+v_second_part+'\t'+'خواست#خواه'+'\t'+'AUX'+'\t'+'V_َAUX'+'\t'+'number='+aux_num+'|person=3'+polarity+'|tense=Fut|verbForm=Fin'+old_dadegan_info_aux+'\t'+str(v_p_two_id)+'\t'+'aux'+'\t'+'_'+'\t'+'_'+'\n'
-                        added_line_verb_two='X'+'\t'+str(v_p_two_id)+'\t'+v_third_part+'\t'+'کرد#کن'+'\t'+'AUX'+'\t'+'V_PA'+'\t'+'number=SING'+'|person=3'+polarity+'|tense=Past'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux:pass'+'\t'+'_'+'\t'+'_'+'\n'
+                        spaceAft='_'
+                        if noSpace:
+                            spaceAft='spaceAfter=NO'
+                        added_line_verb_two='X'+'\t'+str(v_p_two_id)+'\t'+v_third_part+'\t'+'کرد#کن'+'\t'+'AUX'+'\t'+'V_PA'+'\t'+'number=SING'+'|person=3'+polarity+'|tense=Past'+old_dadegan_info_aux+'\t'+str(token_id)+'\t'+'aux:pass'+'\t'+'_'+'\t'+spaceAft+'\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb_one)
                         sent_lines.append(added_line_verb_two)
@@ -521,16 +604,20 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     polarity_v=detect_verb_polarity(word_form,word_lemma,line)
                     line='\t'.join(elems[:2])+'\t'+word_lemma+'\t'+'\t'.join(elems[3:5])+'\t'+elems[5]+polarity_v+old_dadegan_lem+'\t'+'\t'.join(elems[6:])
                     #print(line)
+                if (pos=='PUNC' and word_form in punc_attach_after) or (word_form=='"' and noSpace_current_punct):
+                    line='\t'.join(elems[:-1])+'\t'+"spaceAfter=NO"
                 sent_lines.append(line)
             #if prev_pos=='PUNC' and prev_tok_form not in punc_attach_after:
             #    noSpace=
             prev_tok_form=word_form
             prev_pos=pos
+            prev_attachment=attachment
+            noSpace=False
         else:
             UD_file.write('# sent_id = '+file_type+'-s'+str(sent_id)+'\n')
             UD_file.write('# text = '+sent_text.strip()+'\n')
             for lin in sent_lines:
-                lin=process_line_to_write(lin,tokens_ids)
+                lin=process_line_to_write(lin,tokens_ids,space_after_toks)
                 UD_file.write(lin)
                 UD_file.flush()
             UD_file.write('\n')
@@ -543,12 +630,17 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             tokens_ids={0:0}
             prev_tok_form=''
             prev_pos=''
+            space_after_toks=[]
+            noSpace=False
+            noSpace_current_punct=False
+            paired=False
+            punc_stack=[]
         
     if len(sent_lines)>0: #to write down the last sentence 
             UD_file.write('# sent_id = s'+str(sent_id)+'\n')
             UD_file.write('# text = '+sent_text.strip()+'\n')
             for lin in sent_lines:
-                lin=process_line_to_write(lin,tokens_ids)    
+                lin=process_line_to_write(lin,tokens_ids,space_after_toks)    
                 UD_file.write(lin)
                 UD_file.flush() 
     fr.close()

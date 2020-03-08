@@ -84,11 +84,15 @@ fr=open(dadegan_train_path,'r',encoding="utf-8")
 fw=open("multiPartVerbs.txt",'w',encoding="utf-8")
 fw1=open("wrong_adj.txt",'w',encoding="utf-8")
 fw3=open("punctList.txt",'w',encoding="utf-8")
-log_pron_noun=open("adj_pronoun.txt",'w',encoding="utf-8")
+#log_pron_noun=open("adj_pronoun.txt",'w',encoding="utf-8")
+log_adj=open("adj_pos_false.txt",'w',encoding="utf-8")
 verbs=[]
 simple_verbs={}
 simple_v_str=''
 punc_l=[]
+adjCPos=['ANM','IANM']#['AJCM','AJSUP','AJP']#
+poss={}
+idens=[]
 for line in fr.readlines():
     if line.strip()!='':
         elems=line.strip().split('\t')
@@ -98,6 +102,8 @@ for line in fr.readlines():
         pos=elems[3]
         cpos=elems[4]
         features=elems[5]
+        hParent=elems[6]
+        rParent=elems[7]
         feature_parts=features.split('|')
         seperated_feature={}
         for part in feature_parts:
@@ -129,13 +135,34 @@ for line in fr.readlines():
         file_type='train'
         if pos=='ADJ' and word_form!=word_lemma:
                 result,pronoun,orig_noun=is_potentioal_pronounContained(word_form,word_lemma,line,file_type,number)
-                if result==True: 
-                    log_pron_noun.write(word_form+'\t'+orig_noun+'\t'+word_lemma+'\t'+pronoun+'\n')
-                    log_pron_noun.flush()
-                else:
-                    fw1.write(word_form+'\t'+word_lemma+'\n')
-                    fw1.flush()
-            
+                #if result==True: 
+                    #log_pron_noun.write(word_form+'\t'+orig_noun+'\t'+word_lemma+'\t'+pronoun+'\t'+rParent+'\t'+str(seperated_feature['senID'])+'\n')
+                    #log_pron_noun.flush()
+                #else:
+                #    fw1.write(word_form+'\t'+word_lemma+'\n')
+                #    fw1.flush()
+        if pos in list(poss.keys()):
+            if cpos not in poss[pos]:
+                poss[pos].append(cpos)
+        else:
+            poss[pos]=[]
+            poss[pos].append(cpos)
+        if pos=='N' and (cpos not in adjCPos):
+            log_adj.write(line+'\n')
+            log_adj.flush()
+        if pos=='PSUS' and word_form=='مهدی':
+            idens.append(word_form)
+            print(line)
+idens=set(idens)
+for k in idens:
+    print(k)
+#for k in poss:
+#    print(k,poss[k])
+
+    #print('****',k,'****')
+    #for m in v:
+    #    print(m)
+    #print('**********')
 #verbs=set(verbs)
 #for verb in verbs:
 #        v_p=verb.strip().split('\t')
@@ -157,4 +184,5 @@ fr.close()
 fw.close()
 fw1.close()
 fw3.close()
-log_pron_noun.close()
+#log_pron_noun.close()
+log_adj.close()
