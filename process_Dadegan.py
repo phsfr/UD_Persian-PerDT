@@ -6,7 +6,7 @@ def is_potentioal_pronounContained(noun,lemma,line,file_type,noun_num='SING'):
             if orig_noun.endswith('های'):
                     sing_noun=orig_noun[:-3]
                     if  sing_noun==lemma:
-                        return True,pron,orig_noun
+                        return True,'ی'+pron,orig_noun[:-1]
             if orig_noun.endswith('ان'):# another form of plural noun -> ان جمع
                 sing_noun=orig_noun[:-2]
                 if  sing_noun==lemma:
@@ -52,7 +52,7 @@ def is_potentioal_pronounContained(noun,lemma,line,file_type,noun_num='SING'):
                 if orig_noun.endswith('های'):
                     sing_noun=orig_noun[:-3]
                     if  sing_noun==lemma:
-                        return True,pron,orig_noun
+                        return True,'ی'+pron,orig_noun[:-1]
                 elif pron=='ات' and noun_num=='PLUR' and orig_noun==lemma: #like اشتباهات with lemma=اشتباه , in this word ات is mokasar sign not pronoun 
                     return False,'',''
                 if orig_noun==lemma:
@@ -606,10 +606,13 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         old_dadegan_lem+='|dadeg_lemma='+word_lemma
                         word_lemma='کرد#کن'
                     polarity_v=detect_verb_polarity(word_form,word_lemma,line)
-                    line='\t'.join(elems[:2])+'\t'+word_lemma+'\t'+'\t'.join(elems[3:5])+'\t'+elems[5]+polarity_v+old_dadegan_lem+'\t'+'\t'.join(elems[6:])
+                    line='\t'.join(elems[:2])+'\t'+word_lemma+'\t'+'\t'.join(elems[3:5])+'\t'+elems[5]+polarity_v+old_dadegan_lem+'\t'+'\t'.join(elems[6:])+'\n'
                     #print(line)
                 if (pos=='PUNC' and word_form in punc_attach_after) or (word_form=='"' and noSpace_current_punct):
-                    line='\t'.join(elems[:-1])+'\t'+"spaceAfter=NO"
+                    line='\t'.join(elems[:-1])+'\t'+"spaceAfter=NO"+'\n'
+                if pos=='PR' and cpos=='JOPER': #and attachment=='PRV':
+                    new_lemm=pro_info[elems[1]][0]
+                    line='\t'.join(elems[:2])+'\t'+new_lemm+'\t'+'\t'.join(elems[3:])+'\n'
                 sent_lines.append(line)
             #if prev_pos=='PUNC' and prev_tok_form not in punc_attach_after:
             #    noSpace=
