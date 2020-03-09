@@ -7702,7 +7702,7 @@
 15	خویش	خویش	PRON	CREFX	attachment=ISO|senID=48860|dadeg_pos=PR	13	MOZ	_	_
 16-17	متاعش	_	_	_	_	_	_	_	_
 16	متاع	متاع	ADJ	AJP	attachment=ISO|senID=48860|dadeg_pos=ADJ	18	PREDEP	_	_
-17	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=48860|dadeg_pos=PR	18	MOZ	_	_
+17	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=48860|dadeg_pos=PR	16	MOZ	_	_
 18	را	را	POSTP	POSTP	attachment=ISO|senID=48860|dadeg_pos=POSTP	21	OBJ	_	_
 19	جار	جار	NOUN	IANM	attachment=ISO|number=SING|senID=48860|dadeg_pos=N	21	NVE	_	_
 20	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48860|dadeg_pos=AUX	21	aux	_	_
@@ -19390,7 +19390,7 @@
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=53899|dadeg_pos=PUNC	11	PUNC	_	_
 14-15	بدش	_	_	_	_	_	_	_	_
 14	بد	بد	ADJ	AJP	attachment=ISO|senID=53899|dadeg_pos=ADJ	16	ENC	_	_
-15	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=53899|dadeg_pos=PR	16	MOZ	_	_
+15	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=53899|dadeg_pos=PR	14	MOZ	_	_
 16	می‌آمد	آمد#آ	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=53899|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=53899|dadeg_pos=PUNC	16	PUNC	_	_
 
@@ -28186,7 +28186,7 @@
 11	و	و	CCONJ	CONJ	attachment=ISO|senID=59066|dadeg_pos=CONJ	15	VCONJ	_	_
 12-13	درستش	_	_	_	_	_	_	_	_
 12	درست	درست	ADJ	AJP	attachment=ISO|senID=59066|dadeg_pos=ADJ	15	SBJ	_	_
-13	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=59066|dadeg_pos=PR	15	MOZ	_	_
+13	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=59066|dadeg_pos=PR	12	MOZ	_	_
 14	جان‌ستان	جان‌ستان	NOUN	IANM	attachment=ISO|number=SING|senID=59066|dadeg_pos=N	15	MOS	_	_
 15	است	#است	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=59066|dadeg_pos=V	7	PRD	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=59066|dadeg_pos=PUNC	6	PUNC	_	_

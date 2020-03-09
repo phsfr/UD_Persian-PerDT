@@ -5815,7 +5815,7 @@
 17	گورستان	گورستان	NOUN	IANM	attachment=ISO|number=SING|senID=26611|dadeg_pos=N	16	POSDEP	_	_
 18-19	بدش	_	_	_	_	_	_	_	_
 18	بد	بد	ADJ	AJP	attachment=ISO|senID=26611|dadeg_pos=ADJ	20	ENC	_	_
-19	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=26611|dadeg_pos=PR	20	MOZ	_	_
+19	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=26611|dadeg_pos=PR	18	MOZ	_	_
 20	می‌آمد	آمد#آ	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=26611|dadeg_pos=V	27	VCONJ	_	spaceAfter=NO
 21	،	،	PUNCT	PUNC	attachment=ISO|senID=26611|dadeg_pos=PUNC	20	PUNC	_	_
 22	هیچ	هیچ	PREM	AMBAJ	attachment=ISO|senID=26611|dadeg_pos=PREM	23	NPREMOD	_	_
@@ -5882,7 +5882,7 @@
 18	و	و	CCONJ	CONJ	attachment=ISO|senID=26632|dadeg_pos=CONJ	17	AJCONJ	_	_
 19-20	کورش	_	_	_	_	_	_	_	_
 19	کور	کور	ADJ	AJP	attachment=ISO|senID=26632|dadeg_pos=ADJ	18	POSDEP	_	_
-20	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=26632|dadeg_pos=PR	18	MOZ	_	_
+20	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=26632|dadeg_pos=PR	19	MOZ	_	_
 21	سرمه	سرمه	NOUN	IANM	attachment=ISO|number=SING|senID=26632|dadeg_pos=N	22	OBJ	_	_
 22	کشیده	کشید#کش	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=ACT|senID=26632|dadeg_pos=V	11	PRD	_	_
 23	باشد	بود#باش	AUX	V_PRS	mood=Sub|number=SING|person=3|tense=Pres|senID=26632|dadeg_pos=AUX	22	aux	_	spaceAfter=NO
@@ -13292,7 +13292,7 @@
 11	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=46057|dadeg_pos=PR	10	POSDEP	_	_
 12-13	خوشش	_	_	_	_	_	_	_	_
 12	خوش	خوش	ADJ	AJP	attachment=ISO|senID=46057|dadeg_pos=ADJ	14	ENC	_	_
-13	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=46057|dadeg_pos=PR	14	MOZ	_	_
+13	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=46057|dadeg_pos=PR	12	MOZ	_	_
 14	نمی‌آمد	آمد#آ	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=46057|polarity=NEG|dadeg_pos=V	0	ROOT	_	_
 15	از	از	PREP	PREP	attachment=ISO|senID=46057|dadeg_pos=PREP	14	ADV	_	_
 16	این	این	PREM	DEMAJ	attachment=ISO|senID=46057|dadeg_pos=PREM	17	NPREMOD	_	_
