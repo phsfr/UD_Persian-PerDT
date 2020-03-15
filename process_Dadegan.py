@@ -72,8 +72,37 @@ def is_potentioal_pronounContained(noun,lemma,line,file_type,noun_num='SING'):
                 return True,pron,orig_noun #return True,pron[1:],orig_noun+'ی'
    
     return False,'',''
-
-def process_line_to_write(lin,tokens_ids,space_toks):
+#pro_adj_file=open('pro_adj_group.txt','w',encoding='utf-8')
+def find_pro_head(pro_par,tok_dic,lin):
+    hPar=-1
+    proStack=[]
+    proStack.append(pro_par)
+    posibl_pos=['CONJ','N','ADJ']
+    noun_group=[]
+    #elems=lin.split('\t')
+    #adj_rel=tok_dic[pro_par][4]
+    while len(proStack)!=0:
+        h_idx=proStack.pop()
+        noun_group.append(tok_dic[h_idx][0])
+        h_pos=tok_dic[h_idx][1]
+        head_h_idx=tok_dic[h_idx][3]
+        head_h_pos=tok_dic[head_h_idx][1]
+        if h_pos=='N' and (head_h_pos=='N' or head_h_pos=='CONJ'): #there is consecutive nouns and just the last noun is the parent like: تشویقهای تیم محبوبشان OR رفتار و تلاش ذهنیم
+            #pro_adj_file.write(' '.join(noun_group[::-1])+'\t'+tok_dic[h_idx][0]+'\t'+tok_dic[h_idx][1]+'\t'+adj_rel+'\t'+elems[6]+'\n')
+            #pro_adj_file.flush()
+            return int(h_idx)
+            #break
+        if head_h_pos in posibl_pos:
+            proStack.append(head_h_idx)
+        else:
+            if len(proStack)==0 and (h_pos=='N' or h_pos=='ADJ'):
+                #pro_adj_file.write(' '.join(noun_group[::-1])+'\t'+tok_dic[h_idx][0]+'\t'+tok_dic[h_idx][1]+'\t'+adj_rel+'\t'+elems[6]+'\n')
+                #pro_adj_file.flush()
+                return int(h_idx)
+            else:
+                print('ERROR: ??')
+    return hPar
+def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
     elems=lin.strip().split('\t')
     contain_noSpace=False
     if elems[-1]=='spaceAfter=NO':
@@ -91,7 +120,14 @@ def process_line_to_write(lin,tokens_ids,space_toks):
             lin=str(new_token_id)+'-'+old_tok_parts[1]+'\t'+'\t'.join(elems[1:])+'\n'
     else:
         if old_tok_id=='X':#remove X from the begining of the line (token id shouldn't change but head of parent could be changed)
-            new_hParent_id=tokens_ids[int(elems[7])]
+            if elems[7].startswith('*'): #it's concatinated pronoun of the adj with NPOSTMOD or POSDEP relation & its parent should be investigated 
+                hPar=elems[7]
+                new_hParent_id=find_pro_head(hPar[1:],tok_dic,lin)
+                new_hParent_id=tokens_ids[new_hParent_id]
+            else:
+                new_hParent_id=tokens_ids[int(elems[7])]
+            if new_hParent_id==-1:
+                print('ERROR: hParent not correctly formatted!!!')
             old_pos=elems[4]
             old_cpos=elems[5]
             old_dadegan_pos='|dadeg_pos='+old_pos
@@ -203,6 +239,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
     paired=False
     punc_stack=[] #defining a stack for paired punctuation marks such as " 
     file_lines=fr.readlines()
+    tok_dict={}
     for indx,line in enumerate(file_lines):
         if line.strip()!='':
             next_tok_form=''
@@ -234,6 +271,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             semanticRoles='\t'.join(elems[8:])
             attachment=seperated_feature['attachment']
             tokens_ids[token_id]=token_id
+            tok_dict[elems[0]]=[word_form,pos,cpos,hParent,rParent]
             if contain_multiWord:
                 tokens_ids[token_id]=token_id+num_concate_prons 
             if next_tok_pos=='PUNC' and next_tok_form not in punc_attach_after:
@@ -333,10 +371,12 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     pron_id=token_id+num_concate_prons
                     other_parts='\t'.join("_"*len(elems[2:]))
                     dadegan_senID='|senID='+seperated_feature['senID']
-                    pro_depRel='MOZ'          #when dep rel of adj is فعلیار پیبستی
-                    pro_depHead=str(token_id) #when dep rel of adj is فعلیار پیبستی
-                    if rParent=='NPOSTMOD' or rParent=='MOZ': #when dep rel of adj is صفت پسین اسم
+                    pro_depRel='MOZ'          #when dep rel of adj is  فعلیار پیبستی و وابسته پیشین 
+                    pro_depHead=str(token_id) 
+                    if rParent=='MOZ' or rParent=='APOSTMOD': #when dep rel of adj is صفت پسین اسم و مضافٌ‌الیه
                         pro_depHead=hParent
+                    if rParent=='NPOSTMOD' or rParent=='POSDEP': #NEED MORE INVESTIGATION!!!!!!!!!!!
+                        pro_depHead='*'+str(token_id)
                     added_line_multiword=str(token_id)+'-'+str(pron_id)+'\t'+word_form+'\t'+other_parts+'\n'
                     eddited_line=str(token_id)+'\t'+orig_noun+'\t'+word_lemma+'\t'+pos+'\t'+cpos+'\t'+features+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
                     added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PR'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+pro_depHead+'\t'+pro_depRel+'\t'+semanticRoles+'\n'
@@ -624,7 +664,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             UD_file.write('# sent_id = '+file_type+'-s'+str(sent_id)+'\n')
             UD_file.write('# text = '+sent_text.strip()+'\n')
             for lin in sent_lines:
-                lin=process_line_to_write(lin,tokens_ids,space_after_toks)
+                lin=process_line_to_write(lin,tokens_ids,space_after_toks,tok_dict)
                 UD_file.write(lin)
                 UD_file.flush()
             UD_file.write('\n')
@@ -642,12 +682,13 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             noSpace_current_punct=False
             paired=False
             punc_stack=[]
+            tok_dict={}
         
     if len(sent_lines)>0: #to write down the last sentence 
             UD_file.write('# sent_id = s'+str(sent_id)+'\n')
             UD_file.write('# text = '+sent_text.strip()+'\n')
             for lin in sent_lines:
-                lin=process_line_to_write(lin,tokens_ids,space_after_toks)    
+                lin=process_line_to_write(lin,tokens_ids,space_after_toks,tok_dict)    
                 UD_file.write(lin)
                 UD_file.flush() 
     fr.close()
