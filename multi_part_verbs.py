@@ -150,9 +150,9 @@ for line in fr.readlines():
         if pos=='N' and (cpos not in adjCPos):
             log_adj.write(line+'\n')
             log_adj.flush()
-        if pos=='PSUS' and word_form=='مهدی':
+        if pos=='POSNUM': #and word_form=='مهدی':
             idens.append(word_form)
-            print(line)
+            #print(line)
 idens=set(idens)
 for k in idens:
     print(k)
