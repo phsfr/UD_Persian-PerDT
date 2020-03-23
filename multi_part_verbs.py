@@ -151,7 +151,7 @@ for line in fr.readlines():
             log_adj.write(line+'\n')
             log_adj.flush()
         if pos=='POSNUM': #and word_form=='مهدی':
-            idens.append(word_form)
+            idens.append(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
             #print(line)
 idens=set(idens)
 for k in idens:
