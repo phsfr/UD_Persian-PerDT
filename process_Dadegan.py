@@ -103,14 +103,17 @@ def find_pro_head(pro_par,tok_dic,lin):
                 print('ERROR: ??')
     return hPar
 def convert_pos(old_pos,word_form):
-    pos_map={'V':'VERB','N':'NOUN','SUBR':'SCONJ','PR':'PRON','ADJ':'ADJ','ADV':'ADV','PUNC':'PUNCT','CONJ':'CCONJ','AUX':'AUX','ADR':'INTJ'  ,'IDEN':'IDEN','PART':'PART','POSNUM':'ADJ','PREM':'PREM','PRENUM':'PRENUM','PREP':'PREP','PSUS':'PSUS','POSTP':'POSTP'}
-    written_nums=['یک','دو','سه','چهار'] #SSSSSSSSSSSSSSso important => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
+    pos_map={'V':'VERB','N':'NOUN','SUBR':'SCONJ','PR':'PRON','ADJ':'ADJ','ADV':'ADV','PUNC':'PUNCT','CONJ':'CCONJ','AUX':'AUX','ADR':'INTJ'  ,'IDEN':'IDEN','PART':'PART','POSNUM':'ADJ','PREM':'PREM','PRENUM':'NUM','PREP':'PREP','PSUS':'PSUS','POSTP':'POSTP'}
+    written_nums=['یک','دو','سه','چهار'] #IMPORTANT!! => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
     new_pos=pos_map[old_pos]
-    
+    adj_prenums=['دهمین','آخرین','دوم','یکمین','سی‌امین','هفتمین','آخر','بیستمین','سومین','پنجمین','شصتمین','نهمین','چهاردهم','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
+
     if old_pos=='POSNUM' and word_form.isdigit():
         new_pos='NUM'
     if old_pos=='POSNUM' and word_form in written_nums:
         new_pos='NUM'
+    if old_pos=='PRENUM' and word_form in adj_prenums:
+        new_pos='ADJ'
     return new_pos
 def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
     elems=lin.strip().split('\t')
