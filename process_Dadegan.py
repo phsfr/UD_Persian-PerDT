@@ -102,13 +102,22 @@ def find_pro_head(pro_par,tok_dic,lin):
             else:
                 print('ERROR: ??')
     return hPar
+def convert_pos(old_pos,word_form):
+    pos_map={'V':'VERB','N':'NOUN','SUBR':'SCONJ','PR':'PRON','ADJ':'ADJ','ADV':'ADV','PUNC':'PUNCT','CONJ':'CCONJ','AUX':'AUX','ADR':'INTJ'  ,'IDEN':'IDEN','PART':'PART','POSNUM':'ADJ','PREM':'PREM','PRENUM':'PRENUM','PREP':'PREP','PSUS':'PSUS','POSTP':'POSTP'}
+    written_nums=['یک','دو','سه','چهار'] #SSSSSSSSSSSSSSso important => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
+    new_pos=pos_map[old_pos]
+    
+    if old_pos=='POSNUM' and word_form.isdigit():
+        new_pos='NUM'
+    if old_pos=='POSNUM' and word_form in written_nums:
+        new_pos='NUM'
+    return new_pos
 def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
     elems=lin.strip().split('\t')
     contain_noSpace=False
     if elems[-1]=='spaceAfter=NO':
         contain_noSpace=True
     old_tok_id=elems[0]
-    pos_map={'V':'VERB','N':'NOUN','SUBR':'SCONJ','PR':'PRON','ADJ':'ADJ','ADV':'ADV','PUNC':'PUNCT','CONJ':'CCONJ','AUX':'AUX','ADR':'INTJ'  ,'IDEN':'IDEN','PART':'PART','POSNUM':'POSNUM','PREM':'PREM','PRENUM':'PRENUM','PREP':'PREP','PSUS':'PSUS','POSTP':'POSTP'}
     if '-' in old_tok_id:
         old_tok_parts=old_tok_id.split('-')
         old_tok_int=int(old_tok_parts[0]) 
@@ -131,19 +140,21 @@ def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
             old_pos=elems[4]
             old_cpos=elems[5]
             old_dadegan_pos='|dadeg_pos='+old_pos
-            lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
+            new_pos=convert_pos(old_pos,elems[2].strip())
+            lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
             if elems[1] in space_toks and (not contain_noSpace):
                 space_toks.remove(elems[1])
-                lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:-1])+'\t'+'spaceAfter=NO'+'\n'
+                lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:-1])+'\t'+'spaceAfter=NO'+'\n'
             #lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
         elif old_tok_id=='Z':#remove Z from the begining of the line (neither token id nor head of its parent should change)
             old_pos=elems[4]
             old_cpos=elems[5]
             old_dadegan_pos='|dadeg_pos='+old_pos
-            lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:])+'\n'
+            new_pos=convert_pos(old_pos,elems[2].strip())
+            lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:])+'\n'
             if elems[1] in space_toks and (not contain_noSpace):
                 space_toks.remove(elems[1])
-                lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
+                lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
             #lin=elems[1]+'\t'+'\t'.join(elems[2:])+'\n'
         elif old_tok_id=='Y': #remove Y from the begining of the line (token id of both previous token and the next one could be updated)
             old_tok_parts=elems[1].split('-')
@@ -159,10 +170,11 @@ def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
             old_pos=elems[3]
             old_cpos=elems[4]
             old_dadegan_pos='|dadeg_pos='+old_pos
-            lin=str(new_token_id)+'\t'+'\t'.join(elems[1:3])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[5]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
+            new_pos=convert_pos(old_pos,elems[1].strip())
+            lin=str(new_token_id)+'\t'+'\t'.join(elems[1:3])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[5]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
             if int(old_tok_id) in space_toks and (not contain_noSpace):
                 space_toks.remove(int(old_tok_id))
-                lin=str(new_token_id)+'\t'+'\t'.join(elems[1:3])+'\t'+pos_map[old_pos]+'\t'+old_cpos+'\t'+elems[5]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
+                lin=str(new_token_id)+'\t'+'\t'.join(elems[1:3])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[5]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
             #lin=str(new_token_id)+'\t'+'\t'.join(elems[1:6])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
     return lin
 def detect_verb_polarity(verb,v_lemma,line):

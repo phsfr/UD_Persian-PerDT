@@ -801,7 +801,7 @@
 2	می‌توان	#توان	VERB	MODL	attachment=ISO|tma=H|senID=40228|dadeg_pos=V	0	ROOT	_	_
 3	سیم‌کارت	سیم‌کارت	NOUN	IANM	attachment=ISO|number=SING|senID=40228|dadeg_pos=N	6	PREDEP	_	_
 4	اپراتور	اپراتور	NOUN	IANM	attachment=ISO|number=SING|senID=40228|dadeg_pos=N	3	MOZ	_	_
-5	سوم	سوم	POSNUM	POSNUM	attachment=ISO|senID=40228|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
+5	سوم	سوم	ADJ	POSNUM	attachment=ISO|senID=40228|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
 6	را	را	POSTP	POSTP	attachment=ISO|senID=40228|dadeg_pos=POSTP	8	OBJ	_	_
 7	پیش‌خرید	پیش‌خرید	NOUN	IANM	attachment=ISO|number=SING|senID=40228|dadeg_pos=N	8	NVE	_	_
 8	کرد	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=40228|dadeg_pos=V	2	VCL	_	spaceAfter=NO
@@ -2289,7 +2289,7 @@
 3	از	از	PREP	PREP	attachment=ISO|senID=41088|dadeg_pos=PREP	2	POSDEP	_	_
 4	جنگ	جنگ	NOUN	IANM	attachment=ISO|number=SING|senID=41088|dadeg_pos=N	3	POSDEP	_	_
 5	جهانی	جهانی	ADJ	AJP	attachment=ISO|senID=41088|dadeg_pos=ADJ	4	NPOSTMOD	_	_
-6	دوم	دوم	POSNUM	POSNUM	attachment=ISO|senID=41088|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
+6	دوم	دوم	ADJ	POSNUM	attachment=ISO|senID=41088|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
 7	در	در	PREP	PREP	attachment=ISO|senID=41088|dadeg_pos=PREP	4	NPP	_	_
 8	روسیه	روسیه	NOUN	IANM	attachment=ISO|number=SING|senID=41088|dadeg_pos=N	7	POSDEP	_	spaceAfter=NO
 9	،	،	PUNCT	PUNC	attachment=ISO|senID=41088|dadeg_pos=PUNC	8	PUNC	_	_
@@ -3009,7 +3009,7 @@
 1	قزوین	قزوین	NOUN	IANM	attachment=ISO|number=SING|senID=41521|dadeg_pos=N	14	SBJ	_	_
 2	از	از	PREP	PREP	attachment=ISO|senID=41521|dadeg_pos=PREP	14	ADV	_	_
 3	قرن	قرن	NOUN	IANM	attachment=ISO|number=SING|senID=41521|dadeg_pos=N	2	POSDEP	_	_
-4	سوم	سوم	POSNUM	POSNUM	attachment=ISO|senID=41521|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
+4	سوم	سوم	ADJ	POSNUM	attachment=ISO|senID=41521|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
 5	هجری	هجری	ADJ	AJP	attachment=ISO|senID=41521|dadeg_pos=ADJ	3	NPOSTMOD	_	_
 6	به	به	PREP	PREP	attachment=ISO|senID=41521|dadeg_pos=PREP	3	NPP	_	_
 7	بعد	بعد	NOUN	IANM	attachment=ISO|number=SING|senID=41521|dadeg_pos=N	6	POSDEP	_	_
@@ -5215,7 +5215,7 @@
 11	که	که	SCONJ	SUBR	attachment=ISO|senID=42732|dadeg_pos=SUBR	10	AJUCL	_	_
 12	سقف	سقف	NOUN	IANM	attachment=ISO|number=SING|senID=42732|dadeg_pos=N	18	SBJ	_	_
 13	طبقهٔ	طبقه	NOUN	IANM	attachment=ISO|number=SING|senID=42732|dadeg_pos=N	12	MOZ	_	_
-14	سوم	سوم	POSNUM	POSNUM	attachment=ISO|senID=42732|dadeg_pos=POSNUM	13	NPOSTMOD	_	_
+14	سوم	سوم	ADJ	POSNUM	attachment=ISO|senID=42732|dadeg_pos=POSNUM	13	NPOSTMOD	_	_
 15	در	در	PREP	PREP	attachment=ISO|senID=42732|dadeg_pos=PREP	18	ADV	_	_
 16	اکثر	اکثر	NOUN	IANM	attachment=ISO|senID=42732|dadeg_pos=N	15	POSDEP	_	_
 17	موارد	مورد	NOUN	IANM	attachment=ISO|number=PLUR|senID=42732|dadeg_pos=N	16	MOZ	_	_
@@ -5707,7 +5707,7 @@
 5	تشیع	تشیع	NOUN	IANM	attachment=ISO|number=SING|senID=42974|dadeg_pos=N	10	SBJ	_	_
 6	در	در	PREP	PREP	attachment=ISO|senID=42974|dadeg_pos=PREP	10	ADV	_	_
 7	قرن	قرن	NOUN	IANM	attachment=ISO|number=SING|senID=42974|dadeg_pos=N	6	POSDEP	_	_
-8	نهم	نهم	POSNUM	POSNUM	attachment=ISO|senID=42974|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
+8	نهم	نهم	ADJ	POSNUM	attachment=ISO|senID=42974|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
 9	رواج	رواج	NOUN	IANM	attachment=ISO|number=SING|senID=42974|dadeg_pos=N	10	NVE	_	_
 10	می‌گرفت	گرفت#گیر	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=42974|dadeg_pos=V	4	PRD	_	_
 11	سلسله‌های	سلسله	NOUN	IANM	attachment=ISO|number=PLUR|senID=42974|dadeg_pos=N	16	SBJ	_	_
@@ -7564,7 +7564,7 @@
 3	،	،	PUNCT	PUNC	attachment=ISO|senID=48779|dadeg_pos=PUNC	2	PUNC	_	_
 4	در	در	PREP	PREP	attachment=ISO|senID=48779|dadeg_pos=PREP	20	ADV	_	_
 5	وهلهٔ	وهله	NOUN	IANM	attachment=ISO|number=SING|senID=48779|dadeg_pos=N	4	POSDEP	_	_
-6	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=48779|dadeg_pos=POSNUM	5	NPOSTMOD	_	spaceAfter=NO
+6	اول	اول	ADJ	POSNUM	attachment=ISO|senID=48779|dadeg_pos=POSNUM	5	NPOSTMOD	_	spaceAfter=NO
 7	،	،	PUNCT	PUNC	attachment=ISO|senID=48779|dadeg_pos=PUNC	6	PUNC	_	_
 8	از	از	PREP	PREP	attachment=ISO|senID=48779|dadeg_pos=PREP	19	NPP	_	_
 9	قیود	قید	NOUN	IANM	attachment=ISO|number=PLUR|senID=48779|dadeg_pos=N	8	POSDEP	_	_
@@ -7572,7 +7572,7 @@
 11	و	و	CCONJ	CONJ	attachment=ISO|senID=48779|dadeg_pos=CONJ	4	PCONJ	_	_
 12	در	در	PREP	PREP	attachment=ISO|senID=48779|dadeg_pos=PREP	11	POSDEP	_	_
 13	وهلهٔ	وهله	NOUN	IANM	attachment=ISO|number=SING|senID=48779|dadeg_pos=N	12	POSDEP	_	_
-14	دوم	دوم	POSNUM	POSNUM	attachment=ISO|senID=48779|dadeg_pos=POSNUM	13	NPOSTMOD	_	spaceAfter=NO
+14	دوم	دوم	ADJ	POSNUM	attachment=ISO|senID=48779|dadeg_pos=POSNUM	13	NPOSTMOD	_	spaceAfter=NO
 15	،	،	PUNCT	PUNC	attachment=ISO|senID=48779|dadeg_pos=PUNC	14	PUNC	_	_
 16	از	از	PREP	PREP	attachment=ISO|senID=48779|dadeg_pos=PREP	19	NPP	_	_
 17	محدودیت‌های	محدودیت	NOUN	IANM	attachment=ISO|number=PLUR|senID=48779|dadeg_pos=N	16	POSDEP	_	_
@@ -13171,7 +13171,7 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=50514|dadeg_pos=PREP	17	ADV	_	_
 2	زمان	زمان	NOUN	IANM	attachment=ISO|number=SING|senID=50514|dadeg_pos=N	1	POSDEP	_	_
 3	خلیفهٔ	خلیفه	NOUN	ANM	attachment=ISO|number=SING|senID=50514|dadeg_pos=N	2	MOZ	_	_
-4	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=50514|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
+4	اول	اول	ADJ	POSNUM	attachment=ISO|senID=50514|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
 5	به	به	PREP	PREP	attachment=ISO|senID=50514|dadeg_pos=PREP	16	NPP	_	_
 6	عراق	عراق	NOUN	IANM	attachment=ISO|number=SING|senID=50514|dadeg_pos=N	5	POSDEP	_	_
 7	و	و	CCONJ	CONJ	attachment=ISO|senID=50514|dadeg_pos=CONJ	6	NCONJ	_	_
@@ -13180,7 +13180,7 @@
 10	در	در	PREP	PREP	attachment=ISO|senID=50514|dadeg_pos=PREP	1	PCONJ	_	_
 11	زمان	زمان	NOUN	IANM	attachment=ISO|number=SING|senID=50514|dadeg_pos=N	10	POSDEP	_	_
 12	خلیفهٔ	خلیفه	NOUN	ANM	attachment=ISO|number=SING|senID=50514|dadeg_pos=N	11	MOZ	_	_
-13	دوم	دوم	POSNUM	POSNUM	attachment=ISO|senID=50514|dadeg_pos=POSNUM	12	NPOSTMOD	_	_
+13	دوم	دوم	ADJ	POSNUM	attachment=ISO|senID=50514|dadeg_pos=POSNUM	12	NPOSTMOD	_	_
 14	به	به	PREP	PREP	attachment=ISO|senID=50514|dadeg_pos=PREP	16	NPP	_	_
 15	دمشق	دمشق	NOUN	IANM	attachment=ISO|number=SING|senID=50514|dadeg_pos=N	14	POSDEP	_	_
 16	لشگرکشی	لشگرکشی	NOUN	IANM	attachment=ISO|number=SING|senID=50514|dadeg_pos=N	17	NVE	_	_
@@ -13850,7 +13850,7 @@
 # sent_id = test-s725
 # text = مرحلهٔ دوم حمایت از نخبگان علمی و روشنفکران در جریان پروژهٔ مشروعیت‌زدایی می‌باشد.
 1	مرحلهٔ	مرحله	NOUN	IANM	attachment=ISO|number=SING|senID=50925|dadeg_pos=N	13	SBJ	_	_
-2	دوم	دوم	POSNUM	POSNUM	attachment=ISO|senID=50925|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
+2	دوم	دوم	ADJ	POSNUM	attachment=ISO|senID=50925|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
 3	حمایت	حمایت	NOUN	IANM	attachment=ISO|number=SING|senID=50925|dadeg_pos=N	13	MOS	_	_
 4	از	از	PREP	PREP	attachment=ISO|senID=50925|dadeg_pos=PREP	3	NPP	_	_
 5	نخبگان	نخبه	NOUN	ANM	attachment=ISO|number=PLUR|senID=50925|dadeg_pos=N	4	POSDEP	_	_
@@ -15560,9 +15560,9 @@
 2	ملل	ملت	NOUN	IANM	attachment=ISO|number=PLUR|senID=51824|dadeg_pos=N	1	MOZ	_	_
 3	متحد	متحد	ADJ	AJP	attachment=ISO|senID=51824|dadeg_pos=ADJ	2	NPOSTMOD	_	_
 4	روز	روز	NOUN	IANM	attachment=ISO|number=SING|senID=51824|dadeg_pos=N	9	PREDEP	_	_
-5	بیست	بیست	POSNUM	POSNUM	attachment=ISO|senID=51824|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
+5	بیست	بیست	ADJ	POSNUM	attachment=ISO|senID=51824|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
 6	و	و	CCONJ	CONJ	attachment=ISO|senID=51824|dadeg_pos=CONJ	5	AJCONJ	_	_
-7	یکم	یکم	POSNUM	POSNUM	attachment=ISO|senID=51824|dadeg_pos=POSNUM	6	POSDEP	_	_
+7	یکم	یکم	ADJ	POSNUM	attachment=ISO|senID=51824|dadeg_pos=POSNUM	6	POSDEP	_	_
 8	فوریه	فوریه	NOUN	IANM	attachment=ISO|number=SING|senID=51824|dadeg_pos=N	5	NEZ	_	_
 9	را	را	POSTP	POSTP	attachment=ISO|senID=51824|dadeg_pos=POSTP	15	OBJ	_	_
 10	روز	روز	NOUN	IANM	attachment=ISO|number=SING|senID=51824|dadeg_pos=N	15	TAM	_	_
@@ -17377,7 +17377,7 @@
 6	است	#است	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=52770|dadeg_pos=V	0	ROOT	_	_
 7	که	که	SCONJ	SUBR	attachment=ISO|senID=52770|dadeg_pos=SUBR	3	NCL	_	_
 8	مرد	مرد	NOUN	ANM	attachment=ISO|number=SING|senID=52770|dadeg_pos=N	11	TAM	_	_
-9	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=52770|dadeg_pos=POSNUM	8	NPOSTMOD	_	_
+9	اول	اول	ADJ	POSNUM	attachment=ISO|senID=52770|dadeg_pos=POSNUM	8	NPOSTMOD	_	_
 10	لقب	لقب	NOUN	IANM	attachment=ISO|number=SING|senID=52770|dadeg_pos=N	11	NVE	_	_
 11	می‌گیرد	گرفت#گیر	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=52770|dadeg_pos=V	7	PRD	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=52770|dadeg_pos=PUNC	6	PUNC	_	_
@@ -19305,7 +19305,7 @@
 6	سونامی	سونامی	NOUN	IANM	attachment=ISO|number=SING|senID=53869|dadeg_pos=N	5	POSDEP	_	_
 7	که	که	SCONJ	SUBR	attachment=ISO|senID=53869|dadeg_pos=SUBR	4	NCL	_	_
 8	روز	روز	NOUN	IANM	attachment=ISO|number=SING|senID=53869|dadeg_pos=N	17	ADV	_	_
-9	یازدهم	یازدهم	POSNUM	POSNUM	attachment=ISO|senID=53869|dadeg_pos=POSNUM	8	NPOSTMOD	_	_
+9	یازدهم	یازدهم	ADJ	POSNUM	attachment=ISO|senID=53869|dadeg_pos=POSNUM	8	NPOSTMOD	_	_
 10	مارس	مارس	NOUN	IANM	attachment=ISO|number=SING|senID=53869|dadeg_pos=N	8	MOZ	_	_
 11	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=53869|dadeg_pos=N	10	MOZ	_	_
 12	2011	2011	NOUN	IANM	attachment=ISO|number=SING|senID=53869|dadeg_pos=N	11	MOZ	_	_
@@ -21052,7 +21052,7 @@
 # sent_id = test-s1083
 # text = انترناسیونال پنجم می‌تواند در سطح جهانی خیلی یارگیری بکند.
 1	انترناسیونال	انترناسیونال	NOUN	IANM	attachment=ISO|number=SING|senID=54563|dadeg_pos=N	3	SBJ	_	_
-2	پنجم	پنجم	POSNUM	POSNUM	attachment=ISO|senID=54563|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
+2	پنجم	پنجم	ADJ	POSNUM	attachment=ISO|senID=54563|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
 3	می‌تواند	توانست#توان	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=54563|dadeg_pos=V	0	ROOT	_	_
 4	در	در	PREP	PREP	attachment=ISO|senID=54563|dadeg_pos=PREP	9	ADV	_	_
 5	سطح	سطح	NOUN	IANM	attachment=ISO|number=SING|senID=54563|dadeg_pos=N	4	POSDEP	_	_
@@ -22609,7 +22609,7 @@
 10	و	و	CCONJ	CONJ	attachment=ISO|senID=55483|dadeg_pos=CONJ	14	VCONJ	_	_
 11	وارد	وارد	ADJ	AJP	attachment=ISO|senID=55483|dadeg_pos=ADJ	14	NVE	_	_
 12	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=55483|dadeg_pos=N	11	NEZ	_	_
-13	سوم	سوم	POSNUM	POSNUM	attachment=ISO|senID=55483|dadeg_pos=POSNUM	12	NPOSTMOD	_	_
+13	سوم	سوم	ADJ	POSNUM	attachment=ISO|senID=55483|dadeg_pos=POSNUM	12	NPOSTMOD	_	_
 14	بشود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=55483|dadeg_pos=V	1	PRD	_	_
 15	همین	همین	PREM	DEMAJ	attachment=ISO|senID=55483|dadeg_pos=PREM	16	NPREMOD	_	_
 16	تمامیت	تمامیت	NOUN	IANM	attachment=ISO|number=SING|senID=55483|dadeg_pos=N	30	PREDEP	_	_
@@ -23920,7 +23920,7 @@
 1	حداکثر	حداکثر	NOUN	IANM	attachment=ISO|number=SING|senID=56257|dadeg_pos=N	13	SBJ	_	_
 2	امتیاز	امتیاز	NOUN	IANM	attachment=ISO|number=SING|senID=56257|dadeg_pos=N	1	MOZ	_	_
 3	زبان	زبان	NOUN	IANM	attachment=ISO|number=SING|senID=56257|dadeg_pos=N	2	MOZ	_	_
-4	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=56257|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
+4	اول	اول	ADJ	POSNUM	attachment=ISO|senID=56257|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
 5	از	از	PREP	PREP	attachment=ISO|senID=56257|dadeg_pos=PREP	11	NPP	_	_
 6	16	16	PRENUM	PRENUM	attachment=ISO|senID=56257|dadeg_pos=PRENUM	7	NPREMOD	_	_
 7	امتیاز	امتیاز	NOUN	IANM	attachment=ISO|number=SING|senID=56257|dadeg_pos=N	5	POSDEP	_	_
@@ -24337,7 +24337,7 @@
 1	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=56419|dadeg_pos=PR	12	SBJ	_	_
 2	در	در	PREP	PREP	attachment=ISO|senID=56419|dadeg_pos=PREP	12	ADV	_	_
 3	کامنت	کامنت	NOUN	IANM	attachment=ISO|number=SING|senID=56419|dadeg_pos=N	2	POSDEP	_	_
-4	اولم	اول	POSNUM	POSNUM	attachment=ISO|senID=56419|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
+4	اولم	اول	ADJ	POSNUM	attachment=ISO|senID=56419|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
 5	از	از	PREP	PREP	attachment=ISO|senID=56419|dadeg_pos=PREP	11	NPP	_	_
 6	به	به	PREP	PREP	attachment=ISO|senID=56419|dadeg_pos=PREP	8	NPP	_	_
 7	کار	کار	NOUN	IANM	attachment=ISO|number=SING|senID=56419|dadeg_pos=N	6	POSDEP	_	_
@@ -25244,7 +25244,7 @@
 2	طی	طی	PREP	PREP	attachment=ISO|senID=57081|dadeg_pos=PREP	8	ADV	_	_
 3	سه	سه	PRENUM	PRENUM	attachment=ISO|senID=57081|dadeg_pos=PRENUM	4	NPREMOD	_	_
 4	ماههٔ	ماهه	NOUN	IANM	attachment=ISO|number=SING|senID=57081|dadeg_pos=N	2	POSDEP	_	_
-5	چهارم	چهارم	POSNUM	POSNUM	attachment=ISO|senID=57081|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
+5	چهارم	چهارم	ADJ	POSNUM	attachment=ISO|senID=57081|dadeg_pos=POSNUM	4	NPOSTMOD	_	_
 6	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=57081|dadeg_pos=N	4	MOZ	_	_
 7	2003	2003	NOUN	IANM	attachment=ISO|number=SING|senID=57081|dadeg_pos=N	6	MOZ	_	_
 8	توانست	توانست#توان	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=57081|dadeg_pos=V	0	ROOT	_	_
@@ -27207,7 +27207,7 @@
 12	از	از	PREP	PREP	attachment=ISO|senID=58640|dadeg_pos=PREP	19	ADV	_	_
 13	اوایل	اول	NOUN	IANM	attachment=ISO|number=PLUR|senID=58640|dadeg_pos=N	12	POSDEP	_	_
 14	قرن	قرن	NOUN	IANM	attachment=ISO|number=SING|senID=58640|dadeg_pos=N	13	MOZ	_	_
-15	بیستم	بیستم	POSNUM	POSNUM	attachment=ISO|senID=58640|dadeg_pos=POSNUM	14	NPOSTMOD	_	spaceAfter=NO
+15	بیستم	بیستم	ADJ	POSNUM	attachment=ISO|senID=58640|dadeg_pos=POSNUM	14	NPOSTMOD	_	spaceAfter=NO
 16	،	،	PUNCT	PUNC	attachment=ISO|senID=58640|dadeg_pos=PUNC	15	PUNC	_	_
 17	عمومیت	عمومیت	NOUN	IANM	attachment=ISO|number=SING|senID=58640|dadeg_pos=N	19	NVE	_	_
 18	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=58640|dadeg_pos=ADJ	19	LVP	_	_
@@ -27781,7 +27781,7 @@
 12	را	را	POSTP	POSTP	attachment=ISO|senID=58904|dadeg_pos=POSTP	37	OBJ	_	_
 13	در	در	PREP	PREP	attachment=ISO|senID=58904|dadeg_pos=PREP	37	ADV	_	_
 14	درجهٔ	درجه	NOUN	IANM	attachment=ISO|number=SING|senID=58904|dadeg_pos=N	13	POSDEP	_	_
-15	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=58904|dadeg_pos=POSNUM	14	NPOSTMOD	_	_
+15	اول	اول	ADJ	POSNUM	attachment=ISO|senID=58904|dadeg_pos=POSNUM	14	NPOSTMOD	_	_
 16	مایکل	مایکل	NOUN	ANM	attachment=ISO|number=SING|senID=58904|dadeg_pos=N	37	SBJ	_	_
 17	اوون	اوون	NOUN	ANM	attachment=ISO|number=SING|senID=58904|dadeg_pos=N	16	MOZ	_	_
 18	یکی	یکی	NOUN	IANM	attachment=ISO|number=SING|senID=58904|dadeg_pos=N	16	APP	_	_

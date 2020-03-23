@@ -401,7 +401,7 @@
 5	،	،	PUNCT	PUNC	attachment=ISO|senID=23612|dadeg_pos=PUNC	4	PUNC	_	_
 6	دارندهٔ	دارنده	ADJ	AJP	attachment=ISO|senID=23612|dadeg_pos=ADJ	1	APP	_	_
 7	عنوان	عنوان	NOUN	IANM	attachment=ISO|number=SING|senID=23612|dadeg_pos=N	6	NEZ	_	_
-8	سومی	سوم	POSNUM	POSNUM	attachment=ISO|senID=23612|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
+8	سومی	سوم	ADJ	POSNUM	attachment=ISO|senID=23612|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
 9	لیگ	لیگ	NOUN	IANM	attachment=ISO|number=SING|senID=23612|dadeg_pos=N	7	MOZ	_	_
 10	برتر	برتر	ADJ	AJCM	attachment=ISO|senID=23612|dadeg_pos=ADJ	9	NPOSTMOD	_	_
 11	هندبال	هندبال	NOUN	IANM	attachment=ISO|number=SING|senID=23612|dadeg_pos=N	9	MOZ	_	_
@@ -825,7 +825,7 @@
 14	بارگاه	بارگاه	NOUN	IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	13	MOZ	_	_
 15	ملکوتی	ملکوتی	ADJ	AJP	attachment=ISO|senID=23721|dadeg_pos=ADJ	14	NPOSTMOD	_	_
 16	امام	امام	NOUN	ANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	14	MOZ	_	_
-17	هشتم	هشتم	POSNUM	POSNUM	attachment=ISO|senID=23721|dadeg_pos=POSNUM	16	NPOSTMOD	_	_
+17	هشتم	هشتم	ADJ	POSNUM	attachment=ISO|senID=23721|dadeg_pos=POSNUM	16	NPOSTMOD	_	_
 18	(	(	PUNCT	PUNC	attachment=ISO|senID=23721|dadeg_pos=PUNC	19	PUNC	_	spaceAfter=NO
 19	ع	ع	NOUN	IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	16	POSDEP	_	spaceAfter=NO
 20	)	)	PUNCT	PUNC	attachment=ISO|senID=23721|dadeg_pos=PUNC	19	PUNC	_	_
@@ -1419,7 +1419,7 @@
 # text = در برنامهٔ پنجم حدود 400 تا 500 هزار هکتار اراضی جدید به منظور فعالیت‌های کشاورزی از سوی سازمان امور اراضی به متقاضیان واگذار می‌شود و وجه آن در مدت‌زمان 5 سال از کشاورزان مطالبه خواهد شد.
 1	در	در	PREP	PREP	attachment=ISO|senID=23932|dadeg_pos=PREP	24	ADV	_	_
 2	برنامهٔ	برنامه	NOUN	IANM	attachment=ISO|number=SING|senID=23932|dadeg_pos=N	1	POSDEP	_	_
-3	پنجم	پنجم	POSNUM	POSNUM	attachment=ISO|senID=23932|dadeg_pos=POSNUM	2	NPOSTMOD	_	_
+3	پنجم	پنجم	ADJ	POSNUM	attachment=ISO|senID=23932|dadeg_pos=POSNUM	2	NPOSTMOD	_	_
 4	حدود	حدود	PREP	PREP	attachment=ISO|senID=23932|dadeg_pos=PREP	9	PREDEP	_	_
 5	400	400	PRENUM	PRENUM	attachment=ISO|senID=23932|dadeg_pos=PRENUM	8	NPREMOD	_	_
 6	تا	تا	PREP	PREP	attachment=ISO|senID=23932|dadeg_pos=PREP	5	POSDEP	_	_
@@ -2436,7 +2436,7 @@
 11	از	از	PREP	PREP	attachment=ISO|senID=24293|dadeg_pos=PREP	9	NPP	_	_
 12	بندهای	بند	NOUN	IANM	attachment=ISO|number=PLUR|senID=24293|dadeg_pos=N	11	POSDEP	_	_
 13	اصل	اصل	NOUN	IANM	attachment=ISO|number=SING|senID=24293|dadeg_pos=N	12	MOZ	_	_
-14	44	44	POSNUM	POSNUM	attachment=ISO|senID=24293|dadeg_pos=POSNUM	13	NPOSTMOD	_	_
+14	44	44	NUM	POSNUM	attachment=ISO|senID=24293|dadeg_pos=POSNUM	13	NPOSTMOD	_	_
 15	است	#است	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=24293|dadeg_pos=V	8	PRD	_	_
 16	را	را	POSTP	POSTP	attachment=ISO|senID=24293|dadeg_pos=POSTP	33	OBJ	_	_
 17	برای	برای	PREP	PREP	attachment=ISO|senID=24293|dadeg_pos=PREP	33	ADV	_	_
@@ -5230,7 +5230,7 @@
 # sent_id = dev-s214
 # text = بار اول متوجه منظور متن آگهی نشدم.
 1	بار	بار	NOUN	IANM	attachment=ISO|number=SING|senID=26255|dadeg_pos=N	7	ADV	_	_
-2	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=26255|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
+2	اول	اول	ADJ	POSNUM	attachment=ISO|senID=26255|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
 3	متوجه	متوجه	ADJ	AJP	attachment=ISO|senID=26255|dadeg_pos=ADJ	7	MOS	_	_
 4	منظور	منظور	NOUN	IANM	attachment=ISO|number=SING|senID=26255|dadeg_pos=N	3	NEZ	_	_
 5	متن	متن	NOUN	IANM	attachment=ISO|number=SING|senID=26255|dadeg_pos=N	4	MOZ	_	_
@@ -6748,7 +6748,7 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=30891|dadeg_pos=PREP	51	ADV	_	_
 2	پایان	پایان	NOUN	IANM	attachment=ISO|number=SING|senID=30891|dadeg_pos=N	1	POSDEP	_	_
 3	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=30891|dadeg_pos=N	2	MOZ	_	_
-4	دوازدهم	دوازدهم	POSNUM	POSNUM	attachment=ISO|senID=30891|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
+4	دوازدهم	دوازدهم	ADJ	POSNUM	attachment=ISO|senID=30891|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
 5	بعد	بعد	PREP	PREP	attachment=ISO|senID=30891|dadeg_pos=PREP	3	POSDEP	_	_
 6	از	از	PREP	PREP	attachment=ISO|senID=30891|dadeg_pos=PREP	5	POSDEP	_	_
 7	تاریخ	تاریخ	NOUN	IANM	attachment=ISO|number=SING|senID=30891|dadeg_pos=N	6	POSDEP	_	_
@@ -9312,7 +9312,7 @@
 # text = به طبقهٔ نخست کشتی فروآمدیم تا به دور از هیاهوی گروه هنرمندان، با آرامش و تأمل به تماشای مراسم آتش‌بازی شبانهٔ رودخانهٔ بانکوک بپردازیم.
 1	به	به	PREP	PREP	attachment=ISO|senID=32346|dadeg_pos=PREP	5	ADV	_	_
 2	طبقهٔ	طبقه	NOUN	IANM	attachment=ISO|number=SING|senID=32346|dadeg_pos=N	1	POSDEP	_	_
-3	نخست	نخست	POSNUM	POSNUM	attachment=ISO|senID=32346|dadeg_pos=POSNUM	2	NPOSTMOD	_	_
+3	نخست	نخست	ADJ	POSNUM	attachment=ISO|senID=32346|dadeg_pos=POSNUM	2	NPOSTMOD	_	_
 4	کشتی	کشتی	NOUN	IANM	attachment=ISO|number=SING|senID=32346|dadeg_pos=N	2	MOZ	_	_
 5	فروآمدیم	فرو#آمد#آ	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=32346|dadeg_pos=V	0	ROOT	_	_
 6	تا	تا	SCONJ	SUBR	attachment=ISO|senID=32346|dadeg_pos=SUBR	5	AJUCL	_	_
@@ -10201,9 +10201,9 @@
 3	بعد	بعد	ADJ	AJP	attachment=ISO|senID=44846|dadeg_pos=ADJ	2	NPOSTMOD	_	spaceAfter=NO
 4	،	،	PUNCT	PUNC	attachment=ISO|senID=44846|dadeg_pos=PUNC	3	PUNC	_	_
 5	بیت	بیت	NOUN	IANM	attachment=ISO|number=SING|senID=44846|dadeg_pos=N	11	PREDEP	_	_
-6	سوم	سوم	POSNUM	POSNUM	attachment=ISO|senID=44846|dadeg_pos=POSNUM	5	NPOSTMOD	_	_
+6	سوم	سوم	ADJ	POSNUM	attachment=ISO|senID=44846|dadeg_pos=POSNUM	5	NPOSTMOD	_	_
 7	و	و	CCONJ	CONJ	attachment=ISO|senID=44846|dadeg_pos=CONJ	6	AJCONJ	_	_
-8	چهارم	چهارم	POSNUM	POSNUM	attachment=ISO|senID=44846|dadeg_pos=POSNUM	7	POSDEP	_	_
+8	چهارم	چهارم	ADJ	POSNUM	attachment=ISO|senID=44846|dadeg_pos=POSNUM	7	POSDEP	_	_
 9	مثنوی	مثنوی	NOUN	IANM	attachment=ISO|number=SING|senID=44846|dadeg_pos=N	5	MOZ	_	_
 10	معنوی	معنوی	ADJ	AJP	attachment=ISO|senID=44846|dadeg_pos=ADJ	9	NPOSTMOD	_	_
 11	را	را	POSTP	POSTP	attachment=ISO|senID=44846|dadeg_pos=POSTP	14	OBJ	_	_
@@ -11202,7 +11202,7 @@
 3	تدریس	تدریس	NOUN	IANM	attachment=ISO|number=SING|senID=33051|dadeg_pos=N	9	SBJ	_	_
 4	ادبیات	ادبیات	NOUN	IANM	attachment=ISO|number=SING|senID=33051|dadeg_pos=N	3	MOZ	_	_
 5	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=33051|dadeg_pos=N	4	MOZ	_	_
-6	چهارم	چهارم	POSNUM	POSNUM	attachment=ISO|senID=33051|dadeg_pos=POSNUM	5	NPOSTMOD	_	_
+6	چهارم	چهارم	ADJ	POSNUM	attachment=ISO|senID=33051|dadeg_pos=POSNUM	5	NPOSTMOD	_	_
 7	به	به	PREP	PREP	attachment=ISO|senID=33051|dadeg_pos=PREP	9	VPP	_	_
 8	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=33051|dadeg_pos=PR	7	POSDEP	_	_
 9	واگذاشته	وا#گذاشت#گذار	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=PASS|senID=33051|dadeg_pos=V	0	ROOT	_	_
@@ -11342,7 +11342,7 @@
 # sent_id = dev-s542
 # text = روز اول تیر ایرانیان باستان تیری در زمین فرومی‌کردند، برای این که در ساعت 12 که خورشید کاملاً عمودی می‌تابد، محو شدن سایهٔ آن را تماشا کنند.
 1	روز	روز	NOUN	IANM	attachment=ISO|number=SING|senID=33155|dadeg_pos=N	9	SBJ	_	_
-2	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=33155|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
+2	اول	اول	ADJ	POSNUM	attachment=ISO|senID=33155|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
 3	تیر	تیر	NOUN	IANM	attachment=ISO|number=SING|senID=33155|dadeg_pos=N	1	MOZ	_	_
 4	ایرانیان	ایرانی	NOUN	ANM	attachment=ISO|number=PLUR|senID=33155|dadeg_pos=N	9	SBJ	_	_
 5	باستان	باستان	ADJ	AJP	attachment=ISO|senID=33155|dadeg_pos=ADJ	4	NPOSTMOD	_	_
@@ -13323,9 +13323,9 @@
 5	در	در	PREP	PREP	attachment=ISO|senID=46067|dadeg_pos=PREP	13	ADV	_	_
 6	فاصلهٔ	فاصله	NOUN	IANM	attachment=ISO|number=SING|senID=46067|dadeg_pos=N	5	POSDEP	_	_
 7	روزهای	روز	NOUN	IANM	attachment=ISO|number=PLUR|senID=46067|dadeg_pos=N	6	MOZ	_	_
-8	9	9	POSNUM	POSNUM	attachment=ISO|senID=46067|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
+8	9	9	NUM	POSNUM	attachment=ISO|senID=46067|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
 9	و	و	CCONJ	CONJ	attachment=ISO|senID=46067|dadeg_pos=CONJ	8	AJCONJ	_	_
-10	10	10	POSNUM	POSNUM	attachment=ISO|senID=46067|dadeg_pos=POSNUM	9	POSDEP	_	_
+10	10	10	NUM	POSNUM	attachment=ISO|senID=46067|dadeg_pos=POSNUM	9	POSDEP	_	_
 11	آزمایش	آزمایش	NOUN	IANM	attachment=ISO|number=SING|senID=46067|dadeg_pos=N	7	MOZ	_	_
 12	تخمک‌گذاری	تخمک‌گذاری	NOUN	IANM	attachment=ISO|number=SING|senID=46067|dadeg_pos=N	13	NVE	_	_
 13	کرد	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=46067|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
@@ -13895,7 +13895,7 @@
 7	در	در	PREP	PREP	attachment=ISO|senID=46369|dadeg_pos=PREP	16	ADV	_	_
 8	سه	سه	PRENUM	PRENUM	attachment=ISO|senID=46369|dadeg_pos=PRENUM	9	NPREMOD	_	_
 9	ماه	ماه	NOUN	IANM	attachment=ISO|number=SING|senID=46369|dadeg_pos=N	7	POSDEP	_	_
-10	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=46369|dadeg_pos=POSNUM	9	NPOSTMOD	_	_
+10	اول	اول	ADJ	POSNUM	attachment=ISO|senID=46369|dadeg_pos=POSNUM	9	NPOSTMOD	_	_
 11	امسال	امسال	NOUN	IANM	attachment=ISO|number=SING|senID=46369|dadeg_pos=N	9	MOZ	_	_
 12	6	6	PRENUM	PRENUM	attachment=ISO|senID=46369|dadeg_pos=PRENUM	13	NPREMOD	_	_
 13	میلیارد	میلیارد	NOUN	IANM	attachment=ISO|senID=46369|dadeg_pos=N	14	NPREMOD	_	_
@@ -14032,7 +14032,7 @@
 # sent_id = dev-s692
 # text = خسرو اول انوشیروان به جای قباد به سلطنت رسید و برای برقراری نظم در ایران عهد ساسانی که عقاید و افکار مزدک آن را آشفته کرده بود دستور داد تا مزدک و سی هزار تن از طرفداران او را کشتند و بقیهٔ طرفداران مزدک مخفی شدند و در انتظار موقع مناسب انتقام دقیقه‌شماری کردند.
 1	خسرو	خسرو	NOUN	ANM	attachment=ISO|number=SING|senID=46439|dadeg_pos=N	9	SBJ	_	_
-2	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=46439|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
+2	اول	اول	ADJ	POSNUM	attachment=ISO|senID=46439|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
 3	انوشیروان	انوشیروان	NOUN	ANM	attachment=ISO|number=SING|senID=46439|dadeg_pos=N	1	APP	_	_
 4	به	به	PREP	PREP	attachment=ISO|senID=46439|dadeg_pos=PREP	9	ADV	_	_
 5	جای	جا	NOUN	IANM	attachment=ISO|number=SING|senID=46439|dadeg_pos=N	4	POSDEP	_	_
@@ -16326,7 +16326,7 @@
 6	داخلی	داخلی	ADJ	AJP	attachment=ISO|senID=35374|dadeg_pos=ADJ	4	NPOSTMOD	_	_
 7	در	در	PREP	PREP	attachment=ISO|senID=35374|dadeg_pos=PREP	16	ADV	_	_
 8	برنامهٔ	برنامه	NOUN	IANM	attachment=ISO|number=SING|senID=35374|dadeg_pos=N	7	POSDEP	_	_
-9	پنجم	پنجم	POSNUM	POSNUM	attachment=ISO|senID=35374|dadeg_pos=POSNUM	8	NPOSTMOD	_	_
+9	پنجم	پنجم	ADJ	POSNUM	attachment=ISO|senID=35374|dadeg_pos=POSNUM	8	NPOSTMOD	_	_
 10	توسعه	توسعه	NOUN	IANM	attachment=ISO|number=SING|senID=35374|dadeg_pos=N	8	MOZ	_	_
 11	به	به	PREP	PREP	attachment=ISO|senID=35374|dadeg_pos=PREP	14	NPP	_	_
 12	حوزهٔ	حوزه	NOUN	IANM	attachment=ISO|number=SING|senID=35374|dadeg_pos=N	11	POSDEP	_	_
@@ -18555,7 +18555,7 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=47471|dadeg_pos=PREP	8	ADV	_	_
 2	مدرسه	مدرسه	NOUN	IANM	attachment=ISO|number=SING|senID=47471|dadeg_pos=N	1	POSDEP	_	_
 3	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=47471|dadeg_pos=N	8	ADV	_	_
-4	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=47471|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
+4	اول	اول	ADJ	POSNUM	attachment=ISO|senID=47471|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
 5	ابتدایی	ابتدایی	ADJ	AJP	attachment=ISO|senID=47471|dadeg_pos=ADJ	3	NPOSTMOD	_	_
 6	بسیار	بسیار	ADV	SADV	attachment=ISO|senID=47471|dadeg_pos=ADV	8	ADV	_	_
 7	شیطنت	شیطنت	NOUN	IANM	attachment=ISO|number=SING|senID=47471|dadeg_pos=N	8	NVE	_	_
@@ -18868,7 +18868,7 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=47651|dadeg_pos=PREP	17	ADV	_	_
 2	جنگ	جنگ	NOUN	IANM	attachment=ISO|number=SING|senID=47651|dadeg_pos=N	1	POSDEP	_	_
 3	جهانی	جهانی	ADJ	AJP	attachment=ISO|senID=47651|dadeg_pos=ADJ	2	NPOSTMOD	_	_
-4	دوم	دوم	POSNUM	POSNUM	attachment=ISO|senID=47651|dadeg_pos=POSNUM	2	NPOSTMOD	_	spaceAfter=NO
+4	دوم	دوم	ADJ	POSNUM	attachment=ISO|senID=47651|dadeg_pos=POSNUM	2	NPOSTMOD	_	spaceAfter=NO
 5	،	،	PUNCT	PUNC	attachment=ISO|senID=47651|dadeg_pos=PUNC	4	PUNC	_	_
 6	ژاپن	ژاپن	NOUN	IANM	attachment=ISO|number=SING|senID=47651|dadeg_pos=N	17	SBJ	_	_
 7	سربازان	سرباز	NOUN	ANM	attachment=ISO|number=PLUR|senID=47651|dadeg_pos=N	8	PREDEP	_	_
@@ -20097,7 +20097,7 @@
 5	تا	تا	PREP	PREP	attachment=ISO|senID=36267|dadeg_pos=PREP	4	POSDEP	_	_
 6	چارچوب	چارچوب	NOUN	IANM	attachment=ISO|number=SING|senID=36267|dadeg_pos=N	5	POSDEP	_	_
 7	پنجرهٔ	پنجره	NOUN	IANM	attachment=ISO|number=SING|senID=36267|dadeg_pos=N	6	MOZ	_	_
-8	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=36267|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
+8	اول	اول	ADJ	POSNUM	attachment=ISO|senID=36267|dadeg_pos=POSNUM	7	NPOSTMOD	_	_
 9	آماس	آماس	NOUN	IANM	attachment=ISO|number=SING|senID=36267|dadeg_pos=N	10	NVE	_	_
 10	کرده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=36267|dadeg_pos=V	0	ROOT	_	_
 11	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=36267|dadeg_pos=AUX	10	aux	_	spaceAfter=NO
@@ -24389,7 +24389,7 @@
 # sent_id = dev-s1241
 # text = روز سوم باز اول وقت مدرسه بودم.
 1	روز	روز	NOUN	IANM	attachment=ISO|number=SING|senID=38226|dadeg_pos=N	7	ADV	_	_
-2	سوم	سوم	POSNUM	POSNUM	attachment=ISO|senID=38226|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
+2	سوم	سوم	ADJ	POSNUM	attachment=ISO|senID=38226|dadeg_pos=POSNUM	1	NPOSTMOD	_	_
 3	باز	باز	ADV	SADV	attachment=ISO|senID=38226|dadeg_pos=ADV	4	PREDEP	_	_
 4	اول	اول	NOUN	IANM	attachment=ISO|number=SING|senID=38226|dadeg_pos=N	7	ADV	_	_
 5	وقت	وقت	NOUN	IANM	attachment=ISO|number=SING|senID=38226|dadeg_pos=N	4	MOZ	_	_
@@ -24401,7 +24401,7 @@
 # text = اواخر هفتهٔ دوم، فراش جدید آمد.
 1	اواخر	آخر	NOUN	IANM	attachment=ISO|number=PLUR|senID=38236|dadeg_pos=N	7	ADV	_	_
 2	هفتهٔ	هفته	NOUN	IANM	attachment=ISO|number=SING|senID=38236|dadeg_pos=N	1	MOZ	_	_
-3	دوم	دوم	POSNUM	POSNUM	attachment=ISO|senID=38236|dadeg_pos=POSNUM	2	NPOSTMOD	_	spaceAfter=NO
+3	دوم	دوم	ADJ	POSNUM	attachment=ISO|senID=38236|dadeg_pos=POSNUM	2	NPOSTMOD	_	spaceAfter=NO
 4	،	،	PUNCT	PUNC	attachment=ISO|senID=38236|dadeg_pos=PUNC	3	PUNC	_	_
 5	فراش	فراش	NOUN	IANM	attachment=ISO|number=SING|senID=38236|dadeg_pos=N	7	SBJ	_	_
 6	جدید	جدید	ADJ	AJP	attachment=ISO|senID=38236|dadeg_pos=ADJ	5	NPOSTMOD	_	_
@@ -24760,7 +24760,7 @@
 21	،	،	PUNCT	PUNC	attachment=ISO|senID=38393|dadeg_pos=PUNC	20	PUNC	_	_
 22	همان	همان	PREM	DEMAJ	attachment=ISO|senID=38393|dadeg_pos=PREM	23	NPREMOD	_	_
 23	بار	بار	NOUN	IANM	attachment=ISO|number=SING|senID=38393|dadeg_pos=N	28	ADV	_	_
-24	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=38393|dadeg_pos=POSNUM	23	NPOSTMOD	_	_
+24	اول	اول	ADJ	POSNUM	attachment=ISO|senID=38393|dadeg_pos=POSNUM	23	NPOSTMOD	_	_
 25-26	بعله‌اش	_	_	_	_	_	_	_	_
 25	بعله	بعله	NOUN	IANM	attachment=ISO|number=SING|senID=38393|dadeg_pos=N	27	PREDEP	_	_
 26	اش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=38393|dadeg_pos=PR	25	nmod:poss	_	_
@@ -27447,11 +27447,11 @@
 # text = امتیازات نفر اول زن و نفر اول مرد هر کشور در دور مقدماتی جمع زده شد.
 1	امتیازات	امتیاز	NOUN	IANM	attachment=ISO|number=PLUR|senID=39385|dadeg_pos=N	15	SBJ	_	_
 2	نفر	نفر	NOUN	ANM	attachment=ISO|number=SING|senID=39385|dadeg_pos=N	1	MOZ	_	_
-3	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=39385|dadeg_pos=POSNUM	2	NPOSTMOD	_	_
+3	اول	اول	ADJ	POSNUM	attachment=ISO|senID=39385|dadeg_pos=POSNUM	2	NPOSTMOD	_	_
 4	زن	زن	NOUN	ANM	attachment=ISO|number=SING|senID=39385|dadeg_pos=N	2	NPOSTMOD	_	_
 5	و	و	CCONJ	CONJ	attachment=ISO|senID=39385|dadeg_pos=CONJ	4	NCONJ	_	_
 6	نفر	نفر	NOUN	ANM	attachment=ISO|number=SING|senID=39385|dadeg_pos=N	5	POSDEP	_	_
-7	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=39385|dadeg_pos=POSNUM	6	NPOSTMOD	_	_
+7	اول	اول	ADJ	POSNUM	attachment=ISO|senID=39385|dadeg_pos=POSNUM	6	NPOSTMOD	_	_
 8	مرد	مرد	NOUN	ANM	attachment=ISO|number=SING|senID=39385|dadeg_pos=N	6	MOZ	_	_
 9	هر	هر	PREM	AMBAJ	attachment=ISO|senID=39385|dadeg_pos=PREM	10	NPREMOD	_	_
 10	کشور	کشور	NOUN	IANM	attachment=ISO|number=SING|senID=39385|dadeg_pos=N	8	MOZ	_	_
@@ -27757,7 +27757,7 @@
 1	شاید	شاید	ADV	SADV	attachment=ISO|senID=39555|dadeg_pos=ADV	10	ADV	_	_
 2	در	در	PREP	PREP	attachment=ISO|senID=39555|dadeg_pos=PREP	10	ADV	_	_
 3	نگاه	نگاه	NOUN	IANM	attachment=ISO|number=SING|senID=39555|dadeg_pos=N	2	POSDEP	_	_
-4	اول	اول	POSNUM	POSNUM	attachment=ISO|senID=39555|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
+4	اول	اول	ADJ	POSNUM	attachment=ISO|senID=39555|dadeg_pos=POSNUM	3	NPOSTMOD	_	_
 5	مردها	مرد	NOUN	ANM	attachment=ISO|number=PLUR|senID=39555|dadeg_pos=N	10	SBJ	_	_
 6	از	از	PREP	PREP	attachment=ISO|senID=39555|dadeg_pos=PREP	9	NPP	_	_
 7	چنین	چنین	PREM	DEMAJ	attachment=ISO|senID=39555|dadeg_pos=PREM	8	NPREMOD	_	_
@@ -27976,7 +27976,7 @@
 4	پروژهٔ	پروژه	NOUN	IANM	attachment=ISO|number=SING|senID=39635|dadeg_pos=N	3	MOZ	_	_
 5	انتخابات	انتخابات	NOUN	IANM	attachment=ISO|number=SING|senID=39635|dadeg_pos=N	4	MOZ	_	_
 6	مجلس	مجلس	NOUN	IANM	attachment=ISO|number=SING|senID=39635|dadeg_pos=N	5	MOZ	_	_
-7	نهم	نهم	POSNUM	POSNUM	attachment=ISO|senID=39635|dadeg_pos=POSNUM	6	NPOSTMOD	_	_
+7	نهم	نهم	ADJ	POSNUM	attachment=ISO|senID=39635|dadeg_pos=POSNUM	6	NPOSTMOD	_	_
 8	توسط	توسط	PREP	PREP	attachment=ISO|senID=39635|dadeg_pos=PREP	3	NPP	_	_
 9	جریان	جریان	NOUN	IANM	attachment=ISO|number=SING|senID=39635|dadeg_pos=N	8	POSDEP	_	_
 10	اصلاحات	اصلاحات	NOUN	IANM	attachment=ISO|number=PLUR|senID=39635|dadeg_pos=N	9	MOZ	_	_
