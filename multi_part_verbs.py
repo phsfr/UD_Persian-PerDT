@@ -150,12 +150,14 @@ for line in fr.readlines():
         if pos=='N' and (cpos not in adjCPos):
             log_adj.write(line+'\n')
             log_adj.flush()
-        if pos=='POSTP'and word_form=='دربارهٔ':
+        #if word_form=='و' and rParent=='OBJ':
+        #    print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id)+'\t'+rParent)
+        if pos=='POSTP'and word_form!='همراه' and word_form!='را' and word_form!='رو' and word_form!='ی' and word_form!='و':
             idens.append(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
             print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
 idens=set(idens)
 #for k in idens:
-    #print(k)
+#    print(k)
 #for k in poss:
 #    print(k,poss[k])
 

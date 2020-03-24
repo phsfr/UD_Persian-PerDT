@@ -114,6 +114,8 @@ def convert_pos(old_pos,word_form):
         new_pos='NUM'
     if old_pos=='PRENUM' and word_form in adj_prenums:
         new_pos='ADJ'
+    if old_pos=='POSTP' and word_form=='ی': #for sentid=39792 «کافه پیانو» ی فرهاد جعفری را برای نشر چشمه پس می‌فرستم
+        new_pos='X'
     return new_pos
 def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
     elems=lin.strip().split('\t')
