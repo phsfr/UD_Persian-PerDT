@@ -105,9 +105,9 @@ def find_pro_head(pro_par,tok_dic,lin):
 def convert_pos(old_pos,word_form):
     pos_map={'V':'VERB','N':'NOUN','SUBR':'SCONJ','PR':'PRON','ADJ':'ADJ','ADV':'ADV','PUNC':'PUNCT','CONJ':'CCONJ','AUX':'AUX','ADR':'INTJ'  ,'IDEN':'IDEN','PART':'PART','POSNUM':'ADJ','PREM':'PREM','PRENUM':'NUM','PREP':'PREP','PSUS':'PSUS','POSTP':'POSTP'}
     written_nums=['یک','دو','سه','چهار'] #IMPORTANT!! => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
+    #['ششصد','یک‌صد','هفت','شانزده','پانزده','دویست','هشتاد','نهصد','یازده','سی','پنجاه','هزار','ده','صفر','بیست','چهارده','یکصد','سیصد','صد','هفتاد','پنج','شش','چهارصد','پانصد','شصت','دوازده','هجده','صدها','نه','نوزده','چهل','هیجده','یک','سیزده','هفده','نود','هشت']
     new_pos=pos_map[old_pos]
-    adj_prenums=['دهمین','آخرین','دوم','یکمین','سی‌امین','هفتمین','آخر','بیستمین','سومین','پنجمین','شصتمین','نهمین','چهاردهم','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
-
+    adj_prenums=['تک','نصف','چند','دهمین','آخرین','یکمین','سی‌امین','هفتمین','بیستمین','سومین','پنجمین','شصتمین','نهمین','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
     if old_pos=='POSNUM' and word_form.isdigit():
         new_pos='NUM'
     if old_pos=='POSNUM' and word_form in written_nums:
