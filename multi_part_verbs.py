@@ -150,12 +150,12 @@ for line in fr.readlines():
         if pos=='N' and (cpos not in adjCPos):
             log_adj.write(line+'\n')
             log_adj.flush()
-        if pos=='PRENUM': #and word_form=='مهدی':
-            idens.append(word_form)#+'\t'+seperated_feature['senID']+'\t'+str(token_id))
-            #print(line)
+        if pos=='POSTP'and word_form=='دربارهٔ':
+            idens.append(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
+            print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
 idens=set(idens)
-for k in idens:
-    print(k)
+#for k in idens:
+    #print(k)
 #for k in poss:
 #    print(k,poss[k])
 
