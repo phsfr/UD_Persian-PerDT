@@ -1,7 +1,7 @@
 #dadegan_train_path="Persian-Universal-Dependency-Dadegan-master/Universal_Dadegan/train.conllu"#"Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll"
-dadegan_train_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll"#'UD_Persian-Seraji-master/fa_seraji-ud-train.conllu'
+dadegan_train_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/dev.conll"#'UD_Persian-Seraji-master/fa_seraji-ud-train.conllu'
 fr=open(dadegan_train_path,'r',encoding="utf-8")
-trainConll=open("test_ner.txt",'w',encoding="utf-8")
+trainConll=open("dev_ner.txt",'w',encoding="utf-8")
 prev_word_f=''
 prev_word_pos=''
 prev_space=False

@@ -126,7 +126,7 @@ for line in fr.readlines():
             simple_v_str=word_lemma+'\t'+word_form
             simple_verbs[word_form]=word_lemma
         elif pos!='V' and (' ' in word_form):#for checking errors in word forms
-            print(line)
+            #print(line)
             fw1.write(line)
             fw1.flush()
         elif pos=='PUNC':
@@ -152,7 +152,7 @@ for line in fr.readlines():
             log_adj.flush()
         #if word_form=='و' and rParent=='OBJ':
         #    print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id)+'\t'+rParent)
-        if pos=='POSTP'and word_form!='همراه' and word_form!='را' and word_form!='رو' and word_form!='ی' and word_form!='و':
+        if pos=='PREM'and word_form=='میلیاردها': #and word_form!='را' and word_form!='رو' and word_form!='ی' and word_form!='و':
             idens.append(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
             print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
 idens=set(idens)
