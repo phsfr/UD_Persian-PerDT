@@ -5471,14 +5471,14 @@
 9	.	.	PUNC	PUNC	attachment=ISO|senID=43326	8	PUNC	_	_
 
 1	نباید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=43336	6	PREDEP	_	_
-2	جلوی	جلو	N	IANM	attachment=ISO|number=SING|senID=43336	4	PREDEP	_	_
+2	جلوی	جلو	PREP	PREP	attachment=ISO|number=SING|senID=43336	4	PREDEP	_	_
 3	پیشرفت	پیشرفت	N	IANM	attachment=ISO|number=SING|senID=43336	2	MOZ	_	_
 4	را	را	POSTP	POSTP	attachment=ISO|senID=43336	5	OBJ	_	_
 5	بگیرد	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=43336	1	VCL	_	_
 6	یا	یا	CONJ	CONJ	attachment=ISO|senID=43336	15	PREDEP	_	_
 7	حتی	حتی	ADV	SADV	attachment=ISO|senID=43336	8	PREDEP	_	_
 8	اگر	اگر	SUBR	SUBR	attachment=ISO|senID=43336	15	AJUCL	_	_
-9	جلوی	جلو	N	IANM	attachment=ISO|number=SING|senID=43336	11	PREDEP	_	_
+9	جلوی	جلو	PREP	PREP	attachment=ISO|number=SING|senID=43336	11	PREDEP	_	_
 10	پیشرفت	پیشرفت	N	IANM	attachment=ISO|number=SING|senID=43336	9	MOZ	_	_
 11	را	را	POSTP	POSTP	attachment=ISO|senID=43336	12	OBJ	_	_
 12	می‌گیرد	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=43336	8	PRD	_	_
@@ -9598,7 +9598,7 @@
 11	کفسازی	کفسازی	N	IANM	attachment=ISO|number=SING|senID=56843	12	NVE	_	_
 12	می‌کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=56843	19	VCONJ	_	_
 13	به	به	PREP	PREP	attachment=ISO|senID=56843	19	VPP	_	_
-14	جلوی	جلو	N	IANM	attachment=ISO|number=SING|senID=56843	13	POSDEP	_	_
+14	جلوی	جلو	PREP	PREP	attachment=ISO|number=SING|senID=56843	13	POSDEP	_	_
 15	سردر	سردر	N	IANM	attachment=ISO|number=SING|senID=56843	14	POSDEP	_	_
 16	دانشگاه	دانشگاه	N	IANM	attachment=ISO|number=SING|senID=56843	15	MOZ	_	_
 17	تهران	تهران	N	IANM	attachment=ISO|number=SING|senID=56843	16	MOZ	_	_
@@ -10776,7 +10776,7 @@
 9	رضای	رضا	N	ANM	attachment=ISO|number=SING|senID=45700	6	MOZ	_	_
 10	اصفهانی	اصفهانی	N	ANM	attachment=ISO|number=SING|senID=45700	9	MOZ	_	_
 11	را	را	POSTP	POSTP	attachment=ISO|senID=45700	17	OBJ	_	_
-12	حدود	حدود	ADV	SADV	attachment=ISO|senID=45700	13	PREDEP	_	_
+12	حدود	حدود	N	IANM	attachment=ISO|senID=45700	13	PREDEP	_	_
 13	دو	دو	PRENUM	PRENUM	attachment=ISO|senID=45700	15	NPREMOD	_	_
 14	سه	سه	PRENUM	PRENUM	attachment=ISO|senID=45700	13	AJCONJ	_	_
 15	صفحه	صفحه	N	IANM	attachment=ISO|number=SING|senID=45700	17	ADV	_	_
@@ -16144,7 +16144,7 @@
 1	پس	پس	PREP	PREP	attachment=ISO|senID=53596	13	ADV	_	_
 2	از	از	PREP	PREP	attachment=ISO|senID=53596	1	POSDEP	_	_
 3	گذشت	گذشت	N	IANM	attachment=ISO|number=SING|senID=53596	2	POSDEP	_	_
-4	حدود	حدود	ADV	SADV	attachment=ISO|senID=53596	5	APREMOD	_	_
+4	حدود	حدود	N	IANM	attachment=ISO|senID=53596	5	APREMOD	_	_
 5	دو	دو	PRENUM	PRENUM	attachment=ISO|senID=53596	6	NPREMOD	_	_
 6	قرن	قرن	N	IANM	attachment=ISO|number=SING|senID=53596	3	MOZ	_	_
 7	از	از	PREP	PREP	attachment=ISO|senID=53596	3	NPP	_	_
@@ -18291,7 +18291,7 @@
 11	خواهید گرفت	گرفت#گیر	V	ACT	person=2|attachment=ISO|number=PLUR|tma=AY|senID=54684	0	ROOT	_	_
 12	.	.	PUNC	PUNC	attachment=ISO|senID=54684	11	PUNC	_	_
 
-1	حدود	حدود	PREP	PREP	attachment=ISO|senID=54694	3	PREDEP	_	_
+1	حدود	حدود	N	IANM	attachment=ISO|senID=54694	3	PREDEP	_	_
 2	نیم	نیم	PRENUM	PRENUM	attachment=ISO|senID=54694	1	POSDEP	_	_
 3	ساعت	ساعت	N	IANM	attachment=ISO|number=SING|senID=54694	7	ADV	_	_
 4	،	،	PUNC	PUNC	attachment=ISO|senID=54694	3	PUNC	_	_
@@ -22127,7 +22127,7 @@
 6	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=57444	5	POSDEP	_	_
 7	ماهانه	ماهانه	ADJ	AJP	attachment=ISO|senID=57444	6	NPOSTMOD	_	_
 8	(	(	PUNC	PUNC	attachment=ISO|senID=57444	12	PUNC	_	_
-9	حدود	حدود	PREP	PREP	attachment=ISO|senID=57444	11	PREDEP	_	_
+9	حدود	حدود	N	IANM	attachment=ISO|senID=57444	11	PREDEP	_	_
 10	80	80	PRENUM	PRENUM	attachment=ISO|senID=57444	9	POSDEP	_	_
 11	هزار	هزار	N	IANM	attachment=ISO|number=SING|senID=57444	12	NPREMOD	_	_
 12	تومان	تومان	N	IANM	attachment=ISO|number=SING|senID=57444	7	APP	_	_

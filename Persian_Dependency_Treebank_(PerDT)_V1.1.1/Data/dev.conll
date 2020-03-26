@@ -1321,7 +1321,7 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=23932	24	ADV	_	_
 2	برنامهٔ	برنامه	N	IANM	attachment=ISO|number=SING|senID=23932	1	POSDEP	_	_
 3	پنجم	پنجم	POSNUM	POSNUM	attachment=ISO|senID=23932	2	NPOSTMOD	_	_
-4	حدود	حدود	PREP	PREP	attachment=ISO|senID=23932	9	PREDEP	_	_
+4	حدود	حدود	N	IANM	attachment=ISO|senID=23932	9	PREDEP	_	_
 5	400	400	PRENUM	PRENUM	attachment=ISO|senID=23932	8	NPREMOD	_	_
 6	تا	تا	PREP	PREP	attachment=ISO|senID=23932	5	POSDEP	_	_
 7	500	500	PRENUM	PRENUM	attachment=ISO|senID=23932	6	POSDEP	_	_
@@ -4783,7 +4783,7 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=26349	26	ADV	_	_
 2	میان	میان	N	IANM	attachment=ISO|number=SING|senID=26349	1	POSDEP	_	_
 3	سکوت	سکوت	N	IANM	attachment=ISO|number=SING|senID=26349	2	MOZ	_	_
-4	حدود	حدود	PREP	PREP	attachment=ISO|senID=26349	8	PREDEP	_	_
+4	حدود	حدود	N	IANM	attachment=ISO|senID=26349	8	PREDEP	_	_
 5	بیست	بیست	PRENUM	PRENUM	attachment=ISO|senID=26349	4	PREDEP	_	_
 6	،	،	PUNC	PUNC	attachment=ISO|senID=26349	5	PUNC	_	_
 7	سی	سی	PRENUM	PRENUM	attachment=ISO|senID=26349	5	AJCONJ	_	_
@@ -9398,7 +9398,7 @@
 5	برای	برای	PREP	PREP	attachment=ISO|senID=32779	10	ADV	_	_
 6	ما	ما	PR	SEPER	person=1|attachment=ISO|number=PLUR|senID=32779	5	POSDEP	_	_
 7	از	از	PREP	PREP	attachment=ISO|senID=32779	10	ADV	_	_
-8	جلوی	جلو	N	IANM	attachment=ISO|number=SING|senID=32779	7	POSDEP	_	_
+8	جلوی	جلو	PREP	PREP	attachment=ISO|number=SING|senID=32779	7	POSDEP	_	_
 9	قبر	قبر	N	IANM	attachment=ISO|number=SING|senID=32779	8	POSDEP	_	_
 10	خواهد غلطانید	غلطانید#غلطان	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=32779	0	ROOT	_	_
 11	؟	؟	PUNC	PUNC	attachment=ISO|senID=32779	10	PUNC	_	_
@@ -16063,7 +16063,7 @@
 20	.	.	PUNC	PUNC	attachment=ISO|senID=47511	19	PUNC	_	_
 
 1	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=47521	12	SBJ	_	_
-2	حدود	حدود	PREP	PREP	attachment=ISO|senID=47521	4	PREDEP	_	_
+2	حدود	حدود	N	IANM	attachment=ISO|senID=47521	4	PREDEP	_	_
 3	سه	سه	PRENUM	PRENUM	attachment=ISO|senID=47521	2	POSDEP	_	_
 4	ماه	ماه	N	IANM	attachment=ISO|number=SING|senID=47521	5	SBJ	_	_
 5	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47521	0	ROOT	_	_
@@ -20300,7 +20300,7 @@
 18	آینده	آینده	ADJ	AJP	attachment=ISO|senID=48290	17	NPOSTMOD	_	_
 19	هر	هر	PREM	AMBAJ	attachment=ISO|senID=48290	20	NPREMOD	_	_
 20	سرباز	سرباز	N	ANM	attachment=ISO|number=SING|senID=48290	26	SBJ	_	_
-21	حدود	حدود	PREP	PREP	attachment=ISO|senID=48290	23	PREDEP	_	_
+21	حدود	حدود	N	IANM	attachment=ISO|senID=48290	23	PREDEP	_	_
 22	20	20	PRENUM	PRENUM	attachment=ISO|senID=48290	21	POSDEP	_	_
 23	ربات	ربات	N	IANM	attachment=ISO|number=SING|senID=48290	24	PREDEP	_	_
 24	را	را	POSTP	POSTP	attachment=ISO|senID=48290	26	OBJ	_	_
