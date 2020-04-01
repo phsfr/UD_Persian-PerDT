@@ -15241,7 +15241,7 @@
 3	روی	روی	PREP	PREP	attachment=ISO|senID=52971	2	POSDEP	_	_
 4	درخت	درخت	N	ANM	attachment=ISO|number=SING|senID=52971	3	POSDEP	_	_
 5	بیدی	بید	N	IANM	attachment=ISO|number=SING|senID=52971	4	MOZ	_	_
-6	کنار	کنار	PREP	PREP	attachment=ISO|senID=52971	9	ADV	_	_
+6	کنار	کنار	N	IANM	attachment=ISO|senID=52971	9	ADV	_	_
 7	چشمه	چشمه	N	IANM	attachment=ISO|number=SING|senID=52971	6	POSDEP	_	_
 8	جیک‌جیک	جیک‌جیک	N	IANM	attachment=ISO|number=SING|senID=52971	9	NVE	_	_
 9	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=52971	0	ROOT	_	_
@@ -16261,7 +16261,7 @@
 2	همان	همان	PREM	DEMAJ	attachment=ISO|senID=53656	3	NPREMOD	_	_
 3	طور	طور	N	IANM	attachment=ISO|number=SING|senID=53656	19	ADV	_	_
 4	که	که	SUBR	SUBR	attachment=ISO|senID=53656	3	NCL	_	_
-5	کنار	کنار	PREP	PREP	attachment=ISO|senID=53656	7	VPP	_	_
+5	کنار	کنار	N	IANM	attachment=ISO|senID=53656	7	VPP	_	_
 6	خیابان	خیابان	N	IANM	attachment=ISO|number=SING|senID=53656	5	POSDEP	_	_
 7	نشسته بود	نشست#نشین	V	ACT	person=3|attachment=ISO|number=SING|tma=GB|senID=53656	4	PRD	_	_
 8	با	با	PREP	PREP	attachment=ISO|senID=53656	19	ADV	_	_
@@ -22577,7 +22577,7 @@
 
 1	تا	تا	SUBR	SUBR	attachment=ISO|senID=57706	7	AJUCL	_	_
 2	نشستم	نشست#نشین	V	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=57706	1	PRD	_	_
-3	کنار	کنار	PREP	PREP	attachment=ISO|senID=57706	2	VPP	_	_
+3	کنار	کنار	N	IANM	attachment=ISO|senID=57706	2	VPP	_	_
 4	جدول	جدول	N	IANM	attachment=ISO|number=SING|senID=57706	3	POSDEP	_	_
 5	،	،	PUNC	PUNC	attachment=ISO|senID=57706	4	PUNC	_	_
 6	بالا	بالا	ADJ	AJP	attachment=ISO|senID=57706	7	NVE	_	_

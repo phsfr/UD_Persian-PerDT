@@ -1461,7 +1461,7 @@
 2	نو	نو	ADJ	AJP	attachment=ISO|senID=23944|dadeg_pos=ADJ	1	NPOSTMOD	_	_
 3	آمد	آمد#آ	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23944|dadeg_pos=V	4	PREDEP	_	_
 4	و	و	CCONJ	CONJ	attachment=ISO|senID=23944|dadeg_pos=CONJ	8	VCONJ	_	_
-5	کنار	کنار	ADP	PREP	attachment=ISO|senID=23944|dadeg_pos=PREP	8	ADV	_	_
+5	کنار	کنار	NOUN	IANM	attachment=ISO|senID=23944|dadeg_pos=N	8	ADV	_	_
 6	سفرهٔ	سفره	NOUN	IANM	attachment=ISO|number=SING|senID=23944|dadeg_pos=N	5	POSDEP	_	_
 7	هفت‌سین	هفت‌سین	NOUN	IANM	attachment=ISO|number=SING|senID=23944|dadeg_pos=N	6	MOZ	_	_
 8	نشست	نشست#نشین	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23944|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
@@ -5150,7 +5150,7 @@
 8	داده	داد#ده	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=26207|dadeg_pos=V	2	PRD	_	_
 9	بود	بود#باش	AUX	V_PA	number=SING|person=3|tense=Past|senID=26207|dadeg_pos=AUX	8	aux	_	spaceAfter=NO
 10	،	،	PUNCT	PUNC	attachment=ISO|senID=26207|dadeg_pos=PUNC	8	PUNC	_	_
-11	کنار	کنار	ADP	PREP	attachment=ISO|senID=26207|dadeg_pos=PREP	17	ADV	_	_
+11	کنار	کنار	NOUN	IANM	attachment=ISO|senID=26207|dadeg_pos=N	17	ADV	_	_
 12	پیاده‌رو	پیاده‌رو	NOUN	IANM	attachment=ISO|number=SING|senID=26207|dadeg_pos=N	11	POSDEP	_	spaceAfter=NO
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=26207|dadeg_pos=PUNC	12	PUNC	_	_
 14	مات	مات	ADJ	AJP	attachment=ISO|senID=26207|dadeg_pos=ADJ	17	ADV	_	_
@@ -8318,7 +8318,7 @@
 # text = من که کنار بچه‌ها هستم می‌شنوم که آنها هم جیغ می‌زنند: «نهضت ما حسینی، لهبل ما خمینی».
 1	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=31784|dadeg_pos=PR	6	SBJ	_	_
 2	که	که	SCONJ	SUBR	attachment=ISO|senID=31784|dadeg_pos=SUBR	1	NCL	_	_
-3	کنار	کنار	ADP	PREP	attachment=ISO|senID=31784|dadeg_pos=PREP	5	VPP	_	_
+3	کنار	کنار	NOUN	IANM	attachment=ISO|senID=31784|dadeg_pos=N	5	VPP	_	_
 4	بچه‌ها	بچه	NOUN	ANM	attachment=ISO|number=PLUR|senID=31784|dadeg_pos=N	3	POSDEP	_	_
 5	هستم	#هست	VERB	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=31784|dadeg_pos=V	2	PRD	_	_
 6	می‌شنوم	شنید#شنو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=31784|dadeg_pos=V	0	ROOT	_	_
@@ -18518,7 +18518,7 @@
 5	اتاق	اتاق	NOUN	IANM	attachment=ISO|number=SING|senID=47451|dadeg_pos=N	3	MOZ	_	_
 6	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=47451|dadeg_pos=PR	5	MOZ	_	_
 7	،	،	PUNCT	PUNC	attachment=ISO|senID=47451|dadeg_pos=PUNC	5	PUNC	_	_
-8	کنار	کنار	ADP	PREP	attachment=ISO|senID=47451|dadeg_pos=PREP	18	ADV	_	_
+8	کنار	کنار	NOUN	IANM	attachment=ISO|senID=47451|dadeg_pos=N	18	ADV	_	_
 9	قفسهٔ	قفسه	NOUN	IANM	attachment=ISO|number=SING|senID=47451|dadeg_pos=N	8	POSDEP	_	_
 10	کتاب‌ها	کتاب	NOUN	IANM	attachment=ISO|number=PLUR|senID=47451|dadeg_pos=N	9	MOZ	_	_
 11	دو	دو	NUM	PRENUM	attachment=ISO|senID=47451|dadeg_pos=PRENUM	12	NPREMOD	_	_
@@ -18807,7 +18807,7 @@
 # text = هیچ وقت کنار بچه‌ها خروپف نکنید.
 1	هیچ	هیچ	PREM	AMBAJ	attachment=ISO|senID=47621|dadeg_pos=PREM	2	NPREMOD	_	_
 2	وقت	وقت	NOUN	IANM	attachment=ISO|number=SING|senID=47621|dadeg_pos=N	6	ADV	_	_
-3	کنار	کنار	ADP	PREP	attachment=ISO|senID=47621|dadeg_pos=PREP	6	ADV	_	_
+3	کنار	کنار	NOUN	IANM	attachment=ISO|senID=47621|dadeg_pos=N	6	ADV	_	_
 4	بچه‌ها	بچه	NOUN	ANM	attachment=ISO|number=PLUR|senID=47621|dadeg_pos=N	3	POSDEP	_	_
 5	خروپف	خروپف	NOUN	IANM	attachment=ISO|number=SING|senID=47621|dadeg_pos=N	6	NVE	_	_
 6	نکنید	کرد#کن	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=47621|polarity=NEG|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
@@ -20625,7 +20625,7 @@
 6	زده	زد#زن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=36559|dadeg_pos=V	0	ROOT	_	_
 7	بود	بود#باش	AUX	V_PA	number=SING|person=3|tense=Past|senID=36559|dadeg_pos=AUX	6	aux	_	_
 8	تا	تا	SCONJ	SUBR	attachment=ISO|senID=36559|dadeg_pos=SUBR	6	AJUCL	_	_
-9	کنار	کنار	ADP	PREP	attachment=ISO|senID=36559|dadeg_pos=PREP	13	VPP	_	_
+9	کنار	کنار	NOUN	IANM	attachment=ISO|senID=36559|dadeg_pos=N	13	VPP	_	_
 10	اطلسی‌های	اطلسی	NOUN	ANM	attachment=ISO|number=PLUR|senID=36559|dadeg_pos=N	9	POSDEP	_	_
 11	باغچه	باغچه	NOUN	IANM	attachment=ISO|number=SING|senID=36559|dadeg_pos=N	10	MOZ	_	_
 12	آرام	آرام	ADJ	AJP	attachment=ISO|senID=36559|dadeg_pos=ADJ	13	NVE	_	_
@@ -25221,7 +25221,7 @@
 12	می‌دهی	داد#ده	VERB	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=38605|dadeg_pos=V	18	VCONJ	_	spaceAfter=NO
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=38605|dadeg_pos=PUNC	12	PUNC	_	_
 14	سبزه‌های	سبزه	NOUN	IANM	attachment=ISO|number=PLUR|senID=38605|dadeg_pos=N	17	PREDEP	_	_
-15	کنار	کنار	ADP	PREP	attachment=ISO|senID=38605|dadeg_pos=PREP	14	NPOSTMOD	_	_
+15	کنار	کنار	NOUN	IANM	attachment=ISO|senID=38605|dadeg_pos=N	14	NPOSTMOD	_	_
 16	نهر	نهر	NOUN	IANM	attachment=ISO|number=SING|senID=38605|dadeg_pos=N	15	POSDEP	_	_
 17	را	را	ADP	POSTP	attachment=ISO|senID=38605|dadeg_pos=POSTP	18	OBJ	_	_
 18	دیده‌ای	دید#بین	VERB	ACT	person=2|attachment=ISO|number=SING|tma=GN|senID=38605|dadeg_pos=V	43	VCONJ	_	_

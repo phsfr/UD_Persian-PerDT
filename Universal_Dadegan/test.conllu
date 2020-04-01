@@ -17739,7 +17739,7 @@
 3	روی	روی	ADP	PREP	attachment=ISO|senID=52971|dadeg_pos=PREP	2	POSDEP	_	_
 4	درخت	درخت	NOUN	ANM	attachment=ISO|number=SING|senID=52971|dadeg_pos=N	3	POSDEP	_	_
 5	بیدی	بید	NOUN	IANM	attachment=ISO|number=SING|senID=52971|dadeg_pos=N	4	MOZ	_	_
-6	کنار	کنار	ADP	PREP	attachment=ISO|senID=52971|dadeg_pos=PREP	9	ADV	_	_
+6	کنار	کنار	NOUN	IANM	attachment=ISO|senID=52971|dadeg_pos=N	9	ADV	_	_
 7	چشمه	چشمه	NOUN	IANM	attachment=ISO|number=SING|senID=52971|dadeg_pos=N	6	POSDEP	_	_
 8	جیک‌جیک	جیک‌جیک	NOUN	IANM	attachment=ISO|number=SING|senID=52971|dadeg_pos=N	9	NVE	_	_
 9	کرد	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=52971|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
@@ -18920,7 +18920,7 @@
 2	همان	همان	PREM	DEMAJ	attachment=ISO|senID=53656|dadeg_pos=PREM	3	NPREMOD	_	_
 3	طور	طور	NOUN	IANM	attachment=ISO|number=SING|senID=53656|dadeg_pos=N	20	ADV	_	_
 4	که	که	SCONJ	SUBR	attachment=ISO|senID=53656|dadeg_pos=SUBR	3	NCL	_	_
-5	کنار	کنار	ADP	PREP	attachment=ISO|senID=53656|dadeg_pos=PREP	7	VPP	_	_
+5	کنار	کنار	NOUN	IANM	attachment=ISO|senID=53656|dadeg_pos=N	7	VPP	_	_
 6	خیابان	خیابان	NOUN	IANM	attachment=ISO|number=SING|senID=53656|dadeg_pos=N	5	POSDEP	_	_
 7	نشسته	نشست#نشین	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=53656|dadeg_pos=V	4	PRD	_	_
 8	بود	بود#باش	AUX	V_PA	number=SING|person=3|tense=Past|senID=53656|dadeg_pos=AUX	7	aux	_	_
@@ -26231,7 +26231,7 @@
 # text = تا نشستم کنار جدول، بالا آوردم.
 1	تا	تا	SCONJ	SUBR	attachment=ISO|senID=57706|dadeg_pos=SUBR	7	AJUCL	_	_
 2	نشستم	نشست#نشین	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=57706|dadeg_pos=V	1	PRD	_	_
-3	کنار	کنار	ADP	PREP	attachment=ISO|senID=57706|dadeg_pos=PREP	2	VPP	_	_
+3	کنار	کنار	NOUN	IANM	attachment=ISO|senID=57706|dadeg_pos=N	2	VPP	_	_
 4	جدول	جدول	NOUN	IANM	attachment=ISO|number=SING|senID=57706|dadeg_pos=N	3	POSDEP	_	spaceAfter=NO
 5	،	،	PUNCT	PUNC	attachment=ISO|senID=57706|dadeg_pos=PUNC	4	PUNC	_	_
 6	بالا	بالا	ADJ	AJP	attachment=ISO|senID=57706|dadeg_pos=ADJ	7	NVE	_	_
