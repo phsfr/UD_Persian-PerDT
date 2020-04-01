@@ -372,7 +372,7 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     dadegan_senID='|senID='+seperated_feature['senID']
                     added_line_multiword=str(token_id)+'-'+str(pron_id)+'\t'+word_form+'\t'+other_parts+'\n'
                     eddited_line=str(token_id)+'\t'+orig_noun+'\t'+word_lemma+'\t'+pos+'\t'+cpos+'\t'+features+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
-                    added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PR'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+str(token_id)+'\t'+'nmod:poss'+'\t'+semanticRoles+'\n'
+                    added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pro_info[pronoun][0]+'\t'+'PR'+'\t'+'PRO'+'\t'+'number='+pro_info[pronoun][1]+"|person="+pro_info[pronoun][2]+'|pronType=Prs'+dadegan_senID+'\t'+str(token_id)+'\t'+'MOZ'+'\t'+semanticRoles+'\n'#'nmod:poss'+'\t'+semanticRoles+'\n'
                     sent_lines.append(added_line_multiword)
                     sent_lines.append(eddited_line)
                     sent_lines.append(added_line)
