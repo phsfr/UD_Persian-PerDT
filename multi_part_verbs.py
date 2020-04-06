@@ -152,12 +152,12 @@ for line in fr.readlines():
             log_adj.flush()
         #if word_form=='و' and rParent=='OBJ':
         #    print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id)+'\t'+rParent)
-        if pos=='PREM'and word_form=='لحظه‌ای': #and word_form!='را' and word_form!='رو' and word_form!='ی' and word_form!='و':
+        if pos=='PREM'and word_form=='تعدادی':#word_form!='را' and word_form!='رو': #and word_form!='ی' and word_form!='و':
             idens.append(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
-            print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
-idens=set(idens)
-#for k in idens:
-#    print(k)
+            #print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
+#idens=set(idens)
+for k in idens:
+    print(k)
 #for k in poss:
 #    print(k,poss[k])
 
@@ -178,10 +178,10 @@ idens=set(idens)
 #            new_v_str+='\t'+v_p[i]+'\t'+lemm
 #        fw.write(new_v_str+'\n')
 #        fw.flush()
-punc_l=set(punc_l)
-for s in punc_l:
-    fw3.write(s+'\n')
-    fw3.flush()
+#punc_l=set(punc_l)
+#for s in punc_l:
+#    fw3.write(s+'\n')
+#    fw3.flush()
 fr.close()
 fw.close()
 fw1.close()

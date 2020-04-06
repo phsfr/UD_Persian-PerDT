@@ -5,12 +5,12 @@ def process_tree(toks,senId):
         tok=toks[key]
         #print(toks[key])
         #print('\n')
-        if (tok[3]=='PREP' or tok[3]=='ADP' or tok[3]=='POSTP'):
+        if (tok[3]=='PREP' or tok[3]=='POSTP'):
             for ch_key in toks:
                 child=toks[ch_key]
                 if child[6]==tok[0] and child[7]=='POSDEP':
                     if child[3]!='NOUN':
-                        print('sentID={} child is not noun: {}'.format(senId,child))
+                        #print('sentID={} child is not noun: {}'.format(senId,child))
                     children.append(child)
             if len(children)==1:
                 child=children[0]    
@@ -36,6 +36,7 @@ for line in fr.readlines():
             tok_id=elems[0]
             word_form=elems[1]
             word_lemma=elems[2]
+            
             pos=elems[3]
             cpos=elems[4]
             features=elems[5]
@@ -57,10 +58,11 @@ for line in fr.readlines():
                     key_val=part.split('=')
                     seperated_feature[key_val[0]]=key_val[1]
                 senId=seperated_feature['senID']
+            dadeg_pos=seperated_feature['dadeg_pos']
             newRP=rParent
             newHP=hParent
-                                #0      1         2         3   4    5        6       7       8  9  10    11
-            tok_struct[tok_id]=[tok_id,word_form,word_lemma,pos,cpos,features,hParent,rParent,f1,f2,newHP,newRP]
+                                #0      1         2         3         4    5        6       7       8  9  10    11
+            tok_struct[tok_id]=[tok_id,word_form,word_lemma,dadeg_pos,cpos,features,hParent,rParent,f1,f2,newHP,newRP]
     else:
         #print(tok_struct)
         process_tree(tok_struct,senId)
