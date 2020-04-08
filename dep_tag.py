@@ -30,9 +30,9 @@ def process_tree(toks,senId,i):
         elif tok[7]=='PUNC':
             tok[11]='punct'
             tok[10]=tok[6]
-        #elif tok[7]=='APP':
-        #    tok[11]='appos'
-        #    tok[10]=tok[6]
+        elif tok[7]=='APP':
+            tok[11]='appos'
+            tok[10]=tok[6]
             
     return i
 dadegan_train_path="Universal_Dadegan/train.conllu"#'UD_Persian-Seraji-master/fa_seraji-ud-train.conllu'
