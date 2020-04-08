@@ -10,9 +10,9 @@ def process_tree(toks,senId,i):
         if tok[7]=='ROOT':
             tok[11]='root'
             tok[10]=tok[6]
-        #elif tok[7]=='PUNC':
-        #    tok[11]='punct'
-        #    tok[10]=tok[6]
+        elif tok[7]=='PUNC':
+            tok[11]='punct'
+            tok[10]=tok[6]
         #elif tok[7]=='APP':
         #    tok[11]='appos'
         #    tok[10]=tok[6]
