@@ -1,31 +1,30 @@
-def process_tree(toks,senId):
+def process_tree(toks,senId,i):
     #print(toks)
+    i=0
     for key in toks:
         children=[]
         tok=toks[key]
         #print(toks[key])
         #print('\n')
-        if (tok[3]=='PREP' or tok[3]=='POSTP'):
-            for ch_key in toks:
-                child=toks[ch_key]
-                if child[6]==tok[0] and child[7]=='POSDEP':
-                    if child[3]!='NOUN':
-                        #print('sentID={} child is not noun: {}'.format(senId,child))
-                    children.append(child)
-            if len(children)==1:
-                child=children[0]    
-                tok[11]='case'
-                tok[10]=child[0]
-                child[11]=tok[7]
-                child[10]=tok[6]    
-            elif len(children)>1:
-                print('more than one child for tok {} in sentID={}'.format(tok[0],senId))
 
+        if tok[7]=='ROOT':
+            tok[11]='root'
+            tok[10]=tok[6]
+        #elif tok[7]=='PUNC':
+        #    tok[11]='punct'
+        #    tok[10]=tok[6]
+        #elif tok[7]=='APP':
+        #    tok[11]='appos'
+        #    tok[10]=tok[6]
+            
+    return i
 dadegan_train_path="Universal_Dadegan/train.conllu"#'UD_Persian-Seraji-master/fa_seraji-ud-train.conllu'
 fr=open(dadegan_train_path,'r',encoding="utf-8")
-trainConll=open("Universal Dependency Dadegan/train.conllu",'w',encoding="utf-8")
+trainConll=open("Universal_Dadegan_with_DepRels/train.conllu",'w',encoding="utf-8")
 
 tok_struct={}
+i=0
+case_inflectedSents=[]
 for line in fr.readlines():
     if line.strip()!='':
         if line.strip().startswith('#'):
@@ -53,30 +52,34 @@ for line in fr.readlines():
             tok_feature=features.split('|')
             seperated_feature={}
             senId=''
+            dadeg_pos='_'
             if not no_f:
                 for part in tok_feature:
                     key_val=part.split('=')
                     seperated_feature[key_val[0]]=key_val[1]
                 senId=seperated_feature['senID']
-            dadeg_pos=seperated_feature['dadeg_pos']
+                dadeg_pos=seperated_feature['dadeg_pos']
             newRP=rParent
             newHP=hParent
-                                #0      1         2         3         4    5        6       7       8  9  10    11
-            tok_struct[tok_id]=[tok_id,word_form,word_lemma,dadeg_pos,cpos,features,hParent,rParent,f1,f2,newHP,newRP]
+                                #0      1         2         3         4    5        6       7       8  9  10    11    12
+            tok_struct[tok_id]=[tok_id,word_form,word_lemma,dadeg_pos,cpos,features,hParent,rParent,f1,f2,newHP,newRP,senId]
     else:
         #print(tok_struct)
-        process_tree(tok_struct,senId)
+        m=process_tree(tok_struct,senId,i)
+        i+=m
+        #print(i)
         for key in tok_struct:
             tok=tok_struct[key]
             #print(tok[5])
-            newFeature=tok[5]+'|'+'Dadegan_hPar='+tok[6]+'|Dadegan_rP='+tok[7]
+            newFeature=tok[5]+'|'+'dadeg_hPar='+tok[6]+'|dadeg_rP='+tok[7]
             if tok[7]=='_':
                 newFeature='_'
-            trainConll.write(tok[0]+'\t'+tok[1]+'\t'+tok[2]+'\t'+tok[3]+'\t'+tok[4]+'\t'+newFeature+'\t'+tok[8]+'\t'+tok[9]+'\t'+tok[10]+'\t'+tok[11]+'\n')
+            trainConll.write(tok[0]+'\t'+tok[1]+'\t'+tok[2]+'\t'+tok[3]+'\t'+tok[4]+'\t'+newFeature+'\t'+tok[10]+'\t'+tok[11]+'\t'+tok[8]+'\t'+tok[9]+'\n')
             trainConll.flush()
         trainConll.write('\n')
         trainConll.flush()
         tok_struct={}
+print(i)
 if line.strip()!='':
         elems=line.strip().split('\t')
         tok_id=elems[0]
@@ -89,12 +92,15 @@ if line.strip()!='':
 
         process_tree(tok_struct,senId)
         for tok in tok_struct:
-            newFeature=tok[5]+'|'+'Dadegan_hPar='+tok[6]+'|Dadegan_rP='+tok[7]
+            newFeature=tok[5]+'|'+'dadeg_hPar='+tok[6]+'|dadeg_rP='+tok[7]
             if tok[7]=='_':
                 newFeature='_'
-            trainConll.write(tok[0]+'\t'+tok[1]+'\t'+tok[2]+'\t'+tok[3]+'\t'+tok[4]+'\t'+newFeature+'\t'+tok[8]+'\t'+tok[9]+'\t'+tok[10]+'\t'+tok[11]+'\n')
+            trainConll.write(tok[0]+'\t'+tok[1]+'\t'+tok[2]+'\t'+tok[3]+'\t'+tok[4]+'\t'+newFeature+'\t'+tok[10]+'\t'+tok[11]+'\t'+tok[8]+'\t'+tok[9]+'\n')
             trainConll.flush()
         
+#for sent in case_inflectedSents:
+#    print(sent)
+
 trainConll.close()
 
 fr.close()

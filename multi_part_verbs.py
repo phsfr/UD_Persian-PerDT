@@ -152,7 +152,7 @@ for line in fr.readlines():
             log_adj.flush()
         #if word_form=='و' and rParent=='OBJ':
         #    print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id)+'\t'+rParent)
-        if pos=='PREM'and word_form=='تعدادی':#word_form!='را' and word_form!='رو': #and word_form!='ی' and word_form!='و':
+        if pos=='PREM'and word_form=='کمتر':#word_form!='را' and word_form!='رو': #and word_form!='ی' and word_form!='و':
             idens.append(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
             #print(word_form+'\t'+seperated_feature['senID']+'\t'+str(token_id))
 #idens=set(idens)
