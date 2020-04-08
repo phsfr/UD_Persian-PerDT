@@ -6,7 +6,24 @@ def process_tree(toks,senId,i):
         tok=toks[key]
         #print(toks[key])
         #print('\n')
-
+        if (tok[3]=='PREP' or tok[3]=='POSTP'):#CASE relation
+            for ch_key in toks:
+                child=toks[ch_key]
+                if child[6]==tok[0] and child[7]=='POSDEP':
+                    #if child[3]!='NOUN':
+                        #print('sentID={} child is not noun: {}'.format(senId,child))
+                    children.append(child)
+            if len(children)==1:
+                child=children[0]    
+                tok[11]='case'
+                tok[10]=child[0]
+                child[11]=tok[7]
+                child[10]=tok[6] 
+                case_inflectedSents.append([tok[0],child[12]])
+            elif len(children)>1:
+                #print(children)
+                i=i+1
+                print('more than one child for tok {} in sentID={}'.format(tok[0],senId))
         if tok[7]=='ROOT':
             tok[11]='root'
             tok[10]=tok[6]
