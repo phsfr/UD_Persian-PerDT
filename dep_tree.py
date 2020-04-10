@@ -231,6 +231,7 @@ class DependencyTree:
         pass
 
     def convert_tree(self):
+        simple_dep_map={'ROOT':'root','PUNC':'punct','APP':'appos'}
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
             old_head=self.heads[idx]
@@ -241,19 +242,11 @@ class DependencyTree:
                 if len(children)==1:
                     self.exchange_child_parent(idx,children[0],'case')
                 rol_changed=True
-            if old_role=='ROOT':
-                self.labels[idx]='root'
-                rol_changed=True
-            elif old_role=='PUNC':
-                self.labels[idx]='punct'
-                rol_changed=True
-            elif old_role=='APP':
-                self.labels[idx]='appos'
+            if old_role in list(simple_dep_map.keys()):
+                self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
             if rol_changed:
                 self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
-                #print(str(self.other_features[idx]))#.feat_str  str(self.other_features[i])
-                #self.other_features[idx]+='|'+'dadeg_hPar='+old_role+'|dadeg_rP='+str(self.heads[idx])
                 
 
     @staticmethod
