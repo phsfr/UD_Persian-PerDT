@@ -247,9 +247,9 @@ class DependencyTree:
             elif old_role=='PUNC':
                 self.labels[idx]='punct'
                 rol_changed=True
-            #elif old_role=='APP':
-            #    self.labels[idx]='appos'
-            #    rol_changed=True
+            elif old_role=='APP':
+                self.labels[idx]='appos'
+                rol_changed=True
             if rol_changed:
                 self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
                 #print(str(self.other_features[idx]))#.feat_str  str(self.other_features[i])
