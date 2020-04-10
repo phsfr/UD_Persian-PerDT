@@ -236,11 +236,11 @@ class DependencyTree:
             old_head=self.heads[idx]
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
-            #if dadeg_pos=='PREP' or dadeg_pos=='POSTP':
-            #    children=self.find_children(self.index[idx])
-            #    if len(children)==1:
-            #        self.exchange_child_parent(idx,children[0],'case')
-            #    rol_changed=True
+            if dadeg_pos=='PREP' or dadeg_pos=='POSTP':
+                children=self.find_children(self.index[idx])
+                if len(children)==1:
+                    self.exchange_child_parent(idx,children[0],'case')
+                rol_changed=True
             if old_role=='ROOT':
                 self.labels[idx]='root'
                 rol_changed=True
