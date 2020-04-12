@@ -219,8 +219,10 @@ class DependencyTree:
         auto-tagged and auto-ner.
         """
         pass
-    def find_children(self,idx):
+    def find_all_children(self,idx):
         return [key for key,val in enumerate(self.heads) if val==idx]
+    def find_children_with_role(self,h_idx,dep_role):
+        return [key for key,val in enumerate(self.heads) if val==h_idx and self.labels[key]==dep_role]
     def exchange_child_parent(self,parent_idx,child_idx,new_rel):
         self.heads[child_idx]=self.heads[parent_idx]
         self.heads[parent_idx]=self.index[child_idx]
@@ -241,7 +243,7 @@ class DependencyTree:
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
             if dadeg_pos=='PREP' or dadeg_pos=='POSTP':
-                children=self.find_children(self.index[idx])
+                children=self.find_all_children(self.index[idx])
                 if len(children)==1:
                     self.exchange_child_parent(idx,children[0],'case')
                 rol_changed=True
@@ -263,15 +265,27 @@ class DependencyTree:
             #*************************************************
             if old_role=='SBJ': #mapping role of SBJ
                 head_idx=self.reverse_index[old_head]
-                if self.tags[head_idx]!='VERB':
-                    print(self.sent_descript)
-                    print(self.sent_str)
+                #if self.tags[head_idx]!='VERB':
+                #    print(self.sent_descript)
+                #    print(self.sent_str)
                 v_mood=self.verb_mood_detection(head_idx)
                 if v_mood=='PASS':
                     self.labels[idx]='nsubj:pass'
                 else:
                     self.labels[idx]='nsubj'
                 rol_changed=True
+            if old_role=='OBJ': #mapping role of OBJ
+                #if self.tags[head_idx]!='VERB':
+                #    print(self.sent_descript)
+                #    print(self.sent_str)
+                head_obj2_children=self.find_children_with_role(old_head,'OBJ2')
+                if len(head_obj2_children)>0:
+                    self.labels[head_obj2_children[0]]='obj'
+                    self.labels[idx]='iobj'
+                    rol_changed=True
+                else:
+                    self.labels[idx]='obj'
+                    rol_changed=True
             if rol_changed:
                 self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
     def convert_tree(self):
