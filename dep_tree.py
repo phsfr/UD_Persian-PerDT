@@ -41,9 +41,8 @@ class DependencyTree:
         self.index = dict()
         self.reverse_index = dict()
         for i in range(0,len(words)):
-
             self.index[i]=i+1
-            self.reverse_index[i+1]=i+1
+            self.reverse_index[i+1]=i
 
         # We need to increment index by one, because of the root.
         for i in range(0,len(heads)):
@@ -229,8 +228,12 @@ class DependencyTree:
         self.labels[parent_idx]=new_rel
     def simple_rel_change(old_rel,new_rel):
         pass
-
-    def convert_tree(self):
+    def verb_mood_detection(self,verb_idx):
+        dadeg_fpos=self.ftags[verb_idx]
+        if 'dadeg_fpos' in self.other_features[verb_idx].feat_dict.keys():
+            dadeg_fpos=self.other_features[verb_idx].feat_dict['dadeg_fpos']
+        return dadeg_fpos
+    def first_level_dep_mapping(self):
         simple_dep_map={'ROOT':'root','PUNC':'punct','APP':'appos'}
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
@@ -247,6 +250,33 @@ class DependencyTree:
                 rol_changed=True
             if rol_changed:
                 self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
+    def second_level_dep_mapping(self):
+        for idx in range(0,len(self.words)):
+            old_role=self.labels[idx]
+            old_head=self.heads[idx]
+            rol_changed=False
+            dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
+            #*************************************************
+            #**** It's so important to put nsubj mapping after case in second level: because of this example: 
+            #(the dep role of child of را is SBJ)
+            #وزارت دفاع افغانستان اعلام نمود که تمامی روش‌های جذب افسران در صفوف ارتش ملی افغانستان را بازنگری خواهند کرد.
+            #*************************************************
+            if old_role=='SBJ': #mapping role of SBJ
+                head_idx=self.reverse_index[old_head]
+                if self.tags[head_idx]!='VERB':
+                    print(self.sent_descript)
+                    print(self.sent_str)
+                v_mood=self.verb_mood_detection(head_idx)
+                if v_mood=='PASS':
+                    self.labels[idx]='nsubj:pass'
+                else:
+                    self.labels[idx]='nsubj'
+                rol_changed=True
+            if rol_changed:
+                self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
+    def convert_tree(self):
+        self.first_level_dep_mapping()
+        self.second_level_dep_mapping()
                 
 
     @staticmethod
