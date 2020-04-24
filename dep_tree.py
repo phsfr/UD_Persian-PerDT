@@ -253,9 +253,11 @@ class DependencyTree:
             if rol_changed:
                 self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
     def second_level_dep_mapping(self):
+        v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
             old_head=self.heads[idx]
+            lemma=self.lemmas[idx]
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
             #*************************************************
@@ -269,7 +271,8 @@ class DependencyTree:
                 #    print(self.sent_descript)
                 #    print(self.sent_str)
                 v_mood=self.verb_mood_detection(head_idx)
-                if v_mood=='PASS':
+                v_lemma=self.lemmas[head_idx]
+                if v_mood=='PASS' and v_lemma not in v_copula: #for copula verbs listed above, although verb mood is passive but subject is active for Mosnad 
                     self.labels[idx]='nsubj:pass'
                 else:
                     self.labels[idx]='nsubj'
@@ -329,10 +332,10 @@ class DependencyTree:
         print(count_wrong)
 
 if __name__ == '__main__':
-    input_file = os.path.abspath(sys.argv[1])
+    input_file = 'Universal_Dadegan/train.conllu'#os.path.abspath(sys.argv[1])
     #universal_file = os.path.abspath(sys.argv[1])
     #ner_file = os.path.abspath(sys.argv[3])
-    output_file = os.path.abspath(sys.argv[2])
+    output_file = 'Universal_Dadegan_with_DepRels/train.conllu'#os.path.abspath(sys.argv[2])
 
     tree_list = DependencyTree.load_trees_from_conllu_file(input_file)
     
