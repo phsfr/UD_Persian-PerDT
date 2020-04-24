@@ -251,8 +251,10 @@ class DependencyTree:
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
             if rol_changed:
-                self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
+                self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def second_level_dep_mapping(self):
+        #TAM is second level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
+        simple_dep_map={'TAM':'xcomp'}
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
@@ -289,8 +291,11 @@ class DependencyTree:
                 else:
                     self.labels[idx]='obj'
                     rol_changed=True
+            if old_role in list(simple_dep_map.keys()):
+                self.labels[idx]=simple_dep_map[old_role]
+                rol_changed=True
             if rol_changed:
-                self.other_features[idx].add_feat({'dadeg_h':old_role,'dadeg_r':str(old_head)})
+                self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def convert_tree(self):
         self.first_level_dep_mapping()
         self.second_level_dep_mapping()
