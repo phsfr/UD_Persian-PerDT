@@ -285,6 +285,15 @@ class DependencyTree:
                 else:
                     self.labels[idx]='nsubj'
                 rol_changed=True
+            if old_role=='PROG': #mapping role of PROG: مستمرساز
+                head_idx=self.reverse_index[old_head]
+                v_mood=self.verb_mood_detection(head_idx)
+                v_lemma=self.lemmas[head_idx]
+                if v_mood=='PASS' and v_lemma not in v_copula: #for copula verbs listed above, although verb mood is passive but subject is active for Mosnad 
+                    self.labels[idx]='aux:pass'
+                else:
+                    self.labels[idx]='aux'
+                rol_changed=True
             if old_role=='OBJ': #mapping role of OBJ
                 #if self.tags[head_idx]!='VERB':
                 #    print(self.sent_descript)
