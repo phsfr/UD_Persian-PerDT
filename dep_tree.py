@@ -259,7 +259,7 @@ class DependencyTree:
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def second_level_dep_mapping(self):
         #TAM is second level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
-        simple_dep_map={'TAM':'xcomp','VPP':'obl'}
+        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark'}
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
