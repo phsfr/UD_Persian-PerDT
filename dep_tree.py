@@ -306,7 +306,7 @@ class DependencyTree:
                 else:
                     self.labels[idx]='obj'
                     rol_changed=True
-            if old_role=='ADV' or old_role=='MOZ':
+            if old_role=='ADV' or old_role=='MOZ' or old_role=='ADVC':
                 if old_pos=='ADV':
                     self.labels[idx]='advmod'
                     rol_changed=True
