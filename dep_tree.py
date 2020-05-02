@@ -154,20 +154,24 @@ class DependencyTree:
         Loads a conllu string into a DependencyTree object.
         """
         lines = tree_str.strip().split('\n')
+        mw_line=list()
         words = list()
         tags = list()
         heads = list()
         labels = list()
         lemmas = list()
         ftags = list()
+        line_idx={}
         semiFinal_tags = list()
         final_tags = list()
         sent_descript=lines[0]
         sent_str=lines[1]
         other_features = list()
         for i in range(2,len(lines)):#for jumping over two first lines (one is sentence number & other is sentence's string
-            spl = lines[i].split('\t')  
+            spl = lines[i].split('\t')
+            line_idx[i-2]=spl[0]
             if '-' in spl[0]:
+                mw_line.append(lines[i].strip('\n').strip())
                 continue
             words.append(spl[1])          #word form
             lemmas.append(spl[2])         #lemma
@@ -259,7 +263,7 @@ class DependencyTree:
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def second_level_dep_mapping(self):
         #TAM is second level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
-        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound','NVE':'compound'}
+        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound','NVE':'compound:lvc','ENC':'compound'}
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
@@ -362,28 +366,26 @@ class DependencyTree:
         print(count_wrong)
 
 if __name__ == '__main__':
-    input_file = 'Universal_Dadegan/train.conllu'#os.path.abspath(sys.argv[1])
+    input_files = ['Universal_Dadegan/train.conllu','Universal_Dadegan/dev.conllu','Universal_Dadegan/test.conllu']#os.path.abspath(sys.argv[1])
     #universal_file = os.path.abspath(sys.argv[1])
     #ner_file = os.path.abspath(sys.argv[3])
-    output_file = 'Universal_Dadegan_with_DepRels/train.conllu'#os.path.abspath(sys.argv[2])
+    output_files = ['Universal_Dadegan_with_DepRels/train.conllu','Universal_Dadegan_with_DepRels/dev.conllu','Universal_Dadegan_with_DepRels/test.conllu']#os.path.abspath(sys.argv[2])
+    for idx,inp_f in enumerate(input_files):
+        tree_list = DependencyTree.load_trees_from_conllu_file(inp_f)
+        #print('fixing MWE inconsistencies')
+        #DependencyTree.fix_mwe_entries(tree_list)
 
-    tree_list = DependencyTree.load_trees_from_conllu_file(input_file)
-    
-    
-    #print('fixing MWE inconsistencies')
-    #DependencyTree.fix_mwe_entries(tree_list)
+        #universal_tree_list = DependencyTree.load_trees_from_conllu_file(universal_file)
+        #ner_tree_list = DependencyTree.load_trees_from_conll_file(ner_file)
 
-    #universal_tree_list = DependencyTree.load_trees_from_conllu_file(universal_file)
-    #ner_tree_list = DependencyTree.load_trees_from_conll_file(ner_file)
+        # First pass: convert POS tags
+        #print('fixing POS inconsistencies')
+        #for i, tree in enumerate(tree_list):
+        #    tree.convert_pos(universal_tree_list[i], ner_tree_list[i])    
 
-    # First pass: convert POS tags
-    #print('fixing POS inconsistencies')
-    #for i, tree in enumerate(tree_list):
-    #    tree.convert_pos(universal_tree_list[i], ner_tree_list[i])    
-
-    print('fixing tree inconsistencies')
-    # Second pass: convert tree structure
-    for i, tree in enumerate(tree_list):
-        tree.convert_tree()#(universal_tree_list[i])    
+        print('fixing tree inconsistencies in {}'.format(inp_f))
+        # Second pass: convert tree structure
+        for i, tree in enumerate(tree_list):
+            tree.convert_tree()#(universal_tree_list[i])    
         
-    DependencyTree.write_to_conllu(tree_list, output_file)
+        DependencyTree.write_to_conllu(tree_list, output_files[idx])
