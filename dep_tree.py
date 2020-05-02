@@ -229,14 +229,16 @@ class DependencyTree:
         return [key for key,val in enumerate(self.heads) if val==idx]
     def find_children_with_role(self,h_idx,dep_role):
         return [key for key,val in enumerate(self.heads) if val==h_idx and self.labels[key]==dep_role]
-    def exchange_child_parent(self,parent_idx,child_idx,new_rel):
+    def exchange_child_parent(self,parent_idx,child_idx,new_rel_par,new_rel_child=None):
         old_child_h=self.heads[child_idx]
         old_child_r=self.labels[child_idx]
         self.other_features[child_idx].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':old_child_r})
         self.heads[child_idx]=self.heads[parent_idx]
         self.heads[parent_idx]=self.index[child_idx]
         self.labels[child_idx]=self.labels[parent_idx]
-        self.labels[parent_idx]=new_rel
+        if new_rel_child is not None:
+            self.labels[child_idx]=new_rel_child
+        self.labels[parent_idx]=new_rel_par
     def simple_rel_change(old_rel,new_rel):
         pass
     def verb_mood_detection(self,verb_idx):
@@ -262,6 +264,33 @@ class DependencyTree:
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def second_level_dep_mapping(self):
+        for idx in range(0,len(self.words)):
+            old_role=self.labels[idx]
+            old_head=self.heads[idx]
+            old_pos=self.tags[idx]
+            lemma=self.lemmas[idx]
+            rol_changed=False
+            if old_role=='AJUCL':
+                prd_child=self.find_children_with_role(self.index[idx],'PRD')
+                all_children=self.find_all_children(self.index[idx])
+                if len(prd_child)==1:
+                    for child in all_children:
+                        if child!=prd_child[0]:
+                            old_child_h=self.heads[child]
+                            self.heads[child]=prd_child[0]
+                            if not self.other_features[child].has_feat('dadeg_h'):
+                                self.other_features[child].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':self.labels[child]})
+                    self.exchange_child_parent(idx,prd_child[0],'mark','advcl')  
+                    rol_changed=True
+                else:
+                    #print('Error in processing AJUCL!')
+                    self.labels[idx]='advcl'
+                    rol_changed=True
+                    print(self.other_features[idx].feat('senID'))
+                    print(self.sent_str)
+            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
+                self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
+    def third_level_dep_mapping(self):
         #TAM is second level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
         simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound','NVE':'compound:lvc','ENC':'compound'}
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
@@ -328,6 +357,7 @@ class DependencyTree:
     def convert_tree(self):
         self.first_level_dep_mapping()
         self.second_level_dep_mapping()
+        self.third_level_dep_mapping()
                 
 
     @staticmethod
