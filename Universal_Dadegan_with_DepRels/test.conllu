@@ -189,7 +189,7 @@
 6	مدت‌ها	مدت	NOUN	IANM	attachment=ISO|number=PLUR|senID=39968|dadeg_pos=N|dadeg_h=5|dadeg_r=POSDEP	23	nmod	_	_
 7	قبل	قبل	ADJ	AJP	attachment=ISO|senID=39968|dadeg_pos=ADJ	6	NPOSTMOD	_	_
 8	برای	برای	ADP	PREP	attachment=ISO|senID=39968|dadeg_pos=PREP|dadeg_h=23|dadeg_r=ADV	10	case	_	_
-9	راه	راه	NOUN	IANM	attachment=ISO|number=SING|senID=39968|dadeg_pos=N	10	NE	_	_
+9	راه	راه	NOUN	IANM	attachment=ISO|number=SING|senID=39968|dadeg_pos=N|dadeg_h=10|dadeg_r=NE	10	compound	_	_
 10	یافتن	یافتن	NOUN	IANM	attachment=ISO|number=SING|senID=39968|dadeg_pos=N|dadeg_h=8|dadeg_r=POSDEP	23	nmod	_	_
 11	به	به	ADP	PREP	attachment=ISO|senID=39968|dadeg_pos=PREP|dadeg_h=10|dadeg_r=NPP	12	case	_	_
 12	مجلس	مجلس	NOUN	IANM	attachment=ISO|number=SING|senID=39968|dadeg_pos=N|dadeg_h=11|dadeg_r=POSDEP	10	NPP	_	_
@@ -7220,7 +7220,7 @@
 9	سازم	ساخت#ساز	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=44552|dadeg_pos=V|dadeg_h=7|dadeg_r=VCL	7	ccomp	_	_
 10	که	که	SCONJ	SUBR	attachment=ISO|senID=44552|dadeg_pos=SUBR|dadeg_h=9|dadeg_r=VCL	20	mark	_	_
 11	طرز	طرز	NOUN	IANM	attachment=ISO|number=SING|senID=44552|dadeg_pos=N|dadeg_h=20|dadeg_r=SBJ	20	nsubj	_	_
-12	سخن	سخن	NOUN	IANM	attachment=ISO|number=SING|senID=44552|dadeg_pos=N	13	NE	_	_
+12	سخن	سخن	NOUN	IANM	attachment=ISO|number=SING|senID=44552|dadeg_pos=N|dadeg_h=13|dadeg_r=NE	13	compound	_	_
 13	گفتن	گفتن	NOUN	IANM	attachment=ISO|number=SING|senID=44552|dadeg_pos=N|dadeg_h=11|dadeg_r=MOZ	11	nmod	_	_
 14	افراد	فرد	NOUN	ANM	attachment=ISO|number=PLUR|senID=44552|dadeg_pos=N|dadeg_h=13|dadeg_r=MOZ	13	nmod	_	_
 15	روی	روی	ADP	PREP	attachment=ISO|senID=44552|dadeg_pos=PREP|dadeg_h=19|dadeg_r=AJPP	17	case	_	_
@@ -12031,7 +12031,7 @@
 # sent_id = test-s628
 # text = با تمام کردن انواع نعمت‌ها به متقیان آنها را برای حوریان زوج قرار دادیم که در آخرت آنها را تزویج خواهند کرد.
 1	با	با	ADP	PREP	attachment=ISO|senID=45470|dadeg_pos=PREP|dadeg_h=14|dadeg_r=ADV	3	case	_	_
-2	تمام	تمام	NOUN	IANM	attachment=ISO|number=PLUR|senID=45470|dadeg_pos=N	3	NE	_	_
+2	تمام	تمام	NOUN	IANM	attachment=ISO|number=PLUR|senID=45470|dadeg_pos=N|dadeg_h=3|dadeg_r=NE	3	compound	_	_
 3	کردن	کردن	NOUN	IANM	attachment=ISO|number=SING|senID=45470|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	14	nmod	_	_
 4	انواع	نوع	NOUN	IANM	attachment=ISO|number=PLUR|senID=45470|dadeg_pos=N|dadeg_h=3|dadeg_r=MOZ	3	nmod	_	_
 5	نعمت‌ها	نعمت	NOUN	IANM	attachment=ISO|number=PLUR|senID=45470|dadeg_pos=N|dadeg_h=4|dadeg_r=MOZ	4	nmod	_	_
@@ -13370,7 +13370,7 @@
 # sent_id = test-s700
 # text = برای ارزش نهادن به سهام‌داران بالاترین عملکرد را در کارها لحاظ خواهیم کرد.
 1	برای	برای	ADP	PREP	attachment=ISO|senID=50674|dadeg_pos=PREP|dadeg_h=13|dadeg_r=ADV	3	case	_	_
-2	ارزش	ارزش	NOUN	IANM	attachment=ISO|number=SING|senID=50674|dadeg_pos=N	3	NE	_	_
+2	ارزش	ارزش	NOUN	IANM	attachment=ISO|number=SING|senID=50674|dadeg_pos=N|dadeg_h=3|dadeg_r=NE	3	compound	_	_
 3	نهادن	نهادن	NOUN	IANM	attachment=ISO|number=SING|senID=50674|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	13	nmod	_	_
 4	به	به	ADP	PREP	attachment=ISO|senID=50674|dadeg_pos=PREP|dadeg_h=3|dadeg_r=NPP	5	case	_	_
 5	سهام‌داران	سهام‌دار	NOUN	ANM	attachment=ISO|number=PLUR|senID=50674|dadeg_pos=N|dadeg_h=4|dadeg_r=POSDEP	3	NPP	_	_
@@ -14463,7 +14463,7 @@
 1	گرچه	گرچه	SCONJ	SUBR	attachment=ISO|senID=51339|dadeg_pos=SUBR|dadeg_h=17|dadeg_r=AJUCL	10	mark	_	_
 2	نوشتن	نوشتن	NOUN	IANM	attachment=ISO|number=SING|senID=51339|dadeg_pos=N|dadeg_h=10|dadeg_r=SBJ	10	nsubj	_	_
 3	و	و	CCONJ	CONJ	attachment=ISO|senID=51339|dadeg_pos=CONJ	2	NCONJ	_	_
-4	سخن	سخن	NOUN	IANM	attachment=ISO|number=SING|senID=51339|dadeg_pos=N	5	NE	_	_
+4	سخن	سخن	NOUN	IANM	attachment=ISO|number=SING|senID=51339|dadeg_pos=N|dadeg_h=5|dadeg_r=NE	5	compound	_	_
 5	گفتن	گفتن	NOUN	IANM	attachment=ISO|number=SING|senID=51339|dadeg_pos=N	3	POSDEP	_	_
 6	در	در	ADP	PREP	attachment=ISO|senID=51339|dadeg_pos=PREP|dadeg_h=2|dadeg_r=NPP	8	case	_	_
 7	این	این	PREM	DEMAJ	attachment=ISO|senID=51339|dadeg_pos=PREM|dadeg_h=8|dadeg_r=NPREMOD	8	amod	_	_
@@ -15543,7 +15543,7 @@
 5	که	که	SCONJ	SUBR	attachment=ISO|senID=51874|dadeg_pos=SUBR|dadeg_h=4|dadeg_r=VCL	28	mark	_	_
 6	نویسنده	نویسنده	NOUN	ANM	attachment=ISO|number=SING|senID=51874|dadeg_pos=N|dadeg_h=28|dadeg_r=SBJ	28	nsubj	_	_
 7	با	با	ADP	PREP	attachment=ISO|senID=51874|dadeg_pos=PREP|dadeg_h=28|dadeg_r=ADV	9	case	_	_
-8	عنوان	عنوان	NOUN	IANM	attachment=ISO|number=SING|senID=51874|dadeg_pos=N	9	NE	_	_
+8	عنوان	عنوان	NOUN	IANM	attachment=ISO|number=SING|senID=51874|dadeg_pos=N|dadeg_h=9|dadeg_r=NE	9	compound	_	_
 9	کردن	کردن	NOUN	IANM	attachment=ISO|number=SING|senID=51874|dadeg_pos=N|dadeg_h=7|dadeg_r=POSDEP	28	nmod	_	_
 10	بعضی	بعضی	NOUN	IANM	attachment=ISO|number=PLUR|senID=51874|dadeg_pos=N|dadeg_h=9|dadeg_r=MOZ	9	nmod	_	_
 11	از	از	ADP	PREP	attachment=ISO|senID=51874|dadeg_pos=PREP|dadeg_h=10|dadeg_r=NPP	12	case	_	_
@@ -19886,7 +19886,7 @@
 3	خودم	خودم	PRON	UCREFX	person=1|attachment=ISO|number=SING|senID=48597|dadeg_pos=PR|dadeg_h=4|dadeg_r=PREDEP	9	obj	_	_
 4	را	را	ADP	POSTP	attachment=ISO|senID=48597|dadeg_pos=POSTP|dadeg_h=9|dadeg_r=OBJ	3	case	_	_
 5	به	به	ADP	PREP	attachment=ISO|senID=48597|dadeg_pos=PREP|dadeg_h=8|dadeg_r=NPP	7	case	_	_
-6	مطالعه	مطالعه	NOUN	IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N	7	NE	_	_
+6	مطالعه	مطالعه	NOUN	IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|dadeg_h=7|dadeg_r=NE	7	compound	_	_
 7	کردن	کردن	NOUN	IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|dadeg_h=5|dadeg_r=POSDEP	8	NPP	_	_
 8	عادت	عادت	NOUN	IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|dadeg_h=9|dadeg_r=NVE	9	compound:lvc	_	_
 9	بدهم	داد#ده	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=48597|dadeg_pos=V|dadeg_h=1|dadeg_r=VCL	1	ccomp	_	spaceAfter=NO
@@ -20892,7 +20892,7 @@
 10	که	که	SCONJ	SUBR	attachment=ISO|senID=54573|dadeg_pos=SUBR	8	NCL	_	_
 11	اهل	اهل	NOUN	IANM	attachment=ISO|number=SING|senID=54573|dadeg_pos=N	15	MOS	_	_
 12	تنهایی	تنهایی	NOUN	IANM	attachment=ISO|number=SING|senID=54573|dadeg_pos=N	14	PREDEP	_	_
-13	سفر	سفر	NOUN	IANM	attachment=ISO|number=SING|senID=54573|dadeg_pos=N	14	NE	_	_
+13	سفر	سفر	NOUN	IANM	attachment=ISO|number=SING|senID=54573|dadeg_pos=N|dadeg_h=14|dadeg_r=NE	14	compound	_	_
 14	کردن	کردن	NOUN	IANM	attachment=ISO|number=SING|senID=54573|dadeg_pos=N|dadeg_h=11|dadeg_r=MOZ	11	nmod	_	_
 15	باشید	بود#باش	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=54573|dadeg_pos=V	10	PRD	_	spaceAfter=NO
 16	،	،	PUNCT	PUNC	attachment=ISO|senID=54573|dadeg_pos=PUNC|dadeg_h=15|dadeg_r=PUNC	15	punct	_	_
@@ -21457,7 +21457,7 @@
 6	با	با	ADP	PREP	attachment=ISO|senID=54975|dadeg_pos=PREP|dadeg_h=17|dadeg_r=ADV	7	case	_	_
 7	هورا	هورا	NOUN	IANM	attachment=ISO|number=SING|senID=54975|dadeg_pos=N|dadeg_h=6|dadeg_r=POSDEP	17	nmod	_	_
 8	و	و	CCONJ	CONJ	attachment=ISO|senID=54975|dadeg_pos=CONJ	7	NCONJ	_	_
-9	کف	کف	NOUN	IANM	attachment=ISO|number=SING|senID=54975|dadeg_pos=N	10	NE	_	_
+9	کف	کف	NOUN	IANM	attachment=ISO|number=SING|senID=54975|dadeg_pos=N|dadeg_h=10|dadeg_r=NE	10	compound	_	_
 10	زدن	زدن	NOUN	IANM	attachment=ISO|number=SING|senID=54975|dadeg_pos=N	8	POSDEP	_	_
 11	نظم	نظم	NOUN	IANM	attachment=ISO|number=SING|senID=54975|dadeg_pos=N|dadeg_h=14|dadeg_r=PREDEP	17	obj	_	_
 12	مناظرهٔ	مناظره	NOUN	IANM	attachment=ISO|number=SING|senID=54975|dadeg_pos=N|dadeg_h=11|dadeg_r=MOZ	11	nmod	_	_
@@ -22716,7 +22716,7 @@
 11	بوده‌ایم	بود#باش	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=GN|senID=55647|dadeg_pos=V	12	PREDEP	_	_
 12	و	و	CCONJ	CONJ	attachment=ISO|senID=55647|dadeg_pos=CONJ	28	VCONJ	_	_
 13	شاید	شاید	ADV	SADV	attachment=ISO|senID=55647|dadeg_pos=ADV|dadeg_h=28|dadeg_r=ADV	28	advmod	_	_
-14	نام	نام	NOUN	IANM	attachment=ISO|number=SING|senID=55647|dadeg_pos=N	15	NE	_	_
+14	نام	نام	NOUN	IANM	attachment=ISO|number=SING|senID=55647|dadeg_pos=N|dadeg_h=15|dadeg_r=NE	15	compound	_	_
 15	گرفتن	گرفتن	NOUN	IANM	attachment=ISO|number=SING|senID=55647|dadeg_pos=N|dadeg_h=28|dadeg_r=SBJ	28	nsubj	_	_
 16	امسال	امسال	NOUN	IANM	attachment=ISO|number=SING|senID=55647|dadeg_pos=N|dadeg_h=15|dadeg_r=MOZ	15	nmod	_	_
 17	به	به	ADP	PREP	attachment=ISO|senID=55647|dadeg_pos=PREP|dadeg_h=15|dadeg_r=NPP	18	case	_	_
@@ -26214,7 +26214,7 @@
 # text = گاهی برای بند آوردن خون و درمان زخم‌های عمیق به ناچار باید به پزشک مراجعه کنید در این صورت به ناچار پوست را بخیه خواهند زد.
 1	گاهی	گاه	NOUN	IANM	attachment=ISO|number=SING|senID=58280|dadeg_pos=N|dadeg_h=12|dadeg_r=ADV	12	nmod	_	_
 2	برای	برای	ADP	PREP	attachment=ISO|senID=58280|dadeg_pos=PREP|dadeg_h=12|dadeg_r=ADV	4	case	_	_
-3	بند	بند	NOUN	IANM	attachment=ISO|number=SING|senID=58280|dadeg_pos=N	4	NE	_	_
+3	بند	بند	NOUN	IANM	attachment=ISO|number=SING|senID=58280|dadeg_pos=N|dadeg_h=4|dadeg_r=NE	4	compound	_	_
 4	آوردن	آوردن	NOUN	IANM	attachment=ISO|number=SING|senID=58280|dadeg_pos=N|dadeg_h=2|dadeg_r=POSDEP	12	nmod	_	_
 5	خون	خون	NOUN	IANM	attachment=ISO|number=SING|senID=58280|dadeg_pos=N|dadeg_h=4|dadeg_r=MOZ	4	nmod	_	_
 6	و	و	CCONJ	CONJ	attachment=ISO|senID=58280|dadeg_pos=CONJ	4	NCONJ	_	_
