@@ -353,7 +353,7 @@ class DependencyTree:
                 elif old_pos=='ADJ':
                     self.labels[idx]='amod'
                     rol_changed=True  
-            if old_role=="NPREMOD":
+            if old_role=='NPREMOD' or old_role=='NPOSTMOD':
                 new_pos=self.tags[idx]
                 if new_pos=='NUM':
                     self.labels[idx]='nummod'
