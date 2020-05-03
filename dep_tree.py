@@ -246,6 +246,22 @@ class DependencyTree:
         if 'dadeg_fpos' in self.other_features[verb_idx].feat_dict.keys():
             dadeg_fpos=self.other_features[verb_idx].feat_dict['dadeg_fpos']
         return dadeg_fpos
+    def exchange_pars_with_PRD(self,par_idx,par_new_role,child_new_role):
+        prd_child=self.find_children_with_role(self.index[par_idx],'PRD')
+        all_children=self.find_all_children(self.index[par_idx])
+        if len(prd_child)==1:
+            for child in all_children:
+                if child!=prd_child[0]:
+                    old_child_h=self.heads[child]
+                    self.heads[child]=prd_child[0]
+                    if not self.other_features[child].has_feat('dadeg_h'):
+                        self.other_features[child].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':self.labels[child]})
+            self.exchange_child_parent(par_idx,prd_child[0],par_new_role,child_new_role)#'mark','advcl')  
+        else:
+            #print('Error in processing AJUCL!')
+            self.labels[par_idx]= child_new_role #'advcl'
+            #print(self.other_features[par_idx].feat('senID'))
+            #print(self.sent_str)  
     def first_level_dep_mapping(self):
         simple_dep_map={'ROOT':'root','PUNC':'punct','APP':'appos'}
         for idx in range(0,len(self.words)):
@@ -271,28 +287,16 @@ class DependencyTree:
             lemma=self.lemmas[idx]
             rol_changed=False
             if old_role=='AJUCL':
-                prd_child=self.find_children_with_role(self.index[idx],'PRD')
-                all_children=self.find_all_children(self.index[idx])
-                if len(prd_child)==1:
-                    for child in all_children:
-                        if child!=prd_child[0]:
-                            old_child_h=self.heads[child]
-                            self.heads[child]=prd_child[0]
-                            if not self.other_features[child].has_feat('dadeg_h'):
-                                self.other_features[child].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':self.labels[child]})
-                    self.exchange_child_parent(idx,prd_child[0],'mark','advcl')  
-                    rol_changed=True
-                else:
-                    #print('Error in processing AJUCL!')
-                    self.labels[idx]='advcl'
-                    rol_changed=True
-                    print(self.other_features[idx].feat('senID'))
-                    print(self.sent_str)
+                self.exchange_pars_with_PRD(idx,'mark','advcl')
+                rol_changed=True
+            if old_role=='VCL':
+                self.exchange_pars_with_PRD(idx,'mark','ccomp')
+                rol_changed=True                
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def third_level_dep_mapping(self):
         #TAM is second level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
-        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound','NVE':'compound:lvc','ENC':'compound'}
+        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound','NVE':'compound:lvc','ENC':'compound:lvc'}
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
