@@ -352,7 +352,14 @@ class DependencyTree:
                     rol_changed=True                    
                 elif old_pos=='ADJ':
                     self.labels[idx]='amod'
-                    rol_changed=True                
+                    rol_changed=True  
+            if old_role=="NPREMOD":
+                new_pos=self.tags[idx]
+                if new_pos=='NUM':
+                    self.labels[idx]='nummod'
+                else:
+                    self.labels[idx]='amod'
+                rol_changed=True 
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
