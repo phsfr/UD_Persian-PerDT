@@ -8877,8 +8877,8 @@
 
 # sent_id = test-s479
 # text = پشت دیوار کمین گرفتم.
-1	پشت	پشت	ADP	PREP	attachment=ISO|senID=49515|dadeg_pos=PREP|dadeg_h=4|dadeg_r=ADVC	2	case	_	_
-2	دیوار	دیوار	NOUN	IANM	attachment=ISO|number=SING|senID=49515|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	4	nmod	_	_
+1	پشت	پشت	NOUN	IANM	attachment=ISO|senID=49515|dadeg_pos=N|dadeg_h=4|dadeg_r=ADVC	4	nmod	_	_
+2	دیوار	دیوار	NOUN	IANM	attachment=ISO|number=SING|senID=49515|dadeg_pos=N	1	POSDEP	_	_
 3	کمین	کمین	NOUN	IANM	attachment=ISO|number=SING|senID=49515|dadeg_pos=N|dadeg_h=4|dadeg_r=NVE	4	compound:lvc	_	_
 4	گرفتم	گرفت#گیر	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=49515|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 5	.	.	PUNCT	PUNC	attachment=ISO|senID=49515|dadeg_pos=PUNC|dadeg_h=4|dadeg_r=PUNC	4	punct	_	_
@@ -13602,8 +13602,8 @@
 7	مان	ما	PRON	PRO	number=PLUR|person=1|pronType=Prs|senID=50835|dadeg_pos=PR	6	MOZ	_	_
 8	نواخته	نواخت#نواز	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=PASS|senID=50835|dadeg_pos=V	4	PRD	_	_
 9	شد	کرد#کن	AUX	V_PA	number=SING|person=3|tense=Past|senID=50835|dadeg_pos=AUX	8	aux:pass	_	_
-10	سر	سر	ADP	PREP	attachment=ISO|senID=50835|dadeg_pos=PREP|dadeg_h=12|dadeg_r=ADVC	11	case	_	_
-11	حال	حال	NOUN	IANM	attachment=ISO|number=SING|senID=50835|dadeg_pos=N|dadeg_h=10|dadeg_r=POSDEP	12	nmod	_	_
+10	سر	سر	NOUN	IANM	attachment=ISO|senID=50835|dadeg_pos=N|dadeg_h=12|dadeg_r=ADVC	12	nmod	_	_
+11	حال	حال	NOUN	IANM	attachment=ISO|number=SING|senID=50835|dadeg_pos=N	10	POSDEP	_	_
 12	نیامده‌ایم	آمد#آ	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=GN|senID=50835|polarity=NEG|dadeg_pos=V	13	PREDEP	_	_
 13	و	و	CCONJ	CONJ	attachment=ISO|senID=50835|dadeg_pos=CONJ	15	VCONJ	_	_
 14	گیج	گیج	ADJ	AJP	attachment=ISO|senID=50835|dadeg_pos=ADJ|dadeg_h=15|dadeg_r=NVE	15	compound:lvc	_	_

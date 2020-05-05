@@ -14901,8 +14901,8 @@
 # sent_id = dev-s745
 # text = آتش بر چوبهٔ در گرفته شد
 1	آتش	آتش	NOUN	IANM	attachment=ISO|number=SING|senID=34569|dadeg_pos=N|dadeg_h=5|dadeg_r=SBJ	5	nsubj	_	_
-2	بر	بر	ADP	PREP	attachment=ISO|senID=34569|dadeg_pos=PREP|dadeg_h=5|dadeg_r=ADVC	3	case	_	_
-3	چوبهٔ	چوبه	NOUN	IANM	attachment=ISO|number=SING|senID=34569|dadeg_pos=N|dadeg_h=2|dadeg_r=POSDEP	5	nmod	_	_
+2	بر	بر	ADP	PREP	attachment=ISO|senID=34569|dadeg_pos=PREP|dadeg_h=5|dadeg_r=VPRT	3	case	_	_
+3	چوبهٔ	چوبه	NOUN	IANM	attachment=ISO|number=SING|senID=34569|dadeg_pos=N|dadeg_h=2|dadeg_r=POSDEP	5	VPRT	_	_
 4	در	در	NOUN	IANM	attachment=ISO|number=SING|senID=34569|dadeg_pos=N|dadeg_h=3|dadeg_r=MOZ	3	nmod	_	_
 5	گرفته	گرفت#گیر	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=ACT|senID=34569|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 6	شد	کرد#کن	AUX	V_PA	number=SING|person=3|tense=Past|senID=34569|dadeg_pos=AUX	5	aux:pass	_	_
@@ -24342,9 +24342,9 @@
 
 # sent_id = dev-s1252
 # text = توی همین شیش و بش بود که شیشه‌های قطار با نیروی برق باز شد و شخص امپراتور از واگن آبی رنگ سلطنتی پایین آمدند.
-1	توی	توی	ADP	PREP	attachment=ISO|senID=38343|dadeg_pos=PREP|dadeg_h=6|dadeg_r=ADVC	3	case	_	_
+1	توی	توی	NOUN	IANM	attachment=ISO|senID=38343|dadeg_pos=N|dadeg_h=6|dadeg_r=ADVC	6	nmod	_	_
 2	همین	همین	PREM	DEMAJ	attachment=ISO|senID=38343|dadeg_pos=PREM|dadeg_h=3|dadeg_r=NPREMOD	3	amod	_	_
-3	شیش	شیش	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	6	nmod	_	_
+3	شیش	شیش	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N	1	POSDEP	_	_
 4	و	و	CCONJ	CONJ	attachment=ISO|senID=38343|dadeg_pos=CONJ	3	NCONJ	_	_
 5	بش	بش	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N	4	POSDEP	_	_
 6	بود	بود#باش	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38343|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_

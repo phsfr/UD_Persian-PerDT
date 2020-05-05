@@ -13031,7 +13031,7 @@
 9	.	.	PUNC	PUNC	attachment=ISO|senID=34559	4	PUNC	_	_
 
 1	آتش	آتش	N	IANM	attachment=ISO|number=SING|senID=34569	5	SBJ	_	_
-2	بر	بر	PREP	PREP	attachment=ISO|senID=34569	5	ADVC	_	_
+2	بر	بر	PREP	PREP	attachment=ISO|senID=34569	5	VPRT	_	_
 3	چوبهٔ	چوبه	N	IANM	attachment=ISO|number=SING|senID=34569	2	POSDEP	_	_
 4	در	در	N	IANM	attachment=ISO|number=SING|senID=34569	3	MOZ	_	_
 5	گرفته شد	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=34569	0	ROOT	_	_
@@ -21168,7 +21168,7 @@
 13	می‌گیرند	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=38331	11	PRD	_	_
 14	.	.	PUNC	PUNC	attachment=ISO|senID=38331	7	PUNC	_	_
 
-1	توی	توی	PREP	PREP	attachment=ISO|senID=38343	6	ADVC	_	_
+1	توی	توی	N	IANM	attachment=ISO|senID=38343	6	ADVC	_	_
 2	همین	همین	PREM	DEMAJ	attachment=ISO|senID=38343	3	NPREMOD	_	_
 3	شیش	شیش	N	IANM	attachment=ISO|number=SING|senID=38343	1	POSDEP	_	_
 4	و	و	CONJ	CONJ	attachment=ISO|senID=38343	3	NCONJ	_	_

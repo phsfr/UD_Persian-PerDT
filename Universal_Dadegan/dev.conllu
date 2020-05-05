@@ -15052,7 +15052,7 @@
 # sent_id = dev-s745
 # text = آتش بر چوبهٔ در گرفته شد
 1	آتش	آتش	NOUN	IANM	attachment=ISO|number=SING|senID=34569|dadeg_pos=N	5	SBJ	_	_
-2	بر	بر	ADP	PREP	attachment=ISO|senID=34569|dadeg_pos=PREP	5	ADVC	_	_
+2	بر	بر	ADP	PREP	attachment=ISO|senID=34569|dadeg_pos=PREP	5	VPRT	_	_
 3	چوبهٔ	چوبه	NOUN	IANM	attachment=ISO|number=SING|senID=34569|dadeg_pos=N	2	POSDEP	_	_
 4	در	در	NOUN	IANM	attachment=ISO|number=SING|senID=34569|dadeg_pos=N	3	MOZ	_	_
 5	گرفته	گرفت#گیر	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=ACT|senID=34569|dadeg_pos=V	0	ROOT	_	_
@@ -24595,7 +24595,7 @@
 
 # sent_id = dev-s1252
 # text = توی همین شیش و بش بود که شیشه‌های قطار با نیروی برق باز شد و شخص امپراتور از واگن آبی رنگ سلطنتی پایین آمدند.
-1	توی	توی	ADP	PREP	attachment=ISO|senID=38343|dadeg_pos=PREP	6	ADVC	_	_
+1	توی	توی	NOUN	IANM	attachment=ISO|senID=38343|dadeg_pos=N	6	ADVC	_	_
 2	همین	همین	PREM	DEMAJ	attachment=ISO|senID=38343|dadeg_pos=PREM	3	NPREMOD	_	_
 3	شیش	شیش	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N	1	POSDEP	_	_
 4	و	و	CCONJ	CONJ	attachment=ISO|senID=38343|dadeg_pos=CONJ	3	NCONJ	_	_
