@@ -4117,7 +4117,7 @@
 8	دارید	داشت#دار	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42108|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 9	که	که	SCONJ	SUBR	attachment=ISO|senID=42108|dadeg_pos=SUBR	2	NCL	_	_
 10	پانصد	پانصد	NUM	PRENUM	attachment=ISO|senID=42108|dadeg_pos=PRENUM|dadeg_h=11|dadeg_r=NPREMOD	11	nummod	_	_
-11	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=42108|dadeg_pos=N|dadeg_h=13|dadeg_r=ADVC	13	nmod	_	_
+11	سال	سال	NOUN	IANM	attachment=ISO|number=SING|senID=42108|dadeg_pos=N|dadeg_h=13|dadeg_r=ADVC	13	obl	_	_
 12	سلطنت	سلطنت	NOUN	IANM	attachment=ISO|number=SING|senID=42108|dadeg_pos=N|dadeg_h=13|dadeg_r=NVE	13	compound:lvc	_	_
 13	کرده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=ACT|senID=42108|dadeg_pos=V	9	PRD	_	_
 14	باشند	بود#باش	AUX	V_PRS	mood=Sub|number=PLUR|person=3|tense=Pres|senID=42108|dadeg_pos=AUX	13	aux	_	spaceAfter=NO
@@ -5863,7 +5863,7 @@
 # sent_id = test-s319
 # text = جوان‌ها بیرون خیمه ایستاده بودند ولی آن سید داخل خیمه تشریف آورده بود.
 1	جوان‌ها	جوان	NOUN	ANM	attachment=ISO|number=PLUR|senID=43076|dadeg_pos=N|dadeg_h=4|dadeg_r=SBJ	4	nsubj	_	_
-2	بیرون	بیرون	NOUN	IANM	attachment=ISO|number=SING|senID=43076|dadeg_pos=N|dadeg_h=4|dadeg_r=ADVC	4	nmod	_	_
+2	بیرون	بیرون	NOUN	IANM	attachment=ISO|number=SING|senID=43076|dadeg_pos=N|dadeg_h=4|dadeg_r=ADVC	4	obl	_	_
 3	خیمه	خیمه	NOUN	IANM	attachment=ISO|number=SING|senID=43076|dadeg_pos=N|dadeg_h=2|dadeg_r=MOZ	2	nmod	_	_
 4	ایستاده	ایستاد#ایست	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=43076|dadeg_pos=V	6	PREDEP	_	_
 5	بودند	بود#باش	AUX	V_PA	number=PLUR|person=3|tense=Past|senID=43076|dadeg_pos=AUX	4	aux	_	_
@@ -7080,7 +7080,7 @@
 7	که	که	SCONJ	SUBR	attachment=ISO|senID=44492|dadeg_pos=SUBR	6	NCL	_	_
 8	با	با	ADP	PREP	attachment=ISO|senID=44492|dadeg_pos=PREP|dadeg_h=11|dadeg_r=ADV	9	case	_	_
 9	هم	هم	PRON	RECPR	attachment=ISO|senID=44492|dadeg_pos=PR|dadeg_h=8|dadeg_r=POSDEP	11	ADV	_	_
-10	بیرون	بیرون	NOUN	IANM	attachment=ISO|number=SING|senID=44492|dadeg_pos=N|dadeg_h=11|dadeg_r=ADVC	11	nmod	_	_
+10	بیرون	بیرون	NOUN	IANM	attachment=ISO|number=SING|senID=44492|dadeg_pos=N|dadeg_h=11|dadeg_r=ADVC	11	obl	_	_
 11	آورده	آورد#آور	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=44492|dadeg_pos=V	7	PRD	_	_
 12	شده‌اند	کرد#کن	AUX	V_PP	number=PLUR|person=3|verbForm=Part|senID=44492|dadeg_pos=AUX	11	aux:pass	_	_
 13	شیهه	شیهه	NOUN	IANM	attachment=ISO|number=SING|senID=44492|dadeg_pos=N|dadeg_h=14|dadeg_r=NVE	14	compound:lvc	_	_
@@ -7685,7 +7685,7 @@
 6	به	به	ADP	PREP	attachment=ISO|senID=48892|dadeg_pos=PREP|dadeg_h=10|dadeg_r=ADV	7	case	_	_
 7	ارتفاع	ارتفاع	NOUN	IANM	attachment=ISO|number=SING|senID=48892|dadeg_pos=N|dadeg_h=6|dadeg_r=POSDEP	10	nmod	_	_
 8	مناسب	مناسب	ADJ	AJP	attachment=ISO|senID=48892|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=NPOSTMOD	7	amod	_	_
-9	بالا	بالا	NOUN	IANM	attachment=ISO|number=SING|senID=48892|dadeg_pos=N|dadeg_h=10|dadeg_r=ADVC	10	nmod	_	_
+9	بالا	بالا	NOUN	IANM	attachment=ISO|number=SING|senID=48892|dadeg_pos=N|dadeg_h=10|dadeg_r=ADVC	10	obl	_	_
 10	برده	برد#بر	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=48892|dadeg_pos=V	18	PARCL	_	_
 11	با	با	ADP	PREP	attachment=ISO|senID=48892|dadeg_pos=PREP|dadeg_h=18|dadeg_r=ADV	12	case	_	_
 12	بولین	بولین	NOUN	IANM	attachment=ISO|number=SING|senID=48892|dadeg_pos=N|dadeg_h=11|dadeg_r=POSDEP	18	nmod	_	_
@@ -8166,7 +8166,7 @@
 28	هم	هم	ADV	SADV	attachment=ISO|senID=49156|dadeg_pos=ADV	29	PREDEP	_	_
 29	که	که	SCONJ	SUBR	attachment=ISO|senID=49156|dadeg_pos=SUBR	25	NCL	_	_
 30	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=49156|dadeg_pos=V	29	PRD	_	_
-31	بیرون	بیرون	NOUN	IANM	attachment=ISO|number=SING|senID=49156|dadeg_pos=N|dadeg_h=32|dadeg_r=ADVC	32	nmod	_	_
+31	بیرون	بیرون	NOUN	IANM	attachment=ISO|number=SING|senID=49156|dadeg_pos=N|dadeg_h=32|dadeg_r=ADVC	32	obl	_	_
 32	کشیده	کشید#کش	VERB	V_PP	number=SING|person=3|tense=Part|tma=AY|dadeg_pos=V|dadeg_fpos=PASS|senID=49156|dadeg_pos=V	35	PREDEP	_	_
 33	خواهد	خواست#خواه	AUX	V_َAUX	number=SING|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=49156|dadeg_pos=AUX	34	aux	_	_
 34	شد	کرد#کن	AUX	V_PA	number=SING|person=3|polarity=NEG|tense=Past|senID=49156|dadeg_pos=AUX	32	aux:pass	_	_
@@ -8275,7 +8275,7 @@
 # sent_id = test-s449
 # text = چرا اینجا نشسته‌اید برخیزید و با من گدایی کنید.
 1	چرا	چرا	ADV	SADV	attachment=ISO|senID=49206|dadeg_pos=ADV|dadeg_h=3|dadeg_r=ADV	3	advmod	_	_
-2	اینجا	اینجا	NOUN	IANM	attachment=ISO|number=SING|senID=49206|dadeg_pos=N|dadeg_h=3|dadeg_r=ADVC	3	nmod	_	_
+2	اینجا	اینجا	NOUN	IANM	attachment=ISO|number=SING|senID=49206|dadeg_pos=N|dadeg_h=3|dadeg_r=ADVC	3	obl	_	_
 3	نشسته‌اید	شست#شوی	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=GN|senID=49206|polarity=NEG|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 4	برخیزید	بر#خاست#خیز	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=49206|dadeg_pos=V	5	PREDEP	_	_
 5	و	و	CCONJ	CONJ	attachment=ISO|senID=49206|dadeg_pos=CONJ	9	VCONJ	_	_
@@ -8877,7 +8877,7 @@
 
 # sent_id = test-s479
 # text = پشت دیوار کمین گرفتم.
-1	پشت	پشت	NOUN	IANM	attachment=ISO|senID=49515|dadeg_pos=N|dadeg_h=4|dadeg_r=ADVC	4	nmod	_	_
+1	پشت	پشت	NOUN	IANM	attachment=ISO|senID=49515|dadeg_pos=N|dadeg_h=4|dadeg_r=ADVC	4	obl	_	_
 2	دیوار	دیوار	NOUN	IANM	attachment=ISO|number=SING|senID=49515|dadeg_pos=N	1	POSDEP	_	_
 3	کمین	کمین	NOUN	IANM	attachment=ISO|number=SING|senID=49515|dadeg_pos=N|dadeg_h=4|dadeg_r=NVE	4	compound:lvc	_	_
 4	گرفتم	گرفت#گیر	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=49515|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
@@ -8886,7 +8886,7 @@
 # sent_id = test-s480
 # text = آمدم شهر و سه ماه کارگری کردم.
 1	آمدم	آمد#آ	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=49528|dadeg_pos=V	3	PREDEP	_	_
-2	شهر	شهر	NOUN	IANM	attachment=ISO|number=SING|senID=49528|dadeg_pos=N|dadeg_h=1|dadeg_r=ADVC	1	nmod	_	_
+2	شهر	شهر	NOUN	IANM	attachment=ISO|number=SING|senID=49528|dadeg_pos=N|dadeg_h=1|dadeg_r=ADVC	1	obl	_	_
 3	و	و	CCONJ	CONJ	attachment=ISO|senID=49528|dadeg_pos=CONJ	7	VCONJ	_	_
 4	سه	سه	NUM	PRENUM	attachment=ISO|senID=49528|dadeg_pos=PRENUM|dadeg_h=5|dadeg_r=NPREMOD	5	nummod	_	_
 5	ماه	ماه	NOUN	IANM	attachment=ISO|number=SING|senID=49528|dadeg_pos=N|dadeg_h=7|dadeg_r=ADV	7	nmod	_	_
@@ -10992,7 +10992,7 @@
 20	صبحگاه	صبحگاه	NOUN	IANM	attachment=ISO|number=SING|senID=56772|dadeg_pos=N|dadeg_h=24|dadeg_r=ADV	24	nmod	_	_
 21	اسحاق	اسحاق	NOUN	ANM	attachment=ISO|number=SING|senID=56772|dadeg_pos=N|dadeg_h=22|dadeg_r=PREDEP	24	obj	_	_
 22	را	را	ADP	POSTP	attachment=ISO|senID=56772|dadeg_pos=POSTP|dadeg_h=24|dadeg_r=OBJ	21	case	_	_
-23	کجا	کجا	PRON	INTG	attachment=ISO|senID=56772|dadeg_pos=PR	24	ADVC	_	_
+23	کجا	کجا	PRON	INTG	attachment=ISO|senID=56772|dadeg_pos=PR|dadeg_h=24|dadeg_r=ADVC	24	obl	_	_
 24	می‌برد	برد#بر	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=56772|dadeg_pos=V|dadeg_h=16|dadeg_r=VCL	16	ccomp	_	spaceAfter=NO
 25	؟	؟	PUNCT	PUNC	attachment=ISO|senID=56772|dadeg_pos=PUNC|dadeg_h=24|dadeg_r=PUNC	24	punct	_	spaceAfter=NO
 26	"	"	PUNCT	PUNC	attachment=ISO|senID=56772|dadeg_pos=PUNC|dadeg_h=24|dadeg_r=PUNC	24	punct	_	spaceAfter=NO
@@ -12134,7 +12134,7 @@
 # sent_id = test-s633
 # text = دوستان کجا تشریف برده‌اند؟
 1	دوستان	دوست	NOUN	ANM	attachment=ISO|number=PLUR|senID=45520|dadeg_pos=N|dadeg_h=4|dadeg_r=SBJ	4	nsubj	_	_
-2	کجا	کجا	PRON	INTG	attachment=ISO|senID=45520|dadeg_pos=PR	4	ADVC	_	_
+2	کجا	کجا	PRON	INTG	attachment=ISO|senID=45520|dadeg_pos=PR|dadeg_h=4|dadeg_r=ADVC	4	obl	_	_
 3	تشریف	تشریف	NOUN	IANM	attachment=ISO|number=SING|senID=45520|dadeg_pos=N|dadeg_h=4|dadeg_r=NVE	4	compound:lvc	_	_
 4	برده‌اند	برد#بر	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=45520|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 5	؟	؟	PUNCT	PUNC	attachment=ISO|senID=45520|dadeg_pos=PUNC|dadeg_h=4|dadeg_r=PUNC	4	punct	_	_
@@ -13127,7 +13127,7 @@
 
 # sent_id = test-s688
 # text = سیب‌ها لک افتاده‌اند.
-1	سیب‌ها	سیب	NOUN	IANM	attachment=ISO|number=PLUR|senID=50554|dadeg_pos=N|dadeg_h=3|dadeg_r=ADVC	3	nmod	_	_
+1	سیب‌ها	سیب	NOUN	IANM	attachment=ISO|number=PLUR|senID=50554|dadeg_pos=N|dadeg_h=3|dadeg_r=ADVC	3	obl	_	_
 2	لک	لک	NOUN	IANM	attachment=ISO|number=SING|senID=50554|dadeg_pos=N|dadeg_h=3|dadeg_r=SBJ	3	nsubj	_	_
 3	افتاده‌اند	افتاد#افت	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=50554|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 4	.	.	PUNCT	PUNC	attachment=ISO|senID=50554|dadeg_pos=PUNC|dadeg_h=3|dadeg_r=PUNC	3	punct	_	_
@@ -13602,7 +13602,7 @@
 7	مان	ما	PRON	PRO	number=PLUR|person=1|pronType=Prs|senID=50835|dadeg_pos=PR	6	MOZ	_	_
 8	نواخته	نواخت#نواز	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=PASS|senID=50835|dadeg_pos=V	4	PRD	_	_
 9	شد	کرد#کن	AUX	V_PA	number=SING|person=3|tense=Past|senID=50835|dadeg_pos=AUX	8	aux:pass	_	_
-10	سر	سر	NOUN	IANM	attachment=ISO|senID=50835|dadeg_pos=N|dadeg_h=12|dadeg_r=ADVC	12	nmod	_	_
+10	سر	سر	NOUN	IANM	attachment=ISO|senID=50835|dadeg_pos=N|dadeg_h=12|dadeg_r=ADVC	12	obl	_	_
 11	حال	حال	NOUN	IANM	attachment=ISO|number=SING|senID=50835|dadeg_pos=N	10	POSDEP	_	_
 12	نیامده‌ایم	آمد#آ	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=GN|senID=50835|polarity=NEG|dadeg_pos=V	13	PREDEP	_	_
 13	و	و	CCONJ	CONJ	attachment=ISO|senID=50835|dadeg_pos=CONJ	15	VCONJ	_	_
@@ -17919,7 +17919,7 @@
 1	محاسبهٔ	محاسبه	NOUN	IANM	attachment=ISO|number=SING|senID=53151|dadeg_pos=N|dadeg_h=7|dadeg_r=SBJ	7	nsubj	_	_
 2	قبلی	قبلی	ADJ	AJP	attachment=ISO|senID=53151|dadeg_pos=ADJ|dadeg_h=1|dadeg_r=NPOSTMOD	1	amod	_	_
 3	آنها	آنها	PRON	SEPER	person=3|attachment=ISO|number=PLUR|senID=53151|dadeg_pos=PR	1	MOZ	_	_
-4	غلط	غلط	ADJ	AJP	attachment=ISO|senID=53151|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=ADVC	7	amod	_	_
+4	غلط	غلط	ADJ	AJP	attachment=ISO|senID=53151|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=ADVC	7	obl	_	_
 5	از	از	ADP	PREP	attachment=ISO|senID=53151|dadeg_pos=PREP|dadeg_h=7|dadeg_r=VPRT	6	case	_	_
 6	آب	آب	NOUN	IANM	attachment=ISO|number=SING|senID=53151|dadeg_pos=N|dadeg_h=5|dadeg_r=POSDEP	7	VPRT	_	_
 7	درآمده	در#آمد#آ	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=53151|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
@@ -20353,7 +20353,7 @@
 6	)	)	PUNCT	PUNC	attachment=ISO|senID=54302|dadeg_pos=PUNC|dadeg_h=5|dadeg_r=PUNC	5	punct	_	_
 7	قیمت	قیمت	NOUN	IANM	attachment=ISO|number=SING|senID=54302|dadeg_pos=N|dadeg_h=10|dadeg_r=SBJ	10	nsubj	_	_
 8	اجناس	جنس	NOUN	IANM	attachment=ISO|number=PLUR|senID=54302|dadeg_pos=N|dadeg_h=7|dadeg_r=MOZ	7	nmod	_	_
-9	بالا	بالا	NOUN	IANM	attachment=ISO|number=SING|senID=54302|dadeg_pos=N|dadeg_h=10|dadeg_r=ADVC	10	nmod	_	_
+9	بالا	بالا	NOUN	IANM	attachment=ISO|number=SING|senID=54302|dadeg_pos=N|dadeg_h=10|dadeg_r=ADVC	10	obl	_	_
 10	رفت	رفت#رو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=54302|dadeg_pos=V	19	VCONJ	_	spaceAfter=NO
 11	،	،	PUNCT	PUNC	attachment=ISO|senID=54302|dadeg_pos=PUNC|dadeg_h=10|dadeg_r=PUNC	10	punct	_	_
 12	مردم	مردم	NOUN	ANM	attachment=ISO|number=PLUR|senID=54302|dadeg_pos=N|dadeg_h=19|dadeg_r=SBJ	19	nsubj	_	_
@@ -22924,7 +22924,7 @@
 # sent_id = test-s1186
 # text = برادر بالای سر خواهر می‌ایستد و او را قصابی می‌کند.
 1	برادر	برادر	NOUN	ANM	attachment=ISO|number=SING|senID=55758|dadeg_pos=N|dadeg_h=5|dadeg_r=SBJ	5	nsubj	_	_
-2	بالای	بالا	NOUN	IANM	attachment=ISO|number=SING|senID=55758|dadeg_pos=N|dadeg_h=5|dadeg_r=ADVC	5	nmod	_	_
+2	بالای	بالا	NOUN	IANM	attachment=ISO|number=SING|senID=55758|dadeg_pos=N|dadeg_h=5|dadeg_r=ADVC	5	obl	_	_
 3	سر	سر	NOUN	IANM	attachment=ISO|number=SING|senID=55758|dadeg_pos=N|dadeg_h=2|dadeg_r=MOZ	2	nmod	_	_
 4	خواهر	خواهر	NOUN	ANM	attachment=ISO|number=SING|senID=55758|dadeg_pos=N|dadeg_h=3|dadeg_r=MOZ	3	nmod	_	_
 5	می‌ایستد	ایستاد#ایست	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=55758|dadeg_pos=V	6	PREDEP	_	_
@@ -24239,7 +24239,7 @@
 2	می‌توان	#توان	VERB	MODL	attachment=ISO|tma=H|senID=56480|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 3	دانش‌آموزان	دانش‌آموز	NOUN	ANM	attachment=ISO|number=PLUR|senID=56480|dadeg_pos=N|dadeg_h=4|dadeg_r=PREDEP	7	obj	_	_
 4	را	را	ADP	POSTP	attachment=ISO|senID=56480|dadeg_pos=POSTP|dadeg_h=7|dadeg_r=OBJ	3	case	_	_
-5	خلاق	خلاق	ADJ	AJP	attachment=ISO|senID=56480|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=ADVC	7	amod	_	_
+5	خلاق	خلاق	ADJ	AJP	attachment=ISO|senID=56480|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=ADVC	7	obl	_	_
 6	بار	بار	NOUN	IANM	attachment=ISO|number=SING|senID=56480|dadeg_pos=N|dadeg_h=7|dadeg_r=NVE	7	compound:lvc	_	_
 7	آورد	آورد#آور	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=56480|dadeg_pos=V|dadeg_h=2|dadeg_r=VCL	2	ccomp	_	spaceAfter=NO
 8	؟	؟	PUNCT	PUNC	attachment=ISO|senID=56480|dadeg_pos=PUNC|dadeg_h=2|dadeg_r=PUNC	2	punct	_	_
