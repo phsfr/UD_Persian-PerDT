@@ -343,7 +343,7 @@ class DependencyTree:
                 else:
                     self.labels[idx]='obj'
                     rol_changed=True
-            if old_role=='MOZ' or old_role=='AJPP' or old_role=='NEZ' or old_role=='NPP':
+            if old_role=='MOZ' or old_role=='AJPP' or old_role=='NEZ':
                 if old_pos=='ADV':
                     self.labels[idx]='advmod'
                     rol_changed=True
@@ -371,6 +371,19 @@ class DependencyTree:
                         #print(poss)
                     self.labels[idx]='obl'
                     rol_changed=True
+            if old_role=='NPP':
+                head_idx=self.reverse_index[old_head]
+                head_dep=self.labels[head_idx]
+                if head_dep=='NVE' or head_dep=='ENC':
+                    print(self.sent_descript)
+                    head_of_head=self.heads[head_idx]
+                    self.labels[idx]='obl'
+                    self.heads[idx]=head_of_head
+                else:
+                    self.labels[idx]='nmod'
+                    #if old_pos!='NOUN' and old_pos!='PROPN':
+                    #    print(old_pos,self.sent_descript)
+                rol_changed=True
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
