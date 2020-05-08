@@ -17130,7 +17130,7 @@
 9	کرده‌اید	کرد#کن	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=GN|senID=35914|dadeg_pos=V	3	PRD	_	_
 10	مشخصات	مشخصه	NOUN	IANM	attachment=ISO|number=PLUR|senID=35914|dadeg_pos=N|dadeg_h=14|dadeg_r=PREDEP	16	obj	_	_
 11	کاربری	کاربری	ADJ	AJP	attachment=ISO|senID=35914|dadeg_pos=ADJ|dadeg_h=10|dadeg_r=NPOSTMOD	10	amod	_	_
-12	سابق	سابق	ADJ	AJP	attachment=ISO|senID=35914|dadeg_pos=ADJ	11	APOSTMOD	_	_
+12	سابق	سابق	ADJ	AJP	attachment=ISO|senID=35914|dadeg_pos=ADJ|dadeg_h=11|dadeg_r=APOSTMOD	10	amod	_	_
 13	خود	خود	PRON	CREFX	attachment=ISO|senID=35914|dadeg_pos=PR|dadeg_h=11|dadeg_r=MOZ	11	nmod	_	_
 14	را	را	ADP	POSTP	attachment=ISO|senID=35914|dadeg_pos=POSTP|dadeg_h=16|dadeg_r=OBJ	10	case	_	_
 15	وارد	وارد	ADJ	AJP	attachment=ISO|senID=35914|dadeg_pos=ADJ|dadeg_h=16|dadeg_r=NVE	16	compound:lvc	_	_
@@ -19668,7 +19668,7 @@
 18	ی	#هست	VERB	ACT	person=2|attachment=PRV|number=SING|tma=H|senID=36147|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 19	و	و	CCONJ	CONJ	attachment=ISO|senID=36147|dadeg_pos=CONJ	17	AJCONJ	_	_
 20	مفسد	مفسد	ADJ	AJP	attachment=ISO|senID=36147|dadeg_pos=ADJ	19	POSDEP	_	_
-21	فی	فی	NOUN	IANM	attachment=ISO|number=SING|senID=36147|dadeg_pos=N	20	APOSTMOD	_	_
+21	فی	فی	NOUN	IANM	attachment=ISO|number=SING|senID=36147|dadeg_pos=N|dadeg_h=20|dadeg_r=APOSTMOD	17	nmod	_	_
 22	الارض	الارض	NOUN	IANM	attachment=ISO|number=SING|senID=36147|dadeg_pos=N	21	POSDEP	_	spaceAfter=NO
 23	.	.	PUNCT	PUNC	attachment=ISO|senID=36147|dadeg_pos=PUNC|dadeg_h=18|dadeg_r=PUNC	18	punct	_	_
 

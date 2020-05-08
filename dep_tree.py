@@ -261,7 +261,29 @@ class DependencyTree:
             #print('Error in processing AJUCL!')
             self.labels[par_idx]= child_new_role #'advcl'
             #print(self.other_features[par_idx].feat('senID'))
-            #print(self.sent_str)  
+            #print(self.sent_str) 
+    def find_main_noun(self,idx):
+        pos=self.tags[idx]
+        prev_pos=''
+        if pos!='ADJ':
+            print('not adj {}'.format(self.sent_descript))
+        #print('pos is:::::: {}'.format(pos))
+        while pos=='ADJ' or pos=='CCONJ':
+            #print('inside while')
+            head=self.heads[idx]
+            prev_idx=idx
+            idx=self.reverse_index[head]
+            prev_pos=pos
+            pos=self.tags[idx]
+            #print('prev pos {} new pos {}'.format(prev_pos,pos))
+        #print(pos)
+        if pos=='NOUN' or pos=='PROPN':
+            #print(self.sent_descript)
+            return idx
+        elif prev_pos=='ADJ':
+            return prev_idx
+        else:
+            return -1
     def first_level_dep_mapping(self):
         simple_dep_map={'ROOT':'root','PUNC':'punct','APP':'appos'}
         for idx in range(0,len(self.words)):
@@ -375,7 +397,7 @@ class DependencyTree:
                 head_idx=self.reverse_index[old_head]
                 head_dep=self.labels[head_idx]
                 if head_dep=='NVE' or head_dep=='ENC':
-                    print(self.sent_descript)
+                    #print(self.sent_descript)
                     head_of_head=self.heads[head_idx]
                     self.labels[idx]='obl'
                     self.heads[idx]=head_of_head
@@ -384,6 +406,26 @@ class DependencyTree:
                     #if old_pos!='NOUN' and old_pos!='PROPN':
                     #    print(old_pos,self.sent_descript)
                 rol_changed=True
+            if old_role=='APOSTMOD':
+                old_head_idx=self.reverse_index[old_head]
+                head_idx=self.find_main_noun(old_head_idx)
+                #print(self.sent_descript)
+                #print('word_idex {}'.format(idx))
+                #print('old_head {}'.format(old_head))
+                #print('return head {}'.format(head_idx))
+                #if head_idx!=old_head_idx:
+                #    print(self.sent_descript)
+                if head_idx==-1:
+                    print('heas is -1 in {}'.format(self.sent_descript))
+                if head_idx!=-1:
+                    self.heads[idx]=self.index[head_idx]
+                    if old_pos=='ADV':
+                        self.labels[idx]='advmod'
+                    elif old_pos=='NOUN' or old_pos=='PROPN' or old_pos=='PRON':
+                        self.labels[idx]='nmod'                   
+                    elif old_pos=='ADJ':
+                        self.labels[idx]='amod'
+                    rol_changed=True 
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
