@@ -289,13 +289,13 @@ class DependencyTree:
     def reverse_conj_rels(self,node_idx):
         verb_child=self.find_children_with_pos(self.index[node_idx],'VERB')
         #print(verb_child)
-        if len(verb_child)>1:
-            print('ERROR: more than one verb child for VCONJ rel')
+        #if len(verb_child)>1:
+        #    print('ERROR: more than one verb child for VCONJ rel with main node {} with childs {} in sent {}'.format(self.index[node_idx],verb_child,self.sent_descript))
         children_chain=[]
         #children_chain.append(verb_child[0])
         while len(verb_child)>0:
-            if len(verb_child)>1:
-                print('ERROR: more than one verb child for VCONJ rel')
+            #if len(verb_child)>1:
+            #    print('ERROR: more than one verb child for VCONJ rel with inside node {} with childs {} in sent {}'.format(self.index[node_idx],verb_child,self.sent_descript))
             node_idx=verb_child[0]
             children_chain.append(verb_child[0])
             verb_child=self.find_children_with_pos(self.index[node_idx],'VERB')
@@ -316,6 +316,7 @@ class DependencyTree:
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
             old_head=self.heads[idx]
+            old_pos=self.tags[idx]
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
             if dadeg_pos=='PREP' or dadeg_pos=='POSTP':
@@ -323,6 +324,26 @@ class DependencyTree:
                 if len(children)==1:
                     self.exchange_child_parent(idx,children[0],'case')
                 rol_changed=True
+            if old_role=='VCONJ': #this mapping should take place before که with predicate (VCL) cause #sentID=23816
+                children_chain=self.reverse_conj_rels(idx)
+                #print(children_chain)
+                #print(self.sent_descript)
+                for i in range(1,len(children_chain)):
+                    child_idx=children_chain[i]
+                    old_hd,old_child_r=self.node_assign_new_role(child_idx,children_chain[0],'conj')  
+                if len(children_chain)>0:
+                    #print('in vconj sent is: {}'.format(self.sent_descript))
+                    #print('children_chain is: {}'.format(children_chain))
+                    old_hd,old_child_r=self.node_assign_new_role(self.reverse_index[old_head],children_chain[0],'conj') 
+                    first_child_h=self.heads[children_chain[0]]
+                    first_child_r=self.labels[children_chain[0]]
+                    self.heads[children_chain[0]]=old_hd
+                    self.labels[children_chain[0]]=old_child_r
+                    if not self.other_features[children_chain[0]].has_feat('dadeg_r'):
+                        self.other_features[children_chain[0]].add_feat({'dadeg_h':str(first_child_h),'dadeg_r':first_child_r})
+                    if old_pos=='CCONJ':
+                        self.labels[idx]='cc'
+                    rol_changed=True
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
@@ -415,7 +436,7 @@ class DependencyTree:
                     rol_changed=True
                 else:
                     if old_pos not in poss:
-                        print(old_pos,self.sent_descript)
+                    #    print(old_pos,self.sent_descript)
                         poss.append(old_pos)
                         #print(poss)
                     self.labels[idx]='obl'
@@ -453,21 +474,10 @@ class DependencyTree:
                     elif old_pos=='ADJ':
                         self.labels[idx]='amod'
                     rol_changed=True 
-            #if old_role=='VCONJ':
-            #    children_chain=self.reverse_conj_rels(idx)
-                #print(children_chain)
-                #print(self.sent_descript)
-            #    for i in range(1,len(children_chain)):
-            #        child_idx=child[i]
-            #        old_hd,old_child_r=self.node_assign_new_role(child_idx,child[0],'conj')  
-            #    print(self.sent_descript)
-            #    print(children_chain)
-            #    old_hd,old_child_r=self.node_assign_new_role(self.reverse_index[old_head],children_chain[0],'conj') 
-            #    self.heads[children_chain[0]]=old_hd
-            #    self.labels[children_chain[0]]=old_child_r
-            #    if old_pos=='CCONJ':
-            #        self.labels[idx]='cc'
-            #    rol_changed=True
+
+                #else:
+                    #print('in vconj sent is: {}'.format(self.sent_descript))
+                    #print('children_chain is: {}'.format(children_chain))
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
