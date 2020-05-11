@@ -345,7 +345,7 @@ class DependencyTree:
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def third_level_dep_mapping(self):
         #TAM is second level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
-        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound:lvc','NVE':'compound:lvc','ENC':'compound:lvc','LVP':'compound','NE':'compound:lvc','MESU':'nmod','APREMOD':'advmod','ADVC':'obl:arg'}
+        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound:lvc','NVE':'compound:lvc','ENC':'compound:lvc','LVP':'compound','NE':'compound:lvc','MESU':'nmod','APREMOD':'advmod','ADVC':'obl:arg','AJPP':'obl:arg','NEZ':'obl:arg'} 
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
@@ -392,7 +392,7 @@ class DependencyTree:
                 else:
                     self.labels[idx]='obj'
                     rol_changed=True
-            if old_role=='MOZ' or old_role=='AJPP' or old_role=='NEZ' or old_role=='NADV' or old_role=='COMPPP':
+            if old_role=='MOZ' or old_role=='NADV' or old_role=='COMPPP':
                 if old_pos=='ADV':
                     self.labels[idx]='advmod'
                     rol_changed=True
