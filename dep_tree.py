@@ -230,11 +230,15 @@ class DependencyTree:
     def find_children_with_role(self,h_idx,dep_role):
         return [key for key,val in enumerate(self.heads) if val==h_idx and self.labels[key]==dep_role]
     def find_children_with_pos(self,h_idx,child_pos):
-        return [key for key,val in enumerate(self.heads) if val==h_idx and self.tags[key]==child_pos]
+        if child_pos=='NOUN':
+            return [key for key,val in enumerate(self.heads) if val==h_idx and (self.tags[key]=='NOUN' or self.tags[key]=='PROPN')]
+        else:
+            return [key for key,val in enumerate(self.heads) if val==h_idx and self.tags[key]==child_pos]
     def exchange_child_parent(self,parent_idx,child_idx,new_rel_par,new_rel_child=None):
         old_child_h=self.heads[child_idx]
         old_child_r=self.labels[child_idx]
-        self.other_features[child_idx].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':old_child_r})
+        if not self.other_features[child_idx].has_feat('dadeg_h'):
+            self.other_features[child_idx].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':old_child_r})
         self.heads[child_idx]=self.heads[parent_idx]
         self.heads[parent_idx]=self.index[child_idx]
         self.labels[child_idx]=self.labels[parent_idx]
@@ -270,7 +274,9 @@ class DependencyTree:
         if pos!='ADJ':
             print('not adj {}'.format(self.sent_descript))
         #print('pos is:::::: {}'.format(pos))
+        count=0
         while pos=='ADJ' or pos=='CCONJ':
+            count+=1
             #print('inside while')
             head=self.heads[idx]
             prev_idx=idx
@@ -278,6 +284,8 @@ class DependencyTree:
             prev_pos=pos
             pos=self.tags[idx]
             #print('prev pos {} new pos {}'.format(prev_pos,pos))
+            if count>120:
+                print('stuck in while loop APOSTMOD in sent {} with rol {} & idx {} & pos {}'.format(self.sent_descript,self.labels[idx],idx,pos))
         #print(pos)
         if pos=='NOUN' or pos=='PROPN':
             #print(self.sent_descript)
@@ -286,8 +294,8 @@ class DependencyTree:
             return prev_idx
         else:
             return -1
-    def reverse_conj_rels(self,node_idx):
-        verb_child=self.find_children_with_pos(self.index[node_idx],'VERB')
+    def reverse_conj_rels(self,node_idx,pos):
+        verb_child=self.find_children_with_pos(self.index[node_idx],pos)
         #print(verb_child)
         #if len(verb_child)>1:
         #    print('ERROR: more than one verb child for VCONJ rel with main node {} with childs {} in sent {}'.format(self.index[node_idx],verb_child,self.sent_descript))
@@ -298,7 +306,7 @@ class DependencyTree:
             #    print('ERROR: more than one verb child for VCONJ rel with inside node {} with childs {} in sent {}'.format(self.index[node_idx],verb_child,self.sent_descript))
             node_idx=verb_child[0]
             children_chain.append(verb_child[0])
-            verb_child=self.find_children_with_pos(self.index[node_idx],'VERB')
+            verb_child=self.find_children_with_pos(self.index[node_idx],pos)
         #print(children_chain)
         #print(children_chain.sort())
         children_chain.sort()
@@ -324,8 +332,13 @@ class DependencyTree:
                 if len(children)==1:
                     self.exchange_child_parent(idx,children[0],'case')
                 rol_changed=True
-            if old_role=='VCONJ': #this mapping should take place before که with predicate (VCL) cause #sentID=23816
-                children_chain=self.reverse_conj_rels(idx)
+            if old_role=='VCONJ' or old_role=='AJCONJ': #this mapping should take place before که with predicate (VCL) cause #sentID=23816
+                main_pos='VERB'
+                if old_pos=='AJCONJ':
+                    main_pos='ADJ'
+                elif old_role=='AJCONJ':
+                    main_pos='NOUN'
+                children_chain=self.reverse_conj_rels(idx,main_pos)
                 #print(children_chain)
                 #print(self.sent_descript)
                 for i in range(1,len(children_chain)):
@@ -344,6 +357,36 @@ class DependencyTree:
                     if old_pos=='CCONJ':
                         self.labels[idx]='cc'
                     rol_changed=True
+            if old_role=='NCONJ':
+                if old_pos=='CCONJ':
+                    child=self.find_all_children(self.index[idx])
+                    if len(child)>1:
+                        print('ERROR in NCONJ: child of CCONJ is more than ONE!!! in sent {}'.format(self.sent_descript))                  
+                    if len(child)>0:
+                        self.heads[idx]=self.index[child[0]]
+                        self.labels[idx]='cc'
+                        old_child_role=self.labels[child[0]]
+                        old_child_h=self.heads[child[0]]
+                        self.labels[child[0]]='conj'
+                        head_idx=self.reverse_index[old_head]
+                        head_role=self.labels[head_idx]
+                        if head_role=='conj':
+                            self.heads[child[0]]=self.heads[head_idx]
+                        else:
+                            self.heads[child[0]]=old_head
+                        if not self.other_features[child[0]].has_feat('dadeg_r'):
+                            self.other_features[child[0]].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':old_child_role})
+                    else:
+                        print('child {} in {}'.format(child,self.sent_descript))  
+                else:
+                    head_idx=self.reverse_index[old_head]
+                    head_role=self.labels[head_idx]
+                    if head_role=='conj':
+                        self.heads[idx]=self.heads[head_idx]
+                        self.labels[idx]='conj'
+                    else:
+                        self.labels[idx]='conj'
+                rol_changed=True
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
@@ -365,7 +408,7 @@ class DependencyTree:
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def third_level_dep_mapping(self):
-        #TAM is second level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
+        #TAM is third level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
         simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound:lvc','NVE':'compound:lvc','ENC':'compound:lvc','LVP':'compound','NE':'compound:lvc','MESU':'nmod','APREMOD':'advmod','ADVC':'obl:arg','AJPP':'obl:arg','NEZ':'obl:arg'} 
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
