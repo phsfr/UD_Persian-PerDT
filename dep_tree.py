@@ -225,8 +225,11 @@ class DependencyTree:
         auto-tagged and auto-ner.
         """
         pass
-    def find_all_children(self,idx):
-        return [key for key,val in enumerate(self.heads) if val==idx]
+    def find_all_children(self,idx,pos_except_l=None):
+        if pos_except_l!=None:
+            return [key for key,val in enumerate(self.heads) if val==idx and self.tags[key] not in pos_except_l]
+        else:
+            return [key for key,val in enumerate(self.heads) if val==idx]
     def find_children_with_role(self,h_idx,dep_role):
         return [key for key,val in enumerate(self.heads) if val==h_idx and self.labels[key]==dep_role]
     def find_children_with_pos(self,h_idx,child_pos):
@@ -325,10 +328,13 @@ class DependencyTree:
             old_role=self.labels[idx]
             old_head=self.heads[idx]
             old_pos=self.tags[idx]
+            word=self.words[idx]
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
             if dadeg_pos=='PREP' or dadeg_pos=='POSTP':
-                children=self.find_all_children(self.index[idx])
+                children=self.find_all_children(self.index[idx],['PUNCT'])
+                #if self.other_features[idx].feat_dict['senID']=='44271':
+                #    print('HEYYYYYYYYYYYYYYYYYYY: {}'.format(children))
                 if len(children)==1:
                     self.exchange_child_parent(idx,children[0],'case')
                 rol_changed=True
@@ -357,7 +363,7 @@ class DependencyTree:
                     if old_pos=='CCONJ':
                         self.labels[idx]='cc'
                     rol_changed=True
-            if old_role=='NCONJ':
+            if old_role=='NCONJ' or old_role=='AJCONJ':
                 if old_pos=='CCONJ':
                     child=self.find_all_children(self.index[idx])
                     if len(child)>1:
@@ -370,8 +376,12 @@ class DependencyTree:
                         self.labels[child[0]]='conj'
                         head_idx=self.reverse_index[old_head]
                         head_role=self.labels[head_idx]
+                        if self.tags[child[0]]=='NUM' and self.tags[head_idx]=='NUM' and word=='و': #like هفتصد و سی و دو. word (CCONJ) only should be و to avoid mistakes: یک یا دو
+                            self.labels[child[0]]='compound:num'
                         if head_role=='conj':
                             self.heads[child[0]]=self.heads[head_idx]
+                            if old_role=='AJCONJ':
+                                print('conj head for AJCONJ {}'.format(self.sent_descript)) 
                         else:
                             self.heads[child[0]]=old_head
                         if not self.other_features[child[0]].has_feat('dadeg_r'):
