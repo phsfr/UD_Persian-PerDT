@@ -260,9 +260,11 @@ class DependencyTree:
         all_children=self.find_all_children(self.index[par_idx])
         if len(prd_child)==1:
             for child in all_children:
-                if child!=prd_child[0]:
+                #if child!=prd_child[0] and self.labels[child]=='conj':
+                #    print('EXCEPT: conjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj in {}'.format(self.sent_descript))
+                if child!=prd_child[0] and self.labels[child]!='conj': #checking conj rel for AJUCL mapping after AVCONJ in sent=24269
                     old_child_h=self.heads[child]
-                    self.heads[child]=prd_child[0]
+                    self.heads[child]=self.index[prd_child[0]]
                     if not self.other_features[child].has_feat('dadeg_h'):
                         self.other_features[child].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':self.labels[child]})
             self.exchange_child_parent(par_idx,prd_child[0],par_new_role,child_new_role)#'mark','advcl')  
@@ -332,18 +334,18 @@ class DependencyTree:
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
             if dadeg_pos=='PREP' or dadeg_pos=='POSTP':
-                children=self.find_all_children(self.index[idx],['PUNCT'])
+                children=self.find_all_children(self.index[idx],['PUNCT']) #because of را in sent=44271
                 #if self.other_features[idx].feat_dict['senID']=='44271':
                 #    print('HEYYYYYYYYYYYYYYYYYYY: {}'.format(children))
                 if len(children)==1:
                     self.exchange_child_parent(idx,children[0],'case')
                 rol_changed=True
-            if old_role=='VCONJ' or old_role=='AJCONJ': #this mapping should take place before که with predicate (VCL) cause #sentID=23816
+            if old_role=='VCONJ': #or old_role=='AJCONJ': #this mapping should take place before که with predicate (VCL) cause #sentID=23816
                 main_pos='VERB'
-                if old_pos=='AJCONJ':
-                    main_pos='ADJ'
-                elif old_role=='AJCONJ':
-                    main_pos='NOUN'
+                #if old_pos=='AJCONJ':
+                #    main_pos='ADJ'
+                #elif old_role=='AJCONJ':
+                #    main_pos='NOUN'
                 children_chain=self.reverse_conj_rels(idx,main_pos)
                 #print(children_chain)
                 #print(self.sent_descript)
@@ -363,7 +365,7 @@ class DependencyTree:
                     if old_pos=='CCONJ':
                         self.labels[idx]='cc'
                     rol_changed=True
-            if old_role=='NCONJ' or old_role=='AJCONJ':
+            if old_role=='NCONJ' or old_role=='AJCONJ' or old_role=='AVCONJ':
                 if old_pos=='CCONJ':
                     child=self.find_all_children(self.index[idx])
                     if len(child)>1:
@@ -391,11 +393,15 @@ class DependencyTree:
                 else:
                     head_idx=self.reverse_index[old_head]
                     head_role=self.labels[head_idx]
+                    if self.other_features[idx].feat_dict['senID']=='24269':
+                        print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
                     if head_role=='conj':
                         self.heads[idx]=self.heads[head_idx]
                         self.labels[idx]='conj'
                     else:
                         self.labels[idx]='conj'
+                    if self.other_features[idx].feat_dict['senID']=='24269':
+                        print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
                 rol_changed=True
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]

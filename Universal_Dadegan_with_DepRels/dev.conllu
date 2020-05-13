@@ -4453,8 +4453,8 @@
 21	،	،	PUNCT	PUNC	attachment=ISO|senID=43906|dadeg_pos=PUNC|dadeg_h=20|dadeg_r=PUNC	20	punct	_	_
 22	اقتصادی	اقتصادی	ADJ	AJP	attachment=ISO|senID=43906|dadeg_pos=ADJ|dadeg_h=20|dadeg_r=AJCONJ	20	conj	_	spaceAfter=NO
 23	،	،	PUNCT	PUNC	attachment=ISO|senID=43906|dadeg_pos=PUNC|dadeg_h=22|dadeg_r=PUNC	22	punct	_	_
-24	فنی	فنی	ADJ	AJP	attachment=ISO|senID=43906|dadeg_pos=ADJ|dadeg_h=22|dadeg_r=AJCONJ	26	conj	_	_
-25	و	و	CCONJ	CONJ	attachment=ISO|senID=43906|dadeg_pos=CONJ|dadeg_h=24|dadeg_r=AJCONJ	24	cc	_	_
+24	فنی	فنی	ADJ	AJP	attachment=ISO|senID=43906|dadeg_pos=ADJ|dadeg_h=22|dadeg_r=AJCONJ	20	conj	_	_
+25	و	و	CCONJ	CONJ	attachment=ISO|senID=43906|dadeg_pos=CONJ|dadeg_h=24|dadeg_r=AJCONJ	26	cc	_	_
 26	غیره	غیره	NOUN	IANM	attachment=ISO|number=SING|senID=43906|dadeg_pos=N|dadeg_h=25|dadeg_r=POSDEP	20	conj	_	_
 27	انعقاد	انعقاد	NOUN	IANM	attachment=ISO|number=SING|senID=43906|dadeg_pos=N|dadeg_h=28|dadeg_r=NVE	28	compound:lvc	_	_
 28	کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=43906|dadeg_pos=V	8	NCL	_	spaceAfter=NO
@@ -5076,9 +5076,9 @@
 # sent_id = dev-s208
 # text = برگ‌های زرد و قهوه‌ای توی هوا می‌چرخیدند و فرود می‌آمدند.
 1	برگ‌های	برگ	NOUN	IANM	attachment=ISO|number=PLUR|senID=26180|dadeg_pos=N|dadeg_h=10|dadeg_r=SBJ	10	nsubj	_	_
-2	زرد	زرد	ADJ	AJP	attachment=ISO|senID=26180|dadeg_pos=ADJ|dadeg_h=1|dadeg_r=NPOSTMOD	4	conj	_	_
-3	و	و	CCONJ	CONJ	attachment=ISO|senID=26180|dadeg_pos=CONJ|dadeg_h=2|dadeg_r=AJCONJ	2	cc	_	_
-4	قهوه‌ای	قهوه‌ای	NOUN	IANM	attachment=ISO|number=SING|senID=26180|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	1	amod	_	_
+2	زرد	زرد	ADJ	AJP	attachment=ISO|senID=26180|dadeg_pos=ADJ|dadeg_h=1|dadeg_r=NPOSTMOD	1	amod	_	_
+3	و	و	CCONJ	CONJ	attachment=ISO|senID=26180|dadeg_pos=CONJ|dadeg_h=2|dadeg_r=AJCONJ	4	cc	_	_
+4	قهوه‌ای	قهوه‌ای	NOUN	IANM	attachment=ISO|number=SING|senID=26180|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	2	conj	_	_
 5	توی	توی	ADP	PREP	attachment=ISO|senID=26180|dadeg_pos=PREP|dadeg_h=7|dadeg_r=ADV	6	case	_	_
 6	هوا	هوا	NOUN	IANM	attachment=ISO|number=SING|senID=26180|dadeg_pos=N|dadeg_h=5|dadeg_r=POSDEP	7	obl	_	_
 7	می‌چرخیدند	چرخید#چرخ	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=26180|dadeg_pos=V|dadeg_h=8|dadeg_r=PREDEP	0	ROOT	_	_
@@ -7096,9 +7096,9 @@
 # sent_id = dev-s313
 # text = تاریخ پرفراز و نشیب حوزه‌های علمیه را نمی‌توان در اوراق تاریخ مکتوب جست که واقعه‌نگاران، خواسته و ناخواسته، خدمت‌گزار اورنگ‌ها بوده‌اند و با رعایا و مراکز ستیز علیه سلطه‌ها، چهره پرآژنگ داشته‌اند و اگر که گاهی، منصفانه نوشته‌اند و در ترسیم چهره‌ها، کمتر خطا کرده‌اند، باز از لایه‌های زیرین قضایا، روی برتابانده‌اند و یا به خاطر عدم شناخت دقیق انگیزه‌ها و مصالح، بیراهه راه پیموده‌اند.
 1	تاریخ	تاریخ	NOUN	IANM	attachment=ISO|number=SING|senID=31119|dadeg_pos=N|dadeg_h=7|dadeg_r=PREDEP	13	obj	_	_
-2	پرفراز	پرفراز	ADJ	AJP	attachment=ISO|senID=31119|dadeg_pos=ADJ|dadeg_h=1|dadeg_r=NPOSTMOD	4	conj	_	_
-3	و	و	CCONJ	CONJ	attachment=ISO|senID=31119|dadeg_pos=CONJ|dadeg_h=2|dadeg_r=AJCONJ	2	cc	_	_
-4	نشیب	نشیب	NOUN	IANM	attachment=ISO|number=SING|senID=31119|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	1	amod	_	_
+2	پرفراز	پرفراز	ADJ	AJP	attachment=ISO|senID=31119|dadeg_pos=ADJ|dadeg_h=1|dadeg_r=NPOSTMOD	1	amod	_	_
+3	و	و	CCONJ	CONJ	attachment=ISO|senID=31119|dadeg_pos=CONJ|dadeg_h=2|dadeg_r=AJCONJ	4	cc	_	_
+4	نشیب	نشیب	NOUN	IANM	attachment=ISO|number=SING|senID=31119|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	2	conj	_	_
 5	حوزه‌های	حوزه	NOUN	IANM	attachment=ISO|number=PLUR|senID=31119|dadeg_pos=N|dadeg_h=1|dadeg_r=MOZ	1	nmod	_	_
 6	علمیه	علمیه	ADJ	AJP	attachment=ISO|senID=31119|dadeg_pos=ADJ|dadeg_h=5|dadeg_r=NPOSTMOD	5	amod	_	_
 7	را	را	ADP	POSTP	attachment=ISO|senID=31119|dadeg_pos=POSTP|dadeg_h=13|dadeg_r=OBJ	1	case	_	_
@@ -7132,7 +7132,7 @@
 35	داشته‌اند	داشت#دار	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=31119|dadeg_pos=V|dadeg_h=36|dadeg_r=PREDEP	23	conj	_	_
 36	و	و	CCONJ	CONJ	attachment=ISO|senID=31119|dadeg_pos=CONJ|dadeg_h=59|dadeg_r=VCONJ	59	cc	_	_
 37	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=31119|dadeg_pos=SUBR|dadeg_h=73|dadeg_r=AJUCL	42	mark	_	_
-38	که	که	PART	PART	attachment=ISO|senID=31119|dadeg_pos=PART|dadeg_h=37|dadeg_r=POSDEP	41	POSDEP	_	_
+38	که	که	PART	PART	attachment=ISO|senID=31119|dadeg_pos=PART|dadeg_h=37|dadeg_r=POSDEP	42	POSDEP	_	_
 39	گاهی	گاه	NOUN	IANM	attachment=ISO|number=SING|senID=31119|dadeg_pos=N|dadeg_h=42|dadeg_r=ADV	42	obl	_	spaceAfter=NO
 40	،	،	PUNCT	PUNC	attachment=ISO|senID=31119|dadeg_pos=PUNC|dadeg_h=39|dadeg_r=PUNC	39	punct	_	_
 41	منصفانه	منصفانه	ADV	SADV	attachment=ISO|senID=31119|dadeg_pos=ADV|dadeg_h=42|dadeg_r=ADV	42	advmod	_	_
@@ -18421,9 +18421,9 @@
 8	با	با	ADP	PREP	attachment=ISO|senID=47511|dadeg_pos=PREP|dadeg_h=19|dadeg_r=ADV	9	case	_	_
 9	ساختن	ساختن	NOUN	IANM	attachment=ISO|number=SING|senID=47511|dadeg_pos=N|dadeg_h=8|dadeg_r=POSDEP	19	obl	_	_
 10	فیلم	فیلم	NOUN	IANM	attachment=ISO|number=SING|senID=47511|dadeg_pos=N|dadeg_h=9|dadeg_r=MOZ	9	nmod	_	_
-11	پرسر	پرسر	ADJ	AJP	attachment=ISO|senID=47511|dadeg_pos=ADJ|dadeg_h=10|dadeg_r=NPOSTMOD	13	conj	_	_
-12	و	و	CCONJ	CONJ	attachment=ISO|senID=47511|dadeg_pos=CONJ|dadeg_h=11|dadeg_r=AJCONJ	11	cc	_	_
-13	صدای	صدا	NOUN	IANM	attachment=ISO|number=SING|senID=47511|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	10	amod	_	_
+11	پرسر	پرسر	ADJ	AJP	attachment=ISO|senID=47511|dadeg_pos=ADJ|dadeg_h=10|dadeg_r=NPOSTMOD	10	amod	_	_
+12	و	و	CCONJ	CONJ	attachment=ISO|senID=47511|dadeg_pos=CONJ|dadeg_h=11|dadeg_r=AJCONJ	13	cc	_	_
+13	صدای	صدا	NOUN	IANM	attachment=ISO|number=SING|senID=47511|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	11	conj	_	_
 14	مارمولک	مارمولک	NOUN	IANM	attachment=ISO|number=SING|senID=47511|dadeg_pos=N|dadeg_h=10|dadeg_r=MOZ	10	nmod	_	spaceAfter=NO
 15	،	،	PUNCT	PUNC	attachment=ISO|senID=47511|dadeg_pos=PUNC|dadeg_h=14|dadeg_r=PUNC	14	punct	_	_
 16	با	با	ADP	PREP	attachment=ISO|senID=47511|dadeg_pos=PREP|dadeg_h=18|dadeg_r=NPP	17	case	_	_
@@ -26497,7 +26497,7 @@
 6	میهمان‌نواز	میهمان‌نواز	ADJ	AJP	attachment=NXT|senID=39112|dadeg_pos=ADJ|dadeg_h=5|dadeg_r=POSDEP	4	conj	_	_
 7	ند	#هست	VERB	ACT	person=3|attachment=PRV|number=PLUR|tma=H|senID=39112|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 8	که	که	SCONJ	SUBR	attachment=ISO|senID=39112|dadeg_pos=SUBR	3	NCL	_	_
-9	حتی	حتی	ADV	SADV	attachment=ISO|senID=39112|dadeg_pos=ADV|dadeg_h=10|dadeg_r=PREDEP	16	PREDEP	_	_
+9	حتی	حتی	ADV	SADV	attachment=ISO|senID=39112|dadeg_pos=ADV|dadeg_h=10|dadeg_r=PREDEP	17	PREDEP	_	_
 10	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=39112|dadeg_pos=SUBR|dadeg_h=24|dadeg_r=AJUCL	17	mark	_	_
 11	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=39112|dadeg_pos=ADJ|dadeg_h=17|dadeg_r=ADV	17	advmod	_	_
 12	از	از	ADP	PREP	attachment=ISO|senID=39112|dadeg_pos=PREP|dadeg_h=11|dadeg_r=COMPPP	14	case	_	_
@@ -27925,7 +27925,7 @@
 10	چهارچوب‌ها	چهارچوب	NOUN	IANM	attachment=ISO|number=PLUR|senID=39720|dadeg_pos=N|dadeg_h=9|dadeg_r=POSDEP	11	nmod	_	_
 11	خارج	خارج	ADJ	AJP	attachment=ISO|senID=39720|dadeg_pos=ADJ	12	MOS	_	_
 12	شوید	کرد#کن	VERB	PASS	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=39720|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	7	conj	_	_
-13	حتی	حتی	ADV	SADV	attachment=ISO|senID=39720|dadeg_pos=ADV|dadeg_h=14|dadeg_r=PREDEP	18	PREDEP	_	_
+13	حتی	حتی	ADV	SADV	attachment=ISO|senID=39720|dadeg_pos=ADV|dadeg_h=14|dadeg_r=PREDEP	19	PREDEP	_	_
 14	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=39720|dadeg_pos=SUBR|dadeg_h=12|dadeg_r=AJUCL	19	mark	_	_
 15	از	از	ADP	PREP	attachment=ISO|senID=39720|dadeg_pos=PREP|dadeg_h=18|dadeg_r=NPP	17	case	_	_
 16	این	این	PREM	DEMAJ	attachment=ISO|senID=39720|dadeg_pos=PREM|dadeg_h=17|dadeg_r=NPREMOD	17	amod	_	_
