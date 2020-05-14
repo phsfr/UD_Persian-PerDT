@@ -276,8 +276,8 @@ class DependencyTree:
     def find_main_noun(self,idx):
         pos=self.tags[idx]
         prev_pos=''
-        if pos!='ADJ':
-            print('not adj {}'.format(self.sent_descript))
+        #if pos!='ADJ':
+        #    print('not adj {}'.format(self.sent_descript))
         #print('pos is:::::: {}'.format(pos))
         count=0
         while pos=='ADJ' or pos=='CCONJ':
@@ -289,8 +289,8 @@ class DependencyTree:
             prev_pos=pos
             pos=self.tags[idx]
             #print('prev pos {} new pos {}'.format(prev_pos,pos))
-            if count>120:
-                print('stuck in while loop APOSTMOD in sent {} with rol {} & idx {} & pos {}'.format(self.sent_descript,self.labels[idx],idx,pos))
+            #if count>120:
+            #    print('stuck in while loop APOSTMOD in sent {} with rol {} & idx {} & pos {}'.format(self.sent_descript,self.labels[idx],idx,pos))
         #print(pos)
         if pos=='NOUN' or pos=='PROPN':
             #print(self.sent_descript)
@@ -324,7 +324,7 @@ class DependencyTree:
         self.heads[node_idx]=self.index[par_idx]
         self.labels[node_idx]=new_role
         return old_head,old_role
-    def first_level_dep_mapping(self):
+    def zero_level_dep_mapping(self):
         simple_dep_map={'ROOT':'root','PUNC':'punct','APP':'appos'}
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
@@ -333,13 +333,52 @@ class DependencyTree:
             word=self.words[idx]
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
-            if dadeg_pos=='PREP' or dadeg_pos=='POSTP':
+            if dadeg_pos=='PREP' or dadeg_pos=='POSTP': #because of PCONJ rel, we need to implement case, before PCONJ change
                 children=self.find_all_children(self.index[idx],['PUNCT']) #because of را in sent=44271
                 #if self.other_features[idx].feat_dict['senID']=='44271':
                 #    print('HEYYYYYYYYYYYYYYYYYYY: {}'.format(children))
                 if len(children)==1:
                     self.exchange_child_parent(idx,children[0],'case')
+                else:
+                    should_change=False
+                    if len(children)==2:
+                        ch1_rol=self.labels[children[0]]
+                        ch2_rol=self.labels[children[1]]
+                        if ch1_rol=='POSDEP' and ch2_rol=='PCONJ':
+                            should_change=True
+                            new_par_idx=children[0]
+                            new_child_idx=children[1]
+                        elif ch2_rol=='POSDEP' and ch1_rol=='PCONJ':
+                            should_change=True
+                            new_par_idx=children[1]
+                            new_child_idx=children[0]
+                        if should_change:
+                            self.exchange_child_parent(idx,new_par_idx,'case')
+                            old_ch_head=self.heads[new_child_idx]
+                            old_ch_rol=self.labels[new_child_idx]
+                            self.heads[new_child_idx]=self.index[new_par_idx]
+                            if not self.other_features[new_child_idx].has_feat('dadeg_r'):
+                                self.other_features[new_child_idx].add_feat({'dadeg_h':str(old_ch_head),'dadeg_r':old_ch_rol})
+                    if not should_change:
+                        child_str='idx: '+str(self.index[idx])
+                        for child in children:
+                            child_str+='  child '+str(self.index[child])+' with rel: '+self.labels[child]+' in sent='+self.other_features[idx].feat_dict['senID']
+                        print(child_str)
                 rol_changed=True
+            if old_role in list(simple_dep_map.keys()):
+                self.labels[idx]=simple_dep_map[old_role]
+                rol_changed=True
+            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
+                self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
+    def first_level_dep_mapping(self):
+        for idx in range(0,len(self.words)):
+            old_role=self.labels[idx]
+            old_head=self.heads[idx]
+            old_pos=self.tags[idx]
+            word=self.words[idx]
+            rol_changed=False
+            dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
+            
             if old_role=='VCONJ': #or old_role=='AJCONJ': #this mapping should take place before که with predicate (VCL) cause #sentID=23816
                 main_pos='VERB'
                 #if old_pos=='AJCONJ':
@@ -365,11 +404,11 @@ class DependencyTree:
                     if old_pos=='CCONJ':
                         self.labels[idx]='cc'
                     rol_changed=True
-            if old_role=='NCONJ' or old_role=='AJCONJ' or old_role=='AVCONJ':
+            if old_role=='NCONJ' or old_role=='AJCONJ' or old_role=='AVCONJ' or old_role=='PCONJ':
                 if old_pos=='CCONJ':
                     child=self.find_all_children(self.index[idx])
-                    if len(child)>1:
-                        print('ERROR in NCONJ: child of CCONJ is more than ONE!!! in sent {}'.format(self.sent_descript))                  
+                    #if len(child)>1:
+                    #    print('ERROR in NCONJ: child of CCONJ is more than ONE!!! in sent {}'.format(self.sent_descript))                  
                     if len(child)>0:
                         self.heads[idx]=self.index[child[0]]
                         self.labels[idx]='cc'
@@ -382,30 +421,30 @@ class DependencyTree:
                             self.labels[child[0]]='compound:num'
                         if head_role=='conj':
                             self.heads[child[0]]=self.heads[head_idx]
-                            if old_role=='AJCONJ':
-                                print('conj head for AJCONJ {}'.format(self.sent_descript)) 
+                            #if old_role=='AJCONJ':
+                            #    print('conj head for AJCONJ {}'.format(self.sent_descript)) 
                         else:
                             self.heads[child[0]]=old_head
                         if not self.other_features[child[0]].has_feat('dadeg_r'):
                             self.other_features[child[0]].add_feat({'dadeg_h':str(old_child_h),'dadeg_r':old_child_role})
-                    else:
-                        print('child {} in {}'.format(child,self.sent_descript))  
+                    #else:
+                    #    print('child {} in {}'.format(child,self.sent_descript))  
                 else:
                     head_idx=self.reverse_index[old_head]
                     head_role=self.labels[head_idx]
-                    if self.other_features[idx].feat_dict['senID']=='24269':
-                        print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
+                    #if self.other_features[idx].feat_dict['senID']=='24269':
+                    #    print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
                     if head_role=='conj':
                         self.heads[idx]=self.heads[head_idx]
                         self.labels[idx]='conj'
                     else:
                         self.labels[idx]='conj'
-                    if self.other_features[idx].feat_dict['senID']=='24269':
-                        print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
+                    #if self.other_features[idx].feat_dict['senID']=='24269':
+                    #    print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
                 rol_changed=True
-            if old_role in list(simple_dep_map.keys()):
-                self.labels[idx]=simple_dep_map[old_role]
-                rol_changed=True
+            #if old_role in list(simple_dep_map.keys()):
+            #    self.labels[idx]=simple_dep_map[old_role]
+            #    rol_changed=True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def second_level_dep_mapping(self):
@@ -425,7 +464,7 @@ class DependencyTree:
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def third_level_dep_mapping(self):
         #TAM is third level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
-        simple_dep_map={'TAM':'xcomp','VPP':'obl','PART':'mark','NPRT':'compound:lvc','NVE':'compound:lvc','ENC':'compound:lvc','LVP':'compound','NE':'compound:lvc','MESU':'nmod','APREMOD':'advmod','ADVC':'obl:arg','AJPP':'obl:arg','NEZ':'obl:arg'} 
+        simple_dep_map={'TAM':'xcomp','VPP':'obl:arg','PART':'mark','NPRT':'compound:lvc','NVE':'compound:lvc','ENC':'compound:lvc','LVP':'compound','NE':'compound:lvc','MESU':'nmod','APREMOD':'advmod','ADVC':'obl:arg','AJPP':'obl:arg','NEZ':'obl:arg'} 
         v_copula=['کرد#کن','گشت#گرد','گردید#گرد']
         for idx in range(0,len(self.words)):
             old_role=self.labels[idx]
@@ -506,7 +545,7 @@ class DependencyTree:
                 if head_dep=='NVE' or head_dep=='ENC':
                     #print(self.sent_descript)
                     head_of_head=self.heads[head_idx]
-                    self.labels[idx]='obl'
+                    self.labels[idx]='obl:arg'
                     self.heads[idx]=head_of_head
                 else:
                     self.labels[idx]='nmod'
@@ -522,8 +561,8 @@ class DependencyTree:
                 #print('return head {}'.format(head_idx))
                 #if head_idx!=old_head_idx:
                 #    print(self.sent_descript)
-                if head_idx==-1:
-                    print('heas is -1 in {}'.format(self.sent_descript))
+                #if head_idx==-1:
+                #    print('heas is -1 in {}'.format(self.sent_descript))
                 if head_idx!=-1:
                     self.heads[idx]=self.index[head_idx]
                     if old_pos=='ADV':
@@ -543,6 +582,7 @@ class DependencyTree:
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def convert_tree(self):
+        self.zero_level_dep_mapping()
         self.first_level_dep_mapping()
         self.second_level_dep_mapping()
         self.third_level_dep_mapping()
