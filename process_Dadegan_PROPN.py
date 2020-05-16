@@ -174,6 +174,16 @@ def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
                 space_toks.remove(elems[1])
                 lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
             #lin=elems[1]+'\t'+'\t'.join(elems[2:])+'\n'
+        elif old_tok_id=='M':#remove M from the begining of the line (token id should be updated but head of parent is fixed)
+            old_pos=elems[4]
+            dadeg_pos=old_pos
+            old_dadegan_pos='|dadeg_pos='+dadeg_pos
+            new_token_id=tokens_ids[int(elems[1])]
+            lin=str(new_token_id)+'\t'+'\t'.join(elems[2:6])+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:])+'\n'
+            if elems[1] in space_toks and (not contain_noSpace):
+                space_toks.remove(elems[1])
+                lin=str(new_token_id)+'\t'+'\t'.join(elems[2:6])+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:-1])+'\t'+'spaceAfter=NO'+'\n'
+            #lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
         elif old_tok_id=='Y': #remove Y from the begining of the line (token id of both previous token and the next one could be updated)
             old_tok_parts=elems[1].split('-')
             new_first_token_id=tokens_ids[int(old_tok_parts[0])]
@@ -401,6 +411,28 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                     sent_lines.append(added_line)
                     line_added=True 
                     contain_multiWord=True 
+            if pos=='PSUS' and (word_form=='خداوندا' or word_form=='خدایا'): 
+                orig_noun='خداوند'
+                w_lem='خداوند'
+                pronoun='ا'
+                if  word_form=='خدایا':
+                    orig_noun='خدای'
+                    w_lem='خدای'
+                log_pron_noun.write(word_form+'\t'+orig_noun+'\t'+w_lem+'\t'+pronoun+'\n')
+                log_pron_noun.flush()
+                num_concate_prons=num_concate_prons+1
+                pron_id=token_id+num_concate_prons
+                other_parts='\t'.join("_"*len(elems[2:]))
+                dadegan_senID='attachment=ISO|senID='+seperated_feature['senID']
+                added_line_multiword=str(token_id)+'-'+str(pron_id)+'\t'+word_form+'\t'+other_parts+'\n'
+                #eddited_line=str(token_id)+'\t'+orig_noun+'\t'+w_lem+'\t'+pos+'\t'+cpos+'\t'+features+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'
+                eddited_line='M'+'\t'+str(token_id)+'\t'+orig_noun+'\t'+w_lem+'\t'+pos+'\t'+cpos+'\t'+features+'\t'+str(pron_id)+'\t'+'PREDEP'+'\t'+semanticRoles+'\n'
+                added_line='X'+'\t'+str(pron_id)+'\t'+pronoun+'\t'+pronoun+'\t'+'ADR'+'\t'+'POSADR'+'\t'+dadegan_senID+'\t'+hParent+'\t'+rParent+'\t'+semanticRoles+'\n'#'nmod:poss'+'\t'+semanticRoles+'\n'
+                sent_lines.append(added_line_multiword)
+                sent_lines.append(eddited_line)
+                sent_lines.append(added_line)
+                line_added=True 
+                contain_multiWord=True
             #seperating concatinated pronouns to adjectives                    
             if pos=='ADJ' and word_form!=word_lemma:
                 result,pronoun,orig_noun=is_potentioal_pronounContained(word_form,word_lemma,line,file_type,number)

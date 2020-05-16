@@ -709,10 +709,14 @@ if __name__ == '__main__':
         for i, tree in enumerate(tree_list):
             tree.convert_tree()#(universal_tree_list[i]) 
             parcle_list=tree.find_all_rels('PARCL')
-            if len(parcle_list)>1:
-                print('multi PARCL in sent {}'.format(tree.sent_descript))
-            #for idx in range(0,len(tree.words)):
-            #    role=tree.labels[idx]
+            #if len(parcle_list)>1:
+            #    print('multi PARCL in sent {}'.format(tree.sent_descript))
+            for indx in range(0,len(tree.words)):
+                role=tree.labels[indx]
+                word=tree.words[indx]
+                if tree.tags[indx]=='PSUS' and tree.words[indx].endswith('ا'):
+                    print('idx {} with word {} in sent={}'.format(tree.index[indx],word,tree.other_features[indx].feat('senID')))
+
             #    head=tree.heads[idx]
             #    if role=='VCL':
                     #if tree.tags[tree.reverse_index[head]]!='VERB':
