@@ -24,7 +24,7 @@ class Features:
         return feat in self.feat_dict.keys()
 
 class DependencyTree:
-    def __init__(self, sent_num, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,semiFinal_tags,final_tags):
+    def __init__(self, sent_num, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,semiFinal_tags,final_tags,mw_line):
         self.sent_descript=sent_num
         self.sent_str=sent_str
         self.words = words
@@ -35,6 +35,7 @@ class DependencyTree:
         self.labels = labels
         self.semiFinal_tags=semiFinal_tags
         self.final_tags=final_tags
+        self.mw_line=mw_line
         self.reverse_tree = defaultdict(set)
         self.other_features = list()
         for f in other_features:
@@ -154,7 +155,7 @@ class DependencyTree:
         Loads a conllu string into a DependencyTree object.
         """
         lines = tree_str.strip().split('\n')
-        mw_line=list()
+        mw_line={}
         words = list()
         tags = list()
         heads = list()
@@ -170,8 +171,9 @@ class DependencyTree:
         for i in range(2,len(lines)):#for jumping over two first lines (one is sentence number & other is sentence's string
             spl = lines[i].split('\t')
             line_idx[i-2]=spl[0]
+            line_indx=spl[0].split('-')
             if '-' in spl[0]:
-                mw_line.append(lines[i].strip('\n').strip())
+                mw_line[line_indx[0]]=lines[i].strip('\n').strip()
                 continue
             words.append(spl[1])          #word form
             lemmas.append(spl[2])         #lemma
@@ -183,7 +185,7 @@ class DependencyTree:
             semiFinal_tags.append(spl[8]) #semi final tag 
             final_tags.append(spl[9])     #last tag
 
-        tree = DependencyTree(sent_descript, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,semiFinal_tags,final_tags)
+        tree = DependencyTree(sent_descript, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,semiFinal_tags,final_tags,mw_line)
         return tree
 
     @staticmethod
@@ -204,7 +206,10 @@ class DependencyTree:
         lst.append(self.sent_descript) #adding first line as sentence number
         lst.append(self.sent_str)      #adding second line as sentence string
         for i in range(len(self.words)):
-            feats = [str(i+1),self.words[i],self.lemmas[i], self.tags[i],self.ftags[i],str(self.other_features[i]),str(self.heads[i]),self.labels[i],self.semiFinal_tags[i],self.final_tags[i]]
+            word_indx=str(i+1)
+            if word_indx in self.mw_line.keys():
+                lst.append(self.mw_line[word_indx])
+            feats = [word_indx,self.words[i],self.lemmas[i], self.tags[i],self.ftags[i],str(self.other_features[i]),str(self.heads[i]),self.labels[i],self.semiFinal_tags[i],self.final_tags[i]]
             # ln = str(i+1) +'\t'+self.words[i]+'\t'+self.lemmas[i]+'\t'+self.tags[i]+'\t'+self.ftags[i]+'\t'+str(self.other_features[i])+'\t'+ str(self.heads[i])+'\t'+self.labels[i]+'\t_\t_'
             lst.append('\t'.join(feats))
         return '\n'.join(lst)
@@ -513,6 +518,8 @@ class DependencyTree:
                 self.exchange_pars_with_PRD(idx,'mark','ccomp')
                 rol_changed=True
             if old_role=='NCL':
+                #if lemma!='که':
+                #    print('idx {} lemma {} in sent {}'.format(idx,lemma,self.sent_descript))
                 self.exchange_pars_with_PRD(idx,'mark','acl')
                 rol_changed=True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
@@ -704,8 +711,22 @@ if __name__ == '__main__':
             parcle_list=tree.find_all_rels('PARCL')
             if len(parcle_list)>1:
                 print('multi PARCL in sent {}'.format(tree.sent_descript))
-        
+            #for idx in range(0,len(tree.words)):
+            #    role=tree.labels[idx]
+            #    head=tree.heads[idx]
+            #    if role=='VCL':
+                    #if tree.tags[tree.reverse_index[head]]!='VERB':
+                    #    print('head is not verb in sent={}'.format(tree.other_features[idx].feat('senID')))
+            #        if tree.tags[tree.reverse_index[head]]=='VERB':
+            #            mos_child=tree.find_children_with_role(head,'MOS')
+            #            sbj_child=tree.find_children_with_role(head,'SBJ')
+            #            if len(sbj_child)==0 and len(mos_child)>0:
+            #                print('idx {} with verb head {} in sent={}'.format(tree.index[idx],head,tree.other_features[idx].feat('senID')))
+                #old_pos=self.tags[idx]
+                #lemma=self.lemmas[idx]
         DependencyTree.write_to_conllu(tree_list, output_files[idx])
+        
+        
         #poss=set(poss)
         #for p in poss:
         #    print(p)
