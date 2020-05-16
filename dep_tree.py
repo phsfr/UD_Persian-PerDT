@@ -225,6 +225,8 @@ class DependencyTree:
         auto-tagged and auto-ner.
         """
         pass
+    def find_all_rels(self,role):
+        return [key for key,val in enumerate(self.labels) if val==role]
     def find_all_children(self,idx,pos_except_l=None):
         if pos_except_l!=None:
             return [key for key,val in enumerate(self.heads) if val==idx and self.tags[key] not in pos_except_l]
@@ -335,36 +337,69 @@ class DependencyTree:
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
             if dadeg_pos=='PREP' or dadeg_pos=='POSTP': #because of PCONJ rel, we need to implement case, before PCONJ change
                 children=self.find_all_children(self.index[idx],['PUNCT']) #because of را in sent=44271
-                #if self.other_features[idx].feat_dict['senID']=='44271':
-                #    print('HEYYYYYYYYYYYYYYYYYYY: {}'.format(children))
+                #if self.other_features[idx].feat_dict['senID']=='30911':
+                #    print('word {} child rel: {}'.format(word,self.labels[children[0]]))
                 if len(children)==1:
-                    self.exchange_child_parent(idx,children[0],'case')
+                    ch1_w=self.words[children[0]]
+                    if ((word=='پس' or word=='پیش' or word=='قبل' or word=='بعد') and ch1_w=='از') or (word=='نسبت' and ch1_w=='به') or (word=='غیر' and ch1_w=='از') or (word=='بر' and ch1_w=='ضد'):
+                        self.labels[children[0]]='fixed'
+                        ch_ch=self.find_children_with_role(self.index[children[0]],'POSDEP')
+                        if len(ch_ch)==0:
+                            #print('idx {} in sent {}'.format(idx,self.sent_descript))
+                            self.exchange_child_parent(idx,children[0],'case')
+                        else:
+                            self.exchange_child_parent(idx,ch_ch[0],'case')             
+                    else:
+                        self.exchange_child_parent(idx,children[0],'case')
                 else:
                     should_change=False
                     if len(children)==2:
                         ch1_rol=self.labels[children[0]]
                         ch2_rol=self.labels[children[1]]
-                        if ch1_rol=='POSDEP' and ch2_rol=='PCONJ':
+                        ch1_w=self.words[children[0]]
+                        ch2_w=self.words[children[1]]
+                        #print(ch1_w)
+                        if ch1_w=='جمله' and word=='از':
+                            self.labels[children[0]]='fixed'
+                        #    self.exchange_child_parent(idx,children[0],'fixed')
+                            self.exchange_child_parent(idx,children[1],'case')
+                            if not self.other_features[children[0]].has_feat('dadeg_r'):
+                                self.other_features[children[0]].add_feat({'dadeg_h':str(idx),'dadeg_r':ch1_rol})
                             should_change=True
-                            new_par_idx=children[0]
-                            new_child_idx=children[1]
-                        elif ch2_rol=='POSDEP' and ch1_rol=='PCONJ':
-                            should_change=True
-                            new_par_idx=children[1]
-                            new_child_idx=children[0]
-                        if should_change:
-                            self.exchange_child_parent(idx,new_par_idx,'case')
-                            old_ch_head=self.heads[new_child_idx]
-                            old_ch_rol=self.labels[new_child_idx]
-                            self.heads[new_child_idx]=self.index[new_par_idx]
-                            if not self.other_features[new_child_idx].has_feat('dadeg_r'):
-                                self.other_features[new_child_idx].add_feat({'dadeg_h':str(old_ch_head),'dadeg_r':old_ch_rol})
-                    if not should_change:
+                        else:
+                            if ch1_rol=='POSDEP' and ch2_rol=='PCONJ':
+                                should_change=True
+                                new_par_idx=children[0]
+                                new_child_idx=children[1]
+                            elif ch2_rol=='POSDEP' and ch1_rol=='PCONJ':
+                                should_change=True
+                                new_par_idx=children[1]
+                                new_child_idx=children[0]
+                            if should_change:
+                                self.exchange_child_parent(idx,new_par_idx,'case')
+                                old_ch_head=self.heads[new_child_idx]
+                                old_ch_rol=self.labels[new_child_idx]
+                                self.heads[new_child_idx]=self.index[new_par_idx]
+                                if not self.other_features[new_child_idx].has_feat('dadeg_r'):
+                                    self.other_features[new_child_idx].add_feat({'dadeg_h':str(old_ch_head),'dadeg_r':old_ch_rol})
+                    if not should_change and len(children)>0:
                         child_str='idx: '+str(self.index[idx])
+                        child_s=''
                         for child in children:
                             child_str+='  child '+str(self.index[child])+' with rel: '+self.labels[child]+' in sent='+self.other_features[idx].feat_dict['senID']
-                        print(child_str)
+                        children.append(idx)
+                        children.sort()
+                        #print(child_str+' '+' '.join([self.words[key] for key in children]))
                 rol_changed=True
+            #if old_role=='PARCL':
+            #    child=self.find_children_with_role(self.index[idx],'PUNC')
+            #    if len(child)==0:
+            #        child=self.find_children_with_role(self.index[idx],'punct')
+            #    if len(child)==1:
+            #        if self.tags[child[0]]=='CCONJ':
+            #            self.exchange_child_parent(idx,child[0],'PREDEP','VCONJ')
+            #            rol_changed=True
+  
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx]=simple_dep_map[old_role]
                 rol_changed=True
@@ -390,11 +425,28 @@ class DependencyTree:
                 #print(self.sent_descript)
                 for i in range(1,len(children_chain)):
                     child_idx=children_chain[i]
-                    old_hd,old_child_r=self.node_assign_new_role(child_idx,children_chain[0],'conj')  
+                    child_rel=self.labels[child_idx]
+                    new_role='conj'
+                    #if child_rel=='PARCL':
+                    #    cconj_child=self.find_children_with_pos(self.index[child_idx],'CCONJ')
+                    #    if len(cconj_child)==0:
+                    #        new_role='parataxis'
+                    old_hd,old_child_r=self.node_assign_new_role(child_idx,children_chain[0],new_role)  
+                    #if self.labels[children_chain[0]]=='conj':
+                    #    self.heads[child_idx]=self.heads[children_chain[0]]
                 if len(children_chain)>0:
                     #print('in vconj sent is: {}'.format(self.sent_descript))
                     #print('children_chain is: {}'.format(children_chain))
-                    old_hd,old_child_r=self.node_assign_new_role(self.reverse_index[old_head],children_chain[0],'conj') 
+                    child_idx=children_chain[-1]
+                    child_rel=self.labels[child_idx]
+                    new_role='conj'
+                    #if child_rel=='PARCL':
+                    #    cconj_child=self.find_children_with_pos(self.index[child_idx],'CCONJ')
+                    #    if len(cconj_child)==0:
+                    #        new_role='parataxis'
+                    old_hd,old_child_r=self.node_assign_new_role(self.reverse_index[old_head],children_chain[0],new_role) 
+                    #if self.labels[children_chain[0]]=='conj':
+                    #    self.heads[child_idx]=self.heads[children_chain[0]]
                     first_child_h=self.heads[children_chain[0]]
                     first_child_r=self.labels[children_chain[0]]
                     self.heads[children_chain[0]]=old_hd
@@ -459,7 +511,10 @@ class DependencyTree:
                 rol_changed=True
             if old_role=='VCL':
                 self.exchange_pars_with_PRD(idx,'mark','ccomp')
-                rol_changed=True                
+                rol_changed=True
+            if old_role=='NCL':
+                self.exchange_pars_with_PRD(idx,'mark','acl')
+                rol_changed=True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def third_level_dep_mapping(self):
@@ -645,7 +700,10 @@ if __name__ == '__main__':
         # Second pass: convert tree structure
         poss=[]
         for i, tree in enumerate(tree_list):
-            tree.convert_tree()#(universal_tree_list[i])    
+            tree.convert_tree()#(universal_tree_list[i]) 
+            parcle_list=tree.find_all_rels('PARCL')
+            if len(parcle_list)>1:
+                print('multi PARCL in sent {}'.format(tree.sent_descript))
         
         DependencyTree.write_to_conllu(tree_list, output_files[idx])
         #poss=set(poss)
