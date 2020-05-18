@@ -27492,7 +27492,7 @@
 38	شوم	شوم	ADJ	AJP	attachment=ISO|senID=39555|dadeg_pos=ADJ|dadeg_h=37|dadeg_r=NPOSTMOD	37	amod	_	_
 39	خود	خود	PRON	CREFX	attachment=ISO|senID=39555|dadeg_pos=PR|dadeg_h=37|dadeg_r=MOZ	37	nmod	_	_
 40	دست	دست	NOUN	IANM	attachment=ISO|number=SING|senID=39555|dadeg_pos=N|dadeg_h=42|dadeg_r=NVE	42	compound:lvc	_	_
-41	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=39555|dadeg_pos=ADJ|dadeg_h=42|dadeg_r=LVP	42	compound	_	_
+41	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=39555|dadeg_pos=ADJ|dadeg_h=42|dadeg_r=LVP	42	compound:lv	_	_
 42	کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=39555|dadeg_pos=V|dadeg_h=35|dadeg_r=VCL	35	ccomp	_	spaceAfter=NO
 43	.	.	PUNCT	PUNC	attachment=ISO|senID=39555|dadeg_pos=PUNC|dadeg_h=35|dadeg_r=PUNC	35	punct	_	_
 
@@ -28001,7 +28001,7 @@
 6	به	به	ADP	PREP	attachment=ISO|senID=39750|dadeg_pos=PREP|dadeg_h=10|dadeg_r=ADV	7	case	_	_
 7	پیوندی	پیوند	NOUN	IANM	attachment=ISO|number=SING|senID=39750|dadeg_pos=N|dadeg_h=6|dadeg_r=POSDEP	10	obl	_	_
 8	دست	دست	NOUN	IANM	attachment=ISO|number=SING|senID=39750|dadeg_pos=N|dadeg_h=10|dadeg_r=NVE	10	compound:lvc	_	_
-9	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=39750|dadeg_pos=ADJ|dadeg_h=10|dadeg_r=LVP	10	compound	_	_
+9	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=39750|dadeg_pos=ADJ|dadeg_h=10|dadeg_r=LVP	10	compound:lv	_	_
 10	می‌کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=39750|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 11	که	که	SCONJ	SUBR	attachment=ISO|senID=39750|dadeg_pos=SUBR|dadeg_h=7|dadeg_r=NCL	12	mark	_	_
 12	می‌تواند	توانست#توان	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=39750|dadeg_pos=V|dadeg_h=11|dadeg_r=PRD	7	acl	_	_
@@ -28060,7 +28060,7 @@
 19	زندگی	زندگی	NOUN	IANM	attachment=ISO|number=SING|senID=59303|dadeg_pos=N|dadeg_h=18|dadeg_r=POSDEP	23	obl:arg	_	_
 20	ما	ما	PRON	SEPER	person=1|attachment=ISO|number=PLUR|senID=59303|dadeg_pos=PR|dadeg_h=19|dadeg_r=MOZ	19	nmod	_	_
 21	پیوند	پیوند	NOUN	IANM	attachment=ISO|number=SING|senID=59303|dadeg_pos=N|dadeg_h=23|dadeg_r=NVE	23	compound:lvc	_	_
-22	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59303|dadeg_pos=ADJ|dadeg_h=23|dadeg_r=LVP	23	compound	_	_
+22	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59303|dadeg_pos=ADJ|dadeg_h=23|dadeg_r=LVP	23	compound:lv	_	_
 23	کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=59303|dadeg_pos=V|dadeg_h=6|dadeg_r=PRD	11	conj	_	spaceAfter=NO
 24	.	.	PUNCT	PUNC	attachment=ISO|senID=59303|dadeg_pos=PUNC|dadeg_h=5|dadeg_r=PUNC	5	punct	_	_
 
@@ -28110,7 +28110,7 @@
 12	بود	بود#باش	AUX	V_PA	number=SING|person=3|tense=Past|senID=59323|dadeg_pos=AUX	11	aux	_	spaceAfter=NO
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=59323|dadeg_pos=PUNC|dadeg_h=11|dadeg_r=PUNC	11	punct	_	_
 14	تحقق	تحقق	NOUN	IANM	attachment=ISO|number=SING|senID=59323|dadeg_pos=N|dadeg_h=16|dadeg_r=NVE	16	compound:lvc	_	_
-15	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59323|dadeg_pos=ADJ|dadeg_h=16|dadeg_r=LVP	16	compound	_	_
+15	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59323|dadeg_pos=ADJ|dadeg_h=16|dadeg_r=LVP	16	compound:lv	_	_
 16	می‌کردند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=59323|dadeg_pos=V|dadeg_h=3|dadeg_r=VCL	3	ccomp	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=59323|dadeg_pos=PUNC|dadeg_h=3|dadeg_r=PUNC	3	punct	_	_
 
@@ -28131,7 +28131,7 @@
 13	شکلی	شکل	NOUN	IANM	attachment=ISO|number=SING|senID=59333|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	18	obl	_	_
 14	ناپایدار	ناپایدار	ADJ	AJP	attachment=ISO|senID=59333|dadeg_pos=ADJ|dadeg_h=13|dadeg_r=NPOSTMOD	13	amod	_	_
 15	تخصیص	تخصیص	NOUN	IANM	attachment=ISO|number=SING|senID=59333|dadeg_pos=N|dadeg_h=18|dadeg_r=NVE	18	compound:lvc	_	_
-16	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59333|dadeg_pos=ADJ|dadeg_h=18|dadeg_r=LVP	18	compound	_	_
+16	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59333|dadeg_pos=ADJ|dadeg_h=18|dadeg_r=LVP	18	compound:lv	_	_
 17	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=59333|dadeg_pos=AUX	18	aux	_	_
 18	کرد	کرد#کن	VERB	V_PA	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59333|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=59333|dadeg_pos=PUNC|dadeg_h=18|dadeg_r=PUNC	18	punct	_	_
@@ -28150,7 +28150,7 @@
 10	این	این	PREM	DEMAJ	attachment=ISO|senID=59343|dadeg_pos=PREM|dadeg_h=11|dadeg_r=NPREMOD	11	amod	_	_
 11	حسگرها	حسگر	NOUN	IANM	attachment=ISO|number=PLUR|senID=59343|dadeg_pos=N|dadeg_h=9|dadeg_r=POSDEP	14	obl:arg	_	_
 12	تداخل	تداخل	NOUN	IANM	attachment=ISO|number=SING|senID=59343|dadeg_pos=N|dadeg_h=14|dadeg_r=NVE	14	compound:lvc	_	_
-13	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59343|dadeg_pos=ADJ|dadeg_h=14|dadeg_r=LVP	14	compound	_	_
+13	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59343|dadeg_pos=ADJ|dadeg_h=14|dadeg_r=LVP	14	compound:lv	_	_
 14	کرده	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GB|senID=59343|dadeg_pos=V|dadeg_h=15|dadeg_r=PREDEP	0	root	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=59343|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	19	cc	_	_
 16	باعث	باعث	ADJ	AJP	attachment=ISO|senID=59343|dadeg_pos=ADJ	19	MOS	_	_
@@ -28171,7 +28171,7 @@
 7	محفل	محفل	NOUN	IANM	attachment=ISO|number=SING|senID=59353|dadeg_pos=N|dadeg_h=6|dadeg_r=POSDEP	11	obl	_	_
 8	اروپایی	اروپایی	ADJ	AJP	attachment=ISO|senID=59353|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=NPOSTMOD	7	amod	_	_
 9	تربیت	تربیت	NOUN	IANM	attachment=ISO|number=SING|senID=59353|dadeg_pos=N|dadeg_h=11|dadeg_r=NVE	11	compound:lvc	_	_
-10	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59353|dadeg_pos=ADJ|dadeg_h=11|dadeg_r=LVP	11	compound	_	_
+10	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59353|dadeg_pos=ADJ|dadeg_h=11|dadeg_r=LVP	11	compound:lv	_	_
 11	کرده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=59353|dadeg_pos=V|dadeg_h=5|dadeg_r=PRD	3	acl	_	_
 12	بود	بود#باش	AUX	V_PA	number=SING|person=3|tense=Past|senID=59353|dadeg_pos=AUX	11	aux	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=59353|dadeg_pos=PUNC|dadeg_h=4|dadeg_r=PUNC	4	punct	_	_
@@ -28191,7 +28191,7 @@
 11	منزل	منزل	NOUN	IANM	attachment=ISO|number=SING|senID=59363|dadeg_pos=N|dadeg_h=10|dadeg_r=POSDEP	9	obl:arg	_	_
 12	سریع‌تر	سریع	ADJ	AJCM	attachment=ISO|senID=59363|dadeg_pos=ADJ|dadeg_h=15|dadeg_r=ADV	15	advmod	_	_
 13	ترمیم	ترمیم	NOUN	IANM	attachment=ISO|number=SING|senID=59363|dadeg_pos=N|dadeg_h=15|dadeg_r=NVE	15	compound:lvc	_	_
-14	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59363|dadeg_pos=ADJ|dadeg_h=15|dadeg_r=LVP	15	compound	_	_
+14	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59363|dadeg_pos=ADJ|dadeg_h=15|dadeg_r=LVP	15	compound:lv	_	_
 15	می‌کنند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=59363|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=59363|dadeg_pos=PUNC|dadeg_h=15|dadeg_r=PUNC	15	punct	_	_
 
@@ -28254,7 +28254,7 @@
 8	قلب‌های	قلب	NOUN	IANM	attachment=ISO|number=PLUR|senID=59383|dadeg_pos=N|dadeg_h=13|dadeg_r=SBJ	13	nsubj	_	_
 9	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=59383|dadeg_pos=PR|dadeg_h=8|dadeg_r=MOZ	8	nmod	_	_
 10	تسکین	تسکین	NOUN	IANM	attachment=ISO|number=SING|senID=59383|dadeg_pos=N|dadeg_h=13|dadeg_r=NVE	13	compound:lvc	_	_
-11	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59383|dadeg_pos=ADJ|dadeg_h=13|dadeg_r=LVP	13	compound	_	_
+11	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59383|dadeg_pos=ADJ|dadeg_h=13|dadeg_r=LVP	13	compound:lv	_	_
 12	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=59383|dadeg_pos=AUX	13	aux	_	_
 13	کرد	کرد#کن	VERB	V_PA	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59383|dadeg_pos=V	3	PRD	_	spaceAfter=NO
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=59383|dadeg_pos=PUNC|dadeg_h=2|dadeg_r=PUNC	2	punct	_	_
@@ -28265,7 +28265,7 @@
 2	این	این	PREM	DEMAJ	attachment=ISO|senID=59393|dadeg_pos=PREM|dadeg_h=3|dadeg_r=NPREMOD	3	amod	_	_
 3	حقیقت	حقیقت	NOUN	IANM	attachment=ISO|number=SING|senID=59393|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	6	obl	_	_
 4	تسلی	تسلی	NOUN	IANM	attachment=ISO|number=SING|senID=59393|dadeg_pos=N|dadeg_h=6|dadeg_r=NVE	6	compound:lvc	_	_
-5	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59393|dadeg_pos=ADJ|dadeg_h=6|dadeg_r=LVP	6	compound	_	_
+5	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59393|dadeg_pos=ADJ|dadeg_h=6|dadeg_r=LVP	6	compound:lv	_	_
 6	کنید	کرد#کن	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59393|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 7	که	که	SCONJ	SUBR	attachment=ISO|senID=59393|dadeg_pos=SUBR|dadeg_h=3|dadeg_r=NCL	9	mark	_	_
 8	شیطان	شیطان	NOUN	ANM	attachment=ISO|number=SING|senID=59393|dadeg_pos=N|dadeg_h=9|dadeg_r=SBJ	9	nsubj	_	_
@@ -28296,7 +28296,7 @@
 13	حرم	حرم	NOUN	IANM	attachment=ISO|number=SING|senID=59403|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	17	obl:arg	_	_
 14	مطهر	مطهر	ADJ	AJP	attachment=ISO|senID=59403|dadeg_pos=ADJ|dadeg_h=13|dadeg_r=NPOSTMOD	13	amod	_	_
 15	تشرف	تشرف	NOUN	IANM	attachment=ISO|number=SING|senID=59403|dadeg_pos=N|dadeg_h=17|dadeg_r=NVE	17	compound:lvc	_	_
-16	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59403|dadeg_pos=ADJ|dadeg_h=17|dadeg_r=LVP	17	compound	_	_
+16	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59403|dadeg_pos=ADJ|dadeg_h=17|dadeg_r=LVP	17	compound:lv	_	_
 17	نکرده	کرد#کن	VERB	V_PP	number=SING|person=3|polarity=NEG|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=59403|dadeg_pos=V|dadeg_h=11|dadeg_r=VCL	11	ccomp	_	_
 18	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=59403|dadeg_pos=AUX	17	aux	_	spaceAfter=NO
 19	!	!	PUNCT	PUNC	attachment=ISO|senID=59403|dadeg_pos=PUNC|dadeg_h=5|dadeg_r=PUNC	5	punct	_	_
@@ -28309,7 +28309,7 @@
 4	جهان	جهان	NOUN	IANM	attachment=ISO|number=SING|senID=59413|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	8	obl	_	_
 5	ماده	ماده	NOUN	IANM	attachment=ISO|number=SING|senID=59413|dadeg_pos=N|dadeg_h=4|dadeg_r=MOZ	4	nmod	_	_
 6	تصرف	تصرف	NOUN	IANM	attachment=ISO|number=SING|senID=59413|dadeg_pos=N|dadeg_h=8|dadeg_r=NVE	8	compound:lvc	_	_
-7	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59413|dadeg_pos=ADJ|dadeg_h=8|dadeg_r=LVP	8	compound	_	_
+7	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59413|dadeg_pos=ADJ|dadeg_h=8|dadeg_r=LVP	8	compound:lv	_	_
 8	می‌کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=59413|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=59413|dadeg_pos=PUNC|dadeg_h=8|dadeg_r=PUNC	8	punct	_	_
 
@@ -28358,7 +28358,7 @@
 16	به	به	ADP	PREP	attachment=ISO|senID=59433|dadeg_pos=PREP|dadeg_h=18|dadeg_r=NPP	17	case	_	_
 17	دیگری	دیگری	NOUN	IANM	attachment=ISO|number=SING|senID=59433|dadeg_pos=N|dadeg_h=16|dadeg_r=POSDEP	21	obl:arg	_	_
 18	تعلق	تعلق	NOUN	IANM	attachment=ISO|number=SING|senID=59433|dadeg_pos=N|dadeg_h=21|dadeg_r=NVE	21	compound:lvc	_	_
-19	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59433|dadeg_pos=ADJ|dadeg_h=21|dadeg_r=LVP	21	compound	_	_
+19	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59433|dadeg_pos=ADJ|dadeg_h=21|dadeg_r=LVP	21	compound:lv	_	_
 20	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=59433|dadeg_pos=AUX	21	aux	_	_
 21	کرد	کرد#کن	VERB	V_PA	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59433|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	12	conj	_	spaceAfter=NO
 22	.	.	PUNCT	PUNC	attachment=ISO|senID=59433|dadeg_pos=PUNC|dadeg_h=21|dadeg_r=PUNC	21	punct	_	_
@@ -28596,7 +28596,7 @@
 4	چند	چند	PREM	AMBAJ	attachment=ISO|senID=59533|dadeg_pos=PREM|dadeg_h=5|dadeg_r=NPREMOD	5	amod	_	_
 5	مرحله	مرحله	NOUN	IANM	attachment=ISO|number=SING|senID=59533|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	8	obl	_	_
 6	تکوین	تکوین	NOUN	IANM	attachment=ISO|number=SING|senID=59533|dadeg_pos=N|dadeg_h=8|dadeg_r=NVE	8	compound:lvc	_	_
-7	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59533|dadeg_pos=ADJ|dadeg_h=8|dadeg_r=LVP	8	compound	_	_
+7	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59533|dadeg_pos=ADJ|dadeg_h=8|dadeg_r=LVP	8	compound:lv	_	_
 8	کرد	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=59533|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=59533|dadeg_pos=PUNC|dadeg_h=8|dadeg_r=PUNC	8	punct	_	_
 
