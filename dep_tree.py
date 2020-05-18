@@ -609,24 +609,24 @@ class DependencyTree:
                 #if self.tags[head_idx]!='VERB':
                 #    print(self.sent_descript)
                 #    print(self.sent_str)
-                head_obj2_children=self.find_children_with_role(old_head,'OBJ2')
-                if len(head_obj2_children)>0:
+                #head_obj2_children=self.find_children_with_role(old_head,'OBJ2')
+                #if len(head_obj2_children)>0:
                     #self.labels[head_obj2_children[0]]='obj'
-                    obj2_new_role=self.map_obj2_role(head_obj2_children[0])
-                    if obj2_new_role=='':
-                        obj2_new_role='obj'
-                    self.node_assign_new_role(head_obj2_children[0],self.reverse_index[old_head],obj2_new_role)    
-                    self.labels[idx]='iobj'
-                    rol_changed=True
-                else:
-                    self.labels[idx]='obj'
-                    rol_changed=True
+                #    obj2_new_role=self.map_obj2_role(head_obj2_children[0])
+                #    if obj2_new_role=='':
+                #        obj2_new_role='obj'
+                #    self.node_assign_new_role(head_obj2_children[0],self.reverse_index[old_head],obj2_new_role)    
+                #    self.labels[idx]='iobj'
+                #    rol_changed=True
+                #else:
+                self.labels[idx]='obj'
+                rol_changed=True
             if  old_role=='OBJ2':
                 obj2_new_role=self.map_obj2_role(idx)
-                if obj2_new_role=='':
-                    print('obj2 not mapped!!!!!!!!!! in sent {}'.format(self.sent_descript))
-                else:
-                    self.node_assign_new_role(idx,self.reverse_index[old_head],obj2_new_role) 
+                #if obj2_new_role=='':
+                #    print('obj2 not mapped!!!!!!!!!! in sent {}'.format(self.sent_descript))
+                #else:
+                self.node_assign_new_role(idx,self.reverse_index[old_head],obj2_new_role) 
                 rol_changed=True
             if old_role=='MOZ' or old_role=='NADV' or old_role=='COMPPP':
                 if old_pos=='ADV':
