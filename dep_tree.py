@@ -559,8 +559,20 @@ class DependencyTree:
                 self.exchange_pars_with_PRD(idx,'mark','advcl')
                 rol_changed=True
             if old_role=='VCL':
+                #if self.other_features[idx].feat_dict['senID']=='23513':
+                #    print('changed {} idx {} old role is {} with head {} & pos {}'.format(self.other_features[idx].has_feat('dadeg_r'),idx,self.labels[idx],old_head,self.tags[self.reverse_index[old_head]]))
+                #if self.tags[self.reverse_index[old_head]]=='VERB':
+                #    mos_child=self.find_children_with_role(old_head,'MOS')
+                #    sbj_child=self.find_children_with_role(old_head,'SBJ')
+                #    if len(sbj_child)==0 and len(mos_child)>0:
+                #        self.labels[idx]='csubj'
+                #        rol_changed=True
+                
+                #if not rol_changed:
                 self.exchange_pars_with_PRD(idx,'mark','ccomp')
                 rol_changed=True
+                #if self.other_features[idx].feat_dict['senID']=='23513':
+                #    print('old role is {}'.format(self.labels[idx]))
             if old_role=='NCL':
                 #if lemma!='که':
                 #    print('idx {} lemma {} in sent {}'.format(idx,lemma,self.sent_descript))
