@@ -207,8 +207,8 @@ class DependencyTree:
         lst.append(self.sent_str)      #adding second line as sentence string
         for i in range(len(self.words)):
             word_indx=str(i+1)
-            if word_indx in self.mw_line.keys():
-                lst.append(self.mw_line[word_indx])
+            #if word_indx in self.mw_line.keys():
+            #    lst.append(self.mw_line[word_indx])
             feats = [word_indx,self.words[i],self.lemmas[i], self.tags[i],self.ftags[i],str(self.other_features[i]),str(self.heads[i]),self.labels[i],self.semiFinal_tags[i],self.final_tags[i]]
             # ln = str(i+1) +'\t'+self.words[i]+'\t'+self.lemmas[i]+'\t'+self.tags[i]+'\t'+self.ftags[i]+'\t'+str(self.other_features[i])+'\t'+ str(self.heads[i])+'\t'+self.labels[i]+'\t_\t_'
             lst.append('\t'.join(feats))
@@ -306,6 +306,40 @@ class DependencyTree:
             return prev_idx
         else:
             return -1
+    def reverse_vconj_rels(self,node_idx):
+        head=self.heads[node_idx]
+        head_idx=self.reverse_index[head]
+        head_pos=self.tags[head_idx]
+        head_word=self.words[head_idx]
+        #verb_child=self.find_children_with_pos(self.index[node_idx],pos)
+        #print(verb_child)
+        #if len(verb_child)>1:
+        #    print('ERROR: more than one verb child for VCONJ rel with main node {} with childs {} in sent {}'.format(self.index[node_idx],verb_child,self.sent_descript))
+        children_chain=[]
+        #children_chain.append(verb_child[0])
+        count=0
+        while head_pos=='VERB' or head_pos=='CCONJ':
+            #if len(verb_child)>1:
+            #    print('ERROR: more than one verb child for VCONJ rel with inside node {} with childs {} in sent {}'.format(self.index[node_idx],verb_child,self.sent_descript))
+            children_chain.append(head_idx)
+            node_idx=head_idx
+            head=self.heads[node_idx]
+            role=self.labels[node_idx]
+            if head==0:
+                break
+            head_idx=self.reverse_index[head]
+            head_pos=self.tags[head_idx]
+            head_word=self.words[head_idx]
+            #role=self.labels[head_idx]
+            count+=1
+            if count>100:
+                print('stuck into while loop idx {} with head {} rel {} in sent {}'.format(node_idx,head,role,self.sent_descript))
+            #children_chain.append(verb_child[0])
+            #verb_child=self.find_children_with_pos(self.index[node_idx],pos)
+        #print(children_chain)
+        #print(children_chain.sort())
+        children_chain.sort()
+        return children_chain
     def reverse_conj_rels(self,node_idx,pos):
         verb_child=self.find_children_with_pos(self.index[node_idx],pos)
         #print(verb_child)
@@ -331,6 +365,15 @@ class DependencyTree:
         self.heads[node_idx]=self.index[par_idx]
         self.labels[node_idx]=new_role
         return old_head,old_role
+    def map_obj2_role(self,idx):
+        iobj_l=[56498, 57047, 38194, 43357, 26296, 26302, 57151]
+        comp_l=[26621, 30910, 31081, 31682, 47333, 38599, 38600, 38601, 38604, 39924, 41245, 41857, 46975, 51705, 53316, 53769, 54158, 54346, 54349, 54350, 48985, 36024, 26621, 30910, 31081, 31682]
+        obj2_new_role=''
+        if int(self.other_features[idx].feat_dict['senID']) in iobj_l:
+            obj2_new_role='iobj'
+        elif int(self.other_features[idx].feat_dict['senID']) in comp_l:
+            obj2_new_role='compound:lvc'
+        return obj2_new_role
     def zero_level_dep_mapping(self):
         simple_dep_map={'ROOT':'root','PUNC':'punct','APP':'appos'}
         for idx in range(0,len(self.words)):
@@ -461,6 +504,7 @@ class DependencyTree:
                     if old_pos=='CCONJ':
                         self.labels[idx]='cc'
                     rol_changed=True
+
             if old_role=='NCONJ' or old_role=='AJCONJ' or old_role=='AVCONJ' or old_role=='PCONJ':
                 if old_pos=='CCONJ':
                     child=self.find_all_children(self.index[idx])
@@ -567,12 +611,23 @@ class DependencyTree:
                 #    print(self.sent_str)
                 head_obj2_children=self.find_children_with_role(old_head,'OBJ2')
                 if len(head_obj2_children)>0:
-                    self.labels[head_obj2_children[0]]='obj'
+                    #self.labels[head_obj2_children[0]]='obj'
+                    obj2_new_role=self.map_obj2_role(head_obj2_children[0])
+                    if obj2_new_role=='':
+                        obj2_new_role='obj'
+                    self.node_assign_new_role(head_obj2_children[0],self.reverse_index[old_head],obj2_new_role)    
                     self.labels[idx]='iobj'
                     rol_changed=True
                 else:
                     self.labels[idx]='obj'
                     rol_changed=True
+            if  old_role=='OBJ2':
+                obj2_new_role=self.map_obj2_role(idx)
+                if obj2_new_role=='':
+                    print('obj2 not mapped!!!!!!!!!! in sent {}'.format(self.sent_descript))
+                else:
+                    self.node_assign_new_role(idx,self.reverse_index[old_head],obj2_new_role) 
+                rol_changed=True
             if old_role=='MOZ' or old_role=='NADV' or old_role=='COMPPP':
                 if old_pos=='ADV':
                     self.labels[idx]='advmod'
@@ -708,16 +763,22 @@ if __name__ == '__main__':
         poss=[]
         for i, tree in enumerate(tree_list):
             tree.convert_tree()#(universal_tree_list[i]) 
-            parcle_list=tree.find_all_rels('PARCL')
+            #parcle_list=tree.find_all_rels('PARCL')
             #if len(parcle_list)>1:
             #    print('multi PARCL in sent {}'.format(tree.sent_descript))
-            for indx in range(0,len(tree.words)):
-                role=tree.labels[indx]
-                word=tree.words[indx]
-                if tree.tags[indx]=='PSUS' and tree.words[indx].endswith('ا'):
-                    print('idx {} with word {} in sent={}'.format(tree.index[indx],word,tree.other_features[indx].feat('senID')))
+            #w_list=['پیغمبر','انا','سوگند','خوش','جای','فلانی','نعوذ','بصیرت']
+            #for indx in range(0,len(tree.words)):
+            #    role=tree.labels[indx]
+            #    word=tree.words[indx]
+            #    pos=tree.tags[indx]
+                
+            #    if tree.tags[indx]=='PSUS' and tree.words[indx] in w_list:
+            #        print('idx {} with word {} in sent={}'.format(tree.index[indx],word,tree.other_features[indx].feat('senID')))
 
-            #    head=tree.heads[idx]
+            #    head=tree.heads[indx]
+                #print(tree.other_features[indx].feat('senID'))
+                #print(tree.tags)
+                #print(head)
             #    if role=='VCL':
                     #if tree.tags[tree.reverse_index[head]]!='VERB':
                     #    print('head is not verb in sent={}'.format(tree.other_features[idx].feat('senID')))
@@ -725,6 +786,7 @@ if __name__ == '__main__':
             #            mos_child=tree.find_children_with_role(head,'MOS')
             #            sbj_child=tree.find_children_with_role(head,'SBJ')
             #            if len(sbj_child)==0 and len(mos_child)>0:
+            #                tree_list_sub.append(tree)
             #                print('idx {} with verb head {} in sent={}'.format(tree.index[idx],head,tree.other_features[idx].feat('senID')))
                 #old_pos=self.tags[idx]
                 #lemma=self.lemmas[idx]
