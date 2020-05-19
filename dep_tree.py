@@ -519,9 +519,12 @@ class DependencyTree:
                         head_idx=self.reverse_index[old_head]
                         head_role=self.labels[head_idx]
                         if self.tags[child[0]]=='NUM' and self.tags[head_idx]=='NUM' and word=='و': #like هفتصد و سی و دو. word (CCONJ) only should be و to avoid mistakes: یک یا دو
-                            self.labels[child[0]]='compound:num'
+                            self.labels[child[0]]='flat:num'#'compound:num'
+                            self.labels[idx]='flat:num'
+                            self.heads[idx]=old_head
                         if head_role=='conj':
                             self.heads[child[0]]=self.heads[head_idx]
+                            
                             #if old_role=='AJCONJ':
                             #    print('conj head for AJCONJ {}'.format(self.sent_descript)) 
                         else:
@@ -589,6 +592,7 @@ class DependencyTree:
             old_head=self.heads[idx]
             old_pos=self.tags[idx]
             lemma=self.lemmas[idx]
+            word=self.words[idx]
             rol_changed=False
             dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
             #*************************************************
@@ -650,7 +654,19 @@ class DependencyTree:
                 elif old_pos=='ADJ':
                     self.labels[idx]='amod'
                     rol_changed=True  
-            if old_role=='NPREMOD' or old_role=='NPOSTMOD':
+            if old_role=='NPREMOD':
+                adj_prenums=['تک','نصف','چند','دهمین','آخرین','یکمین','سی‌امین','هفتمین','بیستمین','سومین','پنجمین','شصتمین','نهمین','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
+                dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
+                if dadeg_pos=='PREM':
+                    self.labels[idx]='det'
+                elif dadeg_pos=='PRENUM' and word not in adj_prenums:
+                    self.labels[idx]='nummod'
+                else:
+                    if word=='نصف' or word=='تک' or word=='چند':
+                        print('word {} in sent={}'.format(word,self.sent_descript))
+                    self.labels[idx]='amod'
+                rol_changed=True 
+            if old_role=='NPOSTMOD':
                 new_pos=self.tags[idx]
                 if new_pos=='NUM':
                     self.labels[idx]='nummod'
