@@ -102,11 +102,11 @@ def find_pro_head(pro_par,tok_dic,lin):
             else:
                 print('ERROR: ??')
     return hPar
-def convert_pos(old_pos,word_form,isPROPN):
+def convert_pos(old_pos,word_form,isPROPN,tok_id,sent_id):
     pos_map={'V':'VERB','N':'NOUN','SUBR':'SCONJ','PR':'PRON','ADJ':'ADJ','ADV':'ADV','PUNC':'PUNCT','CONJ':'CCONJ','AUX':'AUX','ADR':'INTJ'  ,'IDEN':'IDEN','PART':'PART','POSNUM':'ADJ','PREM':'PREM','PRENUM':'NUM','PREP':'ADP','PSUS':'PSUS','POSTP':'ADP'}
     written_nums=['یک','دو','سه','چهار'] #IMPORTANT!! => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
     #['ششصد','یک‌صد','هفت','شانزده','پانزده','دویست','هشتاد','نهصد','یازده','سی','پنجاه','هزار','ده','صفر','بیست','چهارده','یکصد','سیصد','صد','هفتاد','پنج','شش','چهارصد','پانصد','شصت','دوازده','هجده','صدها','نه','نوزده','چهل','هیجده','یک','سیزده','هفده','نود','هشت']
-    
+    adj_prenum_sents=['23671','24163', '24217' ,'26683' ,'37528' ,'44859' ,'46632' ,'49435']
     if isPROPN and (old_pos!='PR' and old_pos!='V' and old_pos!='AUX'):
         #new_p=old_pos.strip().split('|')
         new_pos='PROPN'
@@ -119,9 +119,18 @@ def convert_pos(old_pos,word_form,isPROPN):
             new_pos='NUM'
         if old_pos=='PRENUM' and word_form in adj_prenums:
             new_pos='ADJ'
+        if old_pos=='PRENUM' and sent_id in adj_prenum_sents and word_form=='بیست' or word_form=='شصت' or word_form=='سی': #for cases such as : بیست و هشتمین
+            new_pos='ADJ'
         if old_pos=='POSTP' and word_form=='ی': #for sentid=39792 «کافه پیانو» ی فرهاد جعفری را برای نشر چشمه پس می‌فرستم
             new_pos='X'
     return new_pos
+def extract_sent_id(feat_data):
+    feat_elem=feat_data.split('|')
+    for feat in feat_elem:
+        if 'senID' in feat:
+            sent_id=feat.split('=')
+            break 
+    return sent_id[1]
 def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
     elems=lin.strip().split('\t')
     contain_noSpace=False
@@ -154,7 +163,8 @@ def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
             isPROPN=False
             if elems[-1]=='isPROPN':
                 isPROPN=True
-            new_pos=convert_pos(old_pos,elems[2].strip(),isPROPN)
+            sent_id=extract_sent_id(elems[6])
+            new_pos=convert_pos(old_pos,elems[2].strip(),isPROPN,elems[1],sent_id)
             lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
             if elems[1] in space_toks and (not contain_noSpace):
                 space_toks.remove(elems[1])
@@ -168,7 +178,8 @@ def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
             isPROPN=False
             if elems[-1]=='isPROPN':
                 isPROPN=True
-            new_pos=convert_pos(old_pos,elems[2].strip(),isPROPN)
+            sent_id=extract_sent_id(elems[6])
+            new_pos=convert_pos(old_pos,elems[2].strip(),isPROPN,elems[1],sent_id)
             lin=elems[1]+'\t'+'\t'.join(elems[2:4])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[6]+old_dadegan_pos+'\t'+'\t'.join(elems[7:])+'\n'
             if elems[1] in space_toks and (not contain_noSpace):
                 space_toks.remove(elems[1])
@@ -202,7 +213,8 @@ def process_line_to_write(lin,tokens_ids,space_toks,tok_dic):
             isPROPN=False
             if elems[-1]=='isPROPN':
                 isPROPN=True
-            new_pos=convert_pos(old_pos,elems[1].strip(),isPROPN)
+            sent_id=extract_sent_id(elems[5])
+            new_pos=convert_pos(old_pos,elems[1].strip(),isPROPN,str(new_token_id),sent_id)
             lin=str(new_token_id)+'\t'+'\t'.join(elems[1:3])+'\t'+new_pos+'\t'+old_cpos+'\t'+elems[5]+old_dadegan_pos+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
             if int(old_tok_id) in space_toks and (not contain_noSpace):
                 space_toks.remove(int(old_tok_id))
@@ -462,7 +474,9 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
             #    polarity_v=detect_verb_polarity(word_form,word_lemma,line)
             #seperating multipart verbs
             if pos=='V' and (' ' in word_form): 
-                verb_parts=word_form.strip().split(' ')  
+                verb_parts=word_form.strip().split(' ')
+                #if seperated_feature['senID']=='23489':
+                #    print(verb_parts)
                 v_first_part=verb_parts[0]
                 v_second_part=verb_parts[1]
                 verb_lemm_parts=word_lemma.split('#')
@@ -648,6 +662,9 @@ def convert_to_universal(old_fileP,new_fileP,file_type):
                         contain_multiWord=True 
                 if len(verb_parts)==3: #normalizing three part verbs including گفته شده است, گفته شده باشد and گفته شده بود
                     v_third_part=verb_parts[2]
+                    v_second_part_form=verb_parts[1].strip()
+                    #if seperated_feature['senID']=='23489':
+                    #    print('v1 {} v2 {} v3 {}. v2_org {}'.format(v_first_part,v_second_part_form,v_third_part,v_second_part))
                     mood=''
                     if v_second_part=='شده' or v_second_part=='نشده':
                         #print('ERROR: second part of multipart verb is not shodeh',v_second_part)

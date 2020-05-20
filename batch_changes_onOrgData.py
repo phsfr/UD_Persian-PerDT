@@ -7,7 +7,7 @@ prev_space=False
 prev_pos=''
 prev_line=''
 sent_i=''
-preps=['از','با','بر','به','تا','در','برای', 'مانند', 'همچون', 'مثل']
+#preps=['از','با','بر','به','تا','در','برای', 'مانند', 'همچون', 'مثل']
 new_nouns=[]
 old_preps=[]
 for line in fr.readlines():
@@ -27,15 +27,22 @@ for line in fr.readlines():
                 senID=senI[1]
         rParent=elems[7]
         new_line=line
-        if rParent=='ADVC' and pos=='PREP' and senID!='28639' and senID!='54138':#word_form=='کنار':
-            if word_form in preps:
-                new_rel='VPRT'
-                new_line='\t'.join(elems[:7])+'\t'+new_rel+'\t'+'\t'.join(elems[8:])+'\n'
-            else:
-                new_nouns.append(word_form)
-                new_pos='N'
-                new_cpos='IANM'
+        if word_form=='میلیون' or word_form=='بیلیون' or word_form=='میلیارد' or word_form=='هزار' :
+            
+        #        new_nouns.append(word_form)
+                new_pos='PRENUM'
+                new_cpos='PRENUM'
                 new_line='\t'.join(elems[:3])+'\t'+new_pos+'\t'+new_cpos+'\t'+'\t'.join(elems[5:])+'\n'
+
+        #if rParent=='ADVC' and pos=='PREP' and senID!='28639' and senID!='54138':#word_form=='کنار':
+        #    if word_form in preps:
+        #        new_rel='VPRT'
+        #        new_line='\t'.join(elems[:7])+'\t'+new_rel+'\t'+'\t'.join(elems[8:])+'\n'
+        #    else:
+        #        new_nouns.append(word_form)
+        #        new_pos='N'
+        #        new_cpos='IANM'
+        #        new_line='\t'.join(elems[:3])+'\t'+new_pos+'\t'+new_cpos+'\t'+'\t'.join(elems[5:])+'\n'
         trainConll.write(new_line)
         trainConll.flush()
         no_f=False
@@ -78,19 +85,26 @@ if line.strip()!='':
                 senID=senI[1]
         rParent=elems[7]
         new_line=line
-        if rParent=='ADVC' and pos=='PREP' and senID!='28639' and senID!='54138':#word_form=='کنار':
-            if word_form in preps:
-                new_rel='VPRT'
-                new_line='\t'.join(elems[:7])+'\t'+new_rel+'\t'+'\t'.join(elems[8:])+'\n'
-            else:
-                new_nouns.append(word_form)
-                new_pos='N'
-                new_cpos='IANM'
+        if word_form=='میلیون' or word_form=='بیلیون' or word_form=='میلیارد' or word_form=='هزار' :
+            
+        #        new_nouns.append(word_form)
+                new_pos='PRENUM'
+                new_cpos='PRENUM'
                 new_line='\t'.join(elems[:3])+'\t'+new_pos+'\t'+new_cpos+'\t'+'\t'.join(elems[5:])+'\n'
+
+        #if rParent=='ADVC' and pos=='PREP' and senID!='28639' and senID!='54138':#word_form=='کنار':
+        #    if word_form in preps:
+        #        new_rel='VPRT'
+        #        new_line='\t'.join(elems[:7])+'\t'+new_rel+'\t'+'\t'.join(elems[8:])+'\n'
+        #    else:
+        #        new_nouns.append(word_form)
+        #        new_pos='N'
+        #        new_cpos='IANM'
+        #        new_line='\t'.join(elems[:3])+'\t'+new_pos+'\t'+new_cpos+'\t'+'\t'.join(elems[5:])+'\n'
         trainConll.write(new_line)
         trainConll.flush()
 new_nouns=set(new_nouns)
-for tok in new_nouns:
-    print(tok)
+#for tok in new_nouns:
+#    print(tok)
 trainConll.close()
 fr.close()

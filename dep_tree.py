@@ -654,17 +654,22 @@ class DependencyTree:
                 elif old_pos=='ADJ':
                     self.labels[idx]='amod'
                     rol_changed=True  
+            #adj_prenums=['تک','نصف','چند','دهمین','آخرین','یکمین','سی‌امین','هفتمین','بیستمین','سومین','پنجمین','شصتمین','نهمین','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
+            #if word in adj_prenums and self.words[idx-1]=='و':
+            #    print(self.words[idx-2]+' '+self.words[idx-1]+' '+word+' in sent='+self.sent_descript)
             if old_role=='NPREMOD':
-                adj_prenums=['تک','نصف','چند','دهمین','آخرین','یکمین','سی‌امین','هفتمین','بیستمین','سومین','پنجمین','شصتمین','نهمین','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
                 dadeg_pos=self.other_features[idx].feat_dict['dadeg_pos']
                 if dadeg_pos=='PREM':
                     self.labels[idx]='det'
-                elif dadeg_pos=='PRENUM' and word not in adj_prenums:
+                #elif dadeg_pos=='PRENUM' and word not in adj_prenums:
+                elif old_pos=='NUM':
                     self.labels[idx]='nummod'
                 else:
-                    if word=='نصف' or word=='تک' or word=='چند':
-                        print('word {} in sent={}'.format(word,self.sent_descript))
+                    #if word=='نصف' or word=='تک' or word=='چند':
+                        #print('word {} in sent={}'.format(word,self.sent_descript))
                     self.labels[idx]='amod'
+                #if dadeg_pos=='POSNUM':
+                #    print('POSTNUM in NPREMOD {}'.format(self.sent_descript))
                 rol_changed=True 
             if old_role=='NPOSTMOD':
                 new_pos=self.tags[idx]
@@ -726,11 +731,52 @@ class DependencyTree:
                 rol_changed=True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
+    def last_step_changes(self):
+        for idx in range(0,len(self.words)):
+            old_role=self.labels[idx]
+            old_head=self.heads[idx]
+            old_pos=self.tags[idx]
+            lemma=self.lemmas[idx]
+            word=self.words[idx]
+            rol_changed=False
+            senID=self.other_features[idx].feat_dict['senID']
+            if (word=='نیز' or word=='هم') and old_pos=='ADV':
+                head_pos=self.tags[self.reverse_index[old_head]]
+                if head_pos!='VERB':
+                    if old_role=='POSDEP':
+                        self.labels[idx]='dep'
+                        rol_changed=True
+                        #print('idx {} in sent {}'.format(idx,senID))
+                    #else:
+                    #    print('not changed idx {} in sent {} with role {}'.format(idx,senID,old_role))
+            if senID=='52778' and word=='متر' and self.index[idx]==16: #for سانتی متر
+                self.labels[idx]='goeswith'
+                self.heads[idx]=15
+                rol_changed=True
+            if senID=='53013' and word=='دل' and self.index[idx]==8: #for بیمار دل
+                self.labels[idx]='goeswith'
+                self.heads[idx]=7
+                rol_changed=True
+            if senID=='36147' and word=='الارض' and self.index[idx]==22: #for مفسد فی الارض
+                self.labels[idx]='goeswith'
+                self.heads[idx]=21
+                rol_changed=True
+            if senID=='51401' and word=='هزار' and self.index[idx]==18: #for هزار هزار
+                self.labels[idx]='compound'
+                self.heads[idx]=17
+                rol_changed=True
+            if senID=='50835' and word=='حال' and self.index[idx]==11: #for سر حال
+                self.labels[idx]='compound'
+                self.heads[idx]=10
+                rol_changed=True
+            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
+                self.other_features[idx].add_feat({'dadeg_h':str(old_head),'dadeg_r':old_role})
     def convert_tree(self):
         self.zero_level_dep_mapping()
         self.first_level_dep_mapping()
         self.second_level_dep_mapping()
         self.third_level_dep_mapping()
+        self.last_step_changes()
                 
 
     @staticmethod
