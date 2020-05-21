@@ -561,7 +561,7 @@ class DependencyTree:
             if old_role=='AJUCL':
                 self.exchange_pars_with_PRD(idx,'mark','advcl')
                 rol_changed=True
-            if old_role=='VCL':
+            if old_role=='VCL' or old_role=='ACL':
                 #if self.other_features[idx].feat_dict['senID']=='23513':
                 #    print('changed {} idx {} old role is {} with head {} & pos {}'.format(self.other_features[idx].has_feat('dadeg_r'),idx,self.labels[idx],old_head,self.tags[self.reverse_index[old_head]]))
                 #if self.tags[self.reverse_index[old_head]]=='VERB':
@@ -845,6 +845,18 @@ if __name__ == '__main__':
             #    role=tree.labels[indx]
             #    word=tree.words[indx]
             #    pos=tree.tags[indx]
+            #   prev_pos=''
+            #    prev_w=''
+            #    next_pos=''
+            #    next_w=''
+            #    if indx>0:
+            #        prev_pos=tree.tags[indx-1]
+            #        prev_w=tree.words[indx-1]
+            #    if indx<len(tree.tags)-1:
+            #        next_pos=tree.tags[indx+1]
+            #        next_w=tree.words[indx+1]
+            #    if pos=='PROPN' and next_pos!='PROPN' and prev_pos!='PROPN':
+            #        print('{} word {} {} in sent={}'.format(prev_w,word,next_w,tree.other_features[indx].feat('senID')))
                 
             #    if tree.tags[indx]=='PSUS' and tree.words[indx] in w_list:
             #        print('idx {} with word {} in sent={}'.format(tree.index[indx],word,tree.other_features[indx].feat('senID')))
