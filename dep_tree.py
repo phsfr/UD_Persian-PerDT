@@ -223,7 +223,82 @@ class DependencyTree:
         for tree in tree_list:
             writer.write(tree.conllu_str().strip()+'\n\n')
         writer.close()
-    
+
+    @staticmethod
+    def load_tree_from_conll_string(tree_str):
+        """
+        Loads a conll string into a DependencyTree object.
+        """
+        lines = tree_str.strip().split('\n')
+        mw_line = {}
+        words = list()
+        tags = list()
+        heads = list()
+        labels = list()
+        lemmas = list()
+        ftags = list()
+        line_idx = {}
+        semiFinal_tags = list()
+        final_tags = list()
+        sent_descript = lines[0]
+        sent_str = lines[1]
+        other_features = list()
+        for i in range(0, len(lines)):
+            spl = lines[i].split('\t')
+            line_idx[i - 2] = spl[0]
+            line_indx = spl[0].split('-')
+            if '-' in spl[0]:
+                mw_line[line_indx[0]] = lines[i].strip('\n').strip()
+                continue
+            words.append(spl[1])  # word form
+            lemmas.append(spl[2])  # lemma
+            tags.append(spl[3])  # pos
+            ftags.append(spl[4])  # cpos
+            heads.append(int(spl[6]))  # dep head
+            other_features.append(spl[5])  # featurs
+            labels.append(spl[7])  # dep_rol
+            semiFinal_tags.append(spl[8])  # semi final tag
+            final_tags.append(spl[9])  # last tag
+
+        tree = DependencyTree(sent_descript, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,
+                              semiFinal_tags, final_tags, mw_line)
+        return tree
+
+    @staticmethod
+    def load_trees_from_conll_file(file_str):
+        """
+        Loads a conll file into a list of DependencyTree object.
+        """
+        tree_list = list()
+        [tree_list.append(DependencyTree.load_tree_from_conll_string(tree_str)) for tree_str in
+         open(file_str, 'r', encoding='utf-8').read().strip().split('\n\n')]  # codecs.
+        return tree_list
+
+    def conll_str(self):
+        """
+        Converts a DependencyTree object to Conll string.
+        """
+        lst = list()
+        for i in range(len(self.words)):
+            word_indx = str(i + 1)
+            # if word_indx in self.mw_line.keys():
+            #    lst.append(self.mw_line[word_indx])
+            feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i], self.ftags[i], str(self.other_features[i]),
+                     str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
+            # ln = str(i+1) +'\t'+self.words[i]+'\t'+self.lemmas[i]+'\t'+self.tags[i]+'\t'+self.ftags[i]+'\t'+str(self.other_features[i])+'\t'+ str(self.heads[i])+'\t'+self.labels[i]+'\t_\t_'
+            lst.append('\t'.join(feats))
+        return '\n'.join(lst)
+
+    @staticmethod
+    def write_to_conll(tree_list, output_path):
+        """
+        Write a list of DependencyTree objects into a conll file.
+        """
+        writer = open(output_path, 'w', encoding='utf-8')
+        for tree in tree_list:
+            writer.write(tree.conll_str().strip() + '\n\n')
+        writer.close()
+
     def convert_pos(self, universal_tree, ner_tree):
         """
         self is the original tree, the two others are suggestions from
