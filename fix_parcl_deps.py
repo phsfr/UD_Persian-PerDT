@@ -30,8 +30,8 @@ if __name__ == '__main__':
                     if tree.heads[dep] > idx + 1:
                         if tree.labels[dep] not in {"PREDEP", "PARCL", "MOS", "NVE", "VPP", "PUNC", "OBJ", "NPP",
                                                     "VCONJ"}:
-                            if tree.labels[dep] == "SBJ":
-                                # Change the head for SBJ
+                            if tree.labels[dep] in {"SBJ", "AJUCL"}:
+                                # Change the head for SBJ/AJUCL
                                 tree.heads[dep] = idx + 1
                                 include_tree = True
                             labels.add(tree.labels[dep])
