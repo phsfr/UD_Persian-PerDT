@@ -1,5 +1,9 @@
-from collections import defaultdict
-from dep_tree import Features, DependencyTree
+"""
+* Fix "wa"s that are tagged as SUBR
+* Change wrong dependencies in PARCL.
+"""
+
+from dep_tree import DependencyTree
 
 if __name__ == '__main__':
     input_files = ['Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll',
@@ -13,6 +17,10 @@ if __name__ == '__main__':
         parcl_trees = []
         tree_list = DependencyTree.load_trees_from_conll_file(inp_f)
         for i, tree in enumerate(tree_list):
+            for w, word in enumerate(tree.words):
+                if word == "و" and tree.tags[w] == "SUBR":
+                    tree.tags[w] = "CONJ"
+                    tree.ftags[w] = "CONJ"
             if "PARCL" in tree.labels:
                 parcl_trees.append(tree)
 
@@ -31,5 +39,4 @@ if __name__ == '__main__':
                             if tree.labels[dep] in {"SBJ", "AJUCL", "ADV"}:
                                 # Change the head for SBJ/AJUCL
                                 tree.heads[dep] = idx + 1
-
         DependencyTree.write_to_conll(tree_list, output_files[f_idx])
