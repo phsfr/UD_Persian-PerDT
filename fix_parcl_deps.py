@@ -17,8 +17,6 @@ if __name__ == '__main__':
                 parcl_trees.append(tree)
 
         print("Visiting parcl trees")
-        labels = set()
-        to_visit_trees = []
         for tree in parcl_trees:
             include_tree = False
             parcl_idx = [i for i, label in enumerate(tree.labels) if label == "PARCL"]
@@ -30,14 +28,8 @@ if __name__ == '__main__':
                     if tree.heads[dep] > idx + 1:
                         if tree.labels[dep] not in {"PREDEP", "PARCL", "MOS", "NVE", "VPP", "PUNC", "OBJ", "NPP",
                                                     "VCONJ"}:
-                            if tree.labels[dep] in {"SBJ", "AJUCL"}:
+                            if tree.labels[dep] in {"SBJ", "AJUCL", "ADV"}:
                                 # Change the head for SBJ/AJUCL
                                 tree.heads[dep] = idx + 1
-                                include_tree = True
-                            labels.add(tree.labels[dep])
-            if include_tree:
-                to_visit_trees.append(tree)
 
         DependencyTree.write_to_conll(tree_list, output_files[f_idx])
-        print(len(parcl_trees), len(to_visit_trees))
-        print(labels)
