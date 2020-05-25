@@ -140,7 +140,6 @@ def convert_pos(old_pos, word_form, isPROPN, tok_id, sent_id):
             new_pos = 'X'
     return new_pos
 
-
 def extract_sent_id(feat_data):
     feat_elem = feat_data.split('|')
     for feat in feat_elem:
@@ -541,6 +540,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 v_first_part = verb_parts[0]
                 v_second_part = verb_parts[1]
                 verb_lemm_parts = word_lemma.split('#')
+
                 if len(verb_parts) == 2:  # normalizing two part verbs
                     v_first_part_form = v_first_part.strip()
                     v_second_part_form = v_second_part.strip()
@@ -587,7 +587,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             aux_number = tobe_base[v_second_part][0]
                             aux_count = tobe_base[v_second_part][1]
                             tense = 'Past'
-                            fpos = 'V_PA'
+                            fpos = 'V_PASS'
                     elif v_second_part in list(
                             become_base.keys()):  # verb is Subjunctive Preterite (tma=GEL) like گفته باشم. in this form, negation is conjugated with PP part: نگفته باشم
                         aux_form = True
@@ -626,7 +626,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         aux_number = shod_base[v_second_part][0]
                         aux_count = shod_base[v_second_part][1]
                         tense = 'Past'
-                        fpos = 'V_PA'
+                        fpos = 'V_PASS'
                         aux_lemma = 'کرد#کن'
                         aux_dep_rol += ':pass'  # ???
                     elif v_second_part in list(shavad_base.keys()) or (
@@ -693,10 +693,10 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                                               1] + polarity + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux' + '\t' + '_' + '\t' + '_' + '\n'
                         eddited_line = str(
-                            token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PA' + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PASS' + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         if noSpace:
                             eddited_line = str(
-                                token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PA' + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
+                                token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PASS' + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
                                 elems[8:-1]) + '\t' + 'spaceAfter=NO' + '\n'
                         sent_lines.append(added_line_verb)
                         sent_lines.append(eddited_line)
@@ -766,8 +766,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         sent_lines.append(eddited_line)
                         line_added = True
                         contain_multiWord = True
-                if len(
-                        verb_parts) == 3:  # normalizing three part verbs including گفته شده است, گفته شده باشد and گفته شده بود
+                if len(verb_parts) == 3:  # normalizing three part verbs including گفته شده است, گفته شده باشد and گفته شده بود
                     v_third_part = verb_parts[2]
                     v_second_part_form = verb_parts[1].strip()
                     # if seperated_feature['senID']=='23489':
@@ -794,7 +793,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             aux_number = tobe_base[v_third_part][0]
                             aux_count = tobe_base[v_third_part][1]
                             tense = 'Past'
-                            fpos = 'V_PA'
+                            fpos = 'V_PASS'
                             aux_lemma = 'بود#باش'
                         num_concate_prons = num_concate_prons + 2  # since two aux parts are added
                         v_p_one_id = tokens_ids[token_id] + 1
@@ -842,7 +841,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         if noSpace:
                             spaceAft = 'spaceAfter=NO'
                         added_line_verb_two = 'X' + '\t' + str(
-                            v_p_two_id) + '\t' + v_third_part + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'V_PA' + '\t' + 'number=SING' + '|person=3' + polarity + '|tense=Past' + old_dadegan_info_aux + '\t' + str(
+                            v_p_two_id) + '\t' + v_third_part + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'V_PASS' + '\t' + 'number=SING' + '|person=3' + polarity + '|tense=Past' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + spaceAft + '\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb_one)
@@ -902,7 +901,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
         for lin in sent_lines:
             lin = process_line_to_write(lin, tokens_ids, space_after_toks, tok_dict)
             UD_file.write(lin)
-            UD_file.flush()
+
     fr.close()
     UD_file.close()
 
