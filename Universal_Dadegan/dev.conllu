@@ -40,7 +40,7 @@
 38-39	ماتمش	_	_	_	_	_	_	_	_
 38	ماتم	ماتم	NOUN	IANM	attachment=ISO|number=SING|senID=23472|dadeg_pos=N	37	NEZ	_	_
 39	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=23472|dadeg_pos=PR	38	MOZ	_	_
-40	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=23472|dadeg_pos=V	27	PRD	_	spaceAfter=NO
+40	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23472|dadeg_pos=V	27	PRD	_	spaceAfter=NO
 41	.	.	PUNCT	PUNC	attachment=ISO|senID=23472|dadeg_pos=PUNC	26	PUNC	_	_
 
 # sent_id = dev-s2
@@ -346,7 +346,7 @@
 24	این	این	PREM	DEMAJ	attachment=ISO|senID=23590|dadeg_pos=PREM	25	NPREMOD	_	_
 25	مسیر	مسیر	NOUN	IANM	attachment=ISO|number=SING|senID=23590|dadeg_pos=N	23	POSDEP	_	_
 26	جابه‌جا	جابه‌جا	ADJ	AJP	attachment=ISO|senID=23590|dadeg_pos=ADJ	27	NVE	_	_
-27	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=23590|dadeg_pos=V	16	VCL	_	_
+27	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=23590|dadeg_pos=V	16	VCL	_	_
 28	که	که	SCONJ	SUBR	attachment=ISO|senID=23590|dadeg_pos=SUBR	27	AJUCL	_	_
 29	خوشبختانه	خوشبختانه	ADV	SADV	attachment=ISO|senID=23590|dadeg_pos=ADV	38	ADV	_	_
 30	با	با	ADP	PREP	attachment=ISO|senID=23590|dadeg_pos=PREP	38	ADV	_	_
@@ -357,7 +357,7 @@
 35	این	این	PREM	DEMAJ	attachment=ISO|senID=23590|dadeg_pos=PREM	36	NPREMOD	_	_
 36	مسافرت‌ها	مسافرت	NOUN	IANM	attachment=ISO|number=PLUR|senID=23590|dadeg_pos=N	38	SBJ	_	_
 37	برگزار	برگزار	ADJ	AJP	attachment=ISO|senID=23590|dadeg_pos=ADJ	38	NVE	_	_
-38	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=23590|dadeg_pos=V	28	PRD	_	spaceAfter=NO
+38	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23590|dadeg_pos=V	28	PRD	_	spaceAfter=NO
 39	.	.	PUNCT	PUNC	attachment=ISO|senID=23590|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s12
@@ -445,7 +445,7 @@
 49	جدول	جدول	NOUN	IANM	attachment=ISO|number=SING|senID=23612|dadeg_pos=N	48	POSDEP	_	_
 50	رده‌بندی	رده‌بندی	NOUN	IANM	attachment=ISO|number=SING|senID=23612|dadeg_pos=N	49	MOZ	_	_
 51	جابه‌جا	جابه‌جا	ADJ	AJP	attachment=ISO|senID=23612|dadeg_pos=ADJ	52	NVE	_	_
-52	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=23612|dadeg_pos=V	59	PARCL	_	_
+52	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=23612|dadeg_pos=V	59	PARCL	_	_
 53	و	و	CCONJ	CONJ	attachment=ISO|senID=23612|dadeg_pos=CONJ	52	PUNC	_	_
 54	از	از	ADP	PREP	attachment=ISO|senID=23612|dadeg_pos=PREP	59	VPP	_	_
 55	خطر	خطر	NOUN	IANM	attachment=ISO|number=SING|senID=23612|dadeg_pos=N	54	POSDEP	_	_
@@ -645,7 +645,7 @@
 41	به	به	ADP	PREP	attachment=ISO|senID=23666|dadeg_pos=PREP	40	NADV	_	_
 42	ویژه	ویژه	NOUN	IANM	attachment=ISO|number=SING|senID=23666|dadeg_pos=N	41	POSDEP	_	_
 43	دانشجویان	دانشجو	NOUN	ANM	attachment=ISO|number=PLUR|senID=23666|dadeg_pos=N	41	POSDEP	_	_
-44	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=23666|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+44	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23666|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 45	.	.	PUNCT	PUNC	attachment=ISO|senID=23666|dadeg_pos=PUNC	44	PUNC	_	_
 
 # sent_id = dev-s19
@@ -685,7 +685,7 @@
 9	مطالعهٔ	مطالعه	NOUN	IANM	attachment=ISO|number=SING|senID=23687|dadeg_pos=N	8	POSDEP	_	_
 10	زیاد	زیاد	ADJ	AJP	attachment=ISO|senID=23687|dadeg_pos=ADJ	7	NPOSTMOD	_	_
 11	نابینا	نابینا	ADJ	AJP	attachment=ISO|senID=23687|dadeg_pos=ADJ	12	MOS	_	_
-12	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=23687|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23687|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=23687|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s21
@@ -849,7 +849,7 @@
 38	حج	حج	NOUN	IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	37	MOZ	_	_
 39	عمره	عمره	ADJ	AJP	attachment=ISO|senID=23721|dadeg_pos=ADJ	38	NPOSTMOD	_	_
 40	اهدا	اهدا	NOUN	IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	41	NVE	_	_
-41	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=23721|dadeg_pos=V	0	ROOT	_	_
+41	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=23721|dadeg_pos=V	0	ROOT	_	_
 42	که	که	SCONJ	SUBR	attachment=ISO|senID=23721|dadeg_pos=SUBR	41	AJUCL	_	_
 43	امسال	امسال	NOUN	IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	56	ADV	_	_
 44	نیز	نیز	ADV	SADV	attachment=ISO|senID=23721|dadeg_pos=ADV	43	POSDEP	_	_
@@ -1313,7 +1313,7 @@
 23	کاربردی	کاربردی	ADJ	AJP	attachment=ISO|senID=23897|dadeg_pos=ADJ	22	NPOSTMOD	_	_
 24	بافت‌ها	بافت	NOUN	ANM	attachment=ISO|number=PLUR|senID=23897|dadeg_pos=N	22	MOZ	_	_
 25	موفق	موفق	ADJ	AJP	attachment=ISO|senID=23897|dadeg_pos=ADJ	26	MOS	_	_
-26	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=23897|dadeg_pos=V	0	ROOT	_	_
+26	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=23897|dadeg_pos=V	0	ROOT	_	_
 27	از	از	ADP	PREP	attachment=ISO|senID=23897|dadeg_pos=PREP	57	NPP	_	_
 28	حرکات	حرکت	NOUN	IANM	attachment=ISO|number=PLUR|senID=23897|dadeg_pos=N	27	POSDEP	_	_
 29	بطن	بطن	NOUN	IANM	attachment=ISO|number=SING|senID=23897|dadeg_pos=N	28	MOZ	_	_
@@ -1440,7 +1440,7 @@
 21	به	به	ADP	PREP	attachment=ISO|senID=23932|dadeg_pos=PREP	23	NPP	_	_
 22	متقاضیان	متقاضی	NOUN	IANM	attachment=ISO|number=PLUR|senID=23932|dadeg_pos=N	21	POSDEP	_	_
 23	واگذار	واگذار	NOUN	IANM	attachment=ISO|number=SING|senID=23932|dadeg_pos=N	24	NVE	_	_
-24	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=23932|dadeg_pos=V	0	ROOT	_	_
+24	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23932|dadeg_pos=V	0	ROOT	_	_
 25	و	و	CCONJ	CONJ	attachment=ISO|senID=23932|dadeg_pos=CONJ	24	VCONJ	_	_
 26	وجه	وجه	NOUN	IANM	attachment=ISO|number=SING|senID=23932|dadeg_pos=N	36	SBJ	_	_
 27	آن	آن	PRON	DEMON	attachment=ISO|number=SING|senID=23932|dadeg_pos=PR	26	MOZ	_	_
@@ -1521,7 +1521,7 @@
 14	معجونی	معجونی	PROPN	ANM	attachment=ISO|number=SING|senID=23970|dadeg_pos=N	13	MOZ	_	_
 15	کارگردان	کارگردان	NOUN	ANM	attachment=ISO|number=SING|senID=23970|dadeg_pos=N	13	APP	_	_
 16	نمایش	نمایش	NOUN	IANM	attachment=ISO|number=SING|senID=23970|dadeg_pos=N	15	MOZ	_	_
-17	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=23970|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=23970|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=23970|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s44
@@ -1746,7 +1746,7 @@
 79	می‌مانند	ماند#مان	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=24027|dadeg_pos=V	69	PRD	_	spaceAfter=NO
 80	،	،	PUNCT	PUNC	attachment=ISO|senID=24027|dadeg_pos=PUNC	79	PUNC	_	_
 81	منظور	منظور	NOUN	IANM	attachment=ISO|number=SING|senID=24027|dadeg_pos=N	82	NVE	_	_
-82	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=24027|dadeg_pos=V	14	PRD	_	spaceAfter=NO
+82	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=24027|dadeg_pos=V	14	PRD	_	spaceAfter=NO
 83	.	.	PUNCT	PUNC	attachment=ISO|senID=24027|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s49
@@ -1900,7 +1900,7 @@
 5	این	این	PREM	DEMAJ	attachment=ISO|senID=24093|dadeg_pos=PREM	6	NPREMOD	_	_
 6	بنیاد	بنیاد	NOUN	IANM	attachment=ISO|number=SING|senID=24093|dadeg_pos=N	8	SBJ	_	_
 7	متعهد	متعهد	ADJ	AJP	attachment=ISO|senID=24093|dadeg_pos=ADJ	8	MOS	_	_
-8	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=24093|dadeg_pos=V	0	ROOT	_	_
+8	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24093|dadeg_pos=V	0	ROOT	_	_
 9	اقدامات	اقدام	NOUN	IANM	attachment=ISO|number=PLUR|senID=24093|dadeg_pos=N	11	PREDEP	_	_
 10	صهیونیستها	صهیونیست	NOUN	ANM	attachment=ISO|number=PLUR|senID=24093|dadeg_pos=N	9	MOZ	_	_
 11	را	را	ADP	POSTP	attachment=ISO|senID=24093|dadeg_pos=POSTP	18	OBJ	_	_
@@ -1982,7 +1982,7 @@
 23	به	به	ADP	PREP	attachment=ISO|senID=24131|dadeg_pos=PREP	25	NPP	_	_
 24	نوآوری	نوآوری	NOUN	IANM	attachment=ISO|number=SING|senID=24131|dadeg_pos=N	23	POSDEP	_	_
 25	ختم	ختم	NOUN	IANM	attachment=ISO|number=SING|senID=24131|dadeg_pos=N	26	NVE	_	_
-26	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=24131|dadeg_pos=V	21	PRD	_	spaceAfter=NO
+26	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=24131|dadeg_pos=V	21	PRD	_	spaceAfter=NO
 27	.	.	PUNCT	PUNC	attachment=ISO|senID=24131|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s58
@@ -2573,7 +2573,7 @@
 11	در	در	ADP	PREP	attachment=ISO|senID=24358|dadeg_pos=PREP	14	ADV	_	_
 12	بوشهر	بوشهر	PROPN	IANM	attachment=ISO|number=SING|senID=24358|dadeg_pos=N	11	POSDEP	_	_
 13	برگزار	برگزار	ADJ	AJP	attachment=ISO|senID=24358|dadeg_pos=ADJ	14	NVE	_	_
-14	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=24358|dadeg_pos=V	6	PRD	_	_
+14	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24358|dadeg_pos=V	6	PRD	_	_
 15	در	در	ADP	PREP	attachment=ISO|senID=24358|dadeg_pos=PREP	28	ADV	_	_
 16	ردهٔ	رده	NOUN	IANM	attachment=ISO|number=SING|senID=24358|dadeg_pos=N	15	POSDEP	_	_
 17	انفرادی	انفرادی	ADJ	AJP	attachment=ISO|senID=24358|dadeg_pos=ADJ	16	NPOSTMOD	_	_
@@ -2658,7 +2658,7 @@
 7	سمت	سمت	NOUN	IANM	attachment=ISO|number=SING|senID=24378|dadeg_pos=N	6	POSDEP	_	_
 8	خود	خود	PRON	CREFX	attachment=ISO|senID=24378|dadeg_pos=PR	7	MOZ	_	_
 9	ابقا	ابقا	NOUN	IANM	attachment=ISO|number=SING|senID=24378|dadeg_pos=N	10	NVE	_	_
-10	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=24378|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24378|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=24378|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s80
@@ -2725,7 +2725,7 @@
 29	هجمه‌ها	هجمه	NOUN	IANM	attachment=ISO|number=PLUR|senID=24400|dadeg_pos=N	27	POSDEP	_	_
 30	در	در	ADP	PREP	attachment=ISO|senID=24400|dadeg_pos=PREP	32	ADV	_	_
 31	کشور	کشور	NOUN	IANM	attachment=ISO|number=SING|senID=24400|dadeg_pos=N	30	POSDEP	_	_
-32	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=24400|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+32	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24400|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 33	.	.	PUNCT	PUNC	attachment=ISO|senID=24400|dadeg_pos=PUNC	32	PUNC	_	_
 
 # sent_id = dev-s82
@@ -2741,7 +2741,7 @@
 9	اولین	اولین	ADJ	PRENUM	attachment=ISO|senID=24411|dadeg_pos=PRENUM	10	NPREMOD	_	_
 10	بار	بار	NOUN	IANM	attachment=ISO|number=SING|senID=24411|dadeg_pos=N	8	POSDEP	_	_
 11	چاپ	چاپ	NOUN	IANM	attachment=ISO|number=SING|senID=24411|dadeg_pos=N	12	NVE	_	_
-12	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=24411|dadeg_pos=V	2	PRD	_	spaceAfter=NO
+12	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24411|dadeg_pos=V	2	PRD	_	spaceAfter=NO
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=24411|dadeg_pos=PUNC	12	PUNC	_	_
 14	بعضی	بعضی	NOUN	IANM	attachment=ISO|number=PLUR|senID=24411|dadeg_pos=N	27	SBJ	_	_
 15	از	از	ADP	PREP	attachment=ISO|senID=24411|dadeg_pos=PREP	14	NPP	_	_
@@ -2791,7 +2791,7 @@
 59	جایگاه	جایگاه	NOUN	IANM	attachment=ISO|number=SING|senID=24411|dadeg_pos=N	58	POSDEP	_	_
 60	خود	خود	PRON	CREFX	person=3|attachment=ISO|number=SING|senID=24411|dadeg_pos=PR	59	MOZ	_	_
 61	بررسی	بررسی	NOUN	IANM	attachment=ISO|number=SING|senID=24411|dadeg_pos=N	62	NVE	_	_
-62	شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=24411|dadeg_pos=V	57	PRD	_	spaceAfter=NO
+62	شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=24411|dadeg_pos=V	57	PRD	_	spaceAfter=NO
 63	.	.	PUNCT	PUNC	attachment=ISO|senID=24411|dadeg_pos=PUNC	42	PUNC	_	_
 
 # sent_id = dev-s83
@@ -3061,7 +3061,7 @@
 # text = کمی عصبی شدم.
 1	کمی	کمی	ADV	SADV	attachment=ISO|senID=25859|dadeg_pos=ADV	3	ADV	_	_
 2	عصبی	عصبی	ADJ	AJP	attachment=ISO|senID=25859|dadeg_pos=ADJ	3	MOS	_	_
-3	شدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GS|senID=25859|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+3	شدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=25859|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 4	.	.	PUNCT	PUNC	attachment=ISO|senID=25859|dadeg_pos=PUNC	3	PUNC	_	_
 
 # sent_id = dev-s95
@@ -3128,7 +3128,7 @@
 7	مثل	مثل	ADP	PREP	attachment=ISO|senID=25925|dadeg_pos=PREP	6	NPOSTMOD	_	_
 8	تو	تو	PRON	SEPER	person=2|attachment=ISO|number=SING|senID=25925|dadeg_pos=PR	7	POSDEP	_	_
 9	خسته	خسته	ADJ	AJP	attachment=ISO|senID=25925|dadeg_pos=ADJ	10	MOS	_	_
-10	بشوم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=HEL|senID=25925|dadeg_pos=V	4	VCL	_	spaceAfter=NO
+10	بشوم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=25925|dadeg_pos=V	4	VCL	_	spaceAfter=NO
 11	؟	؟	PUNCT	PUNC	attachment=ISO|senID=25925|dadeg_pos=PUNC	4	PUNC	_	_
 
 # sent_id = dev-s100
@@ -3165,7 +3165,7 @@
 15	شماره	شماره	NOUN	IANM	attachment=ISO|number=SING|senID=25953|dadeg_pos=N	13	MOZ	_	_
 16	هم	هم	ADV	SADV	attachment=ISO|senID=25953|dadeg_pos=ADV	13	POSDEP	_	_
 17	آماده	آماده	ADJ	AJP	attachment=ISO|senID=25953|dadeg_pos=ADJ	18	MOS	_	_
-18	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=25953|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
+18	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=25953|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=25953|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s102
@@ -3305,7 +3305,7 @@
 16	به	به	ADP	PREP	attachment=ISO|senID=28554|dadeg_pos=PREP	18	NPP	_	_
 17	واژه‌ها	واژه	NOUN	IANM	attachment=ISO|number=PLUR|senID=28554|dadeg_pos=N	16	POSDEP	_	_
 18	تقسیم‌بندی	تقسیم‌بندی	NOUN	IANM	attachment=ISO|number=SING|senID=28554|dadeg_pos=N	19	NVE	_	_
-19	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=28554|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=28554|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=28554|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s109
@@ -3484,7 +3484,7 @@
 18	پرواز	پرواز	NOUN	IANM	attachment=ISO|number=SING|senID=28651|dadeg_pos=N	15	POSDEP	_	_
 19	باید	بایست#باید	VERB	MODL	attachment=ISO|tma=H|senID=28651|dadeg_pos=V	10	PRD	_	_
 20	عوض	عوض	NOUN	IANM	attachment=ISO|number=SING|senID=28651|dadeg_pos=N	21	NVE	_	_
-21	بشود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=28651|dadeg_pos=V	19	VCL	_	spaceAfter=NO
+21	بشود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=28651|dadeg_pos=V	19	VCL	_	spaceAfter=NO
 22	.	.	PUNCT	PUNC	attachment=ISO|senID=28651|dadeg_pos=PUNC	4	PUNC	_	_
 
 # sent_id = dev-s117
@@ -3578,7 +3578,7 @@
 17	به	به	ADP	PREP	attachment=ISO|senID=28694|dadeg_pos=PREP	19	AJPP	_	_
 18	برنامه	برنامه	NOUN	IANM	attachment=ISO|number=SING|senID=28694|dadeg_pos=N	17	POSDEP	_	_
 19	اضافه	اضافه	ADJ	AJP	attachment=ISO|senID=28694|dadeg_pos=ADJ	20	MOS	_	_
-20	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=28694|dadeg_pos=V	14	POSDEP	_	spaceAfter=NO
+20	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=28694|dadeg_pos=V	14	POSDEP	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=28694|dadeg_pos=PUNC	1	PUNC	_	_
 
 # sent_id = dev-s121
@@ -3703,7 +3703,7 @@
 2	30	30	NUM	PRENUM	attachment=ISO|senID=43416|dadeg_pos=PRENUM	3	NPREMOD	_	_
 3	ساله‌ها	ساله	NOUN	ANM	attachment=ISO|number=PLUR|senID=43416|dadeg_pos=N	1	MOZ	_	_
 4	تعویض	تعویض	NOUN	IANM	attachment=ISO|number=SING|senID=43416|dadeg_pos=N	5	NVE	_	_
-5	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=43416|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+5	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=43416|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 6	.	.	PUNCT	PUNC	attachment=ISO|senID=43416|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s130
@@ -3885,7 +3885,7 @@
 4	دوران	دوران	NOUN	IANM	attachment=ISO|number=SING|senID=43556|dadeg_pos=N	3	POSDEP	_	_
 5	بلوغ	بلوغ	NOUN	IANM	attachment=ISO|number=SING|senID=43556|dadeg_pos=N	4	MOZ	_	_
 6	قادر	قادر	ADJ	AJP	attachment=ISO|senID=43556|dadeg_pos=ADJ	7	MOS	_	_
-7	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=43556|dadeg_pos=V	0	ROOT	_	_
+7	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=43556|dadeg_pos=V	0	ROOT	_	_
 8	که	که	SCONJ	SUBR	attachment=ISO|senID=43556|dadeg_pos=SUBR	6	ACL	_	_
 9	میان	میان	ADP	PREP	attachment=ISO|senID=43556|dadeg_pos=PREP	19	NPP	_	_
 10	تجربه‌های	تجربه	NOUN	IANM	attachment=ISO|number=PLUR|senID=43556|dadeg_pos=N	9	POSDEP	_	_
@@ -4200,7 +4200,7 @@
 4	شهرداری	شهرداری	PROPN	IANM	attachment=ISO|number=SING|senID=43736|dadeg_pos=N	1	MOZ	_	_
 5	تهران	تهران	PROPN	IANM	attachment=ISO|number=SING|senID=43736|dadeg_pos=N	4	MOZ	_	_
 6	تنظیم	تنظیم	NOUN	IANM	attachment=ISO|number=SING|senID=43736|dadeg_pos=N	7	NVE	_	_
-7	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=43736|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=43736|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=43736|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s162
@@ -4319,7 +4319,7 @@
 6	یک	یک	NUM	PRENUM	attachment=ISO|senID=43806|dadeg_pos=PRENUM	7	NPREMOD	_	_
 7	انگلیسی	انگلیسی	NOUN	ANM	attachment=ISO|number=SING|senID=43806|dadeg_pos=N	4	MOZ	_	_
 8	جاسازی	جاسازی	NOUN	IANM	attachment=ISO|number=SING|senID=43806|dadeg_pos=N	9	NVE	_	_
-9	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=43806|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=43806|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=43806|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s169
@@ -4425,7 +4425,7 @@
 2	در	در	ADP	PREP	attachment=ISO|senID=43876|dadeg_pos=PREP	5	ADV	_	_
 3	مریخ	مریخ	PROPN	IANM	attachment=ISO|number=SING|senID=43876|dadeg_pos=N	2	POSDEP	_	_
 4	آشکارسازی	آشکارسازی	NOUN	IANM	attachment=ISO|number=SING|senID=43876|dadeg_pos=N	5	NVE	_	_
-5	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=43876|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+5	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=43876|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 6	.	.	PUNCT	PUNC	attachment=ISO|senID=43876|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s176
@@ -4493,7 +4493,7 @@
 1	صدا	صدا	NOUN	IANM	attachment=ISO|number=SING|senID=43916|dadeg_pos=N	4	SBJ	_	_
 2	یش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=43916|dadeg_pos=PR	1	MOZ	_	_
 3	انعکاس	انعکاس	NOUN	IANM	attachment=ISO|number=SING|senID=43916|dadeg_pos=N	4	NVE	_	_
-4	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=43916|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+4	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=43916|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 5	.	.	PUNCT	PUNC	attachment=ISO|senID=43916|dadeg_pos=PUNC	4	PUNC	_	_
 
 # sent_id = dev-s180
@@ -4504,7 +4504,7 @@
 4	حالا	حالا	NOUN	IANM	attachment=ISO|number=SING|senID=43926|dadeg_pos=N	3	POSDEP	_	_
 5	سوار	سوار	ADJ	AJP	attachment=ISO|senID=43926|dadeg_pos=ADJ	7	MOS	_	_
 6	کشتی	کشتی	NOUN	IANM	attachment=ISO|number=SING|senID=43926|dadeg_pos=N	5	NEZ	_	_
-7	شده‌ام	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GN|senID=43926|dadeg_pos=V	0	ROOT	_	_
+7	شده‌ام	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GN|senID=43926|dadeg_pos=V	0	ROOT	_	_
 8	و	و	CCONJ	CONJ	attachment=ISO|senID=43926|dadeg_pos=CONJ	7	VCONJ	_	_
 9	نه	نه	ADV	SADV	attachment=ISO|senID=43926|dadeg_pos=ADV	12	ADV	_	_
 10	زیاد	زیاد	ADJ	AJP	attachment=ISO|senID=43926|dadeg_pos=ADJ	12	ADV	_	_
@@ -4798,7 +4798,7 @@
 9	نمی‌توانم	توانست#توان	VERB	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=26008|polarity=NEG|dadeg_pos=V	5	PRD	_	_
 10	مزاحم	مزاحم	ADJ	AJP	attachment=ISO|senID=26008|dadeg_pos=ADJ	12	MOS	_	_
 11	اوقاتتان	وقت	NOUN	IANM	attachment=ISO|number=PLUR|senID=26008|dadeg_pos=N	10	NEZ	_	_
-12	شوم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=HEL|senID=26008|dadeg_pos=V	9	VCL	_	spaceAfter=NO
+12	شوم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=26008|dadeg_pos=V	9	VCL	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=26008|dadeg_pos=PUNC	1	PUNC	_	_
 
 # sent_id = dev-s194
@@ -5235,14 +5235,14 @@
 4	منظور	منظور	NOUN	IANM	attachment=ISO|number=SING|senID=26255|dadeg_pos=N	3	NEZ	_	_
 5	متن	متن	NOUN	IANM	attachment=ISO|number=SING|senID=26255|dadeg_pos=N	4	MOZ	_	_
 6	آگهی	آگهی	NOUN	IANM	attachment=ISO|number=SING|senID=26255|dadeg_pos=N	5	MOZ	_	_
-7	نشدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GS|senID=26255|polarity=NEG|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	نشدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=26255|polarity=NEG|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=26255|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s215
 # text = بی‌درنگ جاکن شدم.
 1	بی‌درنگ	بی‌درنگ	ADJ	AJP	attachment=ISO|senID=26265|dadeg_pos=ADJ	3	ADV	_	_
 2	جاکن	جاکن	ADJ	AJP	attachment=ISO|senID=26265|dadeg_pos=ADJ	3	MOS	_	_
-3	شدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GS|senID=26265|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+3	شدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=26265|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 4	.	.	PUNCT	PUNC	attachment=ISO|senID=26265|dadeg_pos=PUNC	3	PUNC	_	_
 
 # sent_id = dev-s216
@@ -5624,7 +5624,7 @@
 6	انتخاب	انتخاب	NOUN	IANM	attachment=ISO|number=SING|senID=26484|dadeg_pos=N	5	POSDEP	_	_
 7	شخصی	شخصی	ADJ	AJP	attachment=ISO|senID=26484|dadeg_pos=ADJ	6	NPOSTMOD	_	_
 8	واقع	واقع	ADJ	AJP	attachment=ISO|senID=26484|dadeg_pos=ADJ	9	NVE	_	_
-9	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=26484|dadeg_pos=V	4	PRD	_	spaceAfter=NO
+9	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=26484|dadeg_pos=V	4	PRD	_	spaceAfter=NO
 10	،	،	PUNCT	PUNC	attachment=ISO|senID=26484|dadeg_pos=PUNC	9	PUNC	_	_
 11	گاه	گاه	NOUN	IANM	attachment=ISO|number=SING|senID=26484|dadeg_pos=N	16	ADV	_	_
 12	با	با	ADP	PREP	attachment=ISO|senID=26484|dadeg_pos=PREP	15	AJPP	_	_
@@ -5960,7 +5960,7 @@
 12	پایان	پایان	NOUN	IANM	attachment=ISO|number=SING|senID=26652|dadeg_pos=N	11	POSDEP	_	_
 13	خود	خود	PRON	CREFX	attachment=ISO|senID=26652|dadeg_pos=PR	12	MOZ	_	_
 14	نزدیک	نزدیک	ADJ	AJP	attachment=ISO|senID=26652|dadeg_pos=ADJ	15	MOS	_	_
-15	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=26652|dadeg_pos=V	9	PRD	_	spaceAfter=NO
+15	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=26652|dadeg_pos=V	9	PRD	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=26652|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s249
@@ -6100,7 +6100,7 @@
 27	راهی	راهی	ADJ	AJP	attachment=ISO|senID=26697|dadeg_pos=ADJ	30	MOS	_	_
 28	دیار	دیار	NOUN	IANM	attachment=ISO|number=SING|senID=26697|dadeg_pos=N	27	NEZ	_	_
 29	فراموشی	فراموشی	NOUN	IANM	attachment=ISO|number=SING|senID=26697|dadeg_pos=N	28	MOZ	_	_
-30	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=26697|dadeg_pos=V	15	POSDEP	_	spaceAfter=NO
+30	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=26697|dadeg_pos=V	15	POSDEP	_	spaceAfter=NO
 31	،	،	PUNCT	PUNC	attachment=ISO|senID=26697|dadeg_pos=PUNC	30	PUNC	_	_
 32	اما	اما	CCONJ	CONJ	attachment=ISO|senID=26697|dadeg_pos=CONJ	2	VCONJ	_	_
 33	هر	هر	PREM	AMBAJ	attachment=ISO|senID=26697|dadeg_pos=PREM	34	NPREMOD	_	_
@@ -6194,7 +6194,7 @@
 16	در	در	ADP	PREP	attachment=ISO|senID=26739|dadeg_pos=PREP	19	ADV	_	_
 17	فلسطین	فلسطین	PROPN	IANM	attachment=ISO|number=SING|senID=26739|dadeg_pos=N	16	POSDEP	_	_
 18	آغاز	آغاز	NOUN	IANM	attachment=ISO|number=SING|senID=26739|dadeg_pos=N	19	NVE	_	_
-19	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=26739|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=26739|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=26739|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s257
@@ -6224,7 +6224,7 @@
 5	دادی	داد#ده	VERB	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=26760|dadeg_pos=V	0	ROOT	_	_
 6	تا	تا	SCONJ	SUBR	attachment=ISO|senID=26760|dadeg_pos=SUBR	5	AJUCL	_	_
 7	پروانه	پروانه	NOUN	ANM	attachment=ISO|number=SING|senID=26760|dadeg_pos=N	8	MOS	_	_
-8	شوم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=HEL|senID=26760|dadeg_pos=V	6	PRD	_	spaceAfter=NO
+8	شوم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=26760|dadeg_pos=V	6	PRD	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=26760|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s259
@@ -6258,7 +6258,7 @@
 8	گاه	گاه	NOUN	IANM	attachment=ISO|number=SING|senID=26784|dadeg_pos=N	11	ADV	_	_
 9	دچار	دچار	ADJ	AJP	attachment=ISO|senID=26784|dadeg_pos=ADJ	11	MOS	_	_
 10	بی‌تعادلی	بی‌تعادلی	NOUN	IANM	attachment=ISO|number=SING|senID=26784|dadeg_pos=N	9	NEZ	_	_
-11	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GN|senID=26784|dadeg_pos=V	0	ROOT	_	_
+11	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=26784|dadeg_pos=V	0	ROOT	_	_
 12	و	و	CCONJ	CONJ	attachment=ISO|senID=26784|dadeg_pos=CONJ	11	VCONJ	_	_
 13	تعادل	تعادل	NOUN	IANM	attachment=ISO|number=SING|senID=26784|dadeg_pos=N	15	PREDEP	_	_
 14	خود	خود	PRON	CREFX	attachment=ISO|senID=26784|dadeg_pos=PR	13	MOZ	_	_
@@ -6498,7 +6498,7 @@
 7	و	و	CCONJ	CONJ	attachment=ISO|senID=30740|dadeg_pos=CONJ	6	NCONJ	_	_
 8	سرآسیاب	سرآسیاب	PROPN	IANM	attachment=ISO|number=SING|senID=30740|dadeg_pos=N	7	POSDEP	_	_
 9	حادث	حادث	ADJ	AJP	attachment=ISO|senID=30740|dadeg_pos=ADJ	10	MOS	_	_
-10	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=30740|dadeg_pos=V	16	PARCL	_	spaceAfter=NO
+10	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=30740|dadeg_pos=V	16	PARCL	_	spaceAfter=NO
 11	،	،	PUNCT	PUNC	attachment=ISO|senID=30740|dadeg_pos=PUNC	10	PUNC	_	_
 12	خساراتی	خسارت	NOUN	IANM	attachment=ISO|number=PLUR|senID=30740|dadeg_pos=N	16	SBJ	_	_
 13	سنگین	سنگین	ADJ	AJP	attachment=ISO|senID=30740|dadeg_pos=ADJ	12	NPOSTMOD	_	_
@@ -6649,7 +6649,7 @@
 23	و	و	CCONJ	CONJ	attachment=ISO|senID=30835|dadeg_pos=CONJ	22	VCONJ	_	_
 24	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=30835|dadeg_pos=PR	26	SBJ	_	_
 25	مجبور	مجبور	ADJ	AJP	attachment=ISO|senID=30835|dadeg_pos=ADJ	26	MOS	_	_
-26	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=30835|dadeg_pos=V	23	POSDEP	_	_
+26	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=30835|dadeg_pos=V	23	POSDEP	_	_
 27	که	که	SCONJ	SUBR	attachment=ISO|senID=30835|dadeg_pos=SUBR	25	ACL	_	_
 28	خود	خود	PRON	CREFX	attachment=ISO|senID=30835|dadeg_pos=PR	33	SBJ	_	_
 29	هاچیکو	هاچیکو	PROPN	ANM	attachment=ISO|number=SING|senID=30835|dadeg_pos=N	30	PREDEP	_	_
@@ -6719,7 +6719,7 @@
 38	بر	بر	ADP	PREP	attachment=ISO|senID=30856|dadeg_pos=PREP	37	NPP	_	_
 39	دلایلی	دلیل	NOUN	IANM	attachment=ISO|number=PLUR|senID=30856|dadeg_pos=N	38	POSDEP	_	_
 40	منحل	منحل	ADJ	AJP	attachment=ISO|senID=30856|dadeg_pos=ADJ	41	MOS	_	_
-41	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=30856|dadeg_pos=V	28	PRD	_	spaceAfter=NO
+41	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=30856|dadeg_pos=V	28	PRD	_	spaceAfter=NO
 42	.	.	PUNCT	PUNC	attachment=ISO|senID=30856|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s290
@@ -6973,7 +6973,7 @@
 # sent_id = dev-s304
 # text = کاش می‌شد بین این همه روزهای بی‌ربط، اسم یک روز را هم «روز ملی ترکاندن بغض» بگذارند.
 1	کاش	کاش	PSUS	PSUS	attachment=ISO|senID=31022|dadeg_pos=PSUS	0	ROOT	_	_
-2	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=31022|dadeg_pos=V	1	VCL	_	_
+2	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=31022|dadeg_pos=V	1	VCL	_	_
 3	بین	بین	ADP	PREP	attachment=ISO|senID=31022|dadeg_pos=PREP	20	ADV	_	_
 4	این	این	PREM	DEMAJ	attachment=ISO|senID=31022|dadeg_pos=PREM	5	NPREMOD	_	_
 5	همه	همه	NOUN	IANM	attachment=ISO|number=PLUR|senID=31022|dadeg_pos=N	6	MESU	_	_
@@ -7006,7 +7006,7 @@
 8	هم	هم	PRON	RECPR	attachment=ISO|senID=31032|dadeg_pos=PR	7	POSDEP	_	_
 9	برتنید	بر#تنید#تن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=31032|dadeg_pos=V	3	NCL	_	_
 10	و	و	CCONJ	CONJ	attachment=ISO|senID=31032|dadeg_pos=CONJ	9	VCONJ	_	_
-11	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=31032|dadeg_pos=V	10	POSDEP	_	_
+11	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=31032|dadeg_pos=V	10	POSDEP	_	_
 12	نمایش	نمایش	NOUN	IANM	attachment=ISO|number=SING|senID=31032|dadeg_pos=N	11	MOS	_	_
 13	مسخره‌کنندهٔ	مسخره‌کننده	ADJ	AJP	attachment=ISO|senID=31032|dadeg_pos=ADJ	12	NPOSTMOD	_	_
 14	حضوری	حضور	NOUN	IANM	attachment=ISO|number=SING|senID=31032|dadeg_pos=N	12	MOZ	_	_
@@ -7043,7 +7043,7 @@
 11	هم	هم	ADV	SADV	attachment=ISO|senID=31052|dadeg_pos=ADV	9	POSDEP	_	_
 12	کم‌کم	کم‌کم	ADV	SADV	attachment=ISO|senID=31052|dadeg_pos=ADV	14	ADV	_	_
 13	خم	خم	ADJ	AJP	attachment=ISO|senID=31052|dadeg_pos=ADJ	14	MOS	_	_
-14	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GES|senID=31052|dadeg_pos=V	20	PARCL	_	_
+14	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=31052|dadeg_pos=V	20	PARCL	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=31052|dadeg_pos=CONJ	14	PUNC	_	_
 16	به	به	ADP	PREP	attachment=ISO|senID=31052|dadeg_pos=PREP	19	NPP	_	_
 17	روی	رو	NOUN	IANM	attachment=ISO|number=SING|senID=31052|dadeg_pos=N	16	POSDEP	_	_
@@ -7131,7 +7131,7 @@
 15	نه	نه	ADV	SADV	attachment=ISO|senID=31095|dadeg_pos=ADV	18	PREDEP	_	_
 16	تنها	تنها	ADV	SADV	attachment=ISO|senID=31095|dadeg_pos=ADV	15	POSDEP	_	_
 17	محدود	محدود	ADJ	AJP	attachment=ISO|senID=31095|dadeg_pos=ADJ	18	MOS	_	_
-18	نمی‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=31095|polarity=NEG|dadeg_pos=V	9	VCL	_	_
+18	نمی‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31095|polarity=NEG|dadeg_pos=V	9	VCL	_	_
 19	بلکه	بلکه	ADV	SADV	attachment=ISO|senID=31095|dadeg_pos=ADV	24	PREDEP	_	_
 20	مسیر	مسیر	NOUN	IANM	attachment=ISO|number=SING|senID=31095|dadeg_pos=N	22	PREDEP	_	_
 21	توسعه	توسعه	NOUN	IANM	attachment=ISO|number=SING|senID=31095|dadeg_pos=N	20	MOZ	_	_
@@ -7338,7 +7338,7 @@
 # text = دارد پژمرده می‌شود.
 1	دارد	داشت#دار	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31170|dadeg_pos=V	3	PROG	_	_
 2	پژمرده	پژمرده	ADJ	AJP	attachment=ISO|senID=31170|dadeg_pos=ADJ	3	MOS	_	_
-3	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=31170|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+3	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31170|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 4	.	.	PUNCT	PUNC	attachment=ISO|senID=31170|dadeg_pos=PUNC	3	PUNC	_	_
 
 # sent_id = dev-s319
@@ -7534,7 +7534,7 @@
 24	پرت	پرت	NOUN	IANM	attachment=ISO|number=SING|senID=31259|dadeg_pos=N	25	NVE	_	_
 25	می‌کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31259|dadeg_pos=V	20	ADV	_	_
 26	بلند	بلند	ADJ	AJP	attachment=ISO|senID=31259|dadeg_pos=ADJ	27	NVE	_	_
-27	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=31259|dadeg_pos=V	25	VCONJ	_	_
+27	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31259|dadeg_pos=V	25	VCONJ	_	_
 28	برمی‌گردد	بر#گشت#گرد	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31259|dadeg_pos=V	27	VCONJ	_	spaceAfter=NO
 29	؛	؛	PUNCT	PUNC	attachment=ISO|senID=31259|dadeg_pos=PUNC	28	PUNC	_	_
 30	خشم	خشم	NOUN	IANM	attachment=ISO|number=SING|senID=31259|dadeg_pos=N	32	PREDEP	_	_
@@ -7647,7 +7647,7 @@
 2	که	که	SCONJ	SUBR	attachment=ISO|senID=31344|dadeg_pos=SUBR	1	NCL	_	_
 3	غذا	غذا	NOUN	IANM	attachment=ISO|number=SING|senID=31344|dadeg_pos=N	5	SBJ	_	_
 4	حاضر	حاضر	ADJ	AJP	attachment=ISO|senID=31344|dadeg_pos=ADJ	5	MOS	_	_
-5	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=31344|dadeg_pos=V	2	PRD	_	_
+5	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=31344|dadeg_pos=V	2	PRD	_	_
 6	ما	ما	PRON	SEPER	person=1|attachment=ISO|number=PLUR|senID=31344|dadeg_pos=PR	8	SBJ	_	_
 7	صحبت	صحبت	NOUN	IANM	attachment=ISO|number=SING|senID=31344|dadeg_pos=N	8	NVE	_	_
 8	می‌کردیم	کرد#کن	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=GES|senID=31344|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
@@ -7663,7 +7663,7 @@
 6	ماهر	ماهر	ADJ	AJP	attachment=ISO|senID=31354|dadeg_pos=ADJ	5	NPOSTMOD	_	_
 7	و	و	CCONJ	CONJ	attachment=ISO|senID=31354|dadeg_pos=CONJ	6	AJCONJ	_	_
 8	مشهوری	مشهور	ADJ	AJP	attachment=ISO|senID=31354|dadeg_pos=ADJ	7	POSDEP	_	_
-9	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=31354|dadeg_pos=V	0	ROOT	_	_
+9	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=31354|dadeg_pos=V	0	ROOT	_	_
 10	که	که	SCONJ	SUBR	attachment=ISO|senID=31354|dadeg_pos=SUBR	5	NCL	_	_
 11	به	به	ADP	PREP	attachment=ISO|senID=31354|dadeg_pos=PREP	14	VPP	_	_
 12	معالجهٔ	معالجه	NOUN	IANM	attachment=ISO|number=SING|senID=31354|dadeg_pos=N	11	POSDEP	_	_
@@ -7768,7 +7768,7 @@
 # sent_id = dev-s339
 # text = پیاده می‌شود می‌آید سراغم.
 1	پیاده	پیاده	ADJ	AJP	attachment=ISO|senID=31399|dadeg_pos=ADJ	2	MOS	_	_
-2	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=31399|dadeg_pos=V	3	PREDEP	_	_
+2	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31399|dadeg_pos=V	3	PREDEP	_	_
 3	می‌آید	آمد#آ	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31399|dadeg_pos=V	0	ROOT	_	_
 4-5	سراغم	_	_	_	_	_	_	_	spaceAfter=NO
 4	سراغ	سراغ	NOUN	IANM	attachment=ISO|number=SING|senID=31399|dadeg_pos=N	3	ADVC	_	_
@@ -8157,7 +8157,7 @@
 29	انتقال	انتقال	NOUN	IANM	attachment=ISO|number=SING|senID=31645|dadeg_pos=N	28	NEZ	_	_
 30	باکتری	باکتری	NOUN	IANM	attachment=ISO|number=SING|senID=31645|dadeg_pos=N	29	MOZ	_	_
 31	کلستریدیوم	کلستریدیوم	NOUN	IANM	attachment=ISO|number=SING|senID=31645|dadeg_pos=N	30	MOZ	_	_
-32	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=31645|dadeg_pos=V	16	PRD	_	spaceAfter=NO
+32	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31645|dadeg_pos=V	16	PRD	_	spaceAfter=NO
 33	.	.	PUNCT	PUNC	attachment=ISO|senID=31645|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s363
@@ -8371,7 +8371,7 @@
 1	هر	هر	PREM	AMBAJ	attachment=ISO|senID=31817|dadeg_pos=PREM	2	NPREMOD	_	_
 2	گاه	گاه	NOUN	IANM	attachment=ISO|number=SING|senID=31817|dadeg_pos=N	8	ADV	_	_
 3	تشنه	تشنه	ADJ	AJP	attachment=ISO|senID=31817|dadeg_pos=ADJ	4	MOS	_	_
-4	شدید	کرد#کن	VERB	PASS	person=2|attachment=ISO|number=PLUR|tma=GS|senID=31817|dadeg_pos=V	2	NCL	_	_
+4	شدید	شد#شو	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=GS|senID=31817|dadeg_pos=V	2	NCL	_	_
 5	آن	آن	PREM	DEMAJ	attachment=ISO|senID=31817|dadeg_pos=PREM	6	NPREMOD	_	_
 6	چنان	چنان	NOUN	IANM	attachment=ISO|number=SING|senID=31817|dadeg_pos=N	8	ADV	_	_
 7	آب	آب	NOUN	IANM	attachment=ISO|number=SING|senID=31817|dadeg_pos=N	8	OBJ	_	_
@@ -8546,7 +8546,7 @@
 6	:	:	PUNCT	PUNC	attachment=ISO|senID=31903|dadeg_pos=PUNC	5	PUNC	_	_
 7	تا	تا	ADP	PREP	attachment=ISO|senID=31903|dadeg_pos=PREP	9	ADV	_	_
 8	کجا	کجا	PRON	INTG	attachment=ISO|senID=31903|dadeg_pos=PR	7	POSDEP	_	_
-9	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=31903|dadeg_pos=V	5	AJUCL	_	_
+9	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=31903|dadeg_pos=V	5	AJUCL	_	_
 10	با	با	ADP	PREP	attachment=ISO|senID=31903|dadeg_pos=PREP	13	NPP	_	_
 11	این	این	PREM	DEMAJ	attachment=ISO|senID=31903|dadeg_pos=PREM	12	NPREMOD	_	_
 12	مرداب	مرداب	NOUN	IANM	attachment=ISO|number=SING|senID=31903|dadeg_pos=N	10	POSDEP	_	_
@@ -8657,7 +8657,7 @@
 17	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=31946|dadeg_pos=AUX	16	aux	_	spaceAfter=NO
 18	،	،	PUNCT	PUNC	attachment=ISO|senID=31946|dadeg_pos=PUNC	16	PUNC	_	_
 19	استفاده	استفاده	NOUN	IANM	attachment=ISO|number=SING|senID=31946|dadeg_pos=N	20	NVE	_	_
-20	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=31946|dadeg_pos=V	2	VCL	_	spaceAfter=NO
+20	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=31946|dadeg_pos=V	2	VCL	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=31946|dadeg_pos=PUNC	2	PUNC	_	_
 
 # sent_id = dev-s391
@@ -9123,7 +9123,7 @@
 22	،	،	PUNCT	PUNC	attachment=ISO|senID=32245|dadeg_pos=PUNC	20	PUNC	_	_
 23	شامل	شامل	ADJ	AJP	attachment=ISO|senID=32245|dadeg_pos=ADJ	25	MOS	_	_
 24	آزمون	آزمون	NOUN	IANM	attachment=ISO|number=SING|senID=32245|dadeg_pos=N	23	NEZ	_	_
-25	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GN|senID=32245|dadeg_pos=V	29	PARCL	_	_
+25	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=32245|dadeg_pos=V	29	PARCL	_	_
 26	و	و	CCONJ	CONJ	attachment=ISO|senID=32245|dadeg_pos=CONJ	25	PUNC	_	_
 27-28	آزمونشان	_	_	_	_	_	_	_	_
 27	آزمون	آزمون	NOUN	IANM	attachment=ISO|number=SING|senID=32245|dadeg_pos=N	29	SBJ	_	_
@@ -9400,7 +9400,7 @@
 8	گیاهان	گیاه	NOUN	IANM	attachment=ISO|number=PLUR|senID=32400|dadeg_pos=N	11	SBJ	_	_
 9	دارویی	دارویی	ADJ	AJP	attachment=ISO|senID=32400|dadeg_pos=ADJ	8	NPOSTMOD	_	_
 10	مصرف	مصرف	NOUN	IANM	attachment=ISO|number=SING|senID=32400|dadeg_pos=N	11	NVE	_	_
-11	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=32400|dadeg_pos=V	7	PRD	_	_
+11	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=32400|dadeg_pos=V	7	PRD	_	_
 12	برشمرم	بر#شمرد#شمر	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=32400|dadeg_pos=V	4	PRD	_	_
 13	و	و	CCONJ	CONJ	attachment=ISO|senID=32400|dadeg_pos=CONJ	12	VCONJ	_	_
 14	تشریح	تشریح	NOUN	IANM	attachment=ISO|number=SING|senID=32400|dadeg_pos=N	15	NVE	_	_
@@ -9561,7 +9561,7 @@
 7	زیر	زیر	ADP	PREP	attachment=ISO|senID=44286|dadeg_pos=PREP	10	ADV	_	_
 8	آنها	آنها	PRON	SEPER	person=3|attachment=ISO|number=PLUR|senID=44286|dadeg_pos=PR	7	POSDEP	_	_
 9	قایم	قایم	ADJ	AJP	attachment=ISO|senID=44286|dadeg_pos=ADJ	10	NVE	_	_
-10	می‌شدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GES|senID=44286|dadeg_pos=V	6	POSDEP	_	spaceAfter=NO
+10	می‌شدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GES|senID=44286|dadeg_pos=V	6	POSDEP	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=44286|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s442
@@ -9889,7 +9889,7 @@
 22	گسترده‌تر	گسترده	ADJ	AJCM	attachment=ISO|senID=44436|dadeg_pos=ADJ	25	MOS	_	_
 23	و	و	CCONJ	CONJ	attachment=ISO|senID=44436|dadeg_pos=CONJ	22	AJCONJ	_	_
 24	ژرف‌تر	ژرف	ADJ	AJCM	attachment=ISO|senID=44436|dadeg_pos=ADJ	23	POSDEP	_	_
-25	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=44436|dadeg_pos=V	14	VCONJ	_	spaceAfter=NO
+25	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=44436|dadeg_pos=V	14	VCONJ	_	spaceAfter=NO
 26	،	،	PUNCT	PUNC	attachment=ISO|senID=44436|dadeg_pos=PUNC	25	PUNC	_	_
 27	و	و	CCONJ	CONJ	attachment=ISO|senID=44436|dadeg_pos=CONJ	25	VCONJ	_	_
 28	در	در	ADP	PREP	attachment=ISO|senID=44436|dadeg_pos=PREP	37	ADV	_	_
@@ -10279,7 +10279,7 @@
 14	آزار	آزار	NOUN	IANM	attachment=ISO|number=SING|senID=32462|dadeg_pos=N	17	NVE	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=32462|dadeg_pos=CONJ	14	NCONJ	_	_
 16	اذیت	اذیت	NOUN	IANM	attachment=ISO|number=SING|senID=32462|dadeg_pos=N	15	POSDEP	_	_
-17	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=32462|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=32462|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=32462|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s476
@@ -10625,7 +10625,7 @@
 12	و	و	CCONJ	CONJ	attachment=ISO|senID=32678|dadeg_pos=CONJ	11	VCONJ	_	_
 13	راه	راه	NOUN	IANM	attachment=ISO|number=SING|senID=32678|dadeg_pos=N	15	SBJ	_	_
 14	بسته	بسته	ADJ	AJP	attachment=ISO|senID=32678|dadeg_pos=ADJ	15	MOS	_	_
-15	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=32678|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
+15	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=32678|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=32678|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s497
@@ -10817,7 +10817,7 @@
 3	هم	هم	ADV	SADV	attachment=ISO|senID=32811|dadeg_pos=ADV	2	POSDEP	_	_
 4	ایرانی	ایرانی	NOUN	ANM	attachment=ISO|number=SING|senID=32811|dadeg_pos=N	6	SBJ	_	_
 5	متوجه	متوجه	ADJ	AJP	attachment=ISO|senID=32811|dadeg_pos=ADJ	6	MOS	_	_
-6	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=32811|dadeg_pos=V	0	ROOT	_	_
+6	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=32811|dadeg_pos=V	0	ROOT	_	_
 7	مراد	مراد	PROPN	IANM	attachment=ISO|number=SING|senID=32811|dadeg_pos=N	8	PREDEP	_	_
 8	را	را	ADP	POSTP	attachment=ISO|senID=32811|dadeg_pos=POSTP	10	OBJ	_	_
 9	عوضی	عوضی	ADJ	AJP	attachment=ISO|senID=32811|dadeg_pos=ADJ	10	TAM	_	_
@@ -11045,7 +11045,7 @@
 22	و	و	CCONJ	CONJ	attachment=ISO|senID=32946|dadeg_pos=CONJ	21	VCONJ	_	_
 23	همین	همین	PRON	DEMON	attachment=ISO|number=SING|senID=32946|dadeg_pos=PR	25	SBJ	_	_
 24	موجب	موجب	ADJ	AJP	attachment=ISO|senID=32946|dadeg_pos=ADJ	25	MOS	_	_
-25	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GN|senID=32946|dadeg_pos=V	22	POSDEP	_	_
+25	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=32946|dadeg_pos=V	22	POSDEP	_	_
 26	تا	تا	SCONJ	SUBR	attachment=ISO|senID=32946|dadeg_pos=SUBR	24	ACL	_	_
 27	از	از	ADP	PREP	attachment=ISO|senID=32946|dadeg_pos=PREP	34	AJPP	_	_
 28	تنوع	تنوع	NOUN	IANM	attachment=ISO|number=SING|senID=32946|dadeg_pos=N	27	POSDEP	_	_
@@ -11063,7 +11063,7 @@
 1	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=32957|dadeg_pos=SUBR	11	AJUCL	_	_
 2	وارد	وارد	ADJ	AJP	attachment=ISO|senID=32957|dadeg_pos=ADJ	4	NVE	_	_
 3	سیاست	سیاست	NOUN	IANM	attachment=ISO|number=SING|senID=32957|dadeg_pos=N	2	NEZ	_	_
-4	بشوید	شد#شو	VERB	PASS	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=32957|dadeg_pos=V	1	PRD	_	spaceAfter=NO
+4	بشوید	شد#شو	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=32957|dadeg_pos=V	1	PRD	_	spaceAfter=NO
 5	،	،	PUNCT	PUNC	attachment=ISO|senID=32957|dadeg_pos=PUNC	4	PUNC	_	_
 6	از	از	ADP	PREP	attachment=ISO|senID=32957|dadeg_pos=PREP	11	VPP	_	_
 7	درس	درس	NOUN	IANM	attachment=ISO|number=SING|senID=32957|dadeg_pos=N	6	POSDEP	_	_
@@ -11084,7 +11084,7 @@
 7	و	و	CCONJ	CONJ	attachment=ISO|senID=32968|dadeg_pos=CONJ	6	NCONJ	_	_
 8	عفونتی	عفونت	NOUN	IANM	attachment=ISO|number=SING|senID=32968|dadeg_pos=N	7	POSDEP	_	_
 9	التیام‌نایافتنی	التیام‌نایافتنی	ADJ	AJP	attachment=ISO|senID=32968|dadeg_pos=ADJ	6	NPOSTMOD	_	_
-10	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GB|senID=32968|dadeg_pos=V	0	ROOT	_	_
+10	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GB|senID=32968|dadeg_pos=V	0	ROOT	_	_
 11	و	و	CCONJ	CONJ	attachment=ISO|senID=32968|dadeg_pos=CONJ	10	VCONJ	_	_
 12	در	در	ADP	PREP	attachment=ISO|senID=32968|dadeg_pos=PREP	17	VPP	_	_
 13	دفاع	دفاع	NOUN	IANM	attachment=ISO|number=SING|senID=32968|dadeg_pos=N	12	POSDEP	_	_
@@ -11126,7 +11126,7 @@
 # text = گل غنچه شد تا قرص ماهت را ببوسد.
 1	گل	گل	NOUN	IANM	attachment=ISO|number=SING|senID=32999|dadeg_pos=N	3	SBJ	_	_
 2	غنچه	غنچه	NOUN	IANM	attachment=ISO|number=SING|senID=32999|dadeg_pos=N	3	MOS	_	_
-3	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=32999|dadeg_pos=V	0	ROOT	_	_
+3	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=32999|dadeg_pos=V	0	ROOT	_	_
 4	تا	تا	SCONJ	SUBR	attachment=ISO|senID=32999|dadeg_pos=SUBR	3	AJUCL	_	_
 5	قرص	قرص	NOUN	IANM	attachment=ISO|number=SING|senID=32999|dadeg_pos=N	8	PREDEP	_	_
 6-7	ماهت	_	_	_	_	_	_	_	_
@@ -11186,7 +11186,7 @@
 5	باطل	باطل	ADJ	AJP	attachment=ISO|senID=33041|dadeg_pos=ADJ	4	NPOSTMOD	_	_
 6	می‌گفتند	گفت#گو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=33041|dadeg_pos=V	3	PRD	_	_
 7	هم‌آواز	هم‌آواز	ADJ	AJP	attachment=ISO|senID=33041|dadeg_pos=ADJ	8	MOS	_	_
-8	می‌شدیم	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GES|senID=33041|dadeg_pos=V	0	ROOT	_	_
+8	می‌شدیم	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=33041|dadeg_pos=V	0	ROOT	_	_
 9	و	و	CCONJ	CONJ	attachment=ISO|senID=33041|dadeg_pos=CONJ	8	VCONJ	_	_
 10	روز	روز	NOUN	IANM	attachment=ISO|number=SING|senID=33041|dadeg_pos=N	12	PREDEP	_	_
 11	قیامت	قیامت	NOUN	IANM	attachment=ISO|number=SING|senID=33041|dadeg_pos=N	10	MOZ	_	_
@@ -11607,7 +11607,7 @@
 13	این	این	PRON	DEMON	attachment=ISO|number=SING|senID=33315|dadeg_pos=PR	12	POSDEP	_	_
 14	که	که	SCONJ	SUBR	attachment=ISO|senID=33315|dadeg_pos=SUBR	13	NCL	_	_
 15	گم	گم	ADJ	AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ	16	NVE	_	_
-16	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=33315|dadeg_pos=V	14	PRD	_	_
+16	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=33315|dadeg_pos=V	14	PRD	_	_
 17	گم	گم	ADJ	AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ	18	NVE	_	_
 18	کنی	کرد#کن	VERB	ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=33315|dadeg_pos=V	8	PRD	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=33315|dadeg_pos=PUNC	1	PUNC	_	_
@@ -11667,7 +11667,7 @@
 11	صحنهٔ	صحنه	NOUN	IANM	attachment=ISO|number=SING|senID=33355|dadeg_pos=N	10	POSDEP	_	_
 12	عجیبی	عجیب	ADJ	AJP	attachment=ISO|senID=33355|dadeg_pos=ADJ	11	NPOSTMOD	_	_
 13	مواجه	مواجه	ADJ	AJP	attachment=ISO|senID=33355|dadeg_pos=ADJ	14	MOS	_	_
-14	شدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GS|senID=33355|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	شدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=33355|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=33355|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s562
@@ -11720,7 +11720,7 @@
 8	در	در	ADP	PREP	attachment=ISO|senID=33385|dadeg_pos=PREP	11	ADV	_	_
 9	هوا	هوا	NOUN	IANM	attachment=ISO|number=SING|senID=33385|dadeg_pos=N	8	POSDEP	_	_
 10	منجمد	منجمد	ADJ	AJP	attachment=ISO|senID=33385|dadeg_pos=ADJ	11	MOS	_	_
-11	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=33385|dadeg_pos=V	0	ROOT	_	_
+11	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=33385|dadeg_pos=V	0	ROOT	_	_
 12	و	و	CCONJ	CONJ	attachment=ISO|senID=33385|dadeg_pos=CONJ	11	VCONJ	_	_
 13	به	به	ADP	PREP	attachment=ISO|senID=33385|dadeg_pos=PREP	18	VPP	_	_
 14	اشکالی	شکل	NOUN	IANM	attachment=ISO|number=PLUR|senID=33385|dadeg_pos=N	13	POSDEP	_	_
@@ -11735,7 +11735,7 @@
 1	می‌خواستم	خواست#خواه	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=33395|dadeg_pos=V	0	ROOT	_	_
 2	بدانم	دانست#دان	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=33395|dadeg_pos=V	1	VCL	_	_
 3	چه	چه	NOUN	IANM	attachment=ISO|number=SING|senID=33395|dadeg_pos=N	4	MOS	_	_
-4	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=33395|dadeg_pos=V	2	VCL	_	_
+4	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=33395|dadeg_pos=V	2	VCL	_	_
 5	که	که	SCONJ	SUBR	attachment=ISO|senID=33395|dadeg_pos=SUBR	4	VCL	_	_
 6	آن	آن	PREM	DEMAJ	attachment=ISO|senID=33395|dadeg_pos=PREM	7	NPREMOD	_	_
 7	گل‌ها	گل	NOUN	IANM	attachment=ISO|number=PLUR|senID=33395|dadeg_pos=N	8	PREDEP	_	_
@@ -12116,7 +12116,7 @@
 5	نکنید	کرد#کن	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=33651|polarity=NEG|dadeg_pos=V	0	ROOT	_	_
 6	که	که	SCONJ	SUBR	attachment=ISO|senID=33651|dadeg_pos=SUBR	5	AJUCL	_	_
 7	موجب	موجب	ADJ	AJP	attachment=ISO|senID=33651|dadeg_pos=ADJ	8	MOS	_	_
-8	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=33651|dadeg_pos=V	6	PRD	_	_
+8	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=33651|dadeg_pos=V	6	PRD	_	_
 9	آتش	آتش	NOUN	IANM	attachment=ISO|number=SING|senID=33651|dadeg_pos=N	12	SBJ	_	_
 10	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=33651|dadeg_pos=PR	11	PREDEP	_	_
 11	را	را	ADP	POSTP	attachment=ISO|senID=33651|dadeg_pos=POSTP	12	OBJ	_	_
@@ -12131,7 +12131,7 @@
 4	توسی	توسی	PROPN	ANM	attachment=ISO|number=SING|senID=33661|dadeg_pos=N	3	MOZ	_	_
 5	وزیر	وزیر	NOUN	ANM	attachment=ISO|number=SING|senID=33661|dadeg_pos=N	7	MOS	_	_
 6	هولاگو	هولاگو	PROPN	ANM	attachment=ISO|number=SING|senID=33661|dadeg_pos=N	5	MOZ	_	_
-7	نمی‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=33661|polarity=NEG|dadeg_pos=V	1	PRD	_	_
+7	نمی‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=33661|polarity=NEG|dadeg_pos=V	1	PRD	_	_
 8	خلافت	خلافت	NOUN	IANM	attachment=ISO|number=SING|senID=33661|dadeg_pos=N	11	SBJ	_	_
 9	عباسیان	عباسی	NOUN	ANM	attachment=ISO|number=PLUR|senID=33661|dadeg_pos=N	8	MOZ	_	_
 10	دیرتر	دیر	ADJ	AJCM	attachment=ISO|senID=33661|dadeg_pos=ADJ	11	ADV	_	_
@@ -12276,7 +12276,7 @@
 2	زائران	زائر	NOUN	ANM	attachment=ISO|number=PLUR|senID=33721|dadeg_pos=N	1	MOZ	_	_
 3	معتاد	معتاد	ADJ	AJP	attachment=ISO|senID=33721|dadeg_pos=ADJ	2	NPOSTMOD	_	_
 4	ابطال	ابطال	NOUN	IANM	attachment=ISO|number=SING|senID=33721|dadeg_pos=N	5	NVE	_	_
-5	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=33721|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+5	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=33721|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 6	.	.	PUNCT	PUNC	attachment=ISO|senID=33721|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s598
@@ -12395,7 +12395,7 @@
 # sent_id = dev-s605
 # text = مگر می‌شود به یک نفر بگویید خانه‌ات را به این قیمت اجاره بده؟
 1	مگر	مگر	PART	PART	attachment=ISO|senID=33802|dadeg_pos=PART	2	PART	_	_
-2	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=33802|dadeg_pos=V	0	ROOT	_	_
+2	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=33802|dadeg_pos=V	0	ROOT	_	_
 3	به	به	ADP	PREP	attachment=ISO|senID=33802|dadeg_pos=PREP	6	VPP	_	_
 4	یک	یک	NUM	PRENUM	attachment=ISO|senID=33802|dadeg_pos=PRENUM	5	NPREMOD	_	_
 5	نفر	نفر	NOUN	ANM	attachment=ISO|number=SING|senID=33802|dadeg_pos=N	3	POSDEP	_	_
@@ -12432,7 +12432,7 @@
 17	در	در	ADP	PREP	attachment=ISO|senID=33812|dadeg_pos=PREP	20	ADV	_	_
 18	ساری	ساری	PROPN	IANM	attachment=ISO|number=SING|senID=33812|dadeg_pos=N	17	POSDEP	_	_
 19	برگزار	برگزار	NOUN	IANM	attachment=ISO|number=SING|senID=33812|dadeg_pos=N	20	NVE	_	_
-20	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=33812|dadeg_pos=V	9	PRD	_	_
+20	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=33812|dadeg_pos=V	9	PRD	_	_
 21	و	و	CCONJ	CONJ	attachment=ISO|senID=33812|dadeg_pos=CONJ	8	VCONJ	_	_
 22	ما	ما	PRON	SEPER	person=1|attachment=ISO|number=PLUR|senID=33812|dadeg_pos=PR	28	SBJ	_	_
 23	هم	هم	ADV	SADV	attachment=ISO|senID=33812|dadeg_pos=ADV	22	POSDEP	_	_
@@ -12616,7 +12616,7 @@
 3	کلیدها	کلید	NOUN	IANM	attachment=ISO|number=PLUR|senID=33902|dadeg_pos=N	2	MOZ	_	_
 4	سه	سه	NUM	PRENUM	attachment=ISO|senID=33902|dadeg_pos=PRENUM	5	NPREMOD	_	_
 5	رقمی	رقمی	NOUN	IANM	attachment=ISO|number=SING|senID=33902|dadeg_pos=N	6	MOS	_	_
-6	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=33902|dadeg_pos=V	1	PRD	_	_
+6	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=33902|dadeg_pos=V	1	PRD	_	_
 7	دو	دو	NUM	PRENUM	attachment=ISO|senID=33902|dadeg_pos=PRENUM	8	NPREMOD	_	_
 8	رقم	رقم	NOUN	IANM	attachment=ISO|number=SING|senID=33902|dadeg_pos=N	10	PREDEP	_	_
 9	آخر	آخر	ADJ	AJP	attachment=ISO|senID=33902|dadeg_pos=ADJ	8	NPOSTMOD	_	_
@@ -13107,7 +13107,7 @@
 21	عمق	عمق	NOUN	IANM	attachment=ISO|number=SING|senID=34207|dadeg_pos=N	20	POSDEP	_	_
 22	دره	دره	NOUN	IANM	attachment=ISO|number=SING|senID=34207|dadeg_pos=N	21	MOZ	_	_
 23	پرتاب	پرتاب	NOUN	IANM	attachment=ISO|number=SING|senID=34207|dadeg_pos=N	24	NVE	_	_
-24	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=34207|dadeg_pos=V	18	POSDEP	_	spaceAfter=NO
+24	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=34207|dadeg_pos=V	18	POSDEP	_	spaceAfter=NO
 25	.	.	PUNCT	PUNC	attachment=ISO|senID=34207|dadeg_pos=PUNC	24	PUNC	_	_
 
 # sent_id = dev-s646
@@ -13147,7 +13147,7 @@
 7	این	این	PREM	DEMAJ	attachment=ISO|senID=34237|dadeg_pos=PREM	8	NPREMOD	_	_
 8	شرکت	شرکت	NOUN	IANM	attachment=ISO|number=SING|senID=34237|dadeg_pos=N	5	MOZ	_	_
 9	پایمال	پایمال	ADJ	AJP	attachment=ISO|senID=34237|dadeg_pos=ADJ	10	MOS	_	_
-10	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=34237|dadeg_pos=V	3	ROOT	_	_
+10	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=34237|dadeg_pos=V	3	ROOT	_	_
 11	و	و	CCONJ	CONJ	attachment=ISO|senID=34237|dadeg_pos=CONJ	10	VCONJ	_	_
 12	حقوق	حق	NOUN	IANM	attachment=ISO|number=PLUR|senID=34237|dadeg_pos=N	14	PREDEP	_	_
 13	آنها	آنها	PRON	SEPER	person=3|attachment=ISO|number=PLUR|senID=34237|dadeg_pos=PR	12	MOZ	_	_
@@ -13174,7 +13174,7 @@
 13	انتهای	انتها	NOUN	IANM	attachment=ISO|number=SING|senID=46007|dadeg_pos=N	12	POSDEP	_	_
 14	آن	آن	PRON	DEMON	attachment=ISO|number=SING|senID=46007|dadeg_pos=PR	13	MOZ	_	_
 15	نزدیک	نزدیک	ADJ	AJP	attachment=ISO|senID=46007|dadeg_pos=ADJ	16	MOS	_	_
-16	می‌شویم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=PLUR|tma=H|senID=46007|dadeg_pos=V	11	NCL	_	_
+16	می‌شویم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=46007|dadeg_pos=V	11	NCL	_	_
 17	به	به	ADP	PREP	attachment=ISO|senID=46007|dadeg_pos=PREP	24	ADV	_	_
 18	دلیل	دلیل	NOUN	IANM	attachment=ISO|number=SING|senID=46007|dadeg_pos=N	17	POSDEP	_	_
 19	تنگی	تنگی	NOUN	IANM	attachment=ISO|number=SING|senID=46007|dadeg_pos=N	18	MOZ	_	_
@@ -13284,7 +13284,7 @@
 3	عاشق	عاشق	ADJ	AJP	attachment=ISO|senID=46057|dadeg_pos=ADJ	6	MOS	_	_
 4	یک	یک	NUM	PRENUM	attachment=ISO|senID=46057|dadeg_pos=PRENUM	5	NPREMOD	_	_
 5	شاهزاده	شاهزاده	NOUN	IANM	attachment=ISO|number=SING|senID=46057|dadeg_pos=N	3	NEZ	_	_
-6	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=46057|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=46057|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	،	،	PUNCT	PUNC	attachment=ISO|senID=46057|dadeg_pos=PUNC	6	PUNC	_	_
 8	اما	اما	CCONJ	CONJ	attachment=ISO|senID=46057|dadeg_pos=CONJ	6	VCONJ	_	_
 9	شاهزاده	شاهزاده	NOUN	IANM	attachment=ISO|number=SING|senID=46057|dadeg_pos=N	14	SBJ	_	_
@@ -13428,7 +13428,7 @@
 5	کردند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46137|dadeg_pos=V	0	ROOT	_	_
 6	و	و	CCONJ	CONJ	attachment=ISO|senID=46137|dadeg_pos=CONJ	5	VCONJ	_	_
 7	مجبور	مجبور	ADJ	AJP	attachment=ISO|senID=46137|dadeg_pos=ADJ	8	MOS	_	_
-8	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46137|dadeg_pos=V	6	POSDEP	_	_
+8	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46137|dadeg_pos=V	6	POSDEP	_	_
 9	برای	برای	ADP	PREP	attachment=ISO|senID=46137|dadeg_pos=PREP	19	ADV	_	_
 10	زنده	زنده	ADJ	AJP	attachment=ISO|senID=46137|dadeg_pos=ADJ	11	PREDEP	_	_
 11	ماندن	ماندن	NOUN	IANM	attachment=ISO|number=SING|senID=46137|dadeg_pos=N	9	POSDEP	_	_
@@ -13624,7 +13624,7 @@
 6	ماهواره	ماهواره	NOUN	IANM	attachment=ISO|number=SING|senID=46248|dadeg_pos=N	5	MOZ	_	_
 7	وارد	وارد	ADJ	AJP	attachment=ISO|senID=46248|dadeg_pos=ADJ	9	NVE	_	_
 8	خانه‌ای	خانه	NOUN	IANM	attachment=ISO|number=SING|senID=46248|dadeg_pos=N	7	MOZ	_	_
-9	شدند	شد#شو	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46248|dadeg_pos=V	0	ROOT	_	_
+9	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46248|dadeg_pos=V	0	ROOT	_	_
 10	و	و	CCONJ	CONJ	attachment=ISO|senID=46248|dadeg_pos=CONJ	9	VCONJ	_	_
 11	از	از	ADP	PREP	attachment=ISO|senID=46248|dadeg_pos=PREP	13	NPP	_	_
 12	آن	آن	PRON	DEMON	attachment=ISO|number=SING|senID=46248|dadeg_pos=PR	11	POSDEP	_	_
@@ -13917,7 +13917,7 @@
 2	نبود	بود#باش	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=46379|polarity=NEG|dadeg_pos=V	0	ROOT	_	_
 3	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=46379|dadeg_pos=PR	5	SBJ	_	_
 4	یادآور	یادآور	ADJ	AJP	attachment=ISO|senID=46379|dadeg_pos=ADJ	5	MOS	_	_
-5	شوید	کرد#کن	VERB	PASS	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=46379|dadeg_pos=V	1	NCL	_	_
+5	شوید	شد#شو	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=46379|dadeg_pos=V	1	NCL	_	_
 6	که	که	SCONJ	SUBR	attachment=ISO|senID=46379|dadeg_pos=SUBR	4	ACL	_	_
 7	در	در	ADP	PREP	attachment=ISO|senID=46379|dadeg_pos=PREP	10	ADV	_	_
 8	مسیر	مسیر	NOUN	IANM	attachment=ISO|number=SING|senID=46379|dadeg_pos=N	7	POSDEP	_	_
@@ -13938,7 +13938,7 @@
 2	که	که	SCONJ	SUBR	attachment=ISO|senID=46389|dadeg_pos=SUBR	1	NCL	_	_
 3	قهرمان	قهرمان	NOUN	IANM	attachment=ISO|number=SING|senID=46389|dadeg_pos=N	5	MOS	_	_
 4	ورزشی	ورزشی	ADJ	AJP	attachment=ISO|senID=46389|dadeg_pos=ADJ	3	NPOSTMOD	_	_
-5	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=46389|dadeg_pos=V	2	PRD	_	_
+5	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=46389|dadeg_pos=V	2	PRD	_	_
 6	از	از	ADP	PREP	attachment=ISO|senID=46389|dadeg_pos=PREP	13	NPP	_	_
 7	سام	سام	PROPN	ANM	attachment=ISO|number=SING|senID=46389|dadeg_pos=N	6	POSDEP	_	_
 8	چاقویی	چاقو	NOUN	IANM	attachment=ISO|number=SING|senID=46389|dadeg_pos=N	9	PREDEP	_	_
@@ -14076,7 +14076,7 @@
 43	طرفداران	طرفدار	NOUN	ANM	attachment=ISO|number=PLUR|senID=46439|dadeg_pos=N	42	MOZ	_	_
 44	مزدک	مزدک	NOUN	ANM	attachment=ISO|number=SING|senID=46439|dadeg_pos=N	43	MOZ	_	_
 45	مخفی	مخفی	ADJ	AJP	attachment=ISO|senID=46439|dadeg_pos=ADJ	46	MOS	_	_
-46	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46439|dadeg_pos=V	41	POSDEP	_	_
+46	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46439|dadeg_pos=V	41	POSDEP	_	_
 47	و	و	CCONJ	CONJ	attachment=ISO|senID=46439|dadeg_pos=CONJ	46	VCONJ	_	_
 48	در	در	ADP	PREP	attachment=ISO|senID=46439|dadeg_pos=PREP	53	NPP	_	_
 49	انتظار	انتظار	NOUN	IANM	attachment=ISO|number=SING|senID=46439|dadeg_pos=N	48	POSDEP	_	_
@@ -14344,7 +14344,7 @@
 27	بودند	بود#باش	AUX	V_PA	number=PLUR|person=3|tense=Past|senID=46571|dadeg_pos=AUX	26	aux	_	spaceAfter=NO
 28	،	،	PUNCT	PUNC	attachment=ISO|senID=46571|dadeg_pos=PUNC	26	PUNC	_	_
 29	دستگیر	دستگیر	ADJ	AJP	attachment=ISO|senID=46571|dadeg_pos=ADJ	30	MOS	_	_
-30	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46571|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+30	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=46571|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 31	.	.	PUNCT	PUNC	attachment=ISO|senID=46571|dadeg_pos=PUNC	30	PUNC	_	_
 
 # sent_id = dev-s706
@@ -14404,7 +14404,7 @@
 35	ناراحتی	ناراحتی	NOUN	IANM	attachment=ISO|number=SING|senID=46591|dadeg_pos=N	38	SBJ	_	_
 36	شان	آنها	PRON	PRO	number=PLUR|person=3|pronType=Prs|senID=46591|dadeg_pos=PR	35	MOZ	_	_
 37	زیادتر	زیاد	ADJ	AJCM	attachment=ISO|senID=46591|dadeg_pos=ADJ	38	MOS	_	_
-38	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=46591|dadeg_pos=V	28	POSDEP	_	spaceAfter=NO
+38	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=46591|dadeg_pos=V	28	POSDEP	_	spaceAfter=NO
 39	.	.	PUNCT	PUNC	attachment=ISO|senID=46591|dadeg_pos=PUNC	38	PUNC	_	_
 
 # sent_id = dev-s708
@@ -14489,7 +14489,7 @@
 9	شان	آنها	PRON	PRO	number=PLUR|person=3|pronType=Prs|senID=46631|dadeg_pos=PR	8	MOZ	_	_
 10	خیلی	خیلی	ADV	SADV	attachment=ISO|senID=46631|dadeg_pos=ADV	11	APREMOD	_	_
 11	جذاب	جذاب	ADJ	AJP	attachment=ISO|senID=46631|dadeg_pos=ADJ	12	MOS	_	_
-12	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=46631|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=46631|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=46631|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s712
@@ -14545,7 +14545,7 @@
 19	در	در	ADP	PREP	attachment=ISO|senID=34245|dadeg_pos=PREP	22	ADV	_	_
 20	کرمانشاه	کرمانشاه	PROPN	IANM	attachment=ISO|number=SING|senID=34245|dadeg_pos=N	19	POSDEP	_	_
 21	دستگیر	دستگیر	ADJ	AJP	attachment=ISO|senID=34245|dadeg_pos=ADJ	22	MOS	_	_
-22	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=34245|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+22	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=34245|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 23	.	.	PUNCT	PUNC	attachment=ISO|senID=34245|dadeg_pos=PUNC	22	PUNC	_	_
 
 # sent_id = dev-s714
@@ -15355,7 +15355,7 @@
 10	راه	راه	NOUN	IANM	attachment=ISO|number=SING|senID=34770|dadeg_pos=N	9	POSDEP	_	_
 11	تو	تو	PRON	SEPER	person=2|attachment=ISO|number=SING|senID=34770|dadeg_pos=PR	10	MOZ	_	_
 12	قربانی	قربانی	ADJ	AJP	attachment=ISO|senID=34770|dadeg_pos=ADJ	13	MOS	_	_
-13	شوم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=HEL|senID=34770|dadeg_pos=V	8	PRD	_	spaceAfter=NO
+13	شوم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=34770|dadeg_pos=V	8	PRD	_	spaceAfter=NO
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=34770|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s766
@@ -15368,7 +15368,7 @@
 6	رحم	رحم	NOUN	IANM	attachment=ISO|number=SING|senID=34780|dadeg_pos=N	5	POSDEP	_	_
 7	مادر	مادر	NOUN	ANM	attachment=ISO|number=SING|senID=34780|dadeg_pos=N	6	MOZ	_	_
 8	تجربه	تجربه	NOUN	IANM	attachment=ISO|number=SING|senID=34780|dadeg_pos=N	9	NVE	_	_
-9	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=34780|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=34780|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=34780|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s767
@@ -15452,7 +15452,7 @@
 2	مرتب	مرتب	ADJ	AJP	attachment=ISO|senID=34850|dadeg_pos=ADJ	3	PREDEP	_	_
 3	کردن	کردن	NOUN	IANM	attachment=ISO|number=SING|senID=34850|dadeg_pos=N	1	NEZ	_	_
 4	آن	آن	PRON	DEMON	attachment=ISO|number=SING|senID=34850|dadeg_pos=PR	3	MOZ	_	_
-5	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=34850|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+5	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=34850|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 6	.	.	PUNCT	PUNC	attachment=ISO|senID=34850|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s774
@@ -15510,7 +15510,7 @@
 15	توسکای	توسکا	NOUN	IANM	attachment=ISO|number=SING|senID=34891|dadeg_pos=N	14	MOZ	_	_
 16	سوخته‌ای	سوخته	ADJ	AJP	attachment=ISO|senID=34891|dadeg_pos=ADJ	15	NPOSTMOD	_	_
 17	پنهان	پنهان	ADJ	AJP	attachment=ISO|senID=34891|dadeg_pos=ADJ	18	MOS	_	_
-18	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=34891|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
+18	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=34891|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=34891|dadeg_pos=PUNC	1	PUNC	_	_
 
 # sent_id = dev-s778
@@ -15553,7 +15553,7 @@
 6	،	،	PUNCT	PUNC	attachment=ISO|senID=34921|dadeg_pos=PUNC	5	PUNC	_	_
 7	گاه	گاه	NOUN	IANM	attachment=ISO|number=SING|senID=34921|dadeg_pos=N	9	ADV	_	_
 8	نهفته	نهفته	ADJ	AJP	attachment=ISO|senID=34921|dadeg_pos=ADJ	9	MOS	_	_
-9	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=34921|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=34921|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=34921|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s781
@@ -15931,7 +15931,7 @@
 14	و	و	CCONJ	CONJ	attachment=ISO|senID=35122|dadeg_pos=CONJ	13	NCONJ	_	_
 15	رهگذران	رهگذر	NOUN	ANM	attachment=ISO|number=PLUR|senID=35122|dadeg_pos=N	14	POSDEP	_	_
 16	جمع	جمع	NOUN	IANM	attachment=ISO|number=SING|senID=35122|dadeg_pos=N	17	NVE	_	_
-17	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=35122|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=35122|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=35122|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s801
@@ -16154,7 +16154,7 @@
 3	مدارس	مدرسه	NOUN	IANM	attachment=ISO|number=PLUR|senID=35263|dadeg_pos=N	2	MOZ	_	_
 4	دخترانه	دخترانه	ADJ	AJP	attachment=ISO|senID=35263|dadeg_pos=ADJ	3	NPOSTMOD	_	_
 5	استتار	استتار	NOUN	IANM	attachment=ISO|number=SING|senID=35263|dadeg_pos=N	6	NVE	_	_
-6	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=35263|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=35263|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	.	.	PUNCT	PUNC	attachment=ISO|senID=35263|dadeg_pos=PUNC	6	PUNC	_	_
 
 # sent_id = dev-s815
@@ -16372,7 +16372,7 @@
 12	کن	کرد#کن	VERB	ACT	person=2|attachment=ISO|number=SING|tma=HA|senID=35394|dadeg_pos=V	9	VCONJ	_	spaceAfter=NO
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=35394|dadeg_pos=PUNC	12	PUNC	_	_
 14	پست	پست	ADJ	AJP	attachment=ISO|senID=35394|dadeg_pos=ADJ	15	MOS	_	_
-15	شو	کرد#کن	VERB	PASS	person=2|attachment=ISO|number=SING|tma=HA|senID=35394|dadeg_pos=V	12	VCONJ	_	_
+15	شو	شد#شو	VERB	ACT	person=2|attachment=ISO|number=SING|tma=HA|senID=35394|dadeg_pos=V	12	VCONJ	_	_
 16	و	و	CCONJ	CONJ	attachment=ISO|senID=35394|dadeg_pos=CONJ	15	VCONJ	_	_
 17	لقمه	لقمه	NOUN	IANM	attachment=ISO|number=SING|senID=35394|dadeg_pos=N	18	PREDEP	_	_
 18	را	را	ADP	POSTP	attachment=ISO|senID=35394|dadeg_pos=POSTP	23	OBJ	_	_
@@ -16389,7 +16389,7 @@
 2	این	این	PREM	DEMAJ	attachment=ISO|senID=35404|dadeg_pos=PREM	3	NPREMOD	_	_
 3	کتاب	کتاب	NOUN	IANM	attachment=ISO|number=SING|senID=35404|dadeg_pos=N	1	POSDEP	_	_
 4	استدلال	استدلال	NOUN	IANM	attachment=ISO|number=SING|senID=35404|dadeg_pos=N	5	NVE	_	_
-5	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=35404|dadeg_pos=V	0	ROOT	_	_
+5	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=35404|dadeg_pos=V	0	ROOT	_	_
 6	که	که	SCONJ	SUBR	attachment=ISO|senID=35404|dadeg_pos=SUBR	5	VCL	_	_
 7	وجود	وجود	NOUN	IANM	attachment=ISO|number=SING|senID=35404|dadeg_pos=N	14	SBJ	_	_
 8	فرضیه‌های	فرضیه	NOUN	IANM	attachment=ISO|number=PLUR|senID=35404|dadeg_pos=N	7	MOZ	_	_
@@ -16722,7 +16722,7 @@
 10	از	از	ADP	PREP	attachment=ISO|senID=35584|dadeg_pos=PREP	12	AJPP	_	_
 11	اجابت	اجابت	NOUN	IANM	attachment=ISO|number=SING|senID=35584|dadeg_pos=N	10	POSDEP	_	_
 12	ملول	ملول	ADJ	AJP	attachment=ISO|senID=35584|dadeg_pos=ADJ	13	MOS	_	_
-13	نمی‌شوم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=H|senID=35584|polarity=NEG|dadeg_pos=V	8	PRD	_	_
+13	نمی‌شوم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=35584|polarity=NEG|dadeg_pos=V	8	PRD	_	_
 14	و	و	CCONJ	CONJ	attachment=ISO|senID=35584|dadeg_pos=CONJ	7	VCONJ	_	_
 15	هر	هر	PREM	AMBAJ	attachment=ISO|senID=35584|dadeg_pos=PREM	16	NPREMOD	_	_
 16	چند	چند	NOUN	IANM	attachment=ISO|number=SING|senID=35584|dadeg_pos=N	23	ADV	_	_
@@ -17201,7 +17201,7 @@
 7	30	30	NUM	PRENUM	attachment=ISO|senID=35854|dadeg_pos=PRENUM	8	NPREMOD	_	_
 8	تومان	تومان	NOUN	IANM	attachment=ISO|number=SING|senID=35854|dadeg_pos=N	10	ADV	_	_
 9	تعیین	تعیین	NOUN	IANM	attachment=ISO|number=SING|senID=35854|dadeg_pos=N	10	NVE	_	_
-10	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=35854|dadeg_pos=V	0	ROOT	_	_
+10	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=35854|dadeg_pos=V	0	ROOT	_	_
 11	که	که	SCONJ	SUBR	attachment=ISO|senID=35854|dadeg_pos=SUBR	10	AJUCL	_	_
 12	باید	بایست#باید	VERB	MODL	attachment=ISO|tma=H|senID=35854|dadeg_pos=V	11	PRD	_	_
 13	در	در	ADP	PREP	attachment=ISO|senID=35854|dadeg_pos=PREP	17	ADV	_	_
@@ -17211,7 +17211,7 @@
 17	می‌داشت	داشت#دار	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=35854|dadeg_pos=V	12	PRD	_	_
 18	اما	اما	CCONJ	CONJ	attachment=ISO|senID=35854|dadeg_pos=CONJ	17	VCONJ	_	_
 19	محقق	محقق	ADJ	AJP	attachment=ISO|senID=35854|dadeg_pos=ADJ	20	MOS	_	_
-20	نشد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=35854|polarity=NEG|dadeg_pos=V	18	POSDEP	_	spaceAfter=NO
+20	نشد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=35854|polarity=NEG|dadeg_pos=V	18	POSDEP	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=35854|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s874
@@ -17678,7 +17678,7 @@
 4	بر	بر	ADP	PREP	attachment=ISO|senID=47100|dadeg_pos=PREP	6	NPP	_	_
 5	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=47100|dadeg_pos=PR	4	POSDEP	_	_
 6	عرضه	عرضه	NOUN	IANM	attachment=ISO|number=SING|senID=47100|dadeg_pos=N	7	NVE	_	_
-7	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=47100|dadeg_pos=V	0	ROOT	_	_
+7	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=47100|dadeg_pos=V	0	ROOT	_	_
 8	دیدم	دید#بین	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=47100|dadeg_pos=V	7	VCONJ	_	_
 9	که	که	SCONJ	SUBR	attachment=ISO|senID=47100|dadeg_pos=SUBR	8	VCL	_	_
 10	تو	تو	PRON	SEPER	person=2|attachment=ISO|number=SING|senID=47100|dadeg_pos=PR	16	SBJ	_	_
@@ -17719,7 +17719,7 @@
 15-16	عایدمان	_	_	_	_	_	_	_	_
 15	عاید	عاید	NOUN	IANM	attachment=ISO|number=SING|senID=47110|dadeg_pos=N	17	MOS	_	_
 16	مان	ما	PRON	PRO	number=PLUR|person=1|pronType=Prs|senID=47110|dadeg_pos=PR	15	MOZ	_	_
-17	نمی‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=47110|polarity=NEG|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	نمی‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47110|polarity=NEG|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=47110|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s902
@@ -17978,7 +17978,7 @@
 19	بزنند	زد#زن	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=47230|dadeg_pos=V	12	VCL	_	spaceAfter=NO
 20	،	،	PUNCT	PUNC	attachment=ISO|senID=47230|dadeg_pos=PUNC	19	PUNC	_	_
 21	دستگیر	دستگیر	NOUN	IANM	attachment=ISO|number=SING|senID=47230|dadeg_pos=N	22	NVE	_	_
-22	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=47230|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+22	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=47230|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 23	.	.	PUNCT	PUNC	attachment=ISO|senID=47230|dadeg_pos=PUNC	22	PUNC	_	_
 
 # sent_id = dev-s914
@@ -18014,7 +18014,7 @@
 5	با	با	ADP	PREP	attachment=ISO|senID=47250|dadeg_pos=PREP	7	AJPP	_	_
 6	شکست	شکست	NOUN	IANM	attachment=ISO|number=SING|senID=47250|dadeg_pos=N	5	POSDEP	_	_
 7	مواجه	مواجه	ADJ	AJP	attachment=ISO|senID=47250|dadeg_pos=ADJ	8	MOS	_	_
-8	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=47250|dadeg_pos=V	4	NCL	_	_
+8	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=47250|dadeg_pos=V	4	NCL	_	_
 9	یا	یا	CCONJ	CONJ	attachment=ISO|senID=47250|dadeg_pos=CONJ	8	VCONJ	_	_
 10	به	به	ADP	PREP	attachment=ISO|senID=47250|dadeg_pos=PREP	13	NPP	_	_
 11	نتیجهٔ	نتیجه	NOUN	IANM	attachment=ISO|number=SING|senID=47250|dadeg_pos=N	10	POSDEP	_	_
@@ -18201,14 +18201,14 @@
 29	به	به	ADP	PREP	attachment=ISO|senID=47320|dadeg_pos=PREP	31	NPP	_	_
 30	بدن	بدن	NOUN	IANM	attachment=ISO|number=SING|senID=47320|dadeg_pos=N	29	POSDEP	_	_
 31	اعمال	اعمال	NOUN	IANM	attachment=ISO|number=SING|senID=47320|dadeg_pos=N	32	NVE	_	_
-32	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320|dadeg_pos=V	25	PRD	_	_
+32	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320|dadeg_pos=V	25	PRD	_	_
 33	می‌تواند	توانست#توان	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47320|dadeg_pos=V	0	ROOT	_	_
 34	منجر	منجر	ADJ	AJP	attachment=ISO|senID=47320|dadeg_pos=ADJ	39	MOS	_	_
 35	به	به	ADP	PREP	attachment=ISO|senID=47320|dadeg_pos=PREP	34	AJPP	_	_
 36	بروز	بروز	NOUN	IANM	attachment=ISO|number=SING|senID=47320|dadeg_pos=N	35	POSDEP	_	_
 37	عارضهٔ	عارضه	NOUN	IANM	attachment=ISO|number=SING|senID=47320|dadeg_pos=N	36	MOZ	_	_
 38	تمرین‌زدگی	تمرین‌زدگی	NOUN	IANM	attachment=ISO|number=SING|senID=47320|dadeg_pos=N	37	MOZ	_	_
-39	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320|dadeg_pos=V	33	VCL	_	spaceAfter=NO
+39	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=47320|dadeg_pos=V	33	VCL	_	spaceAfter=NO
 40	.	.	PUNCT	PUNC	attachment=ISO|senID=47320|dadeg_pos=PUNC	33	PUNC	_	_
 
 # sent_id = dev-s923
@@ -18547,7 +18547,7 @@
 11	خلاقیت	خلاقیت	NOUN	IANM	attachment=ISO|number=SING|senID=47461|dadeg_pos=N	10	MOZ	_	_
 12	در	در	ADP	PREP	attachment=ISO|senID=47461|dadeg_pos=PREP	10	NPP	_	_
 13	بچه‌ها	بچه	NOUN	ANM	attachment=ISO|number=PLUR|senID=47461|dadeg_pos=N	12	POSDEP	_	_
-14	می‌شویم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=PLUR|tma=H|senID=47461|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	می‌شویم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=47461|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=47461|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s937
@@ -19191,7 +19191,7 @@
 13	زیرا	زیرا	SCONJ	SUBR	attachment=ISO|senID=47791|dadeg_pos=SUBR	11	AJUCL	_	_
 14	لباس	لباس	NOUN	IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N	16	MOS	_	_
 15	شهرت	شهرت	NOUN	IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N	14	MOZ	_	_
-16	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=47791|dadeg_pos=V	13	AJUCL	_	_
+16	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47791|dadeg_pos=V	13	AJUCL	_	_
 17	و	و	CCONJ	CONJ	attachment=ISO|senID=47791|dadeg_pos=CONJ	16	VCONJ	_	_
 18	لباس	لباس	NOUN	IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N	21	SBJ	_	_
 19	شهرت	شهرت	NOUN	IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N	18	MOZ	_	_
@@ -19218,7 +19218,7 @@
 # text = ایران باعث شد که هواپیمای مرکل دو ساعت در آسمان ترکیه چرخ بزند.
 1	ایران	ایران	PROPN	IANM	attachment=ISO|number=SING|senID=47811|dadeg_pos=N	3	SBJ	_	_
 2	باعث	باعث	ADJ	AJP	attachment=ISO|senID=47811|dadeg_pos=ADJ	3	MOS	_	_
-3	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=47811|dadeg_pos=V	0	ROOT	_	_
+3	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=47811|dadeg_pos=V	0	ROOT	_	_
 4	که	که	SCONJ	SUBR	attachment=ISO|senID=47811|dadeg_pos=SUBR	2	ACL	_	_
 5	هواپیمای	هواپیما	NOUN	IANM	attachment=ISO|number=SING|senID=47811|dadeg_pos=N	13	SBJ	_	_
 6	مرکل	مرکل	PROPN	ANM	attachment=ISO|number=SING|senID=47811|dadeg_pos=N	5	MOZ	_	_
@@ -19256,7 +19256,7 @@
 20	نیروهای	نیرو	NOUN	ANM	attachment=ISO|number=PLUR|senID=47821|dadeg_pos=N	19	POSDEP	_	_
 21	پلیس	پلیس	NOUN	ANM	attachment=ISO|number=SING|senID=47821|dadeg_pos=N	20	MOZ	_	_
 22	دستگیر	دستگیر	ADJ	AJP	attachment=ISO|senID=47821|dadeg_pos=ADJ	23	NVE	_	_
-23	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=47821|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+23	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=47821|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 24	.	.	PUNCT	PUNC	attachment=ISO|senID=47821|dadeg_pos=PUNC	23	PUNC	_	_
 
 # sent_id = dev-s973
@@ -19279,7 +19279,7 @@
 3	دروازه	دروازه	NOUN	IANM	attachment=ISO|number=SING|senID=47841|dadeg_pos=N	2	POSDEP	_	_
 4	اش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=47841|dadeg_pos=PR	3	MOZ	_	_
 5	خارج	خارج	ADJ	AJP	attachment=ISO|senID=47841|dadeg_pos=ADJ	6	MOS	_	_
-6	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=47841|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=47841|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	،	،	PUNCT	PUNC	attachment=ISO|senID=47841|dadeg_pos=PUNC	6	PUNC	_	_
 8	مهاجمان	مهاجم	NOUN	ANM	attachment=ISO|number=PLUR|senID=47841|dadeg_pos=N	9	PREDEP	_	_
 9	را	را	ADP	POSTP	attachment=ISO|senID=47841|dadeg_pos=POSTP	11	OBJ	_	_
@@ -19477,7 +19477,7 @@
 41	تیم	تیم	NOUN	ANM	attachment=ISO|number=SING|senID=47901|dadeg_pos=N	40	POSDEP	_	_
 42	فنی	فنی	ADJ	AJP	attachment=ISO|senID=47901|dadeg_pos=ADJ	41	NPOSTMOD	_	_
 43	تعویض	تعویض	NOUN	IANM	attachment=ISO|number=SING|senID=47901|dadeg_pos=N	44	NVE	_	_
-44	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=47901|dadeg_pos=V	33	PRD	_	spaceAfter=NO
+44	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=47901|dadeg_pos=V	33	PRD	_	spaceAfter=NO
 45	.	.	PUNCT	PUNC	attachment=ISO|senID=47901|dadeg_pos=PUNC	31	PUNC	_	_
 
 # sent_id = dev-s981
@@ -20036,7 +20036,7 @@
 18	بیاورند	آورد#آور	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=36237|dadeg_pos=V	14	POSDEP	_	_
 19	تو	تو	PRON	SEPER	person=2|attachment=ISO|number=SING|senID=36237|dadeg_pos=PR	21	SBJ	_	_
 20	راضی	راضی	ADJ	AJP	attachment=ISO|senID=36237|dadeg_pos=ADJ	21	MOS	_	_
-21	می‌شوی	کرد#کن	VERB	PASS	person=2|attachment=ISO|number=SING|tma=H|senID=36237|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+21	می‌شوی	شد#شو	VERB	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=36237|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 22	؟	؟	PUNCT	PUNC	attachment=ISO|senID=36237|dadeg_pos=PUNC	21	PUNC	_	_
 
 # sent_id = dev-s1012
@@ -20327,7 +20327,7 @@
 3	آن	آن	PRON	DEMON	attachment=ISO|number=SING|senID=36399|dadeg_pos=PR	2	POSDEP	_	_
 4	که	که	SCONJ	SUBR	attachment=ISO|senID=36399|dadeg_pos=SUBR	3	NCL	_	_
 5	متوجه	متوجه	ADJ	AJP	attachment=ISO|senID=36399|dadeg_pos=ADJ	6	MOS	_	_
-6	شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=36399|dadeg_pos=V	4	PRD	_	_
+6	شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=36399|dadeg_pos=V	4	PRD	_	_
 7	کاست	کاست	NOUN	IANM	attachment=ISO|number=SING|senID=36399|dadeg_pos=N	9	SBJ	_	_
 8	منتشر	منتشر	ADJ	AJP	attachment=ISO|senID=36399|dadeg_pos=ADJ	9	MOS	_	_
 9	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=36399|dadeg_pos=V	0	ROOT	_	_
@@ -20571,7 +20571,7 @@
 8	و	و	CCONJ	CONJ	attachment=ISO|senID=36529|dadeg_pos=CONJ	7	VCONJ	_	_
 9	واسط	واسط	NOUN	ANM	attachment=ISO|number=SING|senID=36529|dadeg_pos=N	11	MOS	_	_
 10	خیر	خیر	NOUN	IANM	attachment=ISO|number=SING|senID=36529|dadeg_pos=N	9	MOZ	_	_
-11	شوید	کرد#کن	VERB	PASS	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=36529|dadeg_pos=V	8	POSDEP	_	spaceAfter=NO
+11	شوید	شد#شو	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=36529|dadeg_pos=V	8	POSDEP	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=36529|dadeg_pos=PUNC	3	PUNC	_	_
 
 # sent_id = dev-s1041
@@ -20973,7 +20973,7 @@
 8	دیگر	دیگر	PART	PART	attachment=ISO|senID=36761|dadeg_pos=PART	11	ADV	_	_
 9	کسی	کس	NOUN	ANM	attachment=ISO|number=SING|senID=36761|dadeg_pos=N	11	SBJ	_	_
 10	بدعاقبت	بدعاقبت	ADJ	AJP	attachment=ISO|senID=36761|dadeg_pos=ADJ	11	MOS	_	_
-11	نمی‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=36761|polarity=NEG|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	نمی‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=36761|polarity=NEG|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=36761|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s1064
@@ -21320,7 +21320,7 @@
 4	در	در	ADP	PREP	attachment=ISO|senID=36967|dadeg_pos=PREP	7	ADV	_	_
 5	اندونزی	اندونزی	PROPN	IANM	attachment=ISO|number=SING|senID=36967|dadeg_pos=N	4	POSDEP	_	_
 6	اعطا	اعطا	NOUN	IANM	attachment=ISO|number=SING|senID=36967|dadeg_pos=N	7	NVE	_	_
-7	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=36967|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=36967|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=36967|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s1084
@@ -21362,7 +21362,7 @@
 12	مناطق	منطقه	NOUN	IANM	attachment=ISO|number=PLUR|senID=36988|dadeg_pos=N	11	POSDEP	_	_
 13	جنگی	جنگی	ADJ	AJP	attachment=ISO|senID=36988|dadeg_pos=ADJ	12	NPOSTMOD	_	_
 14	اعزام	اعزام	NOUN	IANM	attachment=ISO|number=SING|senID=36988|dadeg_pos=N	15	NVE	_	_
-15	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=36988|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+15	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=36988|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=36988|dadeg_pos=PUNC	15	PUNC	_	_
 
 # sent_id = dev-s1086
@@ -21584,7 +21584,7 @@
 11	معضلات	معضل	NOUN	IANM	attachment=ISO|number=PLUR|senID=37099|dadeg_pos=N	10	POSDEP	_	_
 12	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=37099|dadeg_pos=ADJ	9	NPOSTMOD	_	_
 13	مواجه	مواجه	ADJ	AJP	attachment=ISO|senID=37099|dadeg_pos=ADJ	14	MOS	_	_
-14	شده‌ایم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=PLUR|tma=GN|senID=37099|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	شده‌ایم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=GN|senID=37099|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=37099|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s1097
@@ -21683,7 +21683,7 @@
 7	اما	اما	CCONJ	CONJ	attachment=ISO|senID=37150|dadeg_pos=CONJ	6	VCONJ	_	_
 8	سحر	سحر	NOUN	IANM	attachment=ISO|number=SING|senID=37150|dadeg_pos=N	10	ADV	_	_
 9	بیدار	بیدار	ADJ	AJP	attachment=ISO|senID=37150|dadeg_pos=ADJ	10	MOS	_	_
-10	نشدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GS|senID=37150|polarity=NEG|dadeg_pos=V	7	POSDEP	_	_
+10	نشدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=37150|polarity=NEG|dadeg_pos=V	7	POSDEP	_	_
 11	تا	تا	SCONJ	SUBR	attachment=ISO|senID=37150|dadeg_pos=SUBR	10	AJUCL	_	_
 12	قصد	قصد	NOUN	IANM	attachment=ISO|number=SING|senID=37150|dadeg_pos=N	13	NVE	_	_
 13	کنم	کرد#کن	VERB	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=37150|dadeg_pos=V	11	PRD	_	spaceAfter=NO
@@ -21844,7 +21844,7 @@
 11	طریق	طریق	NOUN	IANM	attachment=ISO|number=SING|senID=37210|dadeg_pos=N	10	POSDEP	_	_
 12	داوری	داوری	NOUN	IANM	attachment=ISO|number=SING|senID=37210|dadeg_pos=N	11	MOZ	_	_
 13	حل	حل	NOUN	IANM	attachment=ISO|number=SING|senID=37210|dadeg_pos=N	14	NVE	_	_
-14	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=37210|dadeg_pos=V	6	PRD	_	spaceAfter=NO
+14	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=37210|dadeg_pos=V	6	PRD	_	spaceAfter=NO
 15	،	،	PUNCT	PUNC	attachment=ISO|senID=37210|dadeg_pos=PUNC	14	PUNC	_	_
 16	در	در	ADP	PREP	attachment=ISO|senID=37210|dadeg_pos=PREP	28	ADV	_	_
 17	این	این	PREM	DEMAJ	attachment=ISO|senID=37210|dadeg_pos=PREM	18	NPREMOD	_	_
@@ -21858,7 +21858,7 @@
 25	داور	داور	NOUN	ANM	attachment=ISO|number=SING|senID=37210|dadeg_pos=N	28	SBJ	_	_
 26	دیگری	دیگر	ADJ	AJP	attachment=ISO|senID=37210|dadeg_pos=ADJ	25	NPOSTMOD	_	_
 27	انتخاب	انتخاب	NOUN	IANM	attachment=ISO|number=SING|senID=37210|dadeg_pos=N	28	NVE	_	_
-28	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=37210|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+28	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=37210|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 29	.	.	PUNCT	PUNC	attachment=ISO|senID=37210|dadeg_pos=PUNC	28	PUNC	_	_
 
 # sent_id = dev-s1108
@@ -22087,7 +22087,7 @@
 11	عکاسی	عکاسی	NOUN	IANM	attachment=ISO|number=SING|senID=37331|dadeg_pos=N	10	MOZ	_	_
 12	دیجیتال	دیجیتال	ADJ	AJP	attachment=ISO|senID=37331|dadeg_pos=ADJ	11	NPOSTMOD	_	_
 13	معرفی	معرفی	NOUN	IANM	attachment=ISO|number=SING|senID=37331|dadeg_pos=N	14	NVE	_	_
-14	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=37331|dadeg_pos=V	0	ROOT	_	_
+14	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=37331|dadeg_pos=V	0	ROOT	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=37331|dadeg_pos=CONJ	14	VCONJ	_	_
 16	مشخصات	مشخصه	NOUN	IANM	attachment=ISO|number=PLUR|senID=37331|dadeg_pos=N	28	SBJ	_	_
 17	و	و	CCONJ	CONJ	attachment=ISO|senID=37331|dadeg_pos=CONJ	16	NCONJ	_	_
@@ -22240,7 +22240,7 @@
 9	مرتکب	مرتکب	ADJ	AJP	attachment=ISO|senID=37401|dadeg_pos=ADJ	12	MOS	_	_
 10	جنایات	جنایت	NOUN	IANM	attachment=ISO|number=PLUR|senID=37401|dadeg_pos=N	9	NEZ	_	_
 11	فراوانی	فراوان	ADJ	AJP	attachment=ISO|senID=37401|dadeg_pos=ADJ	10	NPOSTMOD	_	_
-12	می‌شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GES|senID=37401|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	می‌شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GES|senID=37401|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=37401|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s1127
@@ -22484,7 +22484,7 @@
 23	استقبال	استقبال	NOUN	IANM	attachment=ISO|number=SING|senID=37531|dadeg_pos=N	22	POSDEP	_	_
 24	گسترده	گسترده	ADJ	AJP	attachment=ISO|senID=37531|dadeg_pos=ADJ	23	NPOSTMOD	_	_
 25	مواجه	مواجه	ADJ	AJP	attachment=ISO|senID=37531|dadeg_pos=ADJ	26	MOS	_	_
-26	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=37531|dadeg_pos=V	15	VCL	_	spaceAfter=NO
+26	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=37531|dadeg_pos=V	15	VCL	_	spaceAfter=NO
 27	.	.	PUNCT	PUNC	attachment=ISO|senID=37531|dadeg_pos=PUNC	15	PUNC	_	_
 
 # sent_id = dev-s1140
@@ -22493,7 +22493,7 @@
 2	به	به	ADP	PREP	attachment=ISO|senID=37542|dadeg_pos=PREP	4	NPP	_	_
 3	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=37542|dadeg_pos=PR	2	POSDEP	_	_
 4	امداد	امداد	NOUN	IANM	attachment=ISO|number=SING|senID=37542|dadeg_pos=N	5	NVE	_	_
-5	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=37542|dadeg_pos=V	1	PRD	_	_
+5	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=37542|dadeg_pos=V	1	PRD	_	_
 6	شرایط	شرایط	NOUN	IANM	attachment=ISO|number=PLUR|senID=37542|dadeg_pos=N	8	SBJ	_	_
 7	فرق	فرق	NOUN	IANM	attachment=ISO|number=SING|senID=37542|dadeg_pos=N	8	NVE	_	_
 8	می‌کرد	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=37542|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
@@ -22611,7 +22611,7 @@
 2	،	،	PUNCT	PUNC	attachment=ISO|senID=37614|dadeg_pos=PUNC	1	PUNC	_	_
 3	فعلاً	فعلاً	ADV	SADV	attachment=ISO|senID=37614|dadeg_pos=ADV	5	ADV	_	_
 4	مجبور	مجبور	ADJ	AJP	attachment=ISO|senID=37614|dadeg_pos=ADJ	5	MOS	_	_
-5	شده‌اند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GN|senID=37614|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+5	شده‌اند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=37614|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 6	،	،	PUNCT	PUNC	attachment=ISO|senID=37614|dadeg_pos=PUNC	5	PUNC	_	_
 7	در	در	NOUN	IANM	attachment=ISO|number=SING|senID=37614|dadeg_pos=N	12	PREDEP	_	_
 8	دستشویی	دستشویی	NOUN	IANM	attachment=ISO|number=SING|senID=37614|dadeg_pos=N	7	MOZ	_	_
@@ -22706,7 +22706,7 @@
 20	به	به	ADP	PREP	attachment=ISO|senID=37644|dadeg_pos=PREP	18	NPP	_	_
 21	محرک‌ها	محرک	NOUN	IANM	attachment=ISO|number=PLUR|senID=37644|dadeg_pos=N	20	POSDEP	_	_
 22	روبرو	روبرو	NOUN	IANM	attachment=ISO|number=SING|senID=37644|dadeg_pos=N	23	MOS	_	_
-23	شدند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GS|senID=37644|dadeg_pos=V	16	PRD	_	spaceAfter=NO
+23	شدند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=37644|dadeg_pos=V	16	PRD	_	spaceAfter=NO
 24	.	.	PUNCT	PUNC	attachment=ISO|senID=37644|dadeg_pos=PUNC	15	PUNC	_	_
 
 # sent_id = dev-s1151
@@ -23475,7 +23475,7 @@
 34	با	با	ADP	PREP	attachment=ISO|senID=48249|dadeg_pos=PREP	36	AJPP	_	_
 35	فهرست‌نویسی	فهرست‌نویسی	NOUN	IANM	attachment=ISO|number=SING|senID=48249|dadeg_pos=N	34	POSDEP	_	_
 36	آشنا	آشنا	ADJ	AJP	attachment=ISO|senID=48249|dadeg_pos=ADJ	37	MOS	_	_
-37	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=AY|senID=48249|dadeg_pos=V	46	PARCL	_	_
+37	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=48249|dadeg_pos=V	46	PARCL	_	_
 38	و	و	CCONJ	CONJ	attachment=ISO|senID=48249|dadeg_pos=CONJ	37	PUNC	_	_
 39	خود	خود	PRON	CREFX	attachment=ISO|senID=48249|dadeg_pos=PR	46	SBJ	_	spaceAfter=NO
 40	،	،	PUNCT	PUNC	attachment=ISO|senID=48249|dadeg_pos=PUNC	39	PUNC	_	_
@@ -24066,7 +24066,7 @@
 7	سیاسی	سیاسی	ADJ	AJP	attachment=ISO|senID=38031|dadeg_pos=ADJ	6	NPOSTMOD	_	_
 8	مصر	مصر	PROPN	IANM	attachment=ISO|number=SING|senID=38031|dadeg_pos=N	6	MOZ	_	_
 9	استشمام	استشمام	NOUN	IANM	attachment=ISO|number=SING|senID=38031|dadeg_pos=N	10	NVE	_	_
-10	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=38031|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38031|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=38031|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s1223
@@ -24267,7 +24267,7 @@
 11	ناگهان	ناگهان	ADV	SADV	attachment=ISO|senID=38142|dadeg_pos=ADV	14	ADV	_	_
 12	دوچرخه	دوچرخه	NOUN	IANM	attachment=ISO|number=SING|senID=38142|dadeg_pos=N	14	SBJ	_	_
 13	منحرف	منحرف	ADJ	AJP	attachment=ISO|senID=38142|dadeg_pos=ADJ	14	MOS	_	_
-14	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=38142|dadeg_pos=V	10	AJUCL	_	_
+14	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38142|dadeg_pos=V	10	AJUCL	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=38142|dadeg_pos=CONJ	14	VCONJ	_	_
 16-17	سرم	_	_	_	_	_	_	_	_
 16	سر	سر	NOUN	IANM	attachment=ISO|number=SING|senID=38142|dadeg_pos=N	23	SBJ	_	_
@@ -24286,7 +24286,7 @@
 2	در	در	NOUN	IANM	attachment=ISO|number=SING|senID=38152|dadeg_pos=N	1	POSDEP	_	_
 3	که	که	SCONJ	SUBR	attachment=ISO|senID=38152|dadeg_pos=SUBR	10	AJUCL	_	_
 4	وارد	وارد	ADJ	AJP	attachment=ISO|senID=38152|dadeg_pos=ADJ	5	NVE	_	_
-5	شدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GS|senID=38152|dadeg_pos=V	3	PRD	_	_
+5	شدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=38152|dadeg_pos=V	3	PRD	_	_
 6-7	سیگارم	_	_	_	_	_	_	_	_
 6	سیگار	سیگار	NOUN	IANM	attachment=ISO|number=SING|senID=38152|dadeg_pos=N	10	SBJ	_	_
 7	م	من	PRON	PRO	number=SING|person=1|pronType=Prs|senID=38152|dadeg_pos=PR	6	MOZ	_	_
@@ -24463,7 +24463,7 @@
 24	و	و	CCONJ	CONJ	attachment=ISO|senID=38258|dadeg_pos=CONJ	23	VCONJ	_	_
 25	چون	چون	SCONJ	SUBR	attachment=ISO|senID=38258|dadeg_pos=SUBR	35	AJUCL	_	_
 26	خسته	خسته	ADJ	AJP	attachment=ISO|senID=38258|dadeg_pos=ADJ	27	MOS	_	_
-27	می‌شدیم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=PLUR|tma=GES|senID=38258|dadeg_pos=V	25	PRD	_	_
+27	می‌شدیم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=GES|senID=38258|dadeg_pos=V	25	PRD	_	_
 28	برای	برای	ADP	PREP	attachment=ISO|senID=38258|dadeg_pos=PREP	35	ADV	_	_
 29	آیندهٔ	آینده	NOUN	IANM	attachment=ISO|number=SING|senID=38258|dadeg_pos=N	28	POSDEP	_	_
 30	"	"	PUNCT	PUNC	attachment=ISO|senID=38258|dadeg_pos=PUNC	31	PUNC	_	spaceAfter=NO
@@ -24608,7 +24608,7 @@
 11	نیروی	نیرو	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N	10	POSDEP	_	_
 12	برق	برق	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N	11	MOZ	_	_
 13	باز	باز	ADJ	AJP	attachment=ISO|senID=38343|dadeg_pos=ADJ	14	MOS	_	_
-14	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=38343|dadeg_pos=V	7	VCL	_	_
+14	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38343|dadeg_pos=V	7	VCL	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=38343|dadeg_pos=CONJ	14	VCONJ	_	_
 16	شخص	شخص	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N	24	SBJ	_	_
 17	امپراتور	امپراتور	NOUN	IANM	attachment=ISO|number=SING|senID=38343|dadeg_pos=N	16	MOZ	_	_
@@ -24662,7 +24662,7 @@
 36	هیچ	هیچ	PREM	AMBAJ	attachment=ISO|senID=38353|dadeg_pos=PREM	37	NPREMOD	_	_
 37	لوطی	لوطی	NOUN	ANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N	39	SBJ	_	_
 38	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=38353|dadeg_pos=ADJ	39	NVE	_	_
-39	نمی‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=38353|polarity=NEG|dadeg_pos=V	35	POSDEP	_	_
+39	نمی‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=38353|polarity=NEG|dadeg_pos=V	35	POSDEP	_	_
 40	که	که	SCONJ	SUBR	attachment=ISO|senID=38353|dadeg_pos=SUBR	37	NCL	_	_
 41	ضرب	ضرب	NOUN	IANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N	44	PREDEP	_	_
 42-43	شستش	_	_	_	_	_	_	_	_
@@ -24703,7 +24703,7 @@
 7	مرجان	مرجان	NOUN	ANM	attachment=ISO|number=SING|senID=38373|dadeg_pos=N	6	POSDEP	_	_
 8	شوهر	شوهر	NOUN	ANM	attachment=ISO|number=SING|senID=38373|dadeg_pos=N	10	SBJ	_	_
 9	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=38373|dadeg_pos=ADJ	10	NVE	_	_
-10	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=38373|dadeg_pos=V	4	VCONJ	_	spaceAfter=NO
+10	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38373|dadeg_pos=V	4	VCONJ	_	spaceAfter=NO
 11	،	،	PUNCT	PUNC	attachment=ISO|senID=38373|dadeg_pos=PUNC	10	PUNC	_	_
 12	شوهری	شوهر	NOUN	IANM	attachment=ISO|number=SING|senID=38373|dadeg_pos=N	8	APP	_	_
 13	که	که	SCONJ	SUBR	attachment=ISO|senID=38373|dadeg_pos=SUBR	12	NCL	_	_
@@ -24727,7 +24727,7 @@
 5	درخت	درخت	NOUN	IANM	attachment=ISO|number=SING|senID=38383|dadeg_pos=N	4	POSDEP	_	_
 6	چنار	چنار	NOUN	IANM	attachment=ISO|number=SING|senID=38383|dadeg_pos=N	5	MOZ	_	_
 7	جمع	جمع	NOUN	IANM	attachment=ISO|number=SING|senID=38383|dadeg_pos=N	8	NVE	_	_
-8	شده‌اند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=GN|senID=38383|dadeg_pos=V	0	ROOT	_	_
+8	شده‌اند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=38383|dadeg_pos=V	0	ROOT	_	_
 9	و	و	CCONJ	CONJ	attachment=ISO|senID=38383|dadeg_pos=CONJ	8	VCONJ	_	_
 10	با	با	ADP	PREP	attachment=ISO|senID=38383|dadeg_pos=PREP	12	NPP	_	_
 11	هم	هم	PRON	RECPR	attachment=ISO|senID=38383|dadeg_pos=PR	10	POSDEP	_	_
@@ -24770,7 +24770,7 @@
 30	خطبهٔ	خطبه	NOUN	IANM	attachment=ISO|number=SING|senID=38393|dadeg_pos=N	29	POSDEP	_	_
 31	عقد	عقد	NOUN	IANM	attachment=ISO|number=SING|senID=38393|dadeg_pos=N	30	MOZ	_	_
 32	جاری	جاری	ADJ	AJP	attachment=ISO|senID=38393|dadeg_pos=ADJ	33	MOS	_	_
-33	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=38393|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+33	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38393|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 34	.	.	PUNCT	PUNC	attachment=ISO|senID=38393|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s1258
@@ -24863,7 +24863,7 @@
 26	با	با	ADP	PREP	attachment=ISO|senID=38453|dadeg_pos=PREP	29	ADV	_	_
 27	شیشه‌ای	شیشه	NOUN	IANM	attachment=ISO|number=SING|senID=38453|dadeg_pos=N	26	POSDEP	_	_
 28	جدا	جدا	ADJ	AJP	attachment=ISO|senID=38453|dadeg_pos=ADJ	29	MOS	_	_
-29	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=38453|dadeg_pos=V	22	POSDEP	_	_
+29	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=38453|dadeg_pos=V	22	POSDEP	_	_
 30	از	از	ADP	PREP	attachment=ISO|senID=38453|dadeg_pos=PREP	28	AJPP	_	_
 31	اتاق	اتاق	NOUN	IANM	attachment=ISO|number=SING|senID=38453|dadeg_pos=N	30	POSDEP	_	_
 32	کناری	کناری	ADJ	AJP	attachment=ISO|senID=38453|dadeg_pos=ADJ	31	NPOSTMOD	_	spaceAfter=NO
@@ -25422,7 +25422,7 @@
 27	حضور	حضور	NOUN	IANM	attachment=ISO|number=SING|senID=38656|dadeg_pos=N	26	POSDEP	_	_
 28	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=38656|dadeg_pos=PR	27	MOZ	_	_
 29	تداعی	تداعی	NOUN	IANM	attachment=ISO|number=SING|senID=38656|dadeg_pos=N	30	NVE	_	_
-30	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=38656|dadeg_pos=V	14	PRD	_	spaceAfter=NO
+30	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=38656|dadeg_pos=V	14	PRD	_	spaceAfter=NO
 31	،	،	PUNCT	PUNC	attachment=ISO|senID=38656|dadeg_pos=PUNC	30	PUNC	_	_
 32	بلکه	بلکه	ADV	SADV	attachment=ISO|senID=38656|dadeg_pos=ADV	34	PREDEP	_	_
 33	بیشتر	بیشتر	ADJ	AJCM	attachment=ISO|senID=38656|dadeg_pos=ADJ	34	PREDEP	_	_
@@ -25500,7 +25500,7 @@
 36	فرهنگ‌های	فرهنگ	NOUN	IANM	attachment=ISO|number=PLUR|senID=38676|dadeg_pos=N	35	POSDEP	_	_
 37	گوناگون	گوناگون	ADJ	AJP	attachment=ISO|senID=38676|dadeg_pos=ADJ	36	NPOSTMOD	_	_
 38	آشنا	آشنا	ADJ	AJP	attachment=ISO|senID=38676|dadeg_pos=ADJ	39	MOS	_	_
-39	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GN|senID=38676|dadeg_pos=V	32	POSDEP	_	spaceAfter=NO
+39	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=38676|dadeg_pos=V	32	POSDEP	_	spaceAfter=NO
 40	،	،	PUNCT	PUNC	attachment=ISO|senID=38676|dadeg_pos=PUNC	39	PUNC	_	_
 41	مجذوب	مجذوب	ADJ	AJP	attachment=ISO|senID=38676|dadeg_pos=ADJ	51	MOS	_	_
 42	هیچ	هیچ	PREM	AMBAJ	attachment=ISO|senID=38676|dadeg_pos=PREM	43	NPREMOD	_	_
@@ -25680,7 +25680,7 @@
 17	ملأ	ملأ	NOUN	IANM	attachment=ISO|number=SING|senID=38686|dadeg_pos=N	16	POSDEP	_	_
 18	عام	عام	ADJ	AJP	attachment=ISO|senID=38686|dadeg_pos=ADJ	17	NPOSTMOD	_	_
 19	عرضه	عرضه	NOUN	IANM	attachment=ISO|number=SING|senID=38686|dadeg_pos=N	20	NVE	_	_
-20	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=38686|dadeg_pos=V	15	VCL	_	spaceAfter=NO
+20	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=38686|dadeg_pos=V	15	VCL	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=38686|dadeg_pos=PUNC	2	PUNC	_	_
 
 # sent_id = dev-s1287
@@ -25732,14 +25732,14 @@
 3	وقاحت‌پردازی	وقاحت‌پردازی	NOUN	IANM	attachment=ISO|number=SING|senID=38706|dadeg_pos=N	6	SBJ	_	spaceAfter=NO
 4	،	،	PUNCT	PUNC	attachment=ISO|senID=38706|dadeg_pos=PUNC	3	PUNC	_	_
 5	سوزناک	سوزناک	ADJ	AJP	attachment=ISO|senID=38706|dadeg_pos=ADJ	6	MOS	_	_
-6	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=38706|dadeg_pos=V	2	NCL	_	_
+6	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=38706|dadeg_pos=V	2	NCL	_	_
 7	یعنی	یعنی	PSUS	PSUS	attachment=ISO|senID=38706|dadeg_pos=PSUS	2	NCL	_	_
 8	درست	درست	ADV	SADV	attachment=ISO|senID=38706|dadeg_pos=ADV	9	PREDEP	_	_
 9	موقعی	موقع	NOUN	IANM	attachment=ISO|number=SING|senID=38706|dadeg_pos=N	7	MOS	_	_
 10	که	که	SCONJ	SUBR	attachment=ISO|senID=38706|dadeg_pos=SUBR	9	NCL	_	_
 11	دندان‌گیر	دندان‌گیر	ADJ	AJP	attachment=ISO|senID=38706|dadeg_pos=ADJ	13	MOS	_	_
 12	خلایق	خلق	NOUN	ANM	attachment=ISO|number=PLUR|senID=38706|dadeg_pos=N	11	NEZ	_	_
-13	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=38706|dadeg_pos=V	10	PRD	_	spaceAfter=NO
+13	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=38706|dadeg_pos=V	10	PRD	_	spaceAfter=NO
 14	،	،	PUNCT	PUNC	attachment=ISO|senID=38706|dadeg_pos=PUNC	13	PUNC	_	_
 15	وقتی	وقت	NOUN	IANM	attachment=ISO|number=SING|senID=38706|dadeg_pos=N	2	NCONJ	_	_
 16	که	که	SCONJ	SUBR	attachment=ISO|senID=38706|dadeg_pos=SUBR	15	NCL	_	_
@@ -25859,7 +25859,7 @@
 5	دررفته‌ام	در#رفت#رو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GN|senID=38748|dadeg_pos=V	0	ROOT	_	_
 6	و	و	CCONJ	CONJ	attachment=ISO|senID=38748|dadeg_pos=CONJ	5	VCONJ	_	_
 7	جریحه‌دار	جریحه‌دار	ADJ	AJP	attachment=ISO|senID=38748|dadeg_pos=ADJ	8	MOS	_	_
-8	شده‌ام	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GN|senID=38748|dadeg_pos=V	6	POSDEP	_	spaceAfter=NO
+8	شده‌ام	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GN|senID=38748|dadeg_pos=V	6	POSDEP	_	spaceAfter=NO
 9	؟	؟	PUNCT	PUNC	attachment=ISO|senID=38748|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s1293
@@ -25873,7 +25873,7 @@
 7	می‌گیرم	گرفت#گیر	VERB	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=38758|dadeg_pos=V	0	ROOT	_	_
 8	و	و	CCONJ	CONJ	attachment=ISO|senID=38758|dadeg_pos=CONJ	7	VCONJ	_	_
 9	قائل	قائل	ADJ	AJP	attachment=ISO|senID=38758|dadeg_pos=ADJ	10	MOS	_	_
-10	می‌شوم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=H|senID=38758|dadeg_pos=V	8	POSDEP	_	_
+10	می‌شوم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=38758|dadeg_pos=V	8	POSDEP	_	_
 11	که	که	SCONJ	SUBR	attachment=ISO|senID=38758|dadeg_pos=SUBR	9	ACL	_	_
 12	پورنوگرافی	پورنوگرافی	NOUN	IANM	attachment=ISO|number=SING|senID=38758|dadeg_pos=N	16	SBJ	_	_
 13	پلشت	پلشت	ADJ	AJP	attachment=ISO|senID=38758|dadeg_pos=ADJ	16	MOS	_	_
@@ -25920,7 +25920,7 @@
 27	فیض	فیض	NOUN	IANM	attachment=ISO|number=SING|senID=38769|dadeg_pos=N	26	POSDEP	_	_
 28	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=38769|dadeg_pos=PR	27	MOZ	_	_
 29	سرشار	سرشار	ADJ	AJP	attachment=ISO|senID=38769|dadeg_pos=ADJ	30	MOS	_	_
-30	می‌شویم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=PLUR|tma=H|senID=38769|dadeg_pos=V	25	POSDEP	_	spaceAfter=NO
+30	می‌شویم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=38769|dadeg_pos=V	25	POSDEP	_	spaceAfter=NO
 31	،	،	PUNCT	PUNC	attachment=ISO|senID=38769|dadeg_pos=PUNC	30	PUNC	_	_
 32	عمیقاً	عمیقاً	ADV	SADV	attachment=ISO|senID=38769|dadeg_pos=ADV	35	ADV	_	_
 33	احساس	احساس	NOUN	IANM	attachment=ISO|number=SING|senID=38769|dadeg_pos=N	35	NVE	_	_
@@ -25981,7 +25981,7 @@
 10	حماقت	حماقت	NOUN	IANM	attachment=ISO|number=SING|senID=38809|dadeg_pos=N	9	POSDEP	_	_
 11	بزرگ‌تر	بزرگ	ADJ	AJCM	attachment=ISO|senID=38809|dadeg_pos=ADJ	10	NPOSTMOD	_	_
 12	متهم	متهم	ADJ	AJP	attachment=ISO|senID=38809|dadeg_pos=ADJ	13	MOS	_	_
-13	شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=38809|dadeg_pos=V	8	VCL	_	spaceAfter=NO
+13	شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=38809|dadeg_pos=V	8	VCL	_	spaceAfter=NO
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=38809|dadeg_pos=PUNC	4	PUNC	_	_
 
 # sent_id = dev-s1299
@@ -26053,7 +26053,7 @@
 28	مسیح	مسیح	PROPN	ANM	attachment=ISO|number=SING|senID=38839|dadeg_pos=N	27	MOZ	_	_	spaceAfter=NO
 29	،	،	PUNCT	PUNC	attachment=ISO|senID=38839|dadeg_pos=PUNC	28	PUNC	_	_
 30	آزاد	آزاد	ADJ	AJP	attachment=ISO|senID=38839|dadeg_pos=ADJ	31	MOS	_	_
-31	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=38839|dadeg_pos=V	24	POSDEP	_	spaceAfter=NO
+31	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=38839|dadeg_pos=V	24	POSDEP	_	spaceAfter=NO
 32	،	،	PUNCT	PUNC	attachment=ISO|senID=38839|dadeg_pos=PUNC	31	PUNC	_	_
 33	سراسر	سراسر	NOUN	IANM	attachment=ISO|number=PLUR|senID=38839|dadeg_pos=N	35	PREDEP	_	_
 34	جهان	جهان	PROPN	IANM	attachment=ISO|number=SING|senID=38839|dadeg_pos=N	33	MOZ	_	_
@@ -26362,7 +26362,7 @@
 35	غرب	غرب	NOUN	ANM	attachment=ISO|number=SING|senID=38911|dadeg_pos=N	32	MOZ	_	spaceAfter=NO
 36	،	،	PUNCT	PUNC	attachment=ISO|senID=38911|dadeg_pos=PUNC	35	PUNC	_	_
 37	تسلیم	تسلیم	ADJ	AJP	attachment=ISO|senID=38911|dadeg_pos=ADJ	38	MOS	_	_
-38	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=38911|dadeg_pos=V	27	POSDEP	_	_
+38	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=38911|dadeg_pos=V	27	POSDEP	_	_
 39	و	و	CCONJ	CONJ	attachment=ISO|senID=38911|dadeg_pos=CONJ	38	VCONJ	_	_
 40	این	این	PRON	DEMON	attachment=ISO|number=SING|senID=38911|dadeg_pos=PR	45	SBJ	_	spaceAfter=NO
 41	،	،	PUNCT	PUNC	attachment=ISO|senID=38911|dadeg_pos=PUNC	40	PUNC	_	_
@@ -26589,7 +26589,7 @@
 5	اجتماع	اجتماع	NOUN	IANM	attachment=ISO|number=SING|senID=39032|dadeg_pos=N	8	SBJ	_	_
 6	عظیمی	عظیم	ADJ	AJP	attachment=ISO|senID=39032|dadeg_pos=ADJ	5	NPOSTMOD	_	_
 7	برپا	برپا	ADJ	AJP	attachment=ISO|senID=39032|dadeg_pos=ADJ	8	MOS	_	_
-8	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39032|dadeg_pos=V	0	ROOT	_	_
+8	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39032|dadeg_pos=V	0	ROOT	_	_
 9	و	و	CCONJ	CONJ	attachment=ISO|senID=39032|dadeg_pos=CONJ	8	VCONJ	_	_
 10	از	از	ADP	PREP	attachment=ISO|senID=39032|dadeg_pos=PREP	12	VPP	_	_
 11	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=39032|dadeg_pos=PR	10	POSDEP	_	_
@@ -26963,7 +26963,7 @@
 29	و	و	CCONJ	CONJ	attachment=ISO|senID=39172|dadeg_pos=CONJ	28	NCONJ	_	_
 30	مجازات	مجازات	NOUN	IANM	attachment=ISO|number=SING|senID=39172|dadeg_pos=N	29	POSDEP	_	_
 31	شدیدتری	شدید	ADJ	AJCM	attachment=ISO|senID=39172|dadeg_pos=ADJ	26	NPOSTMOD	_	_
-32	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=39172|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+32	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=39172|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 33	.	.	PUNCT	PUNC	attachment=ISO|senID=39172|dadeg_pos=PUNC	32	PUNC	_	_
 
 # sent_id = dev-s1335
@@ -27165,7 +27165,7 @@
 4	به	به	ADP	PREP	attachment=ISO|senID=39254|dadeg_pos=PREP	7	ADV	_	_
 5	نحوی	نحو	NOUN	IANM	attachment=ISO|number=SING|senID=39254|dadeg_pos=N	4	POSDEP	_	_
 6	انتخاب	انتخاب	NOUN	IANM	attachment=ISO|number=SING|senID=39254|dadeg_pos=N	7	NVE	_	_
-7	می‌شوند	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=PLUR|tma=H|senID=39254|dadeg_pos=V	0	ROOT	_	_
+7	می‌شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=39254|dadeg_pos=V	0	ROOT	_	_
 8	که	که	SCONJ	SUBR	attachment=ISO|senID=39254|dadeg_pos=SUBR	5	NCL	_	_
 9	نمایندهٔ	نماینده	NOUN	ANM	attachment=ISO|number=SING|senID=39254|dadeg_pos=N	19	MOS	_	_
 10	نوعی	نوع	NOUN	IANM	attachment=ISO|number=SING|senID=39254|dadeg_pos=N	9	MOZ	_	_
@@ -27186,7 +27186,7 @@
 25	به	به	ADP	PREP	attachment=ISO|senID=39254|dadeg_pos=PREP	28	ADV	_	_
 26	شکلی	شکل	NOUN	IANM	attachment=ISO|senID=39254|dadeg_pos=N	25	POSDEP	_	_
 27	جمع‌آوری	جمع‌آوری	NOUN	IANM	attachment=ISO|number=SING|senID=39254|dadeg_pos=N	28	NVE	_	_
-28	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=39254|dadeg_pos=V	23	VCL	_	_
+28	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=39254|dadeg_pos=V	23	VCL	_	_
 29	که	که	SCONJ	SUBR	attachment=ISO|senID=39254|dadeg_pos=SUBR	26	NCL	_	_
 30	زبان	زبان	NOUN	IANM	attachment=ISO|number=SING|senID=39254|dadeg_pos=N	43	PREDEP	_	_
 31	انگلیسی	انگلیسی	ADJ	AJP	attachment=ISO|senID=39254|dadeg_pos=ADJ	30	NPOSTMOD	_	_
@@ -27366,7 +27366,7 @@
 4	در	در	ADP	PREP	attachment=ISO|senID=39345|dadeg_pos=PREP	7	ADV	_	_
 5	ایران	ایران	PROPN	IANM	attachment=ISO|number=SING|senID=39345|dadeg_pos=N	4	POSDEP	_	_
 6	انگشت‌نگاری	انگشت‌نگاری	NOUN	IANM	attachment=ISO|number=SING|senID=39345|dadeg_pos=N	7	NVE	_	_
-7	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39345|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39345|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=39345|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s1352
@@ -27382,7 +27382,7 @@
 9	رخداد	رخداد	NOUN	IANM	attachment=ISO|number=SING|senID=39355|dadeg_pos=N	8	MOZ	_	_
 10	پدیده‌ای	پدیده	NOUN	IANM	attachment=ISO|number=SING|senID=39355|dadeg_pos=N	9	MOZ	_	_
 11	سؤال	سؤال	NOUN	IANM	attachment=ISO|number=SING|senID=39355|dadeg_pos=N	12	NVE	_	_
-12	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=39355|dadeg_pos=V	19	PREDEP	_	_
+12	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=39355|dadeg_pos=V	19	PREDEP	_	_
 13	نه	نه	ADV	SADV	attachment=ISO|senID=39355|dadeg_pos=ADV	18	ADV	_	_
 14	الفاظ	لفظ	NOUN	IANM	attachment=ISO|number=PLUR|senID=39355|dadeg_pos=N	18	SBJ	_	_
 15	فلاسفه	فیلسوف	NOUN	ANM	attachment=ISO|number=PLUR|senID=39355|dadeg_pos=N	14	MOZ	_	_
@@ -27552,7 +27552,7 @@
 9	زبان	زبان	NOUN	IANM	attachment=ISO|number=SING|senID=39435|dadeg_pos=N	8	POSDEP	_	_
 10	کسی	کس	NOUN	ANM	attachment=ISO|number=SING|senID=39435|dadeg_pos=N	9	MOZ	_	_
 11	خارج	خارج	ADJ	AJP	attachment=ISO|senID=39435|dadeg_pos=ADJ	12	MOS	_	_
-12	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=39435|dadeg_pos=V	5	NCL	_	spaceAfter=NO
+12	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=39435|dadeg_pos=V	5	NCL	_	spaceAfter=NO
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=39435|dadeg_pos=PUNC	12	PUNC	_	_
 14	جنجال	جنجال	NOUN	IANM	attachment=ISO|number=SING|senID=39435|dadeg_pos=N	15	NVE	_	_
 15	کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=39435|dadeg_pos=V	4	VCL	_	spaceAfter=NO
@@ -27852,7 +27852,7 @@
 27	ضرورت‌های	ضرورت	NOUN	IANM	attachment=ISO|number=PLUR|senID=39585|dadeg_pos=N	26	POSDEP	_	_
 28	بومی	بومی	ADJ	AJP	attachment=ISO|senID=39585|dadeg_pos=ADJ	27	NPOSTMOD	_	_
 29	آشنا	آشنا	ADJ	AJP	attachment=ISO|senID=39585|dadeg_pos=ADJ	30	MOS	_	_
-30	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39585|dadeg_pos=V	16	VCL	_	spaceAfter=NO
+30	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39585|dadeg_pos=V	16	VCL	_	spaceAfter=NO
 31	.	.	PUNCT	PUNC	attachment=ISO|senID=39585|dadeg_pos=PUNC	3	PUNC	_	_
 
 # sent_id = dev-s1376
@@ -27941,7 +27941,7 @@
 15	این	این	PREM	DEMAJ	attachment=ISO|senID=39615|dadeg_pos=PREM	16	NPREMOD	_	_
 16	سؤال	سؤال	NOUN	IANM	attachment=ISO|number=SING|senID=39615|dadeg_pos=N	14	POSDEP	_	_
 17	ختم	ختم	NOUN	IANM	attachment=ISO|number=SING|senID=39615|dadeg_pos=N	18	NVE	_	_
-18	شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=HEL|senID=39615|dadeg_pos=V	11	PRD	_	_
+18	شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=39615|dadeg_pos=V	11	PRD	_	_
 19	که	که	SCONJ	SUBR	attachment=ISO|senID=39615|dadeg_pos=SUBR	18	VCL	_	_
 20	آیا	آیا	PART	PART	attachment=ISO|senID=39615|dadeg_pos=PART	27	PART	_	_
 21	کشتی	کشتی	PROPN	IANM	attachment=ISO|number=SING|senID=39615|dadeg_pos=N	27	SBJ	_	_
@@ -28035,11 +28035,11 @@
 30	که	که	SCONJ	SUBR	attachment=ISO|senID=39645|dadeg_pos=SUBR	29	NCL	_	_
 31	نفهمیدم	فهمید#فهم	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=39645|polarity=NEG|dadeg_pos=V	30	PRD	_	_
 32	چه	چه	PRON	INTG	attachment=ISO|senID=39645|dadeg_pos=PR	33	SBJ	_	_
-33	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=39645|dadeg_pos=V	31	VCL	_	_
+33	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39645|dadeg_pos=V	31	VCL	_	_
 34	به	به	ADP	PREP	attachment=ISO|senID=39645|dadeg_pos=PREP	36	NPP	_	_
 35	آن	آن	PRON	DEMON	attachment=ISO|number=SING|senID=39645|dadeg_pos=PR	34	POSDEP	_	_
 36	وارد	وارد	NOUN	IANM	attachment=ISO|number=SING|senID=39645|dadeg_pos=N	37	NVE	_	_
-37	شدم	کرد#کن	VERB	PASS	person=1|attachment=ISO|number=SING|tma=GS|senID=39645|dadeg_pos=V	33	VCL	_	spaceAfter=NO
+37	شدم	شد#شو	VERB	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=39645|dadeg_pos=V	33	VCL	_	spaceAfter=NO
 38	،	،	PUNCT	PUNC	attachment=ISO|senID=39645|dadeg_pos=PUNC	37	PUNC	_	_
 39	ترم	ترم	NOUN	IANM	attachment=ISO|number=SING|senID=39645|dadeg_pos=N	41	MOS	_	_
 40	شش	شش	NUM	PRENUM	attachment=ISO|senID=39645|dadeg_pos=PRENUM	39	NPOSTMOD	_	_
@@ -28229,7 +28229,7 @@
 9	از	از	ADP	PREP	attachment=ISO|senID=39720|dadeg_pos=PREP	11	NPP	_	_
 10	چهارچوب‌ها	چهارچوب	NOUN	IANM	attachment=ISO|number=PLUR|senID=39720|dadeg_pos=N	9	POSDEP	_	_
 11	خارج	خارج	ADJ	AJP	attachment=ISO|senID=39720|dadeg_pos=ADJ	12	MOS	_	_
-12	شوید	کرد#کن	VERB	PASS	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=39720|dadeg_pos=V	8	POSDEP	_	_
+12	شوید	شد#شو	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=39720|dadeg_pos=V	8	POSDEP	_	_
 13	حتی	حتی	ADV	SADV	attachment=ISO|senID=39720|dadeg_pos=ADV	14	PREDEP	_	_
 14	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=39720|dadeg_pos=SUBR	12	AJUCL	_	_
 15	از	از	ADP	PREP	attachment=ISO|senID=39720|dadeg_pos=PREP	18	NPP	_	_
@@ -28430,7 +28430,7 @@
 6	بخش	بخش	NOUN	IANM	attachment=ISO|number=SING|senID=59333|dadeg_pos=N	5	POSDEP	_	_
 7	خاصی	خاص	ADJ	AJP	attachment=ISO|senID=59333|dadeg_pos=ADJ	6	NPOSTMOD	_	_
 8	سرازیر	سرازیر	ADJ	AJP	attachment=ISO|senID=59333|dadeg_pos=ADJ	9	MOS	_	_
-9	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=59333|dadeg_pos=V	2	PRD	_	spaceAfter=NO
+9	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=59333|dadeg_pos=V	2	PRD	_	spaceAfter=NO
 10	،	،	PUNCT	PUNC	attachment=ISO|senID=59333|dadeg_pos=PUNC	9	PUNC	_	_
 11	منابع	منبع	NOUN	IANM	attachment=ISO|number=PLUR|senID=59333|dadeg_pos=N	18	SBJ	_	_
 12	به	به	ADP	PREP	attachment=ISO|senID=59333|dadeg_pos=PREP	18	ADV	_	_
@@ -28591,7 +28591,7 @@
 2	از	از	ADP	PREP	attachment=ISO|senID=59403|dadeg_pos=PREP	1	POSDEP	_	_
 3	تحقیق	تحقیق	NOUN	IANM	attachment=ISO|number=SING|senID=59403|dadeg_pos=N	2	POSDEP	_	_
 4	معلوم	معلوم	ADJ	AJP	attachment=ISO|senID=59403|dadeg_pos=ADJ	5	MOS	_	_
-5	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=59403|dadeg_pos=V	0	ROOT	_	_
+5	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=59403|dadeg_pos=V	0	ROOT	_	_
 6	که	که	SCONJ	SUBR	attachment=ISO|senID=59403|dadeg_pos=SUBR	5	VCL	_	_
 7	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=59403|dadeg_pos=ADJ	11	MOS	_	_
 8	از	از	ADP	PREP	attachment=ISO|senID=59403|dadeg_pos=PREP	7	COMPPP	_	_
@@ -29166,7 +29166,7 @@
 5	بود	بود#باش	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=44917|dadeg_pos=V	0	ROOT	_	_
 6	که	که	SCONJ	SUBR	attachment=ISO|senID=44917|dadeg_pos=SUBR	5	VCL	_	_
 7	اعلام	اعلام	NOUN	IANM	attachment=ISO|number=SING|senID=44917|dadeg_pos=N	8	NVE	_	_
-8	شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GS|senID=44917|dadeg_pos=V	6	PRD	_	_
+8	شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=44917|dadeg_pos=V	6	PRD	_	_
 9	ترنت	ترنت	PROPN	ANM	attachment=ISO|number=SING|senID=44917|dadeg_pos=N	20	SBJ	_	_
 10	رزنور	رزنور	PROPN	ANM	attachment=ISO|number=SING|senID=44917|dadeg_pos=N	9	MOZ	_	_
 11	و	و	CCONJ	CONJ	attachment=ISO|senID=44917|dadeg_pos=CONJ	9	NCONJ	_	_
@@ -29490,7 +29490,7 @@
 19	زبان	زبان	NOUN	IANM	attachment=ISO|number=SING|senID=45057|dadeg_pos=N	16	MOZ	_	_
 20	فارسی	فارسی	ADJ	AJP	attachment=ISO|senID=45057|dadeg_pos=ADJ	19	NPOSTMOD	_	_
 21	رمزگذاری	رمزگذاری	NOUN	IANM	attachment=ISO|number=SING|senID=45057|dadeg_pos=N	22	NVE	_	_
-22	شده	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GN|senID=45057|dadeg_pos=V	13	PRD	_	_
+22	شده	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=45057|dadeg_pos=V	13	PRD	_	_
 23	از	از	ADP	PREP	attachment=ISO|senID=45057|dadeg_pos=PREP	39	NPP	_	_
 24	طریق	طریق	NOUN	IANM	attachment=ISO|number=SING|senID=45057|dadeg_pos=N	23	POSDEP	_	_
 25	یک	یک	NUM	PRENUM	attachment=ISO|senID=45057|dadeg_pos=PRENUM	26	NPREMOD	_	_
@@ -29714,7 +29714,7 @@
 4	عزیز	عزیز	PROPN	AJP	attachment=ISO|senID=39817|dadeg_pos=ADJ	3	NPOSTMOD	_	_
 5	تهران	تهران	PROPN	IANM	attachment=ISO|number=SING|senID=39817|dadeg_pos=N	3	MOZ	_	_
 6	پاک‌سازی	پاک‌سازی	NOUN	IANM	attachment=ISO|number=SING|senID=39817|dadeg_pos=N	7	NVE	_	_
-7	می‌شد	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=GES|senID=39817|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	می‌شد	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=39817|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=39817|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s1454
@@ -29734,7 +29734,7 @@
 13	در	در	ADP	PREP	attachment=ISO|senID=39827|dadeg_pos=PREP	15	NPP	_	_
 14	جوانی	جوانی	NOUN	IANM	attachment=ISO|number=SING|senID=39827|dadeg_pos=N	13	POSDEP	_	_
 15	پایه‌گذاری	پایه‌گذاری	NOUN	IANM	attachment=ISO|number=SING|senID=39827|dadeg_pos=N	16	NVE	_	_
-16	می‌شود	کرد#کن	VERB	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=39827|dadeg_pos=V	9	PRD	_	spaceAfter=NO
+16	می‌شود	شد#شو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=39827|dadeg_pos=V	9	PRD	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=39827|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s1455
