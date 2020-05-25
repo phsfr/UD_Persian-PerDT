@@ -83,7 +83,7 @@
 19	دولت	دولت	PROPN	IANM	attachment=ISO|number=SING|senID=23497|dadeg_pos=N	18	POSDEP	_	_
 20	روسیه	روسیه	PROPN	IANM	attachment=ISO|number=SING|senID=23497|dadeg_pos=N	19	MOZ	_	_
 21	بیشتر	بیش	ADJ	AJCM	attachment=ISO|senID=23497|dadeg_pos=ADJ	22	MOS	_	_
-22	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=23497|dadeg_pos=V	0	ROOT	_	_
+22	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=23497|dadeg_pos=V	0	ROOT	_	_
 23	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=23497|dadeg_pos=AUX	22	aux	_	spaceAfter=NO
 24	.	.	PUNCT	PUNC	attachment=ISO|senID=23497|dadeg_pos=PUNC	22	PUNC	_	_
 
@@ -388,7 +388,7 @@
 24	توسط	توسط	ADP	PREP	attachment=ISO|senID=23602|dadeg_pos=PREP	27	ADV	_	_
 25	هواپیما	هواپیما	NOUN	IANM	attachment=ISO|number=SING|senID=23602|dadeg_pos=N	24	POSDEP	_	_
 26	جابجا	جابجا	ADJ	AJP	attachment=ISO|senID=23602|dadeg_pos=ADJ	27	NVE	_	_
-27	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=23602|dadeg_pos=V	11	VCL	_	_
+27	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=23602|dadeg_pos=V	11	VCL	_	_
 28	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=23602|dadeg_pos=AUX	27	aux	_	spaceAfter=NO
 29	.	.	PUNCT	PUNC	attachment=ISO|senID=23602|dadeg_pos=PUNC	11	PUNC	_	_
 
@@ -489,7 +489,7 @@
 3	کارها	کار	NOUN	IANM	attachment=ISO|number=PLUR|senID=23635|dadeg_pos=N	1	MOZ	_	_
 4	هم	هم	ADV	SADV	attachment=ISO|senID=23635|dadeg_pos=ADV	3	POSDEP	_	_
 5	نهی	نهی	NOUN	IANM	attachment=ISO|number=SING|senID=23635|dadeg_pos=N	6	NVE	_	_
-6	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=23635|dadeg_pos=V	0	ROOT	_	_
+6	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=23635|dadeg_pos=V	0	ROOT	_	_
 7	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=23635|dadeg_pos=AUX	6	aux	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=23635|dadeg_pos=PUNC	6	PUNC	_	_
 
@@ -515,7 +515,7 @@
 18	اخیر	اخیر	ADJ	AJP	attachment=ISO|senID=23646|dadeg_pos=ADJ	17	NPOSTMOD	_	_
 19	توسط	توسط	ADP	PREP	attachment=ISO|senID=23646|dadeg_pos=PREP	17	NPP	_	_
 20	عربستان	عربستان	PROPN	IANM	attachment=ISO|number=SING|senID=23646|dadeg_pos=N	19	POSDEP	_	_
-21	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=23646|dadeg_pos=V	3	VCL	_	_
+21	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=23646|dadeg_pos=V	3	VCL	_	_
 22	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=23646|dadeg_pos=AUX	21	aux	_	_
 23	که	که	SCONJ	SUBR	attachment=ISO|senID=23646|dadeg_pos=SUBR	21	AJUCL	_	_
 24	در	در	ADP	PREP	attachment=ISO|senID=23646|dadeg_pos=PREP	45	ADV	_	_
@@ -864,7 +864,7 @@
 53	لیگ	لیگ	PROPN	IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	52	MOZ	_	_
 54	تکرار	تکرار	NOUN	IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	56	NVE	_	_
 55	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=23721|dadeg_pos=AUX	56	aux	_	_
-56	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=23721|dadeg_pos=V	42	PRD	_	spaceAfter=NO
+56	شد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=23721|dadeg_pos=V	42	PRD	_	spaceAfter=NO
 57	.	.	PUNCT	PUNC	attachment=ISO|senID=23721|dadeg_pos=PUNC	41	PUNC	_	_
 
 # sent_id = dev-s24
@@ -931,7 +931,7 @@
 60	شهید	شهید	NOUN	ANM	attachment=ISO|number=SING|senID=23733|dadeg_pos=N	57	MOZ	_	_
 61	بزرگوار	بزرگوار	ADJ	AJP	attachment=ISO|senID=23733|dadeg_pos=ADJ	60	NPOSTMOD	_	_
 62	ذکر	ذکر	NOUN	IANM	attachment=ISO|number=SING|senID=23733|dadeg_pos=N	63	NVE	_	_
-63	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=23733|dadeg_pos=V	35	POSDEP	_	_
+63	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=23733|dadeg_pos=V	35	POSDEP	_	_
 64	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=23733|dadeg_pos=AUX	63	aux	_	spaceAfter=NO
 65	.	.	PUNCT	PUNC	attachment=ISO|senID=23733|dadeg_pos=PUNC	21	PUNC	_	_
 
@@ -1058,7 +1058,7 @@
 4	زمین	زمین	PROPN	IANM	attachment=ISO|number=SING|senID=23781|dadeg_pos=N	7	SBJ	_	_
 5	دچار	دچار	ADJ	AJP	attachment=ISO|senID=23781|dadeg_pos=ADJ	7	MOS	_	_
 6	فشردگی	فشردگی	NOUN	IANM	attachment=ISO|number=SING|senID=23781|dadeg_pos=N	5	NEZ	_	_
-7	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=23781|dadeg_pos=V	0	ROOT	_	_
+7	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=23781|dadeg_pos=V	0	ROOT	_	_
 8	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=23781|dadeg_pos=AUX	7	aux	_	_
 9	که	که	SCONJ	SUBR	attachment=ISO|senID=23781|dadeg_pos=SUBR	7	AJUCL	_	_
 10	هوادهی	هوادهی	NOUN	IANM	attachment=ISO|number=SING|senID=23781|dadeg_pos=N	20	SBJ	_	_
@@ -1141,7 +1141,7 @@
 26	این	این	PREM	DEMAJ	attachment=ISO|senID=23813|dadeg_pos=PREM	27	NPREMOD	_	_
 27	کار	کار	NOUN	IANM	attachment=ISO|number=SING|senID=23813|dadeg_pos=N	25	POSDEP	_	_
 28	نخواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=23813|dadeg_pos=AUX	29	aux	_	_
-29	برد	برد#بر	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=23813|dadeg_pos=V	17	PRD	_	spaceAfter=NO
+29	برد	برد#بر	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=23813|dadeg_pos=V	17	PRD	_	spaceAfter=NO
 30	.	.	PUNCT	PUNC	attachment=ISO|senID=23813|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s31
@@ -1452,7 +1452,7 @@
 33	کشاورزان	کشاورز	NOUN	ANM	attachment=ISO|number=PLUR|senID=23932|dadeg_pos=N	32	POSDEP	_	_
 34	مطالبه	مطالبه	NOUN	IANM	attachment=ISO|number=SING|senID=23932|dadeg_pos=N	36	NVE	_	_
 35	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=23932|dadeg_pos=AUX	36	aux	_	_
-36	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=23932|dadeg_pos=V	25	POSDEP	_	spaceAfter=NO
+36	شد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=23932|dadeg_pos=V	25	POSDEP	_	spaceAfter=NO
 37	.	.	PUNCT	PUNC	attachment=ISO|senID=23932|dadeg_pos=PUNC	36	PUNC	_	_
 
 # sent_id = dev-s41
@@ -1723,7 +1723,7 @@
 56	ایران	ایران	PROPN	IANM	attachment=ISO|number=SING|senID=24027|dadeg_pos=N	54	MOZ	_	_
 57	اعلام	اعلام	NOUN	IANM	attachment=ISO|number=SING|senID=24027|dadeg_pos=N	59	NVE	_	_
 58	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=24027|dadeg_pos=AUX	59	aux	_	_
-59	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=24027|dadeg_pos=V	43	PRD	_	spaceAfter=NO
+59	شد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=24027|dadeg_pos=V	43	PRD	_	spaceAfter=NO
 60	،	،	PUNCT	PUNC	attachment=ISO|senID=24027|dadeg_pos=PUNC	59	PUNC	_	_
 61	به	به	ADP	PREP	attachment=ISO|senID=24027|dadeg_pos=PREP	81	NPP	_	_
 62	حساب	حساب	NOUN	IANM	attachment=ISO|number=SING|senID=24027|dadeg_pos=N	61	POSDEP	_	_
@@ -1781,7 +1781,7 @@
 28	خطه	خطه	NOUN	IANM	attachment=ISO|number=SING|senID=24038|dadeg_pos=N	26	MOZ	_	_
 29	معرفی	معرفی	NOUN	IANM	attachment=ISO|number=SING|senID=24038|dadeg_pos=N	31	NVE	_	_
 30	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=24038|dadeg_pos=AUX	31	aux	_	_
-31	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=PASS|senID=24038|dadeg_pos=V	12	PRD	_	spaceAfter=NO
+31	شد	شد#شو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=24038|dadeg_pos=V	12	PRD	_	spaceAfter=NO
 32	،	،	PUNCT	PUNC	attachment=ISO|senID=24038|dadeg_pos=PUNC	31	PUNC	_	_
 33	تصریح	تصریح	NOUN	IANM	attachment=ISO|number=SING|senID=24038|dadeg_pos=N	34	NVE	_	_
 34	کرد	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=24038|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
@@ -1812,7 +1812,7 @@
 59	به	به	ADP	PREP	attachment=ISO|senID=24038|dadeg_pos=PREP	62	VPP	_	_
 60	چاپ	چاپ	NOUN	IANM	attachment=ISO|number=SING|senID=24038|dadeg_pos=N	59	POSDEP	_	_
 61	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=24038|dadeg_pos=AUX	62	aux	_	_
-62	رسید	رسید#رس	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=24038|dadeg_pos=V	58	PRD	_	spaceAfter=NO
+62	رسید	رسید#رس	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=24038|dadeg_pos=V	58	PRD	_	spaceAfter=NO
 63	.	.	PUNCT	PUNC	attachment=ISO|senID=24038|dadeg_pos=PUNC	34	PUNC	_	_
 
 # sent_id = dev-s50
@@ -2165,7 +2165,7 @@
 24	مقاوم‌سازی	مقاوم‌سازی	NOUN	IANM	attachment=ISO|number=SING|senID=24215|dadeg_pos=N	27	NVE	_	_
 25	و	و	CCONJ	CONJ	attachment=ISO|senID=24215|dadeg_pos=CONJ	24	NCONJ	_	_
 26	بهسازی	بهسازی	NOUN	IANM	attachment=ISO|number=SING|senID=24215|dadeg_pos=N	25	POSDEP	_	_
-27	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=24215|dadeg_pos=V	0	ROOT	_	_
+27	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=24215|dadeg_pos=V	0	ROOT	_	_
 28	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=24215|dadeg_pos=AUX	27	aux	_	spaceAfter=NO
 29	.	.	PUNCT	PUNC	attachment=ISO|senID=24215|dadeg_pos=PUNC	27	PUNC	_	_
 
@@ -2205,7 +2205,7 @@
 32	تضعیف	تضعیف	NOUN	IANM	attachment=ISO|number=SING|senID=24225|dadeg_pos=N	31	NEZ	_	_
 33	بیشتر	بیش	ADJ	AJCM	attachment=ISO|senID=24225|dadeg_pos=ADJ	32	NPOSTMOD	_	_
 34	تولیدکنندگان	تولیدکننده	NOUN	ANM	attachment=ISO|number=PLUR|senID=24225|dadeg_pos=N	32	MOZ	_	_
-35	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=24225|dadeg_pos=V	0	ROOT	_	_
+35	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=24225|dadeg_pos=V	0	ROOT	_	_
 36	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=24225|dadeg_pos=AUX	35	aux	_	spaceAfter=NO
 37	.	.	PUNCT	PUNC	attachment=ISO|senID=24225|dadeg_pos=PUNC	35	PUNC	_	_
 
@@ -2253,7 +2253,7 @@
 7	هیأت	هیأت	NOUN	IANM	attachment=ISO|number=SING|senID=24247|dadeg_pos=N	6	MOZ	_	_
 8	پاکسازی	پاکسازی	NOUN	IANM	attachment=ISO|number=SING|senID=24247|dadeg_pos=N	7	MOZ	_	_
 9	بعثی‌ها	بعثی	NOUN	ANM	attachment=ISO|number=PLUR|senID=24247|dadeg_pos=N	8	MOZ	_	_
-10	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=PASS|senID=24247|dadeg_pos=V	5	PRD	_	_
+10	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GN|dadeg_pos=V|dadeg_fpos=ACT|senID=24247|dadeg_pos=V	5	PRD	_	_
 11	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=24247|dadeg_pos=AUX	10	aux	_	spaceAfter=NO
 12	،	،	PUNCT	PUNC	attachment=ISO|senID=24247|dadeg_pos=PUNC	10	PUNC	_	_
 13	517	517	NUM	PRENUM	attachment=ISO|senID=24247|dadeg_pos=PRENUM	14	NPREMOD	_	_
@@ -2689,7 +2689,7 @@
 24	را	را	ADP	POSTP	attachment=ISO|senID=24388|dadeg_pos=POSTP	27	OBJ	_	_
 25	ویران	ویران	ADJ	AJP	attachment=ISO|senID=24388|dadeg_pos=ADJ	27	MOS	_	_
 26	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=24388|dadeg_pos=AUX	27	aux	_	_
-27	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=24388|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+27	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=24388|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 28	.	.	PUNCT	PUNC	attachment=ISO|senID=24388|dadeg_pos=PUNC	27	PUNC	_	_
 
 # sent_id = dev-s81
@@ -3714,7 +3714,7 @@
 4	را	را	ADP	POSTP	attachment=ISO|senID=43426|dadeg_pos=POSTP	7	OBJ	_	_
 5	تعریض	تعریض	NOUN	IANM	attachment=ISO|number=SING|senID=43426|dadeg_pos=N	7	NVE	_	_
 6	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=43426|dadeg_pos=AUX	7	aux	_	_
-7	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43426|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43426|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=43426|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s131
@@ -3731,7 +3731,7 @@
 10	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=43436|dadeg_pos=PR	9	POSDEP	_	_
 11	تعلیم	تعلیم	NOUN	IANM	attachment=ISO|number=SING|senID=43436|dadeg_pos=N	13	NVE	_	_
 12	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=43436|dadeg_pos=AUX	13	aux	_	_
-13	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43436|dadeg_pos=V	7	POSDEP	_	spaceAfter=NO
+13	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43436|dadeg_pos=V	7	POSDEP	_	spaceAfter=NO
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=43436|dadeg_pos=PUNC	13	PUNC	_	_
 
 # sent_id = dev-s132
@@ -3776,7 +3776,7 @@
 12	کمیسیون	کمیسیون	NOUN	IANM	attachment=ISO|number=SING|senID=43466|dadeg_pos=N	15	OBJ	_	_
 13	تعلق	تعلق	NOUN	IANM	attachment=ISO|number=SING|senID=43466|dadeg_pos=N	15	NVE	_	_
 14	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=43466|dadeg_pos=AUX	15	aux	_	_
-15	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43466|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+15	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43466|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=43466|dadeg_pos=PUNC	15	PUNC	_	_
 
 # sent_id = dev-s135
@@ -3797,7 +3797,7 @@
 4	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=43486|dadeg_pos=PR	3	POSDEP	_	_
 5	تلگراف	تلگراف	NOUN	IANM	attachment=ISO|number=SING|senID=43486|dadeg_pos=N	7	NVE	_	_
 6	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=43486|dadeg_pos=AUX	7	aux	_	_
-7	زد	زد#زن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43486|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	زد	زد#زن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43486|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=43486|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s137
@@ -4043,7 +4043,7 @@
 4	بهتر	به	ADJ	AJCM	attachment=ISO|senID=43636|dadeg_pos=ADJ	7	ADV	_	_
 5	تمرین	تمرین	NOUN	IANM	attachment=ISO|number=SING|senID=43636|dadeg_pos=N	7	NVE	_	_
 6	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=43636|dadeg_pos=AUX	7	aux	_	_
-7	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43636|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43636|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=43636|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s152
@@ -4070,7 +4070,7 @@
 4	اول	اول	NOUN	IANM	attachment=ISO|number=SING|senID=43656|dadeg_pos=N	7	ADV	_	_
 5	اذان	اذان	NOUN	IANM	attachment=ISO|number=SING|senID=43656|dadeg_pos=N	4	MOZ	_	_
 6	بیدار	بیدار	ADJ	AJP	attachment=ISO|senID=43656|dadeg_pos=ADJ	7	MOS	_	_
-7	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=43656|dadeg_pos=V	0	ROOT	_	_
+7	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=43656|dadeg_pos=V	0	ROOT	_	_
 8	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=43656|dadeg_pos=AUX	7	aux	_	_
 9	ولی	ولی	CCONJ	CONJ	attachment=ISO|senID=43656|dadeg_pos=CONJ	7	VCONJ	_	_
 10	تنبلی	تنبلی	NOUN	IANM	attachment=ISO|number=SING|senID=43656|dadeg_pos=N	11	NVE	_	_
@@ -4129,7 +4129,7 @@
 7	وجود	وجود	NOUN	IANM	attachment=ISO|number=SING|senID=43696|dadeg_pos=N	6	MOZ	_	_
 8	م	من	PRON	PRO	number=SING|person=1|pronType=Prs|senID=43696|dadeg_pos=PR	7	MOZ	_	_
 9	تمنا	تمنا	NOUN	IANM	attachment=ISO|number=SING|senID=43696|dadeg_pos=N	10	MOS	_	_
-10	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=43696|dadeg_pos=V	5	POSDEP	_	_
+10	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=43696|dadeg_pos=V	5	POSDEP	_	_
 11	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=43696|dadeg_pos=AUX	10	aux	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=43696|dadeg_pos=PUNC	10	PUNC	_	_
 
@@ -4277,7 +4277,7 @@
 7	شفاف	شفاف	ADJ	AJP	attachment=ISO|senID=43786|dadeg_pos=ADJ	6	NPOSTMOD	_	_
 8	تنفس	تنفس	NOUN	IANM	attachment=ISO|number=SING|senID=43786|dadeg_pos=N	10	NVE	_	_
 9	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=43786|dadeg_pos=AUX	10	aux	_	_
-10	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43786|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43786|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=43786|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s167
@@ -4356,7 +4356,7 @@
 12	پرستاران	پرستار	NOUN	ANM	attachment=ISO|number=PLUR|senID=43826|dadeg_pos=N	11	POSDEP	_	_
 13	تیمار	تیمار	NOUN	IANM	attachment=ISO|number=SING|senID=43826|dadeg_pos=N	15	NVE	_	_
 14	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=43826|dadeg_pos=AUX	15	aux	_	_
-15	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43826|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+15	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=43826|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=43826|dadeg_pos=PUNC	15	PUNC	_	_
 
 # sent_id = dev-s171
@@ -4714,7 +4714,7 @@
 21	را	را	ADP	POSTP	attachment=ISO|senID=44008|dadeg_pos=POSTP	24	OBJ	_	_
 22	شکار	شکار	NOUN	IANM	attachment=ISO|number=SING|senID=44008|dadeg_pos=N	24	NVE	_	_
 23	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=44008|dadeg_pos=AUX	24	aux	_	_
-24	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44008|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+24	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44008|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 25	.	.	PUNCT	PUNC	attachment=ISO|senID=44008|dadeg_pos=PUNC	24	PUNC	_	_
 
 # sent_id = dev-s189
@@ -5301,7 +5301,7 @@
 6	شلوار	شلوار	NOUN	IANM	attachment=ISO|number=SING|senID=26312|dadeg_pos=N	5	POSDEP	_	_
 7	م	من	PRON	PRO	number=SING|person=1|pronType=Prs|senID=26312|dadeg_pos=PR	6	MOZ	_	_
 8	هماهنگ	هماهنگ	ADJ	AJP	attachment=ISO|senID=26312|dadeg_pos=ADJ	9	MOS	_	_
-9	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=26312|dadeg_pos=V	0	ROOT	_	_
+9	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=26312|dadeg_pos=V	0	ROOT	_	_
 10	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=26312|dadeg_pos=AUX	9	aux	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=26312|dadeg_pos=PUNC	9	PUNC	_	_
 
@@ -5475,7 +5475,7 @@
 42	از	از	ADP	PREP	attachment=ISO|senID=26370|dadeg_pos=PREP	44	AJPP	_	_
 43	خود	خود	PRON	CREFX	attachment=ISO|senID=26370|dadeg_pos=PR	42	POSDEP	_	_
 44	بی‌خود	بیخود	ADJ	AJP	attachment=ISO|senID=26370|dadeg_pos=ADJ	45	MOS	_	_
-45	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=26370|dadeg_pos=V	41	POSDEP	_	_
+45	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=26370|dadeg_pos=V	41	POSDEP	_	_
 46	بودم	بود#باش	AUX	V_PASS	number=SING|person=1|tense=Past|senID=26370|dadeg_pos=AUX	45	aux	_	spaceAfter=NO
 47	.	.	PUNCT	PUNC	attachment=ISO|senID=26370|dadeg_pos=PUNC	45	PUNC	_	_
 
@@ -6549,7 +6549,7 @@
 11	به	به	ADP	PREP	attachment=ISO|senID=30772|dadeg_pos=PREP	14	VPRT	_	_
 12	جان	جان	NOUN	IANM	attachment=ISO|number=SING|senID=30772|dadeg_pos=N	11	POSDEP	_	_
 13	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=30772|dadeg_pos=AUX	14	aux	_	_
-14	آمد	آمد#آ	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30772|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	آمد	آمد#آ	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30772|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=30772|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s282
@@ -6603,7 +6603,7 @@
 3	به	به	ADP	PREP	attachment=ISO|senID=30815|dadeg_pos=PREP	6	VPRT	_	_
 4	خروش	خروش	NOUN	IANM	attachment=ISO|number=SING|senID=30815|dadeg_pos=N	3	POSDEP	_	_
 5	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=30815|dadeg_pos=AUX	6	aux	_	_
-6	آمد	آمد#آ	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30815|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	آمد	آمد#آ	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30815|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	.	.	PUNCT	PUNC	attachment=ISO|senID=30815|dadeg_pos=PUNC	6	PUNC	_	_
 
 # sent_id = dev-s286
@@ -6674,7 +6674,7 @@
 4	سمی	سمی	ADJ	AJP	attachment=ISO|senID=30846|dadeg_pos=ADJ	3	NPOSTMOD	_	_
 5	رو	رو	NOUN	IANM	attachment=ISO|number=SING|senID=30846|dadeg_pos=N	7	NVE	_	_
 6	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=30846|dadeg_pos=AUX	7	aux	_	_
-7	آورد	آورد#آور	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30846|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	آورد	آورد#آور	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30846|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=30846|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s289
@@ -6795,7 +6795,7 @@
 48	ایران	ایران	PROPN	IANM	attachment=ISO|number=SING|senID=30891|dadeg_pos=N	47	MOZ	_	_
 49	مسترد	مسترد	ADJ	AJP	attachment=ISO|senID=30891|dadeg_pos=ADJ	51	NVE	_	_
 50	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=30891|dadeg_pos=AUX	51	aux	_	_
-51	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=PASS|senID=30891|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+51	شد	شد#شو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30891|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 52	.	.	PUNCT	PUNC	attachment=ISO|senID=30891|dadeg_pos=PUNC	51	PUNC	_	_
 
 # sent_id = dev-s293
@@ -6872,7 +6872,7 @@
 16	از	از	ADP	PREP	attachment=ISO|senID=30948|dadeg_pos=PREP	19	VPRT	_	_
 17	دست	دست	NOUN	IANM	attachment=ISO|number=SING|senID=30948|dadeg_pos=N	16	POSDEP	_	_
 18	خواهی	خواست#خواه	AUX	V_AUX	number=SING|person=2|tense=Fut|verbForm=Fin|senID=30948|dadeg_pos=AUX	19	aux	_	_
-19	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30948|dadeg_pos=V	14	POSDEP	_	spaceAfter=NO
+19	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30948|dadeg_pos=V	14	POSDEP	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=30948|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s298
@@ -6925,7 +6925,7 @@
 # text = افسوس خواهی خورد به خاطر قلب‌هایی که شکسته‌ای.
 1	افسوس	افسوس	NOUN	IANM	attachment=ISO|number=SING|senID=30990|dadeg_pos=N	3	OBJ	_	_
 2	خواهی	خواست#خواه	AUX	V_AUX	number=SING|person=2|tense=Fut|verbForm=Fin|senID=30990|dadeg_pos=AUX	3	aux	_	_
-3	خورد	خورد#خور	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30990|dadeg_pos=V	0	ROOT	_	_
+3	خورد	خورد#خور	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=30990|dadeg_pos=V	0	ROOT	_	_
 4	به	به	ADP	PREP	attachment=ISO|senID=30990|dadeg_pos=PREP	3	ADV	_	_
 5	خاطر	خاطر	NOUN	IANM	attachment=ISO|number=SING|senID=30990|dadeg_pos=N	4	POSDEP	_	_
 6	قلب‌هایی	قلب	NOUN	IANM	attachment=ISO|number=PLUR|senID=30990|dadeg_pos=N	5	MOZ	_	_
@@ -7159,12 +7159,12 @@
 15	از	از	ADP	PREP	attachment=ISO|senID=31106|dadeg_pos=PREP	14	POSDEP	_	_
 16	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=SING|senID=31106|dadeg_pos=PR	15	POSDEP	_	_
 17	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=31106|dadeg_pos=AUX	18	aux	_	_
-18	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31106|dadeg_pos=V	0	ROOT	_	_
+18	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31106|dadeg_pos=V	0	ROOT	_	_
 19	که	که	SCONJ	SUBR	attachment=ISO|senID=31106|dadeg_pos=SUBR	13	NCL	_	_
 20	مانند	مانند	ADP	PREP	attachment=ISO|senID=31106|dadeg_pos=PREP	23	MOS	_	_
 21	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=31106|dadeg_pos=PR	20	POSDEP	_	_
 22	نخواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=31106|dadeg_pos=AUX	23	aux	_	_
-23	بود	بود#باش	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31106|dadeg_pos=V	19	PRD	_	spaceAfter=NO
+23	بود	بود#باش	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31106|dadeg_pos=V	19	PRD	_	spaceAfter=NO
 24	.	.	PUNCT	PUNC	attachment=ISO|senID=31106|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s313
@@ -7365,7 +7365,7 @@
 7	همانها	همانها	PRON	DEMON	attachment=ISO|number=PLUR|senID=31191|dadeg_pos=PR	6	POSDEP	_	_
 8	هلاک	هلاک	ADJ	AJP	attachment=ISO|senID=31191|dadeg_pos=ADJ	10	MOS	_	_
 9	خواهید	خواست#خواه	AUX	V_AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=31191|dadeg_pos=AUX	10	aux	_	_
-10	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=PASS|senID=31191|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	شد	شد#شو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31191|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=31191|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s321
@@ -7786,7 +7786,7 @@
 7	خانهٔ	خانه	NOUN	IANM	attachment=ISO|number=SING|senID=31411|dadeg_pos=N	6	POSDEP	_	_
 8	بخت	بخت	NOUN	IANM	attachment=ISO|number=SING|senID=31411|dadeg_pos=N	7	MOZ	_	_
 9	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=31411|dadeg_pos=AUX	10	aux	_	_
-10	فرستاد	فرستاد#فرست	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31411|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	فرستاد	فرستاد#فرست	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31411|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=31411|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s341
@@ -7801,7 +7801,7 @@
 8	نیز	نیز	ADV	SADV	attachment=ISO|senID=31421|dadeg_pos=ADV	6	POSDEP	_	_
 9	گذر	گذر	NOUN	IANM	attachment=ISO|number=SING|senID=31421|dadeg_pos=N	11	NVE	_	_
 10	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=31421|dadeg_pos=AUX	11	aux	_	_
-11	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31421|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=31421|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=31421|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s342
@@ -8532,7 +8532,7 @@
 13	دو	دو	NUM	PRENUM	attachment=ISO|senID=31892|dadeg_pos=PRENUM	14	NPREMOD	_	_
 14	حساب	حساب	NOUN	IANM	attachment=ISO|number=SING|senID=31892|dadeg_pos=N	16	SBJ	_	_
 15	بستانکار	بستانکار	NOUN	IANM	attachment=ISO|number=SING|senID=31892|dadeg_pos=N	16	MOS	_	_
-16	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=PASS|senID=31892|dadeg_pos=V	0	ROOT	_	_
+16	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=ACT|senID=31892|dadeg_pos=V	0	ROOT	_	_
 17	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=31892|dadeg_pos=AUX	16	aux	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=31892|dadeg_pos=PUNC	16	PUNC	_	_
 
@@ -9637,11 +9637,11 @@
 13	ایران	ایران	PROPN	IANM	attachment=ISO|number=SING|senID=44326|dadeg_pos=N	12	POSDEP	_	_
 14	شعبه	شعبه	NOUN	IANM	attachment=ISO|number=SING|senID=44326|dadeg_pos=N	16	NVE	_	_
 15	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=44326|dadeg_pos=AUX	16	aux	_	_
-16	زد	زد#زن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44326|dadeg_pos=V	0	ROOT	_	_
+16	زد	زد#زن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44326|dadeg_pos=V	0	ROOT	_	_
 17	و	و	CCONJ	CONJ	attachment=ISO|senID=44326|dadeg_pos=CONJ	16	VCONJ	_	_
 18	رسمی	رسمی	ADJ	AJP	attachment=ISO|senID=44326|dadeg_pos=ADJ	20	MOS	_	_
 19	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=44326|dadeg_pos=AUX	20	aux	_	_
-20	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=PASS|senID=44326|dadeg_pos=V	17	POSDEP	_	spaceAfter=NO
+20	شد	شد#شو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44326|dadeg_pos=V	17	POSDEP	_	spaceAfter=NO
 21	؟	؟	PUNCT	PUNC	attachment=ISO|senID=44326|dadeg_pos=PUNC	20	PUNC	_	_
 
 # sent_id = dev-s446
@@ -9683,7 +9683,7 @@
 35	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=44336|dadeg_pos=PR	34	MOZ	_	_
 36	شوره	شوره	NOUN	IANM	attachment=ISO|number=SING|senID=44336|dadeg_pos=N	38	NVE	_	_
 37	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=44336|dadeg_pos=AUX	38	aux	_	_
-38	زد	زد#زن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44336|dadeg_pos=V	19	POSDEP	_	spaceAfter=NO
+38	زد	زد#زن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44336|dadeg_pos=V	19	POSDEP	_	spaceAfter=NO
 39	.	.	PUNCT	PUNC	attachment=ISO|senID=44336|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s447
@@ -9733,7 +9733,7 @@
 6	وی	وی	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=44356|dadeg_pos=PR	4	MOZ	_	_
 7	شرط	شرط	NOUN	IANM	attachment=ISO|number=SING|senID=44356|dadeg_pos=N	9	NVE	_	_
 8	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=44356|dadeg_pos=AUX	9	aux	_	_
-9	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44356|dadeg_pos=V	0	ROOT	_	_
+9	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44356|dadeg_pos=V	0	ROOT	_	_
 10	در	در	ADP	PREP	attachment=ISO|senID=44356|dadeg_pos=PREP	21	ADV	_	_
 11	صورت	صورت	NOUN	IANM	attachment=ISO|number=SING|senID=44356|dadeg_pos=N	10	POSDEP	_	_
 12	نیاز	نیاز	NOUN	IANM	attachment=ISO|number=SING|senID=44356|dadeg_pos=N	11	MOZ	_	_
@@ -9837,7 +9837,7 @@
 5	را	را	ADP	POSTP	attachment=ISO|senID=44416|dadeg_pos=POSTP	8	OBJ	_	_
 6	بخار	بخار	NOUN	IANM	attachment=ISO|number=SING|senID=44416|dadeg_pos=N	8	NVE	_	_
 7	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=44416|dadeg_pos=AUX	8	aux	_	_
-8	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44416|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+8	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44416|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 9	!	!	PUNCT	PUNC	attachment=ISO|senID=44416|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s455
@@ -9979,7 +9979,7 @@
 6	مصر	مصر	PROPN	IANM	attachment=ISO|number=SING|senID=44735|dadeg_pos=N	5	MOZ	_	_
 7	تکیه	تکیه	NOUN	IANM	attachment=ISO|number=SING|senID=44735|dadeg_pos=N	9	NVE	_	_
 8	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=44735|dadeg_pos=AUX	9	aux	_	_
-9	زد	زد#زن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44735|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	زد	زد#زن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44735|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	؟	؟	PUNCT	PUNC	attachment=ISO|senID=44735|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s462
@@ -10110,14 +10110,14 @@
 6	را	را	ADP	POSTP	attachment=ISO|senID=44805|dadeg_pos=POSTP	9	OBJ	_	_
 7	تقبیح	تقبیح	NOUN	IANM	attachment=ISO|number=SING|senID=44805|dadeg_pos=N	9	NVE	_	_
 8	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=44805|dadeg_pos=AUX	9	aux	_	_
-9	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44805|dadeg_pos=V	0	ROOT	_	_
+9	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44805|dadeg_pos=V	0	ROOT	_	_
 10	و	و	CCONJ	CONJ	attachment=ISO|senID=44805|dadeg_pos=CONJ	9	VCONJ	_	_
 11	اتهامات	اتهام	NOUN	IANM	attachment=ISO|number=PLUR|senID=44805|dadeg_pos=N	16	NVE	_	_
 12	دیگری	دیگر	ADJ	AJP	attachment=ISO|senID=44805|dadeg_pos=ADJ	11	NPOSTMOD	_	_
 13	به	به	ADP	PREP	attachment=ISO|senID=44805|dadeg_pos=PREP	11	NPP	_	_
 14	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=44805|dadeg_pos=PR	13	POSDEP	_	_
 15	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=44805|dadeg_pos=AUX	16	aux	_	_
-16	زد	زد#زن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44805|dadeg_pos=V	10	POSDEP	_	spaceAfter=NO
+16	زد	زد#زن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44805|dadeg_pos=V	10	POSDEP	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=44805|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s469
@@ -10209,7 +10209,7 @@
 11	را	را	ADP	POSTP	attachment=ISO|senID=44846|dadeg_pos=POSTP	14	OBJ	_	_
 12	تقطیع	تقطیع	NOUN	IANM	attachment=ISO|number=SING|senID=44846|dadeg_pos=N	14	NVE	_	_
 13	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=44846|dadeg_pos=AUX	14	aux	_	_
-14	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44846|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44846|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=44846|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s473
@@ -10258,7 +10258,7 @@
 14	نیز	نیز	ADV	SADV	attachment=ISO|senID=32452|dadeg_pos=ADV	13	POSDEP	_	_
 15	ادامه	ادامه	NOUN	IANM	attachment=ISO|number=SING|senID=32452|dadeg_pos=N	17	NVE	_	_
 16	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=32452|dadeg_pos=AUX	17	aux	_	_
-17	داشت	داشت#دار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32452|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	داشت	داشت#دار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32452|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=32452|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s475
@@ -10332,7 +10332,7 @@
 19	به	به	ADP	PREP	attachment=ISO|senID=32483|dadeg_pos=PREP	21	NPP	_	_
 20	مجلس	مجلس	NOUN	IANM	attachment=ISO|number=SING|senID=32483|dadeg_pos=N	19	POSDEP	_	_
 21	ارسال	ارسال	NOUN	IANM	attachment=ISO|number=SING|senID=32483|dadeg_pos=N	22	NVE	_	_
-22	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=32483|dadeg_pos=V	11	PRD	_	_
+22	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=32483|dadeg_pos=V	11	PRD	_	_
 23	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=32483|dadeg_pos=AUX	22	aux	_	spaceAfter=NO
 24	،	،	PUNCT	PUNC	attachment=ISO|senID=32483|dadeg_pos=PUNC	22	PUNC	_	_
 25	ایرادهایی	ایراد	NOUN	IANM	attachment=ISO|number=PLUR|senID=32483|dadeg_pos=N	26	SBJ	_	_
@@ -10415,7 +10415,7 @@
 14	حمایت	حمایت	NOUN	IANM	attachment=ISO|number=SING|senID=32534|dadeg_pos=N	13	POSDEP	_	_
 15	کنید	کرد#کن	VERB	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=32534|dadeg_pos=V	9	POSDEP	_	_
 16	خواهید	خواست#خواه	AUX	V_AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=32534|dadeg_pos=AUX	17	aux	_	_
-17	توانست	توانست#توان	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32534|dadeg_pos=V	0	ROOT	_	_
+17	توانست	توانست#توان	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32534|dadeg_pos=V	0	ROOT	_	_
 18	از	از	ADP	PREP	attachment=ISO|senID=32534|dadeg_pos=PREP	24	VPP	_	_
 19	درد	درد	NOUN	IANM	attachment=ISO|number=SING|senID=32534|dadeg_pos=N	18	POSDEP	_	_
 20	و	و	CCONJ	CONJ	attachment=ISO|senID=32534|dadeg_pos=CONJ	19	NCONJ	_	_
@@ -10532,7 +10532,7 @@
 7	وجود	وجود	NOUN	IANM	attachment=ISO|number=PLUR|senID=32605|dadeg_pos=N	6	MOZ	_	_
 8	مان	ما	PRON	PRO	number=PLUR|person=1|pronType=Prs|senID=32605|dadeg_pos=PR	7	MOZ	_	_
 9	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=32605|dadeg_pos=AUX	10	aux	_	_
-10	آراست	آراست#آرا	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32605|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	آراست	آراست#آرا	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32605|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=32605|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s490
@@ -10606,7 +10606,7 @@
 7	ارزش‌های	ارزش	NOUN	IANM	attachment=ISO|number=PLUR|senID=32668|dadeg_pos=N	6	POSDEP	_	_
 8	بسیج	بسیج	PROPN	ANM	attachment=ISO|number=SING|senID=32668|dadeg_pos=N	7	MOZ	_	_
 9	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=32668|dadeg_pos=AUX	10	aux	_	_
-10	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32668|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32668|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=32668|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s496
@@ -10677,7 +10677,7 @@
 2	م	من	PRON	SEPER	person=1|attachment=NXT|number=SING|senID=32718|dadeg_pos=PR	3	PREDEP	_	_
 3	را	را	ADP	POSTP	attachment=PRV|senID=32718|dadeg_pos=POSTP	5	OBJ	_	_
 4	خواهید	خواست#خواه	AUX	V_AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=32718|dadeg_pos=AUX	5	aux	_	_
-5	شناخت	شناخت#شناس	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32718|dadeg_pos=V	0	ROOT	_	_
+5	شناخت	شناخت#شناس	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32718|dadeg_pos=V	0	ROOT	_	_
 6	که	که	SCONJ	SUBR	attachment=ISO|senID=32718|dadeg_pos=SUBR	1	NCL	_	_
 7-8	جایم	_	_	_	_	_	_	_	_
 7	جا	جا	NOUN	IANM	attachment=ISO|number=SING|senID=32718|dadeg_pos=N	9	PREDEP	_	_
@@ -10763,7 +10763,7 @@
 8	جلوی	جلو	ADP	PREP	attachment=ISO|number=SING|senID=32779|dadeg_pos=PREP	7	POSDEP	_	_
 9	قبر	قبر	NOUN	IANM	attachment=ISO|number=SING|senID=32779|dadeg_pos=N	8	POSDEP	_	_
 10	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=32779|dadeg_pos=AUX	11	aux	_	_
-11	غلطانید	غلطانید#غلطان	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32779|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	غلطانید	غلطانید#غلطان	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32779|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	؟	؟	PUNCT	PUNC	attachment=ISO|senID=32779|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s507
@@ -10790,7 +10790,7 @@
 20	وادی	وادی	NOUN	IANM	attachment=ISO|number=SING|senID=32789|dadeg_pos=N	19	POSDEP	_	_
 21	کاذب	کاذب	ADJ	AJP	attachment=ISO|senID=32789|dadeg_pos=ADJ	20	NPOSTMOD	_	_
 22	درخواهند	در#خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=32789|dadeg_pos=AUX	23	aux	_	_
-23	افتاد	افتاد#افت	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32789|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+23	افتاد	افتاد#افت	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32789|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 24	.	.	PUNCT	PUNC	attachment=ISO|senID=32789|dadeg_pos=PUNC	23	PUNC	_	_
 
 # sent_id = dev-s508
@@ -11015,7 +11015,7 @@
 24	از	از	ADP	PREP	attachment=ISO|senID=32935|dadeg_pos=PREP	27	VPRT	_	_
 25	پا	پا	NOUN	IANM	attachment=ISO|number=SING|senID=32935|dadeg_pos=N	24	POSDEP	_	_
 26	خواهی	خواست#خواه	AUX	V_AUX	number=SING|person=2|tense=Fut|verbForm=Fin|senID=32935|dadeg_pos=AUX	27	aux	_	_
-27	افتاد	افتاد#افت	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32935|dadeg_pos=V	19	PRD	_	spaceAfter=NO
+27	افتاد	افتاد#افت	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=32935|dadeg_pos=V	19	PRD	_	spaceAfter=NO
 28	.	.	PUNCT	PUNC	attachment=ISO|senID=32935|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s522
@@ -12032,7 +12032,7 @@
 13	ایران	ایران	PROPN	IANM	attachment=ISO|number=SING|senID=33579|dadeg_pos=N	11	MOZ	_	_
 14	را	را	ADP	POSTP	attachment=ISO|senID=33579|dadeg_pos=POSTP	16	OBJ	_	_
 15	خواهی	خواست#خواه	AUX	V_AUX	number=SING|person=2|tense=Fut|verbForm=Fin|senID=33579|dadeg_pos=AUX	16	aux	_	_
-16	نگاشت	نگاشت#نگار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33579|dadeg_pos=V	8	PRD	_	spaceAfter=NO
+16	نگاشت	نگاشت#نگار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33579|dadeg_pos=V	8	PRD	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=33579|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s584
@@ -12047,7 +12047,7 @@
 7	حریر	حریر	NOUN	IANM	attachment=ISO|number=SING|senID=33589|dadeg_pos=N	6	POSDEP	_	_
 8	اشک‌هایم	اشک	NOUN	IANM	attachment=ISO|number=PLUR|senID=33589|dadeg_pos=N	7	MOZ	_	_
 9	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=33589|dadeg_pos=AUX	10	aux	_	_
-10	پیچید	پیچید#پیچ	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33589|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	پیچید	پیچید#پیچ	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33589|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=33589|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s585
@@ -12104,7 +12104,7 @@
 8	به	به	ADP	PREP	attachment=ISO|senID=33641|dadeg_pos=PREP	11	VPP	_	_
 9	حاشیه	حاشیه	NOUN	IANM	attachment=ISO|number=SING|senID=33641|dadeg_pos=N	8	POSDEP	_	_
 10	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=33641|dadeg_pos=AUX	11	aux	_	_
-11	راند	راند#ران	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33641|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	راند	راند#ران	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33641|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=33641|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s590
@@ -12389,7 +12389,7 @@
 9	خاورمیانه	خاورمیانه	PROPN	IANM	attachment=ISO|number=SING|senID=33792|dadeg_pos=N	8	MOZ	_	_
 10	اثر	اثر	NOUN	IANM	attachment=ISO|number=SING|senID=33792|dadeg_pos=N	12	NVE	_	_
 11	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=33792|dadeg_pos=AUX	12	aux	_	_
-12	گذارد	گذارد#گذار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33792|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	گذارد	گذارد#گذار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33792|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=33792|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s605
@@ -12532,7 +12532,7 @@
 15	را	را	ADP	POSTP	attachment=ISO|senID=33852|dadeg_pos=POSTP	18	OBJ	_	_
 16	احاطه	احاطه	NOUN	IANM	attachment=ISO|number=SING|senID=33852|dadeg_pos=N	18	NVE	_	_
 17	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=33852|dadeg_pos=AUX	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33852|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33852|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=33852|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s611
@@ -12653,7 +12653,7 @@
 10	می‌رفت	رفت#رو	VERB	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=33922|dadeg_pos=V	8	POSDEP	_	_
 11	مرتکب	مرتکب	NOUN	IANM	attachment=ISO|number=SING|senID=33922|dadeg_pos=N	13	MOS	_	_
 12	قتل	قتل	NOUN	IANM	attachment=ISO|number=SING|senID=33922|dadeg_pos=N	11	MOZ	_	_
-13	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=PASS|senID=33922|dadeg_pos=V	10	VCL	_	_
+13	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=ACT|senID=33922|dadeg_pos=V	10	VCL	_	_
 14	باشند	بود#باش	AUX	V_PRS	mood=Sub|number=PLUR|person=3|tense=Pres|senID=33922|dadeg_pos=AUX	13	aux	_	_
 15	تحت	تحت	ADP	PREP	attachment=ISO|senID=33922|dadeg_pos=PREP	18	MOS	_	_
 16	تعقیب	تعقیب	NOUN	IANM	attachment=ISO|number=SING|senID=33922|dadeg_pos=N	15	POSDEP	_	_
@@ -12716,7 +12716,7 @@
 3	بر	بر	ADP	PREP	attachment=ISO|senID=33962|dadeg_pos=PREP	6	VPP	_	_
 4	شاخه‌ها	شاخه	NOUN	IANM	attachment=ISO|number=PLUR|senID=33962|dadeg_pos=N	3	POSDEP	_	_
 5	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=33962|dadeg_pos=AUX	6	aux	_	_
-6	رست	رست#روی	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33962|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	رست	رست#روی	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=33962|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	.	.	PUNCT	PUNC	attachment=ISO|senID=33962|dadeg_pos=PUNC	6	PUNC	_	_
 
 # sent_id = dev-s622
@@ -12811,7 +12811,7 @@
 3	زودی	زودی	NOUN	IANM	attachment=ISO|number=SING|senID=34033|dadeg_pos=N	2	POSDEP	_	_
 4	بشری	بشر	NOUN	ANM	attachment=ISO|number=SING|senID=34033|dadeg_pos=N	6	OBJ	_	_
 5	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=34033|dadeg_pos=AUX	6	aux	_	_
-6	آفرید	آفرید#آفرین	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34033|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	آفرید	آفرید#آفرین	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34033|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	.	.	PUNCT	PUNC	attachment=ISO|senID=34033|dadeg_pos=PUNC	6	PUNC	_	_
 
 # sent_id = dev-s629
@@ -12848,7 +12848,7 @@
 5	به	به	ADP	PREP	attachment=ISO|senID=34063|dadeg_pos=PREP	8	VPP	_	_
 6	شکست	شکست	NOUN	IANM	attachment=ISO|number=SING|senID=34063|dadeg_pos=N	5	POSDEP	_	_
 7	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=34063|dadeg_pos=AUX	8	aux	_	_
-8	انجامید	انجامید#انجام	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34063|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+8	انجامید	انجامید#انجام	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34063|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=34063|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s632
@@ -12955,7 +12955,7 @@
 9	این	این	PREM	DEMAJ	attachment=ISO|senID=34135|dadeg_pos=PREM	10	NPREMOD	_	_
 10	سرزمین	سرزمین	NOUN	IANM	attachment=ISO|number=SING|senID=34135|dadeg_pos=N	8	POSDEP	_	_
 11	برخواهیم	بر#خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=34135|dadeg_pos=AUX	12	aux	_	_
-12	کند	کند#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34135|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	کند	کند#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34135|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=34135|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s639
@@ -13140,7 +13140,7 @@
 # text = اجازه نخواهیم داد حق کارگران زحمتکش این شرکت پایمال شود و حقوق آنها را احقاق خواهیم کرد.
 1	اجازه	اجازه	NOUN	IANM	attachment=ISO|number=SING|senID=34237|dadeg_pos=N	3	OBJ	_	_
 2	نخواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|polarity=NEG|tense=Fut|verbForm=Fin|senID=34237|dadeg_pos=AUX	3	aux	_	_
-3	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34237|dadeg_pos=V	0	ROOT	_	_
+3	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34237|dadeg_pos=V	0	ROOT	_	_
 4	حق	حق	NOUN	IANM	attachment=ISO|number=SING|senID=34237|dadeg_pos=N	10	SBJ	_	_
 5	کارگران	کارگر	NOUN	ANM	attachment=ISO|number=PLUR|senID=34237|dadeg_pos=N	4	MOZ	_	_
 6	زحمتکش	زحمتکش	ADJ	AJP	attachment=ISO|senID=34237|dadeg_pos=ADJ	5	NPOSTMOD	_	_
@@ -13154,7 +13154,7 @@
 14	را	را	ADP	POSTP	attachment=ISO|senID=34237|dadeg_pos=POSTP	17	OBJ	_	_
 15	احقاق	احقاق	NOUN	IANM	attachment=ISO|number=SING|senID=34237|dadeg_pos=N	17	NVE	_	_
 16	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=34237|dadeg_pos=AUX	17	aux	_	_
-17	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34237|dadeg_pos=V	11	POSDEP	_	spaceAfter=NO
+17	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34237|dadeg_pos=V	11	POSDEP	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=34237|dadeg_pos=PUNC	3	PUNC	_	_
 
 # sent_id = dev-s649
@@ -13189,7 +13189,7 @@
 28	هم	هم	PRON	RECPR	attachment=ISO|senID=46007|dadeg_pos=PR	27	POSDEP	_	_
 29	تنه	تنه	NOUN	IANM	attachment=ISO|number=SING|senID=46007|dadeg_pos=N	31	OBJ	_	_
 30	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=46007|dadeg_pos=AUX	31	aux	_	_
-31	زد	زد#زن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46007|dadeg_pos=V	9	PRD	_	spaceAfter=NO
+31	زد	زد#زن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46007|dadeg_pos=V	9	PRD	_	spaceAfter=NO
 32	.	.	PUNCT	PUNC	attachment=ISO|senID=46007|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s650
@@ -13337,7 +13337,7 @@
 2	خورشید	خورشید	NOUN	IANM	attachment=ISO|number=SING|senID=46077|dadeg_pos=N	5	SBJ	_	_
 3	طلوع	طلوع	NOUN	IANM	attachment=ISO|number=SING|senID=46077|dadeg_pos=N	5	NVE	_	_
 4	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=46077|dadeg_pos=AUX	5	aux	_	_
-5	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46077|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+5	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46077|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 6	.	.	PUNCT	PUNC	attachment=ISO|senID=46077|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s657
@@ -13515,7 +13515,7 @@
 7	را	را	ADP	POSTP	attachment=ISO|senID=46188|dadeg_pos=POSTP	10	OBJ	_	_
 8	سرکوب	سرکوب	NOUN	IANM	attachment=ISO|number=SING|senID=46188|dadeg_pos=N	10	NVE	_	_
 9	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=46188|dadeg_pos=AUX	10	aux	_	_
-10	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46188|dadeg_pos=V	4	VCL	_	spaceAfter=NO
+10	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46188|dadeg_pos=V	4	VCL	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=46188|dadeg_pos=PUNC	4	PUNC	_	_
 
 # sent_id = dev-s668
@@ -13987,7 +13987,7 @@
 8	را	را	ADP	POSTP	attachment=ISO|senID=46409|dadeg_pos=POSTP	11	OBJ	_	_
 9	فراموش	فراموش	NOUN	IANM	attachment=ISO|number=SING|senID=46409|dadeg_pos=N	11	NVE	_	_
 10	نخواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=46409|dadeg_pos=AUX	11	aux	_	_
-11	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46409|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=46409|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=46409|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s690
@@ -14615,7 +14615,7 @@
 6	را	را	ADP	POSTP	attachment=ISO|senID=34275|dadeg_pos=POSTP	9	OBJ	_	_
 7	احضار	احضار	NOUN	IANM	attachment=ISO|number=SING|senID=34275|dadeg_pos=N	9	NVE	_	_
 8	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=34275|dadeg_pos=AUX	9	aux	_	_
-9	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34275|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34275|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=34275|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s717
@@ -14629,7 +14629,7 @@
 7	به	به	ADP	PREP	attachment=ISO|senID=34285|dadeg_pos=PREP	10	VPP	_	_
 8	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=34285|dadeg_pos=PR	7	POSDEP	_	_
 9	برخواهد	بر#خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=34285|dadeg_pos=AUX	10	aux	_	_
-10	گردانید	گردانید#گردان	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34285|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	گردانید	گردانید#گردان	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34285|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=34285|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s718
@@ -14644,7 +14644,7 @@
 8	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=34295|dadeg_pos=PR	9	PREDEP	_	_
 9	را	را	ADP	POSTP	attachment=ISO|senID=34295|dadeg_pos=POSTP	11	OBJ	_	_
 10	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=34295|dadeg_pos=AUX	11	aux	_	_
-11	گریاند	گریاند#گریان	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34295|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	گریاند	گریاند#گریان	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34295|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=34295|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s719
@@ -14662,7 +14662,7 @@
 11	تغییر	تغییر	NOUN	IANM	attachment=ISO|number=SING|senID=34305|dadeg_pos=N	10	POSDEP	_	_
 12	واقعی	واقعی	ADJ	AJP	attachment=ISO|senID=34305|dadeg_pos=ADJ	11	NPOSTMOD	_	_
 13	برنخواهند	بر#خواست#خواه	AUX	V_AUX	number=PLUR|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=34305|dadeg_pos=AUX	14	aux	_	_
-14	تافت	تافت#تاب	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34305|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	تافت	تافت#تاب	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34305|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=34305|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s720
@@ -14725,7 +14725,7 @@
 2	به	به	ADP	PREP	attachment=ISO|senID=34355|dadeg_pos=PREP	5	VPP	_	_
 3	خواب	خواب	NOUN	IANM	attachment=ISO|number=SING|senID=34355|dadeg_pos=N	2	POSDEP	_	_
 4	درخواهم	در#خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=34355|dadeg_pos=AUX	5	aux	_	_
-5	شد	شد#شو	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34355|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+5	شد	شد#شو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34355|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 6	.	.	PUNCT	PUNC	attachment=ISO|senID=34355|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s725
@@ -14779,12 +14779,12 @@
 3	به	به	ADP	PREP	attachment=ISO|senID=34406|dadeg_pos=PREP	6	VPRT	_	_
 4	خرج	خرج	NOUN	IANM	attachment=ISO|number=SING|senID=34406|dadeg_pos=N	3	POSDEP	_	_
 5	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=34406|dadeg_pos=AUX	6	aux	_	_
-6	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34406|dadeg_pos=V	0	ROOT	_	_
+6	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34406|dadeg_pos=V	0	ROOT	_	_
 7	و	و	CCONJ	CONJ	attachment=ISO|senID=34406|dadeg_pos=CONJ	6	VCONJ	_	_
 8	با	با	ADP	PREP	attachment=ISO|senID=34406|dadeg_pos=PREP	11	VPP	_	_
 9	زندگی	زندگی	NOUN	IANM	attachment=ISO|number=SING|senID=34406|dadeg_pos=N	8	POSDEP	_	_
 10	ورخواهیم	ور#خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=34406|dadeg_pos=AUX	11	aux	_	_
-11	رفت	رفت#رو	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34406|dadeg_pos=V	7	POSDEP	_	spaceAfter=NO
+11	رفت	رفت#رو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34406|dadeg_pos=V	7	POSDEP	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=34406|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s730
@@ -14856,7 +14856,7 @@
 8	کمی	کمی	ADV	SADV	attachment=ISO|senID=34446|dadeg_pos=ADV	11	ADV	_	_
 9	اختلاط	اختلاط	NOUN	IANM	attachment=ISO|number=SING|senID=34446|dadeg_pos=N	11	NVE	_	_
 10	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=34446|dadeg_pos=AUX	11	aux	_	_
-11	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34446|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34446|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=34446|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s734
@@ -15137,7 +15137,7 @@
 15	را	را	ADP	POSTP	attachment=ISO|senID=34619|dadeg_pos=POSTP	18	OBJ	_	_
 16	اظهار	اظهار	NOUN	IANM	attachment=ISO|number=SING|senID=34619|dadeg_pos=N	18	NVE	_	_
 17	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=34619|dadeg_pos=AUX	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34619|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34619|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=34619|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s751
@@ -15232,7 +15232,7 @@
 14	سفرهای	سفر	NOUN	IANM	attachment=ISO|number=PLUR|senID=34680|dadeg_pos=N	13	MOZ	_	_
 15	هوایی	هوایی	ADJ	AJP	attachment=ISO|senID=34680|dadeg_pos=ADJ	14	NPOSTMOD	_	_
 16	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=34680|dadeg_pos=AUX	17	aux	_	_
-17	کاست	کاست#کاه	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34680|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	کاست	کاست#کاه	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34680|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=34680|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s757
@@ -15324,7 +15324,7 @@
 6	دشمن	دشمن	NOUN	ANM	attachment=ISO|number=SING|senID=34750|dadeg_pos=N	5	MOZ	_	_
 7	حمله	حمله	NOUN	IANM	attachment=ISO|number=SING|senID=34750|dadeg_pos=N	9	NVE	_	_
 8	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=34750|dadeg_pos=AUX	9	aux	_	_
-9	برد	برد#بر	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34750|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	برد	برد#بر	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=34750|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=34750|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s764
@@ -15716,7 +15716,7 @@
 22	مردم	مردم	NOUN	ANM	attachment=ISO|number=PLUR|senID=35012|dadeg_pos=N	21	POSDEP	_	_
 23	خواهش	خواهش	NOUN	IANM	attachment=ISO|number=SING|senID=35012|dadeg_pos=N	25	NVE	_	_
 24	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=35012|dadeg_pos=AUX	25	aux	_	_
-25	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35012|dadeg_pos=V	17	PRD	_	_
+25	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35012|dadeg_pos=V	17	PRD	_	_
 26	که	که	SCONJ	SUBR	attachment=ISO|senID=35012|dadeg_pos=SUBR	25	VCL	_	_
 27	این	این	PREM	DEMAJ	attachment=ISO|senID=35012|dadeg_pos=PREM	28	NPREMOD	_	_
 28	کار	کار	NOUN	IANM	attachment=ISO|number=SING|senID=35012|dadeg_pos=N	29	PREDEP	_	_
@@ -15968,7 +15968,7 @@
 4	تو	تو	PRON	SEPER	person=2|attachment=ISO|number=SING|senID=35142|dadeg_pos=PR	3	POSDEP	_	_
 5	وفات	وفات	NOUN	IANM	attachment=ISO|number=SING|senID=35142|dadeg_pos=N	7	NVE	_	_
 6	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=35142|dadeg_pos=AUX	7	aux	_	_
-7	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35142|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35142|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=35142|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s803
@@ -16069,7 +16069,7 @@
 11	آنها	آنها	PRON	SEPER	person=3|attachment=ISO|number=PLUR|senID=35202|dadeg_pos=PR	10	POSDEP	_	_
 12	هشدار	هشدار	NOUN	IANM	attachment=ISO|number=SING|senID=35202|dadeg_pos=N	14	OBJ	_	_
 13	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=35202|dadeg_pos=AUX	14	aux	_	_
-14	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35202|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35202|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=35202|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s809
@@ -16333,7 +16333,7 @@
 13	پژوهش	پژوهش	NOUN	IANM	attachment=ISO|number=SING|senID=35374|dadeg_pos=N	12	MOZ	_	_
 14	اختصاص	اختصاص	NOUN	IANM	attachment=ISO|number=SING|senID=35374|dadeg_pos=N	16	NVE	_	_
 15	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=35374|dadeg_pos=AUX	16	aux	_	_
-16	داشت	داشت#دار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35374|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+16	داشت	داشت#دار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35374|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=35374|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s826
@@ -16522,7 +16522,7 @@
 5	حماس	حماس	PROPN	IANM	attachment=ISO|number=SING|senID=35474|dadeg_pos=N	4	MOZ	_	_
 6	گواهی	گواهی	NOUN	IANM	attachment=ISO|number=SING|senID=35474|dadeg_pos=N	8	NVE	_	_
 7	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=35474|dadeg_pos=AUX	8	aux	_	_
-8	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35474|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+8	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35474|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=35474|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s836
@@ -16776,7 +16776,7 @@
 16	مردم	مردم	NOUN	ANM	attachment=ISO|number=PLUR|senID=35604|dadeg_pos=N	15	POSDEP	_	_
 17	اصلاح	اصلاح	NOUN	IANM	attachment=ISO|number=SING|senID=35604|dadeg_pos=N	19	NVE	_	_
 18	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=35604|dadeg_pos=AUX	19	aux	_	_
-19	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35604|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35604|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=35604|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s849
@@ -16871,7 +16871,7 @@
 13	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=35664|dadeg_pos=PR	12	POSDEP	_	_
 14	اعتماد	اعتماد	NOUN	IANM	attachment=ISO|number=SING|senID=35664|dadeg_pos=N	16	NVE	_	_
 15	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=35664|dadeg_pos=AUX	16	aux	_	_
-16	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35664|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+16	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35664|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=35664|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s855
@@ -16984,7 +16984,7 @@
 6	را	را	ADP	POSTP	attachment=ISO|senID=35724|dadeg_pos=POSTP	9	OBJ	_	_
 7	استنباط	استنباط	NOUN	IANM	attachment=ISO|number=SING|senID=35724|dadeg_pos=N	9	NVE	_	_
 8	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=35724|dadeg_pos=AUX	9	aux	_	_
-9	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35724|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35724|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=35724|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s861
@@ -17124,7 +17124,7 @@
 11	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=35804|dadeg_pos=PR	10	POSDEP	_	_
 12	اعراض	اعراض	NOUN	IANM	attachment=ISO|number=SING|senID=35804|dadeg_pos=N	14	NVE	_	_
 13	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=35804|dadeg_pos=AUX	14	aux	_	_
-14	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35804|dadeg_pos=V	6	PRD	_	spaceAfter=NO
+14	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35804|dadeg_pos=V	6	PRD	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=35804|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s869
@@ -17393,7 +17393,7 @@
 3	را	را	ADP	POSTP	attachment=ISO|senID=35974|dadeg_pos=POSTP	6	OBJ	_	_
 4	امتحان	امتحان	NOUN	IANM	attachment=ISO|number=SING|senID=35974|dadeg_pos=N	6	NVE	_	_
 5	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=35974|dadeg_pos=AUX	6	aux	_	_
-6	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35974|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=35974|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	.	.	PUNCT	PUNC	attachment=ISO|senID=35974|dadeg_pos=PUNC	6	PUNC	_	_
 
 # sent_id = dev-s886
@@ -17566,7 +17566,7 @@
 10	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=47049|dadeg_pos=PR	9	MOZ	_	_
 11	کم	کم	ADJ	AJP	attachment=ISO|senID=47049|dadeg_pos=ADJ	13	MOS	_	_
 12	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=47049|dadeg_pos=AUX	13	aux	_	_
-13	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=PASS|senID=47049|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+13	شد	شد#شو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47049|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=47049|dadeg_pos=PUNC	13	PUNC	_	_
 
 # sent_id = dev-s896
@@ -18100,7 +18100,7 @@
 1	ایرانی‌ها	ایرانی	NOUN	ANM	attachment=ISO|number=PLUR|senID=47290|dadeg_pos=N	4	SBJ	_	_
 2	اجازه	اجازه	NOUN	IANM	attachment=ISO|number=SING|senID=47290|dadeg_pos=N	4	OBJ	_	_
 3	نخواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=47290|dadeg_pos=AUX	4	aux	_	_
-4	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47290|dadeg_pos=V	0	ROOT	_	_
+4	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47290|dadeg_pos=V	0	ROOT	_	_
 5	کسی	کس	NOUN	ANM	attachment=ISO|number=SING|senID=47290|dadeg_pos=N	11	SBJ	_	_
 6	به	به	ADP	PREP	attachment=ISO|senID=47290|dadeg_pos=PREP	10	NPP	_	_
 7	حریم	حریم	NOUN	IANM	attachment=ISO|number=SING|senID=47290|dadeg_pos=N	6	POSDEP	_	_
@@ -18470,7 +18470,7 @@
 5	خزل	خزل	NOUN	IANM	attachment=ISO|number=SING|senID=47421|dadeg_pos=N	4	MOZ	_	_
 6	چکه	چکه	NOUN	IANM	attachment=ISO|number=SING|senID=47421|dadeg_pos=N	8	NVE	_	_
 7	نخواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=47421|dadeg_pos=AUX	8	aux	_	_
-8	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47421|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+8	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47421|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=47421|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s933
@@ -18729,7 +18729,7 @@
 14	را	را	ADP	POSTP	attachment=ISO|senID=47571|dadeg_pos=POSTP	17	OBJ	_	_
 15	دریافت	دریافت	NOUN	IANM	attachment=ISO|number=SING|senID=47571|dadeg_pos=N	17	NVE	_	_
 16	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=47571|dadeg_pos=AUX	17	aux	_	_
-17	داشت	داشت#دار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47571|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	داشت	داشت#دار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47571|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=47571|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s948
@@ -18832,7 +18832,7 @@
 15	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=47631|dadeg_pos=AUX	14	aux	_	_
 16	تقلیل	تقلیل	NOUN	IANM	attachment=ISO|number=SING|senID=47631|dadeg_pos=N	18	NVE	_	_
 17	نخواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=47631|dadeg_pos=AUX	18	aux	_	_
-18	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47631|dadeg_pos=V	0	ROOT	_	_
+18	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47631|dadeg_pos=V	0	ROOT	_	_
 19	و	و	CCONJ	CONJ	attachment=ISO|senID=47631|dadeg_pos=CONJ	18	VCONJ	_	_
 20	لذا	لذا	ADV	SADV	attachment=ISO|senID=47631|dadeg_pos=ADV	29	ADV	_	_
 21	تقاضا	تقاضا	NOUN	IANM	attachment=ISO|number=SING|senID=47631|dadeg_pos=N	29	SBJ	_	_
@@ -18843,7 +18843,7 @@
 26	بسیار	بسیار	ADV	SADV	attachment=ISO|senID=47631|dadeg_pos=ADV	27	APREMOD	_	_
 27	قوی	قوی	ADJ	AJP	attachment=ISO|senID=47631|dadeg_pos=ADJ	29	MOS	_	_
 28	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=47631|dadeg_pos=AUX	29	aux	_	_
-29	بود	بود#باش	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47631|dadeg_pos=V	19	POSDEP	_	spaceAfter=NO
+29	بود	بود#باش	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47631|dadeg_pos=V	19	POSDEP	_	spaceAfter=NO
 30	.	.	PUNCT	PUNC	attachment=ISO|senID=47631|dadeg_pos=PUNC	29	PUNC	_	_
 
 # sent_id = dev-s954
@@ -18896,14 +18896,14 @@
 8	مدام	مدام	ADJ	AJP	attachment=ISO|senID=47661|dadeg_pos=ADJ	11	ADV	_	_
 9	جهش	جهش	NOUN	IANM	attachment=ISO|number=SING|senID=47661|dadeg_pos=N	11	OBJ	_	_
 10	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=47661|dadeg_pos=AUX	11	aux	_	_
-11	داشت	داشت#دار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47661|dadeg_pos=V	0	ROOT	_	_
+11	داشت	داشت#دار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47661|dadeg_pos=V	0	ROOT	_	_
 12	و	و	CCONJ	CONJ	attachment=ISO|senID=47661|dadeg_pos=CONJ	11	VCONJ	_	_
 13	در	در	ADP	PREP	attachment=ISO|senID=47661|dadeg_pos=PREP	18	ADV	_	_
 14	نتیجه	نتیجه	NOUN	IANM	attachment=ISO|number=SING|senID=47661|dadeg_pos=N	13	POSDEP	_	_
 15	ستاره	ستاره	NOUN	IANM	attachment=ISO|number=SING|senID=47661|dadeg_pos=N	18	SBJ	_	_
 16	سوسو	سوسو	NOUN	IANM	attachment=ISO|number=SING|senID=47661|dadeg_pos=N	18	NVE	_	_
 17	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=47661|dadeg_pos=AUX	18	aux	_	_
-18	زد	زد#زن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47661|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
+18	زد	زد#زن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=47661|dadeg_pos=V	12	POSDEP	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=47661|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s957
@@ -19681,7 +19681,7 @@
 17	وی	وی	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=36027|dadeg_pos=PR	16	POSDEP	_	_
 18	استدعا	استدعا	NOUN	IANM	attachment=ISO|number=SING|senID=36027|dadeg_pos=N	20	NVE	_	_
 19	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=36027|dadeg_pos=AUX	20	aux	_	_
-20	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36027|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+20	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36027|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=36027|dadeg_pos=PUNC	20	PUNC	_	_
 
 # sent_id = dev-s991
@@ -19735,7 +19735,7 @@
 9	را	را	ADP	POSTP	attachment=ISO|senID=36067|dadeg_pos=POSTP	12	OBJ	_	_
 10	استماع	استماع	NOUN	IANM	attachment=ISO|number=SING|senID=36067|dadeg_pos=N	12	NVE	_	_
 11	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=36067|dadeg_pos=AUX	12	aux	_	_
-12	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36067|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36067|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=36067|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s995
@@ -19839,7 +19839,7 @@
 13	تحسین	تحسین	NOUN	IANM	attachment=ISO|number=SING|senID=36127|dadeg_pos=N	12	POSDEP	_	_
 14	بیشتری	بیش	ADJ	AJCM	attachment=ISO|senID=36127|dadeg_pos=ADJ	11	NPOSTMOD	_	_
 15	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=36127|dadeg_pos=AUX	16	aux	_	_
-16	بود	بود#باش	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36127|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+16	بود	بود#باش	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36127|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=36127|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s1001
@@ -20113,7 +20113,7 @@
 6	جاری	جاری	ADJ	AJP	attachment=ISO|senID=36277|dadeg_pos=ADJ	5	NPOSTMOD	_	_
 7	زیان	زیان	NOUN	IANM	attachment=ISO|number=SING|senID=36277|dadeg_pos=N	9	NVE	_	_
 8	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=36277|dadeg_pos=AUX	9	aux	_	_
-9	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36277|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36277|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=36277|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s1016
@@ -20159,7 +20159,7 @@
 9	بدن	بدن	NOUN	IANM	attachment=ISO|number=SING|senID=36307|dadeg_pos=N	12	SBJ	_	_
 10	شان	آنها	PRON	PRO	number=PLUR|person=3|pronType=Prs|senID=36307|dadeg_pos=PR	9	MOZ	_	_
 11	حساس‌تر	حساس	ADJ	AJCM	attachment=ISO|senID=36307|dadeg_pos=ADJ	12	MOS	_	_
-12	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=PASS|senID=36307|dadeg_pos=V	8	POSDEP	_	_
+12	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=ACT|senID=36307|dadeg_pos=V	8	POSDEP	_	_
 13	باشد	بود#باش	AUX	V_PRS	mood=Sub|number=SING|person=3|tense=Pres|senID=36307|dadeg_pos=AUX	12	aux	_	_
 14	به	به	ADP	PREP	attachment=ISO|senID=36307|dadeg_pos=PREP	21	ADV	_	_
 15	صورت	صورت	NOUN	IANM	attachment=ISO|number=SING|senID=36307|dadeg_pos=N	14	POSDEP	_	_
@@ -20258,7 +20258,7 @@
 5	خود	خود	PRON	CREFX	attachment=ISO|senID=36369|dadeg_pos=PR	4	MOZ	_	_
 6	اقامت	اقامت	NOUN	IANM	attachment=ISO|number=SING|senID=36369|dadeg_pos=N	8	NVE	_	_
 7	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=36369|dadeg_pos=AUX	8	aux	_	_
-8	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36369|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+8	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36369|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=36369|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s1025
@@ -20330,7 +20330,7 @@
 6	شوند	شد#شو	VERB	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=36399|dadeg_pos=V	4	PRD	_	_
 7	کاست	کاست	NOUN	IANM	attachment=ISO|number=SING|senID=36399|dadeg_pos=N	9	SBJ	_	_
 8	منتشر	منتشر	ADJ	AJP	attachment=ISO|senID=36399|dadeg_pos=ADJ	9	MOS	_	_
-9	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=36399|dadeg_pos=V	0	ROOT	_	_
+9	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=36399|dadeg_pos=V	0	ROOT	_	_
 10	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=36399|dadeg_pos=AUX	9	aux	_	_
 11	با	با	ADP	PREP	attachment=ISO|senID=36399|dadeg_pos=PREP	9	ADV	_	_
 12	نام	نام	NOUN	IANM	attachment=ISO|number=SING|senID=36399|dadeg_pos=N	11	POSDEP	_	_
@@ -20449,7 +20449,7 @@
 5	م	من	PRON	PRO	number=SING|person=1|pronType=Prs|senID=36459|dadeg_pos=PR	3	MOZ	_	_
 6	بازی	بازی	NOUN	IANM	attachment=ISO|number=SING|senID=36459|dadeg_pos=N	8	OBJ	_	_
 7	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=36459|dadeg_pos=AUX	8	aux	_	_
-8	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36459|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+8	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36459|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=36459|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s1034
@@ -20698,7 +20698,7 @@
 6	زیاد	زیاد	ADJ	AJP	attachment=ISO|senID=36599|dadeg_pos=ADJ	5	NPOSTMOD	_	_
 7	ترک	ترک	NOUN	IANM	attachment=ISO|number=SING|senID=36599|dadeg_pos=N	9	NVE	_	_
 8	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=36599|dadeg_pos=AUX	9	aux	_	_
-9	خورد	خورد#خور	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36599|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	خورد	خورد#خور	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36599|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=36599|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s1048
@@ -21204,7 +21204,7 @@
 11	حتماً	حتماً	ADV	SADV	attachment=ISO|senID=36892|dadeg_pos=ADV	14	ADV	_	_
 12	اسم‌نویسی	اسم‌نویسی	NOUN	IANM	attachment=ISO|number=SING|senID=36892|dadeg_pos=N	14	NVE	_	_
 13	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=36892|dadeg_pos=AUX	14	aux	_	_
-14	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36892|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+14	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=36892|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 15	!	!	PUNCT	PUNC	attachment=ISO|senID=36892|dadeg_pos=PUNC	14	PUNC	_	_
 
 # sent_id = dev-s1077
@@ -21440,7 +21440,7 @@
 7	مقدس	مقدس	ADJ	AJP	attachment=ISO|senID=37029|dadeg_pos=ADJ	6	NPOSTMOD	_	_
 8	عهد	عهد	NOUN	IANM	attachment=ISO|number=SING|senID=37029|dadeg_pos=N	10	NVE	_	_
 9	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=37029|dadeg_pos=AUX	10	aux	_	_
-10	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37029|dadeg_pos=V	0	ROOT	_	_
+10	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37029|dadeg_pos=V	0	ROOT	_	_
 11	که	که	SCONJ	SUBR	attachment=ISO|senID=37029|dadeg_pos=SUBR	10	VCL	_	_
 12	بار	بار	NOUN	IANM	attachment=ISO|number=SING|senID=37029|dadeg_pos=N	28	ADV	_	_
 13	دیگر	دیگر	ADJ	AJP	attachment=ISO|senID=37029|dadeg_pos=ADJ	12	NPOSTMOD	_	_
@@ -21458,7 +21458,7 @@
 25	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=37029|dadeg_pos=ADJ	24	NPOSTMOD	_	_
 26	قدم	قدم	NOUN	IANM	attachment=ISO|number=SING|senID=37029|dadeg_pos=N	28	NVE	_	_
 27	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=37029|dadeg_pos=AUX	28	aux	_	_
-28	برداشت	بر#داشت#دار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37029|dadeg_pos=V	11	PRD	_	spaceAfter=NO
+28	برداشت	بر#داشت#دار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37029|dadeg_pos=V	11	PRD	_	spaceAfter=NO
 29	.	.	PUNCT	PUNC	attachment=ISO|senID=37029|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s1090
@@ -21907,7 +21907,7 @@
 17	کم	کم	ADJ	AJP	attachment=ISO|senID=37230|dadeg_pos=ADJ	16	NPOSTMOD	_	_
 18	غواصی	غواصی	NOUN	IANM	attachment=ISO|number=SING|senID=37230|dadeg_pos=N	20	NVE	_	_
 19	خواهید	خواست#خواه	AUX	V_AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=37230|dadeg_pos=AUX	20	aux	_	_
-20	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37230|dadeg_pos=V	10	POSDEP	_	spaceAfter=NO
+20	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37230|dadeg_pos=V	10	POSDEP	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=37230|dadeg_pos=PUNC	20	PUNC	_	_
 
 # sent_id = dev-s1110
@@ -22040,7 +22040,7 @@
 18	شمیرانات	شمیرانات	PROPN	IANM	attachment=ISO|number=PLUR|senID=37300|dadeg_pos=N	17	POSDEP	_	_
 19	امدادرسانی	امدادرسانی	NOUN	IANM	attachment=ISO|number=SING|senID=37300|dadeg_pos=N	21	NVE	_	_
 20	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=37300|dadeg_pos=AUX	21	aux	_	_
-21	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37300|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+21	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37300|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 22	.	.	PUNCT	PUNC	attachment=ISO|senID=37300|dadeg_pos=PUNC	21	PUNC	_	_
 
 # sent_id = dev-s1117
@@ -22053,7 +22053,7 @@
 6	بی‌شک	بی‌شک	ADV	SADV	attachment=ISO|senID=37310|dadeg_pos=ADV	9	ADV	_	_
 7	دک	دک	NOUN	IANM	attachment=ISO|number=SING|senID=37310|dadeg_pos=N	9	NVE	_	_
 8	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=37310|dadeg_pos=AUX	9	aux	_	_
-9	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37310|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37310|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=37310|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s1118
@@ -22174,7 +22174,7 @@
 3	کسی	کس	NOUN	ANM	attachment=ISO|number=SING|senID=37371|dadeg_pos=N	2	POSDEP	_	_
 4	دعوا	دعوا	NOUN	IANM	attachment=ISO|number=SING|senID=37371|dadeg_pos=N	6	NVE	_	_
 5	نخواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|polarity=NEG|tense=Fut|verbForm=Fin|senID=37371|dadeg_pos=AUX	6	aux	_	_
-6	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37371|dadeg_pos=V	0	ROOT	_	_
+6	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37371|dadeg_pos=V	0	ROOT	_	_
 7	مگر	مگر	ADP	PREP	attachment=ISO|senID=37371|dadeg_pos=PREP	6	ADV	_	_
 8	در	در	ADP	PREP	attachment=ISO|senID=37371|dadeg_pos=PREP	7	POSDEP	_	_
 9	دفاع	دفاع	NOUN	IANM	attachment=ISO|number=SING|senID=37371|dadeg_pos=N	8	POSDEP	_	_
@@ -22366,7 +22366,7 @@
 16	نیز	نیز	ADV	SADV	attachment=ISO|senID=37461|dadeg_pos=ADV	12	POSDEP	_	_
 17	شورش	شورش	NOUN	IANM	attachment=ISO|number=SING|senID=37461|dadeg_pos=N	19	NVE	_	_
 18	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=37461|dadeg_pos=AUX	19	aux	_	_
-19	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37461|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37461|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=37461|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s1133
@@ -22521,7 +22521,7 @@
 5	مردمی	مردمی	NOUN	IANM	attachment=ISO|number=SING|senID=37564|dadeg_pos=N	4	NPOSTMOD	_	_
 6	امانت‌داری	امانت‌داری	NOUN	IANM	attachment=ISO|number=SING|senID=37564|dadeg_pos=N	8	NVE	_	_
 7	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=37564|dadeg_pos=AUX	8	aux	_	_
-8	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37564|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+8	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37564|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=37564|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s1143
@@ -22547,7 +22547,7 @@
 10	انسان	انسان	NOUN	ANM	attachment=ISO|number=SING|senID=37584|dadeg_pos=N	9	MOZ	_	_
 11	کامل	کامل	ADJ	AJP	attachment=ISO|senID=37584|dadeg_pos=ADJ	10	NPOSTMOD	_	_
 12	بنا	بنا	NOUN	IANM	attachment=ISO|number=SING|senID=37584|dadeg_pos=N	13	NVE	_	_
-13	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=37584|dadeg_pos=V	6	PRD	_	_
+13	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=37584|dadeg_pos=V	6	PRD	_	_
 14	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=37584|dadeg_pos=AUX	13	aux	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=37584|dadeg_pos=PUNC	5	PUNC	_	_
 
@@ -22585,10 +22585,10 @@
 17	دور	دور	ADP	PREP	attachment=ISO|senID=37604|dadeg_pos=PREP	20	ADV	_	_
 18	هم	هم	PRON	RECPR	attachment=ISO|senID=37604|dadeg_pos=PR	17	POSDEP	_	_
 19	جمع	جمع	NOUN	IANM	attachment=ISO|number=SING|senID=37604|dadeg_pos=N	20	MOS	_	_
-20	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=PASS|senID=37604|dadeg_pos=V	10	PRD	_	_
+20	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=ACT|senID=37604|dadeg_pos=V	10	PRD	_	_
 21	باشند	بود#باش	AUX	V_PRS	mood=Sub|number=PLUR|person=3|tense=Pres|senID=37604|dadeg_pos=AUX	20	aux	_	_
 22	متوجه	متوجه	ADJ	AJP	attachment=ISO|senID=37604|dadeg_pos=ADJ	23	MOS	_	_
-23	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=PASS|senID=37604|dadeg_pos=V	0	ROOT	_	_
+23	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=ACT|senID=37604|dadeg_pos=V	0	ROOT	_	_
 24	باشید	بود#باش	AUX	V_PRS	mood=Sub|number=PLUR|person=2|tense=Pres|senID=37604|dadeg_pos=AUX	23	aux	_	_
 25	که	که	SCONJ	SUBR	attachment=ISO|senID=37604|dadeg_pos=SUBR	22	ACL	_	_
 26	همه	همه	NOUN	ANM	attachment=ISO|number=PLUR|senID=37604|dadeg_pos=N	28	SBJ	_	_
@@ -22763,7 +22763,7 @@
 16	پررنگ‌تر	پررنگ	ADJ	AJCM	attachment=ISO|senID=37674|dadeg_pos=ADJ	14	NPOSTMOD	_	_
 17	ترغیب	ترغیب	NOUN	IANM	attachment=ISO|number=SING|senID=37674|dadeg_pos=N	19	NVE	_	_
 18	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=37674|dadeg_pos=AUX	19	aux	_	_
-19	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37674|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37674|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=37674|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s1154
@@ -22843,7 +22843,7 @@
 13	جمجمه	جمجمه	NOUN	IANM	attachment=ISO|number=SING|senID=37724|dadeg_pos=N	12	POSDEP	_	_
 14	عکس	عکس	NOUN	IANM	attachment=ISO|number=SING|senID=37724|dadeg_pos=N	16	NVE	_	_
 15	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=37724|dadeg_pos=AUX	16	aux	_	_
-16	گرفت	گرفت#گیر	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37724|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+16	گرفت	گرفت#گیر	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37724|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=37724|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s1159
@@ -23018,7 +23018,7 @@
 15	کند	کرد#کن	VERB	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=48016|dadeg_pos=V	13	PRD	_	_
 16	ظلم	ظلم	NOUN	IANM	attachment=ISO|number=SING|senID=48016|dadeg_pos=N	18	NVE	_	_
 17	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48016|dadeg_pos=AUX	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48016|dadeg_pos=V	8	PRD	_	spaceAfter=NO
+18	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48016|dadeg_pos=V	8	PRD	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=48016|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s1169
@@ -23051,7 +23051,7 @@
 14	تغییر	تغییر	NOUN	IANM	attachment=ISO|number=SING|senID=48037|dadeg_pos=N	17	NVE	_	_
 15	طول	طول	NOUN	IANM	attachment=ISO|number=SING|senID=48037|dadeg_pos=N	14	MOZ	_	_
 16	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48037|dadeg_pos=AUX	17	aux	_	_
-17	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48037|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48037|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=48037|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s1171
@@ -23116,7 +23116,7 @@
 3	را	را	ADP	POSTP	attachment=ISO|senID=48087|dadeg_pos=POSTP	6	OBJ	_	_
 4	عقوبت	عقوبت	NOUN	IANM	attachment=ISO|number=SING|senID=48087|dadeg_pos=N	6	NVE	_	_
 5	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=48087|dadeg_pos=AUX	6	aux	_	_
-6	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48087|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+6	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48087|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 7	.	.	PUNCT	PUNC	attachment=ISO|senID=48087|dadeg_pos=PUNC	6	PUNC	_	_
 
 # sent_id = dev-s1176
@@ -23162,7 +23162,7 @@
 13	علمی	علمی	ADJ	AJP	attachment=ISO|senID=48107|dadeg_pos=ADJ	12	NPOSTMOD	_	_
 14	قدرت‌نمایی	قدرت‌نمایی	NOUN	IANM	attachment=ISO|number=SING|senID=48107|dadeg_pos=N	16	NVE	_	_
 15	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48107|dadeg_pos=AUX	16	aux	_	_
-16	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48107|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+16	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48107|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=48107|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s1178
@@ -23263,11 +23263,11 @@
 4	زیادی	زیاد	ADJ	AJP	attachment=ISO|senID=48157|dadeg_pos=ADJ	3	NPOSTMOD	_	_
 5	وام	وام	NOUN	IANM	attachment=ISO|number=SING|senID=48157|dadeg_pos=N	7	OBJ	_	_
 6	خواهید	خواست#خواه	AUX	V_AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=48157|dadeg_pos=AUX	7	aux	_	_
-7	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48157|dadeg_pos=V	0	ROOT	_	_
+7	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48157|dadeg_pos=V	0	ROOT	_	_
 8	ولی	ولی	CCONJ	CONJ	attachment=ISO|senID=48157|dadeg_pos=CONJ	7	VCONJ	_	_
 9	مجبور	مجبور	ADJ	AJP	attachment=ISO|senID=48157|dadeg_pos=ADJ	11	MOS	_	_
 10	نخواهید	خواست#خواه	AUX	V_AUX	number=PLUR|person=2|polarity=NEG|tense=Fut|verbForm=Fin|senID=48157|dadeg_pos=AUX	11	aux	_	_
-11	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48157|dadeg_pos=V	8	POSDEP	_	_
+11	شد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48157|dadeg_pos=V	8	POSDEP	_	_
 12	که	که	SCONJ	SUBR	attachment=ISO|senID=48157|dadeg_pos=SUBR	9	ACL	_	_
 13	از	از	ADP	PREP	attachment=ISO|senID=48157|dadeg_pos=PREP	15	NPP	_	_
 14	کسی	کس	NOUN	ANM	attachment=ISO|number=SING|senID=48157|dadeg_pos=N	13	POSDEP	_	_
@@ -23293,7 +23293,7 @@
 4	پایین	پایین	NOUN	IANM	attachment=ISO|number=SING|senID=48178|dadeg_pos=N	3	MOZ	_	_
 5	غلت	غلت	NOUN	IANM	attachment=ISO|number=SING|senID=48178|dadeg_pos=N	7	NVE	_	_
 6	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48178|dadeg_pos=AUX	7	aux	_	_
-7	خورد	خورد#خور	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48178|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+7	خورد	خورد#خور	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48178|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 8	.	.	PUNCT	PUNC	attachment=ISO|senID=48178|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s1185
@@ -23484,7 +23484,7 @@
 43	را	را	ADP	POSTP	attachment=ISO|senID=48249|dadeg_pos=POSTP	46	OBJ	_	_
 44	فهرست‌نویسی	فهرست‌نویسی	NOUN	IANM	attachment=ISO|number=SING|senID=48249|dadeg_pos=N	46	NVE	_	_
 45	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48249|dadeg_pos=AUX	46	aux	_	_
-46	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48249|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+46	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48249|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 47	.	.	PUNCT	PUNC	attachment=ISO|senID=48249|dadeg_pos=PUNC	46	PUNC	_	_
 
 # sent_id = dev-s1192
@@ -23518,7 +23518,7 @@
 9	فیفا	فیفا	PROPN	IANM	attachment=ISO|number=SING|senID=48269|dadeg_pos=N	8	POSDEP	_	_
 10	فکس	فکس	NOUN	IANM	attachment=ISO|number=SING|senID=48269|dadeg_pos=N	12	NVE	_	_
 11	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48269|dadeg_pos=AUX	12	aux	_	_
-12	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48269|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48269|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=48269|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s1194
@@ -23554,7 +23554,7 @@
 11	سه	سه	NUM	PRENUM	attachment=ISO|senID=48290|dadeg_pos=PRENUM	10	POSDEP	_	_
 12	ربات	ربات	NOUN	IANM	attachment=ISO|number=SING|senID=48290|dadeg_pos=N	8	MOZ	_	_
 13	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48290|dadeg_pos=AUX	14	aux	_	_
-14	بود	بود#باش	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48290|dadeg_pos=V	0	ROOT	_	_
+14	بود	بود#باش	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48290|dadeg_pos=V	0	ROOT	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=48290|dadeg_pos=CONJ	14	VCONJ	_	_
 16	تا	تا	NUM	PRENUM	attachment=ISO|senID=48290|dadeg_pos=PRENUM	28	ADV	_	_
 17	چند	چند	PREM	AMBAJ	attachment=ISO|senID=48290|dadeg_pos=PREM	18	NPREMOD	_	_
@@ -23568,7 +23568,7 @@
 25	را	را	ADP	POSTP	attachment=ISO|senID=48290|dadeg_pos=POSTP	28	OBJ	_	_
 26	فرماندهی	فرماندهی	NOUN	IANM	attachment=ISO|number=SING|senID=48290|dadeg_pos=N	28	NVE	_	_
 27	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48290|dadeg_pos=AUX	28	aux	_	_
-28	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48290|dadeg_pos=V	15	POSDEP	_	spaceAfter=NO
+28	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48290|dadeg_pos=V	15	POSDEP	_	spaceAfter=NO
 29	.	.	PUNCT	PUNC	attachment=ISO|senID=48290|dadeg_pos=PUNC	28	PUNC	_	_
 
 # sent_id = dev-s1196
@@ -23698,7 +23698,7 @@
 7	شرط	شرط	NOUN	IANM	attachment=ISO|number=SING|senID=48375|dadeg_pos=N	6	POSDEP	_	_
 8	عشق	عشق	NOUN	IANM	attachment=ISO|number=SING|senID=48375|dadeg_pos=N	10	NVE	_	_
 9	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=48375|dadeg_pos=AUX	10	aux	_	_
-10	ورزید	ورزید#ورز	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48375|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+10	ورزید	ورزید#ورز	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48375|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=48375|dadeg_pos=PUNC	10	PUNC	_	_
 
 # sent_id = dev-s1204
@@ -23738,7 +23738,7 @@
 21	"	"	PUNCT	PUNC	attachment=ISO|senID=48395|dadeg_pos=PUNC	20	PUNC	_	_
 22	عزیمت	عزیمت	NOUN	IANM	attachment=ISO|number=SING|senID=48395|dadeg_pos=N	24	NVE	_	_
 23	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=48395|dadeg_pos=AUX	24	aux	_	_
-24	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48395|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+24	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48395|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 25	.	.	PUNCT	PUNC	attachment=ISO|senID=48395|dadeg_pos=PUNC	24	PUNC	_	_
 
 # sent_id = dev-s1206
@@ -23823,7 +23823,7 @@
 15	گلاب	گلاب	NOUN	IANM	attachment=ISO|number=SING|senID=48445|dadeg_pos=N	14	POSDEP	_	_
 16	عطرافشانی	عطرافشانی	NOUN	IANM	attachment=ISO|number=SING|senID=48445|dadeg_pos=N	18	NVE	_	_
 17	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=48445|dadeg_pos=AUX	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48445|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48445|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=48445|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s1211
@@ -23859,7 +23859,7 @@
 15	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=48465|dadeg_pos=PR	14	POSDEP	_	_
 16	عرضه	عرضه	NOUN	IANM	attachment=ISO|number=SING|senID=48465|dadeg_pos=N	18	NVE	_	_
 17	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=48465|dadeg_pos=AUX	18	aux	_	_
-18	داشت	داشت#دار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48465|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	داشت	داشت#دار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=48465|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=48465|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s1213
@@ -24000,7 +24000,7 @@
 15	مان	ما	PRON	PRO	number=PLUR|person=1|pronType=Prs|senID=37843|dadeg_pos=PR	14	MOZ	_	_
 16	استنشاق	استنشاق	NOUN	IANM	attachment=ISO|number=SING|senID=37843|dadeg_pos=N	18	NVE	_	_
 17	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=37843|dadeg_pos=AUX	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37843|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=37843|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=37843|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s1220
@@ -24190,7 +24190,7 @@
 15	قطره‌های	قطره	NOUN	IANM	attachment=ISO|number=PLUR|senID=38092|dadeg_pos=N	14	POSDEP	_	_
 16	چشمی	چشمی	ADJ	AJP	attachment=ISO|senID=38092|dadeg_pos=ADJ	15	NPOSTMOD	_	_
 17	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=38092|dadeg_pos=AUX	18	aux	_	_
-18	پرداخت	پرداخت#پرداز	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38092|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	پرداخت	پرداخت#پرداز	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38092|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=38092|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s1229
@@ -25039,7 +25039,7 @@
 14	خود	خود	PRON	CREFX	attachment=ISO|senID=38515|dadeg_pos=PR	13	POSDEP	_	_
 15	اندوخته	اندوخته	NOUN	IANM	attachment=ISO|number=SING|senID=38515|dadeg_pos=N	17	NVE	_	_
 16	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=38515|dadeg_pos=AUX	17	aux	_	_
-17	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38515|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38515|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=38515|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s1270
@@ -25061,7 +25061,7 @@
 15	را	را	ADP	POSTP	attachment=ISO|senID=38525|dadeg_pos=POSTP	18	OBJ	_	_
 16	زجر	زجر	NOUN	IANM	attachment=ISO|number=SING|senID=38525|dadeg_pos=N	18	NVE	_	_
 17	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=38525|dadeg_pos=AUX	18	aux	_	_
-18	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38525|dadeg_pos=V	0	ROOT	_	_
+18	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38525|dadeg_pos=V	0	ROOT	_	_
 19	چرا	چرا	SCONJ	SUBR	attachment=ISO|senID=38525|dadeg_pos=SUBR	18	AJUCL	_	_
 20	که	که	SCONJ	SUBR	attachment=ISO|senID=38525|dadeg_pos=SUBR	19	POSDEP	_	_
 21	این	این	PREM	DEMAJ	attachment=ISO|senID=38525|dadeg_pos=PREM	22	NPREMOD	_	_
@@ -25139,7 +25139,7 @@
 9	جاری	جاری	ADJ	AJP	attachment=ISO|senID=38565|dadeg_pos=ADJ	8	NPOSTMOD	_	_
 10	تغییر	تغییر	NOUN	IANM	attachment=ISO|number=SING|senID=38565|dadeg_pos=N	12	NVE	_	_
 11	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=38565|dadeg_pos=AUX	12	aux	_	_
-12	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38565|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38565|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=38565|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s1275
@@ -25709,12 +25709,12 @@
 22	و	و	CCONJ	CONJ	attachment=ISO|senID=38696|dadeg_pos=CONJ	21	AJCONJ	_	_
 23	عمومی	عمومی	ADJ	AJP	attachment=ISO|senID=38696|dadeg_pos=ADJ	22	POSDEP	_	_
 24	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=38696|dadeg_pos=AUX	25	aux	_	_
-25	بود	بود#باش	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38696|dadeg_pos=V	6	PRD	_	spaceAfter=NO
+25	بود	بود#باش	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38696|dadeg_pos=V	6	PRD	_	spaceAfter=NO
 26	؛	؛	PUNCT	PUNC	attachment=ISO|senID=38696|dadeg_pos=PUNC	25	PUNC	_	_
 27	یعنی	یعنی	PSUS	PSUS	attachment=ISO|senID=38696|dadeg_pos=PSUS	25	VCONJ	_	_
 28	معنایی	معنا	NOUN	IANM	attachment=ISO|number=SING|senID=38696|dadeg_pos=N	30	MOS	_	_
 29	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=38696|dadeg_pos=AUX	30	aux	_	_
-30	بود	بود#باش	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38696|dadeg_pos=V	27	VCL	_	_
+30	بود	بود#باش	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38696|dadeg_pos=V	27	VCL	_	_
 31	که	که	SCONJ	SUBR	attachment=ISO|senID=38696|dadeg_pos=SUBR	28	NCL	_	_
 32	اکثریت	اکثریت	NOUN	ANM	attachment=ISO|number=PLUR|senID=38696|dadeg_pos=N	38	SBJ	_	_
 33	مردم	مردم	NOUN	ANM	attachment=ISO|number=PLUR|senID=38696|dadeg_pos=N	32	MOZ	_	_
@@ -26065,7 +26065,7 @@
 40	و	و	CCONJ	CONJ	attachment=ISO|senID=38839|dadeg_pos=CONJ	39	NCONJ	_	_
 41	عدالتی	عدالت	NOUN	IANM	attachment=ISO|number=SING|senID=38839|dadeg_pos=N	40	POSDEP	_	_
 42	فراخواهد	فرا#خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=38839|dadeg_pos=AUX	43	aux	_	_
-43	گرفت	گرفت#گیر	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38839|dadeg_pos=V	2	ACL	_	_
+43	گرفت	گرفت#گیر	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38839|dadeg_pos=V	2	ACL	_	_
 44	ولی	ولی	CCONJ	CONJ	attachment=ISO|senID=38839|dadeg_pos=CONJ	3	VCONJ	_	_
 45	تا	تا	ADP	PREP	attachment=ISO|senID=38839|dadeg_pos=PREP	52	ADV	_	_
 46	آن	آن	PREM	DEMAJ	attachment=ISO|senID=38839|dadeg_pos=PREM	47	NPREMOD	_	_
@@ -26320,7 +26320,7 @@
 22	و	و	CCONJ	CONJ	attachment=ISO|senID=38901|dadeg_pos=CONJ	21	NCONJ	_	_
 23	رسانه‌ها	رسانه	NOUN	IANM	attachment=ISO|number=PLUR|senID=38901|dadeg_pos=N	22	POSDEP	_	_
 24	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=38901|dadeg_pos=AUX	25	aux	_	_
-25	بود	بود#باش	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38901|dadeg_pos=V	15	POSDEP	_	spaceAfter=NO
+25	بود	بود#باش	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=38901|dadeg_pos=V	15	POSDEP	_	spaceAfter=NO
 26	.	.	PUNCT	PUNC	attachment=ISO|senID=38901|dadeg_pos=PUNC	25	PUNC	_	_
 
 # sent_id = dev-s1308
@@ -26688,7 +26688,7 @@
 19	،	،	PUNCT	PUNC	attachment=ISO|senID=39062|dadeg_pos=PUNC	17	PUNC	_	_
 20	اعطا	اعطا	NOUN	IANM	attachment=ISO|number=SING|senID=39062|dadeg_pos=N	22	NVE	_	_
 21	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=39062|dadeg_pos=AUX	22	aux	_	_
-22	شد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=PASS|senID=39062|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+22	شد	شد#شو	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39062|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 23	.	.	PUNCT	PUNC	attachment=ISO|senID=39062|dadeg_pos=PUNC	22	PUNC	_	_
 
 # sent_id = dev-s1324
@@ -26719,7 +26719,7 @@
 12	کنار	کنار	NOUN	IANM	attachment=ISO|number=SING|senID=39082|dadeg_pos=N	11	POSDEP	_	_
 13	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=39082|dadeg_pos=PR	12	MOZ	_	_
 14	خواهی	خواست#خواه	AUX	V_AUX	number=SING|person=2|tense=Fut|verbForm=Fin|senID=39082|dadeg_pos=AUX	15	aux	_	_
-15	ماند	ماند#مان	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39082|dadeg_pos=V	9	PRD	_	spaceAfter=NO
+15	ماند	ماند#مان	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39082|dadeg_pos=V	9	PRD	_	spaceAfter=NO
 16	.	.	PUNCT	PUNC	attachment=ISO|senID=39082|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s1326
@@ -26801,7 +26801,7 @@
 21	شما	شما	PRON	SEPER	person=2|attachment=ISO|number=PLUR|senID=39112|dadeg_pos=PR	20	POSDEP	_	_
 22	کباب	کباب	NOUN	IANM	attachment=ISO|number=SING|senID=39112|dadeg_pos=N	24	NVE	_	_
 23	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=39112|dadeg_pos=AUX	24	aux	_	_
-24	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39112|dadeg_pos=V	8	PRD	_	spaceAfter=NO
+24	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39112|dadeg_pos=V	8	PRD	_	spaceAfter=NO
 25	.	.	PUNCT	PUNC	attachment=ISO|senID=39112|dadeg_pos=PUNC	7	PUNC	_	_
 
 # sent_id = dev-s1329
@@ -27322,7 +27322,7 @@
 21	نیمه‌تمام	نیمه‌تمام	ADJ	AJP	attachment=ISO|senID=39315|dadeg_pos=ADJ	20	NPOSTMOD	_	_
 22	اهتمام	اهتمام	NOUN	IANM	attachment=ISO|number=SING|senID=39315|dadeg_pos=N	24	NVE	_	_
 23	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=39315|dadeg_pos=AUX	24	aux	_	_
-24	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39315|dadeg_pos=V	17	POSDEP	_	spaceAfter=NO
+24	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39315|dadeg_pos=V	17	POSDEP	_	spaceAfter=NO
 25	.	.	PUNCT	PUNC	attachment=ISO|senID=39315|dadeg_pos=PUNC	24	PUNC	_	_
 
 # sent_id = dev-s1349
@@ -27597,7 +27597,7 @@
 8	هم	هم	ADV	SADV	attachment=ISO|senID=39455|dadeg_pos=ADV	2	ADV	_	_
 9	بوس	بوس	NOUN	IANM	attachment=ISO|number=SING|senID=39455|dadeg_pos=N	11	NVE	_	_
 10	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=39455|dadeg_pos=AUX	11	aux	_	_
-11	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39455|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+11	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39455|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 12	.	.	PUNCT	PUNC	attachment=ISO|senID=39455|dadeg_pos=PUNC	11	PUNC	_	_
 
 # sent_id = dev-s1363
@@ -27611,7 +27611,7 @@
 6	را	را	ADP	POSTP	attachment=ISO|senID=39465|dadeg_pos=POSTP	9	OBJ	_	_
 7	بهبود	بهبود	NOUN	IANM	attachment=ISO|number=SING|senID=39465|dadeg_pos=N	9	NVE	_	_
 8	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=39465|dadeg_pos=AUX	9	aux	_	_
-9	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39465|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+9	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39465|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=39465|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s1364
@@ -27635,7 +27635,7 @@
 8	حد	حد	NOUN	IANM	attachment=ISO|number=SING|senID=39485|dadeg_pos=N	6	POSDEP	_	_
 9	بهانه	بهانه	NOUN	IANM	attachment=ISO|number=SING|senID=39485|dadeg_pos=N	11	NVE	_	_
 10	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=39485|dadeg_pos=AUX	11	aux	_	_
-11	آورد	آورد#آور	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39485|dadeg_pos=V	4	PRD	_	_
+11	آورد	آورد#آور	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39485|dadeg_pos=V	4	PRD	_	_
 12	تا	تا	SCONJ	SUBR	attachment=ISO|senID=39485|dadeg_pos=SUBR	11	AJUCL	_	_
 13	ترکیه	ترکیه	PROPN	IANM	attachment=ISO|number=SING|senID=39485|dadeg_pos=N	18	SBJ	_	_
 14	از	از	ADP	PREP	attachment=ISO|senID=39485|dadeg_pos=PREP	17	NPP	_	_
@@ -27691,7 +27691,7 @@
 10	را	را	ADP	POSTP	attachment=ISO|senID=39505|dadeg_pos=POSTP	13	OBJ	_	_
 11	بنیان	بنیان	NOUN	IANM	attachment=ISO|number=SING|senID=39505|dadeg_pos=N	13	NVE	_	_
 12	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=39505|dadeg_pos=AUX	13	aux	_	_
-13	گذارد	گذارد#گذار	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39505|dadeg_pos=V	6	PRD	_	spaceAfter=NO
+13	گذارد	گذارد#گذار	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39505|dadeg_pos=V	6	PRD	_	spaceAfter=NO
 14	،	،	PUNCT	PUNC	attachment=ISO|senID=39505|dadeg_pos=PUNC	13	PUNC	_	_
 15	خود	خود	PRON	CREFX	attachment=ISO|senID=39505|dadeg_pos=PR	1	POSDEP	_	_
 16	گواه	گواه	NOUN	IANM	attachment=ISO|number=SING|senID=39505|dadeg_pos=N	17	MOS	_	_
@@ -27773,7 +27773,7 @@
 17	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=39555|dadeg_pos=PR	16	MOZ	_	_
 18	بی‌اعتنایی	بی‌اعتنایی	NOUN	IANM	attachment=ISO|number=SING|senID=39555|dadeg_pos=N	20	NVE	_	_
 19	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=39555|dadeg_pos=AUX	20	aux	_	_
-20	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39555|dadeg_pos=V	11	POSDEP	_	_
+20	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39555|dadeg_pos=V	11	POSDEP	_	_
 21	و	و	CCONJ	CONJ	attachment=ISO|senID=39555|dadeg_pos=CONJ	20	VCONJ	_	_
 22	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=39555|dadeg_pos=PR	23	PREDEP	_	_
 23	را	را	ADP	POSTP	attachment=ISO|senID=39555|dadeg_pos=POSTP	29	OBJ	_	_
@@ -27882,7 +27882,7 @@
 23	امسال	امسال	NOUN	IANM	attachment=ISO|senID=39595|dadeg_pos=N	22	MOZ	_	_
 24	بهره‌برداری	بهره‌برداری	NOUN	IANM	attachment=ISO|number=SING|senID=39595|dadeg_pos=N	26	NVE	_	_
 25	خواهیم	خواست#خواه	AUX	V_AUX	number=PLUR|person=1|tense=Fut|verbForm=Fin|senID=39595|dadeg_pos=AUX	26	aux	_	_
-26	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39595|dadeg_pos=V	4	VCL	_	spaceAfter=NO
+26	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39595|dadeg_pos=V	4	VCL	_	spaceAfter=NO
 27	.	.	PUNCT	PUNC	attachment=ISO|senID=39595|dadeg_pos=PUNC	4	PUNC	_	_
 
 # sent_id = dev-s1377
@@ -28021,7 +28021,7 @@
 16	روزبه‌روز	روزبه‌روز	NOUN	IANM	attachment=ISO|number=SING|senID=39645|dadeg_pos=N	19	ADV	_	_
 17	پسرفت	پسرفت	NOUN	IANM	attachment=ISO|number=SING|senID=39645|dadeg_pos=N	19	NVE	_	_
 18	خواهی	خواست#خواه	AUX	V_AUX	number=SING|person=2|tense=Fut|verbForm=Fin|senID=39645|dadeg_pos=AUX	19	aux	_	_
-19	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39645|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39645|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	،	،	PUNCT	PUNC	attachment=ISO|senID=39645|dadeg_pos=PUNC	19	PUNC	_	_
 21	به	به	ADP	PREP	attachment=ISO|senID=39645|dadeg_pos=PREP	41	ADV	_	_
 22	خاطر	خاطر	NOUN	IANM	attachment=ISO|number=SING|senID=39645|dadeg_pos=N	21	POSDEP	_	_
@@ -28084,7 +28084,7 @@
 16	برندگان	برنده	NOUN	ANM	attachment=ISO|number=PLUR|senID=39655|dadeg_pos=N	15	POSDEP	_	_
 17	اطلاع‌رسانی	اطلاع‌رسانی	NOUN	IANM	attachment=ISO|number=SING|senID=39655|dadeg_pos=N	19	NVE	_	_
 18	نخواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=39655|dadeg_pos=AUX	19	aux	_	_
-19	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39655|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39655|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=39655|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s1383
@@ -28115,7 +28115,7 @@
 24	را	را	ADP	POSTP	attachment=ISO|senID=39665|dadeg_pos=POSTP	27	OBJ	_	_
 25	جدی	جدی	ADJ	AJP	attachment=ISO|senID=39665|dadeg_pos=ADJ	27	TAM	_	_
 26	نخواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=39665|dadeg_pos=AUX	27	aux	_	_
-27	گرفت	گرفت#گیر	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39665|dadeg_pos=V	21	VCL	_	spaceAfter=NO
+27	گرفت	گرفت#گیر	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=39665|dadeg_pos=V	21	VCL	_	spaceAfter=NO
 28	!	!	PUNCT	PUNC	attachment=ISO|senID=39665|dadeg_pos=PUNC	21	PUNC	_	spaceAfter=NO
 29	؟	؟	PUNCT	PUNC	attachment=ISO|senID=39665|dadeg_pos=PUNC	21	PUNC	_	_
 
@@ -28412,7 +28412,7 @@
 8	زبان	زبان	NOUN	IANM	attachment=ISO|number=SING|senID=59323|dadeg_pos=N	7	POSDEP	_	_
 9	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=59323|dadeg_pos=PR	8	MOZ	_	_
 10	جاری	جاری	ADJ	AJP	attachment=ISO|senID=59323|dadeg_pos=ADJ	11	MOS	_	_
-11	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=59323|dadeg_pos=V	6	PRD	_	_
+11	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=59323|dadeg_pos=V	6	PRD	_	_
 12	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=59323|dadeg_pos=AUX	11	aux	_	spaceAfter=NO
 13	،	،	PUNCT	PUNC	attachment=ISO|senID=59323|dadeg_pos=PUNC	11	PUNC	_	_
 14	تحقق	تحقق	NOUN	IANM	attachment=ISO|number=SING|senID=59323|dadeg_pos=N	16	NVE	_	_
@@ -28439,7 +28439,7 @@
 15	تخصیص	تخصیص	NOUN	IANM	attachment=ISO|number=SING|senID=59333|dadeg_pos=N	18	NVE	_	_
 16	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59333|dadeg_pos=ADJ	18	LVP	_	_
 17	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=59333|dadeg_pos=AUX	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59333|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59333|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=59333|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s1397
@@ -28462,7 +28462,7 @@
 16	باعث	باعث	ADJ	AJP	attachment=ISO|senID=59343|dadeg_pos=ADJ	19	MOS	_	_
 17	بروز	بروز	NOUN	IANM	attachment=ISO|number=SING|senID=59343|dadeg_pos=N	16	NEZ	_	_
 18	مشکل	مشکل	NOUN	IANM	attachment=ISO|number=SING|senID=59343|dadeg_pos=N	17	MOZ	_	_
-19	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=59343|dadeg_pos=V	15	POSDEP	_	_
+19	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=59343|dadeg_pos=V	15	POSDEP	_	_
 20	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=59343|dadeg_pos=AUX	19	aux	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=59343|dadeg_pos=PUNC	19	PUNC	_	_
 
@@ -28562,7 +28562,7 @@
 10	تسکین	تسکین	NOUN	IANM	attachment=ISO|number=SING|senID=59383|dadeg_pos=N	13	NVE	_	_
 11	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59383|dadeg_pos=ADJ	13	LVP	_	_
 12	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=59383|dadeg_pos=AUX	13	aux	_	_
-13	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59383|dadeg_pos=V	3	PRD	_	spaceAfter=NO
+13	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59383|dadeg_pos=V	3	PRD	_	spaceAfter=NO
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=59383|dadeg_pos=PUNC	2	PUNC	_	_
 
 # sent_id = dev-s1402
@@ -28667,7 +28667,7 @@
 18	تعلق	تعلق	NOUN	IANM	attachment=ISO|number=SING|senID=59433|dadeg_pos=N	21	NVE	_	_
 19	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=59433|dadeg_pos=ADJ	21	LVP	_	_
 20	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=59433|dadeg_pos=AUX	21	aux	_	_
-21	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59433|dadeg_pos=V	13	POSDEP	_	spaceAfter=NO
+21	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59433|dadeg_pos=V	13	POSDEP	_	spaceAfter=NO
 22	.	.	PUNCT	PUNC	attachment=ISO|senID=59433|dadeg_pos=PUNC	21	PUNC	_	_
 
 # sent_id = dev-s1407
@@ -28803,7 +28803,7 @@
 20	پارس	پارس	PROPN	IANM	attachment=ISO|number=SING|senID=59483|dadeg_pos=N	18	MOZ	_	_
 21	ارائه	ارائه	NOUN	IANM	attachment=ISO|number=SING|senID=59483|dadeg_pos=N	23	NVE	_	_
 22	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=59483|dadeg_pos=AUX	23	aux	_	_
-23	داد	داد#ده	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59483|dadeg_pos=V	9	PRD	_	spaceAfter=NO
+23	داد	داد#ده	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59483|dadeg_pos=V	9	PRD	_	spaceAfter=NO
 24	.	.	PUNCT	PUNC	attachment=ISO|senID=59483|dadeg_pos=PUNC	8	PUNC	_	_
 
 # sent_id = dev-s1411
@@ -28817,7 +28817,7 @@
 7	حجاب	حجاب	NOUN	IANM	attachment=ISO|number=SING|senID=59493|dadeg_pos=N	6	MOZ	_	_
 8	انس	انس	NOUN	IANM	attachment=ISO|number=SING|senID=59493|dadeg_pos=N	10	NVE	_	_
 9	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=59493|dadeg_pos=AUX	10	aux	_	_
-10	گرفت	گرفت#گیر	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59493|dadeg_pos=V	0	ROOT	_	_
+10	گرفت	گرفت#گیر	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59493|dadeg_pos=V	0	ROOT	_	_
 11	و	و	CCONJ	CONJ	attachment=ISO|senID=59493|dadeg_pos=CONJ	10	VCONJ	_	_
 12	از	از	ADP	PREP	attachment=ISO|senID=59493|dadeg_pos=PREP	19	ADV	_	_
 13	روی	رو	ADP	PREP	attachment=ISO|senID=59493|dadeg_pos=PREP	12	POSDEP	_	_
@@ -28826,7 +28826,7 @@
 16	آن	آن	PRON	DEMON	attachment=ISO|number=SING|senID=59493|dadeg_pos=PR	15	POSDEP	_	_
 17	روی	روی	NOUN	IANM	attachment=ISO|number=SING|senID=59493|dadeg_pos=N	19	NVE	_	_
 18	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=59493|dadeg_pos=AUX	19	aux	_	_
-19	آورد	آورد#آور	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59493|dadeg_pos=V	11	POSDEP	_	_
+19	آورد	آورد#آور	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59493|dadeg_pos=V	11	POSDEP	_	_
 20	و	و	CCONJ	CONJ	attachment=ISO|senID=59493|dadeg_pos=CONJ	12	PCONJ	_	_
 21	یا	یا	CCONJ	CONJ	attachment=ISO|senID=59493|dadeg_pos=CONJ	20	POSDEP	_	_
 22	از	از	ADP	PREP	attachment=ISO|senID=59493|dadeg_pos=PREP	20	POSDEP	_	_
@@ -28873,7 +28873,7 @@
 16	یکدیگر	یکدیگر	PRON	RECPR	attachment=ISO|senID=59513|dadeg_pos=PR	15	POSDEP	_	_
 17	ائتلاف	ائتلاف	NOUN	IANM	attachment=ISO|number=SING|senID=59513|dadeg_pos=N	19	NVE	_	_
 18	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=59513|dadeg_pos=AUX	19	aux	_	_
-19	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59513|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59513|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=59513|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s1414
@@ -28896,7 +28896,7 @@
 16	مربوطه	مربوطه	ADJ	AJP	attachment=ISO|senID=59523|dadeg_pos=ADJ	15	NPOSTMOD	_	_
 17	اطلاق	اطلاق	NOUN	IANM	attachment=ISO|number=SING|senID=59523|dadeg_pos=N	19	NVE	_	_
 18	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=59523|dadeg_pos=AUX	19	aux	_	_
-19	گرفت	گرفت#گیر	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59523|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+19	گرفت	گرفت#گیر	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=59523|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=59523|dadeg_pos=PUNC	19	PUNC	_	_
 
 # sent_id = dev-s1415
@@ -28968,7 +28968,7 @@
 16	روح	روح	NOUN	IANM	attachment=ISO|number=SING|senID=44666|dadeg_pos=N	19	SBJ	_	_
 17	م	من	PRON	PRO	number=SING|person=1|pronType=Prs|senID=44666|dadeg_pos=PR	16	MOZ	_	_
 18	سبک	سبک	ADJ	AJP	attachment=ISO|senID=44666|dadeg_pos=ADJ	19	MOS	_	_
-19	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=PASS|senID=44666|dadeg_pos=V	15	POSDEP	_	_
+19	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GS|dadeg_pos=V|dadeg_fpos=ACT|senID=44666|dadeg_pos=V	15	POSDEP	_	_
 20	است	#است	AUX	V_PRS	number=SING|person=3|tense=Pres|senID=44666|dadeg_pos=AUX	19	aux	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=44666|dadeg_pos=PUNC	19	PUNC	_	_
 
@@ -29017,7 +29017,7 @@
 15	تهران	تهران	PROPN	IANM	attachment=ISO|number=SING|senID=44686|dadeg_pos=N	13	MOZ	_	_
 16	تفرج	تفرج	NOUN	IANM	attachment=ISO|number=SING|senID=44686|dadeg_pos=N	18	NVE	_	_
 17	خواهید	خواست#خواه	AUX	V_AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=44686|dadeg_pos=AUX	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44686|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+18	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44686|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=44686|dadeg_pos=PUNC	18	PUNC	_	_
 
 # sent_id = dev-s1421
@@ -29060,7 +29060,7 @@
 10	مخ	مخ	NOUN	IANM	attachment=ISO|number=SING|senID=44867|dadeg_pos=N	13	SBJ	_	_
 11	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=44867|dadeg_pos=PR	10	MOZ	_	_
 12	تیلیت	تیلیت	ADJ	AJP	attachment=ISO|senID=44867|dadeg_pos=ADJ	13	MOS	_	_
-13	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=44867|dadeg_pos=V	9	PRD	_	_
+13	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=44867|dadeg_pos=V	9	PRD	_	_
 14	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=44867|dadeg_pos=AUX	13	aux	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=44867|dadeg_pos=PUNC	7	PUNC	_	_
 
@@ -29082,7 +29082,7 @@
 14	را	را	ADP	POSTP	attachment=ISO|senID=44877|dadeg_pos=POSTP	17	OBJ	_	_
 15	تخطئه	تخطئه	NOUN	IANM	attachment=ISO|number=SING|senID=44877|dadeg_pos=N	17	NVE	_	_
 16	خواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=44877|dadeg_pos=AUX	17	aux	_	_
-17	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44877|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+17	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44877|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 18	.	.	PUNCT	PUNC	attachment=ISO|senID=44877|dadeg_pos=PUNC	17	PUNC	_	_
 
 # sent_id = dev-s1425
@@ -29116,7 +29116,7 @@
 7	از	از	ADP	PREP	attachment=ISO|senID=44897|dadeg_pos=PREP	6	POSDEP	_	_
 8	این	این	PRON	DEMON	attachment=ISO|number=SING|senID=44897|dadeg_pos=PR	7	POSDEP	_	_
 9	تعطیل	تعطیل	ADJ	AJP	attachment=ISO|senID=44897|dadeg_pos=ADJ	10	MOS	_	_
-10	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=44897|dadeg_pos=V	1	ROOT	_	_
+10	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=44897|dadeg_pos=V	1	ROOT	_	_
 11	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=44897|dadeg_pos=AUX	10	aux	_	_
 12	اما	اما	CCONJ	CONJ	attachment=ISO|senID=44897|dadeg_pos=CONJ	10	VCONJ	_	_
 13	یزدی	یزدی	PROPN	ANM	attachment=ISO|number=SING|senID=44897|dadeg_pos=N	28	SBJ	_	_
@@ -29178,7 +29178,7 @@
 17	را	را	ADP	POSTP	attachment=ISO|senID=44917|dadeg_pos=POSTP	20	OBJ	_	_
 18	تصنیف	تصنیف	NOUN	IANM	attachment=ISO|number=SING|senID=44917|dadeg_pos=N	20	NVE	_	_
 19	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=44917|dadeg_pos=AUX	20	aux	_	_
-20	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44917|dadeg_pos=V	8	VCL	_	spaceAfter=NO
+20	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44917|dadeg_pos=V	8	VCL	_	spaceAfter=NO
 21	.	.	PUNCT	PUNC	attachment=ISO|senID=44917|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s1429
@@ -29273,7 +29273,7 @@
 13	گنج	گنج	NOUN	IANM	attachment=ISO|number=SING|senID=44957|dadeg_pos=N	11	POSDEP	_	_
 14	حراست	حراست	NOUN	IANM	attachment=ISO|number=SING|senID=44957|dadeg_pos=N	16	NVE	_	_
 15	خواهم	خواست#خواه	AUX	V_AUX	number=SING|person=1|tense=Fut|verbForm=Fin|senID=44957|dadeg_pos=AUX	16	aux	_	_
-16	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44957|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+16	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=44957|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=44957|dadeg_pos=PUNC	16	PUNC	_	_
 
 # sent_id = dev-s1433
@@ -29410,7 +29410,7 @@
 7	روز	روز	NOUN	IANM	attachment=ISO|number=SING|senID=45027|dadeg_pos=N	5	MOZ	_	_
 8	گروه	گروه	NOUN	IANM	attachment=ISO|number=SING|senID=45027|dadeg_pos=N	5	MOZ	_	_
 9	تهیه	تهیه	NOUN	IANM	attachment=ISO|number=SING|senID=45027|dadeg_pos=N	10	NVE	_	_
-10	شده	کرد#کن	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=PASS|senID=45027|dadeg_pos=V	0	ROOT	_	_
+10	شده	شد#شو	VERB	V_PP	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=45027|dadeg_pos=V	0	ROOT	_	_
 11	بود	بود#باش	AUX	V_PASS	number=SING|person=3|tense=Past|senID=45027|dadeg_pos=AUX	10	aux	_	_
 12	که	که	SCONJ	SUBR	attachment=ISO|senID=45027|dadeg_pos=SUBR	10	VCL	_	_
 13	به	به	ADP	PREP	attachment=ISO|senID=45027|dadeg_pos=PREP	23	ADV	_	_
@@ -29537,7 +29537,7 @@
 9	را	را	ADP	POSTP	attachment=ISO|senID=45077|dadeg_pos=POSTP	12	OBJ	_	_
 10	حساب‌رسی	حساب‌رسی	NOUN	IANM	attachment=ISO|number=SING|senID=45077|dadeg_pos=N	12	NVE	_	_
 11	خواهند	خواست#خواه	AUX	V_AUX	number=PLUR|person=3|tense=Fut|verbForm=Fin|senID=45077|dadeg_pos=AUX	12	aux	_	_
-12	کرد	کرد#کن	VERB	V_PASS	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=45077|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
+12	کرد	کرد#کن	VERB	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=45077|dadeg_pos=V	0	ROOT	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=45077|dadeg_pos=PUNC	12	PUNC	_	_
 
 # sent_id = dev-s1445
@@ -29575,7 +29575,7 @@
 9	آن	آن	PRON	DEMON	person=3|attachment=ISO|number=SING|senID=45097|dadeg_pos=PR	8	POSDEP	_	_
 10	حسادت	حسادت	NOUN	IANM	attachment=ISO|number=SING|senID=45097|dadeg_pos=N	12	NVE	_	_
 11	نخواهد	خواست#خواه	AUX	V_AUX	number=SING|person=3|polarity=NEG|tense=Fut|verbForm=Fin|senID=45097|dadeg_pos=AUX	12	aux	_	_
-12	ورزید	ورزید#ورز	VERB	V_PASS	number=SING|person=3|tense=Past|tma=HEL|dadeg_pos=V|dadeg_fpos=ACT|senID=45097|dadeg_pos=V	6	PRD	_	spaceAfter=NO
+12	ورزید	ورزید#ورز	VERB	ACT	number=SING|person=3|tense=Past|tma=HEL|dadeg_pos=V|dadeg_fpos=ACT|senID=45097|dadeg_pos=V	6	PRD	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=45097|dadeg_pos=PUNC	5	PUNC	_	_
 
 # sent_id = dev-s1447

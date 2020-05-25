@@ -693,10 +693,10 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                                               1] + polarity + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux' + '\t' + '_' + '\t' + '_' + '\n'
                         eddited_line = str(
-                            token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PASS' + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         if noSpace:
                             eddited_line = str(
-                                token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PASS' + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
+                                token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
                                 elems[8:-1]) + '\t' + 'spaceAfter=NO' + '\n'
                         sent_lines.append(added_line_verb)
                         sent_lines.append(eddited_line)

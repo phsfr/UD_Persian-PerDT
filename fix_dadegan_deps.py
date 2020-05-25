@@ -73,13 +73,14 @@ if __name__ == '__main__':
         tree_list = DependencyTree.load_trees_from_conll_file(inp_f)
         for i, tree in enumerate(tree_list):
             for w, (lemma, word, ftag) in enumerate(zip(tree.lemmas, tree.words, tree.ftags)):
-                if lemma == "گشت#گرد" and ftag=="PASS" and " " not in word:
+                if lemma == "گشت#گرد" and ftag=="PASS":
                     tree.ftags[w] = "ACT"
-                if lemma == "شد#شو" and ftag=="PASS" and " " not in word:
+                if lemma == "شد#شو" and ftag=="PASS":
                     tree.ftags[w] = "ACT"
-                if lemma in {"کرد#کن"} and ftag=="PASS" and " " not in word:
+                if lemma in {"کرد#کن"} and ftag=="PASS":
                     if "شو" not in word and "شد" not in word:
-                        raise Exception("Wrong Annotation")
+                        tree.ftags[w] = "ACT"
+                        print(word)
                     else:
                         tree.ftags[w] = "ACT"
                         tree.lemmas[w] = "شد#شو"
