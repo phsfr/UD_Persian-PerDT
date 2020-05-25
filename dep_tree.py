@@ -884,6 +884,9 @@ class DependencyTree:
                         self.labels[idx] = 'dislocated'
                         print("dislocated", self.other_features[0].feat_dict["senID"])
 
+            if self.ftags[idx] == "PREP" and self.ftags[self.heads[idx] - 1] in {"AJCM","AJP"} \
+                    and len(self.children[idx+1])==0:
+                self.labels[idx] = 'flat'
 
             if old_role == 'VCONJ':  # this mapping should take place before که with predicate (VCL) cause #sentID=23816
                 if old_pos == 'CCONJ':
