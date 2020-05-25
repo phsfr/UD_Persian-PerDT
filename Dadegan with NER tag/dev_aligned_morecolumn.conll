@@ -11999,7 +11999,7 @@
 13	کشیده بودند	کشید#کش	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GB|senID=46339	0	ROOT	_	_
 14	.	.	PUNC	PUNC	attachment=ISO|senID=46339	13	PUNC	_	_
 
-1	ای	ای	ADR	PRADR	attachment=ISO|senID=46349	12	VCONJ	_	_
+1	ای	ای	ADR	PRADR	attachment=ISO|senID=46349	0	ROOT	_	_
 2	خدای	خدا	N	ANM	attachment=ISO|number=SING|senID=46349	1	POSDEP	_	_
 3	مهربان	مهربان	ADJ	AJP	attachment=ISO|senID=46349	2	NPOSTMOD	_	_
 4	ای	ای	ADR	PRADR	attachment=ISO|senID=46349	1	VCONJ	_	_
@@ -12010,7 +12010,7 @@
 9	هستی	هستی	N	IANM	attachment=ISO|number=SING|senID=46349	8	VCONJ	_	_
 10	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=46349	9	MOZ	_	_
 11	،	،	PUNC	PUNC	attachment=ISO|senID=46349	10	PUNC	_	_
-12	خالق	خالق	N	IANM	attachment=ISO|number=SING|senID=46349	0	ROOT	_	_
+12	خالق	خالق	N	IANM	attachment=ISO|number=SING|senID=46349	1	VCONJ	_	_
 13	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=46349	12	MOZ	_	_
 14	ما	ما	PR	SEPER	person=1|attachment=ISO|number=PLUR|senID=46349	26	SBJ	_	_
 15	چگونه	چگونه	ADV	SADV	attachment=ISO|senID=46349	26	ADV	_	_

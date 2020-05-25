@@ -7,18 +7,27 @@
 
 from dep_tree import DependencyTree
 
+changed_set = set()
 
 def fix_verb_conj_order(tree, v, label):
     v_head = tree.heads[v] - 1
+    if v_head < v:
+        return # no need to change
     v_grand_head = tree.heads[v_head]
     tree.heads[v] = v_grand_head
     tree.labels[v] = tree.labels[v_head]
     tree.heads[v_head] = v + 1
     tree.labels[v_head] = label
+    changed_set.add(tree.other_features[0].feat_dict['senID'])
     tree.rebuild_children()
 
 
 def fix_cc_order(tree, cc, label):
+    cc_head = tree.heads[cc] - 1
+
+    if cc_head < cc:
+        return  # No need to change
+
     if len(tree.children[cc + 1]) == 0:
         print("Warning: No CC children", tree.other_features[0].feat_dict['senID'])
         return
@@ -35,7 +44,6 @@ def fix_cc_order(tree, cc, label):
         return
 
 
-    cc_head = tree.heads[cc] - 1
     cc_grand_head = tree.heads[cc_head]
     cc_grand_label = tree.labels[cc_grand_head - 1] if cc_grand_head > 0 else "ROOT"
     tree.heads[cc_dep] = cc_grand_head
@@ -44,6 +52,7 @@ def fix_cc_order(tree, cc, label):
     tree.labels[cc_head] = "POSDEP"
     tree.heads[cc] = cc_dep + 1
     tree.labels[cc] = label
+    changed_set.add(tree.other_features[0].feat_dict['senID'])
     tree.rebuild_children()
 
 
@@ -85,15 +94,15 @@ if __name__ == '__main__':
                         tree.ftags[w] = "ACT"
                         tree.lemmas[w] = "شد#شو"
 
-            # for w, word in enumerate(tree.words):
+            for w, word in enumerate(tree.words):
             #     if word == "و" and tree.tags[w] == "SUBR":
             #         tree.tags[w] = "CONJ"
             #         tree.ftags[w] = "CONJ"
             # if "PARCL" in tree.labels:
             #     parcl_trees.append(tree)
             # if "VCONJ" in tree.labels:
-            #     vconj_trees.append(tree)
-            #     fix_vconj_order(tree)
+                 vconj_trees.append(tree)
+                 fix_vconj_order(tree)
 
 
 
@@ -112,3 +121,5 @@ if __name__ == '__main__':
                                 # Change the head for SBJ/AJUCL/ADV
                                 tree.heads[dep] = idx + 1
         DependencyTree.write_to_conll(tree_list, output_files[f_idx])
+
+print("\n".join(changed_set))

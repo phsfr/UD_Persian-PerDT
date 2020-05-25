@@ -13695,18 +13695,18 @@
 
 # sent_id = dev-s683
 # text = ای خدای مهربان ای معبود من، ای هستی من، خالق من ما چگونه از تو به خاطر این همه لطف و محبت سپاسگزاری کنیم؟
-1	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR|dadeg_h=12|dadeg_r=VCONJ	12	conj	_	_
+1	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 2	خدای	خدا	NOUN	ANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N	1	POSDEP	_	_
 3	مهربان	مهربان	ADJ	AJP	attachment=ISO|senID=46349|dadeg_pos=ADJ|dadeg_h=2|dadeg_r=NPOSTMOD	2	amod	_	_
-4	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR|dadeg_h=1|dadeg_r=VCONJ	12	conj	_	_
+4	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	_
 5	معبود	معبود	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N	4	POSDEP	_	_
 6	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=46349|dadeg_pos=PR|dadeg_h=5|dadeg_r=MOZ	5	nmod	_	spaceAfter=NO
 7	،	،	PUNCT	PUNC	attachment=ISO|senID=46349|dadeg_pos=PUNC|dadeg_h=6|dadeg_r=PUNC	6	punct	_	_
-8	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR|dadeg_h=4|dadeg_r=VCONJ	12	conj	_	_
-9	هستی	هستی	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N|dadeg_h=8|dadeg_r=VCONJ	12	conj	_	_
+8	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR|dadeg_h=4|dadeg_r=VCONJ	1	conj	_	_
+9	هستی	هستی	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N|dadeg_h=8|dadeg_r=VCONJ	1	conj	_	_
 10	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=46349|dadeg_pos=PR|dadeg_h=9|dadeg_r=MOZ	9	nmod	_	spaceAfter=NO
 11	،	،	PUNCT	PUNC	attachment=ISO|senID=46349|dadeg_pos=PUNC|dadeg_h=10|dadeg_r=PUNC	10	punct	_	_
-12	خالق	خالق	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
+12	خالق	خالق	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	_
 13	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=46349|dadeg_pos=PR|dadeg_h=12|dadeg_r=MOZ	12	nmod	_	_
 14	ما	ما	PRON	SEPER	person=1|attachment=ISO|number=PLUR|senID=46349|dadeg_pos=PR|dadeg_h=26|dadeg_r=SBJ	26	nsubj	_	_
 15	چگونه	چگونه	ADV	SADV	attachment=ISO|senID=46349|dadeg_pos=ADV|dadeg_h=26|dadeg_r=ADV	26	advmod	_	_
@@ -13720,7 +13720,7 @@
 23	و	و	CCONJ	CONJ	attachment=ISO|senID=46349|dadeg_pos=CONJ|dadeg_h=22|dadeg_r=NCONJ	24	cc	_	_
 24	محبت	محبت	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N|dadeg_h=23|dadeg_r=POSDEP	22	conj	_	_
 25	سپاسگزاری	سپاسگزاری	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N|dadeg_h=26|dadeg_r=NVE	26	compound:lvc	_	_
-26	کنیم	کرد#کن	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=46349|dadeg_pos=V|dadeg_h=12|dadeg_r=VCONJ	12	conj	_	spaceAfter=NO
+26	کنیم	کرد#کن	VERB	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=46349|dadeg_pos=V|dadeg_h=12|dadeg_r=VCONJ	1	conj	_	spaceAfter=NO
 27	؟	؟	PUNCT	PUNC	attachment=ISO|senID=46349|dadeg_pos=PUNC|dadeg_h=26|dadeg_r=PUNC	26	punct	_	_
 
 # sent_id = dev-s684

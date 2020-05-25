@@ -13829,7 +13829,7 @@
 
 # sent_id = dev-s683
 # text = ای خدای مهربان ای معبود من، ای هستی من، خالق من ما چگونه از تو به خاطر این همه لطف و محبت سپاسگزاری کنیم؟
-1	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR	12	VCONJ	_	_
+1	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR	0	ROOT	_	_
 2	خدای	خدا	NOUN	ANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N	1	POSDEP	_	_
 3	مهربان	مهربان	ADJ	AJP	attachment=ISO|senID=46349|dadeg_pos=ADJ	2	NPOSTMOD	_	_
 4	ای	ای	INTJ	PRADR	attachment=ISO|senID=46349|dadeg_pos=ADR	1	VCONJ	_	_
@@ -13840,7 +13840,7 @@
 9	هستی	هستی	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N	8	VCONJ	_	_
 10	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=46349|dadeg_pos=PR	9	MOZ	_	spaceAfter=NO
 11	،	،	PUNCT	PUNC	attachment=ISO|senID=46349|dadeg_pos=PUNC	10	PUNC	_	_
-12	خالق	خالق	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N	0	ROOT	_	_
+12	خالق	خالق	NOUN	IANM	attachment=ISO|number=SING|senID=46349|dadeg_pos=N	1	VCONJ	_	_
 13	من	من	PRON	SEPER	person=1|attachment=ISO|number=SING|senID=46349|dadeg_pos=PR	12	MOZ	_	_
 14	ما	ما	PRON	SEPER	person=1|attachment=ISO|number=PLUR|senID=46349|dadeg_pos=PR	26	SBJ	_	_
 15	چگونه	چگونه	ADV	SADV	attachment=ISO|senID=46349|dadeg_pos=ADV	26	ADV	_	_
