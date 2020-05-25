@@ -3,6 +3,7 @@
 * Change wrong dependencies in PARCL.
 * Change VConj order.
 * Convert active to passive for Shodan verbs.
+* Modifiers for PRENUM
 """
 
 from dep_tree import DependencyTree
@@ -93,6 +94,34 @@ if __name__ == '__main__':
                     else:
                         tree.ftags[w] = "ACT"
                         tree.lemmas[w] = "شد#شو"
+                if (tree.tags[w] == "PRENUM" and tree.tags[tree.heads[w]-1]=="PREP") \
+                        or (tree.tags[w] == "PRENUM" and tree.tags[tree.heads[w]-1]=="N" and tree.heads[w]-1<w and tree.words[tree.heads[w]-1]=="حدود"):
+                    head_id = tree.heads[w]-1
+                    if (tree.tags[w] == "PRENUM" and tree.tags[head_id]=="N" and head_id<w):
+                        tree.tags[head_id] = "PREP"
+                        tree.ftags[head_id] = "PREP"
+                    head_ftag = tree.ftags[head_id]
+                    grand_head_id = tree.heads[head_id] - 1
+                    grand_head_ftag = tree.ftags[grand_head_id]
+                    if (grand_head_ftag == "AJCM" and tree.labels[head_id]=="COMPPP") or \
+                            grand_head_ftag == "AJP" and tree.labels[head_id]=="AJPP":
+                        assert len(tree.children[tree.heads[w]])==1
+                        assert len(tree.children[tree.heads[head_id]])==1
+
+                        span_head = tree.heads[grand_head_id]
+                        span_label = "APREMOD"
+
+                        tree.heads[grand_head_id] = w+1 # assigning to the number
+                        tree.labels[grand_head_id] = "PREDEP"
+                        tree.heads[w] = span_head
+                        tree.labels[w] = span_label
+                    else:
+                        span_head = grand_head_id + 1
+                        span_label = "APREMOD"
+                        tree.heads[head_id] = w + 1  # assigning to the number
+                        tree.labels[head_id] = "PREDEP"
+                        tree.heads[w] = span_head
+                        tree.labels[w] = span_label
 
             for w, word in enumerate(tree.words):
             #     if word == "و" and tree.tags[w] == "SUBR":
@@ -102,7 +131,7 @@ if __name__ == '__main__':
             #     parcl_trees.append(tree)
             # if "VCONJ" in tree.labels:
                  vconj_trees.append(tree)
-                 fix_vconj_order(tree)
+                 #fix_vconj_order(tree)
 
 
 

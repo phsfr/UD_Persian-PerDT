@@ -684,8 +684,8 @@
 9	اشاره	اشاره	N	IANM	attachment=ISO|number=SING|senID=23709	8	POSDEP	_	_
 10	به	به	PREP	PREP	attachment=ISO|senID=23709	9	NPP	_	_
 11	بیش	بیش	ADJ	AJP	attachment=ISO|senID=23709	14	PREDEP	_	_
-12	از	از	PREP	PREP	attachment=ISO|senID=23709	11	COMPPP	_	_
-13	40	40	PRENUM	PRENUM	attachment=ISO|senID=23709	12	POSDEP	_	_
+12	از	از	PREP	PREP	attachment=ISO|senID=23709	13	PREDEP	_	_
+13	40	40	PRENUM	PRENUM	attachment=ISO|senID=23709	11	APREMOD	_	_
 14	سال	سال	N	IANM	attachment=ISO|number=SING|senID=23709	15	MESU	_	_
 15	سابقهٔ	سابقه	N	IANM	attachment=ISO|number=SING|senID=23709	10	POSDEP	_	_
 16	خود	خود	PR	CREFX	attachment=ISO|senID=23709	15	MOZ	_	_
@@ -1321,11 +1321,11 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=23932	24	ADV	_	_
 2	برنامهٔ	برنامه	N	IANM	attachment=ISO|number=SING|senID=23932	1	POSDEP	_	_
 3	پنجم	پنجم	POSNUM	POSNUM	attachment=ISO|senID=23932	2	NPOSTMOD	_	_
-4	حدود	حدود	N	IANM	attachment=ISO|senID=23932	9	PREDEP	_	_
+4	حدود	حدود	PREP	PREP	attachment=ISO|senID=23932	8	PREDEP	_	_
 5	400	400	PRENUM	PRENUM	attachment=ISO|senID=23932	8	NPREMOD	_	_
-6	تا	تا	PREP	PREP	attachment=ISO|senID=23932	5	POSDEP	_	_
-7	500	500	PRENUM	PRENUM	attachment=ISO|senID=23932	6	POSDEP	_	_
-8	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=23932	4	POSDEP	_	_
+6	تا	تا	PREP	PREP	attachment=ISO|senID=23932	7	PREDEP	_	_
+7	500	500	PRENUM	PRENUM	attachment=ISO|senID=23932	5	APREMOD	_	_
+8	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=23932	9	APREMOD	_	_
 9	هکتار	هکتار	N	IANM	attachment=ISO|number=SING|senID=23932	10	MESU	_	_
 10	اراضی	اراضی	N	IANM	attachment=ISO|number=PLUR|senID=23932	24	SBJ	_	_
 11	جدید	جدید	ADJ	AJP	attachment=ISO|senID=23932	10	NPOSTMOD	_	_
@@ -1371,9 +1371,9 @@
 4	این	این	PREM	DEMAJ	attachment=ISO|senID=23955	5	NPREMOD	_	_
 5	شکاف‌ها	شکاف	N	IANM	attachment=ISO|number=PLUR|senID=23955	3	POSDEP	_	_
 6	(	(	PUNC	PUNC	attachment=ISO|senID=23955	10	PUNC	_	_
-7	نزدیک	نزدیک	ADJ	AJP	attachment=ISO|senID=23955	10	PREDEP	_	_
+7	نزدیک	نزدیک	ADJ	AJP	attachment=ISO|senID=23955	9	PREDEP	_	_
 8	به	به	PREP	PREP	attachment=ISO|senID=23955	7	AJPP	_	_
-9	50	50	PRENUM	PRENUM	attachment=ISO|senID=23955	8	POSDEP	_	_
+9	50	50	PRENUM	PRENUM	attachment=ISO|senID=23955	10	APREMOD	_	_
 10	شکاف	شکاف	N	IANM	attachment=ISO|number=SING|senID=23955	5	APP	_	_
 11	)	)	PUNC	PUNC	attachment=ISO|senID=23955	10	PUNC	_	_
 12	نفت	نفت	N	IANM	attachment=ISO|number=SING|senID=23955	20	SBJ	_	_
@@ -1425,10 +1425,10 @@
 7	برفی	برفی	ADJ	AJP	attachment=ISO|senID=23982	6	NPOSTMOD	_	_
 8	را	را	POSTP	POSTP	attachment=ISO|senID=23982	21	OBJ	_	_
 9	با	با	PREP	PREP	attachment=ISO|senID=23982	21	ADV	_	_
-10	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=23982	16	PREDEP	_	_
+10	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=23982	13	PREDEP	_	_
 11	از	از	PREP	PREP	attachment=ISO|senID=23982	10	COMPPP	_	_
 12	دو	دو	PRENUM	PRENUM	attachment=ISO|senID=23982	13	NPREMOD	_	_
-13	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=23982	11	POSDEP	_	_
+13	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=23982	16	APREMOD	_	_
 14	و	و	CONJ	CONJ	attachment=ISO|senID=23982	13	NCONJ	_	_
 15	500	500	N	IANM	attachment=ISO|number=SING|senID=23982	14	POSDEP	_	_
 16	عکس	عکس	N	IANM	attachment=ISO|number=SING|senID=23982	9	POSDEP	_	_
@@ -4783,8 +4783,8 @@
 1	در	در	PREP	PREP	attachment=ISO|senID=26349	26	ADV	_	_
 2	میان	میان	N	IANM	attachment=ISO|number=SING|senID=26349	1	POSDEP	_	_
 3	سکوت	سکوت	N	IANM	attachment=ISO|number=SING|senID=26349	2	MOZ	_	_
-4	حدود	حدود	N	IANM	attachment=ISO|senID=26349	8	PREDEP	_	_
-5	بیست	بیست	PRENUM	PRENUM	attachment=ISO|senID=26349	4	PREDEP	_	_
+4	حدود	حدود	PREP	PREP	attachment=ISO|senID=26349	5	PREDEP	_	_
+5	بیست	بیست	PRENUM	PRENUM	attachment=ISO|senID=26349	8	APREMOD	_	_
 6	،	،	PUNC	PUNC	attachment=ISO|senID=26349	5	PUNC	_	_
 7	سی	سی	PRENUM	PRENUM	attachment=ISO|senID=26349	5	AJCONJ	_	_
 8	نفر	نفر	N	IANM	attachment=ISO|number=SING|senID=26349	9	MESU	_	_
@@ -12427,10 +12427,10 @@
 1	اعضای	عضو	N	ANM	attachment=ISO|number=PLUR|senID=46571	17	SBJ	_	_
 2	باندی	باند	N	IANM	attachment=ISO|number=SING|senID=46571	1	MOZ	_	_
 3	که	که	SUBR	SUBR	attachment=ISO|senID=46571	2	NCL	_	_
-4	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=46571	8	NPREMOD	_	_
+4	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=46571	7	PREDEP	_	_
 5	از	از	PREP	PREP	attachment=ISO|senID=46571	4	COMPPP	_	_
 6	4	4	PRENUM	PRENUM	attachment=ISO|senID=46571	7	NPREMOD	_	_
-7	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=46571	5	POSDEP	_	_
+7	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=46571	8	APREMOD	_	_
 8	فقره	فقره	N	IANM	attachment=ISO|number=SING|senID=46571	9	MESU	_	_
 9	چک	چک	N	IANM	attachment=ISO|number=SING|senID=46571	12	PREDEP	_	_
 10	مسافرتی	مسافرتی	ADJ	AJP	attachment=ISO|senID=46571	9	NPOSTMOD	_	_
@@ -12730,9 +12730,9 @@
 9	،	،	PUNC	PUNC	attachment=ISO|senID=34315	8	PUNC	_	_
 10	امروزه	امروزه	ADV	SADV	attachment=ISO|senID=34315	17	ADV	_	_
 11	با	با	PREP	PREP	attachment=ISO|senID=34315	17	ADV	_	_
-12	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=34315	15	PREDEP	_	_
+12	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=34315	14	PREDEP	_	_
 13	از	از	PREP	PREP	attachment=ISO|senID=34315	12	COMPPP	_	_
-14	20	20	PRENUM	PRENUM	attachment=ISO|senID=34315	13	POSDEP	_	_
+14	20	20	PRENUM	PRENUM	attachment=ISO|senID=34315	15	APREMOD	_	_
 15	دوربین	دوربین	N	IANM	attachment=ISO|number=SING|senID=34315	11	POSDEP	_	_
 16	همواره	همواره	ADV	SADV	attachment=ISO|senID=34315	17	ADV	_	_
 17	پاییده می‌شود	پایید#پا	V	PASS	person=3|attachment=ISO|number=SING|tma=H|senID=34315	0	ROOT	_	_
@@ -16063,8 +16063,8 @@
 20	.	.	PUNC	PUNC	attachment=ISO|senID=47511	19	PUNC	_	_
 
 1	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=47521	12	SBJ	_	_
-2	حدود	حدود	N	IANM	attachment=ISO|senID=47521	4	PREDEP	_	_
-3	سه	سه	PRENUM	PRENUM	attachment=ISO|senID=47521	2	POSDEP	_	_
+2	حدود	حدود	PREP	PREP	attachment=ISO|senID=47521	3	PREDEP	_	_
+3	سه	سه	PRENUM	PRENUM	attachment=ISO|senID=47521	4	APREMOD	_	_
 4	ماه	ماه	N	IANM	attachment=ISO|number=SING|senID=47521	5	SBJ	_	_
 5	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47521	0	ROOT	_	_
 6	برنامه‌های	برنامه	N	IANM	attachment=ISO|number=PLUR|senID=47521	10	PREDEP	_	_
@@ -16421,9 +16421,9 @@
 35	دیگری	دیگری	N	ANM	attachment=ISO|number=SING|senID=47721	34	POSDEP	_	_
 36	،	،	PUNC	PUNC	attachment=ISO|senID=47721	35	PUNC	_	_
 37	در	در	PREP	PREP	attachment=ISO|senID=47721	58	ADV	_	_
-38	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=47721	41	NPREMOD	_	_
+38	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=47721	40	PREDEP	_	_
 39	از	از	PREP	PREP	attachment=ISO|senID=47721	38	COMPPP	_	_
-40	150	150	PRENUM	PRENUM	attachment=ISO|senID=47721	39	POSDEP	_	_
+40	150	150	PRENUM	PRENUM	attachment=ISO|senID=47721	41	APREMOD	_	_
 41	سال	سال	N	IANM	attachment=ISO|number=SING|senID=47721	37	POSDEP	_	_
 42	از	از	PREP	PREP	attachment=ISO|senID=47721	58	ADV	_	_
 43	هنگام	هنگام	N	IANM	attachment=ISO|number=SING|senID=47721	42	POSDEP	_	_
@@ -16647,9 +16647,9 @@
 7	دریبل	دریبل	N	IANM	attachment=ISO|number=SING|senID=47851	8	NVE	_	_
 8	بزند	زد#زن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=47851	6	NCL	_	_
 9	،	،	PUNC	PUNC	attachment=ISO|senID=47851	8	PUNC	_	_
-10	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=47851	13	PREDEP	_	_
+10	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=47851	12	PREDEP	_	_
 11	از	از	PREP	PREP	attachment=ISO|senID=47851	10	COMPPP	_	_
-12	3	3	PRENUM	PRENUM	attachment=ISO|senID=47851	11	POSDEP	_	_
+12	3	3	PRENUM	PRENUM	attachment=ISO|senID=47851	13	APREMOD	_	_
 13	قدم	قدم	N	IANM	attachment=ISO|number=SING|senID=47851	15	ADV	_	_
 14	راه	راه	N	IANM	attachment=ISO|number=SING|senID=47851	15	NVE	_	_
 15	برود	رفت#رو	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=47851	3	NCL	_	_
@@ -17234,9 +17234,9 @@
 2	از	از	PREP	PREP	attachment=ISO|senID=36227	1	NPP	_	_
 3	زندانیانی	زندانی	N	ANM	attachment=ISO|number=PLUR|senID=36227	2	POSDEP	_	_
 4	که	که	SUBR	SUBR	attachment=ISO|senID=36227	3	NCL	_	_
-5	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=36227	8	PREDEP	_	_
+5	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=36227	7	PREDEP	_	_
 6	از	از	PREP	PREP	attachment=ISO|senID=36227	5	COMPPP	_	_
-7	60	60	PRENUM	PRENUM	attachment=ISO|senID=36227	6	POSDEP	_	_
+7	60	60	PRENUM	PRENUM	attachment=ISO|senID=36227	8	APREMOD	_	_
 8	سال	سال	N	IANM	attachment=ISO|number=SING|senID=36227	10	ADVC	_	_
 9	سن	سن	N	IANM	attachment=ISO|number=SING|senID=36227	10	NVE	_	_
 10	داشت	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=36227	4	PRD	_	_
@@ -19117,9 +19117,9 @@
 21	می‌کنم	کرد#کن	V	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=37371	11	PRD	_	_
 22	.	.	PUNC	PUNC	attachment=ISO|senID=37371	5	PUNC	_	_
 
-1	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=37381	4	PREDEP	_	_
+1	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=37381	3	PREDEP	_	_
 2	از	از	PREP	PREP	attachment=ISO|senID=37381	1	COMPPP	_	_
-3	سی	سی	PRENUM	PRENUM	attachment=ISO|senID=37381	2	POSDEP	_	_
+3	سی	سی	PRENUM	PRENUM	attachment=ISO|senID=37381	4	APREMOD	_	_
 4	بار	بار	N	IANM	attachment=ISO|number=SING|senID=37381	16	ADV	_	_
 5	از	از	PREP	PREP	attachment=ISO|senID=37381	16	ADV	_	_
 6	شرق	شرق	N	IANM	attachment=ISO|number=SING|senID=37381	5	POSDEP	_	_	isPROPN
@@ -20300,8 +20300,8 @@
 18	آینده	آینده	ADJ	AJP	attachment=ISO|senID=48290	17	NPOSTMOD	_	_
 19	هر	هر	PREM	AMBAJ	attachment=ISO|senID=48290	20	NPREMOD	_	_
 20	سرباز	سرباز	N	ANM	attachment=ISO|number=SING|senID=48290	26	SBJ	_	_
-21	حدود	حدود	N	IANM	attachment=ISO|senID=48290	23	PREDEP	_	_
-22	20	20	PRENUM	PRENUM	attachment=ISO|senID=48290	21	POSDEP	_	_
+21	حدود	حدود	PREP	PREP	attachment=ISO|senID=48290	22	PREDEP	_	_
+22	20	20	PRENUM	PRENUM	attachment=ISO|senID=48290	23	APREMOD	_	_
 23	ربات	ربات	N	IANM	attachment=ISO|number=SING|senID=48290	24	PREDEP	_	_
 24	را	را	POSTP	POSTP	attachment=ISO|senID=48290	26	OBJ	_	_
 25	فرماندهی	فرماندهی	N	IANM	attachment=ISO|number=SING|senID=48290	26	NVE	_	_
@@ -20792,9 +20792,9 @@
 
 1	بی‌شک	بی‌شک	ADV	SADV	attachment=ISO|senID=38082	28	ADV	_	_
 2	کشف	کشف	N	IANM	attachment=ISO|number=SING|senID=38082	28	SBJ	_	_
-3	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=38082	6	PREDEP	_	_
+3	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=38082	5	PREDEP	_	_
 4	از	از	PREP	PREP	attachment=ISO|senID=38082	3	COMPPP	_	_
-5	32	32	PRENUM	PRENUM	attachment=ISO|senID=38082	4	POSDEP	_	_
+5	32	32	PRENUM	PRENUM	attachment=ISO|senID=38082	6	APREMOD	_	_
 6	تن	تن	N	IANM	attachment=ISO|number=SING|senID=38082	7	MESU	_	_
 7	مواد	ماده	N	IANM	attachment=ISO|number=PLUR|senID=38082	2	MOZ	_	_
 8	مخدر	مخدر	ADJ	AJP	attachment=ISO|senID=38082	7	NPOSTMOD	_	_
@@ -24064,9 +24064,9 @@
 6	با	با	PREP	PREP	attachment=ISO|senID=39595	25	ADV	_	_
 7	صرف	صرف	N	IANM	attachment=ISO|number=SING|senID=39595	6	POSDEP	_	_
 8	هزینهٔ	هزینه	N	IANM	attachment=ISO|number=SING|senID=39595	7	MOZ	_	_
-9	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=39595	12	PREDEP	_	_
+9	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=39595	11	PREDEP	_	_
 10	از	از	PREP	PREP	attachment=ISO|senID=39595	9	COMPPP	_	_
-11	340	340	PRENUM	PRENUM	attachment=ISO|senID=39595	10	POSDEP	_	_
+11	340	340	PRENUM	PRENUM	attachment=ISO|senID=39595	12	APREMOD	_	_
 12	میلیارد	میلیارد	PRENUM	PRENUM	attachment=ISO|senID=39595	13	NPREMOD	_	_
 13	ریال	ریال	N	IANM	attachment=ISO|number=SING|senID=39595	8	MOZ	_	_
 14	از	از	PREP	PREP	attachment=ISO|senID=39595	24	NPP	_	_

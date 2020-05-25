@@ -1485,9 +1485,9 @@
 4	معروف	معروف	ADJ	AJP	attachment=ISO|senID=40758	3	NPOSTMOD	_	_
 5	مصری	مصری	ADJ	AJP	attachment=ISO|senID=40758	3	NPOSTMOD	_	_
 6	تاکنون	تاکنون	ADV	SADV	attachment=ISO|senID=40758	12	ADV	_	_
-7	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=40758	10	PREDEP	_	_
+7	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=40758	9	PREDEP	_	_
 8	از	از	PREP	PREP	attachment=ISO|senID=40758	7	COMPPP	_	_
-9	سی	سی	PRENUM	PRENUM	attachment=ISO|senID=40758	8	POSDEP	_	_
+9	سی	سی	PRENUM	PRENUM	attachment=ISO|senID=40758	10	APREMOD	_	_
 10	کتاب	کتاب	N	IANM	attachment=ISO|number=SING|senID=40758	12	OBJ	_	_
 11	تألیف	تألیف	N	IANM	attachment=ISO|number=SING|senID=40758	12	NVE	_	_
 12	کرده است	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=40758	0	ROOT	_	_
@@ -6324,9 +6324,9 @@
 9	؟	؟	PUNC	PUNC	attachment=ISO|senID=44632	8	PUNC	_	_
 
 1	وی	وی	PR	SEPER	person=3|attachment=ISO|number=SING|senID=44642	11	SBJ	_	_
-2	نزدیک	نزدیک	ADJ	AJP	attachment=ISO|senID=44642	5	PREDEP	_	_
+2	نزدیک	نزدیک	ADJ	AJP	attachment=ISO|senID=44642	4	PREDEP	_	_
 3	به	به	PREP	PREP	attachment=ISO|senID=44642	2	AJPP	_	_
-4	1500	1500	PRENUM	PRENUM	attachment=ISO|senID=44642	3	POSDEP	_	_
+4	1500	1500	PRENUM	PRENUM	attachment=ISO|senID=44642	5	APREMOD	_	_
 5	گیاه	گیاه	N	IANM	attachment=ISO|number=SING|senID=44642	6	PREDEP	_	_
 6	را	را	POSTP	POSTP	attachment=ISO|senID=44642	11	OBJ	_	_
 7	در	در	PREP	PREP	attachment=ISO|senID=44642	11	ADV	_	_
@@ -7482,9 +7482,9 @@
 14	عمرهٔ	عمره	N	IANM	attachment=ISO|number=SING|senID=49434	13	MOZ	_	_
 15	کسانی	کس	N	ANM	attachment=ISO|number=PLUR|senID=49434	14	MOZ	_	_
 16	که	که	SUBR	SUBR	attachment=ISO|senID=49434	15	NCL	_	_
-17	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=49434	20	PREDEP	_	_
+17	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=49434	19	PREDEP	_	_
 18	از	از	PREP	PREP	attachment=ISO|senID=49434	17	COMPPP	_	_
-19	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=49434	18	POSDEP	_	_
+19	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=49434	20	APREMOD	_	_
 20	بار	بار	N	IANM	attachment=ISO|number=SING|senID=49434	24	ADV	_	_
 21	به	به	PREP	PREP	attachment=ISO|senID=49434	23	AJPP	_	_
 22	مکه	مکه	N	IANM	attachment=ISO|number=SING|senID=49434	21	POSDEP	_	_	isPROPN
@@ -8027,8 +8027,8 @@
 5	از	از	PREP	PREP	attachment=ISO|senID=49754	16	NPP	_	_
 6	افزایش	افزایش	N	IANM	attachment=ISO|number=SING|senID=49754	5	POSDEP	_	_
 7	15	15	PRENUM	PRENUM	attachment=ISO|senID=49754	10	PREDEP	_	_
-8	تا	تا	PREP	PREP	attachment=ISO|senID=49754	7	POSDEP	_	_
-9	20	20	PRENUM	PRENUM	attachment=ISO|senID=49754	8	POSDEP	_	_
+8	تا	تا	PREP	PREP	attachment=ISO|senID=49754	9	PREDEP	_	_
+9	20	20	PRENUM	PRENUM	attachment=ISO|senID=49754	7	APREMOD	_	_
 10	درصدی	درصدی	ADJ	AJP	attachment=ISO|senID=49754	6	NPOSTMOD	_	_
 11	قیمت	قیمت	N	IANM	attachment=ISO|number=SING|senID=49754	6	MOZ	_	_
 12	مسکن	مسکن	N	IANM	attachment=ISO|number=SING|senID=49754	11	MOZ	_	_
@@ -16595,9 +16595,9 @@
 16	میان	میان	N	IANM	attachment=ISO|number=SING|senID=53869	15	POSDEP	_	_
 17	آمده بود	آمد#آ	V	ACT	person=3|attachment=ISO|number=SING|tma=GB|senID=53869	7	PRD	_	_
 18	،	،	PUNC	PUNC	attachment=ISO|senID=53869	17	PUNC	_	_
-19	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=53869	22	PREDEP	_	_
+19	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=53869	21	PREDEP	_	_
 20	از	از	PREP	PREP	attachment=ISO|senID=53869	19	COMPPP	_	_
-21	19	19	PRENUM	PRENUM	attachment=ISO|senID=53869	20	POSDEP	_	_
+21	19	19	PRENUM	PRENUM	attachment=ISO|senID=53869	22	APREMOD	_	_
 22	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=53869	23	NPREMOD	_	_
 23	تن	تن	N	IANM	attachment=ISO|number=SING|senID=53869	28	SBJ	_	_
 24	جانشان	جان	N	IANM	attachment=ISO|number=SING|senID=53869	25	PREDEP	_	_
@@ -18291,8 +18291,8 @@
 11	خواهید گرفت	گرفت#گیر	V	ACT	person=2|attachment=ISO|number=PLUR|tma=AY|senID=54684	1	VCONJ	_	_
 12	.	.	PUNC	PUNC	attachment=ISO|senID=54684	11	PUNC	_	_
 
-1	حدود	حدود	N	IANM	attachment=ISO|senID=54694	3	PREDEP	_	_
-2	نیم	نیم	PRENUM	PRENUM	attachment=ISO|senID=54694	1	POSDEP	_	_
+1	حدود	حدود	PREP	PREP	attachment=ISO|senID=54694	2	PREDEP	_	_
+2	نیم	نیم	PRENUM	PRENUM	attachment=ISO|senID=54694	3	APREMOD	_	_
 3	ساعت	ساعت	N	IANM	attachment=ISO|number=SING|senID=54694	7	ADV	_	_
 4	،	،	PUNC	PUNC	attachment=ISO|senID=54694	3	PUNC	_	_
 5	علی	علی	N	ANM	attachment=ISO|number=SING|senID=54694	7	SBJ	_	_	isPROPN
@@ -18592,10 +18592,10 @@
 1	بیمهٔ	بیمه	N	IANM	attachment=ISO|number=SING|senID=54965	16	SBJ	_	_
 2	ایران	ایران	N	IANM	attachment=ISO|number=SING|senID=54965	1	MOZ	_	_	isPROPN
 3	نیز	نیز	ADV	SADV	attachment=ISO|senID=54965	1	POSDEP	_	_
-4	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=54965	8	PREDEP	_	_
+4	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=54965	7	PREDEP	_	_
 5	از	از	PREP	PREP	attachment=ISO|senID=54965	4	COMPPP	_	_
 6	200	200	PRENUM	PRENUM	attachment=ISO|senID=54965	7	NPREMOD	_	_
-7	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=54965	5	POSDEP	_	_
+7	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=54965	8	APREMOD	_	_
 8	سهم	سهم	N	IANM	attachment=ISO|number=SING|senID=54965	11	PREDEP	_	_
 9	این	این	PREM	DEMAJ	attachment=ISO|senID=54965	10	NPREMOD	_	_
 10	شرکت	شرکت	N	IANM	attachment=ISO|number=SING|senID=54965	8	MOZ	_	_
@@ -20717,9 +20717,9 @@
 25	نباید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=56308	24	PRD	_	_
 26	حالت	حالت	N	IANM	attachment=ISO|number=SING|senID=56308	35	SBJ	_	_
 27	فوق‌العاده	فوق‌العاده	ADJ	AJP	attachment=ISO|senID=56308	26	NPOSTMOD	_	_
-28	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=56308	31	PREDEP	_	_
+28	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=56308	30	PREDEP	_	_
 29	از	از	PREP	PREP	attachment=ISO|senID=56308	28	COMPPP	_	_
-30	6	6	PRENUM	PRENUM	attachment=ISO|senID=56308	29	POSDEP	_	_
+30	6	6	PRENUM	PRENUM	attachment=ISO|senID=56308	31	APREMOD	_	_
 31	ماه	ماه	N	IANM	attachment=ISO|number=SING|senID=56308	35	ADV	_	_
 32	در	در	PREP	PREP	attachment=ISO|senID=56308	35	ADV	_	_
 33	کشور	کشور	N	IANM	attachment=ISO|number=SING|senID=56308	32	POSDEP	_	_
@@ -22127,8 +22127,8 @@
 6	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=57444	5	POSDEP	_	_
 7	ماهانه	ماهانه	ADJ	AJP	attachment=ISO|senID=57444	6	NPOSTMOD	_	_
 8	(	(	PUNC	PUNC	attachment=ISO|senID=57444	12	PUNC	_	_
-9	حدود	حدود	N	IANM	attachment=ISO|senID=57444	11	PREDEP	_	_
-10	80	80	PRENUM	PRENUM	attachment=ISO|senID=57444	9	POSDEP	_	_
+9	حدود	حدود	PREP	PREP	attachment=ISO|senID=57444	10	PREDEP	_	_
+10	80	80	PRENUM	PRENUM	attachment=ISO|senID=57444	11	APREMOD	_	_
 11	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=57444	12	NPREMOD	_	_
 12	تومان	تومان	N	IANM	attachment=ISO|number=SING|senID=57444	7	APP	_	_
 13	)	)	PUNC	PUNC	attachment=ISO|senID=57444	12	PUNC	_	_
@@ -24398,9 +24398,9 @@
 4	سال	سال	N	IANM	attachment=ISO|number=SING|senID=59126	3	POSDEP	_	_
 5	گذشته	گذشته	ADJ	AJP	attachment=ISO|senID=59126	4	NPOSTMOD	_	_
 6	به	به	PREP	PREP	attachment=ISO|senID=59126	12	VPP	_	_
-7	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=59126	10	PREDEP	_	_
+7	بیش	بیش	ADJ	AJCM	attachment=ISO|senID=59126	9	PREDEP	_	_
 8	از	از	PREP	PREP	attachment=ISO|senID=59126	7	COMPPP	_	_
-9	100	100	PRENUM	PRENUM	attachment=ISO|senID=59126	8	POSDEP	_	_
+9	100	100	PRENUM	PRENUM	attachment=ISO|senID=59126	10	APREMOD	_	_
 10	دلار	دلار	N	IANM	attachment=ISO|number=SING|senID=59126	6	POSDEP	_	_
 11	نیز	نیز	ADV	SADV	attachment=ISO|senID=59126	10	POSDEP	_	_
 12	رسید	رسید#رس	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=59126	0	ROOT	_	_

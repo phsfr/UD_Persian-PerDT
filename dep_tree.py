@@ -868,8 +868,13 @@ class DependencyTree:
             if old_role == 'PREDEP':
                 head_tag = self.tags[self.heads[idx] - 1]
                 if head_tag == "NOUN" and self.ftags[idx] == "SEPER":
-                    print("dislocated", self.other_features[0].feat_dict["senID"])
                     self.labels[idx] = 'dislocated'
+                if head_tag == "NUM" and self.ftags[idx] in {"AJCM","AJP" ,"PREP"}:
+                    self.labels[idx] = 'advmod'
+
+            if old_role == "APREMOD" and self.tags[idx] == "NUM":
+                self.labels[idx] = 'nummod'
+
             if self.tags[idx] == "PART" and self.words[idx] == "را":
                 head_children = self.children[self.heads[idx]]
                 head_children_labels = [self.labels[child-1] for child in head_children]
