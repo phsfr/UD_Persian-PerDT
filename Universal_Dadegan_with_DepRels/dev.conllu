@@ -11128,7 +11128,7 @@
 
 # sent_id = dev-s535
 # text = او شرایطش با شما یکسان است ولی در جایی که شما لغزیده‌اید او نلغزیده.
-1	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=33081|dadeg_pos=PR	2	PREDEP	_	_
+1	او	او	PRON	SEPER	person=3|attachment=ISO|number=SING|senID=33081|dadeg_pos=PR	2	dislocated	_	_
 2	شرایط	شرایط	NOUN	IANM	attachment=ISO|number=SING|senID=33081|dadeg_pos=N|dadeg_h=7|dadeg_r=SBJ	6	nsubj	_	_
 3	ش	او	PRON	PRO	number=SING|person=3|pronType=Prs|senID=33081|dadeg_pos=PR|dadeg_h=2|dadeg_r=MOZ	2	nmod	_	_
 4	با	با	ADP	PREP	attachment=ISO|senID=33081|dadeg_pos=PREP|dadeg_h=6|dadeg_r=AJPP	5	case	_	_

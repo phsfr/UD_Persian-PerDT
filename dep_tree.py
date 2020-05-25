@@ -1,6 +1,6 @@
 import os
 from collections import defaultdict
-
+from typing import Set
 
 # import mwe
 
@@ -77,6 +77,18 @@ class DependencyTree:
 
     def __hash__(self):
         return hash(self.conllu_str())
+
+    def get_span(self, node_id) -> Set[int]:
+        """
+        Get all children and subchildren
+        :param node_id:
+        :return:
+        """
+        spans = {node_id}
+        for child in self.children[node_id]:
+            for s in self.get_span(child):
+                spans.add(s)
+        return spans
 
     @staticmethod
     def trav(rev_head, h,
@@ -853,6 +865,20 @@ class DependencyTree:
                 #    if old_pos=='CCONJ':
                 #        self.labels[idx]='cc'
                 #    rol_changed=True            
+            if old_role == 'PREDEP':
+                head_tag = self.tags[self.heads[idx] - 1]
+                if head_tag == "NOUN" and self.ftags[idx] == "SEPER":
+                    print("dislocated", self.other_features[0].feat_dict["senID"])
+                    self.labels[idx] = 'dislocated'
+            if self.tags[idx] == "PART" and self.words[idx] == "را":
+                head_children = self.children[self.heads[idx]]
+                head_children_labels = [self.labels[child-1] for child in head_children]
+                if "SBJ" in head_children_labels: # No subject in children
+                    child_span = self.get_span(idx+1)
+                    if min(child_span) == 1: # should be first span
+                        self.labels[idx] = 'dislocated'
+                        print("dislocated", self.other_features[0].feat_dict["senID"])
+
 
             if old_role == 'VCONJ':  # this mapping should take place before که with predicate (VCL) cause #sentID=23816
                 if old_pos == 'CCONJ':
