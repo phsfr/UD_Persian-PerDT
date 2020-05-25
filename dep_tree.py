@@ -36,7 +36,7 @@ class DependencyTree:
         self.semiFinal_tags=semiFinal_tags
         self.final_tags=final_tags
         self.mw_line=mw_line
-        self.reverse_tree = defaultdict(set)
+        self.children = defaultdict(set)
         self.other_features = list()
         for f in other_features:
             self.other_features.append(Features(f))
@@ -49,7 +49,17 @@ class DependencyTree:
 
         # We need to increment index by one, because of the root.
         for i in range(0,len(heads)):
-            self.reverse_tree[heads[i]].add(i+1)
+            self.children[heads[i]].add(i + 1)
+
+    def rebuild_children(self):
+        """
+        Reconstruct children dictionary.
+        :return:
+        """
+        # We need to increment index by one, because of the root.
+        self.children = defaultdict(set)
+        for i in range(0, len(self.heads)):
+            self.children[self.heads[i]].add(i + 1)
 
     def __eq__(self, other):
         if isinstance(other, DependencyTree):
