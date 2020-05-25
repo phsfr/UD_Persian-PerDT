@@ -688,7 +688,7 @@ class DependencyTree:
                             child_str+='  child '+str(self.index[child])+' with rel: '+self.labels[child]+' in sent='+self.other_features[idx].feat_dict['senID']
                         children.append(idx)
                         children.sort()
-                        print(child_str+' '+' '.join([self.words[key] for key in children]))
+                        #print(child_str+' '+' '.join([self.words[key] for key in children]))
                 rol_changed=True
                     
             #if old_role=='PARCL':
@@ -792,7 +792,6 @@ class DependencyTree:
                         
                         
             if old_role=='VCONJ': #this mapping should take place before که with predicate (VCL) cause #sentID=23816
-                
                 if old_pos=='CCONJ':
                     verb_child=[key for key,val in enumerate(self.heads) if val==self.index[idx] and self.tags[key]=='VERB' and self.labels[key]=='POSDEP']
                     #child=self.find_all_children(self.index[idx])
@@ -911,6 +910,43 @@ class DependencyTree:
             old_pos=self.tags[idx]
             lemma=self.lemmas[idx]
             rol_changed=False
+            if old_role=='PARCL':
+                punct_child=[key for key,val in enumerate(self.heads) if val==self.index[idx] and self.labels[key]=='punct']
+                if len(punct_child)>0:
+                    if self.tags[punct_child[0]]=='CCONJ':
+                        if old_head>self.index[idx]:
+                            self.labels[idx]='conj'
+                            if self.labels[self.reverse_index[old_head]]=='conj':
+                                self.heads[idx]=self.heads[self.reverse_index[old_head]]
+                                if self.index[idx]<self.heads[self.reverse_index[old_head]]:
+                                    print('ERROR: first parcle is before first conj in sent {}'.format(self.sent_descript))
+                            else:
+                                self.exchange_child_parent(self.reverse_index[old_head],idx,'conj')
+                        else:
+                            self.labels[idx]='conj'
+                            if self.labels[self.reverse_index[old_head]]=='conj' and self.heads[self.reverse_index[old_head]]<self.index[idx]:
+                                self.heads[idx]=self.heads[self.reverse_index[old_head]]
+                            elif self.labels[self.reverse_index[old_head]]=='conj' and self.index[idx]<self.heads[self.reverse_index[old_head]]:
+                                self.exchange_child_parent(self.heads[self.reverse_index[old_head]],idx,'conj')
+                                head_v_child=[key for key,val in enumerate(self.heads) if val==self.heads[self.reverse_index[old_head]] and self.labels[key]=='conj']
+                                for v_ch in head_v_child:
+                                    self.heads[v_ch]=self.index[idx]
+                                print('big exchange: first parcle is before first conj in sent {}'.format(self.sent_descript))
+                        #latest_vconj_child=-1
+                        #for i in range(0,idx):
+                        #    if self.other_features[i].feat_dict['']=='VCONJ':
+                        #        latest_vconj_child=i
+                        #self.node_assign_new_role(idx,punct_child[0],'PREDEP')
+                        #self.node_assign_new_role(punct_child[0],self.reverse_index[old_head],'VCONJ')
+                        #if latest_vconj_child!=-1:
+                        #    self.node_assign_new_role(latest_vconj_child,idx,'VCONJ')
+                        rol_changed=True
+                    #else:
+                    #    self.node_assign_new_role(idx,self.reverse_index[old_head],'parataxis')
+                    #    rol_changed=True
+                #else:
+                #    self.node_assign_new_role(idx,self.reverse_index[old_head],'parataxis')
+                #    rol_changed=True
             if old_role=='AJUCL':
                 self.exchange_pars_with_PRD(idx,'mark','advcl')
                 rol_changed=True
@@ -1097,6 +1133,22 @@ class DependencyTree:
             word=self.words[idx]
             rol_changed=False
             senID=self.other_features[idx].feat_dict['senID']
+            if old_role=='MOS':
+                self.exchange_child_parent(self.reverse_index[old_head],idx,'cop')
+                cop_child=self.find_all_children(old_head)
+                if self.other_features[idx].feat_dict['senID']=='43948':
+                    print(old_head)
+                    print(cop_child)
+                    print(self.heads)
+                    print(self.labels)
+                for ch in cop_child:
+                    if self.labels[ch]!='aux' and self.labels[ch]!='aux:pass':
+                        old_ch_h=self.heads[ch]
+                        old_ch_r=self.labels[ch] 
+                        self.heads[ch]=self.index[idx]
+                        if not self.other_features[ch].has_feat('dadeg_r'):
+                            self.other_features[ch].add_feat({'dadeg_h':str(old_ch_h),'dadeg_r':old_ch_r})
+                rol_changed=True
             if (word=='نیز' or word=='هم') and old_pos=='ADV':
                 head_pos=self.tags[self.reverse_index[old_head]]
                 if head_pos!='VERB':
@@ -1246,7 +1298,7 @@ class DependencyTree:
                     
     def convert_tree(self):
         self.zero_level_dep_mapping()
-        self.convert_PARCL_rel()
+        #self.convert_PARCL_rel()
         self.first_level_dep_mapping()
         not_num_process=['53393','58877','46067','36338']
         if self.other_features[0].feat_dict['senID'] not in not_num_process:
