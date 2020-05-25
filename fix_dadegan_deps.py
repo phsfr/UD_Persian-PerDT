@@ -2,6 +2,7 @@
 * Fix "wa"s that are tagged as SUBR
 * Change wrong dependencies in PARCL.
 * Change VConj order.
+* Convert active to passive for Shodan verbs.
 """
 
 from dep_tree import DependencyTree
@@ -71,15 +72,29 @@ if __name__ == '__main__':
         vconj_trees = []
         tree_list = DependencyTree.load_trees_from_conll_file(inp_f)
         for i, tree in enumerate(tree_list):
+            for w, (lemma, word, ftag) in enumerate(zip(tree.lemmas, tree.words, tree.ftags)):
+                if lemma == "گشت#گرد" and ftag=="PASS" and " " not in word:
+                    tree.ftags[w] = "ACT"
+                if lemma == "شد#شو" and ftag=="PASS" and " " not in word:
+                    tree.ftags[w] = "ACT"
+                if lemma in {"کرد#کن"} and ftag=="PASS" and " " not in word:
+                    if "شو" not in word and "شد" not in word:
+                        raise Exception("Wrong Annotation")
+                    else:
+                        tree.ftags[w] = "ACT"
+                        tree.lemmas[w] = "شد#شو"
+
             # for w, word in enumerate(tree.words):
             #     if word == "و" and tree.tags[w] == "SUBR":
             #         tree.tags[w] = "CONJ"
             #         tree.ftags[w] = "CONJ"
             # if "PARCL" in tree.labels:
             #     parcl_trees.append(tree)
-            if "VCONJ" in tree.labels:
-                vconj_trees.append(tree)
-                fix_vconj_order(tree)
+            # if "VCONJ" in tree.labels:
+            #     vconj_trees.append(tree)
+            #     fix_vconj_order(tree)
+
+
 
         for tree in parcl_trees:
             include_tree = False
