@@ -86,7 +86,12 @@ def find_pro_head(pro_par,tok_dic,lin):
         noun_group.append(tok_dic[h_idx][0])
         h_pos=tok_dic[h_idx][1]
         head_h_idx=tok_dic[h_idx][3]
-        head_h_pos=tok_dic[head_h_idx][1]
+        if head_h_idx=='0': #in sents=43943, 51997, 54672 we have VCONJ and when the order has been reversed, Noun word became ROOT of the sentence
+            head_h_pos=''
+            #print(tok_dic)
+        else:
+            head_h_pos=tok_dic[head_h_idx][1]
+            
         if h_pos=='N' and (head_h_pos=='N' or head_h_pos=='CONJ'): #there is consecutive nouns and just the last noun is the parent like: تشویقهای تیم محبوبشان OR رفتار و تلاش ذهنیم
             #pro_adj_file.write(' '.join(noun_group[::-1])+'\t'+tok_dic[h_idx][0]+'\t'+tok_dic[h_idx][1]+'\t'+adj_rel+'\t'+elems[6]+'\n')
             #pro_adj_file.flush()
@@ -107,7 +112,7 @@ def convert_pos(old_pos,word_form,isPROPN,tok_id,sent_id):
     written_nums=['یک','دو','سه','چهار'] #IMPORTANT!! => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
     #['ششصد','یک‌صد','هفت','شانزده','پانزده','دویست','هشتاد','نهصد','یازده','سی','پنجاه','هزار','ده','صفر','بیست','چهارده','یکصد','سیصد','صد','هفتاد','پنج','شش','چهارصد','پانصد','شصت','دوازده','هجده','صدها','نه','نوزده','چهل','هیجده','یک','سیزده','هفده','نود','هشت']
     adj_prenum_sents=['23671','24163', '24217' ,'26683' ,'37528' ,'44859' ,'46632' ,'49435']
-    if isPROPN and old_pos=='N': #(old_pos!='PR' and old_pos!='V' and old_pos!='AUX'):
+    if isPROPN and (old_pos=='N' or old_pos=='ADJ'): #(old_pos!='PR' and old_pos!='V' and old_pos!='AUX'):
         #new_p=old_pos.strip().split('|')
         new_pos='PROPN'
     else:
@@ -810,8 +815,8 @@ if __name__=="__main__":
     shavad_base={'شوم':['SING','1'], 'شوی':['SING','2'],'شود':['SING','3'],'شویم':['PLUR','1'],'شوید':['PLUR','2'],'شوند':['PLUR','3']}
     punc_attach_after=['«','(','[']
     dadegan_train_path="Dadegan with NER tag/train_aligned_morecolumn.conll"#"Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll"
-    dadegan_test_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll"
-    dadegan_dev_path="Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/dev.conll"
+    dadegan_test_path="Dadegan with NER tag/test_aligned_morecolumn.conll"#"Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll"
+    dadegan_dev_path="Dadegan with NER tag/dev_aligned_morecolumn.conll"#"Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/dev.conll"
     UD_train_file="Universal_Dadegan/train.conllu"
     UD_test_file="Universal_Dadegan/test.conllu"
     UD_dev_file="Universal_Dadegan/dev.conllu"

@@ -1,5 +1,4 @@
 import unicodedata
-from textblob import TextBlob
 
 def find_foreign(word):
     except_words=['5شنبه‌ها','ان‌شاا…','[واحد',"''ایمیل''",'55گانه','!‌','"مرد"','"زن"','غیرشاعر-','-شاعر','"اثر"','7پله‌ای',   'م.','B.C','B.C','پ.م']
@@ -224,7 +223,9 @@ def write_align_org_tagged(forg,ftagged,fw):
             tagged_parts=tagged.strip().split('\t')
             tag_word=tagged_parts[0]
             while tag_word.strip()!=org_word.strip():
-                if ' ' not in org_word.strip() or not org_word.strip().startswith(tag_word):
+                if len(tag_word)==1 and len(org_word)==1 and tag_word=='،':
+                    tag_word=org_word
+                elif ' ' not in org_word.strip() or not org_word.strip().startswith(tag_word):
                     fw.write(org_word+'\t'+'O'+'\t'+'dropped'+'\n')
                     fw.flush()
                     i=i+1
@@ -247,19 +248,19 @@ if __name__=="__main__":
     orgFileN='Dadegan with NER tag/train_with_NER_tag.txt'
     #fr=open(fileName,'r',encoding="utf-8")
     #fw=open('Dadegan with NER tag/train_with_PROPN_tag.txt','w',encoding="utf-8")
-    fTagged=open('Dadegan with NER tag/train_with_PROPN_tag.txt','r',encoding="utf-8")
-    fOrg=open('Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll','r',encoding="utf-8")
-    fOrgconllu=open('Universal_Dadegan/train.conllu','r',encoding="utf-8")
+    #fTagged=open('Dadegan with NER tag/train_with_PROPN_tag.txt','r',encoding="utf-8")
+    fOrg=open('Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/test.conll','r',encoding="utf-8")
+    #fOrgconllu=open('Universal_Dadegan/train.conllu','r',encoding="utf-8")
     #fwCorrect=open('Dadegan with NER tag/train_with_PROPN_Corrected.txt','w',encoding="utf-8")
-    frCorrect=open('Dadegan with NER tag/train_with_PROPN_Corrected.txt','r',encoding="utf-8")
+    frCorrect=open('Dadegan with NER tag/test_with_PROPN_Corrected.txt','r',encoding="utf-8")
     #fw=open('Dadegan with NER tag/train_aligned_conllu.txt','w',encoding="utf-8")
-    fw_aligned=open('Dadegan with NER tag/train_aligned_morecolumn.conll','w',encoding="utf-8")
+    fw_aligned=open('Dadegan with NER tag/test_aligned_morecolumn.conll','w',encoding="utf-8")
     #align_org_tagged(fOrg,fTagged)
     #write_align_org_tagged(fOrg,fTagged,fwCorrect)
     #post_process(fr,fw)
     write_align_conll_tagged(fOrg,frCorrect,fw_aligned)
     #write_align_conllu_tagged(fOrgconllu,frCorrect,fw)
-    fTagged.close()
+    #fTagged.close()
     fOrg.close()
     #fr.close()
     #fw.close()
