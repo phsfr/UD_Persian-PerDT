@@ -114,8 +114,8 @@ def find_pro_head(pro_par, tok_dic, lin):
 
 def convert_pos(old_pos, word_form, isPROPN, tok_id, sent_id):
     pos_map = {'V': 'VERB', 'N': 'NOUN', 'SUBR': 'SCONJ', 'PR': 'PRON', 'ADJ': 'ADJ', 'ADV': 'ADV', 'PUNC': 'PUNCT',
-               'CONJ': 'CCONJ', 'AUX': 'AUX', 'ADR': 'INTJ', 'IDEN': 'IDEN', 'PART': 'PART', 'POSNUM': 'ADJ',
-               'PREM': 'PREM', 'PRENUM': 'NUM', 'PREP': 'ADP', 'PSUS': 'PSUS', 'POSTP': 'ADP'}
+               'CONJ': 'CCONJ', 'AUX': 'AUX', 'ADR': 'INTJ', 'IDEN': 'PROPN', 'PART': 'PART', 'POSNUM': 'ADJ',
+               'PREM': 'DET', 'PRENUM': 'NUM', 'PREP': 'ADP', 'PSUS': 'INTJ', 'POSTP': 'ADP'}
     written_nums = ['یک', 'دو', 'سه',
                     'چهار']  # IMPORTANT!! => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
     # ['ششصد','یک‌صد','هفت','شانزده','پانزده','دویست','هشتاد','نهصد','یازده','سی','پنجاه','هزار','ده','صفر','بیست','چهارده','یکصد','سیصد','صد','هفتاد','پنج','شش','چهارصد','پانصد','شصت','دوازده','هجده','صدها','نه','نوزده','چهل','هیجده','یک','سیزده','هفده','نود','هشت']
@@ -138,7 +138,15 @@ def convert_pos(old_pos, word_form, isPROPN, tok_id, sent_id):
             new_pos = 'ADJ'
         if old_pos == 'POSTP' and word_form == 'ی':  # for sentid=39792 «کافه پیانو» ی فرهاد جعفری را برای نشر چشمه پس می‌فرستم
             new_pos = 'X'
+        if old_pos == 'PART':
+            if word_form == 'را':
+                new_pos = 'ADP'
+            elif word_form == 'یا':
+                new_pos = 'CCONJ'
+            elif word_form == 'آخر' or word_form == 'خوب':
+                new_pos = 'INTJ'
     return new_pos
+
 
 def extract_sent_id(feat_data):
     feat_elem = feat_data.split('|')
@@ -178,6 +186,8 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
                 print('ERROR: hParent not correctly formatted!!!')
             old_pos = elems[4]
             old_cpos = elems[5]
+            if old_pos != old_cpos:
+                old_cpos = old_pos + '_' + old_cpos
             dadeg_pos = old_pos  # .strip().split('|')[0]
             old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
             isPROPN = False
@@ -196,6 +206,8 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
         elif old_tok_id == 'Z':  # remove Z from the begining of the line (neither token id nor head of its parent should change)
             old_pos = elems[4]
             old_cpos = elems[5]
+            if old_pos != old_cpos:
+                old_cpos = old_pos + '_' + old_cpos
             dadeg_pos = old_pos  # .strip().split('|')[0]
             old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
             isPROPN = False
@@ -236,6 +248,8 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             new_token_id = tokens_ids[int(old_tok_id)]
             old_pos = elems[3]
             old_cpos = elems[4]
+            if old_pos != old_cpos:
+                old_cpos = old_pos + '_' + old_cpos
             dadeg_pos = old_pos  # .strip().split('|')[0]
             old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
             isPROPN = False
@@ -296,7 +310,7 @@ def detect_verb_polarity(verb, v_lemma, line):
                 # correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif v_lemma == 'کرد#کن' and (
                     verb.startswith('شد') or verb.startswith('شو') or verb.startswith('می‌شد') or verb.startswith(
-                    'می‌شو')):
+                'می‌شو')):
                 polarity = '|polarity=NEG'
                 # correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif v_lemma in list(except_lemma.keys()):
@@ -466,7 +480,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                     eddited_line = str(
                         token_id) + '\t' + orig_noun + '\t' + word_lemma + '\t' + pos + '\t' + cpos + '\t' + features + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                     added_line = 'X' + '\t' + str(pron_id) + '\t' + pronoun + '\t' + pro_info[pronoun][
-                        0] + '\t' + 'PR' + '\t' + 'PRO' + '\t' + 'number=' + pro_info[pronoun][1] + "|person=" + \
+                        0] + '\t' + 'PR' + '\t' + 'JOPER' + '\t' + 'number=' + pro_info[pronoun][1] + "|person=" + \
                                  pro_info[pronoun][2] + '|pronType=Prs' + dadegan_senID + '\t' + str(
                         token_id) + '\t' + 'MOZ' + '\t' + semanticRoles + '\n'  # 'nmod:poss'+'\t'+semanticRoles+'\n'
                     sent_lines.append(added_line_multiword)
@@ -521,7 +535,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                     eddited_line = str(
                         token_id) + '\t' + orig_noun + '\t' + word_lemma + '\t' + pos + '\t' + cpos + '\t' + features + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                     added_line = 'X' + '\t' + str(pron_id) + '\t' + pronoun + '\t' + pro_info[pronoun][
-                        0] + '\t' + 'PR' + '\t' + 'PRO' + '\t' + 'number=' + pro_info[pronoun][1] + "|person=" + \
+                        0] + '\t' + 'PR' + '\t' + 'JOPER' + '\t' + 'number=' + pro_info[pronoun][1] + "|person=" + \
                                  pro_info[pronoun][
                                      2] + '|pronType=Prs' + dadegan_senID + '\t' + pro_depHead + '\t' + pro_depRel + '\t' + semanticRoles + '\n'
                     sent_lines.append(added_line_multiword)
@@ -567,8 +581,8 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         word_lemma = '#'.join(verb_lemm_parts[1:])
                     elif len(verb_lemm_parts) > 2 and v_first_part[
                                                       v_first_part.startswith(verb_lemm_parts[0] + "ن") and len(
-                                                              verb_lemm_parts[0]) + 1:] in list(
-                            future_base.keys()):  # for verbs like فرانخواهد رسید
+                                                          verb_lemm_parts[0]) + 1:] in list(
+                        future_base.keys()):  # for verbs like فرانخواهد رسید
                         future_form = True
                         polarity = '|polarity=NEG'
                         v_first_part = v_first_part[len(verb_lemm_parts[0]) + 1:]
@@ -613,7 +627,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             v_second_part.startswith('ن') and v_second_part[1:] in list(shod_base.keys())) or (
                             v_second_part.startswith('می') and v_second_part[3:] in list(shod_base.keys())) or (
                             v_second_part.startswith('نمی') and v_second_part[4:] in list(
-                            shod_base.keys())):  # verb is indicative Preterite (tma=GS) in positive or negative form like گفته شدند or گفته نشدند
+                        shod_base.keys())):  # verb is indicative Preterite (tma=GS) in positive or negative form like گفته شدند or گفته نشدند
                         aux_form = True
                         if v_second_part.startswith('نمی'):
                             v_second_part = v_second_part[4:]
@@ -632,7 +646,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                     elif v_second_part in list(shavad_base.keys()) or (
                             v_second_part.startswith('ن') and v_second_part[1:] in list(shavad_base.keys())) or (
                             v_second_part.startswith('ب') and v_second_part[1:] in list(
-                            shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته شوند or گفته نشوند or گفته بشوند
+                        shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته شوند or گفته نشوند or گفته بشوند
                         aux_form = True
                         if v_second_part.startswith('ن'):
                             v_second_part = v_second_part[1:]
@@ -648,7 +662,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         aux_dep_rol += ':pass'
                     elif v_second_part.startswith('می') and v_second_part[3:] in list(shavad_base.keys()) or (
                             v_second_part.startswith('نمی') and v_second_part[4:] in list(
-                            shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته میشوند or گفته نمیشوند
+                        shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته میشوند or گفته نمیشوند
                         aux_form = True
                         if v_second_part.startswith('ن'):
                             v_second_part = v_second_part[4:]  # one more character for '\u200c' or half-space char
@@ -663,7 +677,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         aux_dep_rol += ':pass'  # ؟؟؟
                     elif (v_second_part.startswith('شده') and v_second_part in list(shodeh_base.keys())) or (
                             v_second_part.startswith('نشده') and v_second_part[1:] in list(
-                            shodeh_base.keys())):  # verb is Indicative Perfect (tma=GN) in positive or negative form like گرفته شده‌اند or گرفته نشده‌اند
+                        shodeh_base.keys())):  # verb is Indicative Perfect (tma=GN) in positive or negative form like گرفته شده‌اند or گرفته نشده‌اند
                         shodeh_form = True
                         if v_second_part.startswith('نشده'):
                             v_second_part = v_second_part[1:]
@@ -688,7 +702,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         added_line_verb = 'X' + '\t' + str(
-                            v_p_id) + '\t' + v_first_part_form + '\t' + aux_v_prefix + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'V_AUX' + '\t' + 'number=' + \
+                            v_p_id) + '\t' + v_first_part_form + '\t' + aux_v_prefix + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=' + \
                                           future_base[v_first_part][0] + '|person=' + future_base[v_first_part][
                                               1] + polarity + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux' + '\t' + '_' + '\t' + '_' + '\n'
@@ -714,12 +728,12 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             word_lemma = 'کرد#کن'
                         polarity_v = detect_verb_polarity(v_first_part, word_lemma, line)
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PP' + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         spaceAft = '_'
                         if noSpace:
                             spaceAft = 'spaceAfter=NO'
                         added_line_verb = 'X' + '\t' + str(
-                            v_p_id) + '\t' + v_second_part_form + '\t' + aux_lemma + '\t' + 'AUX' + '\t' + fpos + '\t' + mood + 'number=' + aux_number + '|person=' + aux_count + polarity + '|tense=' + tense + old_dadegan_info_aux + '\t' + str(
+                            v_p_id) + '\t' + v_second_part_form + '\t' + aux_lemma + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + mood + 'number=' + aux_number + '|person=' + aux_count + polarity + '|tense=' + tense + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + aux_dep_rol + '\t' + '_' + '\t' + spaceAft + '\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb)
@@ -734,12 +748,12 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                                                  'senID']
                         polarity_v = detect_verb_polarity(v_first_part, word_lemma, line)
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PP' + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         spaceAft = '_'
                         if noSpace:
                             spaceAft = 'spaceAfter=NO'
                         added_line_verb = 'X' + '\t' + str(
-                            v_p_id) + '\t' + v_second_part_form + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'V_PP' + '\t' + 'number=' + aux_number + '|person=' + aux_count + polarity + '|verbForm=Part' + old_dadegan_info_aux + '\t' + str(
+                            v_p_id) + '\t' + v_second_part_form + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + cpos + '\t' + 'number=' + aux_number + '|person=' + aux_count + polarity + '|verbForm=Part' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + spaceAft + '\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb)
@@ -754,19 +768,20 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         added_line_verb = 'X' + '\t' + str(
-                            v_p_id) + '\t' + v_first_part_form + '\t' + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'V_AUX' + '\t' + 'number=SING|person=3|polarity=NEG' + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
+                            v_p_id) + '\t' + v_first_part_form + '\t' + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=SING|person=3|polarity=NEG' + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux' + '\t' + '_' + '\t' + '_' + '\n'
                         eddited_line = str(
-                            token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_SUB' + '\t' + 'mood=Sub|number=SING|person=3|tense=Pres' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'mood=Sub|number=SING|person=3|tense=Pres' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         if noSpace:
                             eddited_line = str(
-                                token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_SUB' + '\t' + 'mood=Sub|number=SING|person=3|tense=Pres' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
+                                token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'mood=Sub|number=SING|person=3|tense=Pres' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
                                 elems[8:-1]) + '\t' + 'spaceAfter=NO' + '\n'
                         sent_lines.append(added_line_verb)
                         sent_lines.append(eddited_line)
                         line_added = True
                         contain_multiWord = True
-                if len(verb_parts) == 3:  # normalizing three part verbs including گفته شده است, گفته شده باشد and گفته شده بود
+                if len(
+                        verb_parts) == 3:  # normalizing three part verbs including گفته شده است, گفته شده باشد and گفته شده بود
                     v_third_part = verb_parts[2]
                     v_second_part_form = verb_parts[1].strip()
                     # if seperated_feature['senID']=='23489':
@@ -803,15 +818,15 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PP' + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         added_line_verb_one = 'X' + '\t' + str(
-                            v_p_one_id) + '\t' + v_second_part_form + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'V_PP' + '\t' + 'number=SING|person=3' + polarity + '|tense=Part' + old_dadegan_info_aux + '\t' + str(
+                            v_p_one_id) + '\t' + v_second_part_form + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=SING|person=3' + polarity + '|tense=Part' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + '_' + '\n'
                         spaceAft = '_'
                         if noSpace:
                             spaceAft = 'spaceAfter=NO'
                         added_line_verb_two = 'Z' + '\t' + str(
-                            v_p_two_id) + '\t' + v_third_part + '\t' + aux_lemma + '\t' + 'AUX' + '\t' + fpos + '\t' + mood + 'number=' + aux_number + '|person=' + aux_count + polarity + '|tense=' + tense + old_dadegan_info_aux + '\t' + str(
+                            v_p_two_id) + '\t' + v_third_part + '\t' + aux_lemma + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + mood + 'number=' + aux_number + '|person=' + aux_count + polarity + '|tense=' + tense + old_dadegan_info_aux + '\t' + str(
                             v_p_one_id) + '\t' + 'aux' + '\t' + '_' + '\t' + spaceAft + '\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb_one)
@@ -833,15 +848,15 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + 'V_PP' + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         added_line_verb_one = 'Z' + '\t' + str(
-                            v_p_one_id) + '\t' + v_second_part + '\t' + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'V_َAUX' + '\t' + 'number=' + aux_num + '|person=3' + polarity + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
+                            v_p_one_id) + '\t' + v_second_part + '\t' + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=' + aux_num + '|person=3' + polarity + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
                             v_p_two_id) + '\t' + 'aux' + '\t' + '_' + '\t' + '_' + '\n'
                         spaceAft = '_'
                         if noSpace:
                             spaceAft = 'spaceAfter=NO'
                         added_line_verb_two = 'X' + '\t' + str(
-                            v_p_two_id) + '\t' + v_third_part + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'V_PASS' + '\t' + 'number=SING' + '|person=3' + polarity + '|tense=Past' + old_dadegan_info_aux + '\t' + str(
+                            v_p_two_id) + '\t' + v_third_part + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=SING' + '|person=3' + polarity + '|tense=Past' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + spaceAft + '\n'
                         sent_lines.append(eddited_line)
                         sent_lines.append(added_line_verb_one)
