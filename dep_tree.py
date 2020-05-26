@@ -53,7 +53,7 @@ class DependencyTree:
         for f in other_features:
             self.other_features.append(Features(f))
         if "senID" in self.other_features[0].feat_dict:
-            self.sen_id = self.other_features[0].feat_dict["senID"]
+            self.sen_id = int(self.other_features[0].feat_dict["senID"])
 
         self.index = dict()
         self.reverse_index = dict()
@@ -798,7 +798,7 @@ class DependencyTree:
                         child_s = ''
                         for child in children:
                             child_str += '  child ' + str(self.index[child]) + ' with rel: ' + self.labels[
-                                child] + ' in sent=' + self.sen_id
+                                child] + ' in sent=' + str(self.sen_id)
                         children.append(idx)
                         children.sort()
                         # print(child_str+' '+' '.join([self.words[key] for key in children]))
@@ -883,14 +883,19 @@ class DependencyTree:
                     rol_changed = True
             if old_role == 'ROOT':
                 self.labels[idx] = 'root'
+                rol_changed = True
             if old_role == 'PREDEP':
                 head_tag = self.tags[self.heads[idx] - 1]
                 if head_tag == "NOUN" and self.ftags[idx] == "SEPER":
                     self.labels[idx] = 'dislocated'
+                    rol_changed = True
                 if head_tag == "NUM" and self.ftags[idx] in {"AJCM", "AJP", "PREP"}:
                     self.labels[idx] = 'advmod'
+                    rol_changed = True
+
             if old_role == "APREMOD" and self.tags[idx] == "NUM":
                 self.labels[idx] = 'nummod'
+                rol_changed = True
             if self.tags[idx] == "PART" and self.words[idx] == "را":
                 head_children = self.children[self.heads[idx]]
                 head_children_labels = [self.labels[child - 1] for child in head_children]
@@ -899,9 +904,13 @@ class DependencyTree:
                     if min(child_span) == 1:  # should be first span
                         self.labels[idx] = 'dislocated'
                         print("dislocated", self.other_features[0].feat_dict["senID"])
+                        rol_changed = True
+
             if self.ftags[idx] == "PREP" and self.ftags[self.heads[idx] - 1] in {"AJCM", "AJP"} \
                     and len(self.children[idx + 1]) == 0:
                 self.labels[idx] = 'flat'
+                rol_changed = True
+
 
             if old_role == 'VCONJ':  # this mapping should take place before که with predicate (VCL) cause #sentID=23816
                 if old_pos == 'CCONJ':
@@ -1265,7 +1274,7 @@ class DependencyTree:
             if old_role == 'MOS':
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'cop')
                 cop_child = self.find_all_children(old_head)
-                if self.sen_id == '43948':
+                if self.sen_id == 43948:
                     print(old_head)
                     print(cop_child)
                     print(self.heads)
@@ -1337,6 +1346,16 @@ class DependencyTree:
                 # print('convert num group in compound in sent {}'.format(self.sen_id))
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+
+    def final_refinment(self):
+        """
+        For roles for which is left behind!
+        :return:
+        """
+        mapping = {"AJUCL": "advcl"}
+        for l, label in enumerate(self.labels):
+            if label in mapping:
+                self.labels[l] = mapping[label]
 
     def convert_num_groups(self):
         all_num_group = self.find_compound_num_groups()
@@ -1442,6 +1461,7 @@ class DependencyTree:
         self.second_level_dep_mapping()
         self.third_level_dep_mapping()
         self.last_step_changes()
+        self.final_refinment()
 
     @staticmethod
     def fix_mwe_entries(tree_list):
