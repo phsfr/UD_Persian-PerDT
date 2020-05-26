@@ -682,6 +682,29 @@ class DependencyTree:
             word = self.words[idx]
             rol_changed = False
             dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
+
+            if dadeg_pos == 'ADR' and (self.labels[idx] == 'PREDEP' or self.labels[idx] == 'POSDEP'):
+                self.labels[idx] = 'case'
+                rol_changed = True
+            elif dadeg_pos == 'ADR':
+                pre_pos_child = [key for key, val in enumerate(self.heads) if val == self.index[idx] and (
+                            self.labels[key] == 'PREDEP' or self.labels[key] == 'POSDEP')]
+                if len(pre_pos_child) > 0:
+                    self.exchange_child_parent(idx, pre_pos_child[0], 'case')
+                    children = self.find_all_children(self.index[idx])
+                    for ch in children:
+                        old_ch_h = self.heads[ch]
+                        old_ch_r = self.labels[ch]
+                        self.heads[ch] = self.index[pre_pos_child[0]]
+                        if not self.other_features[ch].has_feat('dadeg_r'):
+                            self.other_features[ch].add_feat({'dadeg_h': str(old_ch_h), 'dadeg_r': old_ch_r})
+
+                    vconj_child = [key for key, val in enumerate(self.heads) if
+                                   val == self.index[pre_pos_child[0]] and self.labels[key] == 'VCONJ']
+                    if len(vconj_child) > 0:
+                        self.exchange_child_parent(pre_pos_child[0], vconj_child[0], 'vocative')
+                    rol_changed = True
+
             if old_role == 'MESU':  # 'MESU':'nmod' and change child and parent position; before case because of ...kilogram of ra in sentid=23499
                 # old_head_idx=self.reverse_index[old_head]
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'nmod')
@@ -689,6 +712,7 @@ class DependencyTree:
                 # for child in old_head_chs:
                 #    self.heads[child]=self.index[idx]
                 rol_changed = True
+
             if dadeg_pos == 'PREP' or dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
                 children = self.find_all_children(self.index[idx], ['PUNCT'])  # because of را in sent=44271
                 if len(children) == 2:
@@ -844,7 +868,6 @@ class DependencyTree:
             old_pos = self.tags[idx]
             word = self.words[idx]
             rol_changed = False
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
             if old_role == 'VCL':  # rule to find and tag csubj roles
                 # if self.other_features[idx].feat_dict['senID']=='23513':
                 #    print('changed {} idx {} old role is {} with head {} & pos {}'.format(self.other_features[idx].has_feat('dadeg_r'),idx,self.labels[idx],old_head,self.tags[self.reverse_index[old_head]]))
@@ -854,22 +877,11 @@ class DependencyTree:
                     if len(sbj_child) == 0 and len(mos_child) > 0:
                         self.labels[idx] = 'csubj'
                         rol_changed = True
-
-                # cconj_child=self.find_children_with_pos(self.index[child_idx],'CCONJ')
-                #    if len(cconj_child)==0:
-                #        new_role='parataxis'
-                #    old_hd,old_child_r=self.node_assign_new_role(self.reverse_index[old_head],children_chain[0],new_role) 
-                # if self.labels[children_chain[0]]=='conj':
-                #    self.heads[child_idx]=self.heads[children_chain[0]]
-                #    first_child_h=self.heads[children_chain[0]]
-                #    first_child_r=self.labels[children_chain[0]]
-                #    self.heads[children_chain[0]]=old_hd
-                #    self.labels[children_chain[0]]=old_child_r
-                #    if not self.other_features[children_chain[0]].has_feat('dadeg_r'):
-                #        self.other_features[children_chain[0]].add_feat({'dadeg_h':str(first_child_h),'dadeg_r':first_child_r})
-                #    if old_pos=='CCONJ':
-                #        self.labels[idx]='cc'
-                #    rol_changed=True            
+            if old_pos != 'VERB' and old_role == 'root':
+                vconj_child = self.find_children_with_role(self.index[idx], 'VCONJ')
+                if len(vconj_child) > 0:
+                    self.exchange_child_parent(idx, vconj_child[0], 'vocative')
+                    rol_changed = True
             if old_role == 'ROOT':
                 self.labels[idx] = 'root'
             if old_role == 'PREDEP':
@@ -878,10 +890,8 @@ class DependencyTree:
                     self.labels[idx] = 'dislocated'
                 if head_tag == "NUM" and self.ftags[idx] in {"AJCM","AJP" ,"PREP"}:
                     self.labels[idx] = 'advmod'
-
             if old_role == "APREMOD" and self.tags[idx] == "NUM":
                 self.labels[idx] = 'nummod'
-
             if self.tags[idx] == "PART" and self.words[idx] == "را":
                 head_children = self.children[self.heads[idx]]
                 head_children_labels = [self.labels[child-1] for child in head_children]
@@ -890,7 +900,6 @@ class DependencyTree:
                     if min(child_span) == 1: # should be first span
                         self.labels[idx] = 'dislocated'
                         print("dislocated", self.other_features[0].feat_dict["senID"])
-
             if self.ftags[idx] == "PREP" and self.ftags[self.heads[idx] - 1] in {"AJCM","AJP"} \
                     and len(self.children[idx+1])==0:
                 self.labels[idx] = 'flat'

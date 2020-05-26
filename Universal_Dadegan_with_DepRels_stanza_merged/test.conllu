@@ -5683,7 +5683,7 @@
 
 # sent_id = test-s311
 # text = ای کسانی که ایمان آورده‌اید، رکوع کنید و سجده نمایید و پروردگارتان را بپرستید و کار خیر انجام دهید باشد که رستگار شوید.
-1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=42994|dadeg_pos=ADR	17	POSDEP	_	_
+1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=42994|dadeg_pos=ADR|dadeg_h=17|dadeg_r=POSDEP	17	case	_	_
 2	کسانی	کس	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=42994|dadeg_pos=N	1	POSDEP	_	_
 3	که	که	SCONJ	SUBR	attachment=ISO|senID=42994|dadeg_pos=SUBR|dadeg_h=2|dadeg_r=NCL	5	mark	_	_
 4	ایمان	ایمان	NOUN	N_IANM	attachment=ISO|number=SING|senID=42994|dadeg_pos=N|dadeg_h=5|dadeg_r=NVE	5	compound:lvc	_	_
@@ -7830,8 +7830,8 @@
 
 # sent_id = test-s429
 # text = ای مولای من، کنیزهای دربار با هم دربارهٔ آن نگین بگومگو کرده‌اند.
-1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=49005|dadeg_pos=ADR|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
-2	مولای	مولا	NOUN	N_ANM	attachment=ISO|number=SING|senID=49005|dadeg_pos=N	1	POSDEP	_	_
+1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=49005|dadeg_pos=ADR|dadeg_h=0|dadeg_r=ROOT	2	root	_	_
+2	مولای	مولا	NOUN	N_ANM	attachment=ISO|number=SING|senID=49005|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	13	vocative	_	_
 3	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=49005|dadeg_pos=PR|dadeg_h=2|dadeg_r=MOZ	2	nmod	_	spaceAfter=NO
 4	،	،	PUNCT	PUNC	attachment=ISO|senID=49005|dadeg_pos=PUNC|dadeg_h=3|dadeg_r=PUNC	3	punct	_	_
 5	کنیزهای	کنیز	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=49005|dadeg_pos=N|dadeg_h=13|dadeg_r=SBJ	13	nsubj	_	_
@@ -7842,7 +7842,7 @@
 10	آن	آن	DET	PREM_DEMAJ	attachment=ISO|senID=49005|dadeg_pos=PREM|dadeg_h=11|dadeg_r=NPREMOD	11	det	_	_
 11	نگین	نگین	NOUN	N_IANM	attachment=ISO|number=SING|senID=49005|dadeg_pos=N|dadeg_h=9|dadeg_r=POSDEP	13	obl:arg	_	_
 12	بگومگو	بگومگو	NOUN	N_IANM	attachment=ISO|number=SING|senID=49005|dadeg_pos=N|dadeg_h=13|dadeg_r=NVE	13	compound:lvc	_	_
-13	کرده‌اند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=49005|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	spaceAfter=NO
+13	کرده‌اند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=49005|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	0	root	_	spaceAfter=NO
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=49005|dadeg_pos=PUNC|dadeg_h=13|dadeg_r=PUNC	13	punct	_	_
 
 # sent_id = test-s430
@@ -16522,15 +16522,15 @@
 
 # sent_id = test-s872
 # text = ای مردم هر که بخشندگی کرد، بزرگی یافت.
-1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=52409|dadeg_pos=ADR|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
-2	مردم	مردم	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=52409|dadeg_pos=N	1	POSDEP	_	_
+1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=52409|dadeg_pos=ADR|dadeg_h=0|dadeg_r=ROOT	2	root	_	_
+2	مردم	مردم	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=52409|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	9	vocative	_	_
 3	هر	هر	DET	PREM_AMBAJ	attachment=ISO|senID=52409|dadeg_pos=PREM|dadeg_h=4|dadeg_r=NPREMOD	4	det	_	_
 4	که	که	NOUN	N_ANM	attachment=ISO|number=SING|senID=52409|dadeg_pos=N|dadeg_h=9|dadeg_r=SBJ	9	nsubj	_	_
 5	بخشندگی	بخشندگی	NOUN	N_IANM	attachment=ISO|number=SING|senID=52409|dadeg_pos=N|dadeg_h=6|dadeg_r=NVE	6	compound:lvc	_	_
 6	کرد	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=52409|dadeg_pos=V|dadeg_h=4|dadeg_r=NCL	4	acl	_	spaceAfter=NO
 7	،	،	PUNCT	PUNC	attachment=ISO|senID=52409|dadeg_pos=PUNC|dadeg_h=6|dadeg_r=PUNC	6	punct	_	_
 8	بزرگی	بزرگی	NOUN	N_IANM	attachment=ISO|number=SING|senID=52409|dadeg_pos=N|dadeg_h=9|dadeg_r=OBJ	9	obj	_	_
-9	یافت	یافت#یاب	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=52409|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	spaceAfter=NO
+9	یافت	یافت#یاب	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=52409|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	0	root	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=52409|dadeg_pos=PUNC|dadeg_h=9|dadeg_r=PUNC	9	punct	_	_
 
 # sent_id = test-s873
@@ -18842,12 +18842,12 @@
 
 # sent_id = test-s988
 # text = آقا، دهنم کف کرد از بس در فراق اینترنت مرثیه‌سرایی کردم.
-1	آقا	آقا	NOUN	N_ANM	attachment=ISO|number=SING|senID=53686|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
+1	آقا	آقا	NOUN	N_ANM	attachment=ISO|number=SING|senID=53686|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	6	vocative	_	spaceAfter=NO
 2	،	،	PUNCT	PUNC	attachment=ISO|senID=53686|dadeg_pos=PUNC|dadeg_h=1|dadeg_r=PUNC	1	punct	_	_
 3	دهن	دهن	NOUN	N_IANM	attachment=ISO|number=SING|senID=53686|dadeg_pos=N|dadeg_h=6|dadeg_r=SBJ	6	nsubj	_	_
 4	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=53686|dadeg_pos=PR|dadeg_h=3|dadeg_r=MOZ	3	nmod	_	_
 5	کف	کف	NOUN	N_IANM	attachment=ISO|number=SING|senID=53686|dadeg_pos=N|dadeg_h=6|dadeg_r=NVE	6	compound:lvc	_	_
-6	کرد	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=53686|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	_
+6	کرد	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=53686|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	0	root	_	_
 7	از	از	ADP	PREP	attachment=ISO|senID=53686|dadeg_pos=PREP|dadeg_h=6|dadeg_r=ADV	8	case	_	_
 8	بس	بس	NOUN	N_IANM	attachment=ISO|number=SING|senID=53686|dadeg_pos=N|dadeg_h=7|dadeg_r=POSDEP	6	obl	_	_
 9	در	در	ADP	PREP	attachment=ISO|senID=53686|dadeg_pos=PREP|dadeg_h=12|dadeg_r=NPP	10	case	_	_
@@ -20611,19 +20611,19 @@
 
 # sent_id = test-s1071
 # text = حسن جان! حسین جان! زینبم! عزیزم ام‌کلثوم بیایید با مادر وداع کنید.
-1	حسن	حسن	PROPN	N_ANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
+1	حسن	حسن	PROPN	N_ANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	4	vocative	_	_
 2	جان	جان	NOUN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N	1	POSDEP	_	spaceAfter=NO
 3	!	!	PUNCT	PUNC	attachment=ISO|senID=54442|dadeg_pos=PUNC|dadeg_h=2|dadeg_r=PUNC	2	punct	_	_
-4	حسین	حسین	PROPN	N_ANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	_
+4	حسین	حسین	PROPN	N_ANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=1|dadeg_r=VCONJ	7	vocative	_	_
 5	جان	جان	NOUN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N	4	POSDEP	_	spaceAfter=NO
 6	!	!	PUNCT	PUNC	attachment=ISO|senID=54442|dadeg_pos=PUNC|dadeg_h=5|dadeg_r=PUNC	5	punct	_	_
-7	زینب	زینب	PROPN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=4|dadeg_r=VCONJ	1	conj	_	_
+7	زینب	زینب	PROPN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=4|dadeg_r=VCONJ	10	vocative	_	_
 8	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=54442|dadeg_pos=PR|dadeg_h=7|dadeg_r=MOZ	7	nmod	_	_
 9	!	!	PUNCT	PUNC	attachment=ISO|senID=54442|dadeg_pos=PUNC|dadeg_h=7|dadeg_r=PUNC	7	punct	_	_
-10	عزیز	عزیز	NOUN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=7|dadeg_r=VCONJ	1	conj	_	_
+10	عزیز	عزیز	NOUN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=7|dadeg_r=VCONJ	13	vocative	_	_
 11	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=54442|dadeg_pos=PR|dadeg_h=10|dadeg_r=MOZ	10	nmod	_	_
 12	ام‌کلثوم	ام‌کلثوم	PROPN	N_ANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=10|dadeg_r=APP	10	appos	_	_
-13	بیایید	آمد#آ	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=54442|dadeg_pos=V|dadeg_h=10|dadeg_r=VCONJ	1	conj	_	_
+13	بیایید	آمد#آ	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=54442|dadeg_pos=V|dadeg_h=10|dadeg_r=VCONJ	0	root	_	_
 14	با	با	ADP	PREP	attachment=ISO|senID=54442|dadeg_pos=PREP|dadeg_h=16|dadeg_r=NPP	15	case	_	_
 15	مادر	مادر	NOUN	N_ANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=14|dadeg_r=POSDEP	17	obl:arg	_	_
 16	وداع	وداع	NOUN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|dadeg_h=17|dadeg_r=NVE	17	compound:lvc	_	_
@@ -21078,7 +21078,7 @@
 
 # sent_id = test-s1095
 # text = وای به حال شما که اکنون می‌خندید، شما ماتم خواهید گرفت.
-1	وای	وای	INTJ	PSUS	attachment=ISO|senID=54684|dadeg_pos=PSUS|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
+1	وای	وای	INTJ	PSUS	attachment=ISO|senID=54684|dadeg_pos=PSUS|dadeg_h=0|dadeg_r=ROOT	12	vocative	_	_
 2	به	به	ADP	PREP	attachment=ISO|senID=54684|dadeg_pos=PREP|dadeg_h=1|dadeg_r=POSDEP	3	case	_	_
 3	حال	حال	NOUN	N_IANM	attachment=ISO|number=SING|senID=54684|dadeg_pos=N|dadeg_h=2|dadeg_r=POSDEP	1	POSDEP	_	_
 4	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=54684|dadeg_pos=PR|dadeg_h=3|dadeg_r=MOZ	3	nmod	_	_
@@ -21089,7 +21089,7 @@
 9	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=54684|dadeg_pos=PR|dadeg_h=12|dadeg_r=SBJ	12	nsubj	_	_
 10	ماتم	ماتم	NOUN	N_IANM	attachment=ISO|number=SING|senID=54684|dadeg_pos=N|dadeg_h=12|dadeg_r=NVE	12	compound:lvc	_	_
 11	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=54684|dadeg_pos=AUX	12	aux	_	_
-12	گرفت	گرفت#گیر	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=54684|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	spaceAfter=NO
+12	گرفت	گرفت#گیر	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=54684|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	0	root	_	spaceAfter=NO
 13	.	.	PUNCT	PUNC	attachment=ISO|senID=54684|dadeg_pos=PUNC|dadeg_h=12|dadeg_r=PUNC	12	punct	_	_
 
 # sent_id = test-s1096
@@ -23132,8 +23132,8 @@
 2	خدا	خدا	PROPN	N_ANM	attachment=ISO|number=SING|senID=55930|dadeg_pos=N|dadeg_h=1|dadeg_r=MOZ	1	flat:name	_	_
 3	فرمود	فرمود#فرما	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=55930|dadeg_pos=V|dadeg_h=0|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 4	:	:	PUNCT	PUNC	attachment=ISO|senID=55930|dadeg_pos=PUNC|dadeg_h=3|dadeg_r=PUNC	3	punct	_	_
-5	یا	یا	INTJ	ADR_PRADR	attachment=ISO|senID=55930|dadeg_pos=ADR|dadeg_h=3|dadeg_r=VCL	3	ccomp	_	_
-6	علی	علی	PROPN	N_ANM	attachment=ISO|number=SING|senID=55930|dadeg_pos=N	5	POSDEP	_	_
+5	یا	یا	INTJ	ADR_PRADR	attachment=ISO|senID=55930|dadeg_pos=ADR|dadeg_h=3|dadeg_r=VCL	6	case	_	_
+6	علی	علی	PROPN	N_ANM	attachment=ISO|number=SING|senID=55930|dadeg_pos=N|dadeg_h=5|dadeg_r=POSDEP	14	vocative	_	_
 7	به	به	ADP	PREP	attachment=ISO|senID=55930|dadeg_pos=PREP|dadeg_h=14|dadeg_r=ADV	9	case	_	_
 8	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=55930|dadeg_pos=PREM|dadeg_h=9|dadeg_r=NPREMOD	9	det	_	_
 9	جهت	جهت	NOUN	N_IANM	attachment=ISO|number=SING|senID=55930|dadeg_pos=N|dadeg_h=7|dadeg_r=POSDEP	14	obl	_	_
@@ -23141,7 +23141,7 @@
 11	خرمای	خرما	NOUN	N_IANM	attachment=ISO|number=SING|senID=55930|dadeg_pos=N|dadeg_h=10|dadeg_r=POSDEP	14	obl:arg	_	_
 12	مدینه	مدینه	PROPN	N_IANM	attachment=ISO|number=SING|senID=55930|dadeg_pos=N|dadeg_h=11|dadeg_r=MOZ	11	nmod	_	_
 13	صیحانی	صیحانی	ADJ	ADJ_AJP	attachment=ISO|senID=55930|dadeg_pos=ADJ|dadeg_h=14|dadeg_r=TAM	14	xcomp	_	_
-14	گفتند	گفت#گو	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=55930|dadeg_pos=V|dadeg_h=5|dadeg_r=VCONJ	5	conj	_	_
+14	گفتند	گفت#گو	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=GS|senID=55930|dadeg_pos=V|dadeg_h=5|dadeg_r=VCONJ	3	ccomp	_	_
 15	چون	چون	SCONJ	SUBR	attachment=ISO|senID=55930|dadeg_pos=SUBR|dadeg_h=14|dadeg_r=AJUCL	21	mark	_	_
 16	آن	آن	PRON	PR_DEMON	attachment=ISO|number=SING|senID=55930|dadeg_pos=PR|dadeg_h=21|dadeg_r=SBJ	21	nsubj	_	_
 17	به	به	ADP	PREP	attachment=ISO|senID=55930|dadeg_pos=PREP|dadeg_h=21|dadeg_r=ADV	18	case	_	_
@@ -23248,12 +23248,12 @@
 
 # sent_id = test-s1204
 # text = سلام امید جان؛ وقت کردی پیش ما هم بیا.
-1	سلام	سلام	NOUN	N_IANM	attachment=ISO|number=SING|senID=55991|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
-2	امید	امید	PROPN	N_ANM	attachment=ISO|number=SING|senID=55991|dadeg_pos=N|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	_
+1	سلام	سلام	NOUN	N_IANM	attachment=ISO|number=SING|senID=55991|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	2	vocative	_	_
+2	امید	امید	PROPN	N_ANM	attachment=ISO|number=SING|senID=55991|dadeg_pos=N|dadeg_h=1|dadeg_r=VCONJ	6	vocative	_	_
 3	جان	جان	NOUN	N_IANM	attachment=ISO|number=SING|senID=55991|dadeg_pos=N|dadeg_h=2|dadeg_r=MOZ	2	nmod	_	spaceAfter=NO
 4	؛	؛	PUNCT	PUNC	attachment=ISO|senID=55991|dadeg_pos=PUNC|dadeg_h=3|dadeg_r=PUNC	3	punct	_	_
 5	وقت	وقت	NOUN	N_IANM	attachment=ISO|number=SING|senID=55991|dadeg_pos=N|dadeg_h=6|dadeg_r=NVE	6	compound:lvc	_	_
-6	کردی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=55991|dadeg_pos=V|dadeg_h=2|dadeg_r=VCONJ	1	conj	_	_
+6	کردی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=55991|dadeg_pos=V|dadeg_h=2|dadeg_r=VCONJ	0	root	_	_
 7	پیش	پیش	ADP	PREP	attachment=ISO|senID=55991|dadeg_pos=PREP|dadeg_h=10|dadeg_r=VPP	8	case	_	_
 8	ما	ما	PRON	PR_SEPER	person=1|attachment=ISO|number=PLUR|senID=55991|dadeg_pos=PR|dadeg_h=7|dadeg_r=POSDEP	10	obl:arg	_	_
 9	هم	هم	ADV	ADV_SADV	attachment=ISO|senID=55991|dadeg_pos=ADV|dadeg_h=8|dadeg_r=POSDEP	8	dep	_	_
@@ -24448,7 +24448,7 @@
 
 # sent_id = test-s1262
 # text = ای کاش مانند بهار دل‌های ما نیز شکوفه می‌زد و درخت دلمان صفا و صمیمیت را به ارمغان می‌آورد.
-1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=44052|dadeg_pos=ADR	2	PREDEP	_	_
+1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=44052|dadeg_pos=ADR|dadeg_h=2|dadeg_r=PREDEP	2	case	_	_
 2	کاش	کاش	INTJ	PSUS	attachment=ISO|senID=44052|dadeg_pos=PSUS|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
 3	مانند	مانند	ADP	PREP	attachment=ISO|senID=44052|dadeg_pos=PREP|dadeg_h=9|dadeg_r=ADV	4	case	_	_
 4	بهار	بهار	NOUN	N_IANM	attachment=ISO|number=SING|senID=44052|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	9	obl	_	_
@@ -25755,12 +25755,12 @@
 
 # sent_id = test-s1331
 # text = بدبخت بینوا همین فردا پس‌فردا متوجه خواهی شد که با همه سوادت توی صف استخدام له‌له خواهی زد.
-1	بدبخت	بدبخت	NOUN	N_IANM	attachment=ISO|number=SING|senID=57595|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
+1	بدبخت	بدبخت	NOUN	N_IANM	attachment=ISO|number=SING|senID=57595|dadeg_pos=N|dadeg_h=0|dadeg_r=ROOT	6	vocative	_	_
 2	بینوا	بینوا	ADJ	ADJ_AJP	attachment=ISO|senID=57595|dadeg_pos=ADJ|dadeg_h=1|dadeg_r=NPOSTMOD	1	amod	_	_
 3	همین	همین	DET	PREM_DEMAJ	attachment=ISO|senID=57595|dadeg_pos=PREM|dadeg_h=4|dadeg_r=NPREMOD	4	det	_	_
 4	فردا	فردا	NOUN	N_IANM	attachment=ISO|number=SING|senID=57595|dadeg_pos=N|dadeg_h=8|dadeg_r=ADV	6	obl	_	_
 5	پس‌فردا	پس‌فردا	NOUN	N_IANM	attachment=ISO|number=SING|senID=57595|dadeg_pos=N|dadeg_h=4|dadeg_r=NCONJ	4	conj	_	_
-6	متوجه	متوجه	ADJ	ADJ_AJP	attachment=ISO|senID=57595|dadeg_pos=ADJ|dadeg_h=8|dadeg_r=MOS	1	conj	_	_
+6	متوجه	متوجه	ADJ	ADJ_AJP	attachment=ISO|senID=57595|dadeg_pos=ADJ|dadeg_h=8|dadeg_r=MOS	0	root	_	_
 7	خواهی	خواست#خواه	AUX	AUX	number=SING|person=2|tense=Fut|verbForm=Fin|senID=57595|dadeg_pos=AUX	8	aux	_	_
 8	شد	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=57595|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	6	cop	_	_
 9	که	که	SCONJ	SUBR	attachment=ISO|senID=57595|dadeg_pos=SUBR|dadeg_h=6|dadeg_r=ACL	19	mark	_	_
@@ -27314,15 +27314,15 @@
 
 # sent_id = test-s1408
 # text = ای پروردگار این موجود در زمین بلوا خواهد کرد.
-1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=58822|dadeg_pos=ADR|dadeg_h=0|dadeg_r=ROOT	0	root	_	_
-2	پروردگار	پروردگار	NOUN	N_ANM	attachment=ISO|number=SING|senID=58822|dadeg_pos=N	1	POSDEP	_	_
+1	ای	ای	INTJ	ADR_PRADR	attachment=ISO|senID=58822|dadeg_pos=ADR|dadeg_h=0|dadeg_r=ROOT	2	root	_	_
+2	پروردگار	پروردگار	NOUN	N_ANM	attachment=ISO|number=SING|senID=58822|dadeg_pos=N|dadeg_h=1|dadeg_r=POSDEP	9	vocative	_	_
 3	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=58822|dadeg_pos=PREM|dadeg_h=4|dadeg_r=NPREMOD	4	det	_	_
 4	موجود	موجود	NOUN	N_ANM	attachment=ISO|number=SING|senID=58822|dadeg_pos=N|dadeg_h=9|dadeg_r=SBJ	9	nsubj	_	_
 5	در	در	ADP	PREP	attachment=ISO|senID=58822|dadeg_pos=PREP|dadeg_h=9|dadeg_r=ADV	6	case	_	_
 6	زمین	زمین	NOUN	N_IANM	attachment=ISO|number=SING|senID=58822|dadeg_pos=N|dadeg_h=5|dadeg_r=POSDEP	9	obl	_	_
 7	بلوا	بلوا	NOUN	N_IANM	attachment=ISO|number=SING|senID=58822|dadeg_pos=N|dadeg_h=9|dadeg_r=NVE	9	compound:lvc	_	_
 8	خواهد	خواست#خواه	AUX	AUX	number=SING|person=3|tense=Fut|verbForm=Fin|senID=58822|dadeg_pos=AUX	9	aux	_	_
-9	کرد	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=58822|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	1	conj	_	spaceAfter=NO
+9	کرد	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=58822|dadeg_pos=V|dadeg_h=1|dadeg_r=VCONJ	0	root	_	spaceAfter=NO
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=58822|dadeg_pos=PUNC|dadeg_h=9|dadeg_r=PUNC	9	punct	_	_
 
 # sent_id = test-s1409
