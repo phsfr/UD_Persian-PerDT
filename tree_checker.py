@@ -1,16 +1,27 @@
-from dep_tree import *
 from typing import List
 
+from dep_tree import *
 
-univ_pos_tags = {"ADJ", "ADP", "PUNCT", "ADV", "AUX", "SYM", "INTJ", "CCONJ", "X", "NOUN", "DET", "PROPN", "NUM", "VERB", "PART", "PRON", "SCONJ"}
-univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated", "advcl", "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl", "amod", "det", "clf", "case",  "conj", "cc", "fixed", "flat", "compound", "list", "parataxis", "orphan", "goeswith", "reparandum", "punct", "root", "dep"}
-
-
+univ_pos_tags = {"ADJ", "ADP", "PUNCT", "ADV", "AUX", "SYM", "INTJ", "CCONJ", "X", "NOUN", "DET", "PROPN", "NUM",
+                 "VERB", "PART", "PRON", "SCONJ"}
+univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated", "advcl",
+                   "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl", "amod", "det", "clf",
+                   "case", "conj", "cc", "fixed", "flat", "compound", "list", "parataxis", "orphan", "goeswith",
+                   "reparandum", "punct", "root", "dep"}
 
 if __name__ == '__main__':
+    dadegan_files = ['Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll',
+                   'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//dev.conll',
+                   'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//test.conll']
+    for file in dadegan_files:
+        trees: List[DependencyTree] = DependencyTree.load_trees_from_conll_file(file)
+        for tree in trees:
+            if not tree.is_valid_tree():
+                print("Malformed Dadegan tree in", tree.other_features[0].feat_dict["senID"])
+
     input_files = ['Universal_Dadegan_with_DepRels_stanza_merged/train.conllu',
-                    'Universal_Dadegan_with_DepRels_stanza_merged/dev.conllu',
-                    'Universal_Dadegan_with_DepRels_stanza_merged/test.conllu']
+                   'Universal_Dadegan_with_DepRels_stanza_merged/dev.conllu',
+                   'Universal_Dadegan_with_DepRels_stanza_merged/test.conllu']
     illegal_tags = set()
     illegal_labels = set()
     for file in input_files:

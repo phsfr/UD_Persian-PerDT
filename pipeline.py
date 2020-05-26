@@ -15,4 +15,7 @@ os.system("python3 -u dep_tree.py")
 print("merge_stanza.py")
 os.system("python3 -u merge_stanza.py")
 
+print("tree_checker.py")
+os.system("python3 -u tree_checker.py")
+
 print("FINISHED!")

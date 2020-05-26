@@ -10,10 +10,11 @@ from dep_tree import DependencyTree
 
 changed_set = set()
 
+
 def fix_verb_conj_order(tree, v, label):
     v_head = tree.heads[v] - 1
     if v_head < v:
-        return # no need to change
+        return  # no need to change
     v_grand_head = tree.heads[v_head]
     tree.heads[v] = v_grand_head
     tree.labels[v] = tree.labels[v_head]
@@ -43,7 +44,6 @@ def fix_cc_order(tree, cc, label):
     if cc_dep is None:
         print("Orphaned", tree.other_features[0].feat_dict['senID'])
         return
-
 
     cc_grand_head = tree.heads[cc_head]
     cc_grand_label = tree.labels[cc_grand_head - 1] if cc_grand_head > 0 else "ROOT"
@@ -83,35 +83,37 @@ if __name__ == '__main__':
         tree_list = DependencyTree.load_trees_from_conll_file(inp_f)
         for i, tree in enumerate(tree_list):
             for w, (lemma, word, ftag) in enumerate(zip(tree.lemmas, tree.words, tree.ftags)):
-                if lemma == "گشت#گرد" and ftag=="PASS":
+                if lemma == "گشت#گرد" and ftag == "PASS":
                     tree.ftags[w] = "ACT"
-                if lemma == "شد#شو" and ftag=="PASS":
+                if lemma == "شد#شو" and ftag == "PASS":
                     tree.ftags[w] = "ACT"
-                if lemma in {"کرد#کن"} and ftag=="PASS":
+                if lemma in {"کرد#کن"} and ftag == "PASS":
                     if "شو" not in word and "شد" not in word:
                         tree.ftags[w] = "ACT"
                         print(word)
                     else:
                         tree.ftags[w] = "ACT"
                         tree.lemmas[w] = "شد#شو"
-                if (tree.tags[w] == "PRENUM" and tree.tags[tree.heads[w]-1]=="PREP") \
-                        or (tree.tags[w] == "PRENUM" and tree.tags[tree.heads[w]-1]=="N" and tree.heads[w]-1<w and tree.words[tree.heads[w]-1]=="حدود"):
-                    head_id = tree.heads[w]-1
-                    if (tree.tags[w] == "PRENUM" and tree.tags[head_id]=="N" and head_id<w):
+                if (tree.tags[w] == "PRENUM" and tree.tags[tree.heads[w] - 1] == "PREP") \
+                        or (
+                        tree.tags[w] == "PRENUM" and tree.tags[tree.heads[w] - 1] == "N" and tree.heads[w] - 1 < w and
+                        tree.words[tree.heads[w] - 1] == "حدود"):
+                    head_id = tree.heads[w] - 1
+                    if (tree.tags[w] == "PRENUM" and tree.tags[head_id] == "N" and head_id < w):
                         tree.tags[head_id] = "PREP"
                         tree.ftags[head_id] = "PREP"
                     head_ftag = tree.ftags[head_id]
                     grand_head_id = tree.heads[head_id] - 1
                     grand_head_ftag = tree.ftags[grand_head_id]
-                    if (grand_head_ftag == "AJCM" and tree.labels[head_id]=="COMPPP") or \
-                            grand_head_ftag == "AJP" and tree.labels[head_id]=="AJPP":
-                        assert len(tree.children[tree.heads[w]])==1
-                        assert len(tree.children[tree.heads[head_id]])==1
+                    if (grand_head_ftag == "AJCM" and tree.labels[head_id] == "COMPPP") or \
+                            grand_head_ftag == "AJP" and tree.labels[head_id] == "AJPP":
+                        assert len(tree.children[tree.heads[w]]) == 1
+                        assert len(tree.children[tree.heads[head_id]]) == 1
 
                         span_head = tree.heads[grand_head_id]
                         span_label = "APREMOD"
 
-                        tree.heads[grand_head_id] = w+1 # assigning to the number
+                        tree.heads[grand_head_id] = w + 1  # assigning to the number
                         tree.labels[grand_head_id] = "PREDEP"
                         tree.heads[w] = span_head
                         tree.labels[w] = span_label
@@ -124,16 +126,15 @@ if __name__ == '__main__':
                         tree.labels[w] = span_label
 
             for w, word in enumerate(tree.words):
-            #     if word == "و" and tree.tags[w] == "SUBR":
-            #         tree.tags[w] = "CONJ"
-            #         tree.ftags[w] = "CONJ"
-            # if "PARCL" in tree.labels:
-            #     parcl_trees.append(tree)
-            # if "VCONJ" in tree.labels:
-                 vconj_trees.append(tree)
-                 #fix_vconj_order(tree)
-
-
+                #     if word == "و" and tree.tags[w] == "SUBR":
+                #         tree.tags[w] = "CONJ"
+                #         tree.ftags[w] = "CONJ"
+                # if "PARCL" in tree.labels:
+                #     parcl_trees.append(tree)
+                # if "VCONJ" in tree.labels:
+                vconj_trees.append(tree)
+                # DO NOT UNCOMMENT THIS LINE (BUG!)
+                # fix_vconj_order(tree)
 
         for tree in parcl_trees:
             include_tree = False
@@ -149,6 +150,10 @@ if __name__ == '__main__':
                             if tree.labels[dep] in {"SBJ", "AJUCL", "ADV"}:
                                 # Change the head for SBJ/AJUCL/ADV
                                 tree.heads[dep] = idx + 1
+
+        for tree in tree_list:
+            if not tree.is_valid_tree():
+                print("Malformed Dadegan tree in", inp_f, tree.other_features[0].feat_dict["senID"])
         DependencyTree.write_to_conll(tree_list, output_files[f_idx])
 
 print("\n".join(changed_set))

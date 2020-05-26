@@ -2,6 +2,7 @@ import os
 from collections import defaultdict
 from typing import List, Set
 
+
 # import mwe
 
 class Features:
@@ -16,7 +17,6 @@ class Features:
             except:
                 # No feature
                 pass
-
 
     def __str__(self):
         return self.feat_str
@@ -228,7 +228,7 @@ class DependencyTree:
         return tree
 
     @staticmethod
-    def load_trees_from_conllu_file(file_str)->List:
+    def load_trees_from_conllu_file(file_str) -> List:
         """
         Loads a conll file into a list of DependencyTree object.
         """
@@ -692,7 +692,7 @@ class DependencyTree:
                 rol_changed = True
             elif dadeg_pos == 'ADR':
                 pre_pos_child = [key for key, val in enumerate(self.heads) if val == self.index[idx] and (
-                            self.labels[key] == 'PREDEP' or self.labels[key] == 'POSDEP')]
+                        self.labels[key] == 'PREDEP' or self.labels[key] == 'POSDEP')]
                 if len(pre_pos_child) > 0:
                     self.exchange_child_parent(idx, pre_pos_child[0], 'case')
                     children = self.find_all_children(self.index[idx])
@@ -892,20 +892,20 @@ class DependencyTree:
                 head_tag = self.tags[self.heads[idx] - 1]
                 if head_tag == "NOUN" and self.ftags[idx] == "SEPER":
                     self.labels[idx] = 'dislocated'
-                if head_tag == "NUM" and self.ftags[idx] in {"AJCM","AJP" ,"PREP"}:
+                if head_tag == "NUM" and self.ftags[idx] in {"AJCM", "AJP", "PREP"}:
                     self.labels[idx] = 'advmod'
             if old_role == "APREMOD" and self.tags[idx] == "NUM":
                 self.labels[idx] = 'nummod'
             if self.tags[idx] == "PART" and self.words[idx] == "را":
                 head_children = self.children[self.heads[idx]]
-                head_children_labels = [self.labels[child-1] for child in head_children]
-                if "SBJ" in head_children_labels: # No subject in children
-                    child_span = self.get_span(idx+1)
-                    if min(child_span) == 1: # should be first span
+                head_children_labels = [self.labels[child - 1] for child in head_children]
+                if "SBJ" in head_children_labels:  # No subject in children
+                    child_span = self.get_span(idx + 1)
+                    if min(child_span) == 1:  # should be first span
                         self.labels[idx] = 'dislocated'
                         print("dislocated", self.other_features[0].feat_dict["senID"])
-            if self.ftags[idx] == "PREP" and self.ftags[self.heads[idx] - 1] in {"AJCM","AJP"} \
-                    and len(self.children[idx+1])==0:
+            if self.ftags[idx] == "PREP" and self.ftags[self.heads[idx] - 1] in {"AJCM", "AJP"} \
+                    and len(self.children[idx + 1]) == 0:
                 self.labels[idx] = 'flat'
 
             if old_role == 'VCONJ':  # this mapping should take place before که with predicate (VCL) cause #sentID=23816
