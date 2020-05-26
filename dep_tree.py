@@ -683,7 +683,7 @@ class DependencyTree:
 
     def zero_level_dep_mapping(self):
         self.find_tag_fixed_groupds()
-        simple_dep_map = {'ROOT': 'root', 'PUNC': 'punct', 'APP': 'appos', "aux":"aux"}
+        simple_dep_map = {'ROOT': 'root', 'PUNC': 'punct', 'APP': 'appos', "aux": "aux"}
         for l, label in enumerate(self.labels):
             if label in simple_dep_map:
                 self.labels[l] = simple_dep_map[label]
@@ -804,7 +804,6 @@ class DependencyTree:
                         # print(child_str+' '+' '.join([self.words[key] for key in children]))
                 rol_changed = True
 
-
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
@@ -910,7 +909,6 @@ class DependencyTree:
                     and len(self.children[idx + 1]) == 0:
                 self.labels[idx] = 'flat'
                 rol_changed = True
-
 
             if old_role == 'VCONJ':  # this mapping should take place before که with predicate (VCL) cause #sentID=23816
                 if old_pos == 'CCONJ':
@@ -1247,7 +1245,7 @@ class DependencyTree:
                 self.labels[idx] = simple_dep_map[old_role]
                 rol_changed = True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({ 'dadeg_r': old_role})
+                self.other_features[idx].add_feat({'dadeg_r': old_role})
             if rol_changed and not self.other_features[idx].has_feat('dadeg_h'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head)})
 
@@ -1343,7 +1341,7 @@ class DependencyTree:
         For roles for which is left behind!
         :return:
         """
-        mapping = {"AJUCL": "advcl", "NCL": "acl", "MOS":"xcomp"}
+        mapping = {"AJUCL": "advcl", "NCL": "acl", "MOS": "xcomp"}
         for l, label in enumerate(self.labels):
             if label in mapping:
                 self.labels[l] = mapping[label]

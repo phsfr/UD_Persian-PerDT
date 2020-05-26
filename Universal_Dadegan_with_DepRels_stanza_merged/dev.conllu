@@ -15259,8 +15259,8 @@
 7	مهرانگیز	مهرانگیز	NOUN	N_ANM	attachment=ISO|number=SING|senID=34820|dadeg_pos=N|dadeg_h=6|dadeg_r=POSDEP	2	conj	_	_
 8	کار	کار	NOUN	N_ANM	attachment=ISO|number=SING|senID=34820|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=7	7	nmod	_	_
 9	حقوقدان	حقوقدان	NOUN	N_ANM	attachment=ISO|number=SING|senID=34820|dadeg_pos=N|dadeg_r=APP	7	appos	_	_
-10	و	و	CCONJ	CONJ	attachment=ISO|senID=34820|dadeg_pos=CONJ|dadeg_h=9|dadeg_r=NCONJ	9	NCONJ	_	_
-11	فعال	فعال	NOUN	N_ANM	attachment=ISO|number=SING|senID=34820|dadeg_pos=N	9	POSDEP	_	_
+10	و	و	CCONJ	CONJ	attachment=ISO|senID=34820|dadeg_pos=CONJ|dadeg_h=9|dadeg_r=NCONJ	11	cc	_	_
+11	فعال	فعال	NOUN	N_ANM	attachment=ISO|number=SING|senID=34820|dadeg_pos=N|dadeg_h=10|dadeg_r=POSDEP	9	conj	_	_
 12	حقوق	حق	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=34820|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=11	11	nmod	_	_
 13	زنان	زن	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=34820|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=12	12	nmod	_	_
 14	نیز	نیز	ADV	ADV_SADV	attachment=ISO|senID=34820|dadeg_pos=ADV|dadeg_h=2|dadeg_r=POSDEP	2	dep	_	_

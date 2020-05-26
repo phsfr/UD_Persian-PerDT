@@ -33,16 +33,16 @@ if __name__ == '__main__':
             for t in tags:
                 if t not in univ_pos_tags:
                     # print("Illegal tag", t, "in", tree.sen_id)
-                    illegal_tags[t]+=1
+                    illegal_tags[t] += 1
                     problematic_sens.add(tree.sen_id)
 
             for idx, l in enumerate(labels):
                 label = l.split(":")[0]
                 if label not in univ_dep_labels:
-                    illegal_labels[l]+=1
+                    illegal_labels[l] += 1
                     problematic_sens.add(tree.sen_id)
                     # print("Illegal label", l, "in", tree.sen_id)
-                    if l == "MOS":
+                    if l == "NCONJ":
                         print("Illegal label", l, "in", tree.sen_id)
                 # elif "dadeg_r" not in tree.other_features[idx].feat_dict:
                 #     print("No dadeg_r in", label, tree.sen_id) #todo
@@ -51,8 +51,8 @@ if __name__ == '__main__':
                 problematic_sens.add(tree.sen_id)
                 print("Malformed tree in", tree.sen_id)
 
-    if len(illegal_tags)>0:
-        print("Illegal tags:", " ".join([t + ":"+str(c) for t, c in illegal_tags.items()]))
-    if len(illegal_labels)>0:
-        print("Illegal labels:", " ".join([l + ":"+str(c) for l, c in illegal_labels.items()]))
+    if len(illegal_tags) > 0:
+        print("Illegal tags:", " ".join([t + ":" + str(c) for t, c in illegal_tags.items()]))
+    if len(illegal_labels) > 0:
+        print("Illegal labels:", " ".join([l + ":" + str(c) for l, c in illegal_labels.items()]))
     print("Number of wrong sentences", len(problematic_sens))
