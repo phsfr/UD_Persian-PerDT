@@ -22,13 +22,17 @@ if __name__ == '__main__':
 
             for t in tags:
                 if t not in univ_pos_tags:
-                    print("Illegal tag", t, "in", tree.other_features[0].feat_dict["senID"])
+                    #print("Illegal tag", t, "in", tree.other_features[0].feat_dict["senID"])
                     illegal_tags.add(t)
+
             for l in labels:
                 label = l.split(":")[0]
                 if label not in univ_dep_labels:
                     illegal_labels.add(l)
-                    print("Illegal label", l, "in", tree.other_features[0].feat_dict["senID"])
-                    
+                    #print("Illegal label", l, "in", tree.other_features[0].feat_dict["senID"])
+
+            if not tree.is_valid_tree():
+                print("Malformed tree in", tree.other_features[0].feat_dict["senID"])
+
     print("Illegal tags:", " ".join(illegal_tags))
     print("Illegal labels:", " ".join(illegal_labels))

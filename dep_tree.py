@@ -114,6 +114,10 @@ class DependencyTree:
                 return False
         return True
 
+    def is_valid_tree(self):
+        spans = self.get_span(0)
+        return len(spans) == len(self.words) + 1
+
     @staticmethod
     def is_nonprojective_arc(d1, h1, d2, h2):
         if d1 > h1 and h1 != h2:
