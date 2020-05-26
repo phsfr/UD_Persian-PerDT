@@ -49,8 +49,11 @@ class DependencyTree:
         self.mw_line = mw_line
         self.children = defaultdict(set)
         self.other_features = list()
+        self.sen_id = 0
         for f in other_features:
             self.other_features.append(Features(f))
+        if "senID" in self.other_features[0].feat_dict:
+            self.sen_id = self.other_features[0].feat_dict["senID"]
 
         self.index = dict()
         self.reverse_index = dict()
@@ -580,9 +583,9 @@ class DependencyTree:
         comp_l = [26621, 30910, 31081, 31682, 47333, 38599, 38600, 38601, 38604, 39924, 41245, 41857, 46975, 51705,
                   53316, 53769, 54158, 54346, 54349, 54350, 48985, 36024, 26621, 30910, 31081, 31682]
         obj2_new_role = ''
-        if int(self.other_features[idx].feat_dict['senID']) in iobj_l:
+        if int(self.sen_id) in iobj_l:
             obj2_new_role = 'iobj'
-        elif int(self.other_features[idx].feat_dict['senID']) in comp_l:
+        elif int(self.sen_id) in comp_l:
             obj2_new_role = 'compound:lvc'
         return obj2_new_role
 
@@ -590,7 +593,7 @@ class DependencyTree:
         num_group_idxs = []
         all_num_groups = []
         for idx in range(len(self.tags)):
-            # if self.other_features[idx].feat_dict['senID']=='23604':
+            # if self.sen_id=='23604':
             #    print('pos {} word {} idx {}'.format(pos,word,idx))
             pos = self.tags[idx]
             word = self.words[idx]
@@ -615,7 +618,7 @@ class DependencyTree:
         name_group_idxs = []
         all_name_groups = []
         for idx in range(len(self.tags)):
-            # if self.other_features[idx].feat_dict['senID']=='23604':
+            # if self.sen_id=='23604':
             #    print('pos {} word {} idx {}'.format(pos,word,idx))
             dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
             pos = self.tags[idx]
@@ -792,7 +795,7 @@ class DependencyTree:
                         child_s = ''
                         for child in children:
                             child_str += '  child ' + str(self.index[child]) + ' with rel: ' + self.labels[
-                                child] + ' in sent=' + self.other_features[idx].feat_dict['senID']
+                                child] + ' in sent=' + self.sen_id
                         children.append(idx)
                         children.sort()
                         # print(child_str+' '+' '.join([self.words[key] for key in children]))
@@ -873,7 +876,7 @@ class DependencyTree:
             word = self.words[idx]
             rol_changed = False
             if old_role == 'VCL':  # rule to find and tag csubj roles
-                # if self.other_features[idx].feat_dict['senID']=='23513':
+                # if self.sen_id=='23513':
                 #    print('changed {} idx {} old role is {} with head {} & pos {}'.format(self.other_features[idx].has_feat('dadeg_r'),idx,self.labels[idx],old_head,self.tags[self.reverse_index[old_head]]))
                 if self.tags[self.reverse_index[old_head]] == 'VERB':
                     mos_child = self.find_children_with_role(old_head, 'MOS')
@@ -942,14 +945,14 @@ class DependencyTree:
                 else:
                     head_idx = self.reverse_index[old_head]
                     head_role = self.labels[head_idx]
-                    # if self.other_features[idx].feat_dict['senID']=='24269':
+                    # if self.sen_id=='24269':
                     #    print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
                     if head_role == 'conj':
                         self.heads[idx] = self.heads[head_idx]
                         self.labels[idx] = 'conj'
                     else:
                         self.labels[idx] = 'conj'
-                    # if self.other_features[idx].feat_dict['senID']=='24269':
+                    # if self.sen_id=='24269':
                     #    print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
                 rol_changed = True
             #    if len(verb_child)>0:
@@ -1008,14 +1011,14 @@ class DependencyTree:
                 else:
                     head_idx = self.reverse_index[old_head]
                     head_role = self.labels[head_idx]
-                    # if self.other_features[idx].feat_dict['senID']=='24269':
+                    # if self.sen_id=='24269':
                     #    print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
                     if head_role == 'conj':
                         self.heads[idx] = self.heads[head_idx]
                         self.labels[idx] = 'conj'
                     else:
                         self.labels[idx] = 'conj'
-                    # if self.other_features[idx].feat_dict['senID']=='24269':
+                    # if self.sen_id=='24269':
                     #    print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
                 rol_changed = True
             # if old_role in list(simple_dep_map.keys()):
@@ -1079,7 +1082,7 @@ class DependencyTree:
                 self.exchange_pars_with_PRD(idx, 'mark', 'advcl')
                 rol_changed = True
             if old_role == 'VCL' or old_role == 'ACL':
-                # if self.other_features[idx].feat_dict['senID']=='23513':
+                # if self.sen_id=='23513':
                 #    print('changed {} idx {} old role is {} with head {} & pos {}'.format(self.other_features[idx].has_feat('dadeg_r'),idx,self.labels[idx],old_head,self.tags[self.reverse_index[old_head]]))
                 # if self.tags[self.reverse_index[old_head]]=='VERB':
                 #    mos_child=self.find_children_with_role(old_head,'MOS')
@@ -1091,7 +1094,7 @@ class DependencyTree:
                 # if not rol_changed:
                 self.exchange_pars_with_PRD(idx, 'mark', 'ccomp')
                 rol_changed = True
-                # if self.other_features[idx].feat_dict['senID']=='23513':
+                # if self.sen_id=='23513':
                 #    print('old role is {}'.format(self.labels[idx]))
             if old_role == 'NCL':
                 # if lemma!='که':
@@ -1266,11 +1269,11 @@ class DependencyTree:
             lemma = self.lemmas[idx]
             word = self.words[idx]
             rol_changed = False
-            senID = self.other_features[idx].feat_dict['senID']
+            senID = self.sen_id
             if old_role == 'MOS':
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'cop')
                 cop_child = self.find_all_children(old_head)
-                if self.other_features[idx].feat_dict['senID'] == '43948':
+                if self.sen_id == '43948':
                     print(old_head)
                     print(cop_child)
                     print(self.heads)
@@ -1320,17 +1323,17 @@ class DependencyTree:
                 self.labels[idx] = 'compound'
                 self.heads[idx] = self.index[idx - 1]
                 rol_changed = True
-                # print('convert num group in compound in sent {}'.format(self.other_features[idx].feat_dict['senID']))
+                # print('convert num group in compound in sent {}'.format(self.sen_id))
             if (self.words[idx - 1] == 'یکی' or self.words[idx - 1] == 'یک') and self.words[idx] == 'دو':
                 self.labels[idx] = 'compound'
                 self.heads[idx] = self.index[idx - 1]
                 rol_changed = True
-                # print('convert num group in compound in sent {}'.format(self.other_features[idx].feat_dict['senID']))
+                # print('convert num group in compound in sent {}'.format(self.sen_id))
             if self.words[idx - 1] == 'چهارده' and self.words[idx] == 'پانزده':
                 self.labels[idx] = 'compound'
                 self.heads[idx] = self.index[idx - 1]
                 rol_changed = True
-                # print('convert num group in compound in sent {}'.format(self.other_features[idx].feat_dict['senID']))
+                # print('convert num group in compound in sent {}'.format(self.sen_id))
             if (self.words[idx - 1] == 'دویست' and self.words[idx] == 'سیصد') or (
                     self.words[idx - 1] == 'سه' and self.words[idx] == 'چهار') or (
                     self.words[idx - 1] == 'هفده' and self.words[idx] == 'هیجده') or (
@@ -1339,7 +1342,7 @@ class DependencyTree:
                 self.labels[idx] = 'compound'
                 self.heads[idx] = self.index[idx - 1]
                 rol_changed = True
-                # print('convert num group in compound in sent {}'.format(self.other_features[idx].feat_dict['senID']))
+                # print('convert num group in compound in sent {}'.format(self.sen_id))
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
@@ -1372,7 +1375,7 @@ class DependencyTree:
                     # try:
                     self.heads[num_idx] = self.index[num_group[i + 1]]
                     # except IndexError:
-                    #    print('index error: group {} in sent {}'.format(group_str,self.other_features[idx].feat_dict['senID']))
+                    #    print('index error: group {} in sent {}'.format(group_str,self.sen_id))
                     #    return
                 else:
                     self.labels[num_idx] = 'flat:num'
@@ -1388,9 +1391,9 @@ class DependencyTree:
                 if not self.other_features[num_group[0]].has_feat('dadeg_r'):
                     self.other_features[num_group[0]].add_feat({'dadeg_h': str(old_h), 'dadeg_r': old_r})
                 # rol_changed=True
-            # print('convert num group {} in sent {}'.format(group_str,self.other_features[idx].feat_dict['senID']))
+            # print('convert num group {} in sent {}'.format(group_str,self.sen_id))
             # elif self.reverse_index[self.heads[num_group[0]]] in num_group:
-            #    print('ERROR: in num convertion no head found in group {} sent {}'.format(group_str,self.other_features[idx].feat_dict['senID']))
+            #    print('ERROR: in num convertion no head found in group {} sent {}'.format(group_str,self.sen_id))
 
     def convert_name_groups(self):
         all_name_group = self.find_name_groups()
@@ -1432,16 +1435,16 @@ class DependencyTree:
                 if not self.other_features[name_group[0]].has_feat('dadeg_r'):
                     self.other_features[name_group[0]].add_feat({'dadeg_h': str(old_h), 'dadeg_r': old_r})
                 # rol_changed=True
-            # print('convert name group {} in sent {}'.format(group_str,self.other_features[idx].feat_dict['senID']))
+            # print('convert name group {} in sent {}'.format(group_str,self.sen_id))
             # elif self.reverse_index[self.heads[num_group[0]]] in num_group:
-            #    print('ERROR: in num convertion no head found in group {} sent {}'.format(group_str,self.other_features[idx].feat_dict['senID']))
+            #    print('ERROR: in num convertion no head found in group {} sent {}'.format(group_str,self.sen_id))
 
     def convert_tree(self):
         self.zero_level_dep_mapping()
         # self.convert_PARCL_rel()
         self.first_level_dep_mapping()
         not_num_process = ['53393', '58877', '46067', '36338']
-        if self.other_features[0].feat_dict['senID'] not in not_num_process:
+        if self.sen_id not in not_num_process:
             self.convert_num_groups()
         self.convert_name_groups()
         self.second_level_dep_mapping()
