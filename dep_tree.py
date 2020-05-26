@@ -1,6 +1,6 @@
 import os
 from collections import defaultdict
-from typing import Set
+from typing import List, Set
 
 # import mwe
 
@@ -224,7 +224,7 @@ class DependencyTree:
         return tree
 
     @staticmethod
-    def load_trees_from_conllu_file(file_str):
+    def load_trees_from_conllu_file(file_str)->List:
         """
         Loads a conll file into a list of DependencyTree object.
         """
@@ -870,6 +870,8 @@ class DependencyTree:
                 #    if old_pos=='CCONJ':
                 #        self.labels[idx]='cc'
                 #    rol_changed=True            
+            if old_role == 'ROOT':
+                self.labels[idx] = 'root'
             if old_role == 'PREDEP':
                 head_tag = self.tags[self.heads[idx] - 1]
                 if head_tag == "NOUN" and self.ftags[idx] == "SEPER":
