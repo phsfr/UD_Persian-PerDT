@@ -15,7 +15,7 @@ if __name__ == '__main__':
         trees: List[DependencyTree] = DependencyTree.load_trees_from_conll_file(file)
         for tree in trees:
             if not tree.is_valid_tree():
-                print("Malformed Dadegan tree in", tree.other_features[0].feat_dict["senID"])
+                print("Malformed Dadegan tree in", tree.sen_id)
 
     input_files = ['Universal_Dadegan_with_DepRels_stanza_merged/train.conllu',
                    'Universal_Dadegan_with_DepRels_stanza_merged/dev.conllu',
@@ -32,20 +32,24 @@ if __name__ == '__main__':
 
             for t in tags:
                 if t not in univ_pos_tags:
-                    # print("Illegal tag", t, "in", tree.other_features[0].feat_dict["senID"])
+                    # print("Illegal tag", t, "in", tree.sen_id)
                     illegal_tags[t]+=1
-                    problematic_sens.add(tree.other_features[0].feat_dict["senID"])
+                    problematic_sens.add(tree.sen_id)
 
-            for l in labels:
+            for idx, l in enumerate(labels):
                 label = l.split(":")[0]
                 if label not in univ_dep_labels:
                     illegal_labels[l]+=1
-                    problematic_sens.add(tree.other_features[0].feat_dict["senID"])
-                    # print("Illegal label", l, "in", tree.other_features[0].feat_dict["senID"])
+                    problematic_sens.add(tree.sen_id)
+                    # print("Illegal label", l, "in", tree.sen_id)
+                    if l == "MOS":
+                        print("Illegal label", l, "in", tree.sen_id)
+                # elif "dadeg_r" not in tree.other_features[idx].feat_dict:
+                #     print("No dadeg_r in", label, tree.sen_id) #todo
 
             if not tree.is_valid_tree():
-                problematic_sens.add(tree.other_features[0].feat_dict["senID"])
-                print("Malformed tree in", tree.other_features[0].feat_dict["senID"])
+                problematic_sens.add(tree.sen_id)
+                print("Malformed tree in", tree.sen_id)
 
     if len(illegal_tags)>0:
         print("Illegal tags:", " ".join([t + ":"+str(c) for t, c in illegal_tags.items()]))

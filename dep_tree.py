@@ -379,7 +379,7 @@ class DependencyTree:
         old_par_r = self.labels[parent_idx]
         if not self.other_features[parent_idx].has_feat('dadeg_h'):
             self.other_features[parent_idx].add_feat({'dadeg_h': str(old_par_h)})
-        if not self.other_features[parent_idx].has_feat('dadeg_h'):
+        if not self.other_features[parent_idx].has_feat('dadeg_r'):
             self.other_features[parent_idx].add_feat({'dadeg_r': old_par_r})
 
         self.heads[parent_idx] = self.index[child_idx]
@@ -683,7 +683,7 @@ class DependencyTree:
 
     def zero_level_dep_mapping(self):
         self.find_tag_fixed_groupds()
-        simple_dep_map = {'ROOT': 'root', 'PUNC': 'punct', 'APP': 'appos'}
+        simple_dep_map = {'ROOT': 'root', 'PUNC': 'punct', 'APP': 'appos', "aux":"aux"}
         for l, label in enumerate(self.labels):
             if label in simple_dep_map:
                 self.labels[l] = simple_dep_map[label]
@@ -1147,19 +1147,6 @@ class DependencyTree:
                     self.labels[idx] = 'aux'
                 rol_changed = True
             if old_role == 'OBJ':  # mapping role of OBJ
-                # if self.tags[head_idx]!='VERB':
-                #    print(self.sent_descript)
-                #    print(self.sent_str)
-                # head_obj2_children=self.find_children_with_role(old_head,'OBJ2')
-                # if len(head_obj2_children)>0:
-                # self.labels[head_obj2_children[0]]='obj'
-                #    obj2_new_role=self.map_obj2_role(head_obj2_children[0])
-                #    if obj2_new_role=='':
-                #        obj2_new_role='obj'
-                #    self.node_assign_new_role(head_obj2_children[0],self.reverse_index[old_head],obj2_new_role)    
-                #    self.labels[idx]='iobj'
-                #    rol_changed=True
-                # else:
                 self.labels[idx] = 'obj'
                 rol_changed = True
             if old_role == 'OBJ2':
@@ -1260,7 +1247,9 @@ class DependencyTree:
                 self.labels[idx] = simple_dep_map[old_role]
                 rol_changed = True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+                self.other_features[idx].add_feat({ 'dadeg_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('dadeg_h'):
+                self.other_features[idx].add_feat({'dadeg_h': str(old_head)})
 
     def last_step_changes(self):
         for idx in range(0, len(self.words)):
@@ -1284,8 +1273,10 @@ class DependencyTree:
                         old_ch_h = self.heads[ch]
                         old_ch_r = self.labels[ch]
                         self.heads[ch] = self.index[idx]
+                        if not self.other_features[ch].has_feat('dadeg_h'):
+                            self.other_features[ch].add_feat({'dadeg_h': str(old_ch_h)})
                         if not self.other_features[ch].has_feat('dadeg_r'):
-                            self.other_features[ch].add_feat({'dadeg_h': str(old_ch_h), 'dadeg_r': old_ch_r})
+                            self.other_features[ch].add_feat({'dadeg_r': str(old_ch_r)})
                 rol_changed = True
             if (word == 'نیز' or word == 'هم') and old_pos == 'ADV':
                 head_pos = self.tags[self.reverse_index[old_head]]
