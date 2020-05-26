@@ -1,5 +1,3 @@
-from typing import List
-
 from dep_tree import *
 
 univ_pos_tags = {"ADJ", "ADP", "PUNCT", "ADV", "AUX", "SYM", "INTJ", "CCONJ", "X", "NOUN", "DET", "PROPN", "NUM",
@@ -11,8 +9,8 @@ univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vo
 
 if __name__ == '__main__':
     dadegan_files = ['Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data/train.conll',
-                   'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//dev.conll',
-                   'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//test.conll']
+                     'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//dev.conll',
+                     'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//test.conll']
     for file in dadegan_files:
         trees: List[DependencyTree] = DependencyTree.load_trees_from_conll_file(file)
         for tree in trees:
@@ -33,14 +31,14 @@ if __name__ == '__main__':
 
             for t in tags:
                 if t not in univ_pos_tags:
-                    #print("Illegal tag", t, "in", tree.other_features[0].feat_dict["senID"])
+                    print("Illegal tag", t, "in", tree.other_features[0].feat_dict["senID"])
                     illegal_tags.add(t)
 
             for l in labels:
                 label = l.split(":")[0]
                 if label not in univ_dep_labels:
                     illegal_labels.add(l)
-                    #print("Illegal label", l, "in", tree.other_features[0].feat_dict["senID"])
+                    print("Illegal label", l, "in", tree.other_features[0].feat_dict["senID"])
 
             if not tree.is_valid_tree():
                 print("Malformed tree in", tree.other_features[0].feat_dict["senID"])

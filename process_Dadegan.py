@@ -246,7 +246,7 @@ def detect_verb_polarity(verb, v_lemma, line):
                 # correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif v_lemma == 'کرد#کن' and (
                     verb.startswith('شد') or verb.startswith('شو') or verb.startswith('می‌شد') or verb.startswith(
-                    'می‌شو')):
+                'می‌شو')):
                 polarity = '|polarity=NEG'
                 # correct_v.append(verb_form+'\t'+v_lemma+'\t'+polarity+'\n')
             elif v_lemma in list(except_lemma.keys()):
@@ -486,8 +486,8 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         word_lemma = '#'.join(verb_lemm_parts[1:])
                     elif len(verb_lemm_parts) > 2 and v_first_part[
                                                       v_first_part.startswith(verb_lemm_parts[0] + "ن") and len(
-                                                              verb_lemm_parts[0]) + 1:] in list(
-                            future_base.keys()):  # for verbs like فرانخواهد رسید
+                                                          verb_lemm_parts[0]) + 1:] in list(
+                        future_base.keys()):  # for verbs like فرانخواهد رسید
                         future_form = True
                         polarity = '|polarity=NEG'
                         v_first_part = v_first_part[len(verb_lemm_parts[0]) + 1:]
@@ -532,7 +532,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             v_second_part.startswith('ن') and v_second_part[1:] in list(shod_base.keys())) or (
                             v_second_part.startswith('می') and v_second_part[3:] in list(shod_base.keys())) or (
                             v_second_part.startswith('نمی') and v_second_part[4:] in list(
-                            shod_base.keys())):  # verb is indicative Preterite (tma=GS) in positive or negative form like گفته شدند or گفته نشدند
+                        shod_base.keys())):  # verb is indicative Preterite (tma=GS) in positive or negative form like گفته شدند or گفته نشدند
                         aux_form = True
                         if v_second_part.startswith('نمی'):
                             v_second_part = v_second_part[4:]
@@ -551,7 +551,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                     elif v_second_part in list(shavad_base.keys()) or (
                             v_second_part.startswith('ن') and v_second_part[1:] in list(shavad_base.keys())) or (
                             v_second_part.startswith('ب') and v_second_part[1:] in list(
-                            shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته شوند or گفته نشوند or گفته بشوند
+                        shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته شوند or گفته نشوند or گفته بشوند
                         aux_form = True
                         if v_second_part.startswith('ن'):
                             v_second_part = v_second_part[1:]
@@ -567,7 +567,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         aux_dep_rol += ':pass'
                     elif v_second_part.startswith('می') and v_second_part[3:] in list(shavad_base.keys()) or (
                             v_second_part.startswith('نمی') and v_second_part[4:] in list(
-                            shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته میشوند or گفته نمیشوند
+                        shavad_base.keys())):  # verb is Subjunctive Present (tma=HEL) in positive or negative form like گفته میشوند or گفته نمیشوند
                         aux_form = True
                         if v_second_part.startswith('ن'):
                             v_second_part = v_second_part[4:]  # one more character for '\u200c' or half-space char
@@ -582,7 +582,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         aux_dep_rol += ':pass'  # ؟؟؟
                     elif (v_second_part.startswith('شده') and v_second_part in list(shodeh_base.keys())) or (
                             v_second_part.startswith('نشده') and v_second_part[1:] in list(
-                            shodeh_base.keys())):  # verb is Indicative Perfect (tma=GN) in positive or negative form like گرفته شده‌اند or گرفته نشده‌اند
+                        shodeh_base.keys())):  # verb is Indicative Perfect (tma=GN) in positive or negative form like گرفته شده‌اند or گرفته نشده‌اند
                         shodeh_form = True
                         if v_second_part.startswith('نشده'):
                             v_second_part = v_second_part[1:]

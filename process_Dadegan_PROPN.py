@@ -223,16 +223,28 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
                     6] + old_dadegan_pos + '\t' + '\t'.join(elems[7:-1]) + '\t' + 'spaceAfter=NO' + '\n'
             # lin=elems[1]+'\t'+'\t'.join(elems[2:])+'\n'
         elif old_tok_id == 'M':  # remove M from the begining of the line (token id should be updated but head of parent is fixed)
+
             old_pos = elems[4]
+            old_cpos = elems[5]
+            if old_pos != old_cpos:
+                old_cpos = old_pos + '_' + old_cpos
             dadeg_pos = old_pos
             old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
+            isPROPN = False
+            if elems[-1] == 'isPROPN':
+                isPROPN = True
+            sent_id = extract_sent_id(elems[6])
+            new_pos = convert_pos(old_pos, elems[2].strip(), isPROPN, elems[1], sent_id)
+
             new_token_id = tokens_ids[int(elems[1])]
-            lin = str(new_token_id) + '\t' + '\t'.join(elems[2:6]) + '\t' + elems[
-                6] + old_dadegan_pos + '\t' + '\t'.join(elems[7:]) + '\n'
+            lin = str(new_token_id) + '\t' + '\t'.join(elems[2:4]) + '\t' + new_pos + '\t' + old_cpos + '\t' + elems[
+                6] + old_dadegan_pos + '\t' + '\t'.join(elems[7:]) + '\n'  # add new_pos and old_cpos to this line
             if elems[1] in space_toks and (not contain_noSpace):
                 space_toks.remove(elems[1])
-                lin = str(new_token_id) + '\t' + '\t'.join(elems[2:6]) + '\t' + elems[
-                    6] + old_dadegan_pos + '\t' + '\t'.join(elems[7:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                lin = str(new_token_id) + '\t' + '\t'.join(elems[2:4]) + '\t' + new_pos + '\t' + old_cpos + '\t' + \
+                      elems[
+                          6] + old_dadegan_pos + '\t' + '\t'.join(
+                    elems[7:-1]) + '\t' + 'spaceAfter=NO' + '\n'  # add new_pos and old_cpos to this line
             # lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
         elif old_tok_id == 'Y':  # remove Y from the begining of the line (token id of both previous token and the next one could be updated)
             old_tok_parts = elems[1].split('-')
