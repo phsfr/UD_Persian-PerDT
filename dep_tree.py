@@ -976,7 +976,7 @@ class DependencyTree:
             #        old_hd,old_child_r=self.node_assign_new_role(idx,new_h,'conj')
             #        rol_changed=True
 
-            if old_role == 'NCONJ' or old_role == 'AJCONJ' or old_role == 'AVCONJ' or old_role == 'PCONJ':
+            if old_role in {"NCONJ", "AJCONJ", "AVCONJ", "PCONJ"}:
                 if old_pos == 'CCONJ':
                     child = self.find_all_children(self.index[idx])
                     # if len(child)>1:
