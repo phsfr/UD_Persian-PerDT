@@ -378,7 +378,9 @@ class DependencyTree:
         old_par_h = self.heads[parent_idx]
         old_par_r = self.labels[parent_idx]
         if not self.other_features[parent_idx].has_feat('dadeg_h'):
-            self.other_features[parent_idx].add_feat({'dadeg_h': str(old_par_h), 'dadeg_r': old_par_r})
+            self.other_features[parent_idx].add_feat({'dadeg_h': str(old_par_h)})
+        if not self.other_features[parent_idx].has_feat('dadeg_h'):
+            self.other_features[parent_idx].add_feat({'dadeg_r': old_par_r})
 
         self.heads[parent_idx] = self.index[child_idx]
         self.labels[child_idx] = self.labels[parent_idx]
@@ -682,6 +684,11 @@ class DependencyTree:
     def zero_level_dep_mapping(self):
         self.find_tag_fixed_groupds()
         simple_dep_map = {'ROOT': 'root', 'PUNC': 'punct', 'APP': 'appos'}
+        for l, label in enumerate(self.labels):
+            if label in simple_dep_map:
+                self.labels[l] = simple_dep_map[label]
+                self.other_features[l].add_feat({'dadeg_r': label})
+
         for idx in range(0, len(self.words)):
             old_role = self.labels[idx]
             old_head = self.heads[idx]
@@ -713,11 +720,7 @@ class DependencyTree:
                     rol_changed = True
 
             if old_role == 'MESU':  # 'MESU':'nmod' and change child and parent position; before case because of ...kilogram of ra in sentid=23499
-                # old_head_idx=self.reverse_index[old_head]
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'nmod')
-                # old_head_chs=self.find_all_children(old_head)
-                # for child in old_head_chs:
-                #    self.heads[child]=self.index[idx]
                 rol_changed = True
 
             if dadeg_pos == 'PREP' or dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
@@ -801,18 +804,7 @@ class DependencyTree:
                         # print(child_str+' '+' '.join([self.words[key] for key in children]))
                 rol_changed = True
 
-            # if old_role=='PARCL':
-            #    child=self.find_children_with_role(self.index[idx],'PUNC')
-            #    if len(child)==0:
-            #        child=self.find_children_with_role(self.index[idx],'punct')
-            #    if len(child)==1:
-            #        if self.tags[child[0]]=='CCONJ':
-            #            self.exchange_child_parent(idx,child[0],'PREDEP','VCONJ')
-            #            rol_changed=True
 
-            if old_role in list(simple_dep_map.keys()):
-                self.labels[idx] = simple_dep_map[old_role]
-                rol_changed = True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
