@@ -1352,7 +1352,7 @@ class DependencyTree:
         For roles for which is left behind!
         :return:
         """
-        mapping = {"AJUCL": "advcl", "NCL": "acl"}
+        mapping = {"AJUCL": "advcl", "NCL": "acl", "MOS":"xcomp"}
         for l, label in enumerate(self.labels):
             if label in mapping:
                 self.labels[l] = mapping[label]
