@@ -20,8 +20,9 @@ if __name__ == '__main__':
     input_files = ['Universal_Dadegan_with_DepRels_stanza_merged/train.conllu',
                    'Universal_Dadegan_with_DepRels_stanza_merged/dev.conllu',
                    'Universal_Dadegan_with_DepRels_stanza_merged/test.conllu']
-    illegal_tags = set()
-    illegal_labels = set()
+    illegal_tags = defaultdict(int)
+    illegal_labels = defaultdict(int)
+    problematic_sens = set()
     for file in input_files:
         trees: List[DependencyTree] = DependencyTree.load_trees_from_conllu_file(file)
 
@@ -31,17 +32,23 @@ if __name__ == '__main__':
 
             for t in tags:
                 if t not in univ_pos_tags:
-                    print("Illegal tag", t, "in", tree.other_features[0].feat_dict["senID"])
-                    illegal_tags.add(t)
+                    # print("Illegal tag", t, "in", tree.other_features[0].feat_dict["senID"])
+                    illegal_tags[t]+=1
+                    problematic_sens.add(tree.other_features[0].feat_dict["senID"])
 
             for l in labels:
                 label = l.split(":")[0]
                 if label not in univ_dep_labels:
-                    illegal_labels.add(l)
-                    print("Illegal label", l, "in", tree.other_features[0].feat_dict["senID"])
+                    illegal_labels[l]+=1
+                    problematic_sens.add(tree.other_features[0].feat_dict["senID"])
+                    # print("Illegal label", l, "in", tree.other_features[0].feat_dict["senID"])
 
             if not tree.is_valid_tree():
+                problematic_sens.add(tree.other_features[0].feat_dict["senID"])
                 print("Malformed tree in", tree.other_features[0].feat_dict["senID"])
 
-    print("Illegal tags:", " ".join(illegal_tags))
-    print("Illegal labels:", " ".join(illegal_labels))
+    if len(illegal_tags)>0:
+        print("Illegal tags:", " ".join([t + ":"+str(c) for t, c in illegal_tags.items()]))
+    if len(illegal_labels)>0:
+        print("Illegal labels:", " ".join([l + ":"+str(c) for l, c in illegal_labels.items()]))
+    print("Number of wrong sentences", len(problematic_sens))

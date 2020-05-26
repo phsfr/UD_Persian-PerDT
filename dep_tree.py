@@ -1165,16 +1165,17 @@ class DependencyTree:
                 # else:
                 self.node_assign_new_role(idx, self.reverse_index[old_head], obj2_new_role)
                 rol_changed = True
-            if old_role == 'MOZ' or old_role == 'NADV' or old_role == 'COMPPP':
+            if old_role in {"MOZ", "NADV", "COMPPP"}:
                 if old_pos == 'ADV':
                     self.labels[idx] = 'advmod'
                     rol_changed = True
-                elif old_pos == 'NOUN' or old_pos == 'PROPN' or old_pos == 'PRON':
+                elif old_pos in {'NOUN', "PRON", "PROPN"}:
                     self.labels[idx] = 'nmod'
                     rol_changed = True
                 elif old_pos == 'ADJ':
                     self.labels[idx] = 'amod'
                     rol_changed = True
+
                     # adj_prenums=['تک','نصف','چند','دهمین','آخرین','یکمین','سی‌امین','هفتمین','بیستمین','سومین','پنجمین','شصتمین','نهمین','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
             # if word in adj_prenums and self.words[idx-1]=='و':
             #    print(self.words[idx-2]+' '+self.words[idx-1]+' '+word+' in sent='+self.sent_descript)
