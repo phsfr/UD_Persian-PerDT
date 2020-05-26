@@ -882,6 +882,9 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                     if prev_tok_form == 'انجام' and cpos == 'PASS' and word_lemma == 'داد#ده':
                         old_dadegan_lem += '|dadeg_lemma=' + word_lemma
                         word_lemma = 'کرد#کن'
+                    if word_lemma in {"بود#باش", "#هست", "#است"}:
+                        elems[3] = "AUX"
+                        elems[4] = "AUX"
                     polarity_v = detect_verb_polarity(word_form, word_lemma, line)
                     line = '\t'.join(elems[:2]) + '\t' + word_lemma + '\t' + '\t'.join(elems[3:5]) + '\t' + elems[
                         5] + polarity_v + old_dadegan_lem + '\t' + '\t'.join(elems[6:]) + '\n'
