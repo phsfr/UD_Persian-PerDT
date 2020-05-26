@@ -10,8 +10,13 @@ class Features:
         feat_spl = feat_str.strip().split('|')
         self.feat_dict = dict()
         for feat in feat_spl:
-            k, v = feat.split('=')
-            self.feat_dict[k] = v
+            try:
+                k, v = feat.split('=')
+                self.feat_dict[k] = v
+            except:
+                # No feature
+                pass
+
 
     def __str__(self):
         return self.feat_str
