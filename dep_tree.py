@@ -239,8 +239,8 @@ class DependencyTree:
         Loads a conll file into a list of DependencyTree object.
         """
         tree_list = list()
-        [tree_list.append(DependencyTree.load_tree_from_conllu_string(tree_str)) for tree_str in
-         open(file_str, 'r', encoding='utf-8').read().strip().split('\n\n')]  # codecs.
+        for tree_str in open(file_str, 'r', encoding='utf-8').read().strip().split('\n\n'):
+            tree_list.append(DependencyTree.load_tree_from_conllu_string(tree_str)) # codecs.
         return tree_list
 
     def conllu_str(self):

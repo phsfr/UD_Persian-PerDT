@@ -423,13 +423,6 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 else:
                     print('Error in punc stack size')
 
-            # elif prev_pos=='PUNC' and prev_tok_form=='"' and len(punc_stack)==0:
-            #    noSpace_current_punct=True
-            # paired=False
-            # if len(punc_stack)==0:
-            #    punc_stack.append(prev_tok_form)
-            #    space_after_toks.append(token_id)
-            #    sent_text=sent_text+word_form
             elif prev_pos == 'PUNC' and prev_tok_form == '"' and len(punc_stack) == 1:
                 sent_text = sent_text + word_form
             elif pos == 'PUNC' and word_form not in punc_attach_after:
