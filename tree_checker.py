@@ -17,9 +17,9 @@ if __name__ == '__main__':
             if not tree.is_valid_tree():
                 print("Malformed Dadegan tree in", tree.sen_id)
 
-    input_files = ['Universal_Dadegan_with_DepRels_stanza_merged/train.conllu',
-                   'Universal_Dadegan_with_DepRels_stanza_merged/dev.conllu',
-                   'Universal_Dadegan_with_DepRels_stanza_merged/test.conllu']
+    input_files = ['final/dadegan-ud-train.conllu',
+                   'final/dadegan-ud-dev.conllu',
+                   'final/dadegan-ud-test.conllu']
     illegal_tags = defaultdict(int)
     illegal_labels = defaultdict(int)
     problematic_sens = set()
@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
             for t in tags:
                 if t not in univ_pos_tags:
-                    # print("Illegal tag", t, "in", tree.sen_id)
+                    print("Illegal tag", t, "in", tree.sen_id)
                     illegal_tags[t] += 1
                     problematic_sens.add(tree.sen_id)
 
@@ -41,11 +41,7 @@ if __name__ == '__main__':
                 if label not in univ_dep_labels:
                     illegal_labels[l] += 1
                     problematic_sens.add(tree.sen_id)
-                    # print("Illegal label", l, "in", tree.sen_id)
-                    if l == "PREDEP":
-                        print("Illegal label", l, "in", tree.sen_id)
-                # elif "dadeg_r" not in tree.other_features[idx].feat_dict:
-                #     print("No dadeg_r in", label, tree.sen_id) #todo
+                    print("Illegal label", l, "in", tree.sen_id)
 
             if not tree.is_valid_tree():
                 problematic_sens.add(tree.sen_id)
@@ -55,4 +51,5 @@ if __name__ == '__main__':
         print("Illegal tags:", " ".join([t + ":" + str(c) for t, c in illegal_tags.items()]))
     if len(illegal_labels) > 0:
         print("Illegal labels:", " ".join([l + ":" + str(c) for l, c in illegal_labels.items()]))
-    print("Number of wrong sentences", len(problematic_sens))
+    if len(problematic_sens) > 0:
+        print("Number of wrong sentences", len(problematic_sens))

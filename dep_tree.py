@@ -2,11 +2,11 @@ import os
 from collections import defaultdict
 from typing import List, Set
 
-
 univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated", "advcl",
                    "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl", "amod", "det", "clf",
                    "case", "conj", "cc", "fixed", "flat", "compound", "list", "parataxis", "orphan", "goeswith",
                    "reparandum", "punct", "root", "dep"}
+
 
 class Features:
     def __init__(self, feat_str):  # process all features in feat_str and put them in dictionary (feat_dict)
@@ -374,16 +374,18 @@ class DependencyTree:
     def exchange_child_parent(self, parent_idx, child_idx, new_rel_par, new_rel_child=None):
         old_child_h = self.heads[child_idx]
         old_child_r = self.labels[child_idx]
-        if not self.other_features[child_idx].has_feat('dadeg_h') and old_child_r.isupper():
-            self.other_features[child_idx].add_feat({'dadeg_h': str(old_child_h), 'dadeg_r': old_child_r})
+        if not self.other_features[child_idx].has_feat('old_h') and old_child_r.isupper():
+            self.other_features[child_idx].add_feat({'old_h': str(old_child_h)})
+        if not self.other_features[child_idx].has_feat('old_r') and old_child_r.isupper():
+            self.other_features[child_idx].add_feat({'old_r': old_child_r})
         self.heads[child_idx] = self.heads[parent_idx]
 
         old_par_h = self.heads[parent_idx]
         old_par_r = self.labels[parent_idx]
-        if not self.other_features[parent_idx].has_feat('dadeg_h'):
-            self.other_features[parent_idx].add_feat({'dadeg_h': str(old_par_h)})
-        if not self.other_features[parent_idx].has_feat('dadeg_r'):
-            self.other_features[parent_idx].add_feat({'dadeg_r': old_par_r})
+        if not self.other_features[parent_idx].has_feat('old_h'):
+            self.other_features[parent_idx].add_feat({'old_h': str(old_par_h)})
+        if not self.other_features[parent_idx].has_feat('old_r'):
+            self.other_features[parent_idx].add_feat({'old_r': old_par_r})
 
         self.heads[parent_idx] = self.index[child_idx]
         self.labels[child_idx] = self.labels[parent_idx]
@@ -411,9 +413,10 @@ class DependencyTree:
                     child] != 'conj':  # checking conj rel for AJUCL mapping after AVCONJ in sent=24269
                     old_child_h = self.heads[child]
                     self.heads[child] = self.index[prd_child[0]]
-                    if not self.other_features[child].has_feat('dadeg_h'):
-                        self.other_features[child].add_feat(
-                            {'dadeg_h': str(old_child_h), 'dadeg_r': self.labels[child]})
+                    if not self.other_features[child].has_feat('old_r'):
+                        self.other_features[child].add_feat({'old_r': self.labels[child]})
+                    if not self.other_features[child].has_feat('old_h'):
+                        self.other_features[child].add_feat({'old_h': str(old_child_h)})
             self.exchange_child_parent(par_idx, prd_child[0], par_new_role, child_new_role)  # 'mark','advcl')
         else:
             # print('Error in processing AJUCL!')
@@ -573,8 +576,10 @@ class DependencyTree:
         except IndexError:
             print('node_idx {} with par_idx {} in sent {}'.format(node_idx, par_idx, self.sent_descript))
         old_role = self.labels[node_idx]
-        if not self.other_features[node_idx].has_feat('dadeg_r'):
-            self.other_features[node_idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+        if not self.other_features[node_idx].has_feat('old_r'):
+            self.other_features[node_idx].add_feat({'old_r': old_role})
+        if not self.other_features[node_idx].has_feat('old_h'):
+            self.other_features[node_idx].add_feat({'old_h': str(old_head)})
         if par_idx == 0:
             par_indx = par_idx
         else:
@@ -665,9 +670,11 @@ class DependencyTree:
                             word == 'بر' and ch1_w == 'روی') or (word == 'جز' and ch1_w == 'با') or (
                             word == 'در' and ch1_w == 'زیر') or (word == 'راجع' and ch1_w == 'به') or (
                             word == 'به' and ch1_w == 'نزد'):
-                        if not self.other_features[children[0]].has_feat('dadeg_r'):
-                            self.other_features[children[0]].add_feat(
-                                {'dadeg_h': str(self.heads[children[0]]), 'dadeg_r': self.labels[children[0]]})
+                        if not self.other_features[children[0]].has_feat('old_r'):
+                            self.other_features[children[0]].add_feat({'old_r': self.labels[children[0]]})
+                        if not self.other_features[children[0]].has_feat('old_h'):
+                            self.other_features[children[0]].add_feat({'old_h': str(self.heads[children[0]])})
+
                         self.labels[children[0]] = 'fixed'
                         ch_ch = self.find_children_with_role(self.index[children[0]], 'POSDEP')
                         if len(ch_ch) == 0:
@@ -681,15 +688,24 @@ class DependencyTree:
                         self.exchange_child_parent(idx, children[0], 'case')
                         rol_changed = True
 
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_r'):
+                self.other_features[idx].add_feat({'old_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_h'):
+                self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def reverse_modal(self):
         for idx in range(0, len(self.words)):
             head_id = self.heads[idx] - 1
-            if head_id>= 0 and self.ftags[head_id] == "V_MODL" and self.tags[idx] in {"AUX", "VERB"}:
+            if head_id >= 0 and self.ftags[head_id] == "V_MODL" and self.tags[idx] in {"AUX", "VERB"}:
+                for ch in self.children[head_id + 1]:
+                    ch_id = ch - 1
+                    if ch_id != idx:
+                        self.heads[ch_id] = idx + 1
+                        if not self.other_features[ch_id].has_feat('old_h'):
+                            self.other_features[ch_id].add_feat({'old_h': str(idx + 1)})
                 self.tags[head_id] = "AUX"
                 self.exchange_child_parent(head_id, idx, 'aux')
+                self.rebuild_children()
 
     def zero_level_dep_mapping(self):
         self.find_tag_fixed_groupds()
@@ -697,7 +713,7 @@ class DependencyTree:
         for l, label in enumerate(self.labels):
             if label in simple_dep_map:
                 self.labels[l] = simple_dep_map[label]
-                self.other_features[l].add_feat({'dadeg_r': label})
+                self.other_features[l].add_feat({'old_r': label})
 
         for idx in range(0, len(self.words)):
             old_role = self.labels[idx]
@@ -720,8 +736,10 @@ class DependencyTree:
                         old_ch_h = self.heads[ch]
                         old_ch_r = self.labels[ch]
                         self.heads[ch] = self.index[pre_pos_child[0]]
-                        if not self.other_features[ch].has_feat('dadeg_r'):
-                            self.other_features[ch].add_feat({'dadeg_h': str(old_ch_h), 'dadeg_r': old_ch_r})
+                        if not self.other_features[ch].has_feat('old_r'):
+                            self.other_features[ch].add_feat({'old_r': old_ch_r})
+                        if not self.other_features[ch].has_feat('old_h'):
+                            self.other_features[ch].add_feat({'old_h': str(old_ch_h)})
 
                     vconj_child = [key for key, val in enumerate(self.heads) if
                                    val == self.index[pre_pos_child[0]] and self.labels[key] == 'VCONJ']
@@ -735,11 +753,11 @@ class DependencyTree:
                 rol_changed = True
 
             if old_role == 'COMPPP':
-                if len(self.children[idx+1]) == 0:
+                if len(self.children[idx + 1]) == 0:
                     self.labels[idx] = "fixed"
-                elif len(self.children[idx+1]) == 1:
+                elif len(self.children[idx + 1]) == 1:
                     head_id = self.heads[idx]
-                    dep_id = list(self.children[idx+1])[0] - 1
+                    dep_id = list(self.children[idx + 1])[0] - 1
                     old_r = self.labels[dep_id]
 
                     self.heads[dep_id] = head_id
@@ -747,10 +765,10 @@ class DependencyTree:
                     self.labels[idx] = "case"
                     self.heads[idx] = dep_id + 1
 
-                    if not self.other_features[dep_id].has_feat('dadeg_h'):
-                        self.other_features[dep_id].add_feat({'dadeg_h': str(idx+1)})
-                    if not self.other_features[dep_id].has_feat('dadeg_r'):
-                        self.other_features[dep_id].add_feat({'dadeg_r': old_r})
+                    if not self.other_features[dep_id].has_feat('old_h'):
+                        self.other_features[dep_id].add_feat({'old_h': str(idx + 1)})
+                    if not self.other_features[dep_id].has_feat('old_r'):
+                        self.other_features[dep_id].add_feat({'old_r': old_r})
                 else:
                     raise Exception("SHOULD NOT HAVE MORE THAN ONE DEP!")
                 rol_changed = True
@@ -759,15 +777,17 @@ class DependencyTree:
                 children = self.find_all_children(self.index[idx], ['PUNCT'])  # because of را in sent=44271
                 if len(children) == 2:
                     if self.words[children[0]] == 'هم' or self.words[children[0]] == 'نیز':
-                        if not self.other_features[children[0]].has_feat('dadeg_r'):
-                            self.other_features[children[0]].add_feat(
-                                {'dadeg_h': str(self.heads[children[0]]), 'dadeg_r': self.labels[children[0]]})
+                        if not self.other_features[children[0]].has_feat('old_r'):
+                            self.other_features[children[0]].add_feat({'old_r': self.labels[children[0]]})
+                        if not self.other_features[children[0]].has_feat('old_h'):
+                            self.other_features[children[0]].add_feat({'old_h': str(self.heads[children[0]])})
                         self.heads[children[0]] = self.index[children[1]]
                         children.remove(children[0])
                     elif self.words[children[1]] == 'هم' or self.words[children[1]] == 'نیز':
-                        if not self.other_features[children[1]].has_feat('dadeg_r'):
-                            self.other_features[children[1]].add_feat(
-                                {'dadeg_h': str(self.heads[children[1]]), 'dadeg_r': self.labels[children[1]]})
+                        if not self.other_features[children[1]].has_feat('old_r'):
+                            self.other_features[children[1]].add_feat({'old_r': self.labels[children[1]]})
+                            if not self.other_features[children[1]].has_feat('old_h'):
+                                self.other_features[children[1]].add_feat({'old_h': str(self.heads[children[1]])})
                         self.heads[children[1]] = self.index[children[0]]
                         children.remove(children[1])
                     # print('ham in group with len {} child {} in sent {}'.format(len(children),self.words[children[1]],self.sent_descript))
@@ -781,9 +801,10 @@ class DependencyTree:
                             word == 'بر' and ch1_w == 'روی') or (word == 'جز' and ch1_w == 'با') or (
                             word == 'در' and ch1_w == 'زیر') or (word == 'راجع' and ch1_w == 'به') or (
                             word == 'به' and ch1_w == 'نزد'):
-                        if not self.other_features[children[0]].has_feat('dadeg_r'):
-                            self.other_features[children[0]].add_feat(
-                                {'dadeg_h': str(self.heads[children[0]]), 'dadeg_r': self.labels[children[0]]})
+                        if not self.other_features[children[0]].has_feat('old_r'):
+                            self.other_features[children[0]].add_feat({'old_r': self.labels[children[0]]})
+                        if not self.other_features[children[0]].has_feat('old_h'):
+                            self.other_features[children[0]].add_feat({'old_h': str(self.heads[children[0]])})
                         self.labels[children[0]] = 'fixed'
                         ch_ch = self.find_children_with_role(self.index[children[0]], 'POSDEP')
                         if len(ch_ch) == 0:
@@ -805,8 +826,10 @@ class DependencyTree:
                             self.labels[children[0]] = 'fixed'
                             #    self.exchange_child_parent(idx,children[0],'fixed')
                             self.exchange_child_parent(idx, children[1], 'case')
-                            if not self.other_features[children[0]].has_feat('dadeg_r'):
-                                self.other_features[children[0]].add_feat({'dadeg_h': str(idx), 'dadeg_r': ch1_rol})
+                            if not self.other_features[children[0]].has_feat('old_r'):
+                                self.other_features[children[0]].add_feat({'old_r': ch1_rol})
+                            if not self.other_features[children[0]].has_feat('old_h'):
+                                self.other_features[children[0]].add_feat({'old_h': str(idx)})
                             should_change = True
                         else:
                             if ch1_rol == 'POSDEP' and ch2_rol == 'PCONJ':
@@ -822,9 +845,10 @@ class DependencyTree:
                                 old_ch_head = self.heads[new_child_idx]
                                 old_ch_rol = self.labels[new_child_idx]
                                 self.heads[new_child_idx] = self.index[new_par_idx]
-                                if not self.other_features[new_child_idx].has_feat('dadeg_r'):
-                                    self.other_features[new_child_idx].add_feat(
-                                        {'dadeg_h': str(old_ch_head), 'dadeg_r': old_ch_rol})
+                                if not self.other_features[new_child_idx].has_feat('old_r'):
+                                    self.other_features[new_child_idx].add_feat({'old_r': old_ch_rol})
+                                if not self.other_features[new_child_idx].has_feat('old_h'):
+                                    self.other_features[new_child_idx].add_feat({'old_h': str(old_ch_head)})
                     if not should_change and len(children) > 0:
                         child_str = 'idx: ' + str(self.index[idx])
                         child_s = ''
@@ -833,11 +857,13 @@ class DependencyTree:
                                 child] + ' in sent=' + str(self.sen_id)
                         children.append(idx)
                         children.sort()
-                        # print(child_str+' '+' '.join([self.words[key] for key in children]))
                 rol_changed = True
 
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+            if rol_changed:
+                if not self.other_features[idx].has_feat('old_r'):
+                    self.other_features[idx].add_feat({'old_r': old_role})
+                if not self.other_features[idx].has_feat('old_h'):
+                    self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def convert_PARCL_rel(self):
         for idx in range(0, len(self.words)):
@@ -866,30 +892,15 @@ class DependencyTree:
                         rol_changed = True
                     else:
                         self.node_assign_new_role(idx, self.reverse_index[old_head], 'parataxis')
-                        # paratax_child=self.find_children_with_role(old_head,'parataxis')
-                        # asigned_to_h=False
-                        # h_h_idx=self.heads[old_head]
-                        # if h_h_idx!=0:
-                        # if self.labels[self.reverse_index[old_head]]=='parataxis':
-                        #        self.node_assign_new_role(idx,self.reverse_index[h_h_idx],'parataxis')
-                        #        asigned_to_h=True
-                        # if not asigned_to_h:
-                        #    self.exchange_child_parent(self.reverse_index[old_head],idx,'parataxis')
                         rol_changed = True
                 else:
                     self.node_assign_new_role(idx, self.reverse_index[old_head], 'parataxis')
-                    # paratax_child=self.find_children_with_role(old_head,'parataxis')
-                    # asigned_to_h=False
-                    # h_h_idx=self.heads[old_head]
-                    # if h_h_idx!=0:
-                    # if self.labels[self.reverse_index[old_head]]=='parataxis':
-                    #        self.node_assign_new_role(idx,self.reverse_index[h_h_idx],'parataxis')
-                    #        asigned_to_h=True
-                    # if not asigned_to_h:
-                    #    self.exchange_child_parent(self.reverse_index[old_head],idx,'parataxis')
                     rol_changed = True
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+
+            if rol_changed and not self.other_features[idx].has_feat('old_r'):
+                self.other_features[idx].add_feat({'old_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_h'):
+                self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def first_level_dep_mapping(self):
         for idx in range(0, len(self.words)):
@@ -920,9 +931,10 @@ class DependencyTree:
                             self.heads[_children[0]] = self.heads[head_idx]
                         else:
                             self.heads[_children[0]] = old_head
-                        if not self.other_features[_children[0]].has_feat('dadeg_r'):
-                            self.other_features[_children[0]].add_feat(
-                                {'dadeg_h': str(old_child_h), 'dadeg_r': old_child_role})
+                        if not self.other_features[_children[0]].has_feat('old_r'):
+                            self.other_features[_children[0]].add_feat({'old_r': old_child_role})
+                        if not self.other_features[_children[0]].has_feat('old_h'):
+                            self.other_features[_children[0]].add_feat({'old_h': str(old_child_h)})
                 else:
                     head_idx = self.reverse_index[old_head]
                     head_role = self.labels[head_idx]
@@ -975,8 +987,10 @@ class DependencyTree:
                 self.labels[idx] = 'flat'
                 rol_changed = True
 
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_r'):
+                self.other_features[idx].add_feat({'old_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_h'):
+                self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def second_level_dep_mapping(self):
         for idx in range(0, len(self.words)):
@@ -1038,8 +1052,10 @@ class DependencyTree:
             if old_role == 'NCL':
                 self.exchange_pars_with_PRD(idx, 'mark', 'acl')
                 rol_changed = True
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_r'):
+                self.other_features[idx].add_feat({'old_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_h'):
+                self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def third_level_dep_mapping(self):
         # TAM is third level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
@@ -1185,10 +1201,10 @@ class DependencyTree:
             if old_role in list(simple_dep_map.keys()):
                 self.labels[idx] = simple_dep_map[old_role]
                 rol_changed = True
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_r': old_role})
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_h'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head)})
+            if rol_changed and not self.other_features[idx].has_feat('old_r'):
+                self.other_features[idx].add_feat({'old_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_h'):
+                self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def last_step_changes(self):
         for idx in range(0, len(self.words)):
@@ -1207,10 +1223,10 @@ class DependencyTree:
                         old_ch_h = self.heads[ch]
                         old_ch_r = self.labels[ch]
                         self.heads[ch] = self.index[idx]
-                        if not self.other_features[ch].has_feat('dadeg_h'):
-                            self.other_features[ch].add_feat({'dadeg_h': str(old_ch_h)})
-                        if not self.other_features[ch].has_feat('dadeg_r'):
-                            self.other_features[ch].add_feat({'dadeg_r': str(old_ch_r)})
+                        if not self.other_features[ch].has_feat('old_h'):
+                            self.other_features[ch].add_feat({'old_h': str(old_ch_h)})
+                        if not self.other_features[ch].has_feat('old_r'):
+                            self.other_features[ch].add_feat({'old_r': str(old_ch_r)})
                 rol_changed = True
             if (word == 'نیز' or word == 'هم') and old_pos == 'ADV':
                 head_pos = self.tags[self.reverse_index[old_head]]
@@ -1268,9 +1284,10 @@ class DependencyTree:
                 self.labels[idx] = 'compound'
                 self.heads[idx] = self.index[idx - 1]
                 rol_changed = True
-                # print('convert num group in compound in sent {}'.format(self.sen_id))
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_r'):
+                self.other_features[idx].add_feat({'old_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_h'):
+                self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def final_refinement(self):
         """
@@ -1280,7 +1297,7 @@ class DependencyTree:
         mapping = {"AJUCL": "advcl", "NCL": "acl", "MOS": "xcomp", "PRD": "ccomp"}
 
         for l, label in enumerate(self.labels):
-            changed  = False
+            changed = False
             if label in mapping:
                 self.labels[l] = mapping[label]
                 changed = True
@@ -1289,10 +1306,10 @@ class DependencyTree:
                 self.labels[l] = "cc"
                 changed = True
             elif label == "VCONJ" and self.tags[l] == "CCONJ":
-                head_id = self.heads[l] -1
-                if len(self.children[head_id +1])>1:
+                head_id = self.heads[l] - 1
+                if len(self.children[head_id + 1]) > 1:
                     # This is a heuristic and is not necessarily correct! (#todo)
-                    last_child = list(sorted(self.children[head_id +1]))[0]
+                    last_child = list(sorted(self.children[head_id + 1]))[0]
                     if last_child - 1 > l:
                         self.labels[l] = "cc"
                         self.heads[l] = last_child
@@ -1309,7 +1326,7 @@ class DependencyTree:
             if label == "POSDEP":
                 if self.words[l] in {"نیز", "هم"}:
                     self.labels[l] = "dep"
-                elif self.tags[l] == "ADP" and self.tags[self.heads[l]-1]=="ADP":
+                elif self.tags[l] == "ADP" and self.tags[self.heads[l] - 1] == "ADP":
                     self.labels[l] = "fixed"
                 elif self.tags[l] == "NUM":
                     self.labels[l] = "nummod"
@@ -1318,11 +1335,11 @@ class DependencyTree:
                 changed = True
 
             if not changed and label.split(":")[0] not in univ_dep_labels:
-                self.labels[l] = "dep" #todo #Unresolved
+                self.labels[l] = "dep"  # todo #Unresolved
                 changed = True
 
-            if changed and not self.other_features[l].has_feat('dadeg_r'):
-                self.other_features[l].add_feat({'dadeg_r': label})
+            if changed and not self.other_features[l].has_feat('old_r'):
+                self.other_features[l].add_feat({'old_r': label})
 
     def convert_num_groups(self):
         all_num_group = self.find_compound_num_groups()
@@ -1338,8 +1355,8 @@ class DependencyTree:
                 pos_num = self.tags[num_idx]
                 # if self.other_features[num_idx].feat_dict['senID']=='23604':
                 #    print('word pos is: {} {}'.format(pos_num,self.words[num_idx]))
-                if not self.other_features[num_idx].has_feat('dadeg_r'):
-                    self.other_features[num_idx].add_feat({'dadeg_h': str(old_num_h), 'dadeg_r': old_num_r})
+                if not self.other_features[num_idx].has_feat('old_r'):
+                    self.other_features[num_idx].add_feat({'old_h': str(old_num_h), 'old_r': old_num_r})
                 if self.reverse_index[old_num_h] not in num_group:
                     group_h = old_num_h
                     group_h_rel = old_num_r
@@ -1366,12 +1383,10 @@ class DependencyTree:
                 old_h = self.heads[num_group[0]]
                 self.labels[num_group[0]] = group_h_rel
                 self.heads[num_group[0]] = group_h
-                if not self.other_features[num_group[0]].has_feat('dadeg_r'):
-                    self.other_features[num_group[0]].add_feat({'dadeg_h': str(old_h), 'dadeg_r': old_r})
-                # rol_changed=True
-            # print('convert num group {} in sent {}'.format(group_str,self.sen_id))
-            # elif self.reverse_index[self.heads[num_group[0]]] in num_group:
-            #    print('ERROR: in num convertion no head found in group {} sent {}'.format(group_str,self.sen_id))
+                if not self.other_features[num_group[0]].has_feat('old_r'):
+                    self.other_features[num_group[0]].add_feat({'old_r': old_r})
+                if not self.other_features[num_group[0]].has_feat('old_h'):
+                    self.other_features[num_group[0]].add_feat({'old_h': str(old_h)})
 
     def convert_name_groups(self):
         all_name_group = self.find_name_groups()
@@ -1384,38 +1399,27 @@ class DependencyTree:
                 group_str += ' ' + self.words[name_idx]
                 old_nam_h = self.heads[name_idx]
                 old_nam_r = self.labels[name_idx]
-                pos_nam = self.tags[name_idx]
-                # if self.other_features[num_idx].feat_dict['senID']=='23604':
-                #    print('word pos is: {} {}'.format(pos_num,self.words[num_idx]))
-                if not self.other_features[name_idx].has_feat('dadeg_r'):
-                    self.other_features[name_idx].add_feat({'dadeg_h': str(old_nam_h), 'dadeg_r': old_nam_r})
+                if not self.other_features[name_idx].has_feat('old_r'):
+                    self.other_features[name_idx].add_feat({'old_r': old_nam_r})
+                if not self.other_features[name_idx].has_feat('old_h'):
+                    self.other_features[name_idx].add_feat({'old_h': str(old_nam_h)})
                 old_nam_h_idx = -1
                 if old_nam_h != 0:
                     old_nam_h_idx = self.reverse_index[old_nam_h]
                 if old_nam_h_idx not in name_group:
                     group_h = old_nam_h
                     group_h_rel = old_nam_r
-                    # head_child=self.find_all_children(self.index[name_idx])
-                    # if self.other_features[num_idx].feat_dict['senID']=='23591':
-                    #    print(,head_child)
-                    # for child in head_child:
-                    #    self.heads[child]=self.index[name_group[0]]
                 self.labels[name_idx] = 'flat:name'
                 self.heads[name_idx] = self.index[name_group[0]]
-                # num_child=self.find_all_children(self.index[num_idx])
-                # for child in num_child:
-                #    self.heads[child]=num_group[0]
             if group_h != -1:
                 old_r = self.labels[name_group[0]]
                 old_h = self.heads[name_group[0]]
                 self.labels[name_group[0]] = group_h_rel
                 self.heads[name_group[0]] = group_h
-                if not self.other_features[name_group[0]].has_feat('dadeg_r'):
-                    self.other_features[name_group[0]].add_feat({'dadeg_h': str(old_h), 'dadeg_r': old_r})
-                # rol_changed=True
-            # print('convert name group {} in sent {}'.format(group_str,self.sen_id))
-            # elif self.reverse_index[self.heads[num_group[0]]] in num_group:
-            #    print('ERROR: in num convertion no head found in group {} sent {}'.format(group_str,self.sen_id))
+                if not self.other_features[name_group[0]].has_feat('old_r'):
+                    self.other_features[name_group[0]].add_feat({'old_r': old_r})
+                if not self.other_features[name_group[0]].has_feat('old_h'):
+                    self.other_features[name_group[0]].add_feat({'old_h': str(old_h)})
 
     def convert_PARCL_rel_v2(self):
         parcl_nums = self.find_all_rels('PARCL')
@@ -1455,17 +1459,19 @@ class DependencyTree:
                                 old_punc_h = self.heads[punct_child[0]]
                                 self.labels[punct_child[0]] = 'cc'
                                 self.heads[punct_child[0]] = self.index[conj_after_parcl]
-                                if not self.other_features[punct_child[0]].has_feat('dadeg_r'):
-                                    self.other_features[punct_child[0]].add_feat(
-                                        {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                                if not self.other_features[punct_child[0]].has_feat('old_r'):
+                                    self.other_features[punct_child[0]].add_feat({'old_r': old_punc_r})
+                                if not self.other_features[punct_child[0]].has_feat('old_h'):
+                                    self.other_features[punct_child[0]].add_feat({'old_h': str(old_punc_h)})
                         else:
                             old_punc_r = self.labels[punct_child[0]]
                             old_punc_h = self.heads[punct_child[0]]
                             self.labels[punct_child[0]] = 'cc'
                             self.heads[punct_child[0]] = old_head
-                            if not self.other_features[punct_child[0]].has_feat('dadeg_r'):
-                                self.other_features[punct_child[0]].add_feat(
-                                    {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                            if not self.other_features[punct_child[0]].has_feat('old_r'):
+                                self.other_features[punct_child[0]].add_feat({'old_r': old_punc_r})
+                            if not self.other_features[punct_child[0]].has_feat('old_h'):
+                                self.other_features[punct_child[0]].add_feat({'old_h': str(old_punc_h)})
                         if len(other_parcl_of_head) > 0:
                             if self.index[other_parcl_of_head[0]] < self.heads[punct_child[0]]:
                                 self.heads[punct_child[0]] = self.index[other_parcl_of_head[0]]
@@ -1487,17 +1493,19 @@ class DependencyTree:
                                 old_punc_h = self.heads[cconj_child[0]]
                                 self.labels[cconj_child[0]] = 'cc'
                                 self.heads[cconj_child[0]] = self.index[conj_after_parcl]
-                                if not self.other_features[cconj_child[0]].has_feat('dadeg_r'):
-                                    self.other_features[cconj_child[0]].add_feat(
-                                        {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                                if not self.other_features[punct_child[0]].has_feat('old_r'):
+                                    self.other_features[punct_child[0]].add_feat({'old_r': old_punc_r})
+                                if not self.other_features[punct_child[0]].has_feat('old_h'):
+                                    self.other_features[punct_child[0]].add_feat({'old_h': str(old_punc_h)})
                             else:
                                 old_punc_r = self.labels[cconj_child[0]]
                                 old_punc_h = self.heads[cconj_child[0]]
                                 self.labels[cconj_child[0]] = 'cc'
                                 self.heads[cconj_child[0]] = old_head
-                                if not self.other_features[cconj_child[0]].has_feat('dadeg_r'):
-                                    self.other_features[cconj_child[0]].add_feat(
-                                        {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                                if not self.other_features[punct_child[0]].has_feat('old_r'):
+                                    self.other_features[punct_child[0]].add_feat({'old_r': old_punc_r})
+                                if not self.other_features[punct_child[0]].has_feat('old_h'):
+                                    self.other_features[punct_child[0]].add_feat({'old_h': str(old_punc_h)})
                         self.exchange_child_parent(self.reverse_index[old_head], idx, 'conj')
 
                     else:
@@ -1516,8 +1524,10 @@ class DependencyTree:
                             else:
                                 self.node_assign_new_role(idx, self.reverse_index[old_head], 'parataxis')
                     rol_changed = True
-            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
-                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_r'):
+                self.other_features[idx].add_feat({'old_r': old_role})
+            if rol_changed and not self.other_features[idx].has_feat('old_h'):
+                self.other_features[idx].add_feat({'old_h': str(old_head)})
 
     def convert_tree(self):
         self.reverse_modal()
