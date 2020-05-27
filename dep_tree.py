@@ -866,6 +866,85 @@ class DependencyTree:
             old_pos = self.tags[idx]
             word = self.words[idx]
             rol_changed = False
+
+
+            if old_role == 'VCONJ':  # this mapping should take place before که with predicate (VCL) cause #sentID=23816
+                if self.sen_id == 23530:
+                    print("HI!")
+                if old_pos == 'CCONJ':
+                    verb_child = [key for key, val in enumerate(self.heads) if
+                                  val == self.index[idx] and self.tags[key] == 'VERB' and self.labels[key] == 'POSDEP']
+                    # child=self.find_all_children(self.index[idx])
+                    # if len(child)>1:
+                    #    print('ERROR in NCONJ: child of CCONJ is more than ONE!!! in sent {}'.format(self.sent_descript))
+                    if len(verb_child) > 0:
+                        self.heads[idx] = self.index[verb_child[0]]
+                        self.labels[idx] = 'cc'
+                        old_child_role = self.labels[verb_child[0]]
+                        old_child_h = self.heads[verb_child[0]]
+                        self.labels[verb_child[0]] = 'conj'
+                        head_idx = self.reverse_index[old_head]
+                        head_role = self.labels[head_idx]
+                        # if self.tags[child[0]]=='NUM' and self.tags[head_idx]=='NUM' and word=='و': #like هفتصد و سی و دو. word (CCONJ) only should be و to avoid mistakes: یک یا دو
+                        #    self.labels[child[0]]='flat:num'#'compound:num'
+                        #    self.labels[idx]='flat:num'
+                        #    self.heads[idx]=old_head
+                        if head_role == 'conj':
+                            self.heads[verb_child[0]] = self.heads[head_idx]
+
+                            # if old_role=='AJCONJ':
+                            #    print('conj head for AJCONJ {}'.format(self.sent_descript))
+                        else:
+                            self.heads[verb_child[0]] = old_head
+                        if not self.other_features[verb_child[0]].has_feat('dadeg_r'):
+                            self.other_features[verb_child[0]].add_feat(
+                                {'dadeg_h': str(old_child_h), 'dadeg_r': old_child_role})
+                    # else:
+                    #    print('child {} in {}'.format(child,self.sent_descript))
+                else:
+                    head_idx = self.reverse_index[old_head]
+                    head_role = self.labels[head_idx]
+                    # if self.sen_id=='24269':
+                    #    print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
+                    if head_role == 'conj':
+                        self.heads[idx] = self.heads[head_idx]
+                        self.labels[idx] = 'conj'
+                    else:
+                        self.labels[idx] = 'conj'
+                    # if self.sen_id=='24269':
+                    #    print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
+                rol_changed = True
+
+            if old_role in {"NCONJ", "AJCONJ", "AVCONJ", "PCONJ"}:
+                if old_pos == 'CCONJ':
+                    child = self.find_all_children(self.index[idx])
+                    # if len(child)>1:
+                    #    print('ERROR in NCONJ: child of CCONJ is more than ONE!!! in sent {}'.format(self.sent_descript))
+                    if len(child) > 0:
+                        self.heads[idx] = self.index[child[0]]
+                        self.labels[idx] = 'cc'
+                        old_child_role = self.labels[child[0]]
+                        old_child_h = self.heads[child[0]]
+                        self.labels[child[0]] = 'conj'
+                        head_idx = self.reverse_index[old_head]
+                        head_role = self.labels[head_idx]
+                        if head_role == 'conj':
+                            self.heads[child[0]] = self.heads[head_idx]
+                        else:
+                            self.heads[child[0]] = old_head
+                        if not self.other_features[child[0]].has_feat('dadeg_r'):
+                            self.other_features[child[0]].add_feat(
+                                {'dadeg_h': str(old_child_h), 'dadeg_r': old_child_role})
+                else:
+                    head_idx = self.reverse_index[old_head]
+                    head_role = self.labels[head_idx]
+                    if head_role == 'conj':
+                        self.heads[idx] = self.heads[head_idx]
+                        self.labels[idx] = 'conj'
+                    else:
+                        self.labels[idx] = 'conj'
+                rol_changed = True
+
             if old_role == 'VCL':  # rule to find and tag csubj roles
                 if self.tags[self.reverse_index[old_head]] in {'VERB', "AUX"}:
                     mos_child = self.find_children_with_role(old_head, 'MOS')
@@ -908,80 +987,6 @@ class DependencyTree:
                 self.labels[idx] = 'flat'
                 rol_changed = True
 
-            if old_role == 'VCONJ':  # this mapping should take place before که with predicate (VCL) cause #sentID=23816
-                if old_pos == 'CCONJ':
-                    verb_child = [key for key, val in enumerate(self.heads) if
-                                  val == self.index[idx] and self.tags[key] == 'VERB' and self.labels[key] == 'POSDEP']
-                    # child=self.find_all_children(self.index[idx])
-                    # if len(child)>1:
-                    #    print('ERROR in NCONJ: child of CCONJ is more than ONE!!! in sent {}'.format(self.sent_descript))                  
-                    if len(verb_child) > 0:
-                        self.heads[idx] = self.index[verb_child[0]]
-                        self.labels[idx] = 'cc'
-                        old_child_role = self.labels[verb_child[0]]
-                        old_child_h = self.heads[verb_child[0]]
-                        self.labels[verb_child[0]] = 'conj'
-                        head_idx = self.reverse_index[old_head]
-                        head_role = self.labels[head_idx]
-                        # if self.tags[child[0]]=='NUM' and self.tags[head_idx]=='NUM' and word=='و': #like هفتصد و سی و دو. word (CCONJ) only should be و to avoid mistakes: یک یا دو
-                        #    self.labels[child[0]]='flat:num'#'compound:num'
-                        #    self.labels[idx]='flat:num'
-                        #    self.heads[idx]=old_head
-                        if head_role == 'conj':
-                            self.heads[verb_child[0]] = self.heads[head_idx]
-
-                            # if old_role=='AJCONJ':
-                            #    print('conj head for AJCONJ {}'.format(self.sent_descript)) 
-                        else:
-                            self.heads[verb_child[0]] = old_head
-                        if not self.other_features[verb_child[0]].has_feat('dadeg_r'):
-                            self.other_features[verb_child[0]].add_feat(
-                                {'dadeg_h': str(old_child_h), 'dadeg_r': old_child_role})
-                    # else:
-                    #    print('child {} in {}'.format(child,self.sent_descript))  
-                else:
-                    head_idx = self.reverse_index[old_head]
-                    head_role = self.labels[head_idx]
-                    # if self.sen_id=='24269':
-                    #    print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
-                    if head_role == 'conj':
-                        self.heads[idx] = self.heads[head_idx]
-                        self.labels[idx] = 'conj'
-                    else:
-                        self.labels[idx] = 'conj'
-                    # if self.sen_id=='24269':
-                    #    print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
-                rol_changed = True
-
-            if old_role in {"NCONJ", "AJCONJ", "AVCONJ", "PCONJ"}:
-                if old_pos == 'CCONJ':
-                    child = self.find_all_children(self.index[idx])
-                    # if len(child)>1:
-                    #    print('ERROR in NCONJ: child of CCONJ is more than ONE!!! in sent {}'.format(self.sent_descript))                  
-                    if len(child) > 0:
-                        self.heads[idx] = self.index[child[0]]
-                        self.labels[idx] = 'cc'
-                        old_child_role = self.labels[child[0]]
-                        old_child_h = self.heads[child[0]]
-                        self.labels[child[0]] = 'conj'
-                        head_idx = self.reverse_index[old_head]
-                        head_role = self.labels[head_idx]
-                        if head_role == 'conj':
-                            self.heads[child[0]] = self.heads[head_idx]
-                        else:
-                            self.heads[child[0]] = old_head
-                        if not self.other_features[child[0]].has_feat('dadeg_r'):
-                            self.other_features[child[0]].add_feat(
-                                {'dadeg_h': str(old_child_h), 'dadeg_r': old_child_role})
-                else:
-                    head_idx = self.reverse_index[old_head]
-                    head_role = self.labels[head_idx]
-                    if head_role == 'conj':
-                        self.heads[idx] = self.heads[head_idx]
-                        self.labels[idx] = 'conj'
-                    else:
-                        self.labels[idx] = 'conj'
-                rol_changed = True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
@@ -1279,7 +1284,7 @@ class DependencyTree:
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
-    def final_refinment(self):
+    def final_refinement(self):
         """
         For roles for which is left behind!
         :return:
@@ -1487,6 +1492,8 @@ class DependencyTree:
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
     def convert_tree(self):
+        if self.sen_id == 23530:
+            print("HI!")
         self.zero_level_dep_mapping()
         # self.convert_PARCL_rel()
         self.first_level_dep_mapping()
@@ -1498,7 +1505,7 @@ class DependencyTree:
         self.second_level_dep_mapping()
         self.third_level_dep_mapping()
         self.last_step_changes()
-        self.final_refinment()
+        self.final_refinement()
 
     @staticmethod
     def fix_mwe_entries(tree_list):

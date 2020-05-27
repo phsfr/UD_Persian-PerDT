@@ -151,9 +151,22 @@ if __name__ == '__main__':
                                 # Change the head for SBJ/AJUCL/ADV
                                 tree.heads[dep] = idx + 1
 
+        # Fixing wrong ROOTs due to wrong VCONJ rotation.
+        # sen_changed = set()
+        # for tree in tree_list:
+        #     for idx, (label, head) in enumerate(zip(tree.labels, tree.heads)):
+        #         if label == "ROOT" and head != 0:
+        #             tree.labels[idx] = "VCL"
+        #             sen_changed.add(tree.sen_id)
+        # print(len(sen_changed))
+
+
         for tree in tree_list:
             if not tree.is_valid_tree():
                 print("Malformed Dadegan tree in", inp_f, tree.other_features[0].feat_dict["senID"])
+            for idx, (label, head) in enumerate(zip(tree.labels, tree.heads)):
+                if label == "ROOT" and head != 0:
+                    print("Error in root", tree.sen_id)
         DependencyTree.write_to_conll(tree_list, output_files[f_idx])
 
 print("\n".join(changed_set))

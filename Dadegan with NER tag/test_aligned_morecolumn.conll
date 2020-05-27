@@ -79,7 +79,7 @@
 2	را	را	POSTP	POSTP	attachment=ISO|senID=39917	5	OBJ	_	_
 3	قبلاً	قبلاً	ADV	SADV	attachment=ISO|senID=39917	4	ADV	_	_
 4	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=39917	0	ROOT	_	_
-5	شست	شست#شو	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39917	4	ROOT	_	_
+5	شست	شست#شو	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39917	4	VCL	_	_
 6	،	،	PUNC	PUNC	attachment=ISO|senID=39917	5	PUNC	_	_
 7	پوست	پوست	N	IANM	attachment=ISO|number=SING|senID=39917	8	NVE	_	_
 8	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39917	5	VCONJ	_	_
@@ -1996,7 +1996,7 @@
 3	به	به	PREP	PREP	attachment=ISO|senID=41139	6	ADV	_	_
 4	دلخواه	دلخواه	N	IANM	attachment=ISO|number=SING|senID=41139	3	POSDEP	_	_
 5	بیعت	بیعت	N	IANM	attachment=ISO|number=SING|senID=41139	6	NVE	_	_
-6	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=41139	1	ROOT	_	_
+6	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=41139	1	VCL	_	_
 7	یا	یا	CONJ	CONJ	attachment=ISO|senID=41139	6	VCONJ	_	_
 8	با	با	PREP	PREP	attachment=ISO|senID=41139	10	NPP	_	_
 9	نادلخواه	نادلخواه	N	ANM	attachment=ISO|number=SING|senID=41139	8	POSDEP	_	_
@@ -2428,7 +2428,7 @@
 8	کنارهٔ	کناره	N	IANM	attachment=ISO|number=SING|senID=41431	11	SBJ	_	_
 9	آنها	آنها	PR	DEMON	attachment=ISO|number=PLUR|senID=41431	8	MOZ	_	_
 10	تخریب	تخریب	N	IANM	attachment=ISO|number=SING|senID=41431	11	NVE	_	_
-11	شود	شد#شو	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=41431	3	ROOT	_	_
+11	شود	شد#شو	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=41431	3	VCL	_	_
 12	و	و	CONJ	CONJ	attachment=ISO|senID=41431	11	VCONJ	_	_
 13	تپه‌ها	تپه	N	IANM	attachment=ISO|number=PLUR|senID=41431	15	SBJ	_	_
 14	رانش	رانش	N	IANM	attachment=ISO|number=SING|senID=41431	15	NVE	_	_
@@ -2760,7 +2760,7 @@
 8	عقل	عقل	N	IANM	attachment=ISO|number=SING|senID=41632	7	POSDEP	_	_
 9	صرف	صرف	N	IANM	attachment=ISO|number=SING|senID=41632	11	NVE	_	_
 10	نظر	نظر	N	IANM	attachment=ISO|number=SING|senID=41632	9	MOZ	_	_
-11	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=41632	1	ROOT	_	_
+11	کرد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=41632	1	VCL	_	_
 12	و	و	CONJ	CONJ	attachment=ISO|senID=41632	11	VCONJ	_	_
 13	به	به	PREP	PREP	attachment=ISO|senID=41632	17	VPP	_	_
 14	نظرات	نظر	N	IANM	attachment=ISO|number=PLUR|senID=41632	13	POSDEP	_	_
@@ -3771,7 +3771,7 @@
 8	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=42249	7	MOZ	_	_
 9	تسلط	تسلط	N	IANM	attachment=ISO|number=SING|senID=42249	11	NVE	_	_
 10	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=42249	11	LVP	_	_
-11	کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=42249	3	ROOT	_	_
+11	کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=42249	3	VCL	_	_
 12	و	و	CONJ	CONJ	attachment=ISO|senID=42249	11	VCONJ	_	_
 13	به	به	PREP	PREP	attachment=ISO|senID=42249	22	ADV	_	_
 14	بهانهٔ	بهانه	N	IANM	attachment=ISO|number=SING|senID=42249	13	POSDEP	_	_
@@ -4682,7 +4682,7 @@
 10	جمکران	جمکران	N	IANM	attachment=ISO|number=SING|senID=42872	8	MOZ	_	_	isPROPN
 11	)	)	PUNC	PUNC	attachment=ISO|senID=42872	8	PUNC	_	_
 12	رغبت	رغبت	N	IANM	attachment=ISO|number=SING|senID=42872	13	NVE	_	_
-13	کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=42872	3	ROOT	_	_
+13	کنند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=42872	3	VCL	_	_
 14	و	و	CONJ	CONJ	attachment=ISO|senID=42872	13	VCONJ	_	_
 15	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=42872	16	PREDEP	_	_
 16	را	را	POSTP	POSTP	attachment=ISO|senID=42872	18	OBJ	_	_
@@ -6928,7 +6928,7 @@
 1	دلم	دل	N	IANM	attachment=ISO|number=SING|senID=49126	2	SBJ	_	_
 2	نمی‌خواست	خواست#خواه	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=49126	0	ROOT	_	_
 3	باز	باز	ADV	SADV	attachment=ISO|senID=49126	4	ADV	_	_
-4	بروم	رفت#رو	V	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=49126	2	ROOT	_	_
+4	بروم	رفت#رو	V	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=49126	2	VCL	_	_
 5	توی	توی	PREP	PREP	attachment=ISO|senID=49126	4	VPP	_	_
 6	اتاق	اتاق	N	IANM	attachment=ISO|number=SING|senID=49126	5	POSDEP	_	_
 7	گچ	گچ	N	IANM	attachment=ISO|number=SING|senID=49126	6	MOZ	_	_
@@ -7109,7 +7109,7 @@
 1	چرا	چرا	ADV	SADV	attachment=ISO|senID=49206	3	ADV	_	_
 2	اینجا	اینجا	N	IANM	attachment=ISO|number=SING|senID=49206	3	ADVC	_	_
 3	نشسته‌اید	شست#شوی	V	ACT	person=2|attachment=ISO|number=PLUR|tma=GN|senID=49206	0	ROOT	_	_
-4	برخیزید	بر#خاست#خیز	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=49206	3	ROOT	_	_
+4	برخیزید	بر#خاست#خیز	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=49206	3	VCL	_	_
 5	و	و	CONJ	CONJ	attachment=ISO|senID=49206	4	VCONJ	_	_
 6	با	با	PREP	PREP	attachment=ISO|senID=49206	9	ADV	_	_
 7	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=49206	6	POSDEP	_	_
@@ -8828,7 +8828,7 @@
 4	شعله‌های	شعله	N	IANM	attachment=ISO|number=PLUR|senID=50166	3	MOZ	_	_
 5	آتش	آتش	N	IANM	attachment=ISO|number=SING|senID=50166	4	MOZ	_	_
 6	زبانه	زبانه	N	IANM	attachment=ISO|number=SING|senID=50166	7	NVE	_	_
-7	بکشیم	کشید#کش	V	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=50166	1	ROOT	_	_
+7	بکشیم	کشید#کش	V	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=50166	1	VCL	_	_
 8	و	و	CONJ	CONJ	attachment=ISO|senID=50166	7	VCONJ	_	_
 9	تا	تا	PREP	PREP	attachment=ISO|senID=50166	16	ADV	_	_
 10	مرگ	مرگ	N	IANM	attachment=ISO|number=SING|senID=50166	9	POSDEP	_	_
@@ -10097,7 +10097,7 @@
 1	ولایت	ولایت	N	IANM	attachment=ISO|number=SING|senID=45310	2	PREDEP	_	_
 2	را	را	POSTP	POSTP	attachment=ISO|senID=45310	4	OBJ	_	_
 3	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=45310	0	ROOT	_	_
-4	شناخت	شناخت#شناس	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=45310	3	ROOT	_	_
+4	شناخت	شناخت#شناس	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=45310	3	VCL	_	_
 5	و	و	CONJ	CONJ	attachment=ISO|senID=45310	4	VCONJ	_	_
 6	بد	به	PREP	PREP	attachment=NXT|senID=45310	11	VPP	_	_
 7	ان	آن	PREM	DEMAJ	attachment=PRV|senID=45310	8	NPREMOD	_	_
@@ -11568,7 +11568,7 @@
 20	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=50654	16	PRD	_	_
 21	می‌گوید	گفت#گو	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=50654	12	POSDEP	_	_
 22	:	:	PUNC	PUNC	attachment=ISO|senID=50654	21	PUNC	_	_
-23	گفتی	گفت#گو	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=50654	21	ROOT	_	_
+23	گفتی	گفت#گو	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=50654	21	VCL	_	_
 24	و	و	CONJ	CONJ	attachment=ISO|senID=50654	23	VCONJ	_	_
 25	گفتی	گفت#گو	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=50654	24	POSDEP	_	_
 26	و	و	CONJ	CONJ	attachment=ISO|senID=50654	25	VCONJ	_	_
@@ -12063,7 +12063,7 @@
 16	ارزش	ارزش	N	IANM	attachment=ISO|number=SING|senID=51046	19	OBJ	_	_
 17	افزودهٔ	افزوده	ADJ	AJP	attachment=ISO|senID=51046	16	NPOSTMOD	_	_
 18	بالایی	بالا	ADJ	AJP	attachment=ISO|senID=51046	16	NPOSTMOD	_	_
-19	دارد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=51046	12	ROOT	_	_
+19	دارد	داشت#دار	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=51046	12	VCL	_	_
 20	و	و	CONJ	CONJ	attachment=ISO|senID=51046	19	VCONJ	_	_
 21	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=51046	20	POSDEP	_	_
 22	این	این	PREM	DEMAJ	attachment=ISO|senID=51046	23	NPREMOD	_	_
@@ -12178,7 +12178,7 @@
 25	حکومت	حکومت	N	IANM	attachment=ISO|number=SING|senID=51106	24	POSDEP	_	_
 26	اسلامی	اسلامی	ADJ	AJP	attachment=ISO|senID=51106	25	NPOSTMOD	_	_
 27	ناامید	ناامید	ADJ	AJP	attachment=ISO|senID=51106	28	MOS	_	_
-28	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=51106	16	ROOT	_	_
+28	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=51106	16	VCL	_	_
 29	و	و	CONJ	CONJ	attachment=ISO|senID=51106	28	VCONJ	_	_
 30	از	از	PREP	PREP	attachment=ISO|senID=51106	33	NPP	_	_
 31	اطراف	طرف	N	IANM	attachment=ISO|number=PLUR|senID=51106	30	POSDEP	_	_
@@ -12723,7 +12723,7 @@
 22	تبلیغاتشان	تبلیغ	N	IANM	attachment=ISO|number=PLUR|senID=51430	21	MOZ	_	_
 23	را	را	POSTP	POSTP	attachment=ISO|senID=51430	24	OBJ	_	_
 24	دارند	داشت#دار	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=51430	19	PRD	_	_
-25	گذاشت	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=51430	4	ROOT	_	_
+25	گذاشت	گذاشت#گذار	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=51430	4	VCL	_	_
 26	و	و	CONJ	CONJ	attachment=ISO|senID=51430	25	VCONJ	_	_
 27	در	در	PREP	PREP	attachment=ISO|senID=51430	36	ADV	_	_
 28	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=51430	27	POSDEP	_	_
@@ -13254,7 +13254,7 @@
 17	،	،	PUNC	PUNC	attachment=ISO|senID=51743	16	PUNC	_	_
 18	دوباره	دوباره	ADJ	AJP	attachment=ISO|senID=51743	20	ADV	_	_
 19	آرام	آرام	ADJ	AJP	attachment=ISO|senID=51743	20	NVE	_	_
-20	خواهد گرفت	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=51743	1	ROOT	_	_
+20	خواهد گرفت	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=51743	1	VCL	_	_
 21	و	و	CONJ	CONJ	attachment=ISO|senID=51743	20	VCONJ	_	_
 22	بر	بر	PREP	PREP	attachment=ISO|senID=51743	29	ADV	_	_
 23	روی	روی	PREP	PREP	attachment=ISO|senID=51743	22	POSDEP	_	_
@@ -13278,7 +13278,7 @@
 4	عاشق	عاشق	N	ANM	attachment=ISO|number=SING|senID=51763	5	MOS	_	_
 5	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=51763	3	PRD	_	_
 6	چگونه	چگونه	ADV	SADV	attachment=ISO|senID=51763	7	ADV	_	_
-7	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=51763	1	ROOT	_	_
+7	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=51763	1	VCL	_	_
 8	اثبات	اثبات	N	IANM	attachment=ISO|number=SING|senID=51763	9	NVE	_	_
 9	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=51763	7	VCL	_	_
 10	که	که	SUBR	SUBR	attachment=ISO|senID=51763	9	VCL	_	_
@@ -13310,7 +13310,7 @@
 7	مسئولیت‌پذیر	مسئولیت‌پذیر	ADJ	AJP	attachment=ISO|senID=51773	10	MOS	_	_
 8	و	و	CONJ	CONJ	attachment=ISO|senID=51773	7	AJCONJ	_	_
 9	وظیفه‌شناس	وظیفه‌شناس	ADJ	AJP	attachment=ISO|senID=51773	8	POSDEP	_	_
-10	باشید	بود#باش	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=51773	5	ROOT	_	_
+10	باشید	بود#باش	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=51773	5	VCL	_	_
 11	و	و	CONJ	CONJ	attachment=ISO|senID=51773	10	VCONJ	_	_
 12	با	با	PREP	PREP	attachment=ISO|senID=51773	21	ADV	_	_
 13	تحصیل	تحصیل	N	IANM	attachment=ISO|number=SING|senID=51773	12	POSDEP	_	_
@@ -14793,7 +14793,7 @@
 5	فارسی	فارسی	ADJ	AJP	attachment=ISO|senID=52670	4	NPOSTMOD	_	_
 6	را	را	POSTP	POSTP	attachment=ISO|senID=52670	8	OBJ	_	_
 7	چماق	چماق	N	IANM	attachment=ISO|number=SING|senID=52670	8	NVE	_	_
-8	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=52670	3	ROOT	_	_
+8	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=52670	3	VCL	_	_
 9	و	و	CONJ	CONJ	attachment=ISO|senID=52670	8	VCONJ	_	_
 10	بر	بر	PREP	PREP	attachment=ISO|senID=52670	14	VPP	_	_
 11	سر	سر	N	IANM	attachment=ISO|number=SING|senID=52670	10	POSDEP	_	_
@@ -15443,7 +15443,7 @@
 7	انسان	انسان	N	ANM	attachment=ISO|number=SING|senID=53091	9	PREDEP	_	_
 8	را	را	POSTP	POSTP	attachment=ISO|senID=53091	10	OBJ	_	_
 9	سر	سر	N	IANM	attachment=ISO|number=SING|senID=53091	8	POSDEP	_	_
-10	ببرند	برید#بر	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=53091	3	ROOT	_	_
+10	ببرند	برید#بر	V	ACT	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=53091	3	VCL	_	_
 11	و	و	CONJ	CONJ	attachment=ISO|senID=53091	10	VCONJ	_	_
 12	مغز	مغز	N	IANM	attachment=ISO|number=SING|senID=53091	14	PREDEP	_	_
 13	آنان	آنان	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=53091	12	MOZ	_	_
@@ -16052,7 +16052,7 @@
 13	در	در	PREP	PREP	attachment=ISO|senID=53536	11	POSDEP	_	_
 14	زیر	زیر	PREP	PREP	attachment=ISO|senID=53536	13	POSDEP	_	_
 15	علف‌ها	علف	N	IANM	attachment=NXT|number=PLUR|senID=53536	14	POSDEP	_	_
-16	ست	#است	V	ACT	person=3|attachment=PRV|number=SING|tma=H|senID=53536	6	ROOT	_	_
+16	ست	#است	V	ACT	person=3|attachment=PRV|number=SING|tma=H|senID=53536	6	VCL	_	_
 17	و	و	CONJ	CONJ	attachment=ISO|senID=53536	16	VCONJ	_	_
 18	به	به	PREP	PREP	attachment=ISO|senID=53536	21	VPP	_	_
 19	موقع	موقع	N	IANM	attachment=ISO|number=SING|senID=53536	18	POSDEP	_	_
@@ -16772,7 +16772,7 @@
 6	:	:	PUNC	PUNC	attachment=ISO|senID=53980	5	PUNC	_	_
 7	همهٔ	همه	N	ANM	attachment=ISO|number=PLUR|senID=53980	9	SBJ	_	_
 8	ما	ما	PR	SEPER	person=1|attachment=ISO|number=PLUR|senID=53980	7	MOZ	_	_
-9	می‌دانیم	دانست#دان	V	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=53980	5	ROOT	_	_
+9	می‌دانیم	دانست#دان	V	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=53980	5	VCL	_	_
 10	و	و	CONJ	CONJ	attachment=ISO|senID=53980	9	VCONJ	_	_
 11	حتی	حتی	ADV	SADV	attachment=ISO|senID=53980	12	PREDEP	_	_
 12	به	به	PREP	PREP	attachment=ISO|senID=53980	15	VPP	_	_
@@ -17028,7 +17028,7 @@
 10	روی	روی	N	ANM	attachment=ISO|number=SING|senID=54103	9	POSDEP	_	_	isPROPN
 11	هاجسون	هاجسون	N	ANM	attachment=ISO|number=SING|senID=54103	10	POSDEP	_	_	isPROPN
 12	تماس	تماس	N	IANM	attachment=ISO|number=SING|senID=54103	13	NVE	_	_
-13	خواهد گرفت	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=54103	3	ROOT	_	_
+13	خواهد گرفت	گرفت#گیر	V	ACT	person=3|attachment=ISO|number=SING|tma=AY|senID=54103	3	VCL	_	_
 14	و	و	CONJ	CONJ	attachment=ISO|senID=54103	13	VCONJ	_	_
 15	با	با	PREP	PREP	attachment=ISO|senID=54103	17	NPP	_	_
 16	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=54103	15	POSDEP	_	_
@@ -17317,7 +17317,7 @@
 8	جلب	جلب	N	IANM	attachment=ISO|number=SING|senID=54119	7	POSDEP	_	_
 9	اعتماد	اعتماد	N	IANM	attachment=ISO|number=SING|senID=54119	8	MOZ	_	_
 10	ملی	ملی	ADJ	AJP	attachment=ISO|senID=54119	9	NPOSTMOD	_	_
-11	نشست	نشست#نشین	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=54119	1	ROOT	_	_
+11	نشست	نشست#نشین	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=54119	1	VCL	_	_
 12	،	،	PUNC	PUNC	attachment=ISO|senID=54119	11	PUNC	_	_
 13	اما	اما	CONJ	CONJ	attachment=ISO|senID=54119	11	VCONJ	_	_
 14	با	با	PREP	PREP	attachment=ISO|senID=54119	42	NPP	_	_
@@ -19027,7 +19027,7 @@
 18	وی	وی	PR	SEPER	person=3|attachment=ISO|number=SING|senID=55240	21	SBJ	_	_
 19	قرآن	قرآن	N	IANM	attachment=ISO|number=SING|senID=55240	20	PREDEP	_	_	isPROPN
 20	را	را	POSTP	POSTP	attachment=ISO|senID=55240	21	OBJ	_	_
-21	می‌گشود	گشود#گشا	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=55240	6	ROOT	_	_
+21	می‌گشود	گشود#گشا	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=55240	6	VCL	_	_
 22	و	و	CONJ	CONJ	attachment=ISO|senID=55240	21	VCONJ	_	_
 23	بد	به	PREP	PREP	attachment=NXT|senID=55240	25	NPP	_	_
 24	ان	آن	PR	DEMON	attachment=PRV|number=SING|senID=55240	23	POSDEP	_	_
@@ -19123,7 +19123,7 @@
 11	بجنگد	جنگید#جنگ	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=55301	8	PRD	_	_
 12	با	با	PREP	PREP	attachment=ISO|senID=55301	14	VPP	_	_
 13	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=55301	12	POSDEP	_	_
-14	جنگیده	جنگید#جنگ	V	PASS	person=3|attachment=ISO|number=SING|tma=GN|senID=55301	5	ROOT	_	_
+14	جنگیده	جنگید#جنگ	V	PASS	person=3|attachment=ISO|number=SING|tma=GN|senID=55301	5	VCL	_	_
 15	و	و	CONJ	CONJ	attachment=ISO|senID=55301	14	VCONJ	_	_
 16	هر	هر	PREM	AMBAJ	attachment=ISO|senID=55301	17	NPREMOD	_	_
 17	کس	کس	N	ANM	attachment=ISO|number=SING|senID=55301	25	SBJ	_	_
@@ -19367,7 +19367,7 @@
 14	آنان	آنان	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=55443	13	POSDEP	_	_
 15	را	را	POSTP	POSTP	attachment=ISO|senID=55443	17	OBJ	_	_
 16	پیگیری	پیگیری	N	IANM	attachment=ISO|number=SING|senID=55443	17	NVE	_	_
-17	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=55443	2	ROOT	_	_
+17	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=55443	2	VCL	_	_
 18	و	و	CONJ	CONJ	attachment=ISO|senID=55443	17	VCONJ	_	_
 19	در	در	PREP	PREP	attachment=ISO|senID=55443	21	MOS	_	_
 20	تلاش	تلاش	N	IANM	attachment=ISO|number=SING|senID=55443	19	POSDEP	_	_
@@ -19976,7 +19976,7 @@
 11	است	#است	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=55870	0	ROOT	_	_
 12	چه	چه	ADV	SADV	attachment=ISO|senID=55870	14	ADV	_	_
 13	نسیان	نسیان	N	IANM	attachment=ISO|number=SING|senID=55870	14	NVE	_	_
-14	کرده باشد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=55870	11	ROOT	_	_
+14	کرده باشد	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GEL|senID=55870	11	VCL	_	_
 15	و	و	CONJ	CONJ	attachment=ISO|senID=55870	14	VCONJ	_	_
 16	چه	چه	ADV	SADV	attachment=ISO|senID=55870	21	ADV	_	_
 17	از	از	PREP	PREP	attachment=ISO|senID=55870	21	ADV	_	_
@@ -20039,7 +20039,7 @@
 10	مورد	مورد	PREP	PREP	attachment=ISO|senID=55910	9	NPOSTMOD	_	_
 11	نیاز	نیاز	N	IANM	attachment=ISO|number=SING|senID=55910	10	MOZ	_	_
 12	پرورش	پرورش	N	IANM	attachment=ISO|number=SING|senID=55910	13	NVE	_	_
-13	می‌دهند	داد#ده	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=55910	28	ROOT	_	_
+13	می‌دهند	داد#ده	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=55910	28	VCL	_	_
 14	و	و	CONJ	CONJ	attachment=ISO|senID=55910	13	VCONJ	_	_
 15	آنگاه	آنگاه	ADV	SADV	attachment=ISO|senID=55910	22	ADV	_	_
 16	آنزیم	آنزیم	N	IANM	attachment=ISO|number=SING|senID=55910	20	PREDEP	_	_
@@ -20251,7 +20251,7 @@
 6	راه	راه	N	IANM	attachment=ISO|number=SING|senID=56041	5	MOZ	_	_
 7	خدا	خدا	N	ANM	attachment=ISO|number=SING|senID=56041	6	MOZ	_	_
 8	حسرت	حسرت	N	IANM	attachment=ISO|number=SING|senID=56041	9	NVE	_	_
-9	بکشید	کشید#کش	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=56041	1	ROOT	_	_
+9	بکشید	کشید#کش	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=56041	1	VCL	_	_
 10	و	و	CONJ	CONJ	attachment=ISO|senID=56041	9	VCONJ	_	_
 11	در	در	PREP	PREP	attachment=ISO|senID=56041	14	ADV	_	_
 12	افسوسش	افسوس	N	IANM	attachment=ISO|number=SING|senID=56041	11	POSDEP	_	_
@@ -21098,7 +21098,7 @@
 6	خود	خود	PR	CREFX	attachment=ISO|senID=56521	5	MOZ	_	_
 7	را	را	POSTP	POSTP	attachment=ISO|senID=56521	9	OBJ	_	_
 8	برش	برش	N	IANM	attachment=ISO|number=SING|senID=56521	9	NVE	_	_
-9	دهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=56521	4	ROOT	_	_
+9	دهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=56521	4	VCL	_	_
 10	و	و	CONJ	CONJ	attachment=ISO|senID=56521	9	VCONJ	_	_
 11	قاب‌بندی	قاب‌بندی	N	IANM	attachment=ISO|number=SING|senID=56521	12	NVE	_	_
 12	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=56521	10	POSDEP	_	_
@@ -21241,7 +21241,7 @@
 6	ما	ما	PR	SEPER	person=1|attachment=ISO|number=PLUR|senID=44052	5	MOZ	_	_
 7	نیز	نیز	ADV	SADV	attachment=ISO|senID=44052	6	POSDEP	_	_
 8	شکوفه	شکوفه	N	IANM	attachment=ISO|number=SING|senID=44052	9	NVE	_	_
-9	می‌زد	زد#زن	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=44052	2	ROOT	_	_
+9	می‌زد	زد#زن	V	ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=44052	2	VCL	_	_
 10	و	و	CONJ	CONJ	attachment=ISO|senID=44052	9	VCONJ	_	_
 11	درخت	درخت	N	IANM	attachment=ISO|number=SING|senID=44052	19	SBJ	_	_
 12	دلمان	دل	N	IANM	attachment=ISO|number=SING|senID=44052	11	MOZ	_	_
@@ -22905,7 +22905,7 @@
 12	دست	دست	N	IANM	attachment=ISO|number=SING|senID=58370	15	MOS	_	_
 13	به	به	PREP	PREP	attachment=ISO|senID=58370	12	NPP	_	_
 14	کار	کار	N	IANM	attachment=ISO|number=SING|senID=58370	13	POSDEP	_	_
-15	شویم	شد#شو	V	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=58370	11	ROOT	_	_
+15	شویم	شد#شو	V	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=58370	11	VCL	_	_
 16	و	و	CONJ	CONJ	attachment=ISO|senID=58370	15	VCONJ	_	_
 17	فعالیت	فعالیت	N	IANM	attachment=ISO|number=SING|senID=58370	18	NVE	_	_
 18	کنیم	کرد#کن	V	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=58370	16	POSDEP	_	_
@@ -23657,7 +23657,7 @@
 17	کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=58771	11	PRD	_	_
 18	وقوع	وقوع	N	IANM	attachment=ISO|number=SING|senID=58771	20	NVE	_	_
 19	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=58771	20	LVP	_	_
-20	کرده است	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=58771	9	ROOT	_	_
+20	کرده است	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=58771	9	VCL	_	_
 21	و	و	CONJ	CONJ	attachment=ISO|senID=58771	20	VCONJ	_	_
 22	اگر	اگر	SUBR	SUBR	attachment=ISO|senID=58771	33	AJUCL	_	_
 23	وجودش	وجود	N	IANM	attachment=ISO|number=SING|senID=58771	28	SBJ	_	_
@@ -24298,7 +24298,7 @@
 4	آخر	آخر	N	IANM	attachment=ISO|number=SING|senID=59076	3	POSDEP	_	_
 5	عمرتان	عمر	N	IANM	attachment=ISO|number=SING|senID=59076	4	MOZ	_	_
 6	حسرت	حسرت	N	IANM	attachment=ISO|number=SING|senID=59076	7	NVE	_	_
-7	بخورید	خورد#خور	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076	2	ROOT	_	_
+7	بخورید	خورد#خور	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076	2	VCL	_	_
 8	و	و	CONJ	CONJ	attachment=ISO|senID=59076	7	VCONJ	_	_
 9	خودتان	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=59076	10	PREDEP	_	_
 10	را	را	POSTP	POSTP	attachment=ISO|senID=59076	12	OBJ	_	_
