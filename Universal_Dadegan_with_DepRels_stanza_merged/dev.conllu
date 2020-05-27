@@ -829,7 +829,7 @@
 19	ع	ع	NOUN	N_IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N	16	POSDEP	_	spaceAfter=NO
 20	)	)	PUNCT	PUNC	attachment=ISO|senID=23721|dadeg_pos=PUNC|dadeg_r=PUNC	19	punct	_	_
 21	برگزار	برگزار	ADJ	ADJ_AJP	attachment=ISO|senID=23721|dadeg_pos=ADJ|dadeg_r=NVE|dadeg_h=41	41	compound:lvc	_	_
-22	و	و	CCONJ	CONJ	attachment=ISO|senID=23721|dadeg_pos=CONJ|dadeg_h=41|dadeg_r=VCONJ	41	VCONJ	_	_
+22	و	و	CCONJ	CONJ	attachment=ISO|senID=23721|dadeg_pos=CONJ|dadeg_h=41|dadeg_r=VCONJ	41	cc	_	_
 23	به	به	ADP	PREP	attachment=ISO|senID=23721|dadeg_pos=PREP|dadeg_h=40|dadeg_r=NPP	24	case	_	_
 24	بازیکن	بازیکن	NOUN	N_ANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N|dadeg_h=23|dadeg_r=POSDEP	41	obl:arg	_	_
 25	اخلاق	اخلاق	NOUN	N_IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=24	24	nmod	_	_
@@ -839,7 +839,7 @@
 29	زیارتی	زیارتی	ADJ	ADJ_AJP	attachment=ISO|senID=23721|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=28	28	amod	_	_
 30	حج	حج	NOUN	N_IANM	attachment=ISO|number=SING|senID=23721|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=28	28	nmod	_	_
 31	تمتع	تمتع	ADJ	ADJ_AJP	attachment=ISO|senID=23721|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=30	30	amod	_	_
-32	و	و	CCONJ	CONJ	attachment=ISO|senID=23721|dadeg_pos=CONJ|dadeg_h=41|dadeg_r=VCONJ	41	VCONJ	_	_
+32	و	و	CCONJ	CONJ	attachment=ISO|senID=23721|dadeg_pos=CONJ|dadeg_h=41|dadeg_r=VCONJ	41	cc	_	_
 33	به	به	ADP	PREP	attachment=ISO|senID=23721|dadeg_pos=PREP|dadeg_h=40|dadeg_r=NPP	34	case	_	_
 34	سایر	سایر	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=23721|dadeg_pos=N|dadeg_h=33|dadeg_r=POSDEP	41	obl:arg	_	_
 35	برگزیدگان	برگزیده	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=23721|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=34	34	nmod	_	_
@@ -2150,7 +2150,7 @@
 14	نوسازی	نوسازی	NOUN	N_IANM	attachment=ISO|number=SING|senID=24215|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=13	13	nmod	_	_
 15	و	و	CCONJ	CONJ	attachment=ISO|senID=24215|dadeg_pos=CONJ|dadeg_h=14|dadeg_r=NCONJ	16	cc	_	_
 16	خیرین	خیر	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=24215|dadeg_pos=N|dadeg_h=15|dadeg_r=POSDEP	14	conj	_	_
-17	و	و	CCONJ	CONJ	attachment=ISO|senID=24215|dadeg_pos=CONJ|dadeg_h=27|dadeg_r=VCONJ	27	VCONJ	_	_
+17	و	و	CCONJ	CONJ	attachment=ISO|senID=24215|dadeg_pos=CONJ|dadeg_h=27|dadeg_r=VCONJ	27	cc	_	_
 18	20	20	NUM	PRENUM	attachment=ISO|senID=24215|dadeg_pos=PRENUM|dadeg_r=NPREMOD|dadeg_h=19	19	nummod	_	_
 19	مدرسه	مدرسه	NOUN	N_IANM	attachment=ISO|number=SING|senID=24215|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=27	27	nsubj	_	_
 20	در	در	ADP	PREP	attachment=ISO|senID=24215|dadeg_pos=PREP|dadeg_h=27|dadeg_r=ADV	21	case	_	_
@@ -8439,7 +8439,7 @@
 9	یک	یک	NUM	PRENUM	attachment=ISO|senID=31892|dadeg_pos=PRENUM|dadeg_r=NPREMOD|dadeg_h=10	10	nummod	_	_
 10	حساب	حساب	NOUN	N_IANM	attachment=ISO|number=SING|senID=31892|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=16	15	nsubj	_	_
 11	بدهکار	بدهکار	NOUN	N_IANM	attachment=ISO|number=SING|senID=31892|dadeg_pos=N|dadeg_h=16|dadeg_r=MOS	15	cop	_	_
-12	و	و	CCONJ	CONJ	attachment=ISO|senID=31892|dadeg_pos=CONJ|dadeg_h=16|dadeg_r=VCONJ	15	VCONJ	_	_
+12	و	و	CCONJ	CONJ	attachment=ISO|senID=31892|dadeg_pos=CONJ|dadeg_h=16|dadeg_r=VCONJ	15	cc	_	_
 13	دو	دو	NUM	PRENUM	attachment=ISO|senID=31892|dadeg_pos=PRENUM|dadeg_r=NPREMOD|dadeg_h=14	14	nummod	_	_
 14	حساب	حساب	NOUN	N_IANM	attachment=ISO|number=SING|senID=31892|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=16	15	nsubj	_	_
 15	بستانکار	بستانکار	NOUN	N_IANM	attachment=ISO|number=SING|senID=31892|dadeg_pos=N|dadeg_h=16|dadeg_r=MOS	0	root	_	_
@@ -8816,7 +8816,7 @@
 11	[	[	PUNCT	PUNC	attachment=ISO|senID=32079|dadeg_pos=PUNC|dadeg_r=PUNC	12	punct	_	spaceAfter=NO
 12	گسترده	گسترده	ADJ	ADJ_AJP	attachment=ISO|senID=32079|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=10	10	amod	_	spaceAfter=NO
 13	]	]	PUNCT	PUNC	attachment=ISO|senID=32079|dadeg_pos=PUNC|dadeg_r=PUNC	12	punct	_	_
-14	و	و	CCONJ	CONJ	attachment=ISO|senID=32079|dadeg_pos=CONJ|dadeg_h=22|dadeg_r=VCONJ	22	VCONJ	_	_
+14	و	و	CCONJ	CONJ	attachment=ISO|senID=32079|dadeg_pos=CONJ|dadeg_h=22|dadeg_r=VCONJ	22	cc	_	_
 15	آسمان	آسمان	NOUN	N_IANM	attachment=ISO|number=SING|senID=32079|dadeg_pos=N|dadeg_h=16|dadeg_r=PREDEP	22	obj	_	_
 16	را	را	ADP	POSTP	attachment=ISO|senID=32079|dadeg_pos=POSTP|dadeg_h=22|dadeg_r=OBJ	15	case	_	_
 17	بنایی	بنا	NOUN	N_IANM	attachment=ISO|number=SING|senID=32079|dadeg_pos=N|dadeg_r=TAM|dadeg_h=22	22	xcomp	_	_
@@ -9371,7 +9371,7 @@
 5	دادن	دادن	NOUN	N_IANM	attachment=ISO|number=SING|senID=32431|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	1	acl	_	_
 6	است	#است	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=32431|dadeg_pos=AUX|dadeg_h=2|dadeg_r=PRD	5	cop	_	_
 7	فرض	فرض	NOUN	N_IANM	attachment=ISO|number=SING|senID=32431|dadeg_pos=N|dadeg_r=TAM|dadeg_h=15	15	xcomp	_	_
-8	و	و	CCONJ	CONJ	attachment=ISO|senID=32431|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	15	VCONJ	_	_
+8	و	و	CCONJ	CONJ	attachment=ISO|senID=32431|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	15	cc	_	_
 9	معلوماتی	معلومات	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=32431|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=15	15	nsubj:pass	_	_
 10	که	که	SCONJ	SUBR	attachment=ISO|senID=32431|dadeg_pos=SUBR|dadeg_h=9|dadeg_r=NCL	11	mark	_	_
 11	باید	بایست#باید	VERB	V_MODL	attachment=ISO|tma=H|senID=32431|dadeg_pos=V|dadeg_h=10|dadeg_r=PRD	9	acl	_	_
@@ -10126,7 +10126,7 @@
 8	خلق	خلق	NOUN	N_IANM	attachment=ISO|number=SING|senID=32442|dadeg_pos=N|dadeg_h=9|dadeg_r=PREDEP	14	obj	_	_
 9	را	را	ADP	POSTP	attachment=ISO|senID=32442|dadeg_pos=POSTP|dadeg_h=15|dadeg_r=OBJ	8	case	_	_
 10	نیکو	نیکو	ADJ	ADJ_AJP	attachment=ISO|senID=32442|dadeg_pos=ADJ|dadeg_h=15|dadeg_r=MOS	14	cop	_	_
-11	و	و	CCONJ	CONJ	attachment=ISO|senID=32442|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	14	VCONJ	_	_
+11	و	و	CCONJ	CONJ	attachment=ISO|senID=32442|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	14	cc	_	_
 12	انسان	انسان	NOUN	N_ANM	attachment=ISO|number=SING|senID=32442|dadeg_pos=N|dadeg_h=13|dadeg_r=PREDEP	14	obj	_	_
 13	را	را	ADP	POSTP	attachment=ISO|senID=32442|dadeg_pos=POSTP|dadeg_h=15|dadeg_r=OBJ	12	case	_	_
 14	خوشبو	خوشبو	ADJ	ADJ_AJP	attachment=ISO|senID=32442|dadeg_pos=ADJ|dadeg_h=15|dadeg_r=MOS	0	root	_	_
@@ -10227,7 +10227,7 @@
 12	در	در	ADP	PREP	attachment=ISO|senID=32483|dadeg_pos=PREP|dadeg_h=22|dadeg_r=ADV	13	case	_	_
 13	دولت	دولت	NOUN	N_IANM	attachment=ISO|number=SING|senID=32483|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	22	obl	_	_
 14	تصویب	تصویب	NOUN	N_IANM	attachment=ISO|number=SING|senID=32483|dadeg_pos=N|dadeg_r=NVE|dadeg_h=22	22	compound:lvc	_	_
-15	و	و	CCONJ	CONJ	attachment=ISO|senID=32483|dadeg_pos=CONJ|dadeg_h=22|dadeg_r=VCONJ	22	VCONJ	_	_
+15	و	و	CCONJ	CONJ	attachment=ISO|senID=32483|dadeg_pos=CONJ|dadeg_h=22|dadeg_r=VCONJ	22	cc	_	_
 16	بر	بر	ADP	PREP	attachment=ISO|senID=32483|dadeg_pos=PREP|dadeg_h=22|dadeg_r=ADV	17	case	_	_
 17	اساس	اساس	NOUN	N_IANM	attachment=ISO|number=SING|senID=32483|dadeg_pos=N|dadeg_h=16|dadeg_r=POSDEP	22	obl	_	_
 18	قوانین	قانون	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=32483|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=17	17	nmod	_	_
@@ -14654,7 +14654,7 @@
 12	عنوان	عنوان	NOUN	N_IANM	attachment=ISO|number=SING|senID=34416|dadeg_pos=N|dadeg_h=11|dadeg_r=POSDEP	26	xcomp	_	_
 13	یک	یک	NUM	PRENUM	attachment=ISO|senID=34416|dadeg_pos=PRENUM|dadeg_r=NPREMOD|dadeg_h=14	14	nummod	_	_
 14	واقعیت	واقعیت	NOUN	N_IANM	attachment=ISO|number=SING|senID=34416|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=12	12	nmod	_	_
-15	و	و	CCONJ	CONJ	attachment=ISO|senID=34416|dadeg_pos=CONJ|dadeg_h=26|dadeg_r=VCONJ	26	VCONJ	_	_
+15	و	و	CCONJ	CONJ	attachment=ISO|senID=34416|dadeg_pos=CONJ|dadeg_h=26|dadeg_r=VCONJ	26	cc	_	_
 16	ارزش‌های	ارزش	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=34416|dadeg_pos=N|dadeg_h=18|dadeg_r=PREDEP	26	obj	_	_
 17	خود	خود	PRON	PR_CREFX	attachment=ISO|senID=34416|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=16	16	nmod	_	_
 18	را	را	ADP	POSTP	attachment=ISO|senID=34416|dadeg_pos=POSTP|dadeg_h=26|dadeg_r=OBJ	16	case	_	_
@@ -17646,7 +17646,7 @@
 8	اشغالگر	اشغالگر	PROPN	ADJ_AJP	attachment=ISO|senID=47180|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=NPOSTMOD	7	flat:name	_	_
 9	اسراییل	اسراییل	PROPN	N_IANM	attachment=ISO|number=SING|senID=47180|dadeg_pos=N|dadeg_h=7|dadeg_r=MOZ	7	flat:name	_	_
 10	تصرف	تصرف	NOUN	N_IANM	attachment=ISO|number=SING|senID=47180|dadeg_pos=N|dadeg_r=NVE|dadeg_h=15	15	compound:lvc	_	_
-11	و	و	CCONJ	CONJ	attachment=ISO|senID=47180|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	15	VCONJ	_	_
+11	و	و	CCONJ	CONJ	attachment=ISO|senID=47180|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	15	cc	_	_
 12	در	در	ADP	PREP	attachment=ISO|senID=47180|dadeg_pos=PREP|dadeg_h=14|dadeg_r=NPP	13	case	_	_
 13	آن	آن	PRON	PR_DEMON	attachment=ISO|number=SING|senID=47180|dadeg_pos=PR|dadeg_h=12|dadeg_r=POSDEP	15	obl:arg	_	_
 14	شهرک‌سازی	شهرک‌سازی	NOUN	N_IANM	attachment=ISO|number=SING|senID=47180|dadeg_pos=N|dadeg_r=NVE|dadeg_h=15	15	compound:lvc	_	_
@@ -22684,7 +22684,7 @@
 11	مصدق	مصدق	PROPN	N_ANM	attachment=ISO|number=SING|senID=37764|dadeg_pos=N|dadeg_h=12|dadeg_r=PREDEP	10	flat:name	_	_
 12	را	را	ADP	POSTP	attachment=ISO|senID=37764|dadeg_pos=POSTP|dadeg_h=18|dadeg_r=OBJ	11	case	_	_
 13	دستگیر	دستگیر	NOUN	N_IANM	attachment=ISO|number=SING|senID=37764|dadeg_pos=N|dadeg_r=NVE|dadeg_h=18	18	compound:lvc	_	_
-14	و	و	CCONJ	CONJ	attachment=ISO|senID=37764|dadeg_pos=CONJ|dadeg_h=18|dadeg_r=VCONJ	18	VCONJ	_	_
+14	و	و	CCONJ	CONJ	attachment=ISO|senID=37764|dadeg_pos=CONJ|dadeg_h=18|dadeg_r=VCONJ	18	cc	_	_
 15	به	به	ADP	PREP	attachment=ISO|senID=37764|dadeg_pos=PREP|dadeg_h=17|dadeg_r=NPP	16	case	_	_
 16	خراسان	خراسان	PROPN	N_IANM	attachment=ISO|number=SING|senID=37764|dadeg_pos=N|dadeg_h=15|dadeg_r=POSDEP	18	obl:arg	_	_
 17	تبعید	تبعید	NOUN	N_IANM	attachment=ISO|number=SING|senID=37764|dadeg_pos=N|dadeg_r=NVE|dadeg_h=18	18	compound:lvc	_	_
@@ -24063,7 +24063,7 @@
 3	به	به	ADP	PREP	attachment=ISO|senID=38162|dadeg_pos=PREP|dadeg_h=6|dadeg_r=PREDEP	4	case	_	_
 4	جای	جا	NOUN	N_IANM	attachment=ISO|number=SING|senID=38162|dadeg_pos=N|dadeg_h=3|dadeg_r=POSDEP	2	case	_	_
 5	خود	خود	PRON	PR_CREFX	attachment=ISO|senID=38162|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=4	4	nmod	_	_
-6	و	و	CCONJ	CONJ	attachment=ISO|senID=38162|dadeg_pos=CONJ|dadeg_h=10|dadeg_r=VCONJ	10	VCONJ	_	_
+6	و	و	CCONJ	CONJ	attachment=ISO|senID=38162|dadeg_pos=CONJ|dadeg_h=10|dadeg_r=VCONJ	10	cc	_	_
 7	نه	نه	ADV	ADV_SADV	attachment=ISO|senID=38162|dadeg_pos=ADV	8	PREDEP	_	_
 8	یک	یک	NUM	PRENUM	attachment=ISO|senID=38162|dadeg_pos=PRENUM|dadeg_r=NPREMOD|dadeg_h=9	9	nummod	_	_
 9	ذره	ذره	NOUN	N_IANM	attachment=ISO|number=SING|senID=38162|dadeg_pos=N|dadeg_h=10|dadeg_r=MESU	0	root	_	_
@@ -26665,7 +26665,7 @@
 21	با	با	ADP	PREP	attachment=ISO|senID=39172|dadeg_pos=PREP|dadeg_h=23|dadeg_r=NPP	22	case	_	_
 22	وی	وی	PRON	PR_SEPER	person=3|attachment=ISO|number=SING|senID=39172|dadeg_pos=PR|dadeg_h=21|dadeg_r=POSDEP	25	obl:arg	_	_
 23	برخورد	برخورد	NOUN	N_IANM	attachment=ISO|number=SING|senID=39172|dadeg_pos=N|dadeg_r=NVE|dadeg_h=32	25	compound:lvc	_	_
-24	و	و	CCONJ	CONJ	attachment=ISO|senID=39172|dadeg_pos=CONJ|dadeg_h=32|dadeg_r=VCONJ	25	VCONJ	_	_
+24	و	و	CCONJ	CONJ	attachment=ISO|senID=39172|dadeg_pos=CONJ|dadeg_h=32|dadeg_r=VCONJ	25	cc	_	_
 25	مستوجب	مستوجب	ADJ	ADJ_AJP	attachment=ISO|senID=39172|dadeg_pos=ADJ|dadeg_h=32|dadeg_r=MOS	0	root	_	_
 26	دیه	دیه	NOUN	N_IANM	attachment=ISO|number=SING|senID=39172|dadeg_pos=N|dadeg_r=NEZ|dadeg_h=25	25	obl:arg	_	spaceAfter=NO
 27	،	،	PUNCT	PUNC	attachment=ISO|senID=39172|dadeg_pos=PUNC|dadeg_r=PUNC	26	punct	_	_

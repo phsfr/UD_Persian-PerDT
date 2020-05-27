@@ -1288,6 +1288,8 @@ class DependencyTree:
         for l, label in enumerate(self.labels):
             if label in mapping:
                 self.labels[l] = mapping[label]
+            if self.heads[l] > l and label == "VCONJ" and self.tags[l] == "CCONJ":
+                self.labels[l] = "cc"
 
     def convert_num_groups(self):
         all_num_group = self.find_compound_num_groups()
