@@ -1268,11 +1268,16 @@ class DependencyTree:
         :return:
         """
         mapping = {"AJUCL": "advcl", "NCL": "acl", "MOS": "xcomp", "PRD": "ccomp"}
+
         for l, label in enumerate(self.labels):
+            changed  = False
             if label in mapping:
                 self.labels[l] = mapping[label]
+                changed = True
+
             if self.heads[l] > l and label == "VCONJ" and self.tags[l] == "CCONJ":
                 self.labels[l] = "cc"
+                changed = True
             if label == "PREDEP":
                 if self.words[l] in {"نیز", "هم"}:
                     self.labels[l] = "dep"
@@ -1280,6 +1285,19 @@ class DependencyTree:
                     self.labels[l] = "nummod"
                 else:
                     self.labels[l] = "advmod"
+                changed = True
+            if label == "POSDEP":
+                if self.words[l] in {"نیز", "هم"}:
+                    self.labels[l] = "dep"
+                elif self.tags[l] == "ADP" and self.tags[self.heads[l]-1]=="ADP":
+                    self.labels[l] = "fixed"
+                elif self.tags[l] == "NUM":
+                    self.labels[l] = "nummod"
+                else:
+                    self.labels[l] = "advmod"
+                changed = True
+            if changed and not self.other_features[l].has_feat('dadeg_r'):
+                self.other_features[l].add_feat({'dadeg_r': label})
 
     def convert_num_groups(self):
         all_num_group = self.find_compound_num_groups()
