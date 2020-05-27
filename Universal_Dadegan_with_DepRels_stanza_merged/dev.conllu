@@ -189,7 +189,7 @@
 17	تیم	تیم	NOUN	N_IANM	attachment=ISO|number=SING|senID=23547|dadeg_pos=N|dadeg_h=16|dadeg_r=POSDEP	15	conj	_	_
 18	کارآمد	کارآمد	ADJ	ADJ_AJP	attachment=ISO|senID=23547|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=15	15	amod	_	_
 19	باشد	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=HEL|senID=23547|dadeg_pos=AUX|dadeg_h=9|dadeg_r=NCL	14	cop	_	_
-20	و	و	CCONJ	CONJ	attachment=ISO|senID=23547|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	14	VCONJ	_	_
+20	و	و	CCONJ	CONJ	attachment=ISO|senID=23547|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	33	cc	_	_
 21	نیروهایی	نیرو	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=23547|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=34	33	nsubj	_	_
 22	که	که	SCONJ	SUBR	attachment=ISO|senID=23547|dadeg_pos=SUBR|dadeg_h=21|dadeg_r=NCL	25	mark	_	_
 23	به	به	ADP	PREP	attachment=ISO|senID=23547|dadeg_pos=PREP|dadeg_h=25|dadeg_r=VPP	24	case	_	_
@@ -202,7 +202,7 @@
 30	و	و	CCONJ	CONJ	attachment=ISO|senID=23547|dadeg_pos=CONJ|dadeg_h=29|dadeg_r=NCONJ	31	cc	_	_
 31	کارآمدی	کارآمدی	NOUN	N_IANM	attachment=ISO|number=SING|senID=23547|dadeg_pos=N|dadeg_h=30|dadeg_r=POSDEP	27	conj	_	_
 32	لازم	لازم	ADJ	ADJ_AJP	attachment=ISO|senID=23547|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=27	27	amod	_	_
-33	قادر	قادر	ADJ	ADJ_AJP	attachment=ISO|senID=23547|dadeg_pos=ADJ|dadeg_h=34|dadeg_r=MOS	20	POSDEP	_	_
+33	قادر	قادر	ADJ	ADJ_AJP	attachment=ISO|senID=23547|dadeg_pos=ADJ|dadeg_h=34|dadeg_r=MOS	14	conj	_	_
 34	باشند	بود#باش	AUX	AUX	person=3|attachment=ISO|number=PLUR|tma=HEL|senID=23547|dadeg_pos=AUX|dadeg_h=20|dadeg_r=POSDEP	33	cop	_	_
 35	که	که	SCONJ	SUBR	attachment=ISO|senID=23547|dadeg_pos=SUBR|dadeg_h=33|dadeg_r=ACL	48	mark	_	_
 36	گفتمان	گفتمان	NOUN	N_IANM	attachment=ISO|number=SING|senID=23547|dadeg_pos=N|dadeg_h=38|dadeg_r=PREDEP	48	obj	_	_
@@ -3429,14 +3429,14 @@
 5	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=28638|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=4	4	nmod	_	_
 6	پایین	پایین	NOUN	N_IANM	attachment=ISO|number=SING|senID=28638|dadeg_pos=N|dadeg_r=ADVC|dadeg_h=7	7	obl:arg	_	_
 7	باشد	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=HEL|senID=28638|dadeg_pos=AUX|dadeg_h=3|dadeg_r=VCL	3	ccomp	_	_
-8	و	و	CCONJ	CONJ	attachment=ISO|senID=28638|dadeg_pos=CONJ|dadeg_h=7|dadeg_r=VCONJ	7	VCONJ	_	_
+8	و	و	CCONJ	CONJ	attachment=ISO|senID=28638|dadeg_pos=CONJ|dadeg_h=7|dadeg_r=VCONJ	15	cc	_	_
 9	خواندن	خواندن	NOUN	N_IANM	attachment=ISO|number=SING|senID=28638|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=16	15	nsubj	_	_
 10	کتاب	کتاب	NOUN	N_IANM	attachment=ISO|number=SING|senID=28638|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=9	9	nmod	_	_
 11	در	در	ADP	PREP	attachment=ISO|senID=28638|dadeg_pos=PREP|dadeg_h=9|dadeg_r=NPP	13	case	_	_
 12	چنین	چنین	DET	PREM_DEMAJ	attachment=ISO|senID=28638|dadeg_pos=PREM|dadeg_r=NPREMOD|dadeg_h=13	13	det	_	_
 13	وضعیتی	وضعیت	NOUN	N_IANM	attachment=ISO|number=SING|senID=28638|dadeg_pos=N|dadeg_h=11|dadeg_r=POSDEP	9	nmod	_	_
 14	بهترین	به	ADJ	ADJ_AJSUP	attachment=ISO|senID=28638|dadeg_pos=ADJ|dadeg_r=NPREMOD|dadeg_h=15	15	amod	_	_
-15	کار	کار	NOUN	N_IANM	attachment=ISO|number=SING|senID=28638|dadeg_pos=N|dadeg_h=16|dadeg_r=MOS	8	POSDEP	_	_
+15	کار	کار	NOUN	N_IANM	attachment=ISO|number=SING|senID=28638|dadeg_pos=N|dadeg_h=16|dadeg_r=MOS	7	conj	_	_
 16	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=28638|dadeg_pos=AUX|dadeg_h=8|dadeg_r=POSDEP	15	cop	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=28638|dadeg_pos=PUNC|dadeg_r=PUNC	3	punct	_	_
 
@@ -3487,7 +3487,7 @@
 6	باشد	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=HEL|senID=28673|dadeg_pos=AUX|dadeg_h=5|dadeg_r=NCL	5	acl	_	_
 7	می‌گذرد	گذشت#گذر	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=28673|dadeg_pos=V|dadeg_r=ROOT	0	root	_	spaceAfter=NO
 8	؛	؛	PUNCT	PUNC	attachment=ISO|senID=28673|dadeg_pos=PUNC|dadeg_r=PUNC	7	punct	_	_
-9	ولی	ولی	CCONJ	CONJ	attachment=ISO|senID=28673|dadeg_pos=CONJ|dadeg_h=7|dadeg_r=VCONJ	7	VCONJ	_	_
+9	ولی	ولی	CCONJ	CONJ	attachment=ISO|senID=28673|dadeg_pos=CONJ|dadeg_h=7|dadeg_r=VCONJ	17	cc	_	_
 10	بحمدالله	بحمدالله	ADV	ADV_SADV	attachment=ISO|senID=28673|dadeg_pos=ADV|dadeg_r=ADV|dadeg_h=18	17	advmod	_	_
 11	تاکنون	تاکنون	ADV	ADV_SADV	attachment=ISO|senID=28673|dadeg_pos=ADV|dadeg_r=ADV|dadeg_h=18	17	advmod	_	_
 12	هر	هر	DET	PREM_AMBAJ	attachment=ISO|senID=28673|dadeg_pos=PREM|dadeg_r=NPREMOD|dadeg_h=13	13	det	_	_
@@ -3495,15 +3495,15 @@
 14	پیش	پیش	ADV	ADV_SADV	attachment=ISO|senID=28673|dadeg_pos=ADV|dadeg_r=NVE|dadeg_h=15	15	compound:lvc	_	_
 15	آمد	آمد#آ	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=28673|dadeg_pos=V|dadeg_h=13|dadeg_r=NCL	13	acl	_	spaceAfter=NO
 16	،	،	PUNCT	PUNC	attachment=ISO|senID=28673|dadeg_pos=PUNC|dadeg_r=PUNC	15	punct	_	_
-17	خوش	خوش	ADJ	ADJ_AJP	attachment=ISO|senID=28673|dadeg_pos=ADJ|dadeg_h=18|dadeg_r=MOS	9	POSDEP	_	_
+17	خوش	خوش	ADJ	ADJ_AJP	attachment=ISO|senID=28673|dadeg_pos=ADJ|dadeg_h=18|dadeg_r=MOS	7	conj	_	_
 18	بوده	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GN|senID=28673|dadeg_pos=AUX|dadeg_h=9|dadeg_r=POSDEP	17	cop	_	_
-19	و	و	CCONJ	CONJ	attachment=ISO|senID=28673|dadeg_pos=CONJ|dadeg_h=18|dadeg_r=VCONJ	17	VCONJ	_	_
+19	و	و	CCONJ	CONJ	attachment=ISO|senID=28673|dadeg_pos=CONJ|dadeg_h=18|dadeg_r=VCONJ	25	cc	_	_
 20	الآن	الآن	NOUN	N_IANM	attachment=ISO|number=SING|senID=28673|dadeg_pos=N|dadeg_r=ADV|dadeg_h=25	25	obl	_	_
 21	در	در	ADP	PREP	attachment=ISO|senID=28673|dadeg_pos=PREP|dadeg_h=25|dadeg_r=VPP	22	case	_	_
 22	شهر	شهر	NOUN	N_IANM	attachment=ISO|number=SING|senID=28673|dadeg_pos=N|dadeg_h=21|dadeg_r=POSDEP	25	obl:arg	_	_
 23	زیبای	زیبا	ADJ	ADJ_AJP	attachment=ISO|senID=28673|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=22	22	amod	_	_
 24	بیروت	بیروت	PROPN	N_IANM	attachment=ISO|number=SING|senID=28673|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=22	22	nmod	_	_
-25	هستم	#هست	AUX	AUX	person=1|attachment=ISO|number=SING|tma=H|senID=28673|dadeg_pos=AUX	19	POSDEP	_	spaceAfter=NO
+25	هستم	#هست	AUX	AUX	person=1|attachment=ISO|number=SING|tma=H|senID=28673|dadeg_pos=AUX|dadeg_h=19|dadeg_r=POSDEP	7	conj	_	spaceAfter=NO
 26	.	.	PUNCT	PUNC	attachment=ISO|senID=28673|dadeg_pos=PUNC|dadeg_r=PUNC	25	punct	_	_
 
 # sent_id = dev-s119
@@ -4671,11 +4671,11 @@
 9	حال	حال	NOUN	N_IANM	attachment=ISO|number=SING|senID=44008|dadeg_pos=N|dadeg_h=8|dadeg_r=POSDEP	1	advcl	_	_
 10	مرگ	مرگ	NOUN	N_IANM	attachment=ISO|number=SING|senID=44008|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=9	9	nmod	_	_
 11	باشد	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=HEL|senID=44008|dadeg_pos=AUX|dadeg_h=1|dadeg_r=AJUCL	9	cop	_	_
-12	و	و	CCONJ	CONJ	attachment=ISO|senID=44008|dadeg_pos=CONJ|dadeg_h=11|dadeg_r=VCONJ	9	VCONJ	_	_
+12	و	و	CCONJ	CONJ	attachment=ISO|senID=44008|dadeg_pos=CONJ|dadeg_h=11|dadeg_r=VCONJ	16	cc	_	_
 13	یا	یا	CCONJ	CONJ	attachment=ISO|senID=44008|dadeg_pos=CONJ	12	POSDEP	_	_
 14	حال	حال	NOUN	N_IANM	attachment=ISO|number=SING|senID=44008|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=17	16	nsubj	_	_
 15	ش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=44008|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=14	14	nmod	_	_
-16	خوب	خوب	ADJ	ADJ_AJP	attachment=ISO|senID=44008|dadeg_pos=ADJ|dadeg_h=17|dadeg_r=MOS	12	POSDEP	_	_
+16	خوب	خوب	ADJ	ADJ_AJP	attachment=ISO|senID=44008|dadeg_pos=ADJ|dadeg_h=17|dadeg_r=MOS	9	conj	_	_
 17	نباشد	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=HEL|senID=44008|polarity=NEG|dadeg_pos=AUX|dadeg_h=12|dadeg_r=POSDEP	16	cop	_	_
 18	خرچنگ‌های	خرچنگ	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=44008|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=24	24	nsubj	_	_
 19	چنگال‌قرمز	چنگال‌قرمز	ADJ	ADJ_AJP	attachment=ISO|senID=44008|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=18	18	amod	_	_
@@ -9405,10 +9405,10 @@
 19	)	)	PUNCT	PUNC	attachment=ISO|senID=44256|dadeg_pos=PUNC|dadeg_r=PUNC	18	punct	_	_
 20	سوخت‌گیری	سوخت‌گیری	NOUN	N_IANM	attachment=ISO|number=SING|senID=44256|dadeg_pos=N|dadeg_r=NVE|dadeg_h=21	21	compound:lvc	_	_
 21	می‌کرد	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=44256|dadeg_pos=V|dadeg_h=12|dadeg_r=VCL	12	ccomp	_	_
-22	و	و	CCONJ	CONJ	attachment=ISO|senID=44256|dadeg_pos=CONJ|dadeg_h=12|dadeg_r=VCONJ	12	VCONJ	_	_
+22	و	و	CCONJ	CONJ	attachment=ISO|senID=44256|dadeg_pos=CONJ|dadeg_h=12|dadeg_r=VCONJ	25	cc	_	_
 23	این	این	PRON	PR_DEMON	attachment=ISO|number=SING|senID=44256|dadeg_pos=PR|dadeg_r=SBJ|dadeg_h=27	25	nsubj	_	_
 24	یک	یک	NUM	PRENUM	attachment=ISO|senID=44256|dadeg_pos=PRENUM|dadeg_r=NPREMOD|dadeg_h=25	25	nummod	_	_
-25	ریسک	ریسک	NOUN	N_IANM	attachment=ISO|number=SING|senID=44256|dadeg_pos=N|dadeg_h=27|dadeg_r=MOS	22	POSDEP	_	_
+25	ریسک	ریسک	NOUN	N_IANM	attachment=ISO|number=SING|senID=44256|dadeg_pos=N|dadeg_h=27|dadeg_r=MOS	12	conj	_	_
 26	کامل	کامل	ADJ	ADJ_AJP	attachment=ISO|senID=44256|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=25	25	amod	_	_
 27	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=44256|dadeg_pos=AUX|dadeg_h=22|dadeg_r=POSDEP	25	cop	_	spaceAfter=NO
 28	.	.	PUNCT	PUNC	attachment=ISO|senID=44256|dadeg_pos=PUNC|dadeg_r=PUNC|dadeg_h=5	3	punct	_	_
@@ -13604,11 +13604,11 @@
 10	سازماندهی	سازماندهی	NOUN	N_IANM	attachment=ISO|number=SING|senID=46298|dadeg_pos=N|dadeg_r=NVE|dadeg_h=11	11	compound:lvc	_	_
 11	کرده	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=46298|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
 12	بودیم	بود#باش	AUX	AUX	number=PLUR|person=1|tense=Past|senID=46298|dadeg_pos=AUX|dadeg_r=aux	11	aux	_	_
-13	و	و	CCONJ	CONJ	attachment=ISO|senID=46298|dadeg_pos=CONJ|dadeg_h=11|dadeg_r=VCONJ	11	VCONJ	_	_
+13	و	و	CCONJ	CONJ	attachment=ISO|senID=46298|dadeg_pos=CONJ|dadeg_h=11|dadeg_r=VCONJ	17	cc	_	_
 14	در	در	ADP	PREP	attachment=ISO|senID=46298|dadeg_pos=PREP|dadeg_h=19|dadeg_r=ADV	16	case	_	_
 15	سه	سه	NUM	PRENUM	attachment=ISO|senID=46298|dadeg_pos=PRENUM|dadeg_r=NPREMOD|dadeg_h=16	16	nummod	_	_
 16	محل	محل	NOUN	N_IANM	attachment=ISO|number=SING|senID=46298|dadeg_pos=N|dadeg_h=14|dadeg_r=POSDEP	17	obl	_	_
-17	مشغول	مشغول	ADJ	ADJ_AJP	attachment=ISO|senID=46298|dadeg_pos=ADJ|dadeg_h=19|dadeg_r=MOS	13	POSDEP	_	_
+17	مشغول	مشغول	ADJ	ADJ_AJP	attachment=ISO|senID=46298|dadeg_pos=ADJ|dadeg_h=19|dadeg_r=MOS	11	conj	_	_
 18	فعالیت	فعالیت	NOUN	N_IANM	attachment=ISO|number=SING|senID=46298|dadeg_pos=N|dadeg_r=NEZ|dadeg_h=17	17	obl:arg	_	_
 19	بودیم	بود#باش	AUX	AUX	person=1|attachment=ISO|number=PLUR|tma=GS|senID=46298|dadeg_pos=AUX|dadeg_h=13|dadeg_r=POSDEP	17	cop	_	spaceAfter=NO
 20	.	.	PUNCT	PUNC	attachment=ISO|senID=46298|dadeg_pos=PUNC|dadeg_r=PUNC|dadeg_h=19	17	punct	_	_
@@ -15755,8 +15755,8 @@
 5	وحشت‌زده	وحشت‌زده	ADJ	ADJ_AJP	attachment=ISO|senID=35122|dadeg_pos=ADJ|dadeg_r=ADV|dadeg_h=7	7	advmod	_	_
 6	جیغ	جیغ	NOUN	N_IANM	attachment=ISO|number=SING|senID=35122|dadeg_pos=N|dadeg_r=NVE|dadeg_h=7	7	compound:lvc	_	_
 7	می‌کشیدم	کشید#کش	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=GES|senID=35122|dadeg_pos=V|dadeg_h=3|dadeg_r=NCL	3	acl	_	_
-8	و	و	CCONJ	CONJ	attachment=ISO|senID=35122|dadeg_pos=CONJ|dadeg_h=7|dadeg_r=VCONJ	7	VCONJ	_	_
-9	نگران	نگران	ADJ	ADJ_AJP	attachment=ISO|senID=35122|dadeg_pos=ADJ|dadeg_h=12|dadeg_r=MOS	8	POSDEP	_	_
+8	و	و	CCONJ	CONJ	attachment=ISO|senID=35122|dadeg_pos=CONJ|dadeg_h=7|dadeg_r=VCONJ	9	cc	_	_
+9	نگران	نگران	ADJ	ADJ_AJP	attachment=ISO|senID=35122|dadeg_pos=ADJ|dadeg_h=12|dadeg_r=MOS	7	conj	_	_
 10	دختر	دختر	NOUN	N_ANM	attachment=ISO|number=SING|senID=35122|dadeg_pos=N|dadeg_r=NEZ|dadeg_h=9	9	obl:arg	_	_
 11	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=35122|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=10	10	nmod	_	_
 12	بودم	بود#باش	AUX	AUX	person=1|attachment=ISO|number=SING|tma=GS|senID=35122|dadeg_pos=AUX|dadeg_h=8|dadeg_r=POSDEP	9	cop	_	_
@@ -17730,13 +17730,13 @@
 17	را	را	ADP	POSTP	attachment=ISO|senID=47210|dadeg_pos=POSTP|dadeg_h=19|dadeg_r=OBJ	16	case	_	_
 18	سرپرستی	سرپرستی	NOUN	N_IANM	attachment=ISO|number=SING|senID=47210|dadeg_pos=N|dadeg_r=NVE|dadeg_h=19	19	compound:lvc	_	_
 19	می‌کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=47210|dadeg_pos=V	15	POSDEP	_	_
-20	و	و	CCONJ	CONJ	attachment=ISO|senID=47210|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	19	VCONJ	_	_
+20	و	و	CCONJ	CONJ	attachment=ISO|senID=47210|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	26	cc	_	_
 21	امروز	امروز	NOUN	N_IANM	attachment=ISO|number=SING|senID=47210|dadeg_pos=N|dadeg_r=ADV|dadeg_h=31	26	obl	_	_
 22	چیزی	چیز	NOUN	N_IANM	attachment=ISO|number=SING|senID=47210|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=31	26	nsubj	_	_
 23	که	که	SCONJ	SUBR	attachment=ISO|senID=47210|dadeg_pos=SUBR|dadeg_h=22|dadeg_r=NCL	24	mark	_	_
 24	جاری	جاری	ADJ	ADJ_AJP	attachment=ISO|senID=47210|dadeg_pos=ADJ|dadeg_h=25|dadeg_r=MOS	22	acl	_	_
 25	است	#است	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=47210|dadeg_pos=AUX|dadeg_h=23|dadeg_r=PRD	24	cop	_	_
-26	حاصل	حاصل	NOUN	N_IANM	attachment=ISO|number=SING|senID=47210|dadeg_pos=N|dadeg_h=31|dadeg_r=MOS	20	POSDEP	_	_
+26	حاصل	حاصل	NOUN	N_IANM	attachment=ISO|number=SING|senID=47210|dadeg_pos=N|dadeg_h=31|dadeg_r=MOS	19	conj	_	_
 27	زحمات	زحمت	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=47210|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=26	26	nmod	_	_
 28	چندده	چندده	NUM	PRENUM	attachment=ISO|senID=47210|dadeg_pos=PRENUM	29	PREDEP	_	_
 29	سالهٔ	ساله	ADJ	ADJ_AJP	attachment=ISO|senID=47210|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=27	27	amod	_	_
@@ -18747,10 +18747,10 @@
 16	خط‌کشی	خط‌کشی	NOUN	N_IANM	attachment=ISO|number=SING|senID=47681|dadeg_pos=N|dadeg_r=NVE|dadeg_h=17	17	compound:lvc	_	_
 17	کرده	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=47681|dadeg_pos=V|dadeg_h=10|dadeg_r=NCL	10	acl	_	_
 18	بودند	بود#باش	AUX	AUX	number=PLUR|person=3|tense=Past|senID=47681|dadeg_pos=AUX|dadeg_r=aux	17	aux	_	_
-19	و	و	CCONJ	CONJ	attachment=ISO|senID=47681|dadeg_pos=CONJ|dadeg_h=17|dadeg_r=VCONJ	17	VCONJ	_	_
+19	و	و	CCONJ	CONJ	attachment=ISO|senID=47681|dadeg_pos=CONJ|dadeg_h=17|dadeg_r=VCONJ	22	cc	_	_
 20	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=47681|dadeg_pos=PREM|dadeg_r=NPREMOD|dadeg_h=21	21	det	_	_
 21	خط‌ها	خط	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=47681|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=25	22	nsubj	_	_
-22	نماینده	نماینده	ADJ	ADJ_AJP	attachment=ISO|senID=47681|dadeg_pos=ADJ|dadeg_h=25|dadeg_r=MOS	19	POSDEP	_	_
+22	نماینده	نماینده	ADJ	ADJ_AJP	attachment=ISO|senID=47681|dadeg_pos=ADJ|dadeg_h=25|dadeg_r=MOS	17	conj	_	_
 23	مرتبه‌های	مرتبه	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=47681|dadeg_pos=N|dadeg_r=NEZ|dadeg_h=22	22	obl:arg	_	_
 24	اعداد	عدد	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=47681|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=23	23	nmod	_	_
 25	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=47681|dadeg_pos=AUX|dadeg_h=19|dadeg_r=POSDEP	22	cop	_	spaceAfter=NO
@@ -18995,10 +18995,10 @@
 14	لباس	لباس	NOUN	N_IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N|dadeg_h=16|dadeg_r=MOS	13	advcl	_	_
 15	شهرت	شهرت	NOUN	N_IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=14	14	nmod	_	_
 16	می‌شود	شد#شو	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=47791|dadeg_pos=V|dadeg_h=13|dadeg_r=AJUCL	14	cop	_	_
-17	و	و	CCONJ	CONJ	attachment=ISO|senID=47791|dadeg_pos=CONJ|dadeg_h=16|dadeg_r=VCONJ	14	VCONJ	_	_
+17	و	و	CCONJ	CONJ	attachment=ISO|senID=47791|dadeg_pos=CONJ|dadeg_h=16|dadeg_r=VCONJ	20	cc	_	_
 18	لباس	لباس	NOUN	N_IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=21	20	nsubj	_	_
 19	شهرت	شهرت	NOUN	N_IANM	attachment=ISO|number=SING|senID=47791|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=18	18	nmod	_	_
-20	حرام	حرام	ADJ	ADJ_AJP	attachment=ISO|senID=47791|dadeg_pos=ADJ|dadeg_h=21|dadeg_r=MOS	17	POSDEP	_	_
+20	حرام	حرام	ADJ	ADJ_AJP	attachment=ISO|senID=47791|dadeg_pos=ADJ|dadeg_h=21|dadeg_r=MOS	14	conj	_	_
 21	است	#است	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=47791|dadeg_pos=AUX|dadeg_h=17|dadeg_r=POSDEP	20	cop	_	spaceAfter=NO
 22	.	.	PUNCT	PUNC	attachment=ISO|senID=47791|dadeg_pos=PUNC|dadeg_r=PUNC|dadeg_h=11	10	punct	_	_
 
@@ -19163,8 +19163,8 @@
 28	چشم‌چرانی	چشم‌چرانی	NOUN	N_IANM	attachment=ISO|number=SING|senID=47871|dadeg_pos=N|dadeg_h=27|dadeg_r=POSDEP	26	conj	_	_
 29	نکرده	کرد#کن	VERB	V_ACT	number=SING|person=3|polarity=NEG|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=47871|dadeg_pos=V|dadeg_h=23|dadeg_r=VCONJ	23	conj	_	_
 30	بود	بود#باش	AUX	AUX	number=SING|person=3|tense=Past|senID=47871|dadeg_pos=AUX|dadeg_r=aux	29	aux	_	_
-31	و	و	CCONJ	CONJ	attachment=ISO|senID=47871|dadeg_pos=CONJ|dadeg_h=29|dadeg_r=VCONJ	29	VCONJ	_	_
-32	پاک‌نفس	پاک‌نفس	ADJ	ADJ_AJP	attachment=ISO|senID=47871|dadeg_pos=ADJ|dadeg_h=39|dadeg_r=MOS	31	POSDEP	_	spaceAfter=NO
+31	و	و	CCONJ	CONJ	attachment=ISO|senID=47871|dadeg_pos=CONJ|dadeg_h=29|dadeg_r=VCONJ	32	cc	_	_
+32	پاک‌نفس	پاک‌نفس	ADJ	ADJ_AJP	attachment=ISO|senID=47871|dadeg_pos=ADJ|dadeg_h=39|dadeg_r=MOS	23	conj	_	spaceAfter=NO
 33	،	،	PUNCT	PUNC	attachment=ISO|senID=47871|dadeg_pos=PUNC|dadeg_r=PUNC	32	punct	_	_
 34	باخدا	باخدا	ADJ	ADJ_AJP	attachment=ISO|senID=47871|dadeg_pos=ADJ|dadeg_h=32|dadeg_r=AJCONJ	32	conj	_	spaceAfter=NO
 35	،	،	PUNCT	PUNC	attachment=ISO|senID=47871|dadeg_pos=PUNC|dadeg_r=PUNC	34	punct	_	_
@@ -19222,13 +19222,13 @@
 18	بسیار	بسیار	ADV	ADV_SADV	attachment=ISO|senID=47891|dadeg_pos=ADV|dadeg_r=APREMOD|dadeg_h=19	19	advmod	_	_
 19	گران	گران	ADJ	ADJ_AJP	attachment=ISO|senID=47891|dadeg_pos=ADJ|dadeg_h=20|dadeg_r=MOS	12	advcl	_	_
 20	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=47891|dadeg_pos=AUX|dadeg_h=12|dadeg_r=AJUCL	19	cop	_	_
-21	و	و	CCONJ	CONJ	attachment=ISO|senID=47891|dadeg_pos=CONJ|dadeg_h=20|dadeg_r=VCONJ	19	VCONJ	_	_
+21	و	و	CCONJ	CONJ	attachment=ISO|senID=47891|dadeg_pos=CONJ|dadeg_h=20|dadeg_r=VCONJ	27	cc	_	_
 22	کلاس‌ها	کلاس	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=47891|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=28	27	nsubj	_	_
 23	نیز	نیز	ADV	ADV_SADV	attachment=ISO|senID=47891|dadeg_pos=ADV|dadeg_h=22|dadeg_r=POSDEP	22	dep	_	_
 24	از	از	ADP	PREP	attachment=ISO|senID=47891|dadeg_pos=PREP|dadeg_h=27|dadeg_r=COMPPP	25	case	_	_
 25	سطح	سطح	NOUN	N_IANM	attachment=ISO|number=SING|senID=47891|dadeg_pos=N|dadeg_h=24|dadeg_r=POSDEP	27	obl:arg	_	_
 26	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=47891|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=25	25	nmod	_	_
-27	پایین‌تر	پایین	ADJ	ADJ_AJCM	attachment=ISO|senID=47891|dadeg_pos=ADJ|dadeg_h=28|dadeg_r=MOS	21	POSDEP	_	_
+27	پایین‌تر	پایین	ADJ	ADJ_AJCM	attachment=ISO|senID=47891|dadeg_pos=ADJ|dadeg_h=28|dadeg_r=MOS	19	conj	_	_
 28	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=47891|dadeg_pos=AUX|dadeg_h=21|dadeg_r=POSDEP	27	cop	_	spaceAfter=NO
 29	.	.	PUNCT	PUNC	attachment=ISO|senID=47891|dadeg_pos=PUNC|dadeg_r=PUNC	8	punct	_	_
 
@@ -19285,12 +19285,12 @@
 1	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=47911|dadeg_pos=PR|dadeg_r=SBJ|dadeg_h=3	3	nsubj	_	_
 2	جوانی	جوانی	NOUN	N_IANM	attachment=ISO|number=SING|senID=47911|dadeg_pos=N|dadeg_r=NVE|dadeg_h=3	3	compound:lvc	_	_
 3	کردم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=47911|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
-4	و	و	CCONJ	CONJ	attachment=ISO|senID=47911|dadeg_pos=CONJ|dadeg_h=3|dadeg_r=VCONJ	3	VCONJ	_	_
+4	و	و	CCONJ	CONJ	attachment=ISO|senID=47911|dadeg_pos=CONJ|dadeg_h=3|dadeg_r=VCONJ	9	cc	_	_
 5	از	از	ADP	PREP	attachment=ISO|senID=47911|dadeg_pos=PREP|dadeg_h=9|dadeg_r=AJPP	6	case	_	_
 6	کردهٔ	کرده	NOUN	N_IANM	attachment=ISO|number=SING|senID=47911|dadeg_pos=N|dadeg_h=5|dadeg_r=POSDEP	9	obl:arg	_	_
 7	خود	خود	PRON	PR_CREFX	attachment=ISO|senID=47911|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=6	6	nmod	_	_
 8	کاملاً	کاملاً	ADV	ADV_SADV	attachment=ISO|senID=47911|dadeg_pos=ADV|dadeg_r=APREMOD|dadeg_h=9	9	advmod	_	_
-9	پشیمان	پشیمان	ADJ	ADJ_AJP	attachment=NXT|senID=47911|dadeg_pos=ADJ|dadeg_h=10|dadeg_r=MOS	4	POSDEP	_	_
+9	پشیمان	پشیمان	ADJ	ADJ_AJP	attachment=NXT|senID=47911|dadeg_pos=ADJ|dadeg_h=10|dadeg_r=MOS	3	conj	_	_
 10	م	#هست	AUX	AUX	person=1|attachment=PRV|number=SING|tma=H|senID=47911|dadeg_pos=AUX|dadeg_h=4|dadeg_r=POSDEP	9	cop	_	_
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=47911|dadeg_pos=PUNC|dadeg_r=PUNC|dadeg_h=10	9	punct	_	_
 
@@ -19656,7 +19656,7 @@
 6	کنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=36147|dadeg_pos=V|dadeg_h=1|dadeg_r=PRD	8	advcl	_	_
 7	قانون‌شکنی	قانون‌شکنی	NOUN	N_IANM	attachment=ISO|number=SING|senID=36147|dadeg_pos=N|dadeg_r=NVE|dadeg_h=8	8	compound:lvc	_	_
 8	کرده‌ای	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GN|senID=36147|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
-9	اما	اما	CCONJ	CONJ	attachment=ISO|senID=36147|dadeg_pos=CONJ|dadeg_h=8|dadeg_r=VCONJ	8	VCONJ	_	_
+9	اما	اما	CCONJ	CONJ	attachment=ISO|senID=36147|dadeg_pos=CONJ|dadeg_h=8|dadeg_r=VCONJ	17	cc	_	_
 10	از	از	ADP	PREP	attachment=ISO|senID=36147|dadeg_pos=PREP|dadeg_h=14|dadeg_r=NPP	11	case	_	_
 11	قانون	قانون	NOUN	N_IANM	attachment=ISO|number=SING|senID=36147|dadeg_pos=N|dadeg_h=10|dadeg_r=POSDEP	15	obl:arg	_	_
 12	دینی	دینی	ADJ	ADJ_AJP	attachment=ISO|senID=36147|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=11	11	amod	_	_
@@ -19664,7 +19664,7 @@
 14	تخطی	تخطی	NOUN	N_IANM	attachment=ISO|number=SING|senID=36147|dadeg_pos=N|dadeg_r=NVE|dadeg_h=15	15	compound:lvc	_	_
 15	کرده	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Part|tma=GEL|dadeg_pos=V|dadeg_fpos=ACT|senID=36147|dadeg_pos=V|dadeg_h=13|dadeg_r=PRD	17	advcl	_	_
 16	باشی	بود#باش	AUX	AUX	mood=Sub|number=SING|person=2|tense=Pres|senID=36147|dadeg_pos=AUX|dadeg_r=aux	15	aux	_	_
-17	محارب	محارب	ADJ	ADJ_AJP	attachment=NXT|senID=36147|dadeg_pos=ADJ|dadeg_h=18|dadeg_r=MOS	9	POSDEP	_	_
+17	محارب	محارب	ADJ	ADJ_AJP	attachment=NXT|senID=36147|dadeg_pos=ADJ|dadeg_h=18|dadeg_r=MOS	8	conj	_	_
 18	ی	#هست	AUX	AUX	person=2|attachment=PRV|number=SING|tma=H|senID=36147|dadeg_pos=AUX|dadeg_h=9|dadeg_r=POSDEP	17	cop	_	_
 19	و	و	CCONJ	CONJ	attachment=ISO|senID=36147|dadeg_pos=CONJ|dadeg_h=17|dadeg_r=AJCONJ	20	cc	_	_
 20	مفسد	مفسد	ADJ	ADJ_AJP	attachment=ISO|senID=36147|dadeg_pos=ADJ|dadeg_h=19|dadeg_r=POSDEP	17	conj	_	_
@@ -19868,10 +19868,10 @@
 17	درک	درک	NOUN	N_IANM	attachment=ISO|number=SING|senID=36257|dadeg_pos=N|dadeg_r=OBJ|dadeg_h=19	19	obj	_	_
 18	والایی	والا	ADJ	ADJ_AJP	attachment=ISO|senID=36257|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=17	17	amod	_	_
 19	دارد	داشت#دار	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=36257|dadeg_pos=V|dadeg_h=12|dadeg_r=NCL	12	acl	_	_
-20	و	و	CCONJ	CONJ	attachment=ISO|senID=36257|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	19	VCONJ	_	_
+20	و	و	CCONJ	CONJ	attachment=ISO|senID=36257|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	23	cc	_	_
 21	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=36257|dadeg_pos=PR|dadeg_r=SBJ|dadeg_h=26	23	nsubj	_	_
 22	چقدر	چقدر	ADV	ADV_SADV	attachment=ISO|senID=36257|dadeg_pos=ADV	23	PREDEP	_	_
-23	پرت	پرت	ADJ	ADJ_AJP	attachment=ISO|senID=36257|dadeg_pos=ADJ|dadeg_h=26|dadeg_r=MOS	20	POSDEP	_	_
+23	پرت	پرت	ADJ	ADJ_AJP	attachment=ISO|senID=36257|dadeg_pos=ADJ|dadeg_h=26|dadeg_r=MOS	19	conj	_	_
 24	و	و	CCONJ	CONJ	attachment=ISO|senID=36257|dadeg_pos=CONJ|dadeg_h=23|dadeg_r=AJCONJ	25	cc	_	_
 25	دورافتاده	دورافتاده	ADJ	ADJ_AJP	attachment=NXT|senID=36257|dadeg_pos=ADJ|dadeg_h=24|dadeg_r=POSDEP	23	conj	_	_
 26	ام	#هست	AUX	AUX	person=1|attachment=PRV|number=SING|tma=H|senID=36257|dadeg_pos=AUX|dadeg_h=20|dadeg_r=POSDEP	23	cop	_	_
@@ -21647,10 +21647,10 @@
 8	چیزها	چیز	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=37220|dadeg_pos=N|dadeg_h=6|dadeg_r=POSDEP	10	obl:arg	_	_
 9	کناره‌گیری	کناره‌گیری	NOUN	N_IANM	attachment=ISO|number=SING|senID=37220|dadeg_pos=N|dadeg_r=NVE|dadeg_h=10	10	compound:lvc	_	_
 10	می‌کردیم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=GES|senID=37220|dadeg_pos=V	5	POSDEP	_	_
-11	و	و	CCONJ	CONJ	attachment=ISO|senID=37220|dadeg_pos=CONJ|dadeg_h=10|dadeg_r=VCONJ	10	VCONJ	_	_
+11	و	و	CCONJ	CONJ	attachment=ISO|senID=37220|dadeg_pos=CONJ|dadeg_h=10|dadeg_r=VCONJ	14	cc	_	_
 12	به	به	ADP	PREP	attachment=ISO|senID=37220|dadeg_pos=PREP|dadeg_h=15|dadeg_r=MOS	14	case	_	_
 13	همین	همین	DET	PREM_DEMAJ	attachment=ISO|senID=37220|dadeg_pos=PREM|dadeg_r=NPREMOD|dadeg_h=14	14	det	_	_
-14	سبب	سبب	NOUN	N_IANM	attachment=ISO|number=SING|senID=37220|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	11	POSDEP	_	_
+14	سبب	سبب	NOUN	N_IANM	attachment=ISO|number=SING|senID=37220|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	10	conj	_	_
 15	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=37220|dadeg_pos=AUX|dadeg_h=11|dadeg_r=POSDEP	14	cop	_	_
 16	که	که	SCONJ	SUBR	attachment=ISO|senID=37220|dadeg_pos=SUBR|dadeg_h=15|dadeg_r=VCL	14	csubj	_	_
 17	مسائلی	مسئله	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=37220|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=21	20	nsubj	_	_
@@ -22026,7 +22026,7 @@
 7	خودش	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=37411|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=6	6	nmod	_	_
 8	افتخار	افتخار	NOUN	N_IANM	attachment=ISO|number=SING|senID=37411|dadeg_pos=N|dadeg_r=NVE|dadeg_h=9	9	compound:lvc	_	_
 9	می‌کند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=37411|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
-10	و	و	CCONJ	CONJ	attachment=ISO|senID=37411|dadeg_pos=CONJ|dadeg_h=9|dadeg_r=VCONJ	9	VCONJ	_	_
+10	و	و	CCONJ	CONJ	attachment=ISO|senID=37411|dadeg_pos=CONJ|dadeg_h=9|dadeg_r=VCONJ	20	cc	_	_
 11	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=37411|dadeg_pos=SUBR|dadeg_h=21|dadeg_r=AJUCL	14	mark	_	_
 12	به	به	ADP	PREP	attachment=ISO|senID=37411|dadeg_pos=PREP|dadeg_h=14|dadeg_r=VPP	13	case	_	_
 13	او	او	PRON	PR_SEPER	person=3|attachment=ISO|number=SING|senID=37411|dadeg_pos=PR|dadeg_h=12|dadeg_r=POSDEP	14	obl:arg	_	_
@@ -22036,7 +22036,7 @@
 17	)	)	PUNCT	PUNC	attachment=ISO|senID=37411|dadeg_pos=PUNC|dadeg_r=PUNC	16	punct	_	spaceAfter=NO
 18	،	،	PUNCT	PUNC	attachment=ISO|senID=37411|dadeg_pos=PUNC|dadeg_r=PUNC	16	punct	_	_
 19	مثل	مثل	ADP	PREP	attachment=ISO|senID=37411|dadeg_pos=PREP|dadeg_h=21|dadeg_r=MOS	20	case	_	_
-20	این	این	PRON	PR_DEMON	attachment=NXT|number=SING|senID=37411|dadeg_pos=PR|dadeg_h=19|dadeg_r=POSDEP	10	POSDEP	_	_
+20	این	این	PRON	PR_DEMON	attachment=NXT|number=SING|senID=37411|dadeg_pos=PR|dadeg_h=19|dadeg_r=POSDEP	9	conj	_	_
 21	ست	#است	AUX	AUX	person=3|attachment=PRV|number=SING|tma=H|senID=37411|dadeg_pos=AUX|dadeg_h=10|dadeg_r=POSDEP	20	cop	_	_
 22	که	که	SCONJ	SUBR	attachment=ISO|senID=37411|dadeg_pos=SUBR|dadeg_h=20|dadeg_r=NCL	26	mark	_	_
 23	به	به	ADP	PREP	attachment=ISO|senID=37411|dadeg_pos=PREP|dadeg_h=25|dadeg_r=NPP	24	case	_	_
@@ -23152,9 +23152,9 @@
 7	به	به	ADP	PREP	attachment=ISO|senID=48219|dadeg_pos=PREP|dadeg_h=9|dadeg_r=VPP	8	case	_	_
 8	تصویب	تصویب	NOUN	N_IANM	attachment=ISO|number=SING|senID=48219|dadeg_pos=N|dadeg_h=7|dadeg_r=POSDEP	9	obl:arg	_	_
 9	رساند	رساند#رسان	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=48219|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
-10	و	و	CCONJ	CONJ	attachment=ISO|senID=48219|dadeg_pos=CONJ|dadeg_h=9|dadeg_r=VCONJ	9	VCONJ	_	_
+10	و	و	CCONJ	CONJ	attachment=ISO|senID=48219|dadeg_pos=CONJ|dadeg_h=9|dadeg_r=VCONJ	12	cc	_	_
 11	اکنون	اکنون	NOUN	N_IANM	attachment=ISO|number=SING|senID=48219|dadeg_pos=N|dadeg_r=ADV|dadeg_h=14	12	obl	_	_
-12	نوبت	نوبت	NOUN	N_IANM	attachment=ISO|number=SING|senID=48219|dadeg_pos=N|dadeg_h=14|dadeg_r=MOS	10	POSDEP	_	_
+12	نوبت	نوبت	NOUN	N_IANM	attachment=ISO|number=SING|senID=48219|dadeg_pos=N|dadeg_h=14|dadeg_r=MOS	9	conj	_	_
 13	مسئولین	مسئول	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=48219|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=12	12	nmod	_	_
 14	است	#است	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=48219|dadeg_pos=AUX|dadeg_h=10|dadeg_r=POSDEP	12	cop	_	_
 15	که	که	SCONJ	SUBR	attachment=ISO|senID=48219|dadeg_pos=SUBR|dadeg_h=14|dadeg_r=AJUCL	24	mark	_	_
@@ -24393,7 +24393,7 @@
 21	ش	او	PRON	PR_JOPER	person=3|attachment=PRV|number=SING|senID=38353|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=20	20	nmod	_	_
 22	می‌گیرد	گرفت#گیر	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=38353|dadeg_pos=V|dadeg_h=18|dadeg_r=PRD	17	ccomp	_	spaceAfter=NO
 23	،	،	PUNCT	PUNC	attachment=ISO|senID=38353|dadeg_pos=PUNC|dadeg_r=PUNC	22	punct	_	_
-24	ولی	ولی	CCONJ	CONJ	attachment=ISO|senID=38353|dadeg_pos=CONJ|dadeg_h=2|dadeg_r=VCONJ	2	VCONJ	_	_
+24	ولی	ولی	CCONJ	CONJ	attachment=ISO|senID=38353|dadeg_pos=CONJ|dadeg_h=2|dadeg_r=VCONJ	33	cc	_	_
 25	داش	داش	PROPN	IDEN	attachment=ISO|number=SING|senID=38353|dadeg_pos=IDEN	26	PREDEP	_	_
 26	آکل	آکل	NOUN	N_ANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=34	33	nsubj	_	_
 27	در	در	ADP	PREP	attachment=ISO|senID=38353|dadeg_pos=PREP|dadeg_h=33|dadeg_r=AJPP	28	case	_	_
@@ -24402,13 +24402,13 @@
 30	گاو	گاو	NOUN	N_ANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N|dadeg_h=29|dadeg_r=POSDEP	33	nmod	_	_
 31	پیشانی	پیشانی	NOUN	N_IANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N|dadeg_r=NPOSTMOD|dadeg_h=30	30	amod	_	_
 32	سفید	سفید	ADJ	ADJ_AJP	attachment=ISO|senID=38353|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=31	31	amod	_	_
-33	سرشناس	سرشناس	ADJ	ADJ_AJP	attachment=ISO|senID=38353|dadeg_pos=ADJ|dadeg_h=34|dadeg_r=MOS	24	POSDEP	_	_
+33	سرشناس	سرشناس	ADJ	ADJ_AJP	attachment=ISO|senID=38353|dadeg_pos=ADJ|dadeg_h=34|dadeg_r=MOS	2	conj	_	_
 34	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=38353|dadeg_pos=AUX|dadeg_h=24|dadeg_r=POSDEP	33	cop	_	_
 35	و	و	CCONJ	CONJ	attachment=ISO|senID=38353|dadeg_pos=CONJ|dadeg_h=34|dadeg_r=VCONJ	39	cc	_	_
 36	هیچ	هیچ	DET	PREM_AMBAJ	attachment=ISO|senID=38353|dadeg_pos=PREM|dadeg_r=NPREMOD|dadeg_h=37	37	det	_	_
 37	لوطی	لوطی	NOUN	N_ANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=39	39	nsubj	_	_
 38	پیدا	پیدا	ADJ	ADJ_AJP	attachment=ISO|senID=38353|dadeg_pos=ADJ|dadeg_r=NVE|dadeg_h=39	39	compound:lvc	_	_
-39	نمی‌شد	شد#شو	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=38353|polarity=NEG|dadeg_pos=V|dadeg_h=35|dadeg_r=POSDEP	33	conj	_	_
+39	نمی‌شد	شد#شو	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GES|senID=38353|polarity=NEG|dadeg_pos=V|dadeg_h=35|dadeg_r=POSDEP	2	conj	_	_
 40	که	که	SCONJ	SUBR	attachment=ISO|senID=38353|dadeg_pos=SUBR|dadeg_h=37|dadeg_r=NCL	45	mark	_	_
 41	ضرب	ضرب	NOUN	N_IANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N|dadeg_h=44|dadeg_r=PREDEP	45	obj	_	_
 42	شست	شست	NOUN	N_IANM	attachment=ISO|number=SING|senID=38353|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=41	41	nmod	_	_
@@ -24855,9 +24855,9 @@
 8	با	با	ADP	PREP	attachment=ISO|senID=38555|dadeg_pos=PREP|dadeg_h=10|dadeg_r=ADV	9	case	_	_
 9	قدرشناسی	قدرشناسی	NOUN	N_IANM	attachment=ISO|number=SING|senID=38555|dadeg_pos=N|dadeg_h=8|dadeg_r=POSDEP	10	obl	_	_
 10	دریاب	در#یافت#یاب	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=HA|senID=38555|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
-11	و	و	CCONJ	CONJ	attachment=ISO|senID=38555|dadeg_pos=CONJ|dadeg_h=10|dadeg_r=VCONJ	10	VCONJ	_	_
+11	و	و	CCONJ	CONJ	attachment=ISO|senID=38555|dadeg_pos=CONJ|dadeg_h=10|dadeg_r=VCONJ	13	cc	_	_
 12	از	از	ADP	PREP	attachment=ISO|senID=38555|dadeg_pos=PREP|dadeg_h=14|dadeg_r=MOS	13	case	_	_
-13	شکرگزاران	شکرگزار	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=38555|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	11	POSDEP	_	_
+13	شکرگزاران	شکرگزار	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=38555|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	10	conj	_	_
 14	باش	بود#باش	AUX	AUX	person=2|attachment=ISO|number=SING|tma=HA|senID=38555|dadeg_pos=AUX|dadeg_h=11|dadeg_r=POSDEP	13	cop	_	spaceAfter=NO
 15	.	.	PUNCT	PUNC	attachment=ISO|senID=38555|dadeg_pos=PUNC|dadeg_r=PUNC|dadeg_h=14	13	punct	_	_
 
@@ -24965,13 +24965,13 @@
 22	را	را	ADP	POSTP	attachment=ISO|senID=38605|dadeg_pos=POSTP|dadeg_h=24|dadeg_r=OBJ	21	case	_	_
 23	نوازش	نوازش	NOUN	N_IANM	attachment=ISO|number=SING|senID=38605|dadeg_pos=N|dadeg_r=NVE|dadeg_h=24	24	compound:lvc	_	_
 24	می‌دهند	داد#ده	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=38605|dadeg_pos=V	14	PREDEP	_	_
-25	و	و	CCONJ	CONJ	attachment=ISO|senID=38605|dadeg_pos=CONJ|dadeg_h=24|dadeg_r=VCONJ	24	VCONJ	_	_
+25	و	و	CCONJ	CONJ	attachment=ISO|senID=38605|dadeg_pos=CONJ|dadeg_h=24|dadeg_r=VCONJ	31	cc	_	_
 26	ماورای	ماورا	NOUN	N_IANM	attachment=ISO|number=SING|senID=38605|dadeg_pos=N|dadeg_r=ADVC|dadeg_h=31	31	obl:arg	_	_
 27	پروانه‌های	پروانه	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=38605|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=26	26	nmod	_	_
 28	لطیف	لطیف	ADJ	ADJ_AJP	attachment=ISO|senID=38605|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=27	27	amod	_	_
 29	و	و	CCONJ	CONJ	attachment=ISO|senID=38605|dadeg_pos=CONJ|dadeg_h=28|dadeg_r=AJCONJ	30	cc	_	_
 30	زیبا	زیبا	ADJ	ADJ_AJP	attachment=ISO|senID=38605|dadeg_pos=ADJ|dadeg_h=29|dadeg_r=POSDEP	28	conj	_	_
-31	هستند	#هست	AUX	AUX	person=3|attachment=ISO|number=PLUR|tma=H|senID=38605|dadeg_pos=AUX	25	POSDEP	_	spaceAfter=NO
+31	هستند	#هست	AUX	AUX	person=3|attachment=ISO|number=PLUR|tma=H|senID=38605|dadeg_pos=AUX|dadeg_h=25|dadeg_r=POSDEP	24	conj	_	spaceAfter=NO
 32	،	،	PUNCT	PUNC	attachment=ISO|senID=38605|dadeg_pos=PUNC|dadeg_r=PUNC	31	punct	_	_
 33	اینها	اینها	PRON	PR_DEMON	attachment=ISO|number=PLUR|senID=38605|dadeg_pos=PR|dadeg_r=SBJ|dadeg_h=43	35	nsubj	_	_
 34	به	به	ADP	PREP	attachment=ISO|senID=38605|dadeg_pos=PREP|dadeg_h=43|dadeg_r=MOS	35	case	_	_
@@ -25352,10 +25352,10 @@
 159	را	را	ADP	POSTP	attachment=ISO|senID=38676|dadeg_pos=POSTP|dadeg_h=161|dadeg_r=OBJ	153	case	_	_
 160	ادراک	ادراک	NOUN	N_IANM	attachment=ISO|number=SING|senID=38676|dadeg_pos=N|dadeg_r=NVE|dadeg_h=161	161	compound:lvc	_	_
 161	کنم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=38676|dadeg_pos=V|dadeg_h=152|dadeg_r=VCL	152	ccomp	_	_
-162	و	و	CCONJ	CONJ	attachment=ISO|senID=38676|dadeg_pos=CONJ|dadeg_h=137|dadeg_r=VCONJ	137	VCONJ	_	_
+162	و	و	CCONJ	CONJ	attachment=ISO|senID=38676|dadeg_pos=CONJ|dadeg_h=137|dadeg_r=VCONJ	165	cc	_	_
 163	کدام	کدام	DET	PREM_QUAJ	attachment=ISO|senID=38676|dadeg_pos=PREM|dadeg_r=NPREMOD|dadeg_h=164	164	det	_	_
 164	منتقدی	منتقد	NOUN	N_ANM	attachment=ISO|number=SING|senID=38676|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=165	165	nsubj	_	_
-165	هست	#هست	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=38676|dadeg_pos=AUX	162	POSDEP	_	_
+165	هست	#هست	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=38676|dadeg_pos=AUX|dadeg_h=162|dadeg_r=POSDEP	84	conj	_	_
 166	که	که	SCONJ	SUBR	attachment=ISO|senID=38676|dadeg_pos=SUBR|dadeg_h=164|dadeg_r=NCL	177	mark	_	_
 167	بدون	بدون	ADP	PREP	attachment=ISO|senID=38676|dadeg_pos=PREP|dadeg_h=177|dadeg_r=ADV	168	case	_	_
 168	نفوذ	نفوذ	NOUN	N_IANM	attachment=ISO|number=SING|senID=38676|dadeg_pos=N|dadeg_h=167|dadeg_r=POSDEP	177	obl	_	_
@@ -25394,11 +25394,11 @@
 4	از	از	ADP	PREP	attachment=ISO|senID=38686|dadeg_pos=PREP|dadeg_h=6|dadeg_r=MOS	5	case	_	_
 5	Obscena	Obscena	PROPN	N_IANM	attachment=ISO|number=SING|senID=38686|dadeg_pos=N|dadeg_h=4|dadeg_r=POSDEP	2	ccomp	_	_
 6	است	#است	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=38686|dadeg_pos=AUX|dadeg_h=2|dadeg_r=VCL	5	cop	_	_
-7	و	و	CCONJ	CONJ	attachment=ISO|senID=38686|dadeg_pos=CONJ|dadeg_h=6|dadeg_r=VCONJ	5	VCONJ	_	_
+7	و	و	CCONJ	CONJ	attachment=ISO|senID=38686|dadeg_pos=CONJ|dadeg_h=6|dadeg_r=VCONJ	11	cc	_	_
 8	کلمهٔ	کلمه	NOUN	N_IANM	attachment=ISO|number=SING|senID=38686|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=13	11	nsubj	_	_
 9	اخیر	اخیر	ADJ	ADJ_AJP	attachment=ISO|senID=38686|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=8	8	amod	_	_
 10	به	به	ADP	PREP	attachment=ISO|senID=38686|dadeg_pos=PREP|dadeg_h=13|dadeg_r=MOS	11	case	_	_
-11	معنای	معنا	NOUN	N_IANM	attachment=ISO|number=SING|senID=38686|dadeg_pos=N|dadeg_h=10|dadeg_r=POSDEP	7	POSDEP	_	_
+11	معنای	معنا	NOUN	N_IANM	attachment=ISO|number=SING|senID=38686|dadeg_pos=N|dadeg_h=10|dadeg_r=POSDEP	5	conj	_	_
 12	چیزی	چیز	NOUN	N_IANM	attachment=ISO|number=SING|senID=38686|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=11	11	nmod	_	_
 13	است	#است	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=38686|dadeg_pos=AUX|dadeg_h=7|dadeg_r=POSDEP	11	cop	_	_
 14	که	که	SCONJ	SUBR	attachment=ISO|senID=38686|dadeg_pos=SUBR|dadeg_h=12|dadeg_r=NCL	15	mark	_	_
@@ -25662,11 +25662,11 @@
 8	دفع	دفع	NOUN	N_IANM	attachment=ISO|number=SING|senID=38779|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=7	7	nmod	_	spaceAfter=NO
 9	،	،	PUNCT	PUNC	attachment=ISO|senID=38779|dadeg_pos=PUNC|dadeg_r=PUNC	8	punct	_	_
 10	انحلالی	انحلالی	ADJ	ADJ_AJP	attachment=ISO|senID=38779|dadeg_pos=ADJ|dadeg_h=5|dadeg_r=MOS	6	vocative	_	_
-11	و	و	CCONJ	CONJ	attachment=ISO|senID=38779|dadeg_pos=CONJ|dadeg_h=5|dadeg_r=VCONJ	10	VCONJ	_	_
+11	و	و	CCONJ	CONJ	attachment=ISO|senID=38779|dadeg_pos=CONJ|dadeg_h=5|dadeg_r=VCONJ	15	cc	_	_
 12	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=38779|dadeg_pos=SUBR|dadeg_h=16|dadeg_r=AJUCL	13	mark	_	_
 13	بتوان	#توان	VERB	V_MODL	attachment=ISO|number=SING|tma=HEL|senID=38779|dadeg_pos=V|dadeg_h=12|dadeg_r=PRD	15	advcl	_	_
 14	گفت	گفت#گو	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38779|dadeg_pos=V|dadeg_h=13|dadeg_r=VCL	13	ccomp	_	_
-15	ناخلاقه	ناخلاقه	ADJ	ADJ_AJP	attachment=ISO|senID=38779|dadeg_pos=ADJ|dadeg_h=16|dadeg_r=MOS	11	POSDEP	_	_
+15	ناخلاقه	ناخلاقه	ADJ	ADJ_AJP	attachment=ISO|senID=38779|dadeg_pos=ADJ|dadeg_h=16|dadeg_r=MOS	10	conj	_	_
 16	است	#است	AUX	AUX	person=3|attachment=ISO|number=SING|tma=H|senID=38779|dadeg_pos=AUX|dadeg_h=11|dadeg_r=POSDEP	15	cop	_	spaceAfter=NO
 17	.	.	PUNCT	PUNC	attachment=ISO|senID=38779|dadeg_pos=PUNC|dadeg_r=PUNC|dadeg_h=16	15	punct	_	_
 
@@ -26750,8 +26750,8 @@
 2	قفس	قفس	NOUN	N_IANM	attachment=ISO|number=SING|senID=39204|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=1	1	nmod	_	_
 3	افتاده	افتاد#افت	VERB	V_ACT	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=39204|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
 4	بودند	بود#باش	AUX	AUX	number=PLUR|person=3|tense=Past|senID=39204|dadeg_pos=AUX|dadeg_r=aux	3	aux	_	_
-5	و	و	CCONJ	CONJ	attachment=ISO|senID=39204|dadeg_pos=CONJ|dadeg_h=3|dadeg_r=VCONJ	3	VCONJ	_	_
-6	مرده	مرده	ADJ	ADJ_AJP	attachment=ISO|senID=39204|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=MOS	5	POSDEP	_	_
+5	و	و	CCONJ	CONJ	attachment=ISO|senID=39204|dadeg_pos=CONJ|dadeg_h=3|dadeg_r=VCONJ	6	cc	_	_
+6	مرده	مرده	ADJ	ADJ_AJP	attachment=ISO|senID=39204|dadeg_pos=ADJ|dadeg_h=7|dadeg_r=MOS	3	conj	_	_
 7	بودند	بود#باش	AUX	AUX	person=3|attachment=ISO|number=PLUR|tma=GS|senID=39204|dadeg_pos=AUX|dadeg_h=5|dadeg_r=POSDEP	6	cop	_	_
 8	و	و	CCONJ	CONJ	attachment=ISO|senID=39204|dadeg_pos=CONJ|dadeg_h=7|dadeg_r=VCONJ	16	cc	_	_
 9	امروز	امروز	NOUN	N_IANM	attachment=ISO|number=SING|senID=39204|dadeg_pos=N|dadeg_r=ADV|dadeg_h=16	16	obl	_	_
@@ -26761,9 +26761,9 @@
 13	سر	سر	NOUN	N_IANM	attachment=ISO|number=SING|senID=39204|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	16	obl	_	_
 14	قفس	قفس	NOUN	N_IANM	attachment=ISO|number=SING|senID=39204|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=13	13	nmod	_	_
 15	خالی	خالی	ADJ	ADJ_AJP	attachment=ISO|senID=39204|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=14	14	amod	_	_
-16	ایستاد	ایستاد#ایست	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39204|dadeg_pos=V|dadeg_h=8|dadeg_r=POSDEP	6	conj	_	spaceAfter=NO
+16	ایستاد	ایستاد#ایست	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=39204|dadeg_pos=V|dadeg_h=8|dadeg_r=POSDEP	3	conj	_	spaceAfter=NO
 17	؛	؛	PUNCT	PUNC	attachment=ISO|senID=39204|dadeg_pos=PUNC|dadeg_r=PUNC	16	punct	_	_
-18	منتظر	منتظر	ADJ	ADJ_AJP	attachment=ISO|senID=39204|dadeg_pos=ADJ|dadeg_h=20|dadeg_r=MOS	6	conj	_	_
+18	منتظر	منتظر	ADJ	ADJ_AJP	attachment=ISO|senID=39204|dadeg_pos=ADJ|dadeg_h=20|dadeg_r=MOS	3	conj	_	_
 19	کسی	کس	NOUN	N_ANM	attachment=ISO|number=SING|senID=39204|dadeg_pos=N|dadeg_r=NEZ|dadeg_h=18	18	obl:arg	_	_
 20	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=39204|dadeg_pos=AUX|dadeg_h=16|dadeg_r=VCONJ	18	cop	_	_
 21	تا	تا	SCONJ	SUBR	attachment=ISO|senID=39204|dadeg_pos=SUBR|dadeg_h=20|dadeg_r=AJUCL	29	mark	_	_
@@ -27276,10 +27276,10 @@
 13	که	که	SCONJ	SUBR	attachment=ISO|senID=39445|dadeg_pos=SUBR|dadeg_h=12|dadeg_r=VCL	12	ccomp	_	_
 14	ملک	ملک	NOUN	N_IANM	attachment=ISO|number=SING|senID=39445|dadeg_pos=N|dadeg_h=15|dadeg_r=MOS	13	ccomp	_	_
 15	بوده‌ام	بود#باش	AUX	AUX	person=1|attachment=ISO|number=SING|tma=GN|senID=39445|dadeg_pos=AUX|dadeg_h=13|dadeg_r=VCL	14	cop	_	_
-16	و	و	CCONJ	CONJ	attachment=ISO|senID=39445|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	14	VCONJ	_	_
+16	و	و	CCONJ	CONJ	attachment=ISO|senID=39445|dadeg_pos=CONJ|dadeg_h=15|dadeg_r=VCONJ	19	cc	_	_
 17	فردوس	فردوس	PROPN	N_IANM	attachment=ISO|number=SING|senID=39445|dadeg_pos=N|dadeg_r=SBJ|dadeg_h=21	19	nsubj	_	_
 18	برین	برین	ADJ	ADJ_AJP	attachment=ISO|senID=39445|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=17	17	amod	_	_
-19	جا	جا	NOUN	N_IANM	attachment=ISO|number=SING|senID=39445|dadeg_pos=N|dadeg_h=21|dadeg_r=MOS	16	POSDEP	_	_
+19	جا	جا	NOUN	N_IANM	attachment=ISO|number=SING|senID=39445|dadeg_pos=N|dadeg_h=21|dadeg_r=MOS	14	conj	_	_
 20	یم	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=39445|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=19	19	nmod	_	_
 21	بود	بود#باش	AUX	AUX	person=3|attachment=ISO|number=SING|tma=GS|senID=39445|dadeg_pos=AUX|dadeg_h=16|dadeg_r=POSDEP	19	cop	_	spaceAfter=NO
 22	.	.	PUNCT	PUNC	attachment=ISO|senID=39445|dadeg_pos=PUNC|dadeg_r=PUNC	2	punct	_	_
