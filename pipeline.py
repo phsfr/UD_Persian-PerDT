@@ -18,4 +18,7 @@ os.system("python3 -u merge_stanza.py")
 print("tree_checker.py")
 os.system("python3 -u tree_checker.py")
 
+print("remove_subtypes.py")
+os.system("python3 -u remove_subtypes.py")
+
 print("FINISHED!")
