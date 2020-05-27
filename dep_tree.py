@@ -867,9 +867,7 @@ class DependencyTree:
             word = self.words[idx]
             rol_changed = False
             if old_role == 'VCL':  # rule to find and tag csubj roles
-                # if self.sen_id=='23513':
-                #    print('changed {} idx {} old role is {} with head {} & pos {}'.format(self.other_features[idx].has_feat('dadeg_r'),idx,self.labels[idx],old_head,self.tags[self.reverse_index[old_head]]))
-                if self.tags[self.reverse_index[old_head]] == 'VERB':
+                if self.tags[self.reverse_index[old_head]] in {'VERB', "AUX"}:
                     mos_child = self.find_children_with_role(old_head, 'MOS')
                     sbj_child = self.find_children_with_role(old_head, 'SBJ')
                     if len(sbj_child) == 0 and len(mos_child) > 0:
@@ -954,29 +952,6 @@ class DependencyTree:
                     # if self.sen_id=='24269':
                     #    print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
                 rol_changed = True
-            #    if len(verb_child)>0:
-            #            if old_pos=='CCONJ':
-            #                old_hd,old_child_r=self.node_assign_new_role(idx,self.reverse_index[old_head],'cc') 
-            #            else:
-            #                old_hd=self.index[idx]
-            #            if self.labels[verb_child[0]]=='conj':
-            #                new_h=self.reverse_index[self.heads[verb_child[0]]]
-            #            else:
-            #                new_h=verb_child[0]
-            #            old_hd,old_child_r=self.node_assign_new_role(self.reverse_index[old_hd],new_h,'conj')
-            #            old_hd_idx=old_hd
-            #            if old_hd!=0:
-            #                old_hd_idx=self.reverse_index[old_hd]
-            #            old_hd,old_child_r=self.node_assign_new_role(new_h,old_hd_idx,old_child_r)
-            #            rol_changed=True
-            #    if len(verb_child)==0: #means it's a verb with VCONJ rel with the other verb
-            #        head_idx=self.reverse_index[old_head]
-            #        if self.labels[head_idx]=='conj':
-            #            new_h=self.reverse_index[self.heads[head_idx]]
-            #        else:
-            #            new_h=head_idx
-            #        old_hd,old_child_r=self.node_assign_new_role(idx,new_h,'conj')
-            #        rol_changed=True
 
             if old_role in {"NCONJ", "AJCONJ", "AVCONJ", "PCONJ"}:
                 if old_pos == 'CCONJ':
@@ -991,38 +966,22 @@ class DependencyTree:
                         self.labels[child[0]] = 'conj'
                         head_idx = self.reverse_index[old_head]
                         head_role = self.labels[head_idx]
-                        # if self.tags[child[0]]=='NUM' and self.tags[head_idx]=='NUM' and word=='و': #like هفتصد و سی و دو. word (CCONJ) only should be و to avoid mistakes: یک یا دو
-                        #    self.labels[child[0]]='flat:num'#'compound:num'
-                        #    self.labels[idx]='flat:num'
-                        #    self.heads[idx]=old_head
                         if head_role == 'conj':
                             self.heads[child[0]] = self.heads[head_idx]
-
-                            # if old_role=='AJCONJ':
-                            #    print('conj head for AJCONJ {}'.format(self.sent_descript)) 
                         else:
                             self.heads[child[0]] = old_head
                         if not self.other_features[child[0]].has_feat('dadeg_r'):
                             self.other_features[child[0]].add_feat(
                                 {'dadeg_h': str(old_child_h), 'dadeg_r': old_child_role})
-                    # else:
-                    #    print('child {} in {}'.format(child,self.sent_descript))  
                 else:
                     head_idx = self.reverse_index[old_head]
                     head_role = self.labels[head_idx]
-                    # if self.sen_id=='24269':
-                    #    print('in sent 24269, head_idx is {} & head_role is {}'.format(head_idx,head_role))
                     if head_role == 'conj':
                         self.heads[idx] = self.heads[head_idx]
                         self.labels[idx] = 'conj'
                     else:
                         self.labels[idx] = 'conj'
-                    # if self.sen_id=='24269':
-                    #    print('in sent 24269, role is {} & head is: {}'.format(self.labels[idx],self.heads[idx]))
                 rol_changed = True
-            # if old_role in list(simple_dep_map.keys()):
-            #    self.labels[idx]=simple_dep_map[old_role]
-            #    rol_changed=True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
@@ -1081,23 +1040,9 @@ class DependencyTree:
                 self.exchange_pars_with_PRD(idx, 'mark', 'advcl')
                 rol_changed = True
             if old_role == 'VCL' or old_role == 'ACL':
-                # if self.sen_id=='23513':
-                #    print('changed {} idx {} old role is {} with head {} & pos {}'.format(self.other_features[idx].has_feat('dadeg_r'),idx,self.labels[idx],old_head,self.tags[self.reverse_index[old_head]]))
-                # if self.tags[self.reverse_index[old_head]]=='VERB':
-                #    mos_child=self.find_children_with_role(old_head,'MOS')
-                #    sbj_child=self.find_children_with_role(old_head,'SBJ')
-                #    if len(sbj_child)==0 and len(mos_child)>0:
-                #        self.labels[idx]='csubj'
-                #        rol_changed=True
-
-                # if not rol_changed:
                 self.exchange_pars_with_PRD(idx, 'mark', 'ccomp')
                 rol_changed = True
-                # if self.sen_id=='23513':
-                #    print('old role is {}'.format(self.labels[idx]))
             if old_role == 'NCL':
-                # if lemma!='که':
-                #    print('idx {} lemma {} in sent {}'.format(idx,lemma,self.sent_descript))
                 self.exchange_pars_with_PRD(idx, 'mark', 'acl')
                 rol_changed = True
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
@@ -1163,6 +1108,9 @@ class DependencyTree:
                     rol_changed = True
                 elif old_pos == 'ADJ':
                     self.labels[idx] = 'amod'
+                    rol_changed = True
+                elif old_role == "MOZ":
+                    self.labels[idx] = 'nmod'  # todo after paper
                     rol_changed = True
 
                     # adj_prenums=['تک','نصف','چند','دهمین','آخرین','یکمین','سی‌امین','هفتمین','بیستمین','سومین','پنجمین','شصتمین','نهمین','دومین','اول','چهاردهمین','چهارمین','اولین','هشتمین','دوازدهمین','ششمین','یازدهمین','نخستین']
@@ -1261,11 +1209,6 @@ class DependencyTree:
             if old_role == 'MOS':
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'cop')
                 cop_child = self.find_all_children(old_head)
-                if self.sen_id == 43948:
-                    print(old_head)
-                    print(cop_child)
-                    print(self.heads)
-                    print(self.labels)
                 for ch in cop_child:
                     if self.labels[ch] != 'aux' and self.labels[ch] != 'aux:pass':
                         old_ch_h = self.heads[ch]
@@ -1596,69 +1539,13 @@ class DependencyTree:
 if __name__ == '__main__':
     input_files = ['Universal_Dadegan/train.conllu', 'Universal_Dadegan/dev.conllu',
                    'Universal_Dadegan/test.conllu']  # os.path.abspath(sys.argv[1])
-    # universal_file = os.path.abspath(sys.argv[1])
-    # ner_file = os.path.abspath(sys.argv[3])
     output_files = ['Universal_Dadegan_with_DepRels/train.conllu', 'Universal_Dadegan_with_DepRels/dev.conllu',
                     'Universal_Dadegan_with_DepRels/test.conllu']  # os.path.abspath(sys.argv[2])
     for idx, inp_f in enumerate(input_files):
         tree_list = DependencyTree.load_trees_from_conllu_file(inp_f)
-        # print('fixing MWE inconsistencies')
-        # DependencyTree.fix_mwe_entries(tree_list)
-
-        # universal_tree_list = DependencyTree.load_trees_from_conllu_file(universal_file)
-        # ner_tree_list = DependencyTree.load_trees_from_conll_file(ner_file)
-
-        # First pass: convert POS tags
-        # print('fixing POS inconsistencies')
-        # for i, tree in enumerate(tree_list):
-        #    tree.convert_pos(universal_tree_list[i], ner_tree_list[i])    
-
         print('fixing tree inconsistencies in {}'.format(inp_f))
-        # Second pass: convert tree structure
         poss = []
         for i, tree in enumerate(tree_list):
             parcle_list = tree.find_all_rels('PARCL')
-            # if len(parcle_list)>1:
-            #    print('multi PARCL in sent {}'.format(tree.sent_descript))
             tree.convert_tree()  # (universal_tree_list[i])
-            # w_list=['پیغمبر','انا','سوگند','خوش','جای','فلانی','نعوذ','بصیرت']
-            # for indx in range(0,len(tree.words)):
-            #    role=tree.labels[indx]
-            #    word=tree.words[indx]
-            #    pos=tree.tags[indx]
-            #   prev_pos=''
-            #    prev_w=''
-            #    next_pos=''
-            #    next_w=''
-            #    if indx>0:
-            #        prev_pos=tree.tags[indx-1]
-            #        prev_w=tree.words[indx-1]
-            #    if indx<len(tree.tags)-1:
-            #        next_pos=tree.tags[indx+1]
-            #        next_w=tree.words[indx+1]
-            #    if pos=='PROPN' and next_pos!='PROPN' and prev_pos!='PROPN':
-            #        print('{} word {} {} in sent={}'.format(prev_w,word,next_w,tree.other_features[indx].feat('senID')))
-
-            #    if tree.tags[indx]=='PSUS' and tree.words[indx] in w_list:
-            #        print('idx {} with word {} in sent={}'.format(tree.index[indx],word,tree.other_features[indx].feat('senID')))
-
-            #    head=tree.heads[indx]
-            # print(tree.other_features[indx].feat('senID'))
-            # print(tree.tags)
-            # print(head)
-            #    if role=='VCL':
-            # if tree.tags[tree.reverse_index[head]]!='VERB':
-            #    print('head is not verb in sent={}'.format(tree.other_features[idx].feat('senID')))
-            #        if tree.tags[tree.reverse_index[head]]=='VERB':
-            #            mos_child=tree.find_children_with_role(head,'MOS')
-            #            sbj_child=tree.find_children_with_role(head,'SBJ')
-            #            if len(sbj_child)==0 and len(mos_child)>0:
-            #                tree_list_sub.append(tree)
-            #                print('idx {} with verb head {} in sent={}'.format(tree.index[idx],head,tree.other_features[idx].feat('senID')))
-            # old_pos=self.tags[idx]
-            # lemma=self.lemmas[idx]
         DependencyTree.write_to_conllu(tree_list, output_files[idx])
-
-        # poss=set(poss)
-        # for p in poss:
-        #    print(p)
