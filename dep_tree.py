@@ -371,7 +371,7 @@ class DependencyTree:
     def exchange_child_parent(self, parent_idx, child_idx, new_rel_par, new_rel_child=None):
         old_child_h = self.heads[child_idx]
         old_child_r = self.labels[child_idx]
-        if not self.other_features[child_idx].has_feat('dadeg_h'):
+        if not self.other_features[child_idx].has_feat('dadeg_h') and old_child_r.isupper():
             self.other_features[child_idx].add_feat({'dadeg_h': str(old_child_h), 'dadeg_r': old_child_r})
         self.heads[child_idx] = self.heads[parent_idx]
 
@@ -1439,6 +1439,108 @@ class DependencyTree:
             # elif self.reverse_index[self.heads[num_group[0]]] in num_group:
             #    print('ERROR: in num convertion no head found in group {} sent {}'.format(group_str,self.sen_id))
 
+    def convert_PARCL_rel_v2(self):
+        parcl_nums = self.find_all_rels('PARCL')
+        for idx in range(0, len(self.words)):
+            old_role = self.labels[idx]
+            old_head = self.heads[idx]
+            old_pos = self.tags[idx]
+            lemma = self.lemmas[idx]
+            rol_changed = False
+            if old_role == 'PARCL':
+                punct_child = [key for key, val in enumerate(self.heads) if
+                               val == self.index[idx] and self.labels[key] == 'punct']
+                other_parcl_of_head = [key for key, val in enumerate(self.heads) if
+                                       val == old_head and self.labels[key] == 'PARCL' and key != idx]
+                if len(punct_child) > 0:
+                    if self.tags[punct_child[0]] == 'CCONJ':
+                        if old_head > self.index[idx]:
+                            self.labels[idx] = 'conj'
+                            if self.labels[self.reverse_index[old_head]] == 'conj':
+                                self.heads[idx] = self.heads[self.reverse_index[old_head]]
+                            else:
+                                self.exchange_child_parent(self.reverse_index[old_head], idx, 'conj')
+                        else:
+                            self.labels[idx] = 'conj'
+                            if self.labels[self.reverse_index[old_head]] == 'conj' and self.heads[
+                                self.reverse_index[old_head]] < self.index[idx]:
+                                self.heads[idx] = self.heads[self.reverse_index[old_head]]
+                        if self.labels[self.reverse_index[old_head]] == 'conj':
+                            conj_after_parcl = -1
+                            for i in range(idx + 1, old_head):
+                                if self.labels[i] == 'conj' and self.heads[i] == self.heads[
+                                    self.reverse_index[old_head]]:
+                                    conj_after_parcl = i
+                                    break
+                            if conj_after_parcl != -1:
+                                old_punc_r = self.labels[punct_child[0]]
+                                old_punc_h = self.heads[punct_child[0]]
+                                self.labels[punct_child[0]] = 'cc'
+                                self.heads[punct_child[0]] = self.index[conj_after_parcl]
+                                if not self.other_features[punct_child[0]].has_feat('dadeg_r'):
+                                    self.other_features[punct_child[0]].add_feat(
+                                        {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                        else:
+                            old_punc_r = self.labels[punct_child[0]]
+                            old_punc_h = self.heads[punct_child[0]]
+                            self.labels[punct_child[0]] = 'cc'
+                            self.heads[punct_child[0]] = old_head
+                            if not self.other_features[punct_child[0]].has_feat('dadeg_r'):
+                                self.other_features[punct_child[0]].add_feat(
+                                    {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                        if len(other_parcl_of_head) > 0:
+                            if self.index[other_parcl_of_head[0]] < self.heads[punct_child[0]]:
+                                self.heads[punct_child[0]] = self.index[other_parcl_of_head[0]]
+                        rol_changed = True
+                if not rol_changed:
+                    if len(other_parcl_of_head) > 0:
+                        self.node_assign_new_role(other_parcl_of_head[0], idx, 'conj')
+                        cconj_child = [key for key, val in enumerate(self.heads) if
+                                       val == self.index[other_parcl_of_head[0]] and self.labels[key] == 'punct' and
+                                       self.tags[key] == 'CCONJ']
+                        if len(cconj_child) > 0:
+                            conj_after_parcl = -1
+                            for i in range(other_parcl_of_head[0] + 1, old_head):
+                                if self.labels[i] == 'PARCL' and self.heads[i] == old_head:
+                                    conj_after_parcl = i
+                                    break
+                            if conj_after_parcl != -1:
+                                old_punc_r = self.labels[cconj_child[0]]
+                                old_punc_h = self.heads[cconj_child[0]]
+                                self.labels[cconj_child[0]] = 'cc'
+                                self.heads[cconj_child[0]] = self.index[conj_after_parcl]
+                                if not self.other_features[cconj_child[0]].has_feat('dadeg_r'):
+                                    self.other_features[cconj_child[0]].add_feat(
+                                        {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                            else:
+                                old_punc_r = self.labels[cconj_child[0]]
+                                old_punc_h = self.heads[cconj_child[0]]
+                                self.labels[cconj_child[0]] = 'cc'
+                                self.heads[cconj_child[0]] = old_head
+                                if not self.other_features[cconj_child[0]].has_feat('dadeg_r'):
+                                    self.other_features[cconj_child[0]].add_feat(
+                                        {'dadeg_h': str(old_punc_h), 'dadeg_r': old_punc_r})
+                        self.exchange_child_parent(self.reverse_index[old_head], idx, 'conj')
+
+                    else:
+                        conj_child_head = [key for key, val in enumerate(self.heads) if
+                                           val == old_head and self.labels[key] == 'conj']
+                        if len(conj_child_head) > 0:
+                            if old_head > self.index[idx]:
+                                self.exchange_child_parent(self.reverse_index[old_head], idx, 'conj')
+                                for conj_ch in conj_child_head:
+                                    self.heads[conj_ch] = self.index[idx]
+                            else:
+                                self.node_assign_new_role(idx, self.reverse_index[old_head], 'conj')
+                        else:
+                            if old_head > self.index[idx]:
+                                self.exchange_child_parent(self.reverse_index[old_head], idx, 'parataxis')
+                            else:
+                                self.node_assign_new_role(idx, self.reverse_index[old_head], 'parataxis')
+                    rol_changed = True
+            if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
+                self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
+
     def convert_tree(self):
         self.zero_level_dep_mapping()
         # self.convert_PARCL_rel()
@@ -1447,6 +1549,7 @@ class DependencyTree:
         if self.sen_id not in not_num_process:
             self.convert_num_groups()
         self.convert_name_groups()
+        self.convert_PARCL_rel_v2()
         self.second_level_dep_mapping()
         self.third_level_dep_mapping()
         self.last_step_changes()
