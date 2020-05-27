@@ -1273,6 +1273,13 @@ class DependencyTree:
                 self.labels[l] = mapping[label]
             if self.heads[l] > l and label == "VCONJ" and self.tags[l] == "CCONJ":
                 self.labels[l] = "cc"
+            if label == "PREDEP":
+                if self.words[l] in {"نیز", "هم"}:
+                    self.labels[l] = "dep"
+                elif self.tags[l] == "NUM":
+                    self.labels[l] = "nummod"
+                else:
+                    self.labels[l] = "advmod"
 
     def convert_num_groups(self):
         all_num_group = self.find_compound_num_groups()
