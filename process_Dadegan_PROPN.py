@@ -1,41 +1,52 @@
+def remove_semispace(word):
+    if word.endswith("‌"):
+        # Semi-space removal
+        word = word[:-1]
+    if word.startswith("‌"):
+        # Semi-space removal
+        word = word[0:]
+    return word
+
+
 def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'):
-    orig_noun = noun
+    orig_noun, lemma = remove_semispace(noun), remove_semispace(lemma)
     for pron in base_prons:
         if noun.endswith(pron):
-            orig_noun = noun[:-len(pron)]
+            orig_noun = remove_semispace(noun[:-len(pron)])
+
             if orig_noun.endswith('های'):
-                sing_noun = orig_noun[:-3]
+                sing_noun = remove_semispace(orig_noun[:-3])
                 if sing_noun == lemma:
                     return True, 'ی' + pron, orig_noun[:-1]
             if orig_noun.endswith('ان'):  # another form of plural noun -> ان جمع
-                sing_noun = orig_noun[:-2]
+                sing_noun = remove_semispace(orig_noun[:-2])
                 if sing_noun == lemma:
                     return True, pron, orig_noun
             if orig_noun.endswith('گان'):  # another form of plural noun -> گان جمع like پرندگان
-                sing_noun = orig_noun[:-3]
+                sing_noun = remove_semispace(orig_noun[:-3])
                 sing_noun = sing_noun + 'ه'  # adding droped ه so پرند converted into پرنده
                 if sing_noun == lemma:
                     return True, pron, orig_noun
             if orig_noun.endswith('یان'):  # another form of plural noun -> یان like ملایان
-                sing_noun = orig_noun[:-3]
+                sing_noun = remove_semispace(orig_noun[:-3])
                 if sing_noun == lemma:
                     return True, pron, orig_noun
             if orig_noun.endswith('ات'):  # another form of plural noun -> ات جمع عربی like انتقادات
-                sing_noun = orig_noun[:-2]
+                sing_noun = remove_semispace(orig_noun[:-2])
                 if sing_noun == lemma:
                     return True, pron, orig_noun
                 if sing_noun + 'ه' == lemma:  # some words loose their ending ه when they are concatinated with ات like نمره-> نمرات or آیه-> آیات
                     return True, pron, orig_noun
             if orig_noun.endswith('جات'):  # another form of plural noun -> جات جمع عربی like ترشیجات
-                sing_noun = orig_noun[:-3]
+                sing_noun = remove_semispace(orig_noun[:-3])
                 if sing_noun == lemma:
                     return True, pron, orig_noun
             if orig_noun.endswith('ین'):  # another form of plural noun -> ین جمع عربی like مدرسین
-                sing_noun = orig_noun[:-2]
+                sing_noun = remove_semispace(orig_noun[:-2])
                 if sing_noun == lemma:
                     return True, pron, orig_noun
             if orig_noun.endswith('ون'):  # another form of plural noun -> ون جمع عربی like انقلابیون
-                sing_noun = orig_noun[:-2]
+                sing_noun = remove_semispace(orig_noun[:-2])
                 if sing_noun == lemma:
                     return True, pron, orig_noun
             if orig_noun in mokasar_nouns:  # checking nouns in their mokasar form like بیت-> ابیات روایت-> روایات
@@ -45,14 +56,14 @@ def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'
                 return True, pron, orig_noun
     for pron in he_ye_prons:
         if noun.endswith(pron):
-            orig_noun = noun[:-len(pron)]
+            orig_noun = remove_semispace(noun[:-len(pron)])
             if orig_noun.endswith('\u200c'):  # for adj cases like دستی‌ام
-                orig_noun = orig_noun[:-1]
+                orig_noun = remove_semispace(orig_noun[:-1])
             if orig_noun.endswith('ه') or orig_noun.endswith('ی'):
                 if orig_noun.endswith('های'):
-                    sing_noun = orig_noun[:-3]
+                    sing_noun = remove_semispace(orig_noun[:-3])
                     if sing_noun == lemma:
-                        return True, 'ی' + pron, orig_noun[:-1]
+                        return True, 'ی' + pron, remove_semispace(orig_noun[:-1])
                 elif pron == 'ات' and noun_num == 'PLUR' and orig_noun == lemma:  # like اشتباهات with lemma=اشتباه , in this word ات is mokasar sign not pronoun
                     return False, '', ''
                 if orig_noun == lemma:
@@ -63,9 +74,9 @@ def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'
                 return True, pron, orig_noun
     for pron in alef_vav_prons:
         if noun.endswith(pron):
-            orig_noun = noun[:-len(pron)]
+            orig_noun = remove_semispace(noun[:-len(pron)])
             if orig_noun.endswith('ها'):
-                sing_noun = orig_noun[:-2]
+                sing_noun = remove_semispace(orig_noun[:-2])
                 if sing_noun == lemma:
                     return True, pron, orig_noun  # return True,pron[1:],orig_noun+'ی' #concating ی to the noun instead of pronoun => زانویم = زانوی+م
             if (orig_noun.endswith('ا') or orig_noun.endswith('و')) and orig_noun == lemma:
@@ -380,9 +391,6 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
             token_id = int(elems[0])
             word_form = elems[1].strip()
             word_lemma = elems[2].strip()
-            # propn_pos=False
-            # if '|' in pos:
-            #    propn_pos=True
             pos = elems[3]  # .strip().split('|')[0]
             cpos = elems[4]
             features = elems[5]

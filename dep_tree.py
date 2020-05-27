@@ -240,7 +240,7 @@ class DependencyTree:
         """
         tree_list = list()
         for tree_str in open(file_str, 'r', encoding='utf-8').read().strip().split('\n\n'):
-            tree_list.append(DependencyTree.load_tree_from_conllu_string(tree_str)) # codecs.
+            tree_list.append(DependencyTree.load_tree_from_conllu_string(tree_str))  # codecs.
         return tree_list
 
     def conllu_str(self):
