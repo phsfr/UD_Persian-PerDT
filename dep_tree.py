@@ -681,6 +681,13 @@ class DependencyTree:
             if rol_changed and not self.other_features[idx].has_feat('dadeg_r'):
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
+    def reverse_modal(self):
+        for idx in range(0, len(self.words)):
+            head_id = self.heads[idx] - 1
+            if head_id>= 0 and self.ftags[head_id] == "V_MODL" and self.tags[idx] in {"AUX", "VERB"}:
+                self.tags[head_id] = "AUX"
+                self.exchange_child_parent(head_id, idx, 'aux')
+
     def zero_level_dep_mapping(self):
         self.find_tag_fixed_groupds()
         simple_dep_map = {'ROOT': 'root', 'PUNC': 'punct', 'APP': 'appos', "aux": "aux"}
@@ -1495,6 +1502,7 @@ class DependencyTree:
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
     def convert_tree(self):
+        self.reverse_modal()
         self.zero_level_dep_mapping()
         # self.convert_PARCL_rel()
         self.first_level_dep_mapping()
