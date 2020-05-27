@@ -252,8 +252,8 @@ class DependencyTree:
         lst.append(self.sent_str)  # adding second line as sentence string
         for i in range(len(self.words)):
             word_indx = str(i + 1)
-            # if word_indx in self.mw_line.keys():
-            #    lst.append(self.mw_line[word_indx])
+            if word_indx in self.mw_line.keys():
+                lst.append(self.mw_line[word_indx])
             feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i], self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             # ln = str(i+1) +'\t'+self.words[i]+'\t'+self.lemmas[i]+'\t'+self.tags[i]+'\t'+self.ftags[i]+'\t'+str(self.other_features[i])+'\t'+ str(self.heads[i])+'\t'+self.labels[i]+'\t_\t_'

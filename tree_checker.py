@@ -42,7 +42,7 @@ if __name__ == '__main__':
                     illegal_labels[l] += 1
                     problematic_sens.add(tree.sen_id)
                     # print("Illegal label", l, "in", tree.sen_id)
-                    if l == "NCONJ":
+                    if l == "PREDEP":
                         print("Illegal label", l, "in", tree.sen_id)
                 # elif "dadeg_r" not in tree.other_features[idx].feat_dict:
                 #     print("No dadeg_r in", label, tree.sen_id) #todo
