@@ -719,8 +719,30 @@ class DependencyTree:
                         self.exchange_child_parent(pre_pos_child[0], vconj_child[0], 'vocative')
                     rol_changed = True
 
-            if old_role == 'MESU':  # 'MESU':'nmod' and change child and parent position; before case because of ...kilogram of ra in sentid=23499
+            if old_role == 'MESU':
+                # 'MESU':'nmod' and change child and parent position; before case because of ...kilogram of ra in sentid=23499
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'nmod')
+                rol_changed = True
+
+            if old_role == 'COMPPP':
+                if len(self.children[idx+1]) == 0:
+                    self.labels[idx] = "fixed"
+                elif len(self.children[idx+1]) == 1:
+                    head_id = self.heads[idx]
+                    dep_id = list(self.children[idx+1])[0] - 1
+                    old_r = self.labels[dep_id]
+
+                    self.heads[dep_id] = head_id
+                    self.labels[dep_id] = "obl:arg"
+                    self.labels[idx] = "case"
+                    self.heads[idx] = dep_id + 1
+
+                    if not self.other_features[dep_id].has_feat('dadeg_h'):
+                        self.other_features[dep_id].add_feat({'dadeg_h': str(idx+1)})
+                    if not self.other_features[dep_id].has_feat('dadeg_r'):
+                        self.other_features[dep_id].add_feat({'dadeg_r': old_r})
+                else:
+                    raise Exception("SHOULD NOT HAVE MORE THAN ONE DEP!")
                 rol_changed = True
 
             if dadeg_pos == 'PREP' or dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
@@ -1104,7 +1126,7 @@ class DependencyTree:
                 # else:
                 self.node_assign_new_role(idx, self.reverse_index[old_head], obj2_new_role)
                 rol_changed = True
-            if old_role in {"MOZ", "NADV", "COMPPP"}:
+            if old_role in {"MOZ", "NADV"}:
                 if old_pos == 'ADV':
                     self.labels[idx] = 'advmod'
                     rol_changed = True
@@ -1492,8 +1514,6 @@ class DependencyTree:
                 self.other_features[idx].add_feat({'dadeg_h': str(old_head), 'dadeg_r': old_role})
 
     def convert_tree(self):
-        if self.sen_id == 23530:
-            print("HI!")
         self.zero_level_dep_mapping()
         # self.convert_PARCL_rel()
         self.first_level_dep_mapping()
