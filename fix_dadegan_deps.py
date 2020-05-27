@@ -10,6 +10,12 @@ from dep_tree import DependencyTree
 
 changed_set = set()
 
+def has_two_vconj_deps(tree: DependencyTree, v: int):
+    num_vconjs = 0
+    for ch in tree.children[v+1]:
+        if tree.labels[ch-1] == "VCONJ":
+            num_vconjs += 1
+    return num_vconjs>1
 
 def fix_verb_conj_order(tree, v, label):
     v_head = tree.heads[v] - 1
@@ -159,6 +165,14 @@ if __name__ == '__main__':
         #             tree.labels[idx] = "VCL"
         #             sen_changed.add(tree.sen_id)
         # print(len(sen_changed))
+
+        # Fixing double VCONJS
+        sen_changed = set()
+        for tree in tree_list:
+            for i, word in enumerate(tree.words):
+                if has_two_vconj_deps(tree, i):
+                    print("PROBLEM in VCONJ", tree.sen_id)
+        print(len(sen_changed))
 
 
         for tree in tree_list:
