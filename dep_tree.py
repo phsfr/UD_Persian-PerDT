@@ -211,8 +211,8 @@ class DependencyTree:
         sent_descript = lines[0]
         sent_str = lines[1]
         other_features = list()
-        for i in range(2, len(
-                lines)):  # for jumping over two first lines (one is sentence number & other is sentence's string
+        for i in range(2, len(lines)):
+            # for jumping over two first lines (one is sentence number & other is sentence's string
             spl = lines[i].split('\t')
             line_idx[i - 2] = spl[0]
             line_indx = spl[0].split('-')
@@ -253,10 +253,10 @@ class DependencyTree:
         for i in range(len(self.words)):
             word_indx = str(i + 1)
             if word_indx in self.mw_line.keys():
-                lst.append(self.mw_line[word_indx])
+                mwline = "\t".join(self.mw_line[word_indx].strip().split("\t")[:10])
+                lst.append(mwline)
             feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i], self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
-            # ln = str(i+1) +'\t'+self.words[i]+'\t'+self.lemmas[i]+'\t'+self.tags[i]+'\t'+self.ftags[i]+'\t'+str(self.other_features[i])+'\t'+ str(self.heads[i])+'\t'+self.labels[i]+'\t_\t_'
             lst.append('\t'.join(feats))
         return '\n'.join(lst)
 
@@ -1079,9 +1079,6 @@ class DependencyTree:
             # *************************************************
             if old_role == 'SBJ':  # mapping role of SBJ
                 head_idx = self.reverse_index[old_head]
-                # if self.tags[head_idx]!='VERB':
-                #    print(self.sent_descript)
-                #    print(self.sent_str)
                 v_mood = self.verb_mood_detection(head_idx)
                 v_lemma = self.lemmas[head_idx]
                 if v_mood == 'PASS' and v_lemma not in v_copula:  # for copula verbs listed above, although verb mood is passive but subject is active for Mosnad

@@ -5102,7 +5102,7 @@
 # sent_id = dev-s207
 # text = از هولم ماژیک را انداختم توی توالت و سیفون را کشیدم.
 1	از	از	ADP	PREP	attachment=ISO|senID=26168|dadeg_pos=PREP|old_h=6|old_r=ADV	2	case	_	_
-2-3	هولم	_	_	_	_	_	_	_	_	_
+2-3	هولم	_	_	_	_	_	_	_	_
 2	هول	هول	PROPN	N_IANM	attachment=ISO|number=SING|senID=26168|dadeg_pos=N|old_h=1|old_r=POSDEP	6	obl	_	_
 3	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=26168|dadeg_pos=PR|old_r=MOZ|old_h=2	2	nmod	_	_
 4	ماژیک	ماژیک	PROPN	N_IANM	attachment=ISO|number=SING|senID=26168|dadeg_pos=N|old_h=5|old_r=PREDEP	6	obj	_	_
@@ -6458,7 +6458,7 @@
 3	شاخه	شاخه	NOUN	N_IANM	attachment=ISO|number=SING|senID=30708|dadeg_pos=N|old_h=4|old_r=MESU	1	nmod	_	_
 4	گل	گل	NOUN	N_IANM	attachment=ISO|number=SING|senID=30708|dadeg_pos=N|old_h=1|old_r=MOZ	3	nmod	_	_
 5	مریم	مریم	PROPN	N_IANM	attachment=ISO|number=SING|senID=30708|dadeg_pos=N|old_r=MOZ|old_h=4	4	nmod	_	_
-6-7	مشامم	_	_	_	_	_	_	_	_	_
+6-7	مشامم	_	_	_	_	_	_	_	_
 6	مشام	مشام	PROPN	N_IANM	attachment=ISO|number=SING|senID=30708|dadeg_pos=N|old_h=8|old_r=PREDEP	10	obj	_	_
 7	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=30708|dadeg_pos=PR|old_r=MOZ|old_h=6	6	nmod	_	_
 8	را	را	ADP	POSTP	attachment=ISO|senID=30708|dadeg_pos=POSTP|old_h=10|old_r=OBJ	6	case	_	_
@@ -14701,7 +14701,7 @@
 # sent_id = dev-s722
 # text = پروانه‌های روسری‌اش را پرانده بود.
 1	پروانه‌های	پروانه	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=34335|dadeg_pos=N|old_h=4|old_r=PREDEP	5	obj	_	_
-2-3	روسری‌اش	_	_	_	_	_	_	_	_	_
+2-3	روسری‌اش	_	_	_	_	_	_	_	_
 2	روسری	روسری	PROPN	N_IANM	attachment=ISO|number=SING|senID=34335|dadeg_pos=N|old_r=MOZ|old_h=1	1	nmod	_	_
 3	اش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=34335|dadeg_pos=PR|old_r=MOZ|old_h=2	2	nmod	_	_
 4	را	را	ADP	POSTP	attachment=ISO|senID=34335|dadeg_pos=POSTP|old_h=5|old_r=OBJ	1	case	_	_
@@ -18996,7 +18996,7 @@
 6	نظر	نظر	NOUN	N_IANM	attachment=ISO|number=SING|senID=47711|dadeg_pos=N|old_h=5|old_r=POSDEP	13	obl	_	_
 7	آقا	آقا	NOUN	N_ANM	attachment=ISO|number=SING|senID=47711|dadeg_pos=N|old_r=MOZ|old_h=6	6	nmod	_	_
 8	و	و	CCONJ	CONJ	attachment=ISO|senID=47711|dadeg_pos=CONJ|old_r=NCONJ|old_h=7	9	cc	_	_
-9-10	مولایمان	_	_	_	_	_	_	_	_	_
+9-10	مولایمان	_	_	_	_	_	_	_	_
 9	مولا	مولا	PROPN	N_ANM	attachment=ISO|number=SING|senID=47711|dadeg_pos=N|old_r=POSDEP|old_h=8	7	conj	_	_
 10	یمان	ما	PRON	PR_JOPER	number=PLUR|person=1|pronType=Prs|senID=47711|dadeg_pos=PR|old_r=MOZ|old_h=9	9	nmod	_	_
 11	صاحب‌الزمان	صاحب‌الزمان	NOUN	N_ANM	attachment=ISO|number=SING|senID=47711|dadeg_pos=N|old_r=APP	7	appos	_	_

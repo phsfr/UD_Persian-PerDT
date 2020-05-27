@@ -265,7 +265,7 @@
 # sent_id = test-s15
 # text = دست فاطمه‌ام پینه بسته است.
 1	دست	دست	NOUN	N_IANM	attachment=ISO|number=SING|senID=40008|dadeg_pos=N|old_r=SBJ|old_h=5	5	nsubj	_	_
-2-3	فاطمه‌ام	_	_	_	_	_	_	_	_	_
+2-3	فاطمه‌ام	_	_	_	_	_	_	_	_
 2	فاطمه	فاطمه	PROPN	N_ANM	attachment=ISO|number=SING|senID=40008|dadeg_pos=N|old_r=MOZ|old_h=1	1	nmod	_	_
 3	ام	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=40008|dadeg_pos=PR|old_r=MOZ|old_h=2	2	nmod	_	_
 4	پینه	پینه	NOUN	N_IANM	attachment=ISO|number=SING|senID=40008|dadeg_pos=N|old_r=NVE|old_h=5	5	compound:lvc	_	_
@@ -20798,7 +20798,7 @@
 4	حسین	حسین	PROPN	N_ANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|old_h=1|old_r=VCONJ	7	vocative	_	_
 5	جان	جان	NOUN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|old_r=POSDEP	4	advmod	_	spaceAfter=NO
 6	!	!	PUNCT	PUNC	attachment=ISO|senID=54442|dadeg_pos=PUNC|old_r=PUNC	5	punct	_	_
-7-8	زینبم	_	_	_	_	_	_	_	_	spaceAfter=NO
+7-8	زینبم	_	_	_	_	_	_	_	_
 7	زینب	زینب	PROPN	N_IANM	attachment=ISO|number=SING|senID=54442|dadeg_pos=N|old_h=4|old_r=VCONJ	10	vocative	_	_
 8	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=54442|dadeg_pos=PR|old_r=MOZ|old_h=7	7	nmod	_	_
 9	!	!	PUNCT	PUNC	attachment=ISO|senID=54442|dadeg_pos=PUNC|old_r=PUNC	7	punct	_	_
