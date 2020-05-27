@@ -5699,7 +5699,7 @@
 14	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=42994|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=13	13	nmod	_	_
 15	را	را	ADP	POSTP	attachment=ISO|senID=42994|dadeg_pos=POSTP|dadeg_h=16|dadeg_r=OBJ	13	case	_	_
 16	بپرستید	پرستید#پرست	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=42994|dadeg_pos=V|dadeg_h=12|dadeg_r=POSDEP	8	conj	_	_
-17	و	و	CCONJ	CONJ	attachment=ISO|senID=42994|dadeg_pos=CONJ|dadeg_h=16|dadeg_r=VCONJ	16	VCONJ	_	_
+17	و	و	CCONJ	CONJ	attachment=ISO|senID=42994|dadeg_pos=CONJ|dadeg_h=16|dadeg_r=VCONJ	16	dep	_	_
 18	کار	کار	NOUN	N_IANM	attachment=ISO|number=SING|senID=42994|dadeg_pos=N|dadeg_r=OBJ|dadeg_h=21	21	obj	_	_
 19	خیر	خیر	ADJ	ADJ_AJP	attachment=ISO|senID=42994|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=18	18	amod	_	_
 20	انجام	انجام	NOUN	N_IANM	attachment=ISO|number=SING|senID=42994|dadeg_pos=N|dadeg_r=NVE|dadeg_h=21	21	compound:lvc	_	_
@@ -9204,7 +9204,7 @@
 31	خود	خود	PRON	PR_CREFX	attachment=ISO|senID=49680|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=30	30	nmod	_	_
 32	را	را	ADP	POSTP	attachment=ISO|senID=49680|dadeg_pos=POSTP|dadeg_h=39|dadeg_r=OBJ	30	case	_	_
 33	تعطیل	تعطیل	ADJ	ADJ_AJP	attachment=ISO|senID=49680|dadeg_pos=ADJ|dadeg_h=39|dadeg_r=MOS	21	ccomp	_	_
-34	و	و	CCONJ	CONJ	attachment=ISO|senID=49680|dadeg_pos=CONJ|dadeg_h=39|dadeg_r=VCONJ	33	VCONJ	_	_
+34	و	و	CCONJ	CONJ	attachment=ISO|senID=49680|dadeg_pos=CONJ|dadeg_h=39|dadeg_r=VCONJ	33	dep	_	_
 35	اقدام	اقدام	NOUN	N_IANM	attachment=ISO|number=SING|senID=49680|dadeg_pos=N|dadeg_r=NVE|dadeg_h=39	33	compound:lvc	_	_
 36	به	به	ADP	PREP	attachment=ISO|senID=49680|dadeg_pos=PREP|dadeg_h=35|dadeg_r=NPP	37	case	_	_
 37	کلاهبرداری	کلاهبرداری	NOUN	N_IANM	attachment=ISO|number=SING|senID=49680|dadeg_pos=N|dadeg_h=36|dadeg_r=POSDEP	35	nmod	_	_
@@ -11371,7 +11371,7 @@
 8	)	)	PUNCT	PUNC	attachment=ISO|senID=45199|dadeg_pos=PUNC|dadeg_r=PUNC	7	punct	_	_
 9	را	را	ADP	POSTP	attachment=ISO|senID=45199|dadeg_pos=POSTP|dadeg_h=16|dadeg_r=OBJ	3	case	_	_
 10	خراب	خراب	ADJ	ADJ_AJP	attachment=ISO|senID=45199|dadeg_pos=ADJ|dadeg_h=19|dadeg_r=MOS	16	conj	_	_
-11	و	و	CCONJ	CONJ	attachment=ISO|senID=45199|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	10	VCONJ	_	_
+11	و	و	CCONJ	CONJ	attachment=ISO|senID=45199|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	10	dep	_	_
 12	به	به	ADP	PREP	attachment=ISO|senID=45199|dadeg_pos=PREP|dadeg_h=16|dadeg_r=ADV	13	case	_	_
 13	جای	جا	NOUN	N_IANM	attachment=ISO|number=SING|senID=45199|dadeg_pos=N|dadeg_h=12|dadeg_r=POSDEP	16	obl	_	_
 14	آن	آن	PRON	PR_DEMON	attachment=ISO|number=SING|senID=45199|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=13	13	nmod	_	_
@@ -15517,7 +15517,7 @@
 18	فضایی	فضایی	ADJ	ADJ_AJP	attachment=ISO|senID=51864|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=17	17	amod	_	_
 19	بین‌المللی	بین‌المللی	ADJ	ADJ_AJP	attachment=ISO|senID=51864|dadeg_pos=ADJ|dadeg_r=NPOSTMOD|dadeg_h=17	17	amod	_	_
 20	جدا	جدا	ADJ	ADJ_AJP	attachment=ISO|senID=51864|dadeg_pos=ADJ|dadeg_h=35|dadeg_r=MOS	0	root	_	_
-21	و	و	CCONJ	CONJ	attachment=ISO|senID=51864|dadeg_pos=CONJ|dadeg_h=35|dadeg_r=VCONJ	20	VCONJ	_	_
+21	و	و	CCONJ	CONJ	attachment=ISO|senID=51864|dadeg_pos=CONJ|dadeg_h=35|dadeg_r=VCONJ	20	dep	_	_
 22	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=51864|dadeg_pos=PREM|dadeg_r=NPREMOD|dadeg_h=23	23	det	_	_
 23	تجهیزات	تجهیزات	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=51864|dadeg_pos=N|dadeg_h=24|dadeg_r=PREDEP	20	obj	_	_
 24	را	را	ADP	POSTP	attachment=ISO|senID=51864|dadeg_pos=POSTP|dadeg_h=35|dadeg_r=OBJ	23	case	_	_

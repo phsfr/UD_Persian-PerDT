@@ -3,7 +3,10 @@ from collections import defaultdict
 from typing import List, Set
 
 
-# import mwe
+univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated", "advcl",
+                   "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl", "amod", "det", "clf",
+                   "case", "conj", "cc", "fixed", "flat", "compound", "list", "parataxis", "orphan", "goeswith",
+                   "reparandum", "punct", "root", "dep"}
 
 class Features:
     def __init__(self, feat_str):  # process all features in feat_str and put them in dictionary (feat_dict)
@@ -1285,6 +1288,16 @@ class DependencyTree:
             if self.heads[l] > l and label == "VCONJ" and self.tags[l] == "CCONJ":
                 self.labels[l] = "cc"
                 changed = True
+            elif label == "VCONJ" and self.tags[l] == "CCONJ":
+                head_id = self.heads[l] -1
+                if len(self.children[head_id +1])>1:
+                    # This is a heuristic and is not necessarily correct! (#todo)
+                    last_child = list(sorted(self.children[head_id +1]))[0]
+                    if last_child - 1 > l:
+                        self.labels[l] = "cc"
+                        self.heads[l] = last_child
+                        changed = True
+
             if label == "PREDEP":
                 if self.words[l] in {"نیز", "هم"}:
                     self.labels[l] = "dep"
@@ -1303,6 +1316,11 @@ class DependencyTree:
                 else:
                     self.labels[l] = "advmod"
                 changed = True
+
+            if not changed and label.split(":")[0] not in univ_dep_labels:
+                self.labels[l] = "dep" #todo #Unresolved
+                changed = True
+
             if changed and not self.other_features[l].has_feat('dadeg_r'):
                 self.other_features[l].add_feat({'dadeg_r': label})
 

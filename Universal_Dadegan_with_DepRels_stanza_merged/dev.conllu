@@ -10135,7 +10135,7 @@
 17	رزق	رزق	NOUN	N_IANM	attachment=ISO|number=SING|senID=32442|dadeg_pos=N|dadeg_h=18|dadeg_r=PREDEP	19	obj	_	_
 18	را	را	ADP	POSTP	attachment=ISO|senID=32442|dadeg_pos=POSTP|dadeg_h=24|dadeg_r=OBJ	17	case	_	_
 19	زیاد	زیاد	ADJ	ADJ_AJP	attachment=ISO|senID=32442|dadeg_pos=ADJ|dadeg_h=24|dadeg_r=MOS	14	conj	_	_
-20	و	و	CCONJ	CONJ	attachment=ISO|senID=32442|dadeg_pos=CONJ|dadeg_h=24|dadeg_r=VCONJ	19	VCONJ	_	_
+20	و	و	CCONJ	CONJ	attachment=ISO|senID=32442|dadeg_pos=CONJ|dadeg_h=24|dadeg_r=VCONJ	19	dep	_	_
 21	قرض	قرض	NOUN	N_IANM	attachment=ISO|number=SING|senID=32442|dadeg_pos=N|dadeg_h=22|dadeg_r=PREDEP	19	obj	_	_
 22	را	را	ADP	POSTP	attachment=ISO|senID=32442|dadeg_pos=POSTP|dadeg_h=24|dadeg_r=OBJ	21	case	_	_
 23	ادا	ادا	NOUN	N_IANM	attachment=ISO|number=SING|senID=32442|dadeg_pos=N|dadeg_r=NVE|dadeg_h=24	19	compound:lvc	_	_
@@ -14894,7 +14894,7 @@
 4	کردم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=34559|dadeg_pos=V|dadeg_r=ROOT	0	root	_	_
 5	ببینم	دید#بین	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=34559|dadeg_pos=V|dadeg_h=4|dadeg_r=AJUCL	4	advcl	_	_
 6	جنبیده‌اند	جنبید#جنب	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=34559|dadeg_pos=V|dadeg_h=5|dadeg_r=AJUCL	5	advcl	_	_
-7	یا	یا	CCONJ	CONJ	attachment=ISO|senID=34559|dadeg_pos=CONJ|dadeg_h=6|dadeg_r=VCONJ	6	VCONJ	_	_
+7	یا	یا	CCONJ	CONJ	attachment=ISO|senID=34559|dadeg_pos=CONJ|dadeg_h=6|dadeg_r=VCONJ	6	dep	_	_
 8	نه	نه	INTJ	PSUS	attachment=ISO|senID=34559|dadeg_pos=PSUS|dadeg_r=POSDEP	7	advmod	_	spaceAfter=NO
 9	.	.	PUNCT	PUNC	attachment=ISO|senID=34559|dadeg_pos=PUNC|dadeg_r=PUNC	4	punct	_	_
 
@@ -24510,7 +24510,7 @@
 26	اش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=38393|dadeg_pos=PR|dadeg_r=MOZ|dadeg_h=25	25	nmod	_	_
 27	را	را	ADP	POSTP	attachment=ISO|senID=38393|dadeg_pos=POSTP|dadeg_h=28|dadeg_r=OBJ	25	case	_	_
 28	گفت	گفت#گو	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=38393|dadeg_pos=V|dadeg_h=10|dadeg_r=VCONJ	6	conj	_	_
-29	و	و	CCONJ	CONJ	attachment=ISO|senID=38393|dadeg_pos=CONJ|dadeg_h=28|dadeg_r=VCONJ	28	VCONJ	_	_
+29	و	و	CCONJ	CONJ	attachment=ISO|senID=38393|dadeg_pos=CONJ|dadeg_h=28|dadeg_r=VCONJ	28	dep	_	_
 30	خطبهٔ	خطبه	NOUN	N_IANM	attachment=ISO|number=SING|senID=38393|dadeg_pos=N|dadeg_r=POSDEP	29	advmod	_	_
 31	عقد	عقد	NOUN	N_IANM	attachment=ISO|number=SING|senID=38393|dadeg_pos=N|dadeg_r=MOZ|dadeg_h=30	30	nmod	_	_
 32	جاری	جاری	ADJ	ADJ_AJP	attachment=ISO|senID=38393|dadeg_pos=ADJ|dadeg_h=33|dadeg_r=MOS	0	root	_	_
@@ -27932,7 +27932,7 @@
 17	قوانین	قانون	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=39720|dadeg_pos=N|dadeg_h=15|dadeg_r=POSDEP	19	obl:arg	_	_
 18	پیروی	پیروی	NOUN	N_IANM	attachment=ISO|number=SING|senID=39720|dadeg_pos=N|dadeg_r=NVE|dadeg_h=19	19	compound:lvc	_	_
 19	می‌کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=39720|dadeg_pos=V|dadeg_h=14|dadeg_r=AJUCL	14	advcl	_	_
-20	یا	یا	CCONJ	CONJ	attachment=ISO|senID=39720|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	19	VCONJ	_	_
+20	یا	یا	CCONJ	CONJ	attachment=ISO|senID=39720|dadeg_pos=CONJ|dadeg_h=19|dadeg_r=VCONJ	19	dep	_	_
 21	خیر	خیر	INTJ	PSUS	attachment=ISO|senID=39720|dadeg_pos=PSUS|dadeg_r=POSDEP	20	advmod	_	spaceAfter=NO
 22	.	.	PUNCT	PUNC	attachment=ISO|senID=39720|dadeg_pos=PUNC|dadeg_r=PUNC|dadeg_h=12	11	punct	_	_
 
