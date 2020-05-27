@@ -226,7 +226,7 @@ class DependencyTree:
             heads.append(int(spl[6]))  # dep head
             other_features.append(spl[5])  # featurs
             labels.append(spl[7])  # dep_rol
-            semiFinal_tags.append(spl[8])  # semi final tag
+            semiFinal_tags.append(spl[8])  # semi UD_Dadegan tag
             final_tags.append(spl[9])  # last tag
 
         tree = DependencyTree(sent_descript, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,
@@ -303,7 +303,7 @@ class DependencyTree:
             heads.append(int(spl[6]))  # dep head
             other_features.append(spl[5])  # featurs
             labels.append(spl[7])  # dep_rol
-            semiFinal_tags.append(spl[8])  # semi final tag
+            semiFinal_tags.append(spl[8])  # semi UD_Dadegan tag
             final_tags.append(spl[9])  # last tag
 
         tree = DependencyTree(sent_descript, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,

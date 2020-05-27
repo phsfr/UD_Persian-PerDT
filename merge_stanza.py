@@ -5,9 +5,9 @@ if __name__ == '__main__':
                    'Universal_Dadegan_with_DepRels/test.conllu']
     stanza_files = ['stanza_output/train.conllu', 'stanza_output/dev.conllu',
                     'stanza_output/test.conllu']
-    output_files = ['final/dadegan-ud-train.conllu',
-                    'final/dadegan-ud-dev.conllu',
-                    'final/dadegan-ud-test.conllu']
+    output_files = ['UD_Dadegan/fa_dadegan-ud-train.conllu',
+                    'UD_Dadegan/fa_dadegan-ud-dev.conllu',
+                    'UD_Dadegan/fa_dadegan-ud-test.conllu']
 
     stanza_fixed = set()
     for f_idx, inp_f in enumerate(input_files):

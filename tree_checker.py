@@ -17,9 +17,9 @@ if __name__ == '__main__':
             if not tree.is_valid_tree():
                 print("Malformed Dadegan tree in", tree.sen_id)
 
-    input_files = ['final/dadegan-ud-train.conllu',
-                   'final/dadegan-ud-dev.conllu',
-                   'final/dadegan-ud-test.conllu']
+    input_files = ['UD_Dadegan/fa_dadegan-ud-train.conllu',
+                   'UD_Dadegan/fa_dadegan-ud-dev.conllu',
+                   'UD_Dadegan/fa_dadegan-ud-test.conllu']
     illegal_tags = defaultdict(int)
     illegal_labels = defaultdict(int)
     problematic_sens = set()
