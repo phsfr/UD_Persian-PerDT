@@ -17879,7 +17879,7 @@
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=53031|dadeg_pos=PUNC|old_r=PUNC	7	punct	_	_
 
 # sent_id = test-s935
-# text = نخجوانی‌ها شیعهu200cاند اما در سایهٔ دولت سکولار، در فضای عمومی شهر اثری از دین دیده نمی‌شود.
+# text = نخجوانی‌ها شیعه‌اند اما در سایهٔ دولت سکولار، در فضای عمومی شهر اثری از دین دیده نمی‌شود.
 1	نخجوانی‌ها	نخجوانی	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=53041|dadeg_pos=N|old_r=SBJ|old_h=3	2	nsubj	_	_
 2-3	شیعه‌اند	_	_	_	_	_	_	_	_
 2	شیعه	شیعه	ADJ	ADJ_AJP	attachment=NXT|senID=53041|dadeg_pos=ADJ|old_h=3|old_r=MOS	4	vocative	_	_
@@ -23461,7 +23461,7 @@
 11	.	.	PUNCT	PUNC	attachment=ISO|senID=55971|dadeg_pos=PUNC|old_r=PUNC	10	punct	_	_
 
 # sent_id = test-s1203
-# text = شما می‌خواهید با نیروهایی که صاحب حاکمیتu200cاند وفاق کنید؟
+# text = شما می‌خواهید با نیروهایی که صاحب حاکمیت‌اند وفاق کنید؟
 1	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=55981|dadeg_pos=PR|old_r=SBJ|old_h=2	2	nsubj	_	_
 2	می‌خواهید	خواست#خواه	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=55981|dadeg_pos=V|old_r=ROOT	0	root	_	_
 3	با	با	ADP	PREP	attachment=ISO|senID=55981|dadeg_pos=PREP|old_h=9|old_r=NPP	4	case	_	_

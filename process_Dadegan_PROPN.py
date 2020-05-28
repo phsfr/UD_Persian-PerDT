@@ -439,7 +439,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 sent_text = sent_text + ' ' + word_form.replace('_', ' ')
             elif attachment == 'PRV':  # already splited multi-words should be written without full space (half or zero space)
                 if word_form == 'ام' or word_form == 'ایم' or word_form == 'ای' or word_form == 'اند' or word_form == 'اش' or word_form == 'اید':
-                    sent_text = sent_text + 'u200c' + word_form
+                    sent_text = sent_text + "‌" + word_form  # NOTE That is semipace
                 else:
                     sent_text = sent_text + word_form
             else:

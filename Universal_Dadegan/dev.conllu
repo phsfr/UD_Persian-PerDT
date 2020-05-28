@@ -2612,7 +2612,7 @@
 50	.	.	PUNCT	PUNC	attachment=ISO|senID=24358|dadeg_pos=PUNC	49	PUNC	_	_
 
 # sent_id = dev-s78
-# text = ما می‌گوییم آن اخلاقیات قرآنی و اسلامی که بر سر آن پا می‌فشاریم، مفاهیم مشترک انسانیu200cاند که هر فطرت سالمی در هر جای جهان به درستی آنها گواهی می‌دهد.
+# text = ما می‌گوییم آن اخلاقیات قرآنی و اسلامی که بر سر آن پا می‌فشاریم، مفاهیم مشترک انسانی‌اند که هر فطرت سالمی در هر جای جهان به درستی آنها گواهی می‌دهد.
 1	ما	ما	PRON	PR_SEPER	person=1|attachment=ISO|number=PLUR|senID=24368|dadeg_pos=PR	2	SBJ	_	_
 2	می‌گوییم	گفت#گو	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=24368|dadeg_pos=V	0	ROOT	_	_
 3	آن	آن	DET	PREM_DEMAJ	attachment=ISO|senID=24368|dadeg_pos=PREM	4	NPREMOD	_	_
@@ -15410,7 +15410,7 @@
 10	.	.	PUNCT	PUNC	attachment=ISO|senID=34780|dadeg_pos=PUNC	9	PUNC	_	_
 
 # sent_id = dev-s767
-# text = به خاطر این که به ترسش پوزخند زده‌ام شرمندهu200cام.
+# text = به خاطر این که به ترسش پوزخند زده‌ام شرمنده‌ام.
 1	به	به	ADP	PREP	attachment=ISO|senID=34790|dadeg_pos=PREP	11	ADV	_	_
 2	خاطر	خاطر	NOUN	N_IANM	attachment=ISO|number=SING|senID=34790|dadeg_pos=N	1	POSDEP	_	_
 3	این	این	PRON	PR_DEMON	attachment=ISO|number=SING|senID=34790|dadeg_pos=PR	2	MOZ	_	_
@@ -20098,7 +20098,7 @@
 14	.	.	PUNCT	PUNC	attachment=ISO|senID=36247|dadeg_pos=PUNC	2	PUNC	_	_
 
 # sent_id = dev-s1013
-# text = آن موقع‌ها خودم را زیاد قیاس می‌کردم با پیامبر و این که او چقدر از زندگی درک والایی دارد و من چقدر پرت و دورافتادهu200cام.
+# text = آن موقع‌ها خودم را زیاد قیاس می‌کردم با پیامبر و این که او چقدر از زندگی درک والایی دارد و من چقدر پرت و دورافتاده‌ام.
 1	آن	آن	DET	PREM_DEMAJ	attachment=ISO|senID=36257|dadeg_pos=PREM	2	NPREMOD	_	_
 2	موقع‌ها	موقع	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=36257|dadeg_pos=N	7	ADV	_	_
 3	خودم	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=36257|dadeg_pos=PR	4	PREDEP	_	_
@@ -25249,7 +25249,7 @@
 19	.	.	PUNCT	PUNC	attachment=ISO|senID=38595|dadeg_pos=PUNC	6	PUNC	_	_
 
 # sent_id = dev-s1278
-# text = وقتی حرکت می‌کنی هم زندهu200cای و هم به دیگران زندگی می‌دهی، سبزه‌های کنار نهر را دیده‌ای چه زیبا چشم را نوازش می‌دهند و ماورای پروانه‌های لطیف و زیبا هستند، اینها به خاطر سخاوت و مهربانی نهر کوچک اما جاری است، پس تو هم با الهام از این رود کوچک جاری شو و بدان خدا در همه حال با توست.
+# text = وقتی حرکت می‌کنی هم زنده‌ای و هم به دیگران زندگی می‌دهی، سبزه‌های کنار نهر را دیده‌ای چه زیبا چشم را نوازش می‌دهند و ماورای پروانه‌های لطیف و زیبا هستند، اینها به خاطر سخاوت و مهربانی نهر کوچک اما جاری است، پس تو هم با الهام از این رود کوچک جاری شو و بدان خدا در همه حال با توست.
 1	وقتی	وقت	NOUN	N_IANM	attachment=ISO|number=SING|senID=38605|dadeg_pos=N	12	ADV	_	_
 2	حرکت	حرکت	NOUN	N_IANM	attachment=ISO|number=SING|senID=38605|dadeg_pos=N	3	NVE	_	_
 3	می‌کنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=38605|dadeg_pos=V	1	NCL	_	_
