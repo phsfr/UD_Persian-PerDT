@@ -37,7 +37,7 @@ class Features:
         return self.feat_dict[feat]
 
     def add_feat(self, feat_name, feat_value):
-        if new_feat not in self.feat_dict:
+        if feat_name not in self.feat_dict:
             self.feat_dict[feat_name] = feat_value
 
     def remove_feat(self, feat_name):
