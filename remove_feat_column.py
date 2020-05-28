@@ -26,6 +26,5 @@ if __name__ == '__main__':
                 univ_tree.other_features[l].empty()
                 if remove_xpos:
                     univ_tree.ftags[l] = "_"
-                univ_tree.words[l] = univ_tree.words[l]
 
         DependencyTree.write_to_conllu(univ_trees, output_path)
