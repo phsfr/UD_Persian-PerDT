@@ -20,7 +20,6 @@ def remove_semispace(word):
 
 class Features:
     def __init__(self, feat_str):  # process all features in feat_str and put them in dictionary (feat_dict)
-        self.feat_str = feat_str
         feat_spl = feat_str.strip().split('|')
         self.feat_dict = dict()
         for feat in feat_spl:
@@ -47,6 +46,9 @@ class Features:
 
     def has_feat(self, feat):
         return feat in self.feat_dict.keys()
+
+    def empty(self):
+        self.feat_dict = dict()
 
 
 class DependencyTree:
