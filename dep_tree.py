@@ -32,7 +32,7 @@ class Features:
                 pass
 
     def __str__(self):
-        return self.feat_str
+        return "|".join([feat + "=" + v for feat, v in self.feat_dict.items()]) if len(self.feat_dict) > 0 else "_"
 
     def feat(self, feat):  # get the value of a specific feature (feat)
         return self.feat_dict[feat]
@@ -40,7 +40,10 @@ class Features:
     def add_feat(self, new_feat_dict):
         for key, val in new_feat_dict.items():
             self.feat_dict[key] = val
-            self.feat_str += '|' + key + '=' + val
+
+    def remove_feat(self, feat_name):
+        if feat_name in self.feat_dict:
+            del self.feat_dict[feat_name]
 
     def has_feat(self, feat):
         return feat in self.feat_dict.keys()
@@ -729,7 +732,8 @@ class DependencyTree:
         for l, label in enumerate(self.labels):
             if label in simple_dep_map:
                 self.labels[l] = simple_dep_map[label]
-                self.other_features[l].add_feat({'old_r': label})
+                if not self.other_features[l].has_feat('old_r'):
+                    self.other_features[l].add_feat({'old_r': label})
 
         for idx in range(0, len(self.words)):
             old_role = self.labels[idx]

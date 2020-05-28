@@ -9,6 +9,9 @@ os.system("python3 -u convertNERtoPrn.py")
 print("process_Dadegan_PROPN.py")
 os.system("python3 -u process_Dadegan_PROPN.py")
 
+print("generate_dadegan_w_univ_tokenization.py")
+os.system("python3 -u generate_dadegan_w_univ_tokenization.py")
+
 print("dep_tree.py")
 os.system("python3 -u dep_tree.py")
 

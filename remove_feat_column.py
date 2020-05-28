@@ -9,7 +9,7 @@ if __name__ == '__main__':
     input_folder = os.path.abspath(sys.argv[1])
     output_folder = os.path.abspath(sys.argv[2])
     remove_xpos = True
-    if len(sys.argv)>3:
+    if len(sys.argv) > 3:
         if sys.argv[3] == "xpos":
             remove_xpos = False
 
