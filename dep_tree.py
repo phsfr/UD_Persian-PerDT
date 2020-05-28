@@ -251,7 +251,8 @@ class DependencyTree:
         """
         lst = list()
         lst.append(self.sent_descript)  # adding first line as sentence number
-        lst.append(self.sent_str)  # adding second line as sentence string
+        lst.append(
+            " ".join([remove_semispace(w) for w in self.sent_str.split(" ")]))  # adding second line as sentence string
         for i in range(len(self.words)):
             word_indx = str(i + 1)
             if word_indx in self.mw_line.keys():
