@@ -23,7 +23,7 @@ if __name__ == '__main__':
         univ_trees: List[DependencyTree] = DependencyTree.load_trees_from_conllu_file(input_path)
         for t, univ_tree in enumerate(univ_trees):
             for l, label in enumerate(univ_tree.labels):
-                univ_tree.other_features[l].feat_str = "_"
+                univ_tree.other_features[l] = dict()
                 if remove_xpos:
                     univ_tree.ftags[l] = "_"
                 univ_tree.words[l] = remove_semispace(univ_tree.words[l])
