@@ -1,5 +1,7 @@
 import unicodedata
 
+from process_Dadegan_PROPN import remove_semispace
+
 
 def find_foreign(word):
     except_words = ['5شنبه‌ها', 'ان‌شاا…', '[واحد', "''ایمیل''", '55گانه', '!‌', '"مرد"', '"زن"', 'غیرشاعر-', '-شاعر',
@@ -156,9 +158,9 @@ def write_align_conll_tagged(forg, ftagged, fw):
         org = org_lines[i]
         if (org.strip() != '' and tagged.strip() != ''):
             org_parts = org.strip().split('\t')
-            org_word = org_parts[1]
+            org_word = remove_semispace(org_parts[1])
             tagged_parts = tagged.strip().split('\t')
-            tag_word = tagged_parts[0]
+            tag_word = remove_semispace(tagged_parts[0])
             if tag_word.strip() == org_word.strip():
                 if tagged_parts[1] == 'PROPN':
                     fw.write(
@@ -166,8 +168,7 @@ def write_align_conll_tagged(forg, ftagged, fw):
                 else:
                     fw.write(org)  # +'\n')
             else:
-                print('ERROR: in this line {}'.format(org))
-                break
+                raise Exception('ERROR: in this line {}'.format(org))
             i = i + 1
         elif org.strip() == '':
             fw.write('\n')

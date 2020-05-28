@@ -2,6 +2,17 @@ import sys
 
 from dep_tree import *
 
+
+def remove_semispace(word):
+    if word.endswith("‌"):
+        # Semi-space removal
+        word = word[:-1]
+    if word.startswith("‌"):
+        # Semi-space removal
+        word = word[0:]
+    return word
+
+
 if __name__ == '__main__':
     input_folder = os.path.abspath(sys.argv[1])
     output_folder = os.path.abspath(sys.argv[2])
@@ -20,6 +31,6 @@ if __name__ == '__main__':
             for t, univ_tree in enumerate(univ_trees):
                 sent_str = univ_tree.sent_str.strip()
                 if sent_str.startswith("# text ="):
-                    sent_str = sent_str[len("# text ="):].strip()
+                    sent_str = remove_semispace(sent_str[len("# text ="):].strip())
                 writer.write(sent_str)
                 writer.write("\n")

@@ -2,6 +2,8 @@ import os
 from collections import defaultdict
 from typing import List, Set
 
+from process_Dadegan_PROPN import remove_semispace
+
 univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated", "advcl",
                    "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl", "amod", "det", "clf",
                    "case", "conj", "cc", "fixed", "flat", "compound", "list", "parataxis", "orphan", "goeswith",
@@ -255,7 +257,8 @@ class DependencyTree:
             if word_indx in self.mw_line.keys():
                 mwline = "\t".join(self.mw_line[word_indx].strip().split("\t")[:10])
                 lst.append(mwline)
-            feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i], self.ftags[i], str(self.other_features[i]),
+            feats = [word_indx, remove_semispace(self.words[i]), remove_semispace(self.lemmas[i]), self.tags[i],
+                     self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             lst.append('\t'.join(feats))
         return '\n'.join(lst)
@@ -329,7 +332,8 @@ class DependencyTree:
             word_indx = str(i + 1)
             # if word_indx in self.mw_line.keys():
             #    lst.append(self.mw_line[word_indx])
-            feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i], self.ftags[i], str(self.other_features[i]),
+            feats = [word_indx, remove_semispace(self.words[i]), remove_semispace(self.lemmas[i]), self.tags[i],
+                     self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             # ln = str(i+1) +'\t'+self.words[i]+'\t'+self.lemmas[i]+'\t'+self.tags[i]+'\t'+self.ftags[i]+'\t'+str(self.other_features[i])+'\t'+ str(self.heads[i])+'\t'+self.labels[i]+'\t_\t_'
             lst.append('\t'.join(feats))
