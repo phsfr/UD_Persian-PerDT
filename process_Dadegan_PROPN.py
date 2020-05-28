@@ -1,5 +1,6 @@
 from dep_tree import remove_semispace
 
+
 def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'):
     orig_noun, lemma = remove_semispace(noun), remove_semispace(lemma)
     for pron in base_prons:
@@ -433,8 +434,6 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                     # else:
                     space_after_toks.append(token_id - 1)
             elif prev_pos == 'PUNC' and prev_tok_form in punc_attach_after:
-                sent_text = sent_text + word_form
-            elif attachment == 'PRV':  # punctuations should be concated to the previous word
                 sent_text = sent_text + word_form
             elif '_' in word_form:  # to replace _ in multiwords with space or half-space (now replace with space)
                 sent_text = sent_text + ' ' + word_form.replace('_', ' ')

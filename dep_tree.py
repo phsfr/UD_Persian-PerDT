@@ -7,6 +7,7 @@ univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vo
                    "case", "conj", "cc", "fixed", "flat", "compound", "list", "parataxis", "orphan", "goeswith",
                    "reparandum", "punct", "root", "dep"}
 
+
 def remove_semispace(word):
     if word.endswith("‌"):
         # Semi-space removal
@@ -15,6 +16,7 @@ def remove_semispace(word):
         # Semi-space removal
         word = word[1:]
     return word
+
 
 class Features:
     def __init__(self, feat_str):  # process all features in feat_str and put them in dictionary (feat_dict)
@@ -216,26 +218,29 @@ class DependencyTree:
         line_idx = {}
         semiFinal_tags = list()
         final_tags = list()
-        sent_descript = lines[0]
-        sent_str = lines[1]
         other_features = list()
-        for i in range(2, len(lines)):
-            # for jumping over two first lines (one is sentence number & other is sentence's string
-            spl = lines[i].split('\t')
-            line_idx[i - 2] = spl[0]
-            line_indx = spl[0].split('-')
-            if '-' in spl[0]:
-                mw_line[line_indx[0]] = lines[i].strip('\n').strip()
-                continue
-            words.append(spl[1])  # word form
-            lemmas.append(spl[2])  # lemma
-            tags.append(spl[3])  # pos
-            ftags.append(spl[4])  # cpos
-            heads.append(int(spl[6]))  # dep head
-            other_features.append(spl[5])  # featurs
-            labels.append(spl[7])  # dep_rol
-            semiFinal_tags.append(spl[8])  # semi UD_Dadegan tag
-            final_tags.append(spl[9])  # last tag
+        for i in range(0, len(lines)):
+            if lines[i].startswith("# sent_id"):
+                sent_descript = lines[i]
+            elif lines[i].startswith("# text ="):
+                sent_str = lines[i]
+            elif not lines[i].startswith("#"):
+                # for jumping over two first lines (one is sentence number & other is sentence's string
+                spl = lines[i].split('\t')
+                line_idx[i - 2] = spl[0]
+                line_indx = spl[0].split('-')
+                if '-' in spl[0]:
+                    mw_line[line_indx[0]] = lines[i].strip('\n').strip()
+                    continue
+                words.append(spl[1])  # word form
+                lemmas.append(spl[2])  # lemma
+                tags.append(spl[3])  # pos
+                ftags.append(spl[4])  # cpos
+                heads.append(int(spl[6]))  # dep head
+                other_features.append(spl[5])  # featurs
+                labels.append(spl[7])  # dep_rol
+                semiFinal_tags.append(spl[8])  # semi UD_Dadegan tag
+                final_tags.append(spl[9])  # last tag
 
         tree = DependencyTree(sent_descript, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,
                               semiFinal_tags, final_tags, mw_line)

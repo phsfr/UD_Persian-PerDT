@@ -7,6 +7,7 @@
 """
 
 from dep_tree import DependencyTree, remove_semispace
+
 changed_set = set()
 
 
