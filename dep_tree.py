@@ -907,7 +907,7 @@ class DependencyTree:
                 if len(vconj_child) > 0:
                     self.exchange_child_parent(idx, vconj_child[0], 'vocative')
                     rol_changed = True
-            if old_role == 'ROOT':
+            if old_role in {'ROOT', "root"}:
                 self.labels[idx] = 'root'
                 rol_changed = True
             if old_role == 'PREDEP':
