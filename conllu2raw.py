@@ -31,6 +31,6 @@ if __name__ == '__main__':
             for t, univ_tree in enumerate(univ_trees):
                 sent_str = univ_tree.sent_str.strip()
                 if sent_str.startswith("# text ="):
-                    sent_str = " ".join([remove_semispace(x) for x in sent_str[len("# text ="):].strip()])
+                    sent_str = " ".join([remove_semispace(x) for x in sent_str[len("# text ="):].strip().split(" ")])
                 writer.write(sent_str)
                 writer.write("\n")

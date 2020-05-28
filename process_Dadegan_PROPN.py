@@ -1,12 +1,4 @@
-def remove_semispace(word):
-    if word.endswith("‌"):
-        # Semi-space removal
-        word = word[:-1]
-    if word.startswith("‌"):
-        # Semi-space removal
-        word = word[0:]
-    return word
-
+from dep_tree import remove_semispace
 
 def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'):
     orig_noun, lemma = remove_semispace(noun), remove_semispace(lemma)

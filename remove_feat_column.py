@@ -1,7 +1,7 @@
 import sys
 
 from dep_tree import *
-from process_Dadegan_PROPN import remove_semispace
+from dep_tree import remove_semispace
 # For removing feature column!
 
 if __name__ == '__main__':

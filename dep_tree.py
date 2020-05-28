@@ -2,13 +2,19 @@ import os
 from collections import defaultdict
 from typing import List, Set
 
-from process_Dadegan_PROPN import remove_semispace
-
 univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated", "advcl",
                    "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl", "amod", "det", "clf",
                    "case", "conj", "cc", "fixed", "flat", "compound", "list", "parataxis", "orphan", "goeswith",
                    "reparandum", "punct", "root", "dep"}
 
+def remove_semispace(word):
+    if word.endswith("‌"):
+        # Semi-space removal
+        word = word[:-1]
+    if word.startswith("‌"):
+        # Semi-space removal
+        word = word[1:]
+    return word
 
 class Features:
     def __init__(self, feat_str):  # process all features in feat_str and put them in dictionary (feat_dict)

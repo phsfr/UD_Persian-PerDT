@@ -6,8 +6,7 @@
 * Modifiers for PRENUM
 """
 
-from dep_tree import DependencyTree
-
+from dep_tree import DependencyTree, remove_semispace
 changed_set = set()
 
 
@@ -182,6 +181,7 @@ if __name__ == '__main__':
             for idx, (label, head) in enumerate(zip(tree.labels, tree.heads)):
                 if label == "ROOT" and head != 0:
                     print("Error in root", tree.sen_id)
+                tree.words[idx] = remove_semispace(tree.words[idx])
         DependencyTree.write_to_conll(tree_list, output_files[f_idx])
 
 print("\n".join(changed_set))
