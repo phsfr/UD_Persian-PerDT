@@ -1,7 +1,7 @@
 import sys
 
 from dep_tree import *
-
+from process_Dadegan_PROPN import remove_semispace
 # For removing feature column!
 
 if __name__ == '__main__':
@@ -20,5 +20,6 @@ if __name__ == '__main__':
             for l, label in enumerate(univ_tree.labels):
                 univ_tree.other_features[l].feat_str = "_"
                 univ_tree.ftags[l] = "_"
+                univ_tree.words[l] = remove_semispace(univ_tree.words[l])
 
         DependencyTree.write_to_conllu(univ_trees, output_path)
