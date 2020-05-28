@@ -2,10 +2,14 @@ from dep_tree import remove_semispace
 
 
 def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'):
-    orig_noun, lemma = remove_semispace(noun), remove_semispace(lemma)
+    orig_noun, lemma = noun, remove_semispace(lemma)
+    if orig_noun in {"سی‌ام"}:
+        # This word should not be segmented.
+        return False, '', ''
+
     for pron in base_prons:
         if noun.endswith(pron):
-            orig_noun = remove_semispace(noun[:-len(pron)])
+            orig_noun = noun[:-len(pron)]
 
             if orig_noun.endswith('های'):
                 sing_noun = remove_semispace(orig_noun[:-3])
@@ -49,17 +53,16 @@ def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'
                 return True, pron, orig_noun
     for pron in he_ye_prons:
         if noun.endswith(pron):
-            orig_noun = remove_semispace(noun[:-len(pron)])
-            if orig_noun.endswith('\u200c'):  # for adj cases like دستی‌ام
-                orig_noun = remove_semispace(orig_noun[:-1])
-            if orig_noun.endswith('ه') or orig_noun.endswith('ی'):
+            orig_noun = noun[:-len(pron)]
+            orig_noun_no_semi_space = remove_semispace(orig_noun)
+            if orig_noun_no_semi_space.endswith('ه') or orig_noun_no_semi_space.endswith('ی'):
                 if orig_noun.endswith('های'):
                     sing_noun = remove_semispace(orig_noun[:-3])
                     if sing_noun == lemma:
-                        return True, 'ی' + pron, remove_semispace(orig_noun[:-1])
-                elif pron == 'ات' and noun_num == 'PLUR' and orig_noun == lemma:  # like اشتباهات with lemma=اشتباه , in this word ات is mokasar sign not pronoun
+                        return True, 'ی' + pron, orig_noun[:-1]
+                elif pron == 'ات' and noun_num == 'PLUR' and orig_noun_no_semi_space == lemma:  # like اشتباهات with lemma=اشتباه , in this word ات is mokasar sign not pronoun
                     return False, '', ''
-                if orig_noun == lemma:
+                if orig_noun_no_semi_space == lemma:
                     return True, pron, orig_noun
             if pron == 'ات' and noun_num == 'PLUR' and orig_noun == lemma:  # like مقامات with lemma=مقام , in this word ات is mokasar sign not pronoun
                 return False, '', ''
@@ -67,7 +70,7 @@ def is_potentioal_pronounContained(noun, lemma, line, file_type, noun_num='SING'
                 return True, pron, orig_noun
     for pron in alef_vav_prons:
         if noun.endswith(pron):
-            orig_noun = remove_semispace(noun[:-len(pron)])
+            orig_noun = noun[:-len(pron)]
             if orig_noun.endswith('ها'):
                 sing_noun = remove_semispace(orig_noun[:-2])
                 if sing_noun == lemma:
@@ -439,7 +442,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 sent_text = sent_text + ' ' + word_form.replace('_', ' ')
             elif attachment == 'PRV':  # already splited multi-words should be written without full space (half or zero space)
                 if word_form == 'ام' or word_form == 'ایم' or word_form == 'ای' or word_form == 'اند' or word_form == 'اش' or word_form == 'اید':
-                    sent_text = sent_text + "‌" + word_form  # NOTE That is semipace
+                    sent_text = sent_text + "\u200c" + word_form  # NOTE That is semipace
                 else:
                     sent_text = sent_text + word_form
             else:
@@ -454,6 +457,11 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 other_parts = '\t'.join("_" * len(elems[2:]))
                 if word_form == 'ام' or word_form == 'ایم' or word_form == 'ای' or word_form == 'اند' or word_form == 'اش' or word_form == 'اید':  # insert half-space for cases such as شرمنده ام
                     new_word_form = prev_word_form + '\u200c' + word_form
+
+                    # Also taking care of previous token :(
+                    prev_sen_split = sent_lines[-1].strip().split("\t")
+                    prev_sen_split[1] = prev_sen_split[1] + "\u200c"
+                    sent_lines[-1] = "\t".join(prev_sen_split)
                 else:
                     new_word_form = prev_word_form + word_form
                 multi_words.append(new_word_form)
@@ -474,7 +482,6 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                                                                             number)
                 if result == True:
                     log_pron_noun.write(word_form + '\t' + orig_noun + '\t' + word_lemma + '\t' + pronoun + '\n')
-                    log_pron_noun.flush()
                     num_concate_prons = num_concate_prons + 1
                     pron_id = token_id + num_concate_prons
                     other_parts = '\t'.join("_" * len(elems[2:]))

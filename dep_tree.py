@@ -9,10 +9,10 @@ univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vo
 
 
 def remove_semispace(word):
-    if word.endswith("‌"):
+    if word.endswith('\u200c'):
         # Semi-space removal
         word = word[:-1]
-    if word.startswith("‌"):
+    if word.startswith('\u200c'):
         # Semi-space removal
         word = word[1:]
     return word
@@ -263,13 +263,13 @@ class DependencyTree:
         lst = list()
         lst.append(self.sent_descript)  # adding first line as sentence number
         lst.append(
-            " ".join([remove_semispace(w) for w in self.sent_str.split(" ")]))  # adding second line as sentence string
+            " ".join([w for w in self.sent_str.split(" ")]))  # adding second line as sentence string
         for i in range(len(self.words)):
             word_indx = str(i + 1)
             if word_indx in self.mw_line.keys():
                 mwline = "\t".join(self.mw_line[word_indx].strip().split("\t")[:10])
                 lst.append(mwline)
-            feats = [word_indx, remove_semispace(self.words[i]), remove_semispace(self.lemmas[i]), self.tags[i],
+            feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i],
                      self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             lst.append('\t'.join(feats))
@@ -344,7 +344,7 @@ class DependencyTree:
             word_indx = str(i + 1)
             # if word_indx in self.mw_line.keys():
             #    lst.append(self.mw_line[word_indx])
-            feats = [word_indx, remove_semispace(self.words[i]), remove_semispace(self.lemmas[i]), self.tags[i],
+            feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i],
                      self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             # ln = str(i+1) +'\t'+self.words[i]+'\t'+self.lemmas[i]+'\t'+self.tags[i]+'\t'+self.ftags[i]+'\t'+str(self.other_features[i])+'\t'+ str(self.heads[i])+'\t'+self.labels[i]+'\t_\t_'

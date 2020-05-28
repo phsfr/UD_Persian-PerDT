@@ -22,6 +22,7 @@ if __name__ == '__main__':
                    'UD_Dadegan/fa_dadegan-ud-test.conllu']
     illegal_tags = defaultdict(int)
     illegal_labels = defaultdict(int)
+    illegal_tokenization = set()
     problematic_sens = set()
     for file in input_files:
         trees: List[DependencyTree] = DependencyTree.load_trees_from_conllu_file(file)
@@ -47,9 +48,17 @@ if __name__ == '__main__':
                 problematic_sens.add(tree.sen_id)
                 print("Malformed tree in", tree.sen_id)
 
+            all_chars = tree.sent_str[len("# text ="):].strip().replace(" ", "")
+            all_word_chars = "".join(tree.words).replace(" ", "")
+            if all_chars != all_word_chars:
+                illegal_tokenization.add(tree.sen_id)
+                print("Wrong tokenization", tree.sen_id)
+
     if len(illegal_tags) > 0:
         print("Illegal tags:", " ".join([t + ":" + str(c) for t, c in illegal_tags.items()]))
     if len(illegal_labels) > 0:
         print("Illegal labels:", " ".join([l + ":" + str(c) for l, c in illegal_labels.items()]))
     if len(problematic_sens) > 0:
         print("Number of wrong sentences", len(problematic_sens))
+    if len(illegal_tokenization) > 0:
+        print("Number of wrong tokenization", len(illegal_tokenization))
