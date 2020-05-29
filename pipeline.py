@@ -12,6 +12,14 @@ if not os.path.exists("UD_Dadegan-nt"):
     os.makedirs("UD_Dadegan-nt")
 if not os.path.exists("parser_data"):
     os.makedirs("parser_data")
+if not os.path.exists("parser_data/dadegan"):
+    os.makedirs("parser_data/dadegan")
+if not os.path.exists("parser_data/dadegan-nt"):
+    os.makedirs("parser_data/dadegan-nt")
+if not os.path.exists("parser_data/seraji"):
+    os.makedirs("parser_data/seraji")
+if not os.path.exists("parser_data/seraji-nt"):
+    os.makedirs("parser_data/seraji-nt")
 if not os.path.exists("parser_data/d+s"):
     os.makedirs("parser_data/d+s")
 if not os.path.exists("parser_data/d+s-nt"):

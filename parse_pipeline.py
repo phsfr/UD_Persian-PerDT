@@ -9,7 +9,7 @@ output_path = os.path.abspath(sys.argv[4])
 seraji_prefix = "/seraji_raw/fa_seraji-ud-"
 dadegan_prefix = "/dadegan_raw/fa_dadegan-ud-"
 
-model_names = ["dadegan", "dadegan-nt", "dadegan_orig", "seraji", "seraji-nt"]
+model_names = ["dadegan", "dadegan-nt", "dadegan_orig", "seraji", "seraji-nt", "d+s", "d+s-nt"]
 parse_commands = "--tokenize --tag --parse --parser=embedding_form_file=/nlp/data/rasooli/ud_per/word_vector/cc.fa.300.vec --tokenizer=presegmented"
 format_commands = "--output=conllu --input=horizontal"
 
