@@ -957,7 +957,7 @@ class DependencyTree:
                     if len(sbj_child) == 0 and len(mos_child) > 0:
                         self.labels[idx] = 'csubj'
                         rol_changed = True
-            if old_pos != 'VERB' and old_role == 'root':
+            if old_pos != 'VERB' and old_role == 'root' and self.tags[idx] == "INTJ":
                 vconj_child = self.find_children_with_role(self.index[idx], 'VCONJ')
                 if len(vconj_child) > 0:
                     self.exchange_child_parent(idx, vconj_child[0], 'vocative')
