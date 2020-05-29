@@ -12,12 +12,16 @@ if __name__ == '__main__':
     assert len(trees1) == len(trees2)
 
     for i, (t1, t2) in enumerate(zip(trees1, trees2)):
-        assert t1.sent_descript == t2.sent_descript
+        assert t1.sent_str == t2.sent_str
         tchars1, tchars2 = [], []
         for w in t1.words:
             tchars1.extend(w)
         for w in t2.words:
             tchars2.extend(w)
+        if len(t1.words) != len(t2.words):
+            print(" ".join(t1.words))
+            print(" ".join(t2.words))
+            print("$$$")
         if tchars1 != tchars2:
             print(t1.sen_id)
         # assert tchars1 == tchars2

@@ -167,7 +167,7 @@ def extract_sent_id(feat_data):
 def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
     elems = lin.strip().split('\t')
     contain_noSpace = False
-    if elems[-1] == 'spaceAfter=NO':
+    if elems[-1] == 'SpaceAfter=No':
         contain_noSpace = True
     old_tok_id = elems[0]
     if '-' in old_tok_id:
@@ -177,7 +177,7 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
         if old_tok_int in space_toks and (not contain_noSpace):
             space_toks.remove(old_tok_int)
             lin = str(new_token_id) + '-' + old_tok_parts[1] + '\t' + '\t'.join(
-                elems[1:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                elems[1:-1]) + '\t' + 'SpaceAfter=No' + '\n'
         else:
             lin = str(new_token_id) + '-' + old_tok_parts[1] + '\t' + '\t'.join(elems[1:]) + '\n'
     else:
@@ -208,7 +208,7 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
                 space_toks.remove(elems[1])
                 lin = elems[1] + '\t' + '\t'.join(elems[2:4]) + '\t' + new_pos + '\t' + old_cpos + '\t' + elems[
                     6] + old_dadegan_pos + '\t' + str(new_hParent_id) + '\t' + '\t'.join(
-                    elems[8:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                    elems[8:-1]) + '\t' + 'SpaceAfter=No' + '\n'
             # lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
         elif old_tok_id == 'Z':  # remove Z from the begining of the line (neither token id nor head of its parent should change)
             old_pos = elems[4]
@@ -227,7 +227,7 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             if elems[1] in space_toks and (not contain_noSpace):
                 space_toks.remove(elems[1])
                 lin = elems[1] + '\t' + '\t'.join(elems[2:4]) + '\t' + new_pos + '\t' + old_cpos + '\t' + elems[
-                    6] + old_dadegan_pos + '\t' + '\t'.join(elems[7:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                    6] + old_dadegan_pos + '\t' + '\t'.join(elems[7:-1]) + '\t' + 'SpaceAfter=No' + '\n'
             # lin=elems[1]+'\t'+'\t'.join(elems[2:])+'\n'
         elif old_tok_id == 'M':  # remove M from the begining of the line (token id should be updated but head of parent is fixed)
 
@@ -251,7 +251,7 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
                 lin = str(new_token_id) + '\t' + '\t'.join(elems[2:4]) + '\t' + new_pos + '\t' + old_cpos + '\t' + \
                       elems[
                           6] + old_dadegan_pos + '\t' + '\t'.join(
-                    elems[7:-1]) + '\t' + 'spaceAfter=NO' + '\n'  # add new_pos and old_cpos to this line
+                    elems[7:-1]) + '\t' + 'SpaceAfter=No' + '\n'  # add new_pos and old_cpos to this line
             # lin=elems[1]+'\t'+'\t'.join(elems[2:7])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[8:])+'\n'
         elif old_tok_id == 'Y':  # remove Y from the begining of the line (token id of both previous token and the next one could be updated)
             old_tok_parts = elems[1].split('-')
@@ -261,7 +261,7 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             if int(old_tok_parts[0]) in space_toks and (not contain_noSpace):
                 space_toks.remove(int(old_tok_parts[0]))
                 lin = str(new_first_token_id) + '-' + str(new_second_token_id) + '\t' + '\t'.join(
-                    elems[2:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                    elems[2:-1]) + '\t' + 'SpaceAfter=No' + '\n'
         else:
             new_hParent_id = tokens_ids[int(elems[6])]
             new_token_id = tokens_ids[int(old_tok_id)]
@@ -282,7 +282,7 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
                 space_toks.remove(int(old_tok_id))
                 lin = str(new_token_id) + '\t' + '\t'.join(elems[1:3]) + '\t' + new_pos + '\t' + old_cpos + '\t' + \
                       elems[5] + old_dadegan_pos + '\t' + str(new_hParent_id) + '\t' + '\t'.join(
-                    elems[7:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                    elems[7:-1]) + '\t' + 'SpaceAfter=No' + '\n'
             # lin=str(new_token_id)+'\t'+'\t'.join(elems[1:6])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
     if 'isPROPN' in lin:
         lin_p = lin.strip().split('\t')
@@ -411,7 +411,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 # sent_text=sent_text+' '+word_form
                 if ' ' in word_form or attachment == 'PRV':
                     noSpace = True
-            if word_form == '"' and pos == 'PUNC':  # Reseting spaceAfter feature for the second or third " punct in the same sentence
+            if word_form == '"' and pos == 'PUNC':  # Reseting SpaceAfter feature for the second or third " punct in the same sentence
                 #    noSpace_current_punct=False
                 #    paired=True
                 if len(punc_stack) == 1:
@@ -470,7 +470,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 if noSpace:
                     new_line_multiword = 'Y' + '\t' + str(prev_token_id) + '-' + str(
                         token_id) + '\t' + new_word_form + '\t' + '\t'.join(
-                        "_" * (len(elems[2:]) - 1)) + '\t' + 'spaceAfter=NO' + '\n'
+                        "_" * (len(elems[2:]) - 1)) + '\t' + 'SpaceAfter=No' + '\n'
                 last_line = sent_lines.pop(-1)
                 sent_lines.append(new_line_multiword)
                 sent_lines.append(last_line)
@@ -722,7 +722,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         if noSpace:
                             eddited_line = str(
                                 token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
-                                elems[8:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                                elems[8:-1]) + '\t' + 'SpaceAfter=No' + '\n'
                         sent_lines.append(added_line_verb)
                         sent_lines.append(eddited_line)
                         line_added = True
@@ -742,7 +742,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         spaceAft = '_'
                         if noSpace:
-                            spaceAft = 'spaceAfter=NO'
+                            spaceAft = 'SpaceAfter=No'
                         added_line_verb = 'X' + '\t' + str(
                             v_p_id) + '\t' + v_second_part_form + '\t' + aux_lemma + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + mood + 'number=' + aux_number + '|person=' + aux_count + polarity + '|tense=' + tense + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + aux_dep_rol + '\t' + '_' + '\t' + spaceAft + '\n'
@@ -762,7 +762,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         spaceAft = '_'
                         if noSpace:
-                            spaceAft = 'spaceAfter=NO'
+                            spaceAft = 'SpaceAfter=No'
                         added_line_verb = 'X' + '\t' + str(
                             v_p_id) + '\t' + v_second_part_form + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + cpos + '\t' + 'number=' + aux_number + '|person=' + aux_count + polarity + '|verbForm=Part' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + spaceAft + '\n'
@@ -786,7 +786,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         if noSpace:
                             eddited_line = str(
                                 token_id) + '\t' + v_second_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'mood=Sub|number=SING|person=3|tense=Pres' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + '\t'.join(
-                                elems[8:-1]) + '\t' + 'spaceAfter=NO' + '\n'
+                                elems[8:-1]) + '\t' + 'SpaceAfter=No' + '\n'
                         sent_lines.append(added_line_verb)
                         sent_lines.append(eddited_line)
                         line_added = True
@@ -835,7 +835,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + '_' + '\n'
                         spaceAft = '_'
                         if noSpace:
-                            spaceAft = 'spaceAfter=NO'
+                            spaceAft = 'SpaceAfter=No'
                         added_line_verb_two = 'Z' + '\t' + str(
                             v_p_two_id) + '\t' + v_third_part + '\t' + aux_lemma + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + mood + 'number=' + aux_number + '|person=' + aux_count + polarity + '|tense=' + tense + old_dadegan_info_aux + '\t' + str(
                             v_p_one_id) + '\t' + 'aux' + '\t' + '_' + '\t' + spaceAft + '\n'
@@ -865,7 +865,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             v_p_two_id) + '\t' + 'aux' + '\t' + '_' + '\t' + '_' + '\n'
                         spaceAft = '_'
                         if noSpace:
-                            spaceAft = 'spaceAfter=NO'
+                            spaceAft = 'SpaceAfter=No'
                         added_line_verb_two = 'X' + '\t' + str(
                             v_p_two_id) + '\t' + v_third_part + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=SING' + '|person=3' + polarity + '|tense=Past' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + spaceAft + '\n'
@@ -889,7 +889,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         5] + polarity_v + old_dadegan_lem + '\t' + '\t'.join(elems[6:]) + '\n'
                     # print(line)
                 if (pos == 'PUNC' and word_form in punc_attach_after) or (word_form == '"' and noSpace_current_punct):
-                    line = '\t'.join(elems[:-1]) + '\t' + "spaceAfter=NO" + '\n'
+                    line = '\t'.join(elems[:-1]) + '\t' + "SpaceAfter=No" + '\n'
                 if pos == 'PR' and cpos == 'JOPER':  # and attachment=='PRV':
                     new_lemm = pro_info[elems[1]][0]
                     line = '\t'.join(elems[:2]) + '\t' + new_lemm + '\t' + '\t'.join(elems[3:]) + '\n'
