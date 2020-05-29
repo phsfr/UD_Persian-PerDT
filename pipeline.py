@@ -10,6 +10,12 @@ if not os.path.exists("UD_Dadegan"):
     os.makedirs("UD_Dadegan")
 if not os.path.exists("UD_Dadegan-nt"):
     os.makedirs("UD_Dadegan-nt")
+if not os.path.exists("parser_data"):
+    os.makedirs("parser_data")
+if not os.path.exists("parser_data/d+s"):
+    os.makedirs("parser_data/d+s")
+if not os.path.exists("parser_data/d+s-nt"):
+    os.makedirs("parser_data/d+s-nt")
 
 print("fix_dadegan_deps.py")
 os.system("python3 -u fix_dadegan_deps.py")
