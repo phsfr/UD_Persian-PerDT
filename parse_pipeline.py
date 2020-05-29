@@ -23,13 +23,12 @@ for model_name in model_names:
         dadegan_input = input_path + dadegan_prefix + file_type
         seraji_output = os.path.join(output_folder, "seraji." + file_type)
         dadegan_output = os.path.join(output_folder, "dadegan." + file_type)
-        seraji_command = " ".join([udpipe, parse_commands, model_path + model_name + ".model", format_commands, seraji_input,
-                          ">", seraji_output])
-        print(" ".join(seraji_command))
+        model = os.path.join(model_path, model_name + ".model")
+        seraji_command = " ".join([udpipe, parse_commands, model, format_commands, seraji_input, ">", seraji_output])
+        print(seraji_command)
         os.system(seraji_command + " &")
-        dadegan_command = " ".join([udpipe, parse_commands, model_path + model_name + ".model", format_commands, dadegan_input,
-                           ">", dadegan_output])
-        print(" ".join(dadegan_command))
+        dadegan_command = " ".join([udpipe, parse_commands, model, format_commands, dadegan_input, ">", dadegan_output])
+        print(dadegan_command)
         os.system(dadegan_command)
 
 print("FINISHED")
