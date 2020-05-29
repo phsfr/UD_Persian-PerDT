@@ -95,7 +95,7 @@ def find_pro_head(pro_par, tok_dic, lin):
         noun_group.append(tok_dic[h_idx][0])
         h_pos = tok_dic[h_idx][1]
         head_h_idx = tok_dic[h_idx][3]
-        if head_h_idx == '0':  # in sents=43943, 51997, 54672 we have VCONJ and when the order has been reversed, Noun word became ROOT of the sentence
+        if head_h_idx == '0':
             head_h_pos = ''
             # print(tok_dic)
         else:

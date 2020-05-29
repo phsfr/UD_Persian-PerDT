@@ -715,7 +715,7 @@ class DependencyTree:
 
     def zero_level_dep_mapping(self):
         self.find_tag_fixed_groupds()
-        simple_dep_map = {'ROOT': 'root', 'PUNC': 'punct', 'APP': 'appos', "aux": "aux"}
+        simple_dep_map = {'PUNC': 'punct', 'APP': 'appos', "aux": "aux"}
         for l, label in enumerate(self.labels):
             if label in simple_dep_map:
                 self.labels[l] = simple_dep_map[label]
@@ -907,9 +907,6 @@ class DependencyTree:
                 if len(vconj_child) > 0:
                     self.exchange_child_parent(idx, vconj_child[0], 'vocative')
                     rol_changed = True
-            if old_role in {'ROOT', "root"}:
-                self.labels[idx] = 'root'
-                rol_changed = True
             if old_role == 'PREDEP':
                 head_tag = self.tags[self.heads[idx] - 1]
                 if head_tag == "NOUN" and self.ftags[idx] == "SEPER":

@@ -54,7 +54,7 @@ def fix_cc_order(tree, cc, label):
         return
 
     cc_grand_head = tree.heads[cc_head]
-    cc_grand_label = tree.labels[cc_grand_head - 1] if cc_grand_head > 0 else "ROOT"
+    cc_grand_label = tree.labels[cc_grand_head - 1] if cc_grand_head > 0 else "root"
     tree.heads[cc_dep] = cc_grand_head
     tree.labels[cc_dep] = cc_grand_label
     tree.heads[cc_head] = cc + 1
@@ -91,6 +91,8 @@ if __name__ == '__main__':
         tree_list = DependencyTree.load_trees_from_conll_file(inp_f)
         for i, tree in enumerate(tree_list):
             for w, (lemma, word, ftag) in enumerate(zip(tree.lemmas, tree.words, tree.ftags)):
+                if tree.labels[w] == "ROOT":
+                    tree.labels[w] = "root"
                 if lemma == "گشت#گرد" and ftag == "PASS":
                     tree.ftags[w] = "ACT"
                 if lemma == "شد#شو" and ftag == "PASS":
@@ -159,11 +161,11 @@ if __name__ == '__main__':
                                 # Change the head for SBJ/AJUCL/ADV
                                 tree.heads[dep] = idx + 1
 
-        # Fixing wrong ROOTs due to wrong VCONJ rotation.
+        # Fixing wrong roots due to wrong VCONJ rotation.
         # sen_changed = set()
         # for tree in tree_list:
         #     for idx, (label, head) in enumerate(zip(tree.labels, tree.heads)):
-        #         if label == "ROOT" and head != 0:
+        #         if label == "root" and head != 0:
         #             tree.labels[idx] = "VCL"
         #             sen_changed.add(tree.sen_id)
         # print(len(sen_changed))
@@ -180,7 +182,7 @@ if __name__ == '__main__':
             if not tree.is_valid_tree():
                 print("Malformed Dadegan tree in", inp_f, tree.other_features[0].feat_dict["senID"])
             for idx, (label, head) in enumerate(zip(tree.labels, tree.heads)):
-                if label == "ROOT" and head != 0:
+                if label == "root" and head != 0:
                     print("Error in root", tree.sen_id)
                 tree.words[idx] = tree.words[idx].replace("\u200a", "")
                 tree.lemmas[idx] = tree.lemmas[idx].replace("\u200a", "")

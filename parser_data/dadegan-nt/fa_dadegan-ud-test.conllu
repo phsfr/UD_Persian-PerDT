@@ -27,17 +27,17 @@
 5	بلوغ	بلوغ	NOUN	N_IANM	_	7	obl	_	_
 6	فکری	فکری	ADJ	ADJ_AJP	_	5	amod	_	_
 7	رسید	رسید#رس	VERB	V_ACT	_	2	acl	_	_
-8	و	و	CCONJ	CONJ	_	16	cc	_	_
-9	مسیر	مسیر	NOUN	N_IANM	_	16	obj	_	_
+8	و	و	CCONJ	CONJ	_	17	cc	_	_
+9	مسیر	مسیر	NOUN	N_IANM	_	17	obj	_	_
 10	حیات	حیات	NOUN	N_IANM	_	9	nmod	_	_
 11	خود	خود	PRON	PR_CREFX	_	10	nmod	_	_
 12	را	را	ADP	POSTP	_	9	case	_	_
 13	با	با	ADP	PREP	_	14	case	_	_
-14	چراغ	چراغ	NOUN	N_IANM	_	16	obl	_	_
+14	چراغ	چراغ	NOUN	N_IANM	_	17	obl	_	_
 15	اندیشه	اندیشه	NOUN	N_IANM	_	14	nmod	_	_
-16	روشن	روشن	ADJ	ADJ_AJP	_	7	conj	_	_
-17	کرد	کرد#کن	VERB	V_ACT	_	16	cop	_	SpaceAfter=No
-18	،	،	PUNCT	PUNC	_	16	punct	_	_
+16	روشن	روشن	ADJ	ADJ_AJP	_	17	xcomp	_	_
+17	کرد	کرد#کن	VERB	V_ACT	_	7	conj	_	SpaceAfter=No
+18	،	،	PUNCT	PUNC	_	17	punct	_	_
 19	اساس	اساس	NOUN	N_IANM	_	22	nsubj	_	_
 20	تاریخ	تاریخ	NOUN	N_IANM	_	19	nmod	_	_
 21	پی	پی	NOUN	N_IANM	_	22	compound	_	_
@@ -236,17 +236,17 @@
 
 # sent_id = test-s13
 # text = یکپارچه و متحد شوید و سازمان سیاسی نیرومندی را پی گذارید.
-1	یکپارچه	یکپارچه	ADJ	ADJ_AJP	_	0	root	_	_
+1	یکپارچه	یکپارچه	ADJ	ADJ_AJP	_	4	xcomp	_	_
 2	و	و	CCONJ	CONJ	_	3	cc	_	_
 3	متحد	متحد	ADJ	ADJ_AJP	_	1	conj	_	_
-4	شوید	شد#شو	VERB	V_ACT	_	1	cop	_	_
+4	شوید	شد#شو	VERB	V_ACT	_	0	root	_	_
 5	و	و	CCONJ	CONJ	_	11	cc	_	_
 6	سازمان	سازمان	PROPN	N_IANM	_	11	obj	_	_
 7	سیاسی	سیاسی	PROPN	ADJ_AJP	_	6	flat	_	_
 8	نیرومندی	نیرومند	PROPN	ADJ_AJP	_	6	flat	_	_
 9	را	را	ADP	POSTP	_	6	case	_	_
 10	پی	پی	NOUN	N_IANM	_	11	compound	_	_
-11	گذارید	گذاشت#گذار	VERB	V_ACT	_	1	conj	_	SpaceAfter=No
+11	گذارید	گذاشت#گذار	VERB	V_ACT	_	4	conj	_	SpaceAfter=No
 12	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s14
@@ -317,9 +317,9 @@
 # text = دستورات دارویی که قطع می‌گردند با خودکار قرمز خط خورده و تاریخ زده می‌شود و روی آن حرف DC نوشته می‌شود.
 1	دستورات	دستور	NOUN	N_IANM	_	10	nsubj	_	_
 2	دارویی	دارویی	ADJ	ADJ_AJP	_	1	amod	_	_
-3	که	که	SCONJ	SUBR	_	4	mark	_	_
-4	قطع	قطع	NOUN	N_IANM	_	1	acl	_	_
-5	می‌گردند	گشت#گرد	VERB	V_ACT	_	4	cop	_	_
+3	که	که	SCONJ	SUBR	_	5	mark	_	_
+4	قطع	قطع	NOUN	N_IANM	_	5	xcomp	_	_
+5	می‌گردند	گشت#گرد	VERB	V_ACT	_	1	acl	_	_
 6	با	با	ADP	PREP	_	7	case	_	_
 7	خودکار	خودکار	NOUN	N_IANM	_	10	obl	_	_
 8	قرمز	قرمز	ADJ	ADJ_AJP	_	7	amod	_	_
@@ -341,23 +341,23 @@
 # sent_id = test-s18
 # text = تا زمانی که چنین گام‌هایی برداشته نشود، توسعهٔ کشورهای فقیر متوقف شده و حتی پسروی خواهد کرد.
 1	تا	تا	ADP	PREP	_	2	case	_	_
-2	زمانی	زمان	NOUN	N_IANM	_	12	obl	_	_
+2	زمانی	زمان	NOUN	N_IANM	_	13	obl	_	_
 3	که	که	SCONJ	SUBR	_	6	mark	_	_
 4	چنین	چنین	DET	PREM_DEMAJ	_	5	det	_	_
 5	گام‌هایی	گام	NOUN	N_IANM	_	6	obj	_	_
 6	برداشته	بر#داشت#دار	VERB	V_PASS	_	2	acl	_	_
 7	نشود	کرد#کن	AUX	AUX	_	6	aux	_	SpaceAfter=No
 8	،	،	PUNCT	PUNC	_	6	punct	_	_
-9	توسعهٔ	توسعه	NOUN	N_IANM	_	12	nsubj	_	_
+9	توسعهٔ	توسعه	NOUN	N_IANM	_	13	nsubj	_	_
 10	کشورهای	کشور	NOUN	N_IANM	_	9	nmod	_	_
 11	فقیر	فقیر	ADJ	ADJ_AJP	_	10	amod	_	_
-12	متوقف	متوقف	ADJ	ADJ_AJP	_	0	root	_	_
-13	شده	شد#شو	VERB	V_ACT	_	12	cop	_	_
+12	متوقف	متوقف	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 14	و	و	CCONJ	CONJ	_	18	cc	_	_
 15	حتی	حتی	ADV	ADV_SADV	_	18	advmod	_	_
 16	پسروی	پسروی	NOUN	N_IANM	_	18	compound	_	_
 17	خواهد	خواست#خواه	AUX	AUX	_	18	aux	_	_
-18	کرد	کرد#کن	VERB	V_ACT	_	12	conj	_	SpaceAfter=No
+18	کرد	کرد#کن	VERB	V_ACT	_	13	conj	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = test-s19
@@ -380,7 +380,7 @@
 4	مورد	مورد	NOUN	N_IANM	_	1	nmod	_	_
 5	نظر	نظر	NOUN	N_IANM	_	4	nmod	_	_
 6	dsm4	dsm4	PROPN	N_IANM	_	5	nmod	_	_
-7	صحیح	صحیح	ADJ	ADJ_AJP	_	9	root	_	_
+7	صحیح	صحیح	ADJ	ADJ_AJP	_	9	vocative	_	_
 8	است	#است	AUX	AUX	_	7	cop	_	_
 9	و	و	CCONJ	CONJ	_	0	root	_	_
 10	اتفاقاً	اتفاقاً	ADV	ADV_SADV	_	22	advmod	_	_
@@ -457,16 +457,16 @@
 
 # sent_id = test-s24
 # text = حکومت‌ها مسیحی شدند و پادشاهان با نام مسیح تاج‌گذاری می‌کردند.
-1	حکومت‌ها	حکومت	NOUN	N_IANM	_	2	nsubj	_	_
-2	مسیحی	مسیحی	ADJ	ADJ_AJP	_	0	root	_	_
-3	شدند	شد#شو	VERB	V_ACT	_	2	cop	_	_
+1	حکومت‌ها	حکومت	NOUN	N_IANM	_	3	nsubj	_	_
+2	مسیحی	مسیحی	ADJ	ADJ_AJP	_	3	xcomp	_	_
+3	شدند	شد#شو	VERB	V_ACT	_	0	root	_	_
 4	و	و	CCONJ	CONJ	_	10	cc	_	_
 5	پادشاهان	پادشاه	NOUN	N_ANM	_	10	nsubj	_	_
 6	با	با	ADP	PREP	_	7	case	_	_
 7	نام	نام	NOUN	N_IANM	_	10	obl	_	_
 8	مسیح	مسیح	PROPN	N_ANM	_	7	nmod	_	_
 9	تاج‌گذاری	تاج‌گذاری	NOUN	N_IANM	_	10	compound	_	_
-10	می‌کردند	کرد#کن	VERB	V_ACT	_	2	conj	_	SpaceAfter=No
+10	می‌کردند	کرد#کن	VERB	V_ACT	_	3	conj	_	SpaceAfter=No
 11	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s25
@@ -491,7 +491,7 @@
 
 # sent_id = test-s26
 # text = برخی از نقوشی که در این بنا به کار رفته، به احتمال زیاد الهام‌گرفته از نقوش بنای قبلی و پراهمیتی بوده است که به خاطر آن در زمان ساسانیان اطراف را به وسیلهٔ برج و باروهایی ایمن‌سازی کرده بودند.
-1	برخی	برخی	NOUN	N_IANM	_	15	nsubj	_	_
+1	برخی	برخی	NOUN	N_IANM	_	22	nsubj	_	_
 2	از	از	ADP	PREP	_	3	case	_	_
 3	نقوشی	نقش	NOUN	N_IANM	_	1	nmod	_	_
 4	که	که	SCONJ	SUBR	_	10	mark	_	_
@@ -503,16 +503,16 @@
 10	رفته	رفت#رو	VERB	V_ACT	_	3	acl	_	SpaceAfter=No
 11	،	،	PUNCT	PUNC	_	10	punct	_	_
 12	به	به	ADP	PREP	_	13	case	_	_
-13	احتمال	احتمال	NOUN	N_IANM	_	15	obl	_	_
+13	احتمال	احتمال	NOUN	N_IANM	_	22	obl	_	_
 14	زیاد	زیاد	ADJ	ADJ_AJP	_	13	amod	_	_
-15	الهام‌گرفته	الهام‌گرفته	ADJ	ADJ_AJP	_	0	root	_	_
+15	الهام‌گرفته	الهام‌گرفته	ADJ	ADJ_AJP	_	22	xcomp	_	_
 16	از	از	ADP	PREP	_	17	case	_	_
 17	نقوش	نقش	NOUN	N_IANM	_	15	obl	_	_
 18	بنای	بنا	NOUN	N_IANM	_	17	nmod	_	_
 19	قبلی	قبلی	ADJ	ADJ_AJP	_	18	amod	_	_
 20	و	و	CCONJ	CONJ	_	21	cc	_	_
 21	پراهمیتی	پراهمیت	ADJ	ADJ_AJP	_	19	conj	_	_
-22	بوده	بود#باش	VERB	V_ACT	_	15	cop	_	_
+22	بوده	بود#باش	VERB	V_ACT	_	0	root	_	_
 23	است	#است	AUX	AUX	_	22	aux	_	_
 24	که	که	SCONJ	SUBR	_	39	mark	_	_
 25	به	به	ADP	PREP	_	26	case	_	_
@@ -531,7 +531,7 @@
 38	ایمن‌سازی	ایمن‌سازی	NOUN	N_IANM	_	39	compound	_	_
 39	کرده	کرد#کن	VERB	V_ACT	_	18	acl	_	_
 40	بودند	بود#باش	AUX	AUX	_	39	aux	_	SpaceAfter=No
-41	.	.	PUNCT	PUNC	_	15	punct	_	_
+41	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s27
 # text = این هلیکوپترها به مدت 45 دقیقه آسمان پایتخت را در مناطق آلوده‌تر آب‌پاشی خواهند کرد.
@@ -1091,14 +1091,14 @@
 
 # sent_id = test-s53
 # text = شاید پرونده‌ها قاطی شده بودند یا پارتی‌بازی شده بود.
-1	شاید	شاید	ADV	ADV_SADV	_	3	advmod	_	_
-2	پرونده‌ها	پرونده	NOUN	N_IANM	_	3	nsubj	_	_
-3	قاطی	قاطی	ADJ	ADJ_AJP	_	0	root	_	_
-4	شده	شد#شو	VERB	V_ACT	_	3	cop	_	_
+1	شاید	شاید	ADV	ADV_SADV	_	4	advmod	_	_
+2	پرونده‌ها	پرونده	NOUN	N_IANM	_	4	nsubj	_	_
+3	قاطی	قاطی	ADJ	ADJ_AJP	_	4	xcomp	_	_
+4	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 5	بودند	بود#باش	AUX	AUX	_	4	aux	_	_
 6	یا	یا	CCONJ	CONJ	_	8	cc	_	_
 7	پارتی‌بازی	پارتی‌بازی	NOUN	N_IANM	_	8	compound	_	_
-8	شده	شد#شو	VERB	V_ACT	_	3	conj	_	_
+8	شده	شد#شو	VERB	V_ACT	_	4	conj	_	_
 9	بود	بود#باش	AUX	AUX	_	8	aux	_	SpaceAfter=No
 10	.	.	PUNCT	PUNC	_	8	punct	_	_
 
@@ -1112,13 +1112,13 @@
 6	و	و	CCONJ	CONJ	_	7	cc	_	_
 7	تحمل	تحمل	NOUN	N_IANM	_	5	conj	_	_
 8	ندارند	داشت#دار	VERB	V_ACT	_	2	acl	_	_
-9	یا	یا	CCONJ	CONJ	_	13	cc	_	_
-10	بیش	بیش	ADJ	ADJ_AJCM	_	13	cop	_	_
+9	یا	یا	CCONJ	CONJ	_	10	cc	_	_
+10	بیش	بیش	ADJ	ADJ_AJCM	_	8	conj	_	_
 11	از	از	ADP	PREP	_	12	case	_	_
-12	حد	حد	NOUN	N_IANM	_	13	obl	_	_
-13	حساس	حساس	ADJ	ADJ_AJP	_	8	conj	_	_
-14	هستند	#هست	AUX	AUX	_	13	cop	_	SpaceAfter=No
-15	،	،	PUNCT	PUNC	_	13	punct	_	_
+12	حد	حد	NOUN	N_IANM	_	10	obl	_	_
+13	حساس	حساس	ADJ	ADJ_AJP	_	10	xcomp	_	_
+14	هستند	#هست	AUX	AUX	_	10	cop	_	SpaceAfter=No
+15	،	،	PUNCT	PUNC	_	10	punct	_	_
 16	بیشتر	بیش	ADJ	ADJ_AJCM	_	19	advmod	_	_
 17	بهانه	بهانه	NOUN	N_IANM	_	19	compound	_	_
 18	خواهند	خواست#خواه	AUX	AUX	_	19	aux	_	_
@@ -1128,7 +1128,7 @@
 # sent_id = test-s55
 # text = این روزها که متولی کاهش و کنترل آلودگی صوتی در بین کارشناسان شهرداری و محیط زیست پایتخت ایران «پاس‌کاری» می‌شود همچنان این مشکل ریشه‌ای در جای خویش باقی مانده است!
 1	این	این	DET	PREM_DEMAJ	_	2	det	_	_
-2	روزها	روز	NOUN	N_IANM	_	28	obl	_	_
+2	روزها	روز	NOUN	N_IANM	_	31	obl	_	_
 3	که	که	SCONJ	SUBR	_	22	mark	_	_
 4	متولی	متولی	NOUN	N_IANM	_	22	obj	_	_
 5	کاهش	کاهش	NOUN	N_IANM	_	4	nmod	_	_
@@ -1149,17 +1149,17 @@
 20	پاس‌کاری	پاس‌کاری	NOUN	N_IANM	_	22	compound	_	SpaceAfter=No
 21	»	»	PUNCT	PUNC	_	20	punct	_	_
 22	می‌شود	شد#شو	VERB	V_ACT	_	2	acl	_	_
-23	همچنان	همچنان	ADV	ADV_SADV	_	28	advmod	_	_
+23	همچنان	همچنان	ADV	ADV_SADV	_	31	advmod	_	_
 24	این	این	DET	PREM_DEMAJ	_	25	det	_	_
-25	مشکل	مشکل	NOUN	N_IANM	_	28	nsubj	_	_
+25	مشکل	مشکل	NOUN	N_IANM	_	31	nsubj	_	_
 26	ریشه‌ای	ریشه‌ای	ADJ	ADJ_AJP	_	25	amod	_	_
 27	در	در	ADP	PREP	_	28	case	_	_
-28	جای	جا	NOUN	N_IANM	_	0	root	_	_
+28	جای	جا	NOUN	N_IANM	_	31	xcomp	_	_
 29	خویش	خویش	PRON	PR_CREFX	_	28	nmod	_	_
-30	باقی	باقی	NOUN	N_IANM	_	28	compound	_	_
-31	مانده	ماند#مان	VERB	V_ACT	_	28	cop	_	_
+30	باقی	باقی	NOUN	N_IANM	_	31	compound	_	_
+31	مانده	ماند#مان	VERB	V_ACT	_	0	root	_	_
 32	است	#است	AUX	AUX	_	31	aux	_	SpaceAfter=No
-33	!	!	PUNCT	PUNC	_	28	punct	_	_
+33	!	!	PUNCT	PUNC	_	31	punct	_	_
 
 # sent_id = test-s56
 # text = از هر جانوری یک دوره پرستاری کرده بودم.
@@ -1227,14 +1227,14 @@
 20	قدسی	قدسی	ADJ	ADJ_AJP	_	19	amod	_	_
 21	امامان	امام	NOUN	N_ANM	_	19	nmod	_	_
 22	آگاهی	آگاهی	NOUN	N_IANM	_	23	obj	_	_
-23	داشتند	داشت#دار	VERB	V_ACT	_	28	advcl	_	SpaceAfter=No
+23	داشتند	داشت#دار	VERB	V_ACT	_	29	advcl	_	SpaceAfter=No
 24	،	،	PUNCT	PUNC	_	23	punct	_	_
-25	کسی	کس	NOUN	N_ANM	_	28	nsubj	_	_
+25	کسی	کس	NOUN	N_ANM	_	29	nsubj	_	_
 26	به	به	ADP	PREP	_	27	case	_	_
 27	آنها	آنها	PRON	PR_SEPER	_	28	nmod	_	_
-28	بی‌حرمتی	بی‌حرمتی	NOUN	N_IANM	_	0	root	_	_
-29	نمی‌کرد	کرد#کن	VERB	V_ACT	_	28	cop	_	SpaceAfter=No
-30	.	.	PUNCT	PUNC	_	28	punct	_	_
+28	بی‌حرمتی	بی‌حرمتی	NOUN	N_IANM	_	29	xcomp	_	_
+29	نمی‌کرد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+30	.	.	PUNCT	PUNC	_	29	punct	_	_
 
 # sent_id = test-s60
 # text = حالا در مقابل دیدگان مایلی‌کهن آمدیم و بی‌آبرویی کردیم!
@@ -1591,7 +1591,7 @@
 4	به	به	ADP	PREP	_	5	case	_	_
 5	انسان	انسان	NOUN	N_ANM	_	2	nmod	_	_
 6	همان	همان	DET	PREM_DEMAJ	_	7	det	_	_
-7	نگاهی	نگاه	NOUN	N_IANM	_	14	root	_	_
+7	نگاهی	نگاه	NOUN	N_IANM	_	14	vocative	_	_
 8	است	#است	AUX	AUX	_	7	cop	_	_
 9	که	که	SCONJ	SUBR	_	13	mark	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
@@ -1599,16 +1599,16 @@
 12	پیشکش	پیشکش	NOUN	N_IANM	_	13	compound	_	_
 13	داشته‌اید	داشت#دار	VERB	V_ACT	_	7	acl	_	_
 14	یا	یا	CCONJ	CONJ	_	0	root	_	_
-15	انسان	انسان	NOUN	N_ANM	_	22	nsubj	_	_
+15	انسان	انسان	NOUN	N_ANM	_	23	nsubj	_	_
 16	در	در	ADP	PREP	_	18	case	_	_
 17	این	این	DET	PREM_DEMAJ	_	18	det	_	_
-18	اثر	اثر	NOUN	N_IANM	_	22	obl	_	_
+18	اثر	اثر	NOUN	N_IANM	_	23	obl	_	_
 19	از	از	ADP	PREP	_	20	case	_	_
 20	جنبه‌ای	جنبه	NOUN	N_IANM	_	22	obl	_	_
 21	دیگر	دیگر	ADJ	ADJ_AJP	_	20	amod	_	_
-22	مطرح	مطرح	ADJ	ADJ_AJP	_	14	advmod	_	_
-23	می‌شود	شد#شو	VERB	V_ACT	_	22	cop	_	SpaceAfter=No
-24	؟	؟	PUNCT	PUNC	_	22	punct	_	_
+22	مطرح	مطرح	ADJ	ADJ_AJP	_	23	xcomp	_	_
+23	می‌شود	شد#شو	VERB	V_ACT	_	14	advmod	_	SpaceAfter=No
+24	؟	؟	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s83
 # text = چون ممکن است طرف مقابل برای به نمایش گذاشتن پاچه‌اش، شلوار خود را تا زده باشد.
@@ -1657,14 +1657,14 @@
 # sent_id = test-s86
 # text = این جمله را در ذهن خود تابلو کنید.
 1	این	این	DET	PREM_DEMAJ	_	2	det	_	_
-2	جمله	جمله	NOUN	N_IANM	_	7	obj	_	_
+2	جمله	جمله	NOUN	N_IANM	_	8	obj	_	_
 3	را	را	ADP	POSTP	_	2	case	_	_
 4	در	در	ADP	PREP	_	5	case	_	_
-5	ذهن	ذهن	NOUN	N_IANM	_	7	obl	_	_
+5	ذهن	ذهن	NOUN	N_IANM	_	8	obl	_	_
 6	خود	خود	PRON	PR_CREFX	_	5	nmod	_	_
-7	تابلو	تابلو	ADJ	ADJ_AJP	_	0	root	_	_
-8	کنید	کرد#کن	VERB	V_ACT	_	7	cop	_	SpaceAfter=No
-9	.	.	PUNCT	PUNC	_	7	punct	_	_
+7	تابلو	تابلو	ADJ	ADJ_AJP	_	8	xcomp	_	_
+8	کنید	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = test-s87
 # text = کاخ‌نشینان با شکل و شمایل تازه بر کوخ‌نشینان تاخت بردند.
@@ -1704,11 +1704,11 @@
 
 # sent_id = test-s89
 # text = وعدهٔ شما روزی خواهد بود که نه ساعتی از آن تأخیر خواهید کرد، و نه ساعتی بر آن پیشی خواهید گرفت.
-1	وعدهٔ	وعده	NOUN	N_IANM	_	3	nsubj	_	_
+1	وعدهٔ	وعده	NOUN	N_IANM	_	5	nsubj	_	_
 2	شما	شما	PRON	PR_SEPER	_	1	nmod	_	_
-3	روزی	روز	NOUN	N_IANM	_	0	root	_	_
+3	روزی	روز	NOUN	N_IANM	_	5	xcomp	_	_
 4	خواهد	خواست#خواه	AUX	AUX	_	5	aux	_	_
-5	بود	بود#باش	VERB	V_ACT	_	3	cop	_	_
+5	بود	بود#باش	VERB	V_ACT	_	0	root	_	_
 6	که	که	SCONJ	SUBR	_	3	acl	_	_
 7	نه	نه	ADV	ADV_SADV	_	8	advmod	_	_
 8	ساعتی	ساعت	NOUN	N_IANM	_	13	obl	_	_
@@ -1726,7 +1726,7 @@
 20	پیشی	پیشی	NOUN	N_IANM	_	22	compound	_	_
 21	خواهید	خواست#خواه	AUX	AUX	_	22	aux	_	_
 22	گرفت	گرفت#گیر	VERB	V_ACT	_	13	conj	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	3	punct	_	_
+23	.	.	PUNCT	PUNC	_	5	punct	_	_
 
 # sent_id = test-s90
 # text = نجیب محفوظ نویسندهٔ معروف مصری تاکنون بیش از سی کتاب تألیف کرده است.
@@ -1797,7 +1797,7 @@
 # text = در آنجا باشید و بر روند کارها تأثیر نهید.
 1	در	در	ADP	PREP	_	2	case	_	_
 2	آنجا	آنجا	NOUN	N_IANM	_	3	obl	_	_
-3	باشید	بود#باش	AUX	AUX	_	4	root	_	_
+3	باشید	بود#باش	AUX	AUX	_	4	vocative	_	_
 4	و	و	CCONJ	CONJ	_	0	root	_	_
 5	بر	بر	ADP	PREP	_	6	case	_	_
 6	روند	روند	NOUN	N_IANM	_	9	obl	_	_
@@ -2101,17 +2101,17 @@
 
 # sent_id = test-s111
 # text = اگر ما در برابر حمله به مرحوم مجلسی ساکت بنشینیم، پرده‌دری می‌شود و دیگران رعایت این حریم را نخواهند کرد.
-1	اگر	اگر	SCONJ	SUBR	_	9	mark	_	_
-2	ما	ما	PRON	PR_SEPER	_	9	nsubj	_	_
+1	اگر	اگر	SCONJ	SUBR	_	10	mark	_	_
+2	ما	ما	PRON	PR_SEPER	_	10	nsubj	_	_
 3	در	در	ADP	PREP	_	4	case	_	_
-4	برابر	برابر	NOUN	N_IANM	_	9	obl	_	_
+4	برابر	برابر	NOUN	N_IANM	_	10	obl	_	_
 5	حمله	حمله	NOUN	N_IANM	_	4	nmod	_	_
 6	به	به	ADP	PREP	_	8	case	_	_
 7	مرحوم	مرحوم	PROPN	IDEN	_	5	nmod	_	_
 8	مجلسی	مجلسی	PROPN	N_ANM	_	7	flat	_	_
-9	ساکت	ساکت	ADJ	ADJ_AJP	_	21	advcl	_	_
-10	بنشینیم	نشست#نشین	VERB	V_ACT	_	9	cop	_	SpaceAfter=No
-11	،	،	PUNCT	PUNC	_	9	punct	_	_
+9	ساکت	ساکت	ADJ	ADJ_AJP	_	10	xcomp	_	_
+10	بنشینیم	نشست#نشین	VERB	V_ACT	_	21	advcl	_	SpaceAfter=No
+11	،	،	PUNCT	PUNC	_	10	punct	_	_
 12	پرده‌دری	پرده‌دری	NOUN	N_IANM	_	13	compound	_	_
 13	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 14	و	و	CCONJ	CONJ	_	21	cc	_	_
@@ -2409,13 +2409,13 @@
 6	را	را	ADP	POSTP	_	2	case	_	_
 7	بهینه‌سازی	بهینه‌سازی	NOUN	N_IANM	_	8	compound	_	_
 8	کردیم	کرد#کن	VERB	V_ACT	_	0	root	_	_
-9	تا	تا	SCONJ	SUBR	_	13	mark	_	_
-10	آنها	آنها	PRON	PR_DEMON	_	13	obj	_	_
+9	تا	تا	SCONJ	SUBR	_	15	mark	_	_
+10	آنها	آنها	PRON	PR_DEMON	_	15	obj	_	_
 11	را	را	ADP	POSTP	_	10	case	_	_
-12	بیشتر	بیش	ADJ	ADJ_AJCM	_	13	advmod	_	_
-13	هوشمند	هوشمند	ADJ	ADJ_AJP	_	8	advcl	_	_
+12	بیشتر	بیش	ADJ	ADJ_AJCM	_	15	advmod	_	_
+13	هوشمند	هوشمند	ADJ	ADJ_AJP	_	15	xcomp	_	_
 14	محیطی	محیطی	ADJ	ADJ_AJP	_	13	obl	_	_
-15	کنیم	کرد#کن	VERB	V_ACT	_	13	cop	_	SpaceAfter=No
+15	کنیم	کرد#کن	VERB	V_ACT	_	8	advcl	_	SpaceAfter=No
 16	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = test-s132
@@ -2613,7 +2613,7 @@
 1	به	به	ADP	PREP	_	2	case	_	_
 2	طور	طور	NOUN	N_IANM	_	4	obl	_	_
 3	دقیق	دقیق	ADJ	ADJ_AJP	_	2	amod	_	_
-4	معلوم	معلوم	ADJ	ADJ_AJP	_	20	root	_	_
+4	معلوم	معلوم	ADJ	ADJ_AJP	_	20	vocative	_	_
 5	نیست	#هست	AUX	AUX	_	4	cop	_	_
 6	که	که	SCONJ	SUBR	_	4	csubj	_	_
 7	انسان‌ها	انسان	NOUN	N_ANM	_	19	nsubj	_	_
@@ -2643,12 +2643,12 @@
 # sent_id = test-s149
 # text = چه والا بوده است، و والا هست این همه عشق و شوری که نسبت به ماندگاری نوروز، این روح ایران، جان همیشه جوان میهن، در دریای مواج دل ایرانیان در همیشهٔ تاریخ موج زده است.
 1	چه	چه	DET	PREM_EXAJ	_	2	advmod	_	_
-2	والا	والا	ADJ	ADJ_AJP	_	0	root	_	_
-3	بوده	بود#باش	VERB	V_ACT	_	2	cop	_	_
+2	والا	والا	ADJ	ADJ_AJP	_	3	xcomp	_	_
+3	بوده	بود#باش	VERB	V_ACT	_	0	root	_	_
 4	است	#است	AUX	AUX	_	3	aux	_	SpaceAfter=No
-5	،	،	PUNCT	PUNC	_	2	punct	_	_
+5	،	،	PUNCT	PUNC	_	3	punct	_	_
 6	و	و	CCONJ	CONJ	_	7	cc	_	_
-7	والا	والا	ADJ	ADJ_AJP	_	2	conj	_	_
+7	والا	والا	ADJ	ADJ_AJP	_	3	conj	_	_
 8	هست	#هست	AUX	AUX	_	7	cop	_	_
 9	این	این	DET	PREM_DEMAJ	_	11	det	_	_
 10	همه	همه	DET	PREM_AMBAJ	_	11	det	_	_
@@ -2713,7 +2713,7 @@
 1	بر	بر	ADP	PREP	_	2	case	_	_
 2	گزند	گزند	NOUN	N_IANM	_	4	obl	_	_
 3	دشمنان	دشمن	NOUN	N_ANM	_	2	nmod	_	_
-4	بردبار	بردبار	ADJ	ADJ_AJP	_	6	root	_	_
+4	بردبار	بردبار	ADJ	ADJ_AJP	_	6	vocative	_	_
 5	باشید	بود#باش	AUX	AUX	_	4	cop	_	_
 6	و	و	CCONJ	CONJ	_	0	root	_	_
 7	از	از	ADP	PREP	_	8	case	_	_
@@ -2758,7 +2758,7 @@
 # sent_id = test-s153
 # text = او فرزند اسلام بود و در آغوش اسلام پرورش یافته بود و در برآمدن و بالیدن نهال اسلام، که به دست پیامبر اکرم (ص) کاشته شده بود، رنج‌های بسیار کشیده و خون‌ها نثار کرده بود.
 1	او	او	PRON	PR_SEPER	_	2	nsubj	_	_
-2	فرزند	فرزند	NOUN	N_ANM	_	5	root	_	_
+2	فرزند	فرزند	NOUN	N_ANM	_	5	vocative	_	_
 3	اسلام	اسلام	NOUN	N_IANM	_	2	nmod	_	_
 4	بود	بود#باش	AUX	AUX	_	2	cop	_	_
 5	و	و	CCONJ	CONJ	_	0	root	_	_
@@ -2852,13 +2852,13 @@
 
 # sent_id = test-s157
 # text = بارش باعث شده است رودخانه‌ها طغیان کرده، کنارهٔ آنها تخریب شود و تپه‌ها رانش کند.
-1	بارش	بارش	NOUN	N_IANM	_	2	nsubj	_	_
-2	باعث	باعث	ADJ	ADJ_AJP	_	0	root	_	_
-3	شده	شد#شو	VERB	V_ACT	_	2	cop	_	_
+1	بارش	بارش	NOUN	N_IANM	_	3	nsubj	_	_
+2	باعث	باعث	ADJ	ADJ_AJP	_	3	xcomp	_	_
+3	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 4	است	#است	AUX	AUX	_	3	aux	_	_
 5	رودخانه‌ها	رودخانه	NOUN	N_IANM	_	7	nsubj	_	_
 6	طغیان	طغیان	NOUN	N_IANM	_	7	compound	_	_
-7	کرده	کرد#کن	VERB	V_ACT	_	2	ccomp	_	SpaceAfter=No
+7	کرده	کرد#کن	VERB	V_ACT	_	3	ccomp	_	SpaceAfter=No
 8	،	،	PUNCT	PUNC	_	7	punct	_	_
 9	کنارهٔ	کناره	NOUN	N_IANM	_	12	nsubj	_	_
 10	آنها	آنها	PRON	PR_DEMON	_	9	nmod	_	_
@@ -2868,7 +2868,7 @@
 14	تپه‌ها	تپه	NOUN	N_IANM	_	16	nsubj	_	_
 15	رانش	رانش	NOUN	N_IANM	_	16	compound	_	_
 16	کند	کرد#کن	VERB	V_ACT	_	7	conj	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	2	punct	_	_
+17	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s158
 # text = مسلمانان صدر اسلام در جریان خلافت سستی ورزیدند.
@@ -2990,11 +2990,11 @@
 
 # sent_id = test-s164
 # text = ملامت و سرزنش باعث می‌شود شخص ملامت‌شونده نسبت به ملامت‌کننده کینه به دل بگیرد.
-1	ملامت	ملامت	NOUN	N_IANM	_	4	nsubj	_	_
+1	ملامت	ملامت	NOUN	N_IANM	_	5	nsubj	_	_
 2	و	و	CCONJ	CONJ	_	3	cc	_	_
 3	سرزنش	سرزنش	NOUN	N_IANM	_	1	conj	_	_
-4	باعث	باعث	ADJ	ADJ_AJP	_	0	root	_	_
-5	می‌شود	شد#شو	VERB	V_ACT	_	4	cop	_	_
+4	باعث	باعث	ADJ	ADJ_AJP	_	5	xcomp	_	_
+5	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 6	شخص	شخص	NOUN	N_ANM	_	14	nsubj	_	_
 7	ملامت‌شونده	ملامت‌شونده	ADJ	ADJ_AJP	_	6	amod	_	_
 8	نسبت	نسبت	ADP	PREP	_	10	case	_	_
@@ -3004,7 +3004,7 @@
 12	به	به	ADP	PREP	_	13	case	_	_
 13	دل	دل	NOUN	N_IANM	_	14	compound	_	_
 14	بگیرد	گرفت#گیر	VERB	V_ACT	_	4	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	4	punct	_	_
+15	.	.	PUNCT	PUNC	_	5	punct	_	_
 
 # sent_id = test-s165
 # text = قزوین از قرن سوم هجری به بعد از مراکز مهم علمی به حساب آمد.
@@ -3050,9 +3050,9 @@
 3	خیال	خیال	NOUN	N_IANM	_	4	compound	_	_
 4	کرده	کرد#کن	VERB	V_ACT	_	0	root	_	_
 5	بود	بود#باش	AUX	AUX	_	4	aux	_	_
-6	که	که	SCONJ	SUBR	_	7	mark	_	_
-7	دیوانه	دیوانه	ADJ	ADJ_AJP	_	4	ccomp	_	_
-8	شده‌ام	شد#شو	VERB	V_ACT	_	7	cop	_	SpaceAfter=No
+6	که	که	SCONJ	SUBR	_	8	mark	_	_
+7	دیوانه	دیوانه	ADJ	ADJ_AJP	_	8	xcomp	_	_
+8	شده‌ام	شد#شو	VERB	V_ACT	_	4	ccomp	_	SpaceAfter=No
 9	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = test-s168
@@ -3132,18 +3132,18 @@
 3	موعظه	موعظه	NOUN	N_IANM	_	4	compound	_	_
 4	می‌کنم	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
-6	تا	تا	SCONJ	SUBR	_	10	mark	_	_
-7	دریچهٔ	دریچه	NOUN	N_IANM	_	10	nsubj	_	_
+6	تا	تا	SCONJ	SUBR	_	11	mark	_	_
+7	دریچهٔ	دریچه	NOUN	N_IANM	_	11	nsubj	_	_
 8-9	قلبت	_	_	_	_	_	_	_	_
 8	قلب	قلب	NOUN	N_IANM	_	7	nmod	_	_
 9	ت	تو	PRON	PR_JOPER	_	8	nmod	_	_
-10	باز	باز	ADJ	ADJ_AJP	_	4	advcl	_	_
-11	شود	شد#شو	VERB	V_ACT	_	10	cop	_	SpaceAfter=No
+10	باز	باز	ADJ	ADJ_AJP	_	11	xcomp	_	_
+11	شود	شد#شو	VERB	V_ACT	_	4	advcl	_	SpaceAfter=No
 12	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = test-s172
 # text = ممکن است حاجتش را دیر بدهد، ولی بهتر از آن را به او مرحمت می‌کند.
-1	ممکن	ممکن	ADJ	ADJ_AJP	_	9	root	_	_
+1	ممکن	ممکن	ADJ	ADJ_AJP	_	9	vocative	_	_
 2	است	#است	AUX	AUX	_	1	cop	_	_
 3-4	حاجتش	_	_	_	_	_	_	_	_
 3	حاجت	حاجت	NOUN	N_IANM	_	7	obj	_	_
@@ -3173,9 +3173,9 @@
 6	عیال	عیال	NOUN	N_ANM	_	8	obl	_	_
 7	ما	ما	PRON	PR_SEPER	_	6	nmod	_	_
 8	نساخت	ساخت#ساز	VERB	V_ACT	_	0	root	_	_
-9	و	و	CCONJ	CONJ	_	10	cc	_	_
-10	مریض	مریض	ADJ	ADJ_AJP	_	8	conj	_	_
-11	شد	شد#شو	VERB	V_ACT	_	10	cop	_	_
+9	و	و	CCONJ	CONJ	_	11	cc	_	_
+10	مریض	مریض	ADJ	ADJ_AJP	_	11	xcomp	_	_
+11	شد	شد#شو	VERB	V_ACT	_	8	conj	_	_
 12	و	و	CCONJ	CONJ	_	19	cc	_	_
 13	روز	روز	NOUN	N_IANM	_	19	obl	_	_
 14	به	به	ADP	PREP	_	15	case	_	_
@@ -3328,9 +3328,9 @@
 7	کرده	کرد#کن	VERB	V_ACT	_	2	acl	_	_
 8	بود	بود#باش	AUX	AUX	_	7	aux	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	7	punct	_	_
-10	پشیمان	پشیمان	ADJ	ADJ_AJP	_	0	root	_	_
-11	شد	شد#شو	VERB	V_ACT	_	10	cop	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	_	10	punct	_	_
+10	پشیمان	پشیمان	ADJ	ADJ_AJP	_	11	xcomp	_	_
+11	شد	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s181
 # text = رازی در ابتدای کتاب طب روحانی عقل را می‌ستاید و همهٔ سودها و بهره‌هایی که در این دنیا و عالم دیگر از آن می‌توان برخوردار شد را به عقل نسبت می‌دهد.
@@ -3348,18 +3348,18 @@
 12	سودها	سود	NOUN	N_IANM	_	11	nmod	_	_
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	بهره‌هایی	بهره	NOUN	N_IANM	_	12	conj	_	_
-15	که	که	SCONJ	SUBR	_	25	mark	_	_
+15	که	که	SCONJ	SUBR	_	26	mark	_	_
 16	در	در	ADP	PREP	_	18	case	_	_
 17	این	این	DET	PREM_DEMAJ	_	18	det	_	_
-18	دنیا	دنیا	NOUN	N_IANM	_	25	obl	_	_
+18	دنیا	دنیا	NOUN	N_IANM	_	26	obl	_	_
 19	و	و	CCONJ	CONJ	_	20	cc	_	_
 20	عالم	عالم	NOUN	N_IANM	_	18	conj	_	_
 21	دیگر	دیگر	ADJ	ADJ_AJP	_	20	amod	_	_
 22	از	از	ADP	PREP	_	23	case	_	_
 23	آن	آن	DET	PREM_DEMAJ	_	25	obl	_	_
 24	می‌توان	#توان	AUX	V_MODL	_	26	aux	_	_
-25	برخوردار	برخوردار	ADJ	ADJ_AJP	_	12	acl	_	_
-26	شد	شد#شو	VERB	V_ACT	_	25	cop	_	_
+25	برخوردار	برخوردار	ADJ	ADJ_AJP	_	26	xcomp	_	_
+26	شد	شد#شو	VERB	V_ACT	_	12	acl	_	_
 27	را	را	ADP	POSTP	_	11	case	_	_
 28	به	به	ADP	PREP	_	29	case	_	_
 29	عقل	عقل	NOUN	N_IANM	_	31	obl	_	_
@@ -3536,7 +3536,7 @@
 # text = خدیوهای مصری مردانی اسراف‌کار بودند و سرمایهٔ کشور را در راه کامرانی و کارهای بیهوده بر باد می‌دادند.
 1	خدیوهای	خدیو	NOUN	N_ANM	_	3	nsubj	_	_
 2	مصری	مصری	ADJ	ADJ_AJP	_	1	amod	_	_
-3	مردانی	مرد	NOUN	N_ANM	_	6	root	_	_
+3	مردانی	مرد	NOUN	N_ANM	_	6	vocative	_	_
 4	اسراف‌کار	اسراف‌کار	ADJ	ADJ_AJP	_	3	amod	_	_
 5	بودند	بود#باش	AUX	AUX	_	3	cop	_	_
 6	و	و	CCONJ	CONJ	_	0	root	_	_
@@ -3585,17 +3585,17 @@
 
 # sent_id = test-s194
 # text = جشنوارهٔ شعر فجر نباید مسیرش را گم کند.
-1	جشنوارهٔ	جشنواره	NOUN	N_IANM	_	8	nsubj	_	_
+1	جشنوارهٔ	جشنواره	NOUN	N_IANM	_	9	nsubj	_	_
 2	شعر	شعر	NOUN	N_IANM	_	1	nmod	_	_
 3	فجر	فجر	NOUN	N_IANM	_	2	nmod	_	_
 4	نباید	بایست#باید	AUX	V_MODL	_	9	aux	_	_
 5-6	مسیرش	_	_	_	_	_	_	_	_
-5	مسیر	مسیر	NOUN	N_IANM	_	8	obj	_	_
+5	مسیر	مسیر	NOUN	N_IANM	_	9	obj	_	_
 6	ش	او	PRON	PR_JOPER	_	5	nmod	_	_
 7	را	را	ADP	POSTP	_	5	case	_	_
-8	گم	گم	ADJ	ADJ_AJP	_	0	root	_	_
-9	کند	کرد#کن	VERB	V_ACT	_	8	cop	_	SpaceAfter=No
-10	.	.	PUNCT	PUNC	_	8	punct	_	_
+8	گم	گم	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	کند	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	PUNC	_	9	punct	_	_
 
 # sent_id = test-s195
 # text = من در زمان سرپرستی تئاتر شهر هر شب نمایش‌ها را با اشتیاق به تماشا می‌نشستم.
@@ -4087,16 +4087,16 @@
 5	به	به	ADP	PREP	_	6	case	_	_
 6	درازا	درازا	NOUN	N_IANM	_	7	obl	_	_
 7	کشید	کشید#کش	VERB	V_ACT	_	0	root	_	_
-8	و	و	CCONJ	CONJ	_	11	cc	_	_
+8	و	و	CCONJ	CONJ	_	12	cc	_	_
 9	نه	نه	ADV	ADV_SADV	_	10	advmod	_	_
 10	چندان	چندان	DET	PREM_AMBAJ	_	11	advmod	_	_
-11	کوتاه	کوتاه	ADJ	ADJ_AJP	_	7	conj	_	_
-12	شد	شد#شو	VERB	V_ACT	_	11	cop	_	_
+11	کوتاه	کوتاه	ADJ	ADJ_AJP	_	12	xcomp	_	_
+12	شد	شد#شو	VERB	V_ACT	_	7	conj	_	_
 13	که	که	SCONJ	SUBR	_	15	mark	_	_
 14	گمان	گمان	NOUN	N_IANM	_	15	compound	_	_
 15	رفته	رفت#رو	VERB	V_ACT	_	11	ccomp	_	_
 16	بود	بود#باش	AUX	AUX	_	15	aux	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	11	punct	_	_
+17	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s221
 # text = بعضی از مردم چه عابر باشند، چه نشسته و چه سواره، همیشه منتظرند تا دیگران به آنها سلام بدهند.
@@ -4136,10 +4136,10 @@
 7	ندیده	دید#بین	VERB	V_ACT	_	5	ccomp	_	_
 8	بودیم	بود#باش	AUX	AUX	_	7	aux	_	_
 9	کلی	کلی	ADV	ADV_SADV	_	10	advmod	_	_
-10	بزرگ‌تر	بزرگ	ADJ	ADJ_AJCM	_	1	acl	_	_
+10	بزرگ‌تر	بزرگ	ADJ	ADJ_AJCM	_	13	xcomp	_	_
 11	و	و	CCONJ	CONJ	_	12	cc	_	_
 12	خوشگل‌تر	خوشگل	ADJ	ADJ_AJCM	_	10	conj	_	_
-13	شده	شد#شو	VERB	V_ACT	_	10	cop	_	_
+13	شده	شد#شو	VERB	V_ACT	_	1	acl	_	_
 14	بود	بود#باش	AUX	AUX	_	13	aux	_	SpaceAfter=No
 15	.	.	PUNCT	PUNC	_	5	punct	_	_
 
@@ -4176,13 +4176,13 @@
 11	افراد	فرد	NOUN	N_ANM	_	10	nmod	_	_
 12	سر	سر	NOUN	N_IANM	_	13	compound	_	_
 13	برود	رفت#رو	VERB	V_ACT	_	9	acl	_	_
-14	و	و	CCONJ	CONJ	_	17	cc	_	_
+14	و	و	CCONJ	CONJ	_	20	cc	_	_
 15	همه	همه	DET	PREM_AMBAJ	_	16	det	_	_
-16	چیز	چیز	NOUN	N_IANM	_	17	nsubj	_	_
-17	نیست	نیست	NOUN	N_IANM	_	13	conj	_	_
+16	چیز	چیز	NOUN	N_IANM	_	20	nsubj	_	_
+17	نیست	نیست	NOUN	N_IANM	_	20	xcomp	_	_
 18	و	و	CCONJ	CONJ	_	19	cc	_	_
 19	نابود	نابود	NOUN	N_IANM	_	17	conj	_	_
-20	شود	شد#شو	VERB	V_ACT	_	17	cop	_	SpaceAfter=No
+20	شود	شد#شو	VERB	V_ACT	_	13	conj	_	SpaceAfter=No
 21	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = test-s225
@@ -4263,22 +4263,22 @@
 
 # sent_id = test-s229
 # text = شاید اگر آن توپ‌ها را گل کرده بودید، با اختلاف گل بهتری پیروز می‌شدید.
-1	شاید	شاید	ADV	ADV_SADV	_	14	advmod	_	_
+1	شاید	شاید	ADV	ADV_SADV	_	15	advmod	_	_
 2	اگر	اگر	SCONJ	SUBR	_	7	mark	_	_
 3	آن	آن	DET	PREM_DEMAJ	_	4	det	_	_
 4	توپ‌ها	توپ	NOUN	N_IANM	_	7	obj	_	_
 5	را	را	ADP	POSTP	_	4	case	_	_
 6	گل	گل	NOUN	N_IANM	_	7	compound	_	_
-7	کرده	کرد#کن	VERB	V_ACT	_	14	advcl	_	_
+7	کرده	کرد#کن	VERB	V_ACT	_	15	advcl	_	_
 8	بودید	بود#باش	AUX	AUX	_	7	aux	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	7	punct	_	_
 10	با	با	ADP	PREP	_	11	case	_	_
-11	اختلاف	اختلاف	NOUN	N_IANM	_	14	obl	_	_
+11	اختلاف	اختلاف	NOUN	N_IANM	_	15	obl	_	_
 12	گل	گل	NOUN	N_IANM	_	11	nmod	_	_
 13	بهتری	به	ADJ	ADJ_AJCM	_	12	amod	_	_
-14	پیروز	پیروز	ADJ	ADJ_AJP	_	0	root	_	_
-15	می‌شدید	شد#شو	VERB	V_ACT	_	14	cop	_	SpaceAfter=No
-16	.	.	PUNCT	PUNC	_	14	punct	_	_
+14	پیروز	پیروز	ADJ	ADJ_AJP	_	15	xcomp	_	_
+15	می‌شدید	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+16	.	.	PUNCT	PUNC	_	15	punct	_	_
 
 # sent_id = test-s230
 # text = اگر در خواب ببینید که خودتان سوت می‌زنید و این کار را با دهان و لب خود انجام می‌دهید دروغ خواهید گفت یا سخنی زشت بر زبان خواهید آورد.
@@ -4467,13 +4467,13 @@
 10	سنجاق	سنجاق	NOUN	N_IANM	_	11	compound	_	_
 11	کنیم	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 12	،	،	PUNCT	PUNC	_	11	punct	_	_
-13	تا	تا	SCONJ	SUBR	_	17	mark	_	_
+13	تا	تا	SCONJ	SUBR	_	18	mark	_	_
 14-15	فیلم‌هایشان	_	_	_	_	_	_	_	_
-14	فیلم‌ها	فیلم	NOUN	N_IANM	_	17	obj	_	_
+14	فیلم‌ها	فیلم	NOUN	N_IANM	_	18	obj	_	_
 15	یشان	آنها	PRON	PR_JOPER	_	14	nmod	_	_
 16	را	را	ADP	POSTP	_	14	case	_	_
-17	متوجه	متوجه	ADJ	ADJ_AJP	_	11	advcl	_	_
-18	شویم	شد#شو	VERB	V_ACT	_	17	cop	_	SpaceAfter=No
+17	متوجه	متوجه	ADJ	ADJ_AJP	_	18	xcomp	_	_
+18	شویم	شد#شو	VERB	V_ACT	_	11	advcl	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s239
@@ -4588,11 +4588,11 @@
 # text = مشکلی را که با آن روبرو شده‌اید بی‌دلیل به یک فاجعه تبدیل می‌سازید؟
 1	مشکلی	مشکل	NOUN	N_IANM	_	13	obj	_	_
 2	را	را	ADP	POSTP	_	1	case	_	_
-3	که	که	SCONJ	SUBR	_	6	mark	_	_
+3	که	که	SCONJ	SUBR	_	7	mark	_	_
 4	با	با	ADP	PREP	_	5	case	_	_
 5	آن	آن	PRON	PR_DEMON	_	6	obl	_	_
-6	روبرو	روبرو	ADJ	ADJ_AJP	_	1	acl	_	_
-7	شده‌اید	شد#شو	VERB	V_ACT	_	6	cop	_	_
+6	روبرو	روبرو	ADJ	ADJ_AJP	_	7	xcomp	_	_
+7	شده‌اید	شد#شو	VERB	V_ACT	_	1	acl	_	_
 8	بی‌دلیل	بی‌دلیل	ADJ	ADJ_AJP	_	13	advmod	_	_
 9	به	به	ADP	PREP	_	11	case	_	_
 10	یک	یک	NUM	PRENUM	_	11	nummod	_	_
@@ -4791,24 +4791,24 @@
 12	جاریه	جاریه	ADJ	ADJ_AJP	_	11	amod	_	_
 13	تخلف	تخلف	NOUN	N_IANM	_	14	compound	_	_
 14	می‌ورزد	ورزید#ورز	VERB	V_ACT	_	6	acl	_	_
-15	و	و	CCONJ	CONJ	_	24	cc	_	_
+15	و	و	CCONJ	CONJ	_	25	cc	_	_
 16-17	بدین	_	_	_	_	_	_	_	_
 16	بد	به	ADP	PREP	_	18	case	_	_
 17	ین	این	DET	PREM_DEMAJ	_	18	det	_	_
-18	طریق	طریق	NOUN	N_IANM	_	24	obl	_	SpaceAfter=No
+18	طریق	طریق	NOUN	N_IANM	_	25	obl	_	SpaceAfter=No
 19	،	،	PUNCT	PUNC	_	18	punct	_	_
-20	رشتهٔ	رشته	NOUN	N_IANM	_	24	obj	_	_
+20	رشتهٔ	رشته	NOUN	N_IANM	_	25	obj	_	_
 21	زندگی	زندگی	NOUN	N_IANM	_	20	nmod	_	_
 22	جامعه	جامعه	NOUN	N_IANM	_	21	nmod	_	_
 23	را	را	ADP	POSTP	_	20	case	_	_
-24	پاره	پاره	ADJ	ADJ_AJP	_	14	conj	_	_
-25	می‌کند	کرد#کن	VERB	V_ACT	_	24	cop	_	_
-26	و	و	CCONJ	CONJ	_	30	cc	_	_
-27	نظام	نظام	NOUN	N_IANM	_	30	obj	_	_
+24	پاره	پاره	ADJ	ADJ_AJP	_	25	xcomp	_	_
+25	می‌کند	کرد#کن	VERB	V_ACT	_	14	conj	_	_
+26	و	و	CCONJ	CONJ	_	31	cc	_	_
+27	نظام	نظام	NOUN	N_IANM	_	31	obj	_	_
 28	جاریه	جاریه	ADJ	ADJ_AJP	_	27	amod	_	_
 29	را	را	ADP	POSTP	_	27	case	_	_
-30	مختل	مختل	ADJ	ADJ_AJP	_	14	conj	_	_
-31	می‌سازد	ساخت#ساز	VERB	V_ACT	_	30	cop	_	SpaceAfter=No
+30	مختل	مختل	ADJ	ADJ_AJP	_	31	xcomp	_	_
+31	می‌سازد	ساخت#ساز	VERB	V_ACT	_	14	conj	_	SpaceAfter=No
 32	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = test-s261
@@ -5253,11 +5253,11 @@
 # sent_id = test-s287
 # text = آن روز رستاخیز هر کس آنچه را که از نیک و بد، انجام داده، نزد خود حاضر خواهد یافت و آرزو خواهد کرد که بین او و اعمال بدش فرسخ‌ها فاصله باشد.
 1	آن	آن	DET	PREM_DEMAJ	_	2	det	_	_
-2	روز	روز	NOUN	N_IANM	_	19	obl	_	_
+2	روز	روز	NOUN	N_IANM	_	21	obl	_	_
 3	رستاخیز	رستاخیز	NOUN	N_IANM	_	2	nmod	_	_
 4	هر	هر	DET	PREM_AMBAJ	_	5	det	_	_
-5	کس	کس	NOUN	N_ANM	_	19	nsubj	_	_
-6	آنچه	آنچه	NOUN	N_IANM	_	19	obj	_	_
+5	کس	کس	NOUN	N_ANM	_	21	nsubj	_	_
+6	آنچه	آنچه	NOUN	N_IANM	_	21	obj	_	_
 7	را	را	ADP	POSTP	_	6	case	_	_
 8	که	که	SCONJ	SUBR	_	15	mark	_	_
 9	از	از	ADP	PREP	_	10	case	_	_
@@ -5269,14 +5269,14 @@
 15	داده	داد#ده	VERB	V_ACT	_	6	acl	_	SpaceAfter=No
 16	،	،	PUNCT	PUNC	_	15	punct	_	_
 17	نزد	نزد	ADP	PREP	_	18	case	_	_
-18	خود	خود	PRON	PR_CREFX	_	19	obl	_	_
-19	حاضر	حاضر	ADJ	ADJ_AJP	_	0	root	_	_
+18	خود	خود	PRON	PR_CREFX	_	21	obl	_	_
+19	حاضر	حاضر	ADJ	ADJ_AJP	_	21	xcomp	_	_
 20	خواهد	خواست#خواه	AUX	AUX	_	21	aux	_	_
-21	یافت	یافت#یاب	VERB	V_ACT	_	19	cop	_	_
+21	یافت	یافت#یاب	VERB	V_ACT	_	0	root	_	_
 22	و	و	CCONJ	CONJ	_	25	cc	_	_
 23	آرزو	آرزو	NOUN	N_IANM	_	25	compound	_	_
 24	خواهد	خواست#خواه	AUX	AUX	_	25	aux	_	_
-25	کرد	کرد#کن	VERB	V_ACT	_	19	conj	_	_
+25	کرد	کرد#کن	VERB	V_ACT	_	21	conj	_	_
 26	که	که	SCONJ	SUBR	_	33	mark	_	_
 27	بین	بین	ADP	PREP	_	28	case	_	_
 28	او	او	PRON	PR_SEPER	_	34	nmod	_	_
@@ -5491,15 +5491,15 @@
 # sent_id = test-s298
 # text = وقتی آرام و بی‌صدا در قلبم رخنه کرده بودی باز هم ندیدمت.
 1	وقتی	وقت	NOUN	N_IANM	_	13	obl	_	_
-2	آرام	آرام	ADJ	ADJ_AJP	_	1	acl	_	_
+2	آرام	آرام	ADJ	ADJ_AJP	_	9	xcomp	_	_
 3	و	و	CCONJ	CONJ	_	4	cc	_	_
 4	بی‌صدا	بی‌صدا	ADJ	ADJ_AJP	_	2	conj	_	_
 5	در	در	ADP	PREP	_	6	case	_	_
 6-7	قلبم	_	_	_	_	_	_	_	_
-6	قلب	قلب	NOUN	N_IANM	_	2	obl	_	_
+6	قلب	قلب	NOUN	N_IANM	_	9	obl	_	_
 7	م	من	PRON	PR_JOPER	_	6	nmod	_	_
-8	رخنه	رخنه	NOUN	N_IANM	_	2	compound	_	_
-9	کرده	کرد#کن	VERB	V_ACT	_	2	cop	_	_
+8	رخنه	رخنه	NOUN	N_IANM	_	9	compound	_	_
+9	کرده	کرد#کن	VERB	V_ACT	_	1	acl	_	_
 10	بودی	بود#باش	AUX	AUX	_	9	aux	_	_
 11	باز	باز	ADJ	ADJ_AJP	_	13	advmod	_	_
 12	هم	هم	ADV	ADV_SADV	_	11	dep	_	_
@@ -5708,7 +5708,7 @@
 # text = به همان میزان که تشیع در قرن نهم رواج می‌گرفت سلسله‌های صوفیان شیعی‌مذهب نیز بیشتر می‌شدند.
 1	به	به	ADP	PREP	_	3	case	_	_
 2	همان	همان	DET	PREM_DEMAJ	_	3	det	_	_
-3	میزان	میزان	NOUN	N_IANM	_	15	obl	_	_
+3	میزان	میزان	NOUN	N_IANM	_	16	obl	_	_
 4	که	که	SCONJ	SUBR	_	10	mark	_	_
 5	تشیع	تشیع	NOUN	N_IANM	_	10	nsubj	_	_
 6	در	در	ADP	PREP	_	7	case	_	_
@@ -5716,18 +5716,18 @@
 8	نهم	نهم	ADJ	POSNUM	_	7	amod	_	_
 9	رواج	رواج	NOUN	N_IANM	_	10	compound	_	_
 10	می‌گرفت	گرفت#گیر	VERB	V_ACT	_	3	acl	_	_
-11	سلسله‌های	سلسله	NOUN	N_IANM	_	15	nsubj	_	_
+11	سلسله‌های	سلسله	NOUN	N_IANM	_	16	nsubj	_	_
 12	صوفیان	صوفی	NOUN	N_IANM	_	11	nmod	_	_
 13	شیعی‌مذهب	شیعی‌مذهب	ADJ	ADJ_AJP	_	12	amod	_	_
 14	نیز	نیز	ADV	ADV_SADV	_	11	dep	_	_
-15	بیشتر	بیش	ADJ	ADJ_AJCM	_	0	root	_	_
-16	می‌شدند	شد#شو	VERB	V_ACT	_	15	cop	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	15	punct	_	_
+15	بیشتر	بیش	ADJ	ADJ_AJCM	_	16	xcomp	_	_
+16	می‌شدند	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s310
 # text = من بیمار بودم و تمام پزشکان مرا جواب کرده بودند.
 1	من	من	PRON	PR_SEPER	_	2	nsubj	_	_
-2	بیمار	بیمار	ADJ	ADJ_AJP	_	4	root	_	_
+2	بیمار	بیمار	ADJ	ADJ_AJP	_	4	vocative	_	_
 3	بودم	بود#باش	AUX	AUX	_	2	cop	_	_
 4	و	و	CCONJ	CONJ	_	0	root	_	_
 5	تمام	تمام	NOUN	N_IANM	_	10	nsubj	_	_
@@ -5765,9 +5765,9 @@
 20	انجام	انجام	NOUN	N_IANM	_	21	compound	_	_
 21	دهید	داد#ده	VERB	V_ACT	_	1	conj	_	_
 22	باشد	باشد	INTJ	PSUS	_	21	ccomp	_	_
-23	که	که	SCONJ	SUBR	_	24	mark	_	_
-24	رستگار	رستگار	ADJ	ADJ_AJP	_	22	ccomp	_	_
-25	شوید	شد#شو	VERB	V_ACT	_	24	cop	_	SpaceAfter=No
+23	که	که	SCONJ	SUBR	_	25	mark	_	_
+24	رستگار	رستگار	ADJ	ADJ_AJP	_	25	xcomp	_	_
+25	شوید	شد#شو	VERB	V_ACT	_	22	ccomp	_	SpaceAfter=No
 26	.	.	PUNCT	PUNC	_	21	punct	_	_
 
 # sent_id = test-s312
@@ -5803,7 +5803,7 @@
 # sent_id = test-s313
 # text = او یکی از محدثان درباری بود و در خدمت معاویه دین‌فروشی می‌کرد.
 1	او	او	PRON	PR_SEPER	_	2	nsubj	_	_
-2	یکی	یکی	NOUN	N_IANM	_	7	root	_	_
+2	یکی	یکی	NOUN	N_IANM	_	7	vocative	_	_
 3	از	از	ADP	PREP	_	4	case	_	_
 4	محدثان	محدث	NOUN	N_ANM	_	2	nmod	_	_
 5	درباری	درباری	ADJ	ADJ_AJP	_	4	amod	_	_
@@ -5828,7 +5828,7 @@
 8	منفی	منفی	ADJ	ADJ_AJP	_	7	amod	_	_
 9	دارد	داشت#دار	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 10	،	،	PUNCT	PUNC	_	9	punct	_	_
-11	بنابراین	بنابراین	ADV	ADV_SADV	_	27	advmod	_	_
+11	بنابراین	بنابراین	ADV	ADV_SADV	_	30	advmod	_	_
 12	اگر	اگر	SCONJ	SUBR	_	19	mark	_	_
 13-14	مویتان	_	_	_	_	_	_	_	_
 13	موی	موی	NOUN	N_IANM	_	19	obj	_	_
@@ -5837,19 +5837,19 @@
 16	خیلی	خیلی	ADV	ADV_SADV	_	17	advmod	_	_
 17	روشن	روشن	ADJ	ADJ_AJP	_	19	advmod	_	_
 18	رنگ	رنگ	NOUN	N_IANM	_	19	compound	_	_
-19	کرده‌اید	کرد#کن	VERB	V_ACT	_	27	advcl	_	SpaceAfter=No
+19	کرده‌اید	کرد#کن	VERB	V_ACT	_	30	advcl	_	SpaceAfter=No
 20	،	،	PUNCT	PUNC	_	19	punct	_	_
-21	کلر	کلر	NOUN	N_IANM	_	27	nsubj	_	_
+21	کلر	کلر	NOUN	N_IANM	_	30	nsubj	_	_
 22	استخر	استخر	NOUN	N_IANM	_	21	nmod	_	_
-23	رنگ	رنگ	NOUN	N_IANM	_	27	obj	_	_
+23	رنگ	رنگ	NOUN	N_IANM	_	30	obj	_	_
 24-25	مویتان	_	_	_	_	_	_	_	_
 24	موی	موی	NOUN	N_IANM	_	23	nmod	_	_
 25	تان	شما	PRON	PR_JOPER	_	24	nmod	_	_
 26	را	را	ADP	POSTP	_	23	case	_	_
-27	زشت	زشت	ADJ	ADJ_AJP	_	9	advcl	_	_
+27	زشت	زشت	ADJ	ADJ_AJP	_	30	xcomp	_	_
 28	و	و	CCONJ	CONJ	_	29	cc	_	_
 29	بدرنگ	بدرنگ	ADJ	ADJ_AJP	_	27	conj	_	_
-30	می‌کند	کرد#کن	VERB	V_ACT	_	27	cop	_	SpaceAfter=No
+30	می‌کند	کرد#کن	VERB	V_ACT	_	9	advcl	_	SpaceAfter=No
 31	.	.	PUNCT	PUNC	_	9	punct	_	_
 
 # sent_id = test-s315
@@ -5976,7 +5976,7 @@
 4	شرکت	شرکت	NOUN	N_IANM	_	2	nmod	_	_
 5	هنگام	هنگام	NOUN	N_IANM	_	7	obl	_	_
 6	تأسیس	تأسیس	NOUN	N_IANM	_	5	nmod	_	_
-7	متعلق	متعلق	ADJ	ADJ_AJP	_	12	root	_	_
+7	متعلق	متعلق	ADJ	ADJ_AJP	_	12	vocative	_	_
 8	به	به	ADP	PREP	_	9	case	_	_
 9	دولت	دولت	PROPN	N_IANM	_	7	obl	_	_
 10	کویت	کویت	PROPN	N_IANM	_	9	flat	_	_
@@ -6181,15 +6181,15 @@
 
 # sent_id = test-s331
 # text = خشکسالی باعث افزایش نابرابری‌ها شده است، به گونه‌ای که ثروتمندان نیازمندی‌هایشان را به آب به بهای بی‌آبی برای فقرا تکافو کرده‌اند.
-1	خشکسالی	خشکسالی	NOUN	N_IANM	_	2	nsubj	_	_
-2	باعث	باعث	ADJ	ADJ_AJP	_	0	root	_	_
+1	خشکسالی	خشکسالی	NOUN	N_IANM	_	5	nsubj	_	_
+2	باعث	باعث	ADJ	ADJ_AJP	_	5	xcomp	_	_
 3	افزایش	افزایش	NOUN	N_IANM	_	2	obl	_	_
 4	نابرابری‌ها	نابرابری	NOUN	N_IANM	_	3	nmod	_	_
-5	شده	شد#شو	VERB	V_ACT	_	2	cop	_	_
+5	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 6	است	#است	AUX	AUX	_	5	aux	_	SpaceAfter=No
-7	،	،	PUNCT	PUNC	_	2	punct	_	_
+7	،	،	PUNCT	PUNC	_	5	punct	_	_
 8	به	به	ADP	PREP	_	9	case	_	_
-9	گونه‌ای	گونه	NOUN	N_IANM	_	2	obl	_	_
+9	گونه‌ای	گونه	NOUN	N_IANM	_	5	obl	_	_
 10	که	که	SCONJ	SUBR	_	23	mark	_	_
 11	ثروتمندان	ثروتمند	NOUN	N_ANM	_	23	nsubj	_	_
 12-13	نیازمندی‌هایشان	_	_	_	_	_	_	_	_
@@ -6205,36 +6205,36 @@
 21	فقرا	فقیر	NOUN	N_ANM	_	19	nmod	_	_
 22	تکافو	تکافو	NOUN	N_IANM	_	23	compound	_	_
 23	کرده‌اند	کرد#کن	VERB	V_ACT	_	9	acl	_	SpaceAfter=No
-24	.	.	PUNCT	PUNC	_	2	punct	_	_
+24	.	.	PUNCT	PUNC	_	5	punct	_	_
 
 # sent_id = test-s332
 # text = گاهی ریا نیز باعث می‌شود انسان بر دیگران تکبر بکند.
-1	گاهی	گاه	NOUN	N_IANM	_	4	obl	_	_
-2	ریا	ریا	NOUN	N_IANM	_	4	nsubj	_	_
+1	گاهی	گاه	NOUN	N_IANM	_	5	obl	_	_
+2	ریا	ریا	NOUN	N_IANM	_	5	nsubj	_	_
 3	نیز	نیز	ADV	ADV_SADV	_	2	dep	_	_
-4	باعث	باعث	ADJ	ADJ_AJP	_	0	root	_	_
-5	می‌شود	شد#شو	VERB	V_ACT	_	4	cop	_	_
+4	باعث	باعث	ADJ	ADJ_AJP	_	5	xcomp	_	_
+5	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 6	انسان	انسان	NOUN	N_ANM	_	10	nsubj	_	_
 7	بر	بر	ADP	PREP	_	8	case	_	_
 8	دیگران	دیگری	NOUN	N_ANM	_	10	obl	_	_
 9	تکبر	تکبر	NOUN	N_IANM	_	10	compound	_	_
 10	بکند	کرد#کن	VERB	V_ACT	_	4	ccomp	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	_	4	punct	_	_
+11	.	.	PUNCT	PUNC	_	5	punct	_	_
 
 # sent_id = test-s333
 # text = دیوان شعرم را، چنین زیباترین تقویم خواهم کرد.
-1	دیوان	دیوان	NOUN	N_IANM	_	8	obj	_	_
+1	دیوان	دیوان	NOUN	N_IANM	_	10	obj	_	_
 2-3	شعرم	_	_	_	_	_	_	_	_
 2	شعر	شعر	NOUN	N_IANM	_	1	nmod	_	_
 3	م	من	PRON	PR_JOPER	_	2	nmod	_	_
 4	را	را	ADP	POSTP	_	1	case	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
-6	چنین	چنین	NOUN	N_IANM	_	8	obl	_	_
+6	چنین	چنین	NOUN	N_IANM	_	10	obl	_	_
 7	زیباترین	زیبا	ADJ	ADJ_AJSUP	_	8	amod	_	_
-8	تقویم	تقویم	NOUN	N_IANM	_	0	root	_	_
+8	تقویم	تقویم	NOUN	N_IANM	_	10	xcomp	_	_
 9	خواهم	خواست#خواه	AUX	AUX	_	10	aux	_	_
-10	کرد	کرد#کن	VERB	V_ACT	_	8	cop	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	_	8	punct	_	_
+10	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s334
 # text = همهٔ بخش‌ها را در 1 فولدر قرار داده و فایل‌ها را تفکیک بکنید.
@@ -6485,9 +6485,9 @@
 # sent_id = test-s348
 # text = بیماری که متوجه می‌شود با اضطراب و استرس گوش او خارش می‌کند، پس این خارش ناشی از مسائل روحی و روانی است.
 1	بیماری	بیماری	NOUN	N_ANM	_	10	appos	_	_
-2	که	که	SCONJ	SUBR	_	3	mark	_	_
-3	متوجه	متوجه	ADJ	ADJ_AJP	_	1	acl	_	_
-4	می‌شود	شد#شو	VERB	V_ACT	_	3	cop	_	_
+2	که	که	SCONJ	SUBR	_	4	mark	_	_
+3	متوجه	متوجه	ADJ	ADJ_AJP	_	4	xcomp	_	_
+4	می‌شود	شد#شو	VERB	V_ACT	_	1	acl	_	_
 5	با	با	ADP	PREP	_	6	case	_	_
 6	اضطراب	اضطراب	NOUN	N_IANM	_	12	obl	_	_
 7	و	و	CCONJ	CONJ	_	8	cc	_	_
@@ -6764,12 +6764,12 @@
 # text = گمان می‌رود که امشب دوباره توفان خواهد شد.
 1	گمان	گمان	NOUN	N_IANM	_	2	compound	_	_
 2	می‌رود	رفت#رو	VERB	V_ACT	_	0	root	_	_
-3	که	که	SCONJ	SUBR	_	6	mark	_	_
-4	امشب	امشب	NOUN	N_IANM	_	6	obl	_	_
-5	دوباره	دوباره	ADJ	ADJ_AJP	_	6	advmod	_	_
-6	توفان	توفان	NOUN	N_IANM	_	1	acl	_	_
+3	که	که	SCONJ	SUBR	_	8	mark	_	_
+4	امشب	امشب	NOUN	N_IANM	_	8	obl	_	_
+5	دوباره	دوباره	ADJ	ADJ_AJP	_	8	advmod	_	_
+6	توفان	توفان	NOUN	N_IANM	_	8	xcomp	_	_
 7	خواهد	خواست#خواه	AUX	AUX	_	8	aux	_	_
-8	شد	شد#شو	VERB	V_ACT	_	6	cop	_	SpaceAfter=No
+8	شد	شد#شو	VERB	V_ACT	_	1	acl	_	SpaceAfter=No
 9	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = test-s364
@@ -6920,8 +6920,8 @@
 4	یکی	یکی	NOUN	N_IANM	_	3	advmod	_	_
 5	برمی‌داشت	بر#داشت#دار	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	5	punct	_	_
-7	گل‌اندود	گل‌اندود	ADJ	ADJ_AJP	_	5	conj	_	_
-8	می‌کرد	کرد#کن	VERB	V_ACT	_	7	cop	_	_
+7	گل‌اندود	گل‌اندود	ADJ	ADJ_AJP	_	8	xcomp	_	_
+8	می‌کرد	کرد#کن	VERB	V_ACT	_	5	conj	_	_
 9	و	و	CCONJ	CONJ	_	14	cc	_	_
 10	اولین	اولین	ADJ	PRENUM	_	11	amod	_	_
 11	ردیف	ردیف	NOUN	N_IANM	_	14	obj	_	_
@@ -7012,25 +7012,25 @@
 15	ناهموار	ناهموار	ADJ	ADJ_AJP	_	13	conj	_	_
 16	می‌مانند	ماند#مان	VERB	V_ACT	_	7	conj	_	_
 17	تا	تا	SCONJ	SUBR	_	16	advcl	_	_
-18	رهگذرانی	رهگذر	NOUN	N_ANM	_	19	nsubj	_	_
-19	دچار	دچار	ADJ	ADJ_AJP	_	17	advcl	_	_
+18	رهگذرانی	رهگذر	NOUN	N_ANM	_	21	nsubj	_	_
+19	دچار	دچار	ADJ	ADJ_AJP	_	21	xcomp	_	_
 20	مشکل	مشکل	NOUN	N_IANM	_	19	obl	_	_
-21	می‌شوند	شد#شو	VERB	V_ACT	_	19	cop	_	SpaceAfter=No
-22	؛	؛	PUNCT	PUNC	_	19	punct	_	_
+21	می‌شوند	شد#شو	VERB	V_ACT	_	17	advcl	_	SpaceAfter=No
+22	؛	؛	PUNCT	PUNC	_	21	punct	_	_
 23	دست	دست	NOUN	N_IANM	_	27	nsubj	_	_
 24	یا	یا	CCONJ	CONJ	_	25	cc	_	_
 25	پایی	پا	NOUN	N_IANM	_	23	conj	_	_
 26	آسیب	آسیب	NOUN	N_IANM	_	27	obj	_	_
-27	می‌بیند	دید#بین	VERB	V_ACT	_	19	conj	_	_
+27	می‌بیند	دید#بین	VERB	V_ACT	_	21	conj	_	_
 28	یا	یا	CCONJ	CONJ	_	33	cc	_	_
 29	خودرویی	خودرو	NOUN	N_IANM	_	33	nsubj	_	_
 30	در	در	ADP	PREP	_	31	case	_	_
 31	گودال	گودال	NOUN	N_IANM	_	33	obl	_	_
 32	سقوط	سقوط	NOUN	N_IANM	_	33	compound	_	_
-33	می‌کند	کرد#کن	VERB	V_ACT	_	19	conj	_	_
+33	می‌کند	کرد#کن	VERB	V_ACT	_	21	conj	_	_
 34	و	و	CCONJ	CONJ	_	36	cc	_	_
 35	خسارت	خسارت	NOUN	N_IANM	_	36	obj	_	_
-36	برمی‌دارد	بر#داشت#دار	VERB	V_ACT	_	19	conj	_	SpaceAfter=No
+36	برمی‌دارد	بر#داشت#دار	VERB	V_ACT	_	21	conj	_	SpaceAfter=No
 37	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s380
@@ -7074,9 +7074,9 @@
 10	گونه‌ای	گونه	NOUN	N_IANM	_	12	obl	_	_
 11	صحنه‌پردازی	صحنه‌پردازی	NOUN	N_IANM	_	12	compound	_	_
 12	کردند	کرد#کن	VERB	V_ACT	_	1	ccomp	_	_
-13	که	که	SCONJ	SUBR	_	33	mark	_	_
+13	که	که	SCONJ	SUBR	_	34	mark	_	_
 14	هر	هر	DET	PREM_AMBAJ	_	15	det	_	_
-15	کس	کس	NOUN	N_ANM	_	33	nsubj	_	_
+15	کس	کس	NOUN	N_ANM	_	34	nsubj	_	_
 16	به	به	ADP	PREP	_	17	case	_	_
 17	طمع	طمع	NOUN	N_IANM	_	25	obl	_	_
 18	دنیا	دنیا	NOUN	N_IANM	_	17	nmod	_	_
@@ -7089,13 +7089,13 @@
 25	افتاده	افتاد#افت	VERB	V_ACT	_	15	acl	_	_
 26	بود	بود#باش	AUX	AUX	_	25	aux	_	_
 27	در	در	ADP	PREP	_	28	case	_	_
-28	قسمتی	قسمت	NOUN	N_IANM	_	33	obl	_	_
+28	قسمتی	قسمت	NOUN	N_IANM	_	34	obl	_	_
 29	از	از	ADP	PREP	_	30	case	_	_
 30	راه	راه	NOUN	N_IANM	_	28	nmod	_	_
 31	از	از	ADP	PREP	_	32	case	_	_
 32	ایشان	ایشان	PRON	PR_SEPER	_	33	obl	_	_
-33	جدا	جدا	ADJ	ADJ_AJP	_	10	acl	_	_
-34	شود	شد#شو	VERB	V_ACT	_	33	cop	_	SpaceAfter=No
+33	جدا	جدا	ADJ	ADJ_AJP	_	34	xcomp	_	_
+34	شود	شد#شو	VERB	V_ACT	_	10	acl	_	SpaceAfter=No
 35	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s382
@@ -7161,11 +7161,11 @@
 20	دیگر	دیگر	ADJ	ADJ_AJP	_	19	amod	_	_
 21	خبر	خبر	NOUN	N_IANM	_	22	obj	_	_
 22	می‌دهد	داد#ده	VERB	V_ACT	_	0	root	_	_
-23	که	که	SCONJ	SUBR	_	24	mark	_	_
-24	متوجهٔ	متوجه	ADJ	ADJ_AJP	_	21	acl	_	_
+23	که	که	SCONJ	SUBR	_	27	mark	_	_
+24	متوجهٔ	متوجه	ADJ	ADJ_AJP	_	27	xcomp	_	_
 25	چیزی	چیز	NOUN	N_IANM	_	24	obl	_	_
 26	نامعمول	نامعمول	ADJ	ADJ_AJP	_	25	amod	_	_
-27	شده	شد#شو	VERB	V_ACT	_	24	cop	_	_
+27	شده	شد#شو	VERB	V_ACT	_	21	acl	_	_
 28	است	#است	AUX	AUX	_	27	aux	_	SpaceAfter=No
 29	.	.	PUNCT	PUNC	_	22	punct	_	_
 
@@ -7843,9 +7843,9 @@
 # sent_id = test-s425
 # text = برو آرایشگری کن.
 1	برو	رفت#رو	VERB	V_ACT	_	0	root	_	_
-2	آرایشگری	آرایشگر	ADJ	ADJ_AJP	_	1	conj	_	_
-3	کن	کرد#کن	VERB	V_ACT	_	2	cop	_	SpaceAfter=No
-4	.	.	PUNCT	PUNC	_	2	punct	_	_
+2	آرایشگری	آرایشگر	ADJ	ADJ_AJP	_	3	xcomp	_	_
+3	کن	کرد#کن	VERB	V_ACT	_	1	conj	_	SpaceAfter=No
+4	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s426
 # text = ترسی جانکاه در دلش آشیان کرده بود.
@@ -7966,12 +7966,12 @@
 7	این	این	PRON	PR_DEMON	_	2	conj	_	_
 8	است	#است	AUX	AUX	_	7	cop	_	_
 9	که	که	SCONJ	SUBR	_	7	acl	_	_
-10	آیا	آیا	PART	PART	_	13	mark	_	_
+10	آیا	آیا	PART	PART	_	15	mark	_	_
 11	این	این	DET	PREM_DEMAJ	_	12	det	_	_
-12	مانورها	مانور	NOUN	N_IANM	_	13	nsubj	_	_
-13	موفقیت‌آمیز	موفقیت‌آمیز	ADJ	ADJ_AJP	_	9	acl	_	_
+12	مانورها	مانور	NOUN	N_IANM	_	15	nsubj	_	_
+13	موفقیت‌آمیز	موفقیت‌آمیز	ADJ	ADJ_AJP	_	15	xcomp	_	_
 14	خواهد	خواست#خواه	AUX	AUX	_	15	aux	_	_
-15	بود	بود#باش	VERB	V_ACT	_	13	cop	_	_
+15	بود	بود#باش	VERB	V_ACT	_	9	acl	_	_
 16	و	و	CCONJ	CONJ	_	26	cc	_	_
 17	رهبران	رهبر	NOUN	N_ANM	_	26	obj	_	_
 18	مخالفان	مخالف	NOUN	N_ANM	_	17	nmod	_	_
@@ -7982,7 +7982,7 @@
 23	را	را	ADP	POSTP	_	17	case	_	_
 24	فریب	فریب	NOUN	N_IANM	_	26	compound	_	_
 25	خواهد	خواست#خواه	AUX	AUX	_	26	aux	_	_
-26	داد	داد#ده	VERB	V_ACT	_	13	conj	_	SpaceAfter=No
+26	داد	داد#ده	VERB	V_ACT	_	15	conj	_	SpaceAfter=No
 27	؟	؟	PUNCT	PUNC	_	7	punct	_	_
 
 # sent_id = test-s433
@@ -8039,7 +8039,7 @@
 5	روان‌شناختی	روان‌شناختی	ADJ	ADJ_AJP	_	4	amod	_	_
 6	خانواده	خانواده	NOUN	N_IANM	_	4	nmod	_	_
 7	خیلی	خیلی	ADV	ADV_SADV	_	8	advmod	_	_
-8	حائز	حائز	ADJ	ADJ_AJP	_	15	root	_	_
+8	حائز	حائز	ADJ	ADJ_AJP	_	15	vocative	_	_
 9	اهمیت	اهمیت	NOUN	N_IANM	_	8	obl	_	_
 10	است	#است	AUX	AUX	_	8	cop	_	SpaceAfter=No
 11	؛	؛	PUNCT	PUNC	_	8	punct	_	_
@@ -8216,15 +8216,15 @@
 # sent_id = test-s444
 # text = در حکومت جهانی مهدی، دین رسمی اسلام خواهد بود و برای احقاق حق‌الناس از هیچ تلاشی فروگذاری نخواهد شد و حق مردمان از دندان‌های آز آزمندان هم که شده بیرون کشیده خواهد شد و در این حکومت، هم عدالت را خواهند یافت و به قوانین حکومت گردن خواهند گذاشت.
 1	در	در	ADP	PREP	_	2	case	_	_
-2	حکومت	حکومت	NOUN	N_IANM	_	8	obl	_	_
+2	حکومت	حکومت	NOUN	N_IANM	_	10	obl	_	_
 3	جهانی	جهانی	ADJ	ADJ_AJP	_	2	amod	_	_
 4	مهدی	مهدی	NOUN	N_ANM	_	2	nmod	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
-6	دین	دین	NOUN	N_IANM	_	8	nsubj	_	_
+6	دین	دین	NOUN	N_IANM	_	10	nsubj	_	_
 7	رسمی	رسمی	ADJ	ADJ_AJP	_	6	amod	_	_
-8	اسلام	اسلام	NOUN	N_IANM	_	0	root	_	_
+8	اسلام	اسلام	NOUN	N_IANM	_	10	xcomp	_	_
 9	خواهد	خواست#خواه	AUX	AUX	_	10	aux	_	_
-10	بود	بود#باش	VERB	V_ACT	_	8	cop	_	_
+10	بود	بود#باش	VERB	V_ACT	_	0	root	_	_
 11	و	و	CCONJ	CONJ	_	20	cc	_	_
 12	برای	برای	ADP	PREP	_	13	case	_	_
 13	احقاق	احقاق	NOUN	N_IANM	_	20	obl	_	_
@@ -8234,7 +8234,7 @@
 17	تلاشی	تلاش	NOUN	N_IANM	_	20	obl	_	_
 18	فروگذاری	فروگذاری	NOUN	N_IANM	_	20	compound	_	_
 19	نخواهد	خواست#خواه	AUX	AUX	_	20	aux	_	_
-20	شد	کرد#کن	VERB	V_ACT	_	8	conj	_	_
+20	شد	کرد#کن	VERB	V_ACT	_	10	conj	_	_
 21	و	و	CCONJ	CONJ	_	32	cc	_	_
 22	حق	حق	NOUN	N_IANM	_	32	nsubj	_	_
 23	مردمان	مردم	NOUN	N_ANM	_	22	nmod	_	_
@@ -8246,7 +8246,7 @@
 29	که	که	SCONJ	SUBR	_	30	mark	_	_
 30	شده	شد#شو	VERB	V_ACT	_	25	acl	_	_
 31	بیرون	بیرون	NOUN	N_IANM	_	32	obl	_	_
-32	کشیده	کشید#کش	VERB	V_PASS	_	8	conj	_	_
+32	کشیده	کشید#کش	VERB	V_PASS	_	10	conj	_	_
 33	خواهد	خواست#خواه	AUX	AUX	_	34	aux	_	_
 34	شد	کرد#کن	AUX	AUX	_	32	aux	_	_
 35	و	و	CCONJ	CONJ	_	44	cc	_	_
@@ -8258,14 +8258,14 @@
 41	عدالت	عدالت	NOUN	N_IANM	_	40	case	_	_
 42	را	را	ADP	POSTP	_	41	case	_	_
 43	خواهند	خواست#خواه	AUX	AUX	_	44	aux	_	_
-44	یافت	یافت#یاب	VERB	V_ACT	_	8	conj	_	_
+44	یافت	یافت#یاب	VERB	V_ACT	_	10	conj	_	_
 45	و	و	CCONJ	CONJ	_	51	cc	_	_
 46	به	به	ADP	PREP	_	47	case	_	_
 47	قوانین	قانون	NOUN	N_IANM	_	51	obl	_	_
 48	حکومت	حکومت	NOUN	N_IANM	_	47	nmod	_	_
 49	گردن	گردن	NOUN	N_IANM	_	51	compound	_	_
 50	خواهند	خواست#خواه	AUX	AUX	_	51	aux	_	_
-51	گذاشت	گذاشت#گذار	VERB	V_ACT	_	8	conj	_	SpaceAfter=No
+51	گذاشت	گذاشت#گذار	VERB	V_ACT	_	10	conj	_	SpaceAfter=No
 52	.	.	PUNCT	PUNC	_	51	punct	_	_
 
 # sent_id = test-s445
@@ -8587,9 +8587,9 @@
 14-15	کسانش	_	_	_	_	_	_	_	_
 14	کسان	کس	NOUN	N_ANM	_	27	obl	_	_
 15	ش	او	PRON	PR_JOPER	_	14	nmod	_	_
-16	یعنی	یعنی	INTJ	PSUS	_	18	cop	_	_
+16	یعنی	یعنی	INTJ	PSUS	_	14	acl	_	_
 17	به	به	ADP	PREP	_	18	case	_	_
-18	خداوند	خداوند	NOUN	N_ANM	_	14	acl	_	_
+18	خداوند	خداوند	NOUN	N_ANM	_	16	xcomp	_	_
 19	و	و	CCONJ	CONJ	_	20	cc	_	_
 20-21	معشوقه‌اش	_	_	_	_	_	_	_	_
 20	معشوقه‌	معشوقه	NOUN	N_ANM	_	18	conj	_	_
@@ -8638,7 +8638,7 @@
 # text = رژیم صهیونیستی موجودی پلید و ضدبشری است و اگر فرصتی پیدا کند همهٔ ملت‌های منطقه را قتل عام خواهد کرد.
 1	رژیم	رژیم	PROPN	N_IANM	_	3	nsubj	_	_
 2	صهیونیستی	صهیونیستی	PROPN	ADJ_AJP	_	1	flat	_	_
-3	موجودی	موجود	NOUN	N_ANM	_	8	root	_	_
+3	موجودی	موجود	NOUN	N_ANM	_	8	vocative	_	_
 4	پلید	پلید	ADJ	ADJ_AJP	_	3	amod	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
 6	ضدبشری	ضدبشری	ADJ	ADJ_AJP	_	4	conj	_	_
@@ -8792,16 +8792,16 @@
 13	سفر	سفر	NOUN	N_IANM	_	11	nmod	_	_
 14	عمرهٔ	عمره	NOUN	N_IANM	_	13	nmod	_	_
 15	کسانی	کس	NOUN	N_ANM	_	14	nmod	_	_
-16	که	که	SCONJ	SUBR	_	23	mark	_	_
+16	که	که	SCONJ	SUBR	_	24	mark	_	_
 17	بیش	بیش	ADJ	ADJ_AJCM	_	19	advmod	_	_
 18	از	از	ADP	PREP	_	17	fixed	_	_
 19	یک	یک	NUM	PRENUM	_	20	nummod	_	_
-20	بار	بار	NOUN	N_IANM	_	23	obl	_	_
+20	بار	بار	NOUN	N_IANM	_	24	obl	_	_
 21	به	به	ADP	PREP	_	22	case	_	_
 22	مکه	مکه	PROPN	N_IANM	_	23	obl	_	_
-23	مشرف	مشرف	ADJ	ADJ_AJP	_	15	acl	_	_
-24	شده‌اند	شد#شو	VERB	V_ACT	_	23	cop	_	SpaceAfter=No
-25	،	،	PUNCT	PUNC	_	23	punct	_	_
+23	مشرف	مشرف	ADJ	ADJ_AJP	_	24	xcomp	_	_
+24	شده‌اند	شد#شو	VERB	V_ACT	_	15	acl	_	SpaceAfter=No
+25	،	،	PUNCT	PUNC	_	24	punct	_	_
 26	می‌خواهد	خواست#خواه	VERB	V_ACT	_	0	root	_	_
 27	میان	میان	ADP	PREP	_	30	case	_	_
 28	ثبت	ثبت	NOUN	N_IANM	_	30	advmod	_	_
@@ -8841,7 +8841,7 @@
 
 # sent_id = test-s473
 # text = حضرت خدیجه- سلام الله علیها- در دم مرگ دلواپس بود، دلواپس دختری که باید در گرداب بلا غوطه بخورد.
-1	حضرت	حضرت	PROPN	N_ANM	_	14	nsubj	_	_
+1	حضرت	حضرت	PROPN	N_ANM	_	11	nsubj	_	_
 2	خدیجه	خدیجه	PROPN	N_ANM	_	1	flat	_	_
 3	-	-	PUNCT	PUNC	_	4	punct	_	_
 4	سلام	سلام	NOUN	N_IANM	_	2	advmod	_	_
@@ -8849,12 +8849,12 @@
 6	علیها	علیها	NOUN	N_IANM	_	5	advmod	_	SpaceAfter=No
 7	-	-	PUNCT	PUNC	_	4	punct	_	_
 8	در	در	ADP	PREP	_	9	case	_	_
-9	دم	دم	NOUN	N_IANM	_	14	obl	_	_
+9	دم	دم	NOUN	N_IANM	_	11	obl	_	_
 10	مرگ	مرگ	NOUN	N_IANM	_	9	nmod	_	_
-11	دلواپس	دلواپس	ADJ	ADJ_AJP	_	14	cop	_	_
-12	بود	بود#باش	AUX	AUX	_	14	cop	_	SpaceAfter=No
-13	،	،	PUNCT	PUNC	_	14	punct	_	_
-14	دلواپس	دلواپس	ADJ	ADJ_AJP	_	0	root	_	_
+11	دلواپس	دلواپس	ADJ	ADJ_AJP	_	0	root	_	_
+12	بود	بود#باش	AUX	AUX	_	11	cop	_	SpaceAfter=No
+13	،	،	PUNCT	PUNC	_	11	punct	_	_
+14	دلواپس	دلواپس	ADJ	ADJ_AJP	_	11	xcomp	_	_
 15	دختری	دختر	NOUN	N_ANM	_	14	obl	_	_
 16	که	که	SCONJ	SUBR	_	22	mark	_	_
 17	باید	بایست#باید	AUX	V_MODL	_	22	aux	_	_
@@ -8863,7 +8863,7 @@
 20	بلا	بلا	NOUN	N_IANM	_	19	nmod	_	_
 21	غوطه	غوطه	NOUN	N_IANM	_	22	compound	_	_
 22	بخورد	خورد#خور	VERB	V_ACT	_	15	acl	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	14	punct	_	_
+23	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s474
 # text = تنها از طریق فیض الهی و با خون عیسی مسیح بود که این گناه کفاره داده شد.
@@ -9191,7 +9191,7 @@
 
 # sent_id = test-s492
 # text = هنگامی که ما رحمتی را از خود به انسان می‌چشانیم بر اثر آن خوشحال می‌شود و همین که آثار سوء اعمالش را می‌گیرد کفران می‌کند.
-1	هنگامی	هنگام	NOUN	N_IANM	_	14	obl	_	_
+1	هنگامی	هنگام	NOUN	N_IANM	_	15	obl	_	_
 2	که	که	SCONJ	SUBR	_	10	mark	_	_
 3	ما	ما	PRON	PR_SEPER	_	10	nsubj	_	_
 4	رحمتی	رحمت	PROPN	N_IANM	_	10	obj	_	_
@@ -9202,10 +9202,10 @@
 9	انسان	انسان	NOUN	N_ANM	_	10	obl	_	_
 10	می‌چشانیم	چشاند#چشان	VERB	V_ACT	_	1	acl	_	_
 11	بر	بر	ADP	PREP	_	12	case	_	_
-12	اثر	اثر	NOUN	N_IANM	_	14	obl	_	_
+12	اثر	اثر	NOUN	N_IANM	_	15	obl	_	_
 13	آن	آن	PRON	PR_DEMON	_	12	nmod	_	_
-14	خوشحال	خوشحال	ADJ	ADJ_AJP	_	0	root	_	_
-15	می‌شود	شد#شو	VERB	V_ACT	_	14	cop	_	_
+14	خوشحال	خوشحال	ADJ	ADJ_AJP	_	15	xcomp	_	_
+15	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 16	و	و	CCONJ	CONJ	_	25	cc	_	_
 17	همین	همین	PRON	PR_DEMON	_	25	obl	_	_
 18	که	که	SCONJ	SUBR	_	23	mark	_	_
@@ -9215,7 +9215,7 @@
 22	را	را	ADP	POSTP	_	19	case	_	_
 23	می‌گیرد	گرفت#گیر	VERB	V_ACT	_	17	acl	_	_
 24	کفران	کفران	NOUN	N_IANM	_	25	compound	_	_
-25	می‌کند	کرد#کن	VERB	V_ACT	_	14	conj	_	SpaceAfter=No
+25	می‌کند	کرد#کن	VERB	V_ACT	_	15	conj	_	SpaceAfter=No
 26	.	.	PUNCT	PUNC	_	25	punct	_	_
 
 # sent_id = test-s493
@@ -9279,24 +9279,24 @@
 19	،	،	PUNCT	PUNC	_	18	punct	_	_
 20	هشدار	هشدار	NOUN	N_IANM	_	21	obj	_	_
 21	می‌دهم	داد#ده	VERB	V_ACT	_	0	root	_	_
-22	که	که	SCONJ	SUBR	_	33	mark	_	_
+22	که	که	SCONJ	SUBR	_	39	mark	_	_
 23	این	این	DET	PREM_DEMAJ	_	24	det	_	_
-24	شبکه	شبکه	NOUN	N_IANM	_	33	nsubj	_	_
+24	شبکه	شبکه	NOUN	N_IANM	_	39	nsubj	_	_
 25	بعد	بعد	ADP	PREP	_	27	case	_	_
 26	از	از	ADP	PREP	_	25	fixed	_	_
-27	جذب	جذب	NOUN	N_IANM	_	33	obl	_	_
+27	جذب	جذب	NOUN	N_IANM	_	39	obl	_	_
 28	سپرده‌های	سپرده	NOUN	N_IANM	_	27	nmod	_	_
 29	مردم	مردم	NOUN	N_ANM	_	28	nmod	_	_
-30	فعالیت	فعالیت	NOUN	N_IANM	_	33	obj	_	_
+30	فعالیت	فعالیت	NOUN	N_IANM	_	39	obj	_	_
 31	خود	خود	PRON	PR_CREFX	_	30	nmod	_	_
 32	را	را	ADP	POSTP	_	30	case	_	_
-33	تعطیل	تعطیل	ADJ	ADJ_AJP	_	21	ccomp	_	_
-34	و	و	CCONJ	CONJ	_	33	dep	_	_
-35	اقدام	اقدام	NOUN	N_IANM	_	33	compound	_	_
+33	تعطیل	تعطیل	ADJ	ADJ_AJP	_	39	xcomp	_	_
+34	و	و	CCONJ	CONJ	_	39	cc	_	_
+35	اقدام	اقدام	NOUN	N_IANM	_	39	compound	_	_
 36	به	به	ADP	PREP	_	37	case	_	_
 37	کلاهبرداری	کلاهبرداری	NOUN	N_IANM	_	35	nmod	_	_
 38	خواهد	خواست#خواه	AUX	AUX	_	39	aux	_	_
-39	کرد	کرد#کن	VERB	V_ACT	_	33	cop	_	SpaceAfter=No
+39	کرد	کرد#کن	VERB	V_ACT	_	21	ccomp	_	SpaceAfter=No
 40	.	.	PUNCT	PUNC	_	21	punct	_	_
 
 # sent_id = test-s496
@@ -9457,17 +9457,17 @@
 2	قدیم	قدیم	NOUN	N_IANM	_	21	obl	_	SpaceAfter=No
 3	،	،	PUNCT	PUNC	_	2	punct	_	_
 4	زمانی	زمان	NOUN	N_IANM	_	21	obl	_	_
-5	که	که	SCONJ	SUBR	_	11	mark	_	_
-6	طبیبان	طبیب	NOUN	N_ANM	_	11	nsubj	_	_
+5	که	که	SCONJ	SUBR	_	14	mark	_	_
+6	طبیبان	طبیب	NOUN	N_ANM	_	14	nsubj	_	_
 7	سنتی	سنتی	ADJ	ADJ_AJP	_	6	amod	_	_
 8	از	از	ADP	PREP	_	9	case	_	_
 9	معالجهٔ	معالجه	NOUN	N_IANM	_	11	obl	_	_
 10	بیمار	بیمار	NOUN	N_ANM	_	9	nmod	_	_
-11	درمانده	درمانده	ADJ	ADJ_AJP	_	4	acl	_	_
+11	درمانده	درمانده	ADJ	ADJ_AJP	_	14	xcomp	_	_
 12	و	و	CCONJ	CONJ	_	13	cc	_	_
 13	مأیوس	مأیوس	ADJ	ADJ_AJP	_	11	conj	_	_
-14	می‌شدند	شد#شو	VERB	V_ACT	_	11	cop	_	SpaceAfter=No
-15	،	،	PUNCT	PUNC	_	11	punct	_	_
+14	می‌شدند	شد#شو	VERB	V_ACT	_	4	acl	_	SpaceAfter=No
+15	،	،	PUNCT	PUNC	_	14	punct	_	_
 16	مریض	مریض	NOUN	N_ANM	_	21	obj	_	_
 17	را	را	ADP	POSTP	_	16	case	_	_
 18	به	به	ADP	PREP	_	19	case	_	_
@@ -9696,11 +9696,11 @@
 6	روزی	روز	NOUN	N_IANM	_	8	obl	_	_
 7	شنا	شنا	NOUN	N_IANM	_	8	compound	_	_
 8	می‌کند	کرد#کن	VERB	V_ACT	_	5	ccomp	_	_
-9	و	و	CCONJ	CONJ	_	12	cc	_	_
+9	و	و	CCONJ	CONJ	_	13	cc	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
 11	آب	آب	NOUN	N_IANM	_	12	obl	_	_
-12	غرق	غرق	ADJ	ADJ_AJP	_	8	conj	_	_
-13	می‌شود	شد#شو	VERB	V_ACT	_	12	cop	_	SpaceAfter=No
+12	غرق	غرق	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	می‌شود	شد#شو	VERB	V_ACT	_	8	conj	_	SpaceAfter=No
 14	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s516
@@ -9856,8 +9856,8 @@
 5	به	به	ADP	PREP	_	6	case	_	_
 6	هدف	هدف	NOUN	N_IANM	_	15	obl	_	_
 7	خود	خود	PRON	PR_CREFX	_	6	nmod	_	_
-8	یعنی	یعنی	INTJ	PSUS	_	9	cop	_	_
-9	ساختن	ساختن	NOUN	N_IANM	_	6	acl	_	_
+8	یعنی	یعنی	INTJ	PSUS	_	6	acl	_	_
+9	ساختن	ساختن	NOUN	N_IANM	_	8	xcomp	_	_
 10	آبرو	آبرو	NOUN	N_IANM	_	9	nmod	_	_
 11	برای	برای	ADP	PREP	_	12	case	_	_
 12	یزید	یزید	PROPN	N_ANM	_	9	nmod	_	_
@@ -9877,19 +9877,19 @@
 
 # sent_id = test-s524
 # text = تمامی صندوق‌های رأی‌دهی در حضور ناظرین انتخابات و همچنین نمایندگان کاندیداها باز می‌شود و در صورتی که صندوق‌ها دست خورده باشد آن صندوق رأی محاسبه نمی‌شود.
-1	تمامی	تمامی	NOUN	N_IANM	_	12	nsubj	_	_
+1	تمامی	تمامی	NOUN	N_IANM	_	13	nsubj	_	_
 2	صندوق‌های	صندوق	NOUN	N_IANM	_	1	nmod	_	_
 3	رأی‌دهی	رأی‌دهی	NOUN	N_IANM	_	2	nmod	_	_
 4	در	در	ADP	PREP	_	5	case	_	_
-5	حضور	حضور	NOUN	N_IANM	_	12	obl	_	_
+5	حضور	حضور	NOUN	N_IANM	_	13	obl	_	_
 6	ناظرین	ناظر	NOUN	N_ANM	_	5	nmod	_	_
 7	انتخابات	انتخابات	NOUN	N_IANM	_	6	nmod	_	_
 8	و	و	CCONJ	CONJ	_	10	cc	_	_
 9	همچنین	همچنین	ADV	ADV_SADV	_	10	advmod	_	_
 10	نمایندگان	نماینده	NOUN	N_ANM	_	6	conj	_	_
 11	کاندیداها	کاندیدا	NOUN	N_ANM	_	10	nmod	_	_
-12	باز	باز	ADJ	ADJ_AJP	_	0	root	_	_
-13	می‌شود	شد#شو	VERB	V_ACT	_	12	cop	_	_
+12	باز	باز	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 14	و	و	CCONJ	CONJ	_	26	cc	_	_
 15	در	در	ADP	PREP	_	16	case	_	_
 16	صورتی	صورت	NOUN	N_IANM	_	26	obl	_	_
@@ -9902,25 +9902,25 @@
 23	صندوق	صندوق	NOUN	N_IANM	_	26	nsubj	_	_
 24	رأی	رأی	NOUN	N_IANM	_	23	nmod	_	_
 25	محاسبه	محاسبه	NOUN	N_IANM	_	26	compound	_	_
-26	نمی‌شود	شد#شو	VERB	V_ACT	_	12	conj	_	SpaceAfter=No
+26	نمی‌شود	شد#شو	VERB	V_ACT	_	13	conj	_	SpaceAfter=No
 27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s525
 # text = هر کس که با او دست می‌دهد خم می‌شود و دست وی را می‌بوسد.
 1	هر	هر	DET	PREM_AMBAJ	_	2	det	_	_
-2	کس	کس	NOUN	N_ANM	_	8	nsubj	_	_
+2	کس	کس	NOUN	N_ANM	_	9	nsubj	_	_
 3	که	که	SCONJ	SUBR	_	7	mark	_	_
 4	با	با	ADP	PREP	_	5	case	_	_
 5	او	او	PRON	PR_SEPER	_	7	obl	_	_
 6	دست	دست	NOUN	N_IANM	_	7	compound	_	_
 7	می‌دهد	داد#ده	VERB	V_ACT	_	2	acl	_	_
-8	خم	خم	ADJ	ADJ_AJP	_	0	root	_	_
-9	می‌شود	شد#شو	VERB	V_ACT	_	8	cop	_	_
+8	خم	خم	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 10	و	و	CCONJ	CONJ	_	14	cc	_	_
 11	دست	دست	NOUN	N_IANM	_	14	obj	_	_
 12	وی	وی	PRON	PR_SEPER	_	11	nmod	_	_
 13	را	را	ADP	POSTP	_	11	case	_	_
-14	می‌بوسد	بوسید#بوس	VERB	V_ACT	_	8	conj	_	SpaceAfter=No
+14	می‌بوسد	بوسید#بوس	VERB	V_ACT	_	9	conj	_	SpaceAfter=No
 15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s526
@@ -9991,7 +9991,7 @@
 9	دارد	داشت#دار	VERB	V_ACT	_	4	acl	_	SpaceAfter=No
 10	،	،	PUNCT	PUNC	_	9	punct	_	_
 11	«	«	PUNCT	PUNC	_	12	punct	_	SpaceAfter=No
-12	طور	طور	NOUN	N_IANM	_	45	root	_	_
+12	طور	طور	NOUN	N_IANM	_	45	vocative	_	_
 13	نبوت	نبوت	NOUN	N_IANM	_	12	nmod	_	SpaceAfter=No
 14	»	»	PUNCT	PUNC	_	12	punct	_	_
 15	است	#است	AUX	AUX	_	12	cop	_	_
@@ -10056,22 +10056,22 @@
 5	آفرینش	آفرینش	NOUN	N_IANM	_	4	nmod	_	_
 6	رمزگشایی	رمزگشایی	NOUN	N_IANM	_	7	compound	_	_
 7	می‌کنند	کرد#کن	VERB	V_ACT	_	0	root	_	_
-8	و	و	CCONJ	CONJ	_	18	cc	_	_
+8	و	و	CCONJ	CONJ	_	14	cc	_	_
 9	در	در	ADP	PREP	_	10	case	_	_
-10	جای	جا	NOUN	N_IANM	_	18	obl	_	_
+10	جای	جا	NOUN	N_IANM	_	14	obl	_	_
 11	خود	خود	PRON	PR_CREFX	_	10	nmod	_	_
-12	نه	نه	ADV	ADV_SADV	_	18	advmod	_	_
+12	نه	نه	ADV	ADV_SADV	_	14	advmod	_	_
 13	تنها	تنها	ADV	ADV_SADV	_	12	advmod	_	_
-14	مفید	مفید	ADJ	ADJ_AJP	_	18	cop	_	SpaceAfter=No
-15	،	،	PUNCT	PUNC	_	18	punct	_	_
-16	بلکه	بلکه	ADV	ADV_SADV	_	18	advmod	_	_
+14	مفید	مفید	ADJ	ADJ_AJP	_	7	conj	_	SpaceAfter=No
+15	،	،	PUNCT	PUNC	_	14	punct	_	_
+16	بلکه	بلکه	ADV	ADV_SADV	_	14	advmod	_	_
 17	بسیار	بسیار	ADV	ADV_SADV	_	18	advmod	_	_
-18	مهم	مهم	ADJ	ADJ_AJP	_	7	conj	_	_
+18	مهم	مهم	ADJ	ADJ_AJP	_	14	xcomp	_	_
 19	و	و	CCONJ	CONJ	_	21	cc	_	_
 20	مورد	مورد	ADP	PREP	_	21	case	_	_
 21	نیاز	نیاز	NOUN	N_IANM	_	18	conj	_	_
-22	هستند	#هست	AUX	AUX	_	18	cop	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	18	punct	_	_
+22	هستند	#هست	AUX	AUX	_	14	cop	_	SpaceAfter=No
+23	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s532
 # text = با اعتقادات و ایمان خود رفتار و زندگی خود را رنگ بدهیم تا گام‌هایی اساسی را برای پرورش معنوی و دینی کودک خود فراهم کرده باشیم.
@@ -10087,8 +10087,8 @@
 10	را	را	ADP	POSTP	_	6	case	_	_
 11	رنگ	رنگ	NOUN	N_IANM	_	12	compound	_	_
 12	بدهیم	داد#ده	VERB	V_ACT	_	0	root	_	_
-13	تا	تا	SCONJ	SUBR	_	24	mark	_	_
-14	گام‌هایی	گام	NOUN	N_IANM	_	24	obj	_	_
+13	تا	تا	SCONJ	SUBR	_	25	mark	_	_
+14	گام‌هایی	گام	NOUN	N_IANM	_	25	obj	_	_
 15	اساسی	اساسی	ADJ	ADJ_AJP	_	14	amod	_	_
 16	را	را	ADP	POSTP	_	14	case	_	_
 17	برای	برای	ADP	PREP	_	18	case	_	_
@@ -10098,16 +10098,16 @@
 21	دینی	دینی	ADJ	ADJ_AJP	_	19	conj	_	_
 22	کودک	کودک	NOUN	N_ANM	_	18	nmod	_	_
 23	خود	خود	PRON	PR_CREFX	_	22	nmod	_	_
-24	فراهم	فراهم	ADJ	ADJ_AJP	_	12	advcl	_	_
-25	کرده	کرد#کن	VERB	V_ACT	_	24	cop	_	_
+24	فراهم	فراهم	ADJ	ADJ_AJP	_	25	xcomp	_	_
+25	کرده	کرد#کن	VERB	V_ACT	_	12	advcl	_	_
 26	باشیم	بود#باش	AUX	AUX	_	25	aux	_	SpaceAfter=No
 27	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s533
 # text = امیدوارم افکار شجاع‌الدین شفا در فرزندان ایران‌زمین رواج کرده باشد و همچنین به رواج خود ادامه بدهد.
 1-2	امیدوارم	_	_	_	_	_	_	_	_
-1	امیدوار	امیدوار	ADJ	ADJ_AJP	_	10	cop	_	_
-2	م	#هست	AUX	AUX	_	10	cop	_	_
+1	امیدوار	امیدوار	ADJ	ADJ_AJP	_	0	root	_	_
+2	م	#هست	AUX	AUX	_	1	cop	_	_
 3	افکار	فکر	NOUN	N_IANM	_	10	nsubj	_	_
 4	شجاع‌الدین	شجاع‌الدین	NOUN	N_ANM	_	3	nmod	_	_
 5	شفا	شفا	NOUN	N_ANM	_	4	nmod	_	_
@@ -10115,7 +10115,7 @@
 7	فرزندان	فرزند	NOUN	N_ANM	_	10	obl	_	_
 8	ایران‌زمین	ایران‌زمین	NOUN	N_IANM	_	7	nmod	_	_
 9	رواج	رواج	NOUN	N_IANM	_	10	compound	_	_
-10	کرده	کرد#کن	VERB	V_ACT	_	0	root	_	_
+10	کرده	کرد#کن	VERB	V_ACT	_	1	xcomp	_	_
 11	باشد	بود#باش	AUX	AUX	_	10	aux	_	_
 12	و	و	CCONJ	CONJ	_	18	cc	_	_
 13	همچنین	همچنین	ADV	ADV_SADV	_	18	advmod	_	_
@@ -10124,7 +10124,7 @@
 16	خود	خود	PRON	PR_CREFX	_	15	nmod	_	_
 17	ادامه	ادامه	NOUN	N_IANM	_	18	compound	_	_
 18	بدهد	داد#ده	VERB	V_ACT	_	10	conj	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	_	10	punct	_	_
+19	.	.	PUNCT	PUNC	_	1	punct	_	_
 
 # sent_id = test-s534
 # text = عالمان دینی دربارهٔ ظهور مهدی روشنگری کنند.
@@ -10246,15 +10246,15 @@
 19	چنان	چنان	PRON	PR_DEMON	_	21	obl	_	_
 20	ترکیب	ترکیب	NOUN	N_IANM	_	21	compound	_	_
 21	می‌کرد	کرد#کن	VERB	V_ACT	_	10	conj	_	_
-22	که	که	SCONJ	SUBR	_	23	mark	_	_
-23	میخکوب	میخکوب	ADJ	ADJ_AJP	_	19	acl	_	_
-24	می‌شدی	شد#شو	VERB	V_ACT	_	23	cop	_	SpaceAfter=No
+22	که	که	SCONJ	SUBR	_	24	mark	_	_
+23	میخکوب	میخکوب	ADJ	ADJ_AJP	_	24	xcomp	_	_
+24	می‌شدی	شد#شو	VERB	V_ACT	_	19	acl	_	SpaceAfter=No
 25	.	.	PUNCT	PUNC	_	21	punct	_	_
 
 # sent_id = test-s539
 # text = دنیا ممکن است به او ریشخند بزند اما او اهمیتی نمی‌دهد.
 1	دنیا	دنیا	NOUN	N_IANM	_	7	nsubj	_	_
-2	ممکن	ممکن	ADJ	ADJ_AJP	_	8	root	_	_
+2	ممکن	ممکن	ADJ	ADJ_AJP	_	8	vocative	_	_
 3	است	#است	AUX	AUX	_	2	cop	_	_
 4	به	به	ADP	PREP	_	5	case	_	_
 5	او	او	PRON	PR_SEPER	_	7	obl	_	_
@@ -10357,20 +10357,20 @@
 
 # sent_id = test-s544
 # text = آنها با یک تلنگر، عصبی می‌شوند و با هم زد و خورد می‌کنند.
-1	آنها	آنها	PRON	PR_SEPER	_	6	nsubj	_	_
+1	آنها	آنها	PRON	PR_SEPER	_	7	nsubj	_	_
 2	با	با	ADP	PREP	_	4	case	_	_
 3	یک	یک	NUM	PRENUM	_	4	nummod	_	_
-4	تلنگر	تلنگر	NOUN	N_IANM	_	6	obl	_	SpaceAfter=No
+4	تلنگر	تلنگر	NOUN	N_IANM	_	7	obl	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
-6	عصبی	عصبی	ADJ	ADJ_AJP	_	0	root	_	_
-7	می‌شوند	شد#شو	VERB	V_ACT	_	6	cop	_	_
+6	عصبی	عصبی	ADJ	ADJ_AJP	_	7	xcomp	_	_
+7	می‌شوند	شد#شو	VERB	V_ACT	_	0	root	_	_
 8	و	و	CCONJ	CONJ	_	14	cc	_	_
 9	با	با	ADP	PREP	_	10	case	_	_
 10	هم	هم	PRON	PR_RECPR	_	14	obl	_	_
 11	زد	زد	NOUN	N_IANM	_	14	compound	_	_
 12	و	و	CCONJ	CONJ	_	13	cc	_	_
 13	خورد	خورد	NOUN	N_IANM	_	11	conj	_	_
-14	می‌کنند	کرد#کن	VERB	V_ACT	_	6	conj	_	SpaceAfter=No
+14	می‌کنند	کرد#کن	VERB	V_ACT	_	7	conj	_	SpaceAfter=No
 15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s545
@@ -10481,7 +10481,7 @@
 # sent_id = test-s550
 # text = خداوند جمیل است و جمال و زیبایی را دوست دارد به این جهت خود را در پیشگاه الهی زینت می‌کنم.
 1	خداوند	خداوند	NOUN	N_ANM	_	2	nsubj	_	_
-2	جمیل	جمیل	ADJ	ADJ_AJP	_	4	root	_	_
+2	جمیل	جمیل	ADJ	ADJ_AJP	_	4	vocative	_	_
 3	است	#است	AUX	AUX	_	2	cop	_	_
 4	و	و	CCONJ	CONJ	_	0	root	_	_
 5	جمال	جمال	NOUN	N_IANM	_	10	obj	_	_
@@ -10526,7 +10526,7 @@
 # text = همواره از شاگردان برجسته و ممتاز رشتهٔ ریاضی بود و با نشاطی انقلابی در خانواده سازندگی می‌کرد.
 1	همواره	همواره	ADV	ADV_SADV	_	3	advmod	_	_
 2	از	از	ADP	PREP	_	3	case	_	_
-3	شاگردان	شاگرد	NOUN	N_ANM	_	10	root	_	_
+3	شاگردان	شاگرد	NOUN	N_ANM	_	10	vocative	_	_
 4	برجسته	برجسته	ADJ	ADJ_AJP	_	3	amod	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
 6	ممتاز	ممتاز	ADJ	ADJ_AJP	_	4	conj	_	_
@@ -10980,13 +10980,13 @@
 6	جان	جان	NOUN	N_IANM	_	7	obj	_	_
 7	ندارد	داشت#دار	VERB	V_ACT	_	4	acl	_	SpaceAfter=No
 8	،	،	PUNCT	PUNC	_	7	punct	_	_
-9	بیچاره	بیچاره	NOUN	N_ANM	_	10	nsubj	_	_
-10	پیر	پیر	ADJ	ADJ_AJP	_	2	conj	_	_
-11	شده	شد#شو	VERB	V_ACT	_	10	cop	_	_
+9	بیچاره	بیچاره	NOUN	N_ANM	_	11	nsubj	_	_
+10	پیر	پیر	ADJ	ADJ_AJP	_	11	xcomp	_	_
+11	شده	شد#شو	VERB	V_ACT	_	2	conj	_	_
 12	از	از	ADP	PREP	_	13	case	_	_
-13	بس	بس	NOUN	N_IANM	_	10	obl	_	_
+13	بس	بس	NOUN	N_IANM	_	11	obl	_	_
 14	مرده	مرد#میر	VERB	V_ACT	_	13	acl	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	10	punct	_	_
+15	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s576
 # text = تو حرف نمی‌زنی، تو داری لاس می‌زنی!
@@ -11019,7 +11019,7 @@
 1	مسلمانی	مسلمانی	NOUN	N_IANM	_	4	nsubj	_	_
 2	ما	ما	PRON	PR_SEPER	_	1	nmod	_	_
 3	سه	سه	NUM	PRENUM	_	4	nummod	_	_
-4	نسل	نسل	NOUN	N_IANM	_	6	root	_	_
+4	نسل	نسل	NOUN	N_IANM	_	6	vocative	_	_
 5	است	#است	AUX	AUX	_	4	cop	_	_
 6	و	و	CCONJ	CONJ	_	0	root	_	_
 7	از	از	ADP	PREP	_	6	advmod	_	_
@@ -11078,10 +11078,10 @@
 4	اسحاق	اسحاق	PROPN	N_ANM	_	6	obj	_	_
 5	را	را	ADP	POSTP	_	4	case	_	_
 6	می‌برد	برد#بر	VERB	V_ACT	_	1	acl	_	_
-7	که	که	SCONJ	SUBR	_	8	mark	_	_
-8	قربان	قربان	NOUN	N_IANM	_	6	advcl	_	_
-9	کند	کرد#کن	VERB	V_ACT	_	8	cop	_	SpaceAfter=No
-10	،	،	PUNCT	PUNC	_	8	punct	_	_
+7	که	که	SCONJ	SUBR	_	9	mark	_	_
+8	قربان	قربان	NOUN	N_IANM	_	9	xcomp	_	_
+9	کند	کرد#کن	VERB	V_ACT	_	6	advcl	_	SpaceAfter=No
+10	،	،	PUNCT	PUNC	_	9	punct	_	_
 11	پیش	پیش	ADP	PREP	_	12	case	_	_
 12	ساره	ساره	PROPN	N_ANM	_	13	obl	_	_
 13	آمد	آمد#آ	VERB	V_ACT	_	0	root	_	_
@@ -11152,10 +11152,10 @@
 1	این	این	DET	PREM_DEMAJ	_	2	det	_	_
 2	چرخه	چرخه	NOUN	N_IANM	_	10	nsubj	_	_
 3	لباس‌هایی	لباس	NOUN	N_IANM	_	10	obj	_	_
-4	که	که	SCONJ	SUBR	_	6	mark	_	_
-5	قبلاً	قبلاً	ADV	ADV_SADV	_	6	advmod	_	_
-6	خشک	خشک	ADJ	ADJ_AJP	_	3	acl	_	_
-7	شده‌اند	شد#شو	VERB	V_ACT	_	6	cop	_	_
+4	که	که	SCONJ	SUBR	_	7	mark	_	_
+5	قبلاً	قبلاً	ADV	ADV_SADV	_	7	advmod	_	_
+6	خشک	خشک	ADJ	ADJ_AJP	_	7	xcomp	_	_
+7	شده‌اند	شد#شو	VERB	V_ACT	_	3	acl	_	_
 8	را	را	ADP	POSTP	_	3	case	_	_
 9	هوادهی	هوادهی	NOUN	N_IANM	_	10	compound	_	_
 10	می‌کند	کرد#کن	VERB	V_ACT	_	0	root	_	_
@@ -11208,7 +11208,7 @@
 9	انقلاب	انقلاب	PROPN	N_IANM	_	6	flat	_	_
 10	را	را	ADP	POSTP	_	6	case	_	_
 11	کفسازی	کفسازی	NOUN	N_IANM	_	12	compound	_	_
-12	می‌کرد	کرد#کن	VERB	V_ACT	_	21	advcl	_	_
+12	می‌کرد	کرد#کن	VERB	V_ACT	_	22	advcl	_	_
 13	به	به	ADP	PREP	_	14	case	_	_
 14	جلوی	جلو	ADP	PREP	_	19	obl	_	_
 15	سردر	سردر	NOUN	N_IANM	_	14	advmod	_	_
@@ -11217,12 +11217,12 @@
 18	که	که	SCONJ	SUBR	_	12	mark	_	_
 19	رسید	رسید#رس	VERB	V_ACT	_	12	conj	_	SpaceAfter=No
 20	،	،	PUNCT	PUNC	_	19	punct	_	_
-21	مردد	مردد	ADJ	ADJ_AJP	_	0	root	_	_
-22	ماند	ماند#مان	VERB	V_ACT	_	21	cop	_	_
+21	مردد	مردد	ADJ	ADJ_AJP	_	22	xcomp	_	_
+22	ماند	ماند#مان	VERB	V_ACT	_	0	root	_	_
 23	که	که	SCONJ	SUBR	_	25	mark	_	_
 24	چه	چه	PRON	PR_INTG	_	25	obj	_	_
 25	کند	کرد#کن	VERB	V_ACT	_	21	ccomp	_	SpaceAfter=No
-26	؟	؟	PUNCT	PUNC	_	21	punct	_	_
+26	؟	؟	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s589
 # text = در این نزدیکی‌ها، مردی افغان کفاشی می‌کند.
@@ -11390,14 +11390,14 @@
 3	گواش	گواش	NOUN	N_IANM	_	1	nmod	_	_
 4	سخت	سخت	ADJ	ADJ_AJP	_	0	root	_	_
 5	است	#است	AUX	AUX	_	4	cop	_	_
-6	زیرا	زیرا	SCONJ	SUBR	_	23	mark	_	_
+6	زیرا	زیرا	SCONJ	SUBR	_	25	mark	_	_
 7	اگر	اگر	SCONJ	SUBR	_	13	mark	_	_
 8	قسمتی	قسمت	NOUN	N_IANM	_	18	obj	_	_
 9	را	را	ADP	PART	_	8	advmod	_	_
 10	که	که	SCONJ	SUBR	_	12	mark	_	_
 11	رنگ	رنگ	NOUN	N_IANM	_	12	compound	_	_
 12	زده‌اید	زد#زن	VERB	V_ACT	_	8	acl	_	_
-13	بخواهید	خواست#خواه	VERB	V_ACT	_	23	advcl	_	_
+13	بخواهید	خواست#خواه	VERB	V_ACT	_	25	advcl	_	_
 14-15	رنگش	_	_	_	_	_	_	_	_
 14	رنگ	رنگ	NOUN	N_IANM	_	8	case	_	_
 15	ش	او	PRON	PR_JOPER	_	14	nmod	_	_
@@ -11405,12 +11405,12 @@
 17	تعویض	تعویض	NOUN	N_IANM	_	18	compound	_	_
 18	کنید	کرد#کن	VERB	V_ACT	_	13	ccomp	_	_
 19	گاهی	گاه	NOUN	N_IANM	_	20	advmod	_	_
-20	اوقات	وقت	NOUN	N_IANM	_	23	obl	_	_
-21	رنگ	رنگ	NOUN	N_IANM	_	23	nsubj	_	_
+20	اوقات	وقت	NOUN	N_IANM	_	25	obl	_	_
+21	رنگ	رنگ	NOUN	N_IANM	_	25	nsubj	_	_
 22	بعدی	بعدی	ADJ	ADJ_AJP	_	21	amod	_	_
-23	رنگ	رنگ	NOUN	N_IANM	_	4	advcl	_	_
+23	رنگ	رنگ	NOUN	N_IANM	_	25	xcomp	_	_
 24	مرده	مرده	ADJ	ADJ_AJP	_	23	amod	_	_
-25	درمی‌آید	در#آمد#آ	VERB	V_ACT	_	23	cop	_	SpaceAfter=No
+25	درمی‌آید	در#آمد#آ	VERB	V_ACT	_	4	advcl	_	SpaceAfter=No
 26	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = test-s598
@@ -11475,16 +11475,16 @@
 7	ع	ع	NOUN	N_IANM	_	5	advmod	_	SpaceAfter=No
 8	)	)	PUNCT	PUNC	_	7	punct	_	_
 9	را	را	ADP	POSTP	_	3	case	_	_
-10	خراب	خراب	ADJ	ADJ_AJP	_	16	conj	_	_
-11	و	و	CCONJ	CONJ	_	10	dep	_	_
+10	خراب	خراب	ADJ	ADJ_AJP	_	19	xcomp	_	_
+11	و	و	CCONJ	CONJ	_	19	cc	_	_
 12	به	به	ADP	PREP	_	13	case	_	_
 13	جای	جا	NOUN	N_IANM	_	16	obl	_	_
 14	آن	آن	PRON	PR_DEMON	_	13	nmod	_	_
 15	شخم	شخم	NOUN	N_IANM	_	16	compound	_	_
 16	زده	زد#زن	VERB	V_ACT	_	2	ccomp	_	_
-17	و	و	CCONJ	CONJ	_	10	cc	_	_
-18	زراعت	زراعت	NOUN	N_IANM	_	10	compound	_	_
-19	کردند	کرد#کن	VERB	V_ACT	_	10	cop	_	SpaceAfter=No
+17	و	و	CCONJ	CONJ	_	19	cc	_	_
+18	زراعت	زراعت	NOUN	N_IANM	_	19	compound	_	_
+19	کردند	کرد#کن	VERB	V_ACT	_	16	conj	_	SpaceAfter=No
 20	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = test-s602
@@ -11542,10 +11542,10 @@
 7	مطالبی	مطلب	NOUN	N_IANM	_	10	obj	_	_
 8	را	را	ADP	POSTP	_	7	case	_	_
 9	حاشا	حاشا	NOUN	N_IANM	_	10	compound	_	_
-10	کرده	کرد#کن	VERB	V_ACT	_	12	advcl	_	_
+10	کرده	کرد#کن	VERB	V_ACT	_	13	advcl	_	_
 11	بود	بود#باش	AUX	AUX	_	10	aux	_	_
-12	قرار	قرار	NOUN	N_IANM	_	0	root	_	_
-13	شد	شد#شو	VERB	V_ACT	_	12	cop	_	_
+12	قرار	قرار	NOUN	N_IANM	_	13	xcomp	_	_
+13	شد	شد#شو	VERB	V_ACT	_	0	root	_	_
 14	از	از	ADP	PREP	_	15	case	_	_
 15	او	او	PRON	PR_SEPER	_	28	obl	_	_
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
@@ -11554,22 +11554,22 @@
 19	«	«	PUNCT	PUNC	_	20	punct	_	SpaceAfter=No
 20	ور	ور	PROPN	N_IANM	_	18	nmod	_	_
 21	»	»	PUNCT	PUNC	_	20	punct	_	_
-22	یعنی	یعنی	INTJ	PSUS	_	23	cop	_	_
-23	عبور	عبور	NOUN	N_IANM	_	18	acl	_	_
+22	یعنی	یعنی	INTJ	PSUS	_	18	acl	_	_
+23	عبور	عبور	NOUN	N_IANM	_	22	xcomp	_	_
 24	از	از	ADP	PREP	_	25	case	_	_
 25	آتش	آتش	NOUN	N_IANM	_	23	nmod	_	_
 26	به	به	ADP	PREP	_	27	case	_	_
 27	عمل	عمل	NOUN	N_IANM	_	28	compound	_	_
-28	آید	آمد#آ	VERB	V_ACT	_	12	csubj	_	_
-29	تا	تا	SCONJ	SUBR	_	35	mark	_	_
+28	آید	آمد#آ	VERB	V_ACT	_	13	csubj	_	_
+29	تا	تا	SCONJ	SUBR	_	36	mark	_	_
 30	گناهکار	گناهکار	ADJ	ADJ_AJP	_	31	amod	_	_
-31	بودن	بودن	NOUN	N_IANM	_	35	nsubj	_	_
+31	بودن	بودن	NOUN	N_IANM	_	36	nsubj	_	_
 32	یا	یا	CCONJ	CONJ	_	33	cc	_	_
 33	بی‌گناهی	بی‌گناهی	NOUN	N_IANM	_	31	conj	_	_
 34	آنان	آنان	PRON	PR_SEPER	_	31	nmod	_	_
-35	معلوم	معلوم	ADJ	ADJ_AJP	_	28	advcl	_	_
-36	شود	شد#شو	VERB	V_ACT	_	35	cop	_	SpaceAfter=No
-37	.	.	PUNCT	PUNC	_	12	punct	_	_
+35	معلوم	معلوم	ADJ	ADJ_AJP	_	36	xcomp	_	_
+36	شود	شد#شو	VERB	V_ACT	_	28	advcl	_	SpaceAfter=No
+37	.	.	PUNCT	PUNC	_	13	punct	_	_
 
 # sent_id = test-s605
 # text = پس از زخم خوردن سهراب یل با خنجر رستم، کاووس خدعه کرد و تمام نوشداروها را از سطح دواخانه‌های سیستان جمع کرد.
@@ -11744,11 +11744,11 @@
 8	از	از	ADP	PREP	_	9	case	_	_
 9	تنگناهای	تنگنا	NOUN	N_IANM	_	28	obl	_	_
 10	دره‌ای	دره	NOUN	N_IANM	_	9	nmod	_	_
-11	که	که	SCONJ	SUBR	_	14	mark	_	_
-12	آنان	آنان	PRON	PR_SEPER	_	14	obj	_	_
+11	که	که	SCONJ	SUBR	_	15	mark	_	_
+12	آنان	آنان	PRON	PR_SEPER	_	15	obj	_	_
 13	را	را	ADP	POSTP	_	12	case	_	_
-14	محصور	محصور	ADJ	ADJ_AJP	_	10	acl	_	_
-15	ساخته	ساخت#ساز	VERB	V_ACT	_	14	cop	_	_
+14	محصور	محصور	ADJ	ADJ_AJP	_	15	xcomp	_	_
+15	ساخته	ساخت#ساز	VERB	V_ACT	_	10	acl	_	_
 16	به	به	ADP	PREP	_	17	case	_	_
 17	سوی	سو	NOUN	N_IANM	_	28	obl	_	_
 18	صحراهای	صحرا	NOUN	N_IANM	_	17	nmod	_	_
@@ -12028,13 +12028,13 @@
 17	تفنن	تفنن	NOUN	N_IANM	_	19	compound	_	_
 18	خواهد	خواست#خواه	AUX	AUX	_	19	aux	_	_
 19	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	_
-20	و	و	CCONJ	CONJ	_	24	cc	_	_
-21	خود	خود	PRON	PR_CREFX	_	24	nsubj	_	_
+20	و	و	CCONJ	CONJ	_	26	cc	_	_
+21	خود	خود	PRON	PR_CREFX	_	26	nsubj	_	_
 22	این	این	DET	PREM_DEMAJ	_	23	det	_	_
 23	درس	درس	NOUN	N_IANM	_	21	nmod	_	_
-24	موجب	موجب	NOUN	N_IANM	_	19	conj	_	_
+24	موجب	موجب	NOUN	N_IANM	_	26	xcomp	_	_
 25	خواهد	خواست#خواه	AUX	AUX	_	26	aux	_	_
-26	گردید	گردید#گرد	VERB	V_ACT	_	24	cop	_	_
+26	گردید	گردید#گرد	VERB	V_ACT	_	19	conj	_	_
 27	که	که	SCONJ	SUBR	_	24	acl	_	_
 28	بیشتر	بیش	ADJ	ADJ_AJCM	_	32	advmod	_	_
 29	به	به	ADP	PREP	_	30	case	_	_
@@ -12046,7 +12046,7 @@
 35	دانش	دانش	NOUN	N_IANM	_	37	obl	_	_
 36	خود	خود	PRON	PR_CREFX	_	35	nmod	_	_
 37	بیفزاید	افزود#افزا	VERB	V_ACT	_	32	conj	_	SpaceAfter=No
-38	.	.	PUNCT	PUNC	_	24	punct	_	_
+38	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s625
 # text = حوزه‌های امنیتی فرامنطقه‌ای و دامنهٔ نفوذ قدرت‌های بزرگ در کشورهای اروپای مرکزی را ارزیابی کرده و واقعیت‌های امر را به طور شفاف تبیین ساخته بود.
@@ -12141,18 +12141,18 @@
 # text = با تمام کردن انواع نعمت‌ها به متقیان آنها را برای حوریان زوج قرار دادیم که در آخرت آنها را تزویج خواهند کرد.
 1	با	با	ADP	PREP	_	3	case	_	_
 2	تمام	تمام	NOUN	N_IANM	_	3	compound	_	_
-3	کردن	کردن	NOUN	N_IANM	_	12	obl	_	_
+3	کردن	کردن	NOUN	N_IANM	_	14	obl	_	_
 4	انواع	نوع	NOUN	N_IANM	_	3	nmod	_	_
 5	نعمت‌ها	نعمت	NOUN	N_IANM	_	4	nmod	_	_
 6	به	به	ADP	PREP	_	7	case	_	_
 7	متقیان	متقی	NOUN	N_ANM	_	3	nmod	_	_
-8	آنها	آنها	PRON	PR_SEPER	_	12	obj	_	_
+8	آنها	آنها	PRON	PR_SEPER	_	14	obj	_	_
 9	را	را	ADP	POSTP	_	8	case	_	_
 10	برای	برای	ADP	PREP	_	11	case	_	_
-11	حوریان	حوری	NOUN	N_ANM	_	12	obl	_	_
-12	زوج	زوج	ADJ	ADJ_AJP	_	0	root	_	_
-13	قرار	قرار	NOUN	N_IANM	_	12	compound	_	_
-14	دادیم	داد#ده	VERB	V_ACT	_	12	cop	_	_
+11	حوریان	حوری	NOUN	N_ANM	_	14	obl	_	_
+12	زوج	زوج	ADJ	ADJ_AJP	_	14	xcomp	_	_
+13	قرار	قرار	NOUN	N_IANM	_	14	compound	_	_
+14	دادیم	داد#ده	VERB	V_ACT	_	0	root	_	_
 15	که	که	SCONJ	SUBR	_	22	mark	_	_
 16	در	در	ADP	PREP	_	17	case	_	_
 17	آخرت	آخرت	NOUN	N_IANM	_	22	obl	_	_
@@ -12160,8 +12160,8 @@
 19	را	را	ADP	POSTP	_	18	case	_	_
 20	تزویج	تزویج	NOUN	N_IANM	_	22	compound	_	_
 21	خواهند	خواست#خواه	AUX	AUX	_	22	aux	_	_
-22	کرد	کرد#کن	VERB	V_ACT	_	12	advcl	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	12	punct	_	_
+22	کرد	کرد#کن	VERB	V_ACT	_	14	advcl	_	SpaceAfter=No
+23	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s629
 # text = خدا از دل شما آگاه است سعی نکنید حق دیگری را تضییع کنید.
@@ -12169,7 +12169,7 @@
 2	از	از	ADP	PREP	_	3	case	_	_
 3	دل	دل	NOUN	N_IANM	_	5	obl	_	_
 4	شما	شما	PRON	PR_SEPER	_	3	nmod	_	_
-5	آگاه	آگاه	ADJ	ADJ_AJP	_	8	root	_	_
+5	آگاه	آگاه	ADJ	ADJ_AJP	_	8	vocative	_	_
 6	است	#است	AUX	AUX	_	5	cop	_	_
 7	سعی	سعی	NOUN	N_IANM	_	8	compound	_	_
 8	نکنید	کرد#کن	VERB	V_ACT	_	0	root	_	_
@@ -12281,23 +12281,23 @@
 
 # sent_id = test-s635
 # text = ابتدا برای هر پره پیچ و مهره‌های دستگاه را باز کرده و پرهٔ مسطح را جایگذاری می‌کنیم.
-1	ابتدا	ابتدا	NOUN	N_IANM	_	10	obl	_	_
+1	ابتدا	ابتدا	NOUN	N_IANM	_	11	obl	_	_
 2	برای	برای	ADP	PREP	_	4	case	_	_
 3	هر	هر	DET	PREM_AMBAJ	_	4	det	_	_
-4	پره	پره	NOUN	N_IANM	_	10	obl	_	_
-5	پیچ	پیچ	NOUN	N_IANM	_	10	obj	_	_
+4	پره	پره	NOUN	N_IANM	_	11	obl	_	_
+5	پیچ	پیچ	NOUN	N_IANM	_	11	obj	_	_
 6	و	و	CCONJ	CONJ	_	7	cc	_	_
 7	مهره‌های	مهره	NOUN	N_IANM	_	5	conj	_	_
 8	دستگاه	دستگاه	NOUN	N_IANM	_	5	nmod	_	_
 9	را	را	ADP	POSTP	_	5	case	_	_
-10	باز	باز	ADJ	ADJ_AJP	_	0	root	_	_
-11	کرده	کرد#کن	VERB	V_ACT	_	10	cop	_	_
+10	باز	باز	ADJ	ADJ_AJP	_	11	xcomp	_	_
+11	کرده	کرد#کن	VERB	V_ACT	_	0	root	_	_
 12	و	و	CCONJ	CONJ	_	17	cc	_	_
 13	پرهٔ	پره	NOUN	N_IANM	_	17	obj	_	_
 14	مسطح	مسطح	ADJ	ADJ_AJP	_	13	amod	_	_
 15	را	را	ADP	POSTP	_	13	case	_	_
 16	جایگذاری	جایگذاری	NOUN	N_IANM	_	17	compound	_	_
-17	می‌کنیم	کرد#کن	VERB	V_ACT	_	10	conj	_	SpaceAfter=No
+17	می‌کنیم	کرد#کن	VERB	V_ACT	_	11	conj	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s636
@@ -12689,7 +12689,7 @@
 1	هیچ	هیچ	DET	PREM_AMBAJ	_	2	det	_	_
 2	طفلی	طفل	NOUN	N_ANM	_	4	nsubj	_	_
 3	ذاتاً	ذاتاً	ADV	ADV_SADV	_	4	advmod	_	_
-4	فاسد	فاسد	ADJ	ADJ_AJP	_	12	root	_	_
+4	فاسد	فاسد	ADJ	ADJ_AJP	_	12	vocative	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
 6	تبهکار	تبهکار	NOUN	N_IANM	_	4	conj	_	_
 7	نمی‌باشد	بود#باش	AUX	AUX	_	4	cop	_	SpaceAfter=No
@@ -12697,7 +12697,7 @@
 9	بلکه	بلکه	ADV	ADV_SADV	_	12	advmod	_	_
 10	فطرت	فطرت	NOUN	N_IANM	_	12	nsubj	_	_
 11	او	او	PRON	PR_SEPER	_	10	nmod	_	_
-12	پاک	پاک	ADJ	ADJ_AJP	_	20	root	_	_
+12	پاک	پاک	ADJ	ADJ_AJP	_	20	vocative	_	_
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	سالم	سالم	ADJ	ADJ_AJP	_	12	conj	_	_
 15	و	و	CCONJ	CONJ	_	17	cc	_	_
@@ -12728,17 +12728,17 @@
 # text = هر زمان موانع و مشکلات حوزهٔ فرهنگ مرتفع شود و سیر صعودی یابد دیگر حوزه‌ها نیز به تبع آن رشد و ترقی خواهند داشت.
 1	هر	هر	DET	PREM_AMBAJ	_	2	det	_	_
 2	زمان	زمان	NOUN	N_IANM	_	24	obl	_	_
-3	موانع	مانع	NOUN	N_IANM	_	8	nsubj	_	_
+3	موانع	مانع	NOUN	N_IANM	_	9	nsubj	_	_
 4	و	و	CCONJ	CONJ	_	5	cc	_	_
 5	مشکلات	مشکل	NOUN	N_IANM	_	3	conj	_	_
 6	حوزهٔ	حوزه	NOUN	N_IANM	_	3	nmod	_	_
 7	فرهنگ	فرهنگ	NOUN	N_IANM	_	6	nmod	_	_
-8	مرتفع	مرتفع	ADJ	ADJ_AJP	_	2	obl	_	_
-9	شود	شد#شو	VERB	V_ACT	_	8	cop	_	_
+8	مرتفع	مرتفع	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	شود	شد#شو	VERB	V_ACT	_	2	obl	_	_
 10	و	و	CCONJ	CONJ	_	13	cc	_	_
 11	سیر	سیر	NOUN	N_IANM	_	13	obj	_	_
 12	صعودی	صعودی	ADJ	ADJ_AJP	_	11	amod	_	_
-13	یابد	یافت#یاب	VERB	V_ACT	_	8	conj	_	_
+13	یابد	یافت#یاب	VERB	V_ACT	_	9	conj	_	_
 14	دیگر	دیگر	ADJ	ADJ_AJP	_	15	amod	_	_
 15	حوزه‌ها	حوزه	NOUN	N_IANM	_	24	obj	_	_
 16	نیز	نیز	ADV	ADV_SADV	_	15	dep	_	_
@@ -12884,7 +12884,7 @@
 3	تا	تا	NOUN	N_IANM	_	5	obl	_	_
 4	مطلب	مطلب	NOUN	N_IANM	_	3	nmod	_	_
 5-6	بروزم	_	_	_	_	_	_	_	SpaceAfter=No
-5	بروز	بروز	ADJ	ADJ_AJP	_	10	root	_	_
+5	بروز	بروز	ADJ	ADJ_AJP	_	10	vocative	_	_
 6	م	#هست	AUX	AUX	_	5	cop	_	_
 7	،	،	PUNCT	PUNC	_	5	punct	_	_
 8	لطفاً	لطفاً	ADV	ADV_SADV	_	10	advmod	_	_
@@ -13136,13 +13136,13 @@
 9	م	#هست	AUX	AUX	_	8	cop	_	_
 10-11	برایشان	_	_	_	_	_	_	_	_
 10	برای	برای	ADP	PREP	_	11	case	_	_
-11	شان	آنها	PRON	PR_JOPER	_	15	obl	_	_
+11	شان	آنها	PRON	PR_JOPER	_	16	obl	_	_
 12-13	جانم	_	_	_	_	_	_	_	_
-12	جان	جان	NOUN	N_IANM	_	15	obj	_	_
+12	جان	جان	NOUN	N_IANM	_	16	obj	_	_
 13	م	من	PRON	PR_JOPER	_	12	nmod	_	_
 14	را	را	ADP	POSTP	_	12	case	_	_
-15	فدا	فدا	ADJ	ADJ_AJP	_	8	ccomp	_	_
-16	کنم	کرد#کن	VERB	V_ACT	_	15	cop	_	_
+15	فدا	فدا	ADJ	ADJ_AJP	_	16	xcomp	_	_
+16	کنم	کرد#کن	VERB	V_ACT	_	8	ccomp	_	_
 17	از	از	ADP	PREP	_	19	case	_	_
 18	این	این	DET	PREM_DEMAJ	_	19	det	_	_
 19	مرد	مرد	NOUN	N_ANM	_	23	obl	_	_
@@ -13269,7 +13269,7 @@
 1	درخت	درخت	NOUN	N_IANM	_	4	nsubj	_	_
 2	تنومند	تنومند	ADJ	ADJ_AJP	_	1	amod	_	_
 3	امسال	امسال	NOUN	N_IANM	_	4	obl	_	_
-4	پربارتر	پربار	ADJ	ADJ_AJCM	_	8	root	_	_
+4	پربارتر	پربار	ADJ	ADJ_AJCM	_	8	vocative	_	_
 5	از	از	ADP	PREP	_	6	case	_	_
 6	همیشه	همیشه	NOUN	N_IANM	_	4	obl	_	_
 7	بود	بود#باش	AUX	AUX	_	4	cop	_	_
@@ -13369,16 +13369,16 @@
 
 # sent_id = test-s695
 # text = مدیر مجموعهٔ فوق سر جایش که ماند، همهٔ کسانی را که زیرآبش را زده بودند قلع و قمع کرد.
-1	مدیر	مدیر	NOUN	N_ANM	_	5	nsubj	_	_
+1	مدیر	مدیر	NOUN	N_ANM	_	8	nsubj	_	_
 2	مجموعهٔ	مجموعه	NOUN	N_IANM	_	1	nmod	_	_
 3	فوق	فوق	ADJ	ADJ_AJP	_	2	amod	_	_
 4	سر	سر	ADP	PREP	_	5	case	_	_
 5-6	جایش	_	_	_	_	_	_	_	_
-5	جا	جا	NOUN	N_IANM	_	0	root	_	_
+5	جا	جا	NOUN	N_IANM	_	8	xcomp	_	_
 6	یش	او	PRON	PR_JOPER	_	5	nmod	_	_
 7	که	که	PART	PART	_	5	advmod	_	_
-8	ماند	ماند#مان	VERB	V_ACT	_	5	cop	_	SpaceAfter=No
-9	،	،	PUNCT	PUNC	_	5	punct	_	_
+8	ماند	ماند#مان	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	همهٔ	همه	NOUN	N_ANM	_	22	obj	_	_
 11	کسانی	کس	NOUN	N_ANM	_	10	nmod	_	_
 12	را	را	ADP	POSTP	_	10	case	_	_
@@ -13392,7 +13392,7 @@
 19	قلع	قلع	NOUN	N_IANM	_	22	compound	_	_
 20	و	و	CCONJ	CONJ	_	21	cc	_	_
 21	قمع	قمع	NOUN	N_IANM	_	19	conj	_	_
-22	کرد	کرد#کن	VERB	V_ACT	_	5	conj	_	SpaceAfter=No
+22	کرد	کرد#کن	VERB	V_ACT	_	8	conj	_	SpaceAfter=No
 23	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s696
@@ -13418,7 +13418,7 @@
 4	»	»	PUNCT	PUNC	_	2	punct	_	_
 5	به	به	ADP	PREP	_	7	case	_	_
 6	این	این	DET	PREM_DEMAJ	_	7	det	_	_
-7	مفهوم	مفهوم	NOUN	N_IANM	_	14	root	_	_
+7	مفهوم	مفهوم	NOUN	N_IANM	_	14	vocative	_	_
 8	که	که	SCONJ	SUBR	_	11	mark	_	_
 9	من	من	PRON	PR_SEPER	_	11	nsubj	_	_
 10	سریال‌سازی	سریال‌سازی	NOUN	N_IANM	_	11	compound	_	_
@@ -13934,10 +13934,10 @@
 
 # sent_id = test-s730
 # text = سوسن حاجی‌پور در دور بعدی خود با برندهٔ نمایندگان هلند و سوئیس هم‌مصاف خواهد شد.
-1	سوسن	سوسن	PROPN	N_ANM	_	13	nsubj	_	_
+1	سوسن	سوسن	PROPN	N_ANM	_	15	nsubj	_	_
 2	حاجی‌پور	حاجی‌پور	PROPN	N_IANM	_	1	flat	_	_
 3	در	در	ADP	PREP	_	4	case	_	_
-4	دور	دور	NOUN	N_IANM	_	13	obl	_	_
+4	دور	دور	NOUN	N_IANM	_	15	obl	_	_
 5	بعدی	بعدی	ADJ	ADJ_AJP	_	4	amod	_	_
 6	خود	خود	PRON	PR_CREFX	_	4	nmod	_	_
 7	با	با	ADP	PREP	_	8	case	_	_
@@ -13946,10 +13946,10 @@
 10	هلند	هلند	PROPN	N_IANM	_	9	nmod	_	_
 11	و	و	CCONJ	CONJ	_	12	cc	_	_
 12	سوئیس	سوئیس	PROPN	N_IANM	_	10	conj	_	_
-13	هم‌مصاف	هم‌مصاف	ADJ	ADJ_AJP	_	0	root	_	_
+13	هم‌مصاف	هم‌مصاف	ADJ	ADJ_AJP	_	15	xcomp	_	_
 14	خواهد	خواست#خواه	AUX	AUX	_	15	aux	_	_
-15	شد	کرد#کن	VERB	V_ACT	_	13	cop	_	SpaceAfter=No
-16	.	.	PUNCT	PUNC	_	13	punct	_	_
+15	شد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+16	.	.	PUNCT	PUNC	_	15	punct	_	_
 
 # sent_id = test-s731
 # text = ماهی را به انواع مختلف مانند «دودی» و «شور» عمل‌آوری می‌کنند.
@@ -14068,14 +14068,14 @@
 17	افزودهٔ	افزوده	ADJ	ADJ_AJP	_	16	amod	_	_
 18	بالایی	بالا	ADJ	ADJ_AJP	_	16	amod	_	_
 19	دارد	داشت#دار	VERB	V_ACT	_	12	ccomp	_	_
-20	و	و	CCONJ	CONJ	_	26	cc	_	_
+20	و	و	CCONJ	CONJ	_	27	cc	_	_
 21	باید	بایست#باید	AUX	V_MODL	_	27	aux	_	_
 22	این	این	DET	PREM_DEMAJ	_	23	det	_	_
-23	امر	امر	NOUN	N_IANM	_	26	nsubj	_	_
+23	امر	امر	NOUN	N_IANM	_	27	nsubj	_	_
 24	در	در	ADP	PREP	_	25	case	_	_
-25	استان	استان	NOUN	N_IANM	_	26	obl	_	_
-26	محقق	محقق	NOUN	N_ANM	_	19	conj	_	_
-27	شود	شد#شو	VERB	V_ACT	_	26	cop	_	SpaceAfter=No
+25	استان	استان	NOUN	N_IANM	_	27	obl	_	_
+26	محقق	محقق	NOUN	N_ANM	_	27	xcomp	_	_
+27	شود	شد#شو	VERB	V_ACT	_	19	conj	_	SpaceAfter=No
 28	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s738
@@ -14115,7 +14115,7 @@
 5	بشری	بشری	ADJ	ADJ_AJP	_	4	amod	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	5	punct	_	_
 7	مشکل	مشکل	NOUN	N_IANM	_	8	nsubj	_	_
-8	این	این	PRON	PR_DEMON	_	19	root	_	_
+8	این	این	PRON	PR_DEMON	_	19	vocative	_	_
 9	است	#است	AUX	AUX	_	8	cop	_	_
 10	که	که	SCONJ	SUBR	_	17	mark	_	_
 11	اول	اول	ADJ	ADJ_AJP	_	17	advmod	_	_
@@ -14146,14 +14146,14 @@
 2	ما	ما	PRON	PR_SEPER	_	1	nmod	_	_
 3	را	را	ADP	POSTP	_	1	case	_	_
 4	اگر	اگر	SCONJ	SUBR	_	5	mark	_	_
-5	بدهند	داد#ده	VERB	V_ACT	_	6	advcl	_	_
-6	بیشتر	بیش	ADJ	ADJ_AJCM	_	0	root	_	_
+5	بدهند	داد#ده	VERB	V_ACT	_	11	advcl	_	_
+6	بیشتر	بیش	ADJ	ADJ_AJCM	_	11	xcomp	_	_
 7	و	و	CCONJ	CONJ	_	8	cc	_	_
 8	بهتر	به	ADJ	ADJ_AJCM	_	6	conj	_	_
-9	فرمایش	فرمایش	NOUN	N_IANM	_	6	compound	_	_
+9	فرمایش	فرمایش	NOUN	N_IANM	_	11	compound	_	_
 10	خواهیم	خواست#خواه	AUX	AUX	_	11	aux	_	_
-11	کرد	کرد#کن	VERB	V_ACT	_	6	cop	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	_	6	punct	_	_
+11	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s742
 # text = همهٔ پیامبران الهی این حقیقت را به روشنی فریاد کرده‌اند.
@@ -14187,24 +14187,24 @@
 14	،	،	PUNCT	PUNC	_	13	punct	_	_
 15	دشمن	دشمن	NOUN	N_ANM	_	16	nsubj	_	_
 16	نمی‌تواند	توانست#توان	VERB	V_ACT	_	8	conj	_	_
-17	مردم	مردم	NOUN	N_ANM	_	27	obj	_	_
+17	مردم	مردم	NOUN	N_ANM	_	28	obj	_	_
 18	را	را	ADP	POSTP	_	17	case	_	_
 19	با	با	ADP	PREP	_	20	case	_	_
-20	شایعه‌پراکنی	شایعه‌پراکنی	NOUN	N_IANM	_	27	obl	_	_
+20	شایعه‌پراکنی	شایعه‌پراکنی	NOUN	N_IANM	_	28	obl	_	_
 21	و	و	CCONJ	CONJ	_	22	cc	_	_
 22	ایجاد	ایجاد	NOUN	N_IANM	_	20	conj	_	_
 23	یأس	یأس	NOUN	N_IANM	_	22	nmod	_	_
 24	از	از	ADP	PREP	_	25	case	_	_
 25	حکومت	حکومت	NOUN	N_IANM	_	27	obl	_	_
 26	اسلامی	اسلامی	ADJ	ADJ_AJP	_	25	amod	_	_
-27	ناامید	ناامید	ADJ	ADJ_AJP	_	16	ccomp	_	_
-28	کند	کرد#کن	VERB	V_ACT	_	27	cop	_	_
+27	ناامید	ناامید	ADJ	ADJ_AJP	_	28	xcomp	_	_
+28	کند	کرد#کن	VERB	V_ACT	_	16	ccomp	_	_
 29	و	و	CCONJ	CONJ	_	34	cc	_	_
 30	از	از	ADP	PREP	_	31	case	_	_
 31	اطراف	طرف	NOUN	N_IANM	_	34	obl	_	_
 32	ولایت	ولایت	NOUN	N_IANM	_	31	nmod	_	_
 33	فاصله	فاصله	NOUN	N_IANM	_	34	compound	_	_
-34	بدهد	داد#ده	VERB	V_ACT	_	27	conj	_	SpaceAfter=No
+34	بدهد	داد#ده	VERB	V_ACT	_	28	conj	_	SpaceAfter=No
 35	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s744
@@ -14248,13 +14248,13 @@
 # sent_id = test-s746
 # text = گاهی اوقات ارزش‌های کیفی آن قدر مهم می‌شوند که معیارهای کمی خود را به ثریا هم برسانند فایده نخواهد کرد.
 1	گاهی	گاهی	DET	PREM_AMBAJ	_	2	det	_	_
-2	اوقات	وقت	NOUN	N_IANM	_	7	nsubj	_	_
-3	ارزش‌های	ارزش	NOUN	N_IANM	_	7	nsubj	_	_
+2	اوقات	وقت	NOUN	N_IANM	_	8	nsubj	_	_
+3	ارزش‌های	ارزش	NOUN	N_IANM	_	8	nsubj	_	_
 4	کیفی	کیفی	ADJ	ADJ_AJP	_	3	amod	_	_
 5	آن	آن	DET	PREM_DEMAJ	_	6	det	_	_
-6	قدر	قدر	NOUN	N_IANM	_	7	obl	_	_
-7	مهم	مهم	ADJ	ADJ_AJP	_	0	root	_	_
-8	می‌شوند	شد#شو	VERB	V_ACT	_	7	cop	_	_
+6	قدر	قدر	NOUN	N_IANM	_	8	obl	_	_
+7	مهم	مهم	ADJ	ADJ_AJP	_	8	xcomp	_	_
+8	می‌شوند	شد#شو	VERB	V_ACT	_	0	root	_	_
 9	که	که	SCONJ	SUBR	_	20	mark	_	_
 10	معیارهای	معیار	NOUN	N_IANM	_	20	nsubj	_	_
 11	کمی	کمی	ADV	ADV_SADV	_	10	amod	_	_
@@ -14267,7 +14267,7 @@
 18	فایده	فایده	NOUN	N_IANM	_	20	compound	_	_
 19	نخواهد	خواست#خواه	AUX	AUX	_	20	aux	_	_
 20	کرد	کرد#کن	VERB	V_ACT	_	6	acl	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	7	punct	_	_
+21	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = test-s747
 # text = در آخر وقتی موهایم را باز کرد خوب فر نخورده بود.
@@ -14275,11 +14275,11 @@
 2	آخر	آخر	NOUN	N_IANM	_	11	obl	_	_
 3	وقتی	وقت	NOUN	N_IANM	_	11	obl	_	_
 4-5	موهایم	_	_	_	_	_	_	_	_
-4	موها	مو	NOUN	N_IANM	_	7	obj	_	_
+4	موها	مو	NOUN	N_IANM	_	8	obj	_	_
 5	یم	من	PRON	PR_JOPER	_	4	nmod	_	_
 6	را	را	ADP	POSTP	_	4	case	_	_
-7	باز	باز	NOUN	N_IANM	_	3	acl	_	_
-8	کرد	کرد#کن	VERB	V_ACT	_	7	cop	_	_
+7	باز	باز	NOUN	N_IANM	_	8	xcomp	_	_
+8	کرد	کرد#کن	VERB	V_ACT	_	3	acl	_	_
 9	خوب	خوب	ADJ	ADJ_AJP	_	11	advmod	_	_
 10	فر	فر	NOUN	N_IANM	_	11	compound	_	_
 11	نخورده	خورد#خور	VERB	V_ACT	_	0	root	_	_
@@ -14582,19 +14582,19 @@
 6	و	و	CCONJ	CONJ	_	7	cc	_	_
 7	سیما	سیما	PROPN	N_IANM	_	5	conj	_	_
 8	برای	برای	ADP	PREP	_	9	case	_	_
-9	موفقیت	موفقیت	NOUN	N_IANM	_	18	obl	_	_
+9	موفقیت	موفقیت	NOUN	N_IANM	_	19	obl	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
 11	خارج	خارج	NOUN	N_IANM	_	9	nmod	_	_
-12	ابتدا	ابتدا	ADV	ADV_SADV	_	18	advmod	_	_
+12	ابتدا	ابتدا	ADV	ADV_SADV	_	19	advmod	_	_
 13	باید	بایست#باید	AUX	V_MODL	_	19	aux	_	_
 14-15	عملکردش	_	_	_	_	_	_	_	_
-14	عملکرد	عملکرد	NOUN	N_IANM	_	18	nsubj	_	_
+14	عملکرد	عملکرد	NOUN	N_IANM	_	19	nsubj	_	_
 15	ش	او	PRON	PR_JOPER	_	14	nmod	_	_
 16	در	در	ADP	PREP	_	17	case	_	_
 17	داخل	داخل	NOUN	N_IANM	_	18	obl	_	_
-18	مقبول	مقبول	ADJ	ADJ_AJP	_	4	ccomp	_	_
-19	بیفتد	افتاد#افت	VERB	V_ACT	_	18	cop	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	18	punct	_	_
+18	مقبول	مقبول	ADJ	ADJ_AJP	_	19	xcomp	_	_
+19	بیفتد	افتاد#افت	VERB	V_ACT	_	4	ccomp	_	SpaceAfter=No
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s766
 # text = گرچه نوشتن و سخن گفتن در این خصوص امری است که اخلاقاً توجیهی ندارد، لیکن بایستی این واقعیت را ملحوظ داشت.
@@ -14672,7 +14672,7 @@
 3	(	(	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
 4	ره	ره	NOUN	N_IANM	_	2	advmod	_	SpaceAfter=No
 5	)	)	PUNCT	PUNC	_	4	punct	_	_
-6	عاشق	عاشق	ADJ	ADJ_AJP	_	9	root	_	_
+6	عاشق	عاشق	ADJ	ADJ_AJP	_	9	vocative	_	_
 7	جوانان	جوان	NOUN	N_ANM	_	6	obl	_	_
 8	بود	بود#باش	AUX	AUX	_	6	cop	_	_
 9	و	و	CCONJ	CONJ	_	0	root	_	_
@@ -14731,11 +14731,11 @@
 7	یافته	یافت#یاب	VERB	V_ACT	_	0	root	_	_
 8	است	#است	AUX	AUX	_	7	aux	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	7	punct	_	_
-10	پس	پس	ADV	ADV_SADV	_	28	advmod	_	_
-11	آن	آن	PRON	PR_DEMON	_	28	obj	_	_
+10	پس	پس	ADV	ADV_SADV	_	30	advmod	_	_
+11	آن	آن	PRON	PR_DEMON	_	30	obj	_	_
 12	را	را	ADP	POSTP	_	11	case	_	_
 13	بر	بر	ADP	PREP	_	14	case	_	_
-14	کسانی	کس	NOUN	N_ANM	_	28	obl	_	_
+14	کسانی	کس	NOUN	N_ANM	_	30	obl	_	_
 15	که	که	SCONJ	SUBR	_	14	acl	_	_
 16	پرهیزگاری	پرهیزگاری	NOUN	N_IANM	_	17	compound	_	_
 17	می‌کنند	کرد#کن	VERB	V_ACT	_	15	acl	_	_
@@ -14749,10 +14749,10 @@
 25	ایمان	ایمان	NOUN	N_IANM	_	26	compound	_	_
 26	می‌آورند	آورد#آور	VERB	V_ACT	_	17	conj	_	SpaceAfter=No
 27	،	،	PUNCT	PUNC	_	26	punct	_	_
-28	مقرر	مقرر	ADJ	ADJ_AJP	_	7	conj	_	_
+28	مقرر	مقرر	ADJ	ADJ_AJP	_	30	xcomp	_	_
 29	خواهم	خواست#خواه	AUX	AUX	_	30	aux	_	_
-30	داشت	داشت#دار	VERB	V_ACT	_	28	cop	_	SpaceAfter=No
-31	.	.	PUNCT	PUNC	_	28	punct	_	_
+30	داشت	داشت#دار	VERB	V_ACT	_	7	conj	_	SpaceAfter=No
+31	.	.	PUNCT	PUNC	_	30	punct	_	_
 
 # sent_id = test-s773
 # text = 12 میلیون روستایی به شهرها مهاجرت کرده‌اند.
@@ -14797,9 +14797,9 @@
 # text = پس از تحقیق می‌توان ضوابط علمی که برای تبلیغات بازرگانی ویژهٔ کودکان تهیه شده است را در اختیار شرکت‌هایی که درخواست پخش تبلیغاتشان را دارند گذاشت و در صورت عدم اجرای آنها از پخش تبلیغ ممانعت ورزید.
 1	پس	پس	ADP	PREP	_	3	case	_	_
 2	از	از	ADP	PREP	_	1	fixed	_	_
-3	تحقیق	تحقیق	NOUN	N_IANM	_	18	obl	_	_
+3	تحقیق	تحقیق	NOUN	N_IANM	_	27	obl	_	_
 4	می‌توان	#توان	AUX	V_MODL	_	27	aux	_	_
-5	ضوابط	ضابطه	NOUN	N_IANM	_	18	obj	_	_
+5	ضوابط	ضابطه	NOUN	N_IANM	_	27	obj	_	_
 6	علمی	علمی	ADJ	ADJ_AJP	_	5	amod	_	_
 7	که	که	SCONJ	SUBR	_	14	mark	_	_
 8	برای	برای	ADP	PREP	_	9	case	_	_
@@ -14812,7 +14812,7 @@
 15	است	#است	AUX	AUX	_	14	aux	_	_
 16	را	را	ADP	POSTP	_	5	case	_	_
 17	در	در	ADP	PREP	_	18	case	_	_
-18	اختیار	اختیار	NOUN	N_IANM	_	0	root	_	_
+18	اختیار	اختیار	NOUN	N_IANM	_	27	xcomp	_	_
 19	شرکت‌هایی	شرکت	NOUN	N_IANM	_	18	nmod	_	_
 20	که	که	SCONJ	SUBR	_	26	mark	_	_
 21	درخواست	درخواست	NOUN	N_IANM	_	26	obj	_	_
@@ -14822,7 +14822,7 @@
 24	شان	آنها	PRON	PR_JOPER	_	23	nmod	_	_
 25	را	را	ADP	POSTP	_	21	case	_	_
 26	دارند	داشت#دار	VERB	V_ACT	_	19	acl	_	_
-27	گذاشت	گذاشت#گذار	VERB	V_ACT	_	18	cop	_	_
+27	گذاشت	گذاشت#گذار	VERB	V_ACT	_	0	root	_	_
 28	و	و	CCONJ	CONJ	_	38	cc	_	_
 29	در	در	ADP	PREP	_	30	case	_	_
 30	صورت	صورت	NOUN	N_IANM	_	38	obl	_	_
@@ -14833,8 +14833,8 @@
 35	پخش	پخش	NOUN	N_IANM	_	38	obl	_	_
 36	تبلیغ	تبلیغ	NOUN	N_IANM	_	35	nmod	_	_
 37	ممانعت	ممانعت	NOUN	N_IANM	_	38	compound	_	_
-38	ورزید	ورزید#ورز	VERB	V_ACT	_	18	conj	_	SpaceAfter=No
-39	.	.	PUNCT	PUNC	_	18	punct	_	_
+38	ورزید	ورزید#ورز	VERB	V_ACT	_	27	conj	_	SpaceAfter=No
+39	.	.	PUNCT	PUNC	_	27	punct	_	_
 
 # sent_id = test-s776
 # text = هر کسی زیبایی قرآن را درک کند، به زیبایی با خدا مناجات خواهد کرد.
@@ -15017,14 +15017,14 @@
 32	به	به	ADP	PREP	_	33	case	_	_
 33	بهشت	بهشت	NOUN	N_IANM	_	34	obl	_	_
 34	می‌رساند	رساند#رسان	VERB	V_ACT	_	24	conj	_	_
-35	بلکه	بلکه	ADV	ADV_SADV	_	41	advmod	_	_
+35	بلکه	بلکه	ADV	ADV_SADV	_	42	advmod	_	_
 36	به	به	ADP	PREP	_	37	case	_	_
 37	جمال	جمال	NOUN	N_IANM	_	41	obl	_	_
 38	جمیل	جمیل	ADJ	ADJ_AJP	_	37	amod	_	_
 39	حق	حق	NOUN	N_IANM	_	37	nmod	_	_
 40	نیز	نیز	ADV	ADV_SADV	_	37	advmod	_	_
-41	نائل	نائل	ADJ	ADJ_AJP	_	24	conj	_	_
-42	می‌کند	کرد#کن	VERB	V_ACT	_	41	cop	_	SpaceAfter=No
+41	نائل	نائل	ADJ	ADJ_AJP	_	42	xcomp	_	_
+42	می‌کند	کرد#کن	VERB	V_ACT	_	24	conj	_	SpaceAfter=No
 43	.	.	PUNCT	PUNC	_	24	punct	_	_
 
 # sent_id = test-s788
@@ -15040,11 +15040,11 @@
 9	نزد	نزد	NOUN	N_IANM	_	11	obl	_	_
 10	من	من	PRON	PR_SEPER	_	9	nmod	_	_
 11	برخیزید	بر#خاست#خیز	VERB	V_ACT	_	5	ccomp	_	_
-12	و	و	CCONJ	CONJ	_	13	cc	_	_
-13	دور	دور	ADJ	ADJ_AJP	_	11	conj	_	_
-14	شوید	شد#شو	VERB	V_ACT	_	13	cop	_	SpaceAfter=No
-15	،	،	PUNCT	PUNC	_	13	punct	_	_
-16	سزاوار	سزاوار	ADJ	ADJ_AJP	_	13	advcl	_	_
+12	و	و	CCONJ	CONJ	_	14	cc	_	_
+13	دور	دور	ADJ	ADJ_AJP	_	14	xcomp	_	_
+14	شوید	شد#شو	VERB	V_ACT	_	11	conj	_	SpaceAfter=No
+15	،	،	PUNCT	PUNC	_	14	punct	_	_
+16	سزاوار	سزاوار	ADJ	ADJ_AJP	_	14	advcl	_	_
 17	نیست	#هست	AUX	AUX	_	16	cop	_	_
 18	نزد	نزد	ADP	PREP	_	19	case	_	_
 19	من	من	PRON	PR_SEPER	_	23	obl	_	_
@@ -15196,11 +15196,11 @@
 15	امیدوار	امیدوار	ADJ	ADJ_AJP	_	13	ccomp	_	_
 16	م	#است	AUX	AUX	_	15	cop	_	_
 17	در	در	ADP	PREP	_	18	case	_	_
-18	سنگری	سنگر	NOUN	N_IANM	_	32	obl	_	_
+18	سنگری	سنگر	NOUN	N_IANM	_	33	obl	_	_
 19	که	که	SCONJ	SUBR	_	21	mark	_	_
 20	قرار	قرار	NOUN	N_IANM	_	21	compound	_	_
 21	دارید	داشت#دار	VERB	V_ACT	_	18	acl	_	_
-22	موجبات	موجب	NOUN	N_IANM	_	32	obj	_	_
+22	موجبات	موجب	NOUN	N_IANM	_	33	obj	_	_
 23	رضایت	رضایت	NOUN	N_IANM	_	22	nmod	_	_
 24	حضرت	حضرت	NOUN	N_ANM	_	23	nmod	_	_
 25	بقیةالله	بقیةالله	PROPN	N_ANM	_	24	nmod	_	_
@@ -15210,11 +15210,11 @@
 29	له	له	NOUN	N_IANM	_	28	advmod	_	_
 30	الفدا	الفدا	NOUN	N_IANM	_	29	advmod	_	_
 31	را	را	ADP	POSTP	_	22	case	_	_
-32	فراهم	فراهم	ADJ	ADJ_AJP	_	15	ccomp	_	_
-33	کنید	کرد#کن	VERB	V_ACT	_	32	cop	_	_
+32	فراهم	فراهم	ADJ	ADJ_AJP	_	33	xcomp	_	_
+33	کنید	کرد#کن	VERB	V_ACT	_	15	ccomp	_	_
 34	و	و	CCONJ	CONJ	_	36	cc	_	_
 35	به	به	ADP	PREP	_	36	case	_	_
-36	دنبال	دنبال	NOUN	N_IANM	_	32	conj	_	_
+36	دنبال	دنبال	NOUN	N_IANM	_	33	conj	_	_
 37	حفظ	حفظ	NOUN	N_IANM	_	36	nmod	_	_
 38	استقلال	استقلال	NOUN	N_IANM	_	37	nmod	_	_
 39	نظام	نظام	PROPN	N_IANM	_	38	nmod	_	_
@@ -15227,7 +15227,7 @@
 46	این	این	DET	PREM_DEMAJ	_	47	det	_	_
 47	خصوص	خصوص	NOUN	N_IANM	_	49	obl	_	_
 48	نقش‌آفرینی	نقش‌آفرینی	NOUN	N_IANM	_	49	compound	_	_
-49	کنید	کرد#کن	VERB	V_ACT	_	32	conj	_	SpaceAfter=No
+49	کنید	کرد#کن	VERB	V_ACT	_	33	conj	_	SpaceAfter=No
 50	.	.	PUNCT	PUNC	_	13	punct	_	_
 
 # sent_id = test-s796
@@ -15243,11 +15243,11 @@
 
 # sent_id = test-s797
 # text = اگر بحث دموکراسی گسترده شود سران ایران ما آن را نهی خواهند کرد.
-1	اگر	اگر	SCONJ	SUBR	_	4	mark	_	_
-2	بحث	بحث	NOUN	N_IANM	_	4	nsubj	_	_
+1	اگر	اگر	SCONJ	SUBR	_	5	mark	_	_
+2	بحث	بحث	NOUN	N_IANM	_	5	nsubj	_	_
 3	دموکراسی	دموکراسی	NOUN	N_IANM	_	2	nmod	_	_
-4	گسترده	گسترده	ADJ	ADJ_AJP	_	13	advcl	_	_
-5	شود	شد#شو	VERB	V_ACT	_	4	cop	_	_
+4	گسترده	گسترده	ADJ	ADJ_AJP	_	5	xcomp	_	_
+5	شود	شد#شو	VERB	V_ACT	_	13	advcl	_	_
 6	سران	سران	NOUN	N_ANM	_	13	nsubj	_	_
 7	ایران	ایران	PROPN	N_IANM	_	6	nmod	_	_
 8	ما	ما	PRON	PR_SEPER	_	7	nmod	_	_
@@ -15334,17 +15334,17 @@
 # text = ایران دیگر ایران سابق نیست، دیگر ملت به حقوق خود واقف شده حق گرفته‌شده از دولت را به خوبی نگاهداری خواهند کرد.
 1	ایران	ایران	PROPN	N_IANM	_	3	nsubj	_	_
 2	دیگر	دیگر	ADJ	ADJ_AJP	_	3	advmod	_	_
-3	ایران	ایران	PROPN	N_IANM	_	23	root	_	_
+3	ایران	ایران	PROPN	N_IANM	_	23	vocative	_	_
 4	سابق	سابق	ADJ	ADJ_AJP	_	3	amod	_	_
 5	نیست	#هست	AUX	AUX	_	3	cop	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	3	punct	_	_
-7	دیگر	دیگر	ADJ	ADJ_AJP	_	12	advmod	_	_
-8	ملت	ملت	NOUN	N_ANM	_	12	nsubj	_	_
+7	دیگر	دیگر	ADJ	ADJ_AJP	_	13	advmod	_	_
+8	ملت	ملت	NOUN	N_ANM	_	13	nsubj	_	_
 9	به	به	ADP	PREP	_	10	case	_	_
 10	حقوق	حق	NOUN	N_IANM	_	12	obl	_	_
 11	خود	خود	PRON	PR_CREFX	_	10	nmod	_	_
-12	واقف	واقف	ADJ	ADJ_AJP	_	0	root	_	_
-13	شده	شد#شو	VERB	V_ACT	_	12	cop	_	_
+12	واقف	واقف	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 14	حق	حق	NOUN	N_IANM	_	23	obj	_	_
 15	گرفته‌شده	گرفته‌شده	ADJ	ADJ_AJP	_	14	amod	_	_
 16	از	از	ADP	PREP	_	17	case	_	_
@@ -15354,7 +15354,7 @@
 20	خوبی	خوبی	NOUN	N_IANM	_	23	obl	_	_
 21	نگاهداری	نگاهداری	NOUN	N_IANM	_	23	compound	_	_
 22	خواهند	خواست#خواه	AUX	AUX	_	23	aux	_	_
-23	کرد	کرد#کن	VERB	V_ACT	_	12	parataxis	_	SpaceAfter=No
+23	کرد	کرد#کن	VERB	V_ACT	_	13	parataxis	_	SpaceAfter=No
 24	.	.	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s802
@@ -15592,7 +15592,7 @@
 
 # sent_id = test-s815
 # text = غیبت غیرموجه در آزمون پایانی هر درس، موجب حذف آن درس می‌شود و دانشجو موظف است دوباره در آن درس نام‌نویسی کند.
-1	غیبت	غیبت	NOUN	N_IANM	_	9	nsubj	_	_
+1	غیبت	غیبت	NOUN	N_IANM	_	13	nsubj	_	_
 2	غیرموجه	غیرموجه	ADJ	ADJ_AJP	_	1	amod	_	_
 3	در	در	ADP	PREP	_	4	case	_	_
 4	آزمون	آزمون	NOUN	N_IANM	_	1	nmod	_	_
@@ -15600,14 +15600,14 @@
 6	هر	هر	DET	PREM_AMBAJ	_	7	det	_	_
 7	درس	درس	NOUN	N_IANM	_	4	nmod	_	SpaceAfter=No
 8	،	،	PUNCT	PUNC	_	7	punct	_	_
-9	موجب	موجب	ADJ	ADJ_AJP	_	0	root	_	_
+9	موجب	موجب	ADJ	ADJ_AJP	_	13	xcomp	_	_
 10	حذف	حذف	NOUN	N_IANM	_	9	obl	_	_
 11	آن	آن	DET	PREM_DEMAJ	_	12	det	_	_
 12	درس	درس	NOUN	N_IANM	_	10	nmod	_	_
-13	می‌شود	شد#شو	VERB	V_ACT	_	9	cop	_	_
+13	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 14	و	و	CCONJ	CONJ	_	16	cc	_	_
 15	دانشجو	دانشجو	NOUN	N_ANM	_	16	nsubj	_	_
-16	موظف	موظف	ADJ	ADJ_AJP	_	9	conj	_	_
+16	موظف	موظف	ADJ	ADJ_AJP	_	13	conj	_	_
 17	است	#است	AUX	AUX	_	16	cop	_	_
 18	دوباره	دوباره	ADJ	ADJ_AJP	_	23	advmod	_	_
 19	در	در	ADP	PREP	_	21	case	_	_
@@ -15644,10 +15644,10 @@
 # text = در این مدت فضانوردان روس تجهیزات بارگیری خودکار سفینهٔ پرز را برای متصل شدن آن به ایستگاه فضایی بین‌المللی جدا و این تجهیزات را در سفینهٔ بویسک که ویژهٔ تحقیقات علمی است نصب خواهند کرد.
 1	در	در	ADP	PREP	_	3	case	_	_
 2	این	این	DET	PREM_DEMAJ	_	3	det	_	_
-3	مدت	مدت	NOUN	N_IANM	_	20	obl	_	_
-4	فضانوردان	فضانورد	NOUN	N_ANM	_	20	nsubj	_	_
+3	مدت	مدت	NOUN	N_IANM	_	35	obl	_	_
+4	فضانوردان	فضانورد	NOUN	N_ANM	_	35	nsubj	_	_
 5	روس	روس	ADJ	ADJ_AJP	_	4	amod	_	_
-6	تجهیزات	تجهیزات	NOUN	N_IANM	_	20	obj	_	_
+6	تجهیزات	تجهیزات	NOUN	N_IANM	_	35	obj	_	_
 7	بارگیری	بارگیری	NOUN	N_IANM	_	6	nmod	_	_
 8	خودکار	خودکار	ADJ	ADJ_AJP	_	6	amod	_	_
 9	سفینهٔ	سفینه	PROPN	N_IANM	_	6	nmod	_	_
@@ -15655,29 +15655,29 @@
 11	را	را	ADP	POSTP	_	6	case	_	_
 12	برای	برای	ADP	PREP	_	14	case	_	_
 13	متصل	متصل	ADJ	ADJ_AJP	_	14	advmod	_	_
-14	شدن	شدن	NOUN	N_IANM	_	20	obl	_	_
+14	شدن	شدن	NOUN	N_IANM	_	35	obl	_	_
 15	آن	آن	PRON	PR_DEMON	_	14	nmod	_	_
 16	به	به	ADP	PREP	_	17	case	_	_
 17	ایستگاه	ایستگاه	NOUN	N_IANM	_	13	obl	_	_
 18	فضایی	فضایی	ADJ	ADJ_AJP	_	17	amod	_	_
 19	بین‌المللی	بین‌المللی	ADJ	ADJ_AJP	_	17	amod	_	_
-20	جدا	جدا	ADJ	ADJ_AJP	_	0	root	_	_
-21	و	و	CCONJ	CONJ	_	20	dep	_	_
+20	جدا	جدا	ADJ	ADJ_AJP	_	35	xcomp	_	_
+21	و	و	CCONJ	CONJ	_	35	cc	_	_
 22	این	این	DET	PREM_DEMAJ	_	23	det	_	_
-23	تجهیزات	تجهیزات	NOUN	N_IANM	_	20	obj	_	_
+23	تجهیزات	تجهیزات	NOUN	N_IANM	_	35	obj	_	_
 24	را	را	ADP	POSTP	_	23	case	_	_
 25	در	در	ADP	PREP	_	26	case	_	_
-26	سفینهٔ	سفینه	PROPN	N_IANM	_	20	obl	_	_
+26	سفینهٔ	سفینه	PROPN	N_IANM	_	35	obl	_	_
 27	بویسک	بویسک	PROPN	N_IANM	_	26	flat	_	_
 28	که	که	SCONJ	SUBR	_	29	mark	_	_
 29	ویژهٔ	ویژه	ADJ	ADJ_AJP	_	26	acl	_	_
 30	تحقیقات	تحقیق	NOUN	N_IANM	_	29	obl	_	_
 31	علمی	علمی	ADJ	ADJ_AJP	_	30	amod	_	_
 32	است	#است	AUX	AUX	_	29	cop	_	_
-33	نصب	نصب	NOUN	N_IANM	_	20	compound	_	_
+33	نصب	نصب	NOUN	N_IANM	_	35	compound	_	_
 34	خواهند	خواست#خواه	AUX	AUX	_	35	aux	_	_
-35	کرد	کرد#کن	VERB	V_ACT	_	20	cop	_	SpaceAfter=No
-36	.	.	PUNCT	PUNC	_	20	punct	_	_
+35	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+36	.	.	PUNCT	PUNC	_	35	punct	_	_
 
 # sent_id = test-s819
 # text = اخیراً در مقاله‌ای دیدم که نویسنده با عنوان کردن بعضی از فرمایش‌های ائمه (علیهم‌السلام) و برداشت‌های واژگون از بعضی حوادث تاریخی به شکل ناجوانمردانه نتیجه‌گیری کرده است.
@@ -15721,15 +15721,15 @@
 5	حوزهٔ	حوزه	NOUN	N_IANM	_	3	nmod	_	_
 6	شرع	شرع	NOUN	N_IANM	_	5	nmod	_	_
 7	وضع	وضع	NOUN	N_IANM	_	8	compound	_	_
-8	کند	کرد#کن	VERB	V_ACT	_	15	advcl	_	_
+8	کند	کرد#کن	VERB	V_ACT	_	16	advcl	_	_
 9	به	به	ADP	PREP	_	10	case	_	_
-10	صورت	صورت	NOUN	N_IANM	_	15	obl	_	_
+10	صورت	صورت	NOUN	N_IANM	_	16	obl	_	_
 11	طبیعی	طبیعی	ADJ	ADJ_AJP	_	10	amod	_	_
 12	در	در	ADP	PREP	_	13	case	_	_
-13	شورای	شورا	PROPN	N_IANM	_	15	obl	_	_
+13	شورای	شورا	PROPN	N_IANM	_	16	obl	_	_
 14	نگهبان	نگهبان	PROPN	N_IANM	_	13	flat	_	_
-15	مطرح	مطرح	ADJ	ADJ_AJP	_	0	root	_	_
-16	می‌شود	شد#شو	VERB	V_ACT	_	15	cop	_	_
+15	مطرح	مطرح	ADJ	ADJ_AJP	_	16	xcomp	_	_
+16	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 17	و	و	CCONJ	CONJ	_	26	cc	_	_
 18	فقها	فقیه	NOUN	N_ANM	_	26	nsubj	_	_
 19	بر	بر	ADP	PREP	_	20	case	_	_
@@ -15739,7 +15739,7 @@
 23	اساسی	اساسی	ADJ	ADJ_AJP	_	22	amod	_	_
 24	نظر	نظر	NOUN	N_IANM	_	26	obj	_	_
 25	خواهند	خواست#خواه	AUX	AUX	_	26	aux	_	_
-26	داد	داد#ده	VERB	V_ACT	_	15	conj	_	SpaceAfter=No
+26	داد	داد#ده	VERB	V_ACT	_	16	conj	_	SpaceAfter=No
 27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s821
@@ -15811,13 +15811,13 @@
 
 # sent_id = test-s825
 # text = اسلحه‌های سرد و گرم، یعنی قلم و بیان و مسلسل را از نشانه‌گیری به روی یکدیگر منحرف کنید و به سوی دشمن‌های انسانیت که در رأس آنها آمریکاست نشانه بروید.
-1	اسلحه‌های	اسلحه	NOUN	N_IANM	_	18	obj	_	_
+1	اسلحه‌های	اسلحه	NOUN	N_IANM	_	19	obj	_	_
 2	سرد	سرد	ADJ	ADJ_AJP	_	1	amod	_	_
 3	و	و	CCONJ	CONJ	_	4	cc	_	_
 4	گرم	گرم	ADJ	ADJ_AJP	_	2	conj	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
-6	یعنی	یعنی	INTJ	PSUS	_	7	cop	_	_
-7	قلم	قلم	NOUN	N_IANM	_	1	acl	_	_
+6	یعنی	یعنی	INTJ	PSUS	_	1	acl	_	_
+7	قلم	قلم	NOUN	N_IANM	_	6	xcomp	_	_
 8	و	و	CCONJ	CONJ	_	9	cc	_	_
 9	بیان	بیان	NOUN	N_IANM	_	7	conj	_	_
 10	و	و	CCONJ	CONJ	_	11	cc	_	_
@@ -15828,8 +15828,8 @@
 15	به	به	ADP	PREP	_	16	case	_	_
 16	روی	رو	NOUN	N_ANM	_	14	nmod	_	_
 17	یکدیگر	یکدیگر	PRON	PR_RECPR	_	16	nmod	_	_
-18	منحرف	منحرف	ADJ	ADJ_AJP	_	0	root	_	_
-19	کنید	کرد#کن	VERB	V_ACT	_	18	cop	_	_
+18	منحرف	منحرف	ADJ	ADJ_AJP	_	19	xcomp	_	_
+19	کنید	کرد#کن	VERB	V_ACT	_	0	root	_	_
 20	و	و	CCONJ	CONJ	_	32	cc	_	_
 21	به	به	ADP	PREP	_	22	case	_	_
 22	سوی	سو	NOUN	N_IANM	_	32	obl	_	_
@@ -15843,7 +15843,7 @@
 29	آمریکا	آمریکا	PROPN	N_IANM	_	27	nsubj	_	_
 30	ست	#است	AUX	AUX	_	27	cop	_	_
 31	نشانه	نشانه	NOUN	N_IANM	_	32	compound	_	_
-32	بروید	رفت#رو	VERB	V_ACT	_	18	conj	_	SpaceAfter=No
+32	بروید	رفت#رو	VERB	V_ACT	_	19	conj	_	SpaceAfter=No
 33	.	.	PUNCT	PUNC	_	32	punct	_	_
 
 # sent_id = test-s826
@@ -15982,11 +15982,11 @@
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
 6	بهانه	بهانه	NOUN	N_IANM	_	4	conj	_	_
 7	آورد	آورد#آور	VERB	V_ACT	_	0	root	_	_
-8	که	که	SCONJ	SUBR	_	11	mark	_	_
-9	او	او	PRON	PR_SEPER	_	11	obj	_	_
+8	که	که	SCONJ	SUBR	_	12	mark	_	_
+9	او	او	PRON	PR_SEPER	_	12	obj	_	_
 10	را	را	ADP	POSTP	_	9	case	_	_
-11	معذور	معذور	ADJ	ADJ_AJP	_	3	acl	_	_
-12	داشتم	داشت#دار	VERB	V_ACT	_	11	cop	_	SpaceAfter=No
+11	معذور	معذور	ADJ	ADJ_AJP	_	12	xcomp	_	_
+12	داشتم	داشت#دار	VERB	V_ACT	_	3	acl	_	SpaceAfter=No
 13	.	.	PUNCT	PUNC	_	7	punct	_	_
 
 # sent_id = test-s834
@@ -16062,7 +16062,7 @@
 
 # sent_id = test-s837
 # text = صاحب‌نظران بهداشت مدارس و استادان دانشگاه‌های علوم پزشکی و چند تن از مراقبین بهداشت مجرب اقداماتی برای تحقق اهداف و برنامه‌های اعلام‌شدهٔ این دفتر معمول داشتند.
-1	صاحب‌نظران	صاحب‌نظر	NOUN	N_ANM	_	25	nsubj	_	_
+1	صاحب‌نظران	صاحب‌نظر	NOUN	N_ANM	_	26	nsubj	_	_
 2	بهداشت	بهداشت	NOUN	N_IANM	_	1	nmod	_	_
 3	مدارس	مدرسه	NOUN	N_IANM	_	2	nmod	_	_
 4	و	و	CCONJ	CONJ	_	5	cc	_	_
@@ -16077,18 +16077,18 @@
 13	مراقبین	مراقب	NOUN	N_ANM	_	11	nmod	_	_
 14	بهداشت	بهداشت	NOUN	N_IANM	_	13	nmod	_	_
 15	مجرب	مجرب	ADJ	ADJ_AJP	_	13	amod	_	_
-16	اقداماتی	اقدام	NOUN	N_IANM	_	25	obj	_	_
+16	اقداماتی	اقدام	NOUN	N_IANM	_	26	obj	_	_
 17	برای	برای	ADP	PREP	_	18	case	_	_
-18	تحقق	تحقق	NOUN	N_IANM	_	25	obl	_	_
+18	تحقق	تحقق	NOUN	N_IANM	_	26	obl	_	_
 19	اهداف	هدف	NOUN	N_IANM	_	18	nmod	_	_
 20	و	و	CCONJ	CONJ	_	21	cc	_	_
 21	برنامه‌های	برنامه	NOUN	N_IANM	_	19	conj	_	_
 22	اعلام‌شدهٔ	اعلام‌شده	ADJ	ADJ_AJP	_	19	amod	_	_
 23	این	این	DET	PREM_DEMAJ	_	24	det	_	_
 24	دفتر	دفتر	NOUN	N_IANM	_	19	nmod	_	_
-25	معمول	معمول	ADJ	ADJ_AJP	_	0	root	_	_
-26	داشتند	داشت#دار	VERB	V_ACT	_	25	cop	_	SpaceAfter=No
-27	.	.	PUNCT	PUNC	_	25	punct	_	_
+25	معمول	معمول	ADJ	ADJ_AJP	_	26	xcomp	_	_
+26	داشتند	داشت#دار	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s838
 # text = وقتی شناخت کاملی از جهان وجود ندارد ما به تجارب خود معنا می‌دهیم.
@@ -16127,8 +16127,8 @@
 1	به	به	ADP	PREP	_	2	case	_	_
 2	قلم‌کاری	قلم‌کاری	NOUN	N_IANM	_	23	obl	_	_
 3	قدیمی	قدیمی	ADJ	ADJ_AJP	_	2	amod	_	_
-4	که	که	SCONJ	SUBR	_	17	mark	_	_
-5	برداشت	برداشت	NOUN	N_IANM	_	17	obj	_	_
+4	که	که	SCONJ	SUBR	_	18	mark	_	_
+5	برداشت	برداشت	NOUN	N_IANM	_	18	obj	_	_
 6	هنری	هنری	ADJ	ADJ_AJP	_	5	amod	_	_
 7	دورهٔ	دوره	NOUN	N_IANM	_	5	nmod	_	_
 8	خود	خود	PRON	PR_CREFX	_	7	nmod	_	_
@@ -16140,8 +16140,8 @@
 14	سوژه‌های	سوژه	NOUN	N_IANM	_	12	conj	_	_
 15	آنها	آنها	PRON	PR_SEPER	_	14	nmod	_	_
 16	را	را	ADP	POSTP	_	5	case	_	_
-17	منعکس	منعکس	ADJ	ADJ_AJP	_	2	acl	_	_
-18	می‌کنند	کرد#کن	VERB	V_ACT	_	17	cop	_	_
+17	منعکس	منعکس	ADJ	ADJ_AJP	_	18	xcomp	_	_
+18	می‌کنند	کرد#کن	VERB	V_ACT	_	2	acl	_	_
 19	امروزه	امروزه	ADJ	ADJ_AJP	_	23	advmod	_	_
 20	اهمیت	اهمیت	NOUN	N_IANM	_	23	obj	_	_
 21	خاصی	خاص	ADJ	ADJ_AJP	_	20	amod	_	_
@@ -16246,18 +16246,18 @@
 2	ترازنامه	ترازنامه	NOUN	N_IANM	_	10	nsubj	_	_
 3	با	با	ADP	PREP	_	4	case	_	_
 4	پیش‌بینی	پیش‌بینی	NOUN	N_IANM	_	5	obl	_	_
-5	منطبق	منطبق	ADJ	ADJ_AJP	_	1	acl	_	_
-6	درآمده	در#آمد#آ	VERB	V_ACT	_	5	cop	_	_
+5	منطبق	منطبق	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	درآمده	در#آمد#آ	VERB	V_ACT	_	1	acl	_	_
 7	منصفانه	منصفانه	ADJ	ADJ_AJP	_	10	advmod	_	_
 8	گواهی	گواهی	NOUN	N_IANM	_	10	compound	_	_
 9	خواهیم	خواست#خواه	AUX	AUX	_	10	aux	_	_
 10	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	_
-11	که	که	SCONJ	SUBR	_	15	mark	_	_
+11	که	که	SCONJ	SUBR	_	16	mark	_	_
 12	این	این	DET	PREM_DEMAJ	_	13	det	_	_
-13	پیش‌بینی	پیش‌بینی	NOUN	N_IANM	_	15	nsubj	_	_
+13	پیش‌بینی	پیش‌بینی	NOUN	N_IANM	_	16	nsubj	_	_
 14	درآمد	درآمد	NOUN	N_IANM	_	13	nmod	_	_
-15	حقیقی	حقیقی	ADJ	ADJ_AJP	_	10	ccomp	_	_
-16	بوده	بود#باش	VERB	V_ACT	_	15	cop	_	_
+15	حقیقی	حقیقی	ADJ	ADJ_AJP	_	16	xcomp	_	_
+16	بوده	بود#باش	VERB	V_ACT	_	10	ccomp	_	_
 17	است	#است	AUX	AUX	_	16	aux	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	10	punct	_	_
 
@@ -16379,15 +16379,15 @@
 
 # sent_id = test-s854
 # text = حضرت امام ره گاهی نوه‌های خود را سرگرم کرده و از این راه با آنها مطایبه می‌کردند.
-1	حضرت	حضرت	PROPN	N_ANM	_	8	nsubj	_	_
+1	حضرت	حضرت	PROPN	N_ANM	_	9	nsubj	_	_
 2	امام	امام	PROPN	N_ANM	_	1	flat	_	_
 3	ره	ره	NOUN	N_IANM	_	2	advmod	_	_
-4	گاهی	گاه	NOUN	N_IANM	_	8	obl	_	_
-5	نوه‌های	نوه	NOUN	N_IANM	_	8	obj	_	_
+4	گاهی	گاه	NOUN	N_IANM	_	9	obl	_	_
+5	نوه‌های	نوه	NOUN	N_IANM	_	9	obj	_	_
 6	خود	خود	PRON	PR_CREFX	_	5	nmod	_	_
 7	را	را	ADP	POSTP	_	5	case	_	_
-8	سرگرم	سرگرم	ADJ	ADJ_AJP	_	0	root	_	_
-9	کرده	کرد#کن	VERB	V_ACT	_	8	cop	_	_
+8	سرگرم	سرگرم	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	کرده	کرد#کن	VERB	V_ACT	_	0	root	_	_
 10	و	و	CCONJ	CONJ	_	17	cc	_	_
 11	از	از	ADP	PREP	_	13	case	_	_
 12	این	این	DET	PREM_DEMAJ	_	13	det	_	_
@@ -16395,7 +16395,7 @@
 14	با	با	ADP	PREP	_	15	case	_	_
 15	آنها	آنها	PRON	PR_SEPER	_	17	obl	_	_
 16	مطایبه	مطایبه	NOUN	N_IANM	_	17	compound	_	_
-17	می‌کردند	کرد#کن	VERB	V_ACT	_	8	conj	_	SpaceAfter=No
+17	می‌کردند	کرد#کن	VERB	V_ACT	_	9	conj	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s855
@@ -16722,7 +16722,7 @@
 # sent_id = test-s875
 # text = او جوانمردی بس عالی‌قدر و بزرگ‌نفس بود، از سرچشمهٔ وجدانش خیر و نیکی میجوشید و از دلش شعله‌های شور و حماسه زبانه می‌زد.
 1	او	او	PRON	PR_SEPER	_	2	nsubj	_	_
-2	جوانمردی	جوانمرد	ADJ	ADJ_AJP	_	16	root	_	_
+2	جوانمردی	جوانمرد	ADJ	ADJ_AJP	_	16	vocative	_	_
 3	بس	بس	ADV	ADV_SADV	_	4	advmod	_	_
 4	عالی‌قدر	عالی‌قدر	ADJ	ADJ_AJP	_	2	amod	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
@@ -16760,11 +16760,11 @@
 5	کس	کس	NOUN	N_ANM	_	13	advcl	_	_
 6	گند	گند	NOUN	N_IANM	_	7	compound	_	_
 7	بزند	زد#زن	VERB	V_ACT	_	5	advcl	_	_
-8	یا	یا	CCONJ	CONJ	_	11	cc	_	_
-9	کاری	کار	NOUN	N_IANM	_	11	obj	_	_
+8	یا	یا	CCONJ	CONJ	_	12	cc	_	_
+9	کاری	کار	NOUN	N_IANM	_	12	obj	_	_
 10	را	را	ADP	POSTP	_	9	case	_	_
-11	خراب	خراب	ADJ	ADJ_AJP	_	7	conj	_	_
-12	کند	کرد#کن	VERB	V_ACT	_	11	cop	_	_
+11	خراب	خراب	ADJ	ADJ_AJP	_	12	xcomp	_	_
+12	کند	کرد#کن	VERB	V_ACT	_	7	conj	_	_
 13	می‌گویند	گفت#گو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 14	:	:	PUNCT	PUNC	_	13	punct	_	_
 15	"	"	PUNCT	PUNC	_	18	punct	_	SpaceAfter=No
@@ -16815,16 +16815,16 @@
 # sent_id = test-s879
 # text = 5 نفر به بچه‌های گروه در کمپ اصلی، ملحق شدند و در قسمتی از دیواره‌های بسیار زیبای منطقه سنگ‌نوردی کردند.
 1	5	5	NUM	PRENUM	_	2	nummod	_	_
-2	نفر	نفر	NOUN	N_ANM	_	10	nsubj	_	_
+2	نفر	نفر	NOUN	N_ANM	_	11	nsubj	_	_
 3	به	به	ADP	PREP	_	4	case	_	_
 4	بچه‌های	بچه	NOUN	N_ANM	_	10	obl	_	_
 5	گروه	گروه	NOUN	N_IANM	_	4	nmod	_	_
 6	در	در	ADP	PREP	_	7	case	_	_
-7	کمپ	کمپ	NOUN	N_IANM	_	10	obl	_	_
+7	کمپ	کمپ	NOUN	N_IANM	_	11	obl	_	_
 8	اصلی	اصلی	ADJ	ADJ_AJP	_	7	amod	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
-10	ملحق	ملحق	ADJ	ADJ_AJP	_	0	root	_	_
-11	شدند	شد#شو	VERB	V_ACT	_	10	cop	_	_
+10	ملحق	ملحق	ADJ	ADJ_AJP	_	11	xcomp	_	_
+11	شدند	شد#شو	VERB	V_ACT	_	0	root	_	_
 12	و	و	CCONJ	CONJ	_	21	cc	_	_
 13	در	در	ADP	PREP	_	14	case	_	_
 14	قسمتی	قسمت	NOUN	N_IANM	_	21	obl	_	_
@@ -16834,7 +16834,7 @@
 18	زیبای	زیبا	ADJ	ADJ_AJP	_	16	amod	_	_
 19	منطقه	منطقه	NOUN	N_IANM	_	16	nmod	_	_
 20	سنگ‌نوردی	سنگ‌نوردی	NOUN	N_IANM	_	21	compound	_	_
-21	کردند	کرد#کن	VERB	V_ACT	_	10	conj	_	SpaceAfter=No
+21	کردند	کرد#کن	VERB	V_ACT	_	11	conj	_	SpaceAfter=No
 22	.	.	PUNCT	PUNC	_	21	punct	_	_
 
 # sent_id = test-s880
@@ -16984,21 +16984,21 @@
 2	را	را	ADP	POSTP	_	1	case	_	_
 3	تا	تا	NOUN	N_IANM	_	4	compound	_	_
 4	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	_
-5	و	و	CCONJ	CONJ	_	16	cc	_	_
-6	آن	آن	PRON	PR_DEMON	_	16	obj	_	_
+5	و	و	CCONJ	CONJ	_	17	cc	_	_
+6	آن	آن	PRON	PR_DEMON	_	17	obj	_	_
 7	را	را	ADP	POSTP	_	6	case	_	_
 8	از	از	ADP	PREP	_	10	case	_	_
 9	دو	دو	NUM	PRENUM	_	10	nummod	_	_
-10	طرف	طرف	NOUN	N_IANM	_	16	obl	_	SpaceAfter=No
+10	طرف	طرف	NOUN	N_IANM	_	17	obl	_	SpaceAfter=No
 11	،	،	PUNCT	PUNC	_	10	punct	_	_
 12	روی	روی	ADP	PREP	_	13	case	_	_
-13	دماغ	دماغ	NOUN	N_IANM	_	16	obl	_	_
+13	دماغ	دماغ	NOUN	N_IANM	_	17	obl	_	_
 14-15	گنده‌اش	_	_	_	_	_	_	_	_
 14	گنده‌	گنده	ADJ	ADJ_AJP	_	13	amod	_	_
 15	اش	او	PRON	PR_JOPER	_	13	nmod	_	_
-16	پهن	پهن	ADJ	ADJ_AJP	_	4	conj	_	_
-17	کرد	کرد#کن	VERB	V_ACT	_	16	cop	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	16	punct	_	_
+16	پهن	پهن	ADJ	ADJ_AJP	_	17	xcomp	_	_
+17	کرد	کرد#کن	VERB	V_ACT	_	4	conj	_	SpaceAfter=No
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s888
 # text = اسبی میان جادهٔ خاموش؛ شیهه زد.
@@ -17103,12 +17103,12 @@
 12	و	و	CCONJ	CONJ	_	14	cc	_	_
 13	جنبش	جنبش	NOUN	N_IANM	_	14	compound	_	_
 14	کرده‌اند	کرد#کن	VERB	V_ACT	_	11	conj	_	_
-15	و	و	CCONJ	CONJ	_	16	cc	_	_
-16	خواستار	خواستار	ADJ	ADJ_AJP	_	11	conj	_	_
+15	و	و	CCONJ	CONJ	_	19	cc	_	_
+16	خواستار	خواستار	ADJ	ADJ_AJP	_	19	xcomp	_	_
 17-18	عزلش	_	_	_	_	_	_	_	_
 17	عزل	عزل	NOUN	N_IANM	_	16	obl	_	_
 18	ش	او	PRON	PR_JOPER	_	17	nmod	_	_
-19	شده‌اند	شد#شو	VERB	V_ACT	_	16	cop	_	_
+19	شده‌اند	شد#شو	VERB	V_ACT	_	11	conj	_	_
 20	جمعی	جمع	NOUN	N_ANM	_	4	acl	_	_
 21-22	منافقند	_	_	_	_	_	_	_	SpaceAfter=No
 21	منافق	منافق	ADJ	ADJ_AJP	_	20	amod	_	_
@@ -17185,14 +17185,14 @@
 4	شخصی	شخص	NOUN	N_ANM	_	6	obl	_	_
 5	چشم‌زخم	چشم‌زخم	NOUN	N_IANM	_	6	compound	_	_
 6	زد	زد#زن	VERB	V_ACT	_	1	advcl	_	_
-7	و	و	CCONJ	CONJ	_	12	cc	_	_
+7	و	و	CCONJ	CONJ	_	13	cc	_	_
 8	در	در	ADP	PREP	_	9	case	_	_
-9	اثر	اثر	NOUN	N_IANM	_	12	obl	_	_
+9	اثر	اثر	NOUN	N_IANM	_	13	obl	_	_
 10	آن	آن	PRON	PR_DEMON	_	9	nmod	_	_
-11	شخص	شخص	NOUN	N_ANM	_	12	nsubj	_	_
-12	مریض	مریض	ADJ	ADJ_AJP	_	6	conj	_	_
-13	شد	شد#شو	VERB	V_ACT	_	12	cop	_	SpaceAfter=No
-14	،	،	PUNCT	PUNC	_	12	punct	_	_
+11	شخص	شخص	NOUN	N_ANM	_	13	nsubj	_	_
+12	مریض	مریض	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	شد	شد#شو	VERB	V_ACT	_	6	conj	_	SpaceAfter=No
+14	،	،	PUNCT	PUNC	_	13	punct	_	_
 15	بهترین	به	ADJ	ADJ_AJSUP	_	18	amod	_	_
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
 17	ساده‌ترین	ساده	ADJ	ADJ_AJSUP	_	15	conj	_	_
@@ -17292,7 +17292,7 @@
 
 # sent_id = test-s902
 # text = اگر شخص احساسات خود را بیان نکند و به اصطلاح خودخوری کند، دچار افسردگی می‌شود.
-1	اگر	اگر	SCONJ	SUBR	_	14	advcl	_	_
+1	اگر	اگر	SCONJ	SUBR	_	16	advcl	_	_
 2	شخص	شخص	NOUN	N_ANM	_	7	nsubj	_	_
 3	احساسات	احساس	NOUN	N_IANM	_	7	obj	_	_
 4	خود	خود	PRON	PR_CREFX	_	3	nmod	_	_
@@ -17305,16 +17305,16 @@
 11	خودخوری	خودخوری	NOUN	N_IANM	_	12	compound	_	_
 12	کند	کرد#کن	VERB	V_ACT	_	7	conj	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	12	punct	_	_
-14	دچار	دچار	ADJ	ADJ_AJP	_	0	root	_	_
+14	دچار	دچار	ADJ	ADJ_AJP	_	16	xcomp	_	_
 15	افسردگی	افسردگی	NOUN	N_IANM	_	14	obl	_	_
-16	می‌شود	شد#شو	VERB	V_ACT	_	14	cop	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	14	punct	_	_
+16	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+17	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s903
 # text = ازدواج یک توفیق است و کسی که دائماً خودارضایی می‌کند، خداوند این توفیق را از او سلب می‌کند.
 1	ازدواج	ازدواج	NOUN	N_IANM	_	3	nsubj	_	_
 2	یک	یک	NUM	PRENUM	_	3	nummod	_	_
-3	توفیق	توفیق	NOUN	N_IANM	_	5	root	_	_
+3	توفیق	توفیق	NOUN	N_IANM	_	5	vocative	_	_
 4	است	#است	AUX	AUX	_	3	cop	_	_
 5	و	و	CCONJ	CONJ	_	0	root	_	_
 6	کسی	کس	NOUN	N_ANM	_	17	advmod	_	_
@@ -17671,11 +17671,11 @@
 2	تمام	تمام	NOUN	N_IANM	_	11	obj	_	_
 3	شب	شب	NOUN	N_IANM	_	2	nmod	_	_
 4	را	را	ADP	POSTP	_	2	case	_	_
-5	هرچند	هرچند	SCONJ	SUBR	_	8	mark	_	_
+5	هرچند	هرچند	SCONJ	SUBR	_	9	mark	_	_
 6	به	به	ADP	PREP	_	7	case	_	_
 7	کسالت	کسالت	NOUN	N_IANM	_	8	obl	_	_
-8	منجر	منجر	ADJ	ADJ_AJP	_	11	advcl	_	_
-9	شود	شد#شو	VERB	V_ACT	_	8	cop	_	_
+8	منجر	منجر	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	شود	شد#شو	VERB	V_ACT	_	11	advcl	_	_
 10	احیا	احیا	NOUN	N_IANM	_	11	obj	_	_
 11	می‌دارد	داشت#دار	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 12	.	.	PUNCT	PUNC	_	11	punct	_	_
@@ -17684,14 +17684,14 @@
 # text = در آن روایت امام علیه‌السلام، ابان را به جهت اینکه فهم حکم شرعی را به عقل استناد داده بود مورد توبیخ قرار دادند.
 1	در	در	ADP	PREP	_	3	case	_	_
 2	آن	آن	DET	PREM_DEMAJ	_	3	det	_	_
-3	روایت	روایت	NOUN	N_IANM	_	22	obl	_	_
-4	امام	امام	PROPN	N_ANM	_	22	nsubj	_	_
+3	روایت	روایت	NOUN	N_IANM	_	24	obl	_	_
+4	امام	امام	PROPN	N_ANM	_	24	nsubj	_	_
 5	علیه‌السلام	علیه‌السلام	NOUN	N_IANM	_	4	advmod	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	5	punct	_	_
-7	ابان	ابان	NOUN	N_ANM	_	22	obj	_	_
+7	ابان	ابان	NOUN	N_ANM	_	24	obj	_	_
 8	را	را	ADP	POSTP	_	7	case	_	_
 9	به	به	ADP	PREP	_	10	case	_	_
-10	جهت	جهت	NOUN	N_IANM	_	22	obl	_	_
+10	جهت	جهت	NOUN	N_IANM	_	24	obl	_	_
 11	اینکه	اینکه	NOUN	N_IANM	_	10	advmod	_	_
 12	فهم	فهم	NOUN	N_IANM	_	19	obj	_	_
 13	حکم	حکم	NOUN	N_IANM	_	12	nmod	_	_
@@ -17703,10 +17703,10 @@
 19	داده	داد#ده	VERB	V_ACT	_	11	acl	_	_
 20	بود	بود#باش	AUX	AUX	_	19	aux	_	_
 21	مورد	مورد	ADP	PREP	_	22	case	_	_
-22	توبیخ	توبیخ	NOUN	N_IANM	_	0	root	_	_
-23	قرار	قرار	NOUN	N_IANM	_	22	compound	_	_
-24	دادند	داد#ده	VERB	V_ACT	_	22	cop	_	SpaceAfter=No
-25	.	.	PUNCT	PUNC	_	22	punct	_	_
+22	توبیخ	توبیخ	NOUN	N_IANM	_	24	xcomp	_	_
+23	قرار	قرار	NOUN	N_IANM	_	24	compound	_	_
+24	دادند	داد#ده	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+25	.	.	PUNCT	PUNC	_	24	punct	_	_
 
 # sent_id = test-s925
 # text = این دخترم است که اسهال شده است.
@@ -17882,7 +17882,7 @@
 # text = نخجوانی‌ها شیعه‌اند اما در سایهٔ دولت سکولار، در فضای عمومی شهر اثری از دین دیده نمی‌شود.
 1	نخجوانی‌ها	نخجوانی	NOUN	N_ANM	_	2	nsubj	_	_
 2-3	شیعه‌اند	_	_	_	_	_	_	_	_
-2	شیعه‌	شیعه	ADJ	ADJ_AJP	_	4	root	_	_
+2	شیعه‌	شیعه	ADJ	ADJ_AJP	_	4	vocative	_	_
 3	اند	#هست	AUX	AUX	_	2	cop	_	_
 4	اما	اما	CCONJ	CONJ	_	0	root	_	_
 5	در	در	ADP	PREP	_	6	case	_	_
@@ -17991,13 +17991,13 @@
 9	را	را	ADP	POSTP	_	10	case	_	_
 10	سر	سر	NOUN	N_IANM	_	11	obj	_	_
 11	ببرند	برید#بر	VERB	V_ACT	_	3	ccomp	_	_
-12	و	و	CCONJ	CONJ	_	16	cc	_	_
-13	مغز	مغز	NOUN	N_IANM	_	16	obj	_	_
+12	و	و	CCONJ	CONJ	_	18	cc	_	_
+13	مغز	مغز	NOUN	N_IANM	_	18	obj	_	_
 14	آنان	آنان	PRON	PR_SEPER	_	13	nmod	_	_
 15	را	را	ADP	POSTP	_	13	case	_	_
-16	خوراک	خوراک	NOUN	N_IANM	_	11	conj	_	_
+16	خوراک	خوراک	NOUN	N_IANM	_	18	xcomp	_	_
 17	مارهایی	مار	NOUN	N_ANM	_	16	nmod	_	_
-18	سازند	ساخت#ساز	VERB	V_ACT	_	16	cop	_	_
+18	سازند	ساخت#ساز	VERB	V_ACT	_	11	conj	_	_
 19	که	که	SCONJ	SUBR	_	28	mark	_	_
 20	از	از	ADP	PREP	_	21	case	_	_
 21	جای	جا	NOUN	N_IANM	_	28	obl	_	_
@@ -18112,14 +18112,14 @@
 11	را	را	ADP	POSTP	_	10	case	_	_
 12	فراموش	فراموش	NOUN	N_IANM	_	13	compound	_	_
 13	کند	کرد#کن	VERB	V_ACT	_	7	conj	_	_
-14	صلوات	صلوات	NOUN	N_IANM	_	15	nsubj	_	_
-15	موجب	موجب	ADJ	ADJ_AJP	_	0	root	_	_
-16	می‌شود	شد#شو	VERB	V_ACT	_	15	cop	_	_
+14	صلوات	صلوات	NOUN	N_IANM	_	16	nsubj	_	_
+15	موجب	موجب	ADJ	ADJ_AJP	_	16	xcomp	_	_
+16	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 17	که	که	SCONJ	SUBR	_	20	mark	_	_
 18	به	به	ADP	PREP	_	19	case	_	_
 19	خاطر	خاطر	NOUN	N_IANM	_	20	obl	_	_
 20	آید	آمد#آ	VERB	V_ACT	_	15	ccomp	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	15	punct	_	_
+21	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s947
 # text = وی پیش از آغاز سخنرانی به یکی از حاضرین چشمک زده است.
@@ -18294,21 +18294,21 @@
 
 # sent_id = test-s954
 # text = مشرکان کودکان خود را وادار کرده بودند، تا به سوی پیامبر سنگ‌پرانی کنند.
-1	مشرکان	مشرک	NOUN	N_ANM	_	5	nsubj	_	_
-2	کودکان	کودک	NOUN	N_ANM	_	5	obj	_	_
+1	مشرکان	مشرک	NOUN	N_ANM	_	6	nsubj	_	_
+2	کودکان	کودک	NOUN	N_ANM	_	6	obj	_	_
 3	خود	خود	PRON	PR_CREFX	_	2	nmod	_	_
 4	را	را	ADP	POSTP	_	2	case	_	_
-5	وادار	وادار	ADJ	ADJ_AJP	_	0	root	_	_
-6	کرده	کرد#کن	VERB	V_ACT	_	5	cop	_	_
+5	وادار	وادار	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	کرده	کرد#کن	VERB	V_ACT	_	0	root	_	_
 7	بودند	بود#باش	AUX	AUX	_	6	aux	_	SpaceAfter=No
-8	،	،	PUNCT	PUNC	_	5	punct	_	_
+8	،	،	PUNCT	PUNC	_	6	punct	_	_
 9	تا	تا	SCONJ	SUBR	_	14	mark	_	_
 10	به	به	ADP	PREP	_	11	case	_	_
 11	سوی	سو	NOUN	N_IANM	_	14	obl	_	_
 12	پیامبر	پیامبر	PROPN	N_ANM	_	11	nmod	_	_
 13	سنگ‌پرانی	سنگ‌پرانی	NOUN	N_IANM	_	14	compound	_	_
 14	کنند	کرد#کن	VERB	V_ACT	_	5	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	5	punct	_	_
+15	.	.	PUNCT	PUNC	_	6	punct	_	_
 
 # sent_id = test-s955
 # text = شعله‌های سرخ بر گونه‌های سپیدم شراره کشیده‌اند.
@@ -18356,27 +18356,27 @@
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	شو	شو	NOUN	N_IANM	_	12	conj	_	_
 15	کرده‌اند	کرد#کن	VERB	V_ACT	_	0	root	_	_
-16	و	و	CCONJ	CONJ	_	19	cc	_	_
+16	و	و	CCONJ	CONJ	_	20	cc	_	_
 17	از	از	ADP	PREP	_	18	case	_	_
 18	اسلام	اسلام	NOUN	N_IANM	_	19	obl	_	_
-19	مأیوس	مأیوس	ADJ	ADJ_AJP	_	15	conj	_	_
-20	کرده‌اند	کرد#کن	VERB	V_ACT	_	19	cop	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	19	punct	_	_
+19	مأیوس	مأیوس	ADJ	ADJ_AJP	_	20	xcomp	_	_
+20	کرده‌اند	کرد#کن	VERB	V_ACT	_	15	conj	_	SpaceAfter=No
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s958
 # text = پس از من شعرهایم را چو جان محفوظ خواهی داشت و با هر شعر من آتش به جانت شعله خواهد زد.
 1	پس	پس	ADP	PREP	_	3	case	_	_
 2	از	از	ADP	PREP	_	1	fixed	_	_
-3	من	من	PRON	PR_SEPER	_	9	obl	_	_
+3	من	من	PRON	PR_SEPER	_	11	obl	_	_
 4-5	شعرهایم	_	_	_	_	_	_	_	_
-4	شعرها	شعر	NOUN	N_IANM	_	9	obj	_	_
+4	شعرها	شعر	NOUN	N_IANM	_	11	obj	_	_
 5	یم	من	PRON	PR_JOPER	_	4	nmod	_	_
 6	را	را	ADP	POSTP	_	4	case	_	_
 7	چو	چو	ADP	PREP	_	8	case	_	_
-8	جان	جان	NOUN	N_IANM	_	9	obl	_	_
-9	محفوظ	محفوظ	ADJ	ADJ_AJP	_	0	root	_	_
+8	جان	جان	NOUN	N_IANM	_	11	obl	_	_
+9	محفوظ	محفوظ	ADJ	ADJ_AJP	_	11	xcomp	_	_
 10	خواهی	خواست#خواه	AUX	AUX	_	11	aux	_	_
-11	داشت	داشت#دار	VERB	V_ACT	_	9	cop	_	_
+11	داشت	داشت#دار	VERB	V_ACT	_	0	root	_	_
 12	و	و	CCONJ	CONJ	_	23	cc	_	_
 13	با	با	ADP	PREP	_	15	case	_	_
 14	هر	هر	DET	PREM_AMBAJ	_	15	det	_	_
@@ -18389,7 +18389,7 @@
 20	ت	تو	PRON	PR_JOPER	_	19	nmod	_	_
 21	شعله	شعله	NOUN	N_IANM	_	23	compound	_	_
 22	خواهد	خواست#خواه	AUX	AUX	_	23	aux	_	_
-23	زد	زد#زن	VERB	V_ACT	_	9	conj	_	SpaceAfter=No
+23	زد	زد#زن	VERB	V_ACT	_	11	conj	_	SpaceAfter=No
 24	.	.	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s959
@@ -18423,13 +18423,13 @@
 # sent_id = test-s960
 # text = از پریروز شرکت فرانسوی وارد مسیر ما شده بود و مسیر ساحل چپ را بازسازی و شن‌ریزی می‌کرد.
 1	از	از	ADP	PREP	_	2	case	_	_
-2	پریروز	پریروز	NOUN	N_IANM	_	5	obl	_	_
-3	شرکت	شرکت	NOUN	N_IANM	_	5	nsubj	_	_
+2	پریروز	پریروز	NOUN	N_IANM	_	8	obl	_	_
+3	شرکت	شرکت	NOUN	N_IANM	_	8	nsubj	_	_
 4	فرانسوی	فرانسوی	ADJ	ADJ_AJP	_	3	amod	_	_
-5	وارد	وارد	ADJ	ADJ_AJP	_	0	root	_	_
+5	وارد	وارد	ADJ	ADJ_AJP	_	8	xcomp	_	_
 6	مسیر	مسیر	NOUN	N_IANM	_	5	obl	_	_
 7	ما	ما	PRON	PR_SEPER	_	6	nmod	_	_
-8	شده	شد#شو	VERB	V_ACT	_	5	cop	_	_
+8	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 9	بود	بود#باش	AUX	AUX	_	8	aux	_	_
 10	و	و	CCONJ	CONJ	_	18	cc	_	_
 11	مسیر	مسیر	NOUN	N_IANM	_	18	obj	_	_
@@ -18439,7 +18439,7 @@
 15	بازسازی	بازسازی	NOUN	N_IANM	_	18	compound	_	_
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
 17	شن‌ریزی	شن‌ریزی	NOUN	N_IANM	_	15	conj	_	_
-18	می‌کرد	کرد#کن	VERB	V_ACT	_	5	conj	_	SpaceAfter=No
+18	می‌کرد	کرد#کن	VERB	V_ACT	_	8	conj	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = test-s961
@@ -18984,23 +18984,23 @@
 19	می‌باشید	بود#باش	AUX	AUX	_	15	cop	_	_
 20	مراقبت	مراقبت	NOUN	N_IANM	_	21	compound	_	_
 21	دارید	داشت#دار	VERB	V_ACT	_	2	ccomp	_	_
-22	که	که	SCONJ	SUBR	_	24	mark	_	_
-23	تخلف	تخلف	NOUN	N_IANM	_	24	nsubj	_	_
-24	قانونی	قانونی	ADJ	ADJ_AJP	_	21	ccomp	_	_
-25	نشود	شد#شو	VERB	V_ACT	_	24	cop	_	SpaceAfter=No
+22	که	که	SCONJ	SUBR	_	25	mark	_	_
+23	تخلف	تخلف	NOUN	N_IANM	_	25	nsubj	_	_
+24	قانونی	قانونی	ADJ	ADJ_AJP	_	25	xcomp	_	_
+25	نشود	شد#شو	VERB	V_ACT	_	21	ccomp	_	SpaceAfter=No
 26	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = test-s987
 # text = این یعنی این که من آن قدر بزرگ شدم که از خواهر و مامانم مراقبت کنم ولی آن قدر بزرگ نشدم که از خودم مراقبت بکنم.
-1	این	این	PRON	PR_DEMON	_	3	nsubj	_	_
-2	یعنی	یعنی	INTJ	PSUS	_	3	cop	_	_
-3	این	این	PRON	PR_DEMON	_	0	root	_	_
+1	این	این	PRON	PR_DEMON	_	2	nsubj	_	_
+2	یعنی	یعنی	INTJ	PSUS	_	0	root	_	_
+3	این	این	PRON	PR_DEMON	_	2	xcomp	_	_
 4	که	که	SCONJ	SUBR	_	3	acl	_	_
-5	من	من	PRON	PR_SEPER	_	8	nsubj	_	_
+5	من	من	PRON	PR_SEPER	_	9	nsubj	_	_
 6	آن	آن	DET	PREM_DEMAJ	_	7	det	_	_
 7	قدر	قدر	NOUN	N_IANM	_	8	advmod	_	_
-8	بزرگ	بزرگ	ADJ	ADJ_AJP	_	4	acl	_	_
-9	شدم	شد#شو	VERB	V_ACT	_	8	cop	_	_
+8	بزرگ	بزرگ	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	شدم	شد#شو	VERB	V_ACT	_	4	acl	_	_
 10	که	که	SCONJ	SUBR	_	17	mark	_	_
 11	از	از	ADP	PREP	_	12	case	_	_
 12	خواهر	خواهر	NOUN	N_ANM	_	17	obl	_	_
@@ -19010,21 +19010,21 @@
 15	م	من	PRON	PR_JOPER	_	14	nmod	_	_
 16	مراقبت	مراقبت	NOUN	N_IANM	_	17	compound	_	_
 17	کنم	کرد#کن	VERB	V_ACT	_	7	acl	_	_
-18	ولی	ولی	CCONJ	CONJ	_	21	cc	_	_
+18	ولی	ولی	CCONJ	CONJ	_	22	cc	_	_
 19	آن	آن	DET	PREM_DEMAJ	_	20	det	_	_
 20	قدر	قدر	NOUN	N_IANM	_	21	advmod	_	_
-21	بزرگ	بزرگ	ADJ	ADJ_AJP	_	8	conj	_	_
-22	نشدم	شد#شو	VERB	V_ACT	_	21	cop	_	_
+21	بزرگ	بزرگ	ADJ	ADJ_AJP	_	22	xcomp	_	_
+22	نشدم	شد#شو	VERB	V_ACT	_	9	conj	_	_
 23	که	که	SCONJ	SUBR	_	27	mark	_	_
 24	از	از	ADP	PREP	_	25	case	_	_
 25	خودم	خودم	PRON	PR_UCREFX	_	27	obl	_	_
 26	مراقبت	مراقبت	NOUN	N_IANM	_	27	compound	_	_
 27	بکنم	کرد#کن	VERB	V_ACT	_	20	acl	_	SpaceAfter=No
-28	.	.	PUNCT	PUNC	_	3	punct	_	_
+28	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = test-s988
 # text = آقا، دهنم کف کرد از بس در فراق اینترنت مرثیه‌سرایی کردم.
-1	آقا	آقا	NOUN	N_ANM	_	6	root	_	SpaceAfter=No
+1	آقا	آقا	NOUN	N_ANM	_	6	vocative	_	SpaceAfter=No
 2	،	،	PUNCT	PUNC	_	1	punct	_	_
 3-4	دهنم	_	_	_	_	_	_	_	_
 3	دهن	دهن	NOUN	N_IANM	_	6	nsubj	_	_
@@ -19192,7 +19192,7 @@
 1	از	از	ADP	PREP	_	2	case	_	_
 2	خداوند	خداوند	NOUN	N_ANM	_	17	nmod	_	_
 3	متعال	متعال	ADJ	ADJ_AJP	_	2	amod	_	_
-4	آرزوی	آرزو	NOUN	N_IANM	_	17	obj	_	_
+4	آرزوی	آرزو	NOUN	N_IANM	_	18	obj	_	_
 5	سلامتی	سلامتی	NOUN	N_IANM	_	4	nmod	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	5	punct	_	_
 7	طول	طول	NOUN	N_IANM	_	5	conj	_	_
@@ -19205,9 +19205,9 @@
 14	مقام	مقام	NOUN	N_ANM	_	5	nmod	_	_
 15	معظم	معظم	ADJ	ADJ_AJP	_	14	amod	_	_
 16	رهبری	رهبری	NOUN	N_IANM	_	14	nmod	_	_
-17	مسئلت	مسئلت	NOUN	N_IANM	_	0	root	_	_
-18	می‌دارم	داشت#دار	VERB	V_ACT	_	17	cop	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	_	17	punct	_	_
+17	مسئلت	مسئلت	NOUN	N_IANM	_	18	xcomp	_	_
+18	می‌دارم	داشت#دار	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = test-s1001
 # text = دانشگاه رازی مفتخر است که تولیدات ارزشمند علمی خود را با کمترین هزینهٔ ممکن به ثمر رسانیده است.
@@ -19375,10 +19375,10 @@
 
 # sent_id = test-s1008
 # text = ما که موفق نشدیم او را به هوش بیاوریم، آیا تو علت بی‌هوشی او را می‌دانی؟
-1	ما	ما	PRON	PR_SEPER	_	3	nsubj	_	_
+1	ما	ما	PRON	PR_SEPER	_	4	nsubj	_	_
 2	که	که	PART	PART	_	1	advmod	_	_
-3	موفق	موفق	ADJ	ADJ_AJP	_	0	root	_	_
-4	نشدیم	شد#شو	VERB	V_ACT	_	3	cop	_	_
+3	موفق	موفق	ADJ	ADJ_AJP	_	4	xcomp	_	_
+4	نشدیم	شد#شو	VERB	V_ACT	_	0	root	_	_
 5	او	او	PRON	PR_SEPER	_	9	obj	_	_
 6	را	را	ADP	POSTP	_	5	case	_	_
 7	به	به	ADP	PREP	_	8	case	_	_
@@ -19391,7 +19391,7 @@
 14	بی‌هوشی	بی‌هوشی	NOUN	N_IANM	_	13	nmod	_	_
 15	او	او	PRON	PR_SEPER	_	14	nmod	_	_
 16	را	را	ADP	POSTP	_	13	case	_	_
-17	می‌دانی	دانست#دان	VERB	V_ACT	_	3	conj	_	SpaceAfter=No
+17	می‌دانی	دانست#دان	VERB	V_ACT	_	4	conj	_	SpaceAfter=No
 18	؟	؟	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s1009
@@ -19488,21 +19488,21 @@
 8	قالی‌کوه	قالی‌کوه	PROPN	N_IANM	_	6	nmod	_	_
 9	شناسایی	شناسایی	NOUN	N_IANM	_	10	compound	_	_
 10	شده‌اند	شد#شو	VERB	V_ACT	_	0	root	_	_
-11	که	که	SCONJ	SUBR	_	24	mark	_	_
-12	برخی	برخی	NOUN	N_IANM	_	24	nsubj	_	_
+11	که	که	SCONJ	SUBR	_	25	mark	_	_
+12	برخی	برخی	NOUN	N_IANM	_	25	nsubj	_	_
 13	از	از	ADP	PREP	_	14	case	_	_
 14	آنها	آنها	PRON	PR_DEMON	_	12	nmod	_	_
-15	حوضه‌های	حوضه	NOUN	N_IANM	_	24	obj	_	_
+15	حوضه‌های	حوضه	NOUN	N_IANM	_	25	obj	_	_
 16	رسوبی	رسوبی	ADJ	ADJ_AJP	_	15	amod	_	_
 17	را	را	ADP	POSTP	_	15	case	_	_
 18	در	در	ADP	PREP	_	19	case	_	_
-19	طی	طی	NOUN	N_IANM	_	24	obl	_	_
+19	طی	طی	NOUN	N_IANM	_	25	obl	_	_
 20	ادوار	دوره	NOUN	N_IANM	_	19	nmod	_	_
 21	گذشتهٔ	گذشته	ADJ	ADJ_AJP	_	20	amod	_	_
 22	زمین‌شناسی	زمین‌شناسی	NOUN	N_IANM	_	20	nmod	_	_
 23	در	در	ADP	PREP	_	24	case	_	_
-24	کنترل	کنترل	NOUN	N_IANM	_	1	acl	_	_
-25	داشته‌اند	داشت#دار	VERB	V_ACT	_	24	cop	_	SpaceAfter=No
+24	کنترل	کنترل	NOUN	N_IANM	_	25	xcomp	_	_
+25	داشته‌اند	داشت#دار	VERB	V_ACT	_	1	acl	_	SpaceAfter=No
 26	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s1014
@@ -19576,10 +19576,10 @@
 
 # sent_id = test-s1017
 # text = قذافی مدعی شد، ایران برنامه‌های هسته‌ای‌اش را بزرگنمایی می‌کند و او معتقد است که ایران نمی‌تواند در برابر حملهٔ غربی‌ها ایستادگی کند و از پای درخواهد آمد.
-1	قذافی	قذافی	PROPN	N_ANM	_	2	nsubj	_	_
-2	مدعی	مدعی	ADJ	ADJ_AJP	_	0	root	_	_
-3	شد	شد#شو	VERB	V_ACT	_	2	cop	_	SpaceAfter=No
-4	،	،	PUNCT	PUNC	_	2	punct	_	_
+1	قذافی	قذافی	PROPN	N_ANM	_	3	nsubj	_	_
+2	مدعی	مدعی	ADJ	ADJ_AJP	_	3	xcomp	_	_
+3	شد	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+4	،	،	PUNCT	PUNC	_	3	punct	_	_
 5	ایران	ایران	PROPN	N_IANM	_	11	nsubj	_	_
 6	برنامه‌های	برنامه	NOUN	N_IANM	_	11	obj	_	_
 7-8	هسته‌ای‌اش	_	_	_	_	_	_	_	_
@@ -19590,7 +19590,7 @@
 11	می‌کند	کرد#کن	VERB	V_ACT	_	2	ccomp	_	_
 12	و	و	CCONJ	CONJ	_	14	cc	_	_
 13	او	او	PRON	PR_SEPER	_	14	nsubj	_	_
-14	معتقد	معتقد	ADJ	ADJ_AJP	_	2	conj	_	_
+14	معتقد	معتقد	ADJ	ADJ_AJP	_	3	conj	_	_
 15	است	#است	AUX	AUX	_	14	cop	_	_
 16	که	که	SCONJ	SUBR	_	18	mark	_	_
 17	ایران	ایران	PROPN	N_IANM	_	18	nsubj	_	_
@@ -19617,18 +19617,18 @@
 5	جمهوری	جمهوری	NOUN	N_IANM	_	4	nmod	_	_
 6	ونزوئلا	ونزوئلا	PROPN	N_IANM	_	4	nmod	_	_
 7	،	،	PUNCT	PUNC	_	6	punct	_	_
-8	که	که	SCONJ	SUBR	_	16	mark	_	_
+8	که	که	SCONJ	SUBR	_	17	mark	_	_
 9	به	به	ADP	PREP	_	10	case	_	_
-10	خاطر	خاطر	NOUN	N_IANM	_	16	obl	_	_
+10	خاطر	خاطر	NOUN	N_IANM	_	17	obl	_	_
 11	بیماری	بیماری	NOUN	N_IANM	_	10	nmod	_	SpaceAfter=No
 12	،	،	PUNCT	PUNC	_	11	punct	_	_
-13	برنامهٔ	برنامه	NOUN	N_IANM	_	16	obj	_	_
+13	برنامهٔ	برنامه	NOUN	N_IANM	_	17	obj	_	_
 14	تلویزیونی‌اش	تلویزیون	NOUN	N_IANM	_	13	nmod	_	_
 15	را	را	ADP	POSTP	_	13	case	_	_
-16	متوقف	متوقف	ADJ	ADJ_AJP	_	1	acl	_	_
-17	کرده	کرد#کن	VERB	V_ACT	_	16	cop	_	_
+16	متوقف	متوقف	ADJ	ADJ_AJP	_	17	xcomp	_	_
+17	کرده	کرد#کن	VERB	V_ACT	_	1	acl	_	_
 18	بود	بود#باش	AUX	AUX	_	17	aux	_	SpaceAfter=No
-19	،	،	PUNCT	PUNC	_	16	punct	_	_
+19	،	،	PUNCT	PUNC	_	17	punct	_	_
 20	دوباره	دوباره	ADJ	ADJ_AJP	_	25	advmod	_	_
 21	آن	آن	PRON	PR_DEMON	_	25	obj	_	_
 22	را	را	ADP	POSTP	_	21	case	_	_
@@ -19865,11 +19865,11 @@
 6	یهود	یهود	NOUN	N_IANM	_	7	nmod	_	_
 7	بودن	بودن	NOUN	N_IANM	_	2	nmod	_	_
 8	زنی	زن	NOUN	N_ANM	_	7	nmod	_	_
-9	که	که	SCONJ	SUBR	_	12	mark	_	_
-10	خوابگاه	خوابگاه	NOUN	N_IANM	_	12	obj	_	_
+9	که	که	SCONJ	SUBR	_	13	mark	_	_
+10	خوابگاه	خوابگاه	NOUN	N_IANM	_	13	obj	_	_
 11	را	را	ADP	POSTP	_	10	case	_	_
-12	تمیز	تمیز	ADJ	ADJ_AJP	_	8	acl	_	_
-13	می‌کرد	کرد#کن	VERB	V_ACT	_	12	cop	_	_
+12	تمیز	تمیز	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	می‌کرد	کرد#کن	VERB	V_ACT	_	8	acl	_	_
 14	در	در	ADP	PREP	_	15	case	_	_
 15	قالب	قالب	NOUN	N_IANM	_	21	obl	_	_
 16	جملاتی	جمله	NOUN	N_IANM	_	15	nmod	_	_
@@ -19891,13 +19891,13 @@
 
 # sent_id = test-s1030
 # text = اگر وقت مناسب برای آن صرف گردد احتمالاً تست‌های صحیح بیشتری را علامت خواهید زد.
-1	اگر	اگر	SCONJ	SUBR	_	6	mark	_	_
-2	وقت	وقت	NOUN	N_IANM	_	6	nsubj	_	_
+1	اگر	اگر	SCONJ	SUBR	_	7	mark	_	_
+2	وقت	وقت	NOUN	N_IANM	_	7	nsubj	_	_
 3	مناسب	مناسب	ADJ	ADJ_AJP	_	2	amod	_	_
 4	برای	برای	ADP	PREP	_	5	case	_	_
-5	آن	آن	PRON	PR_DEMON	_	6	obl	_	_
-6	صرف	صرف	NOUN	N_IANM	_	15	advcl	_	_
-7	گردد	گشت#گرد	VERB	V_ACT	_	6	cop	_	_
+5	آن	آن	PRON	PR_DEMON	_	7	obl	_	_
+6	صرف	صرف	NOUN	N_IANM	_	7	xcomp	_	_
+7	گردد	گشت#گرد	VERB	V_ACT	_	15	advcl	_	_
 8	احتمالاً	احتمالاً	ADV	ADV_SADV	_	15	advmod	_	_
 9	تست‌های	تست	NOUN	N_IANM	_	15	obj	_	_
 10	صحیح	صحیح	ADJ	ADJ_AJP	_	9	amod	_	_
@@ -19910,10 +19910,10 @@
 
 # sent_id = test-s1031
 # text = فردوسی از همان ابتدای کار که به کسب علم و دانش پرداخت به خواندن داستان هم علاقه‌مند شد و مخصوصاً به تاریخ و اطلاعات راجع به گذشتهٔ ایران علاقه می‌ورزید.
-1	فردوسی	فردوسی	PROPN	N_ANM	_	17	nsubj	_	_
+1	فردوسی	فردوسی	PROPN	N_ANM	_	18	nsubj	_	_
 2	از	از	ADP	PREP	_	4	case	_	_
 3	همان	همان	DET	PREM_DEMAJ	_	4	det	_	_
-4	ابتدای	ابتدا	NOUN	N_IANM	_	17	obl	_	_
+4	ابتدای	ابتدا	NOUN	N_IANM	_	18	obl	_	_
 5	کار	کار	NOUN	N_IANM	_	4	nmod	_	_
 6	که	که	SCONJ	SUBR	_	12	mark	_	_
 7	به	به	ADP	PREP	_	8	case	_	_
@@ -19926,8 +19926,8 @@
 14	خواندن	خواندن	NOUN	N_IANM	_	17	obl	_	_
 15	داستان	داستان	NOUN	N_IANM	_	14	nmod	_	_
 16	هم	هم	ADV	ADV_SADV	_	14	dep	_	_
-17	علاقه‌مند	علاقه‌مند	ADJ	ADJ_AJP	_	0	root	_	_
-18	شد	شد#شو	VERB	V_ACT	_	17	cop	_	_
+17	علاقه‌مند	علاقه‌مند	ADJ	ADJ_AJP	_	18	xcomp	_	_
+18	شد	شد#شو	VERB	V_ACT	_	0	root	_	_
 19	و	و	CCONJ	CONJ	_	30	cc	_	_
 20	مخصوصاً	مخصوصاً	ADV	ADV_SADV	_	30	advmod	_	_
 21	به	به	ADP	PREP	_	22	case	_	_
@@ -19939,20 +19939,20 @@
 27	گذشتهٔ	گذشته	NOUN	N_IANM	_	24	nmod	_	_
 28	ایران	ایران	PROPN	N_IANM	_	27	nmod	_	_
 29	علاقه	علاقه	NOUN	N_IANM	_	30	compound	_	_
-30	می‌ورزید	ورزید#ورز	VERB	V_ACT	_	17	conj	_	SpaceAfter=No
+30	می‌ورزید	ورزید#ورز	VERB	V_ACT	_	18	conj	_	SpaceAfter=No
 31	.	.	PUNCT	PUNC	_	30	punct	_	_
 
 # sent_id = test-s1032
 # text = در حالی که فضاپیما به عطارد نزدیک می‌شود، دوربین‌ها از قبل عوارضی را که پیش‌تر مشاهده نشده عکس‌برداری خواهند کرد.
 1	در	در	ADP	PREP	_	2	case	_	_
 2	حالی	حال	NOUN	N_IANM	_	21	obl	_	_
-3	که	که	SCONJ	SUBR	_	7	mark	_	_
-4	فضاپیما	فضاپیما	NOUN	N_IANM	_	7	nsubj	_	_
+3	که	که	SCONJ	SUBR	_	8	mark	_	_
+4	فضاپیما	فضاپیما	NOUN	N_IANM	_	8	nsubj	_	_
 5	به	به	ADP	PREP	_	6	case	_	_
 6	عطارد	عطارد	NOUN	N_IANM	_	7	obl	_	_
-7	نزدیک	نزدیک	ADJ	ADJ_AJP	_	2	acl	_	_
-8	می‌شود	شد#شو	VERB	V_ACT	_	7	cop	_	SpaceAfter=No
-9	،	،	PUNCT	PUNC	_	7	punct	_	_
+7	نزدیک	نزدیک	ADJ	ADJ_AJP	_	8	xcomp	_	_
+8	می‌شود	شد#شو	VERB	V_ACT	_	2	acl	_	SpaceAfter=No
+9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	دوربین‌ها	دوربین	NOUN	N_IANM	_	21	nsubj	_	_
 11	از	از	ADP	PREP	_	12	case	_	_
 12	قبل	قبل	NOUN	N_IANM	_	21	obl	_	_
@@ -19996,22 +19996,22 @@
 25	،	،	PUNCT	PUNC	_	24	punct	_	_
 26	جبران	جبران	NOUN	N_IANM	_	27	compound	_	_
 27	نمی‌شود	شد#شو	VERB	V_ACT	_	8	acl	_	_
-28	و	و	CCONJ	CONJ	_	39	cc	_	_
+28	و	و	CCONJ	CONJ	_	40	cc	_	_
 29	اگر	اگر	SCONJ	SUBR	_	31	mark	_	_
 30	صلح	صلح	NOUN	N_IANM	_	31	compound	_	_
-31	می‌کرد	کرد#کن	VERB	V_ACT	_	39	advcl	_	_
+31	می‌کرد	کرد#کن	VERB	V_ACT	_	40	advcl	_	_
 32	آن	آن	DET	PREM_DEMAJ	_	33	det	_	_
-33	شقاوت	شقاوت	NOUN	N_IANM	_	39	nsubj	_	_
+33	شقاوت	شقاوت	NOUN	N_IANM	_	40	nsubj	_	_
 34	و	و	CCONJ	CONJ	_	35	cc	_	_
 35	جنایات	جنایت	NOUN	N_IANM	_	33	conj	_	_
 36	بنی‌امیه	بنی‌امیه	PROPN	N_ANM	_	33	nmod	_	_
 37	برای	برای	ADP	PREP	_	38	case	_	_
 38	مردم	مردم	NOUN	N_ANM	_	39	obl	_	_
-39	روشن	روشن	ADJ	ADJ_AJP	_	27	conj	_	_
-40	نمی‌شد	شد#شو	VERB	V_ACT	_	39	cop	_	SpaceAfter=No
-41	،	،	PUNCT	PUNC	_	39	punct	_	_
+39	روشن	روشن	ADJ	ADJ_AJP	_	40	xcomp	_	_
+40	نمی‌شد	شد#شو	VERB	V_ACT	_	27	conj	_	SpaceAfter=No
+41	،	،	PUNCT	PUNC	_	40	punct	_	_
 42	با	با	ADP	PREP	_	43	case	_	_
-43	اینکه	اینکه	NOUN	N_IANM	_	39	obl	_	_
+43	اینکه	اینکه	NOUN	N_IANM	_	40	obl	_	_
 44	یزید	یزید	PROPN	N_ANM	_	51	nsubj	_	_
 45	هم	هم	ADV	ADV_SADV	_	44	dep	_	_
 46	مانند	مانند	ADP	PREP	_	47	case	_	_
@@ -20089,14 +20089,14 @@
 
 # sent_id = test-s1039
 # text = بنابراین، بی‌توجهی به بانکداری الکترونیک، موجب عقب‌ماندگی از همهٔ دستاوردهای نوین در عرصهٔ بانکداری می‌شود.
-1	بنابراین	بنابراین	ADV	ADV_SADV	_	8	advmod	_	SpaceAfter=No
+1	بنابراین	بنابراین	ADV	ADV_SADV	_	17	advmod	_	SpaceAfter=No
 2	،	،	PUNCT	PUNC	_	1	punct	_	_
-3	بی‌توجهی	بی‌توجهی	NOUN	N_IANM	_	8	nsubj	_	_
+3	بی‌توجهی	بی‌توجهی	NOUN	N_IANM	_	17	nsubj	_	_
 4	به	به	ADP	PREP	_	5	case	_	_
 5	بانکداری	بانکداری	NOUN	N_IANM	_	3	nmod	_	_
 6	الکترونیک	الکترونیک	ADJ	ADJ_AJP	_	5	amod	_	SpaceAfter=No
 7	،	،	PUNCT	PUNC	_	6	punct	_	_
-8	موجب	موجب	ADJ	ADJ_AJP	_	0	root	_	_
+8	موجب	موجب	ADJ	ADJ_AJP	_	17	xcomp	_	_
 9	عقب‌ماندگی	عقب‌ماندگی	NOUN	N_IANM	_	8	obl	_	_
 10	از	از	ADP	PREP	_	11	case	_	_
 11	همهٔ	همه	NOUN	N_IANM	_	9	nmod	_	_
@@ -20105,8 +20105,8 @@
 14	در	در	ADP	PREP	_	15	case	_	_
 15	عرصهٔ	عرصه	NOUN	N_IANM	_	12	nmod	_	_
 16	بانکداری	بانکداری	NOUN	N_IANM	_	15	nmod	_	_
-17	می‌شود	شد#شو	VERB	V_ACT	_	8	cop	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	8	punct	_	_
+17	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s1040
 # text = عادت همیشگی‌اش بود که دانشجویش را تا دم در بدرقه کرده باشد.
@@ -20146,8 +20146,8 @@
 1	وقتی	وقت	NOUN	N_IANM	_	8	obl	_	_
 2	از	از	ADP	PREP	_	3	case	_	_
 3	گل‌فروشی	گل‌فروشی	NOUN	N_IANM	_	4	obl	_	_
-4	خارج	خارج	ADJ	ADJ_AJP	_	1	acl	_	_
-5	شدم	شد#شو	VERB	V_ACT	_	4	cop	_	_
+4	خارج	خارج	ADJ	ADJ_AJP	_	5	xcomp	_	_
+5	شدم	شد#شو	VERB	V_ACT	_	1	acl	_	_
 6	دختربچه‌ای	دختربچه	NOUN	N_IANM	_	8	obj	_	_
 7	را	را	ADP	POSTP	_	6	case	_	_
 8	دیدم	دید#بین	VERB	V_ACT	_	0	root	_	_
@@ -20155,11 +20155,11 @@
 10	به	به	ADP	PREP	_	11	case	_	_
 11	ویترین	ویترین	NOUN	N_IANM	_	13	obl	_	_
 12	مغازه	مغازه	NOUN	N_IANM	_	11	nmod	_	_
-13	خیره	خیره	ADJ	ADJ_AJP	_	9	acl	_	_
-14	شده	شد#شو	VERB	V_ACT	_	13	cop	_	_
+13	خیره	خیره	ADJ	ADJ_AJP	_	14	xcomp	_	_
+14	شده	شد#شو	VERB	V_ACT	_	9	acl	_	_
 15	و	و	CCONJ	CONJ	_	17	cc	_	_
 16	بغض	بغض	NOUN	N_IANM	_	17	compound	_	_
-17	کرده	کرد#کن	VERB	V_ACT	_	13	conj	_	_
+17	کرده	کرد#کن	VERB	V_ACT	_	14	conj	_	_
 18	بود	بود#باش	AUX	AUX	_	17	aux	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	8	punct	_	_
 
@@ -20424,19 +20424,19 @@
 # text = انسان به میزانی که به آگاهی برسد محیط بهشتی برایش زمینی می‌شود یعنی انسان از جنت هبوط نمی‌کند بلکه جنت از چشم انسان هبوط می‌کند.
 1	انسان	انسان	NOUN	N_ANM	_	11	advmod	_	_
 2	به	به	ADP	PREP	_	3	case	_	_
-3	میزانی	میزان	NOUN	N_IANM	_	12	obl	_	_
+3	میزانی	میزان	NOUN	N_IANM	_	13	obl	_	_
 4	که	که	SCONJ	SUBR	_	7	mark	_	_
 5	به	به	ADP	PREP	_	6	case	_	_
 6	آگاهی	آگاهی	NOUN	N_IANM	_	7	obl	_	_
 7	برسد	رسید#رس	VERB	V_ACT	_	3	acl	_	_
-8	محیط	محیط	NOUN	N_IANM	_	12	nsubj	_	_
+8	محیط	محیط	NOUN	N_IANM	_	13	nsubj	_	_
 9	بهشتی	بهشتی	ADJ	ADJ_AJP	_	8	amod	_	_
 10-11	برایش	_	_	_	_	_	_	_	_
 10	برای	برای	ADP	PREP	_	11	case	_	_
-11	ش	او	PRON	PR_JOPER	_	12	obl	_	_
-12	زمینی	زمینی	ADJ	ADJ_AJP	_	0	root	_	_
-13	می‌شود	شد#شو	VERB	V_ACT	_	12	cop	_	_
-14	یعنی	یعنی	INTJ	PSUS	_	12	conj	_	_
+11	ش	او	PRON	PR_JOPER	_	13	obl	_	_
+12	زمینی	زمینی	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
+14	یعنی	یعنی	INTJ	PSUS	_	13	conj	_	_
 15	انسان	انسان	NOUN	N_ANM	_	19	nsubj	_	_
 16	از	از	ADP	PREP	_	17	case	_	_
 17	جنت	جنت	NOUN	N_IANM	_	19	obl	_	_
@@ -20517,7 +20517,7 @@
 1	وی	وی	PRON	PR_SEPER	_	4	nsubj	_	_
 2	در	در	ADP	PREP	_	3	case	_	_
 3	عراق	عراق	PROPN	N_IANM	_	4	obl	_	_
-4	بود	بود#باش	AUX	AUX	_	5	root	_	_
+4	بود	بود#باش	AUX	AUX	_	5	vocative	_	_
 5	و	و	CCONJ	CONJ	_	0	root	_	_
 6	در	در	ADP	PREP	_	7	case	_	_
 7	جنگ	جنگ	NOUN	N_IANM	_	27	obl	_	_
@@ -20814,18 +20814,18 @@
 
 # sent_id = test-s1071
 # text = حسن جان! حسین جان! زینبم! عزیزم ام‌کلثوم بیایید با مادر وداع کنید.
-1	حسن	حسن	PROPN	N_ANM	_	4	root	_	_
+1	حسن	حسن	PROPN	N_ANM	_	4	vocative	_	_
 2	جان	جان	NOUN	N_IANM	_	1	advmod	_	SpaceAfter=No
 3	!	!	PUNCT	PUNC	_	2	punct	_	_
-4	حسین	حسین	PROPN	N_ANM	_	7	root	_	_
+4	حسین	حسین	PROPN	N_ANM	_	7	vocative	_	_
 5	جان	جان	NOUN	N_IANM	_	4	advmod	_	SpaceAfter=No
 6	!	!	PUNCT	PUNC	_	5	punct	_	_
 7-8	زینبم	_	_	_	_	_	_	_	_
-7	زینب	زینب	PROPN	N_IANM	_	10	root	_	_
+7	زینب	زینب	PROPN	N_IANM	_	10	vocative	_	_
 8	م	من	PRON	PR_JOPER	_	7	nmod	_	_
 9	!	!	PUNCT	PUNC	_	7	punct	_	_
 10-11	عزیزم	_	_	_	_	_	_	_	_
-10	عزیز	عزیز	NOUN	N_IANM	_	13	root	_	_
+10	عزیز	عزیز	NOUN	N_IANM	_	13	vocative	_	_
 11	م	من	PRON	PR_JOPER	_	10	nmod	_	_
 12	ام‌کلثوم	ام‌کلثوم	PROPN	N_ANM	_	10	appos	_	_
 13	بیایید	آمد#آ	VERB	V_ACT	_	0	root	_	_
@@ -21021,19 +21021,19 @@
 8	باب	باب	NOUN	N_IANM	_	4	nmod	_	_
 9	آنچه	آنچه	NOUN	N_IANM	_	8	nmod	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
-11	تفسیر	تفسیر	NOUN	N_IANM	_	14	obl	_	_
+11	تفسیر	تفسیر	NOUN	N_IANM	_	18	obl	_	_
 12	میبدی	میبدی	NOUN	N_ANM	_	11	nmod	_	_
 13	به	به	ADP	PREP	_	14	case	_	_
-14	نام	نام	NOUN	N_IANM	_	9	nmod	_	_
+14	نام	نام	NOUN	N_IANM	_	18	xcomp	_	_
 15	خواجه	خواجه	PROPN	IDEN	_	14	nmod	_	_
 16	عبدالله	عبدالله	PROPN	N_ANM	_	15	flat	_	_
 17	انصاری	انصاری	PROPN	N_ANM	_	15	flat	_	_
-18	آمده	آمد#آ	VERB	V_ACT	_	14	cop	_	_
+18	آمده	آمد#آ	VERB	V_ACT	_	9	nmod	_	_
 19	یا	یا	CCONJ	CONJ	_	23	cc	_	_
 20	به	به	ADP	PREP	_	21	case	_	_
 21	گونه‌ای	گونه	NOUN	N_IANM	_	23	obl	_	_
 22	نقل	نقل	NOUN	N_IANM	_	23	compound	_	_
-23	شده	شد#شو	VERB	V_ACT	_	14	conj	_	_
+23	شده	شد#شو	VERB	V_ACT	_	18	conj	_	_
 24	است	#است	AUX	AUX	_	23	aux	_	_
 25	که	که	SCONJ	SUBR	_	34	mark	_	_
 26	خواننده	خواننده	NOUN	N_ANM	_	34	nsubj	_	_
@@ -21088,7 +21088,7 @@
 # text = کوهنوردی یک ورزش گروهی است و هر قدر هم که اهل تنهایی سفر کردن باشید، در این مورد نمی‌توانید یکه‌تازی کنید.
 1	کوهنوردی	کوهنوردی	NOUN	N_IANM	_	3	nsubj	_	_
 2	یک	یک	NUM	PRENUM	_	3	nummod	_	_
-3	ورزش	ورزش	NOUN	N_IANM	_	6	root	_	_
+3	ورزش	ورزش	NOUN	N_IANM	_	6	vocative	_	_
 4	گروهی	گروهی	ADJ	ADJ_AJP	_	3	amod	_	_
 5	است	#است	AUX	AUX	_	3	cop	_	_
 6	و	و	CCONJ	CONJ	_	0	root	_	_
@@ -21130,34 +21130,34 @@
 
 # sent_id = test-s1086
 # text = بنی‌امیه حسن بن علی را با دشنه مجروح کردند و قصد آنها کشتن ایشان بود، لشکر او را متفرق کردند و او ناگزیر با آنها مسالمت کرد.
-1	بنی‌امیه	بنی‌امیه	NOUN	N_ANM	_	8	nsubj	_	_
-2	حسن	حسن	PROPN	N_ANM	_	8	obj	_	_
+1	بنی‌امیه	بنی‌امیه	NOUN	N_ANM	_	9	nsubj	_	_
+2	حسن	حسن	PROPN	N_ANM	_	9	obj	_	_
 3	بن	بن	PROPN	N_IANM	_	2	flat	_	_
 4	علی	علی	PROPN	N_ANM	_	2	flat	_	_
 5	را	را	ADP	POSTP	_	2	case	_	_
 6	با	با	ADP	PREP	_	7	case	_	_
-7	دشنه	دشنه	NOUN	N_IANM	_	8	obl	_	_
-8	مجروح	مجروح	ADJ	ADJ_AJP	_	0	root	_	_
-9	کردند	کرد#کن	VERB	V_ACT	_	8	cop	_	_
+7	دشنه	دشنه	NOUN	N_IANM	_	9	obl	_	_
+8	مجروح	مجروح	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	کردند	کرد#کن	VERB	V_ACT	_	0	root	_	_
 10	و	و	CCONJ	CONJ	_	13	cc	_	_
 11	قصد	قصد	NOUN	N_IANM	_	13	nsubj	_	_
 12	آنها	آنها	PRON	PR_SEPER	_	11	nmod	_	_
-13	کشتن	کشتن	NOUN	N_IANM	_	8	conj	_	_
+13	کشتن	کشتن	NOUN	N_IANM	_	9	conj	_	_
 14	ایشان	ایشان	PRON	PR_SEPER	_	13	nmod	_	_
 15	بود	بود#باش	AUX	AUX	_	13	cop	_	SpaceAfter=No
 16	،	،	PUNCT	PUNC	_	13	punct	_	_
-17	لشکر	لشکر	NOUN	N_IANM	_	20	obj	_	_
+17	لشکر	لشکر	NOUN	N_IANM	_	21	obj	_	_
 18	او	او	PRON	PR_SEPER	_	17	nmod	_	_
 19	را	را	ADP	POSTP	_	17	case	_	_
-20	متفرق	متفرق	ADJ	ADJ_AJP	_	8	conj	_	_
-21	کردند	کرد#کن	VERB	V_ACT	_	20	cop	_	_
+20	متفرق	متفرق	ADJ	ADJ_AJP	_	21	xcomp	_	_
+21	کردند	کرد#کن	VERB	V_ACT	_	9	conj	_	_
 22	و	و	CCONJ	CONJ	_	28	cc	_	_
 23	او	او	PRON	PR_SEPER	_	28	nsubj	_	_
 24	ناگزیر	ناگزیر	ADV	ADV_SADV	_	28	advmod	_	_
 25	با	با	ADP	PREP	_	26	case	_	_
 26	آنها	آنها	PRON	PR_SEPER	_	28	obl	_	_
 27	مسالمت	مسالمت	NOUN	N_IANM	_	28	compound	_	_
-28	کرد	کرد#کن	VERB	V_ACT	_	8	conj	_	SpaceAfter=No
+28	کرد	کرد#کن	VERB	V_ACT	_	9	conj	_	SpaceAfter=No
 29	.	.	PUNCT	PUNC	_	28	punct	_	_
 
 # sent_id = test-s1087
@@ -21222,7 +21222,7 @@
 4	از	از	ADP	PREP	_	6	case	_	_
 5	بسیاری	بسیاری	DET	PREM_AMBAJ	_	6	det	_	_
 6	جهات	جهت	NOUN	N_IANM	_	7	obl	_	_
-7	معارض	معارض	ADJ	ADJ_AJP	_	10	root	_	_
+7	معارض	معارض	ADJ	ADJ_AJP	_	10	vocative	_	_
 8	هم	هم	PRON	PR_RECPR	_	7	obl	_	_
 9	بودند	بود#باش	AUX	AUX	_	7	cop	_	_
 10	و	و	CCONJ	CONJ	_	0	root	_	_
@@ -21290,7 +21290,7 @@
 
 # sent_id = test-s1095
 # text = وای به حال شما که اکنون می‌خندید، شما ماتم خواهید گرفت.
-1	وای	وای	INTJ	PSUS	_	12	root	_	_
+1	وای	وای	INTJ	PSUS	_	12	vocative	_	_
 2	به	به	ADP	PREP	_	3	case	_	_
 3	حال	حال	NOUN	N_IANM	_	1	advmod	_	_
 4	شما	شما	PRON	PR_SEPER	_	3	nmod	_	_
@@ -21517,7 +21517,7 @@
 4	در	در	ADP	PREP	_	6	case	_	_
 5	هر	هر	DET	PREM_AMBAJ	_	6	det	_	_
 6	زمانی	زمان	NOUN	N_IANM	_	7	obl	_	_
-7	ممکن	ممکن	ADJ	ADJ_AJP	_	12	root	_	_
+7	ممکن	ممکن	ADJ	ADJ_AJP	_	12	vocative	_	_
 8	است	#است	AUX	AUX	_	7	cop	_	_
 9	به	به	ADP	PREP	_	10	case	_	_
 10	ذهن	ذهن	NOUN	N_IANM	_	11	obl	_	_
@@ -21683,7 +21683,7 @@
 # sent_id = test-s1113
 # text = هر کس او را به کیفیتی از کیفیات موجودات حادث‌شده وصف کند، همانا او را محدود کرده باشد و هر کس او را محدود کند همانا او را در شمار آورده باشد و هر کس او را در شمار آورد همانا جاودانگی او را باطل دانسته باشد.
 1	هر	هر	DET	PREM_AMBAJ	_	2	det	_	_
-2	کس	کس	NOUN	N_ANM	_	17	nsubj	_	_
+2	کس	کس	NOUN	N_ANM	_	18	nsubj	_	_
 3	او	او	PRON	PR_SEPER	_	12	obj	_	_
 4	را	را	ADP	POSTP	_	3	case	_	_
 5	به	به	ADP	PREP	_	6	case	_	_
@@ -21695,25 +21695,25 @@
 11	وصف	وصف	NOUN	N_IANM	_	12	compound	_	_
 12	کند	کرد#کن	VERB	V_ACT	_	2	acl	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	12	punct	_	_
-14	همانا	همانا	ADV	ADV_SADV	_	17	advmod	_	_
-15	او	او	PRON	PR_SEPER	_	17	obj	_	_
+14	همانا	همانا	ADV	ADV_SADV	_	18	advmod	_	_
+15	او	او	PRON	PR_SEPER	_	18	obj	_	_
 16	را	را	ADP	POSTP	_	15	case	_	_
-17	محدود	محدود	ADJ	ADJ_AJP	_	0	root	_	_
-18	کرده	کرد#کن	VERB	V_ACT	_	17	cop	_	_
+17	محدود	محدود	ADJ	ADJ_AJP	_	18	xcomp	_	_
+18	کرده	کرد#کن	VERB	V_ACT	_	0	root	_	_
 19	باشد	بود#باش	AUX	AUX	_	18	aux	_	_
 20	و	و	CCONJ	CONJ	_	32	cc	_	_
 21	هر	هر	DET	PREM_AMBAJ	_	22	det	_	_
 22	کس	کس	NOUN	N_ANM	_	32	nsubj	_	_
-23	او	او	PRON	PR_SEPER	_	25	obj	_	_
+23	او	او	PRON	PR_SEPER	_	26	obj	_	_
 24	را	را	ADP	POSTP	_	23	case	_	_
-25	محدود	محدود	ADJ	ADJ_AJP	_	22	acl	_	_
-26	کند	کرد#کن	VERB	V_ACT	_	25	cop	_	_
+25	محدود	محدود	ADJ	ADJ_AJP	_	26	xcomp	_	_
+26	کند	کرد#کن	VERB	V_ACT	_	22	acl	_	_
 27	همانا	همانا	ADV	ADV_SADV	_	32	advmod	_	_
 28	او	او	PRON	PR_SEPER	_	32	obj	_	_
 29	را	را	ADP	POSTP	_	28	case	_	_
 30	در	در	ADP	PREP	_	31	case	_	_
 31	شمار	شمار	NOUN	N_IANM	_	32	compound	_	_
-32	آورده	آورد#آور	VERB	V_ACT	_	17	conj	_	_
+32	آورده	آورد#آور	VERB	V_ACT	_	18	conj	_	_
 33	باشد	بود#باش	AUX	AUX	_	32	aux	_	_
 34	و	و	CCONJ	CONJ	_	47	cc	_	_
 35	هر	هر	DET	PREM_AMBAJ	_	36	det	_	_
@@ -21728,7 +21728,7 @@
 44	او	او	PRON	PR_SEPER	_	43	nmod	_	_
 45	را	را	ADP	POSTP	_	43	case	_	_
 46	باطل	باطل	ADJ	ADJ_AJP	_	47	xcomp	_	_
-47	دانسته	دانست#دان	VERB	V_ACT	_	17	conj	_	_
+47	دانسته	دانست#دان	VERB	V_ACT	_	18	conj	_	_
 48	باشد	بود#باش	AUX	AUX	_	47	aux	_	SpaceAfter=No
 49	.	.	PUNCT	PUNC	_	47	punct	_	_
 
@@ -21743,15 +21743,15 @@
 6	و	و	CCONJ	CONJ	_	21	cc	_	_
 7	هر	هر	DET	PREM_AMBAJ	_	8	det	_	_
 8	وقت	وقت	NOUN	N_IANM	_	21	obl	_	_
-9	مشکلی	مشکل	NOUN	N_IANM	_	12	nsubj	_	_
+9	مشکلی	مشکل	NOUN	N_IANM	_	13	nsubj	_	_
 10-11	برایشان	_	_	_	_	_	_	_	_
 10	برای	برای	ADP	PREP	_	11	case	_	_
-11	شان	آنها	PRON	PR_JOPER	_	12	obl	_	_
-12	پیدا	پیدا	ADJ	ADJ_AJP	_	8	obl	_	_
-13	می‌شد	شد#شو	VERB	V_ACT	_	12	cop	_	_
+11	شان	آنها	PRON	PR_JOPER	_	13	obl	_	_
+12	پیدا	پیدا	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	می‌شد	شد#شو	VERB	V_ACT	_	8	obl	_	_
 14	یا	یا	CCONJ	CONJ	_	16	cc	_	_
 15	سؤالی	سؤال	NOUN	N_IANM	_	16	obj	_	_
-16	داشتند	داشت#دار	VERB	V_ACT	_	12	conj	_	_
+16	داشتند	داشت#دار	VERB	V_ACT	_	13	conj	_	_
 17	با	با	ADP	PREP	_	18	case	_	_
 18	استاد	استاد	NOUN	N_ANM	_	21	obl	_	_
 19	در	در	ADP	PREP	_	20	case	_	_
@@ -22424,7 +22424,7 @@
 
 # sent_id = test-s1151
 # text = هنگام رانندگی با ماشین پدر و وقتی که همراه دوستان خود هستید جوگیر نشوید و ویراژ ندهید.
-1	هنگام	هنگام	NOUN	N_IANM	_	13	obl	_	_
+1	هنگام	هنگام	NOUN	N_IANM	_	14	obl	_	_
 2	رانندگی	رانندگی	NOUN	N_IANM	_	1	nmod	_	_
 3	با	با	ADP	PREP	_	4	case	_	_
 4	ماشین	ماشین	NOUN	N_IANM	_	2	nmod	_	_
@@ -22436,11 +22436,11 @@
 10	دوستان	دوست	NOUN	N_ANM	_	7	acl	_	_
 11	خود	خود	PRON	PR_CREFX	_	10	nmod	_	_
 12	هستید	#هست	AUX	AUX	_	10	cop	_	_
-13	جوگیر	جوگیر	ADJ	ADJ_AJP	_	0	root	_	_
-14	نشوید	شد#شو	VERB	V_ACT	_	13	cop	_	_
+13	جوگیر	جوگیر	ADJ	ADJ_AJP	_	14	xcomp	_	_
+14	نشوید	شد#شو	VERB	V_ACT	_	0	root	_	_
 15	و	و	CCONJ	CONJ	_	17	cc	_	_
 16	ویراژ	ویراژ	NOUN	N_IANM	_	17	compound	_	_
-17	ندهید	داد#ده	VERB	V_ACT	_	13	conj	_	SpaceAfter=No
+17	ندهید	داد#ده	VERB	V_ACT	_	14	conj	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s1152
@@ -22455,15 +22455,15 @@
 8	سخن	سخن	NOUN	N_IANM	_	5	conj	_	_
 9	یقین	یقین	NOUN	N_IANM	_	10	nsubj	_	_
 10	می‌آورد	آورد#آور	VERB	V_ACT	_	0	root	_	_
-11	که	که	SCONJ	SUBR	_	12	mark	_	_
-12	آماده	آماده	ADJ	ADJ_AJP	_	2	acl	_	_
-13	می‌شود	شد#شو	VERB	V_ACT	_	12	cop	_	_
+11	که	که	SCONJ	SUBR	_	13	mark	_	_
+12	آماده	آماده	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	می‌شود	شد#شو	VERB	V_ACT	_	2	acl	_	_
 14	در	در	ADP	PREP	_	15	case	_	_
 15	مقابل	مقابل	NOUN	N_IANM	_	19	obl	_	_
 16	همهٔ	همه	NOUN	N_IANM	_	15	nmod	_	_
 17	تلخی‌ها	تلخی	NOUN	N_IANM	_	16	nmod	_	_
 18	یک‌تنه	یک‌تنه	ADJ	ADJ_AJP	_	19	advmod	_	_
-19	بایستد	ایستاد#ایست	VERB	V_ACT	_	12	csubj	_	SpaceAfter=No
+19	بایستد	ایستاد#ایست	VERB	V_ACT	_	13	csubj	_	SpaceAfter=No
 20	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s1153
@@ -22597,7 +22597,7 @@
 3	خر	خر	ADJ	ADJ_AJP	_	2	amod	_	SpaceAfter=No
 4	،	،	PUNCT	PUNC	_	3	punct	_	_
 5	همان	همان	DET	PREM_DEMAJ	_	6	det	_	_
-6	طایفه‌ای	طایفه	NOUN	N_IANM	_	14	root	_	_
+6	طایفه‌ای	طایفه	NOUN	N_IANM	_	14	vocative	_	_
 7	هستید	#هست	AUX	AUX	_	6	cop	_	_
 8	که	که	SCONJ	SUBR	_	12	mark	_	_
 9	زن	زن	NOUN	N_ANM	_	12	obj	_	_
@@ -22621,7 +22621,7 @@
 
 # sent_id = test-s1159
 # text = اگر کسی دو سال در مکه مجاورت بکند، و وارد سال سوم بشود همین تمامیت مجاورت دو سال که به دخول در سنهٔ ثالثه تحقق پیدا می‌کند، این سبب می‌شود که این انتقال فرض پیدا بکند، یعنی وظیفهٔ حج تمتعش منتقل بشود به وظیفهٔ حج قران و افراد.
-1	اگر	اگر	SCONJ	SUBR	_	31	advcl	_	_
+1	اگر	اگر	SCONJ	SUBR	_	32	advcl	_	_
 2	کسی	کس	NOUN	N_ANM	_	8	nsubj	_	_
 3	دو	دو	NUM	PRENUM	_	4	nummod	_	_
 4	سال	سال	NOUN	N_IANM	_	8	obl	_	_
@@ -22650,9 +22650,9 @@
 27	پیدا	پیدا	ADJ	ADJ_AJP	_	28	compound	_	_
 28	می‌کند	کرد#کن	VERB	V_ACT	_	17	acl	_	SpaceAfter=No
 29	،	،	PUNCT	PUNC	_	28	punct	_	_
-30	این	این	PRON	PR_DEMON	_	31	nsubj	_	_
-31	سبب	سبب	NOUN	N_IANM	_	0	root	_	_
-32	می‌شود	شد#شو	VERB	V_ACT	_	31	cop	_	_
+30	این	این	PRON	PR_DEMON	_	32	nsubj	_	_
+31	سبب	سبب	NOUN	N_IANM	_	32	xcomp	_	_
+32	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	_
 33	که	که	SCONJ	SUBR	_	38	mark	_	_
 34	این	این	DET	PREM_DEMAJ	_	35	det	_	_
 35	انتقال	انتقال	NOUN	N_IANM	_	38	nsubj	_	_
@@ -22660,7 +22660,7 @@
 37	پیدا	پیدا	ADJ	ADJ_AJP	_	38	compound	_	_
 38	بکند	کرد#کن	VERB	V_ACT	_	31	acl	_	SpaceAfter=No
 39	،	،	PUNCT	PUNC	_	38	punct	_	_
-40	یعنی	یعنی	SCONJ	SUBR	_	31	conj	_	_
+40	یعنی	یعنی	SCONJ	SUBR	_	32	conj	_	_
 41	وظیفهٔ	وظیفه	NOUN	N_IANM	_	46	nsubj	_	_
 42	حج	حج	NOUN	N_IANM	_	41	nmod	_	_
 43-44	تمتعش	_	_	_	_	_	_	_	_
@@ -22842,7 +22842,7 @@
 12	به	به	ADP	PREP	_	13	case	_	_
 13	نخست‌وزیری	نخست‌وزیری	NOUN	N_IANM	_	14	obl	_	_
 14	رسید	رسید#رس	VERB	V_ACT	_	0	root	_	_
-15	اما	اما	CCONJ	CONJ	_	31	cc	_	_
+15	اما	اما	CCONJ	CONJ	_	32	cc	_	_
 16	چون	چون	SCONJ	SUBR	_	25	mark	_	_
 17	از	از	ADP	PREP	_	18	case	_	_
 18	اجرای	اجرا	NOUN	N_IANM	_	25	obl	_	_
@@ -22852,15 +22852,15 @@
 22	صنعت	صنعت	NOUN	N_IANM	_	21	nmod	_	_
 23	نفت	نفت	NOUN	N_IANM	_	22	nmod	_	_
 24	استنکاف	استنکاف	NOUN	N_IANM	_	25	compound	_	_
-25	می‌ورزید	ورزید#ورز	VERB	V_ACT	_	31	advcl	_	_
+25	می‌ورزید	ورزید#ورز	VERB	V_ACT	_	32	advcl	_	_
 26	با	با	ADP	PREP	_	27	case	_	_
 27	مخالفت	مخالفت	NOUN	N_IANM	_	31	obl	_	_
 28	مردم	مردم	NOUN	N_ANM	_	27	nmod	_	_
 29	و	و	CCONJ	CONJ	_	30	cc	_	_
 30	مجلس	مجلس	NOUN	N_IANM	_	28	conj	_	_
-31	روبه‌رو	روبه‌رو	ADJ	ADJ_AJP	_	14	conj	_	_
-32	شد	شد#شو	VERB	V_ACT	_	31	cop	_	SpaceAfter=No
-33	.	.	PUNCT	PUNC	_	31	punct	_	_
+31	روبه‌رو	روبه‌رو	ADJ	ADJ_AJP	_	32	xcomp	_	_
+32	شد	شد#شو	VERB	V_ACT	_	14	conj	_	SpaceAfter=No
+33	.	.	PUNCT	PUNC	_	32	punct	_	_
 
 # sent_id = test-s1171
 # text = هیچ گروهی نباید گروه دیگری را استهزا کند.
@@ -22930,7 +22930,7 @@
 # text = این روزها شاهد جشن سی سالگی انقلاب شکوهمند ایران اسلامی بوده‌ایم و شاید نام گرفتن امسال به نوآوری و شکوفایی، بر این اتفاق مهم تاریخی اشارت داشته باشد.
 1	این	این	DET	PREM_DEMAJ	_	2	det	_	_
 2	روزها	روز	NOUN	N_IANM	_	3	obl	_	_
-3	شاهد	شاهد	ADJ	ADJ_AJP	_	12	root	_	_
+3	شاهد	شاهد	ADJ	ADJ_AJP	_	12	vocative	_	_
 4	جشن	جشن	NOUN	N_IANM	_	3	obl	_	_
 5	سی	سی	ADJ	PRENUM	_	6	advmod	_	_
 6	سالگی	سالگی	NOUN	N_IANM	_	4	nmod	_	_
@@ -22979,11 +22979,11 @@
 16	اشاره	اشاره	NOUN	N_IANM	_	17	compound	_	_
 17	می‌دارد	داشت#دار	VERB	V_ACT	_	14	conj	_	_
 18	که	که	SCONJ	SUBR	_	28	mark	_	_
-19	اگر	اگر	SCONJ	SUBR	_	21	mark	_	_
-20	بی‌رنگی	بی‌رنگی	NOUN	N_IANM	_	21	nsubj	_	_
-21	حاکم	حاکم	NOUN	N_IANM	_	28	advcl	_	_
-22	شود	شد#شو	VERB	V_ACT	_	21	cop	_	SpaceAfter=No
-23	،	،	PUNCT	PUNC	_	21	punct	_	_
+19	اگر	اگر	SCONJ	SUBR	_	22	mark	_	_
+20	بی‌رنگی	بی‌رنگی	NOUN	N_IANM	_	22	nsubj	_	_
+21	حاکم	حاکم	NOUN	N_IANM	_	22	xcomp	_	_
+22	شود	شد#شو	VERB	V_ACT	_	28	advcl	_	SpaceAfter=No
+23	،	،	PUNCT	PUNC	_	22	punct	_	_
 24	جنگ‌ها	جنگ	NOUN	N_IANM	_	28	nsubj	_	_
 25	از	از	ADP	PREP	_	26	case	_	_
 26	هستی	هستی	NOUN	N_IANM	_	28	obl	_	_
@@ -23040,14 +23040,14 @@
 2	شورای	شورا	PROPN	N_IANM	_	5	nsubj	_	_
 3	نگهبان	نگهبان	PROPN	N_IANM	_	2	flat	_	_
 4	اغماض	اغماض	NOUN	N_IANM	_	5	compound	_	_
-5	کرده	کرد#کن	VERB	V_ACT	_	8	advcl	_	_
+5	کرده	کرد#کن	VERB	V_ACT	_	10	advcl	_	_
 6	باشد	بود#باش	AUX	AUX	_	5	aux	_	SpaceAfter=No
 7	،	،	PUNCT	PUNC	_	5	punct	_	_
-8	دچار	دچار	ADJ	ADJ_AJP	_	0	root	_	_
+8	دچار	دچار	ADJ	ADJ_AJP	_	10	xcomp	_	_
 9	تخلف	تخلف	NOUN	N_IANM	_	8	obl	_	_
-10	شده	شد#شو	VERB	V_ACT	_	8	cop	_	_
+10	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 11	است	#است	AUX	AUX	_	10	aux	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	_	8	punct	_	_
+12	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s1181
 # text = اخلاقیات در جامعه افول کرده است.
@@ -23061,17 +23061,17 @@
 
 # sent_id = test-s1182
 # text = فردی در کنار جاده جانمازی پهن کرده و نماز اقامه داشته بود.
-1	فردی	فرد	NOUN	N_ANM	_	6	nsubj	_	_
+1	فردی	فرد	NOUN	N_ANM	_	7	nsubj	_	_
 2	در	در	ADP	PREP	_	3	case	_	_
-3	کنار	کنار	NOUN	N_IANM	_	6	obl	_	_
+3	کنار	کنار	NOUN	N_IANM	_	7	obl	_	_
 4	جاده	جاده	NOUN	N_IANM	_	3	nmod	_	_
-5	جانمازی	جانماز	NOUN	N_IANM	_	6	obj	_	_
-6	پهن	پهن	ADJ	ADJ_AJP	_	0	root	_	_
-7	کرده	کرد#کن	VERB	V_ACT	_	6	cop	_	_
+5	جانمازی	جانماز	NOUN	N_IANM	_	7	obj	_	_
+6	پهن	پهن	ADJ	ADJ_AJP	_	7	xcomp	_	_
+7	کرده	کرد#کن	VERB	V_ACT	_	0	root	_	_
 8	و	و	CCONJ	CONJ	_	11	cc	_	_
 9	نماز	نماز	NOUN	N_IANM	_	11	obj	_	_
 10	اقامه	اقامه	NOUN	N_IANM	_	11	compound	_	_
-11	داشته	داشت#دار	VERB	V_ACT	_	6	conj	_	_
+11	داشته	داشت#دار	VERB	V_ACT	_	7	conj	_	_
 12	بود	بود#باش	AUX	AUX	_	11	aux	_	SpaceAfter=No
 13	.	.	PUNCT	PUNC	_	11	punct	_	_
 
@@ -23132,10 +23132,10 @@
 10	به	به	ADP	PREP	_	11	case	_	_
 11	فیض	فیض	NOUN	N_IANM	_	12	obl	_	_
 12	برسد	رسید#رس	VERB	V_ACT	_	3	acl	_	_
-13	و	و	CCONJ	CONJ	_	14	cc	_	_
-14	بهره‌مند	بهره‌مند	ADJ	ADJ_AJP	_	12	conj	_	_
-15	شود	شد#شو	VERB	V_ACT	_	14	cop	_	SpaceAfter=No
-16	،	،	PUNCT	PUNC	_	14	punct	_	_
+13	و	و	CCONJ	CONJ	_	15	cc	_	_
+14	بهره‌مند	بهره‌مند	ADJ	ADJ_AJP	_	15	xcomp	_	_
+15	شود	شد#شو	VERB	V_ACT	_	12	conj	_	SpaceAfter=No
+16	،	،	PUNCT	PUNC	_	15	punct	_	_
 17	از	از	ADP	PREP	_	20	case	_	_
 18	هفتاد	هفتاد	NUM	PRENUM	_	20	nummod	_	_
 19	هزار	هزار	NUM	PRENUM	_	18	flat	_	_
@@ -23317,7 +23317,7 @@
 10	مورد	مورد	ADP	PREP	_	11	case	_	_
 11	نیاز	نیاز	NOUN	N_IANM	_	9	amod	_	_
 12	پرورش	پرورش	NOUN	N_IANM	_	13	compound	_	_
-13	می‌دهند	داد#ده	VERB	V_ACT	_	27	csubj	_	_
+13	می‌دهند	داد#ده	VERB	V_ACT	_	28	csubj	_	_
 14	و	و	CCONJ	CONJ	_	22	cc	_	_
 15	آنگاه	آنگاه	ADV	ADV_SADV	_	22	advmod	_	_
 16	آنزیم	آنزیم	NOUN	N_IANM	_	22	obj	_	_
@@ -23327,13 +23327,13 @@
 20	را	را	ADP	POSTP	_	16	case	_	_
 21	عصاره‌گیری	عصاره‌گیری	NOUN	N_IANM	_	22	compound	_	_
 22	کرده	کرد#کن	VERB	V_ACT	_	13	conj	_	_
-23	و	و	CCONJ	CONJ	_	27	punct	_	_
+23	و	و	CCONJ	CONJ	_	28	punct	_	_
 24	با	با	ADP	PREP	_	26	case	_	_
 25	راسب	راسب	ADJ	ADJ_AJP	_	26	advmod	_	_
-26	کردن	کردن	NOUN	N_IANM	_	27	obl	_	_
-27	خالص	خالص	ADJ	ADJ_AJP	_	0	root	_	_
-28	می‌سازند	ساخت#ساز	VERB	V_ACT	_	27	cop	_	SpaceAfter=No
-29	.	.	PUNCT	PUNC	_	27	punct	_	_
+26	کردن	کردن	NOUN	N_IANM	_	28	obl	_	_
+27	خالص	خالص	ADJ	ADJ_AJP	_	28	xcomp	_	_
+28	می‌سازند	ساخت#ساز	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+29	.	.	PUNCT	PUNC	_	28	punct	_	_
 
 # sent_id = test-s1197
 # text = قبلاً صیادی کرده بودم، ولی در شهر جدید این کار به درد نمی‌خورد.
@@ -23477,8 +23477,8 @@
 
 # sent_id = test-s1204
 # text = سلام امید جان؛ وقت کردی پیش ما هم بیا.
-1	سلام	سلام	NOUN	N_IANM	_	2	root	_	_
-2	امید	امید	PROPN	N_ANM	_	6	root	_	_
+1	سلام	سلام	NOUN	N_IANM	_	2	vocative	_	_
+2	امید	امید	PROPN	N_ANM	_	6	vocative	_	_
 3	جان	جان	NOUN	N_IANM	_	2	nmod	_	SpaceAfter=No
 4	؛	؛	PUNCT	PUNC	_	3	punct	_	_
 5	وقت	وقت	NOUN	N_IANM	_	6	compound	_	_
@@ -23523,18 +23523,18 @@
 
 # sent_id = test-s1207
 # text = ننگ را از مملکت پاک کنید و به روی هم چنگ نکشید.
-1	ننگ	ننگ	NOUN	N_IANM	_	5	obj	_	_
+1	ننگ	ننگ	NOUN	N_IANM	_	6	obj	_	_
 2	را	را	ADP	POSTP	_	1	case	_	_
 3	از	از	ADP	PREP	_	4	case	_	_
 4	مملکت	مملکت	NOUN	N_IANM	_	5	obl	_	_
-5	پاک	پاک	ADJ	ADJ_AJP	_	0	root	_	_
-6	کنید	کرد#کن	VERB	V_ACT	_	5	cop	_	_
+5	پاک	پاک	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	کنید	کرد#کن	VERB	V_ACT	_	0	root	_	_
 7	و	و	CCONJ	CONJ	_	12	cc	_	_
 8	به	به	ADP	PREP	_	9	case	_	_
 9	روی	رو	NOUN	N_IANM	_	12	obl	_	_
 10	هم	هم	PRON	PR_RECPR	_	9	nmod	_	_
 11	چنگ	چنگ	NOUN	N_IANM	_	12	compound	_	_
-12	نکشید	کشید#کش	VERB	V_ACT	_	5	conj	_	SpaceAfter=No
+12	نکشید	کشید#کش	VERB	V_ACT	_	6	conj	_	SpaceAfter=No
 13	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s1208
@@ -23602,14 +23602,14 @@
 
 # sent_id = test-s1212
 # text = اینک نماز عشق آنان مقبول آمده است.
-1	اینک	اینک	NOUN	N_IANM	_	5	nsubj	_	_
-2	نماز	نماز	NOUN	N_IANM	_	5	nsubj	_	_
+1	اینک	اینک	NOUN	N_IANM	_	6	nsubj	_	_
+2	نماز	نماز	NOUN	N_IANM	_	6	nsubj	_	_
 3	عشق	عشق	NOUN	N_IANM	_	2	nmod	_	_
 4	آنان	آنان	PRON	PR_SEPER	_	3	nmod	_	_
-5	مقبول	مقبول	ADJ	ADJ_AJP	_	0	root	_	_
-6	آمده	آمد#آ	VERB	V_ACT	_	5	cop	_	_
+5	مقبول	مقبول	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	آمده	آمد#آ	VERB	V_ACT	_	0	root	_	_
 7	است	#است	AUX	AUX	_	6	aux	_	SpaceAfter=No
-8	.	.	PUNCT	PUNC	_	5	punct	_	_
+8	.	.	PUNCT	PUNC	_	6	punct	_	_
 
 # sent_id = test-s1213
 # text = مارشال مورات با صورت بچه‌گانه‌اش روی کلاه سه‌گوشی که با مروارید تزیئن شده پر شترمرغ نصب می‌کند و روی رکاب زین اسبش ملیله‌دوزی کرده است.
@@ -23860,17 +23860,17 @@
 6	مهربانی	مهربانی	NOUN	N_IANM	_	4	conj	_	_
 7	والدین	والد	NOUN	N_ANM	_	4	nmod	_	_
 8	خود	خود	PRON	PR_CREFX	_	7	nmod	_	_
-9	برخوردار	برخوردار	ADJ	ADJ_AJP	_	2	acl	_	_
-10	نشوند	شد#شو	VERB	V_ACT	_	9	cop	_	_
-11	و	و	CCONJ	CONJ	_	18	cc	_	_
-12	عطش	عطش	NOUN	N_IANM	_	18	nsubj	_	_
+9	برخوردار	برخوردار	ADJ	ADJ_AJP	_	10	xcomp	_	_
+10	نشوند	شد#شو	VERB	V_ACT	_	2	acl	_	_
+11	و	و	CCONJ	CONJ	_	19	cc	_	_
+12	عطش	عطش	NOUN	N_IANM	_	19	nsubj	_	_
 13	نیاز	نیاز	NOUN	N_IANM	_	12	nmod	_	_
 14	آنها	آنها	PRON	PR_SEPER	_	13	nmod	_	_
 15	به	به	ADP	PREP	_	16	case	_	_
 16	محبت	محبت	NOUN	N_IANM	_	13	nmod	_	_
 17	بزرگ‌ترها	بزرگ‌تر	NOUN	N_ANM	_	16	nmod	_	_
-18	سیراب	سیراب	ADJ	ADJ_AJP	_	9	conj	_	_
-19	نشود	شد#شو	VERB	V_ACT	_	18	cop	_	_
+18	سیراب	سیراب	ADJ	ADJ_AJP	_	19	xcomp	_	_
+19	نشود	شد#شو	VERB	V_ACT	_	10	conj	_	_
 20	چگونه	چگونه	ADV	ADV_SADV	_	28	advmod	_	_
 21	در	در	ADP	PREP	_	22	case	_	_
 22	بزرگسالی	بزرگسالی	NOUN	N_IANM	_	28	obl	_	_
@@ -24173,13 +24173,13 @@
 1	وکیل	وکیل	NOUN	N_ANM	_	2	nsubj	_	_
 2	مجاز	مجاز	ADJ	ADJ_AJP	_	0	root	_	_
 3	است	#است	AUX	AUX	_	2	cop	_	_
-4	اختیارات	اختیار	NOUN	N_IANM	_	8	obj	_	_
+4	اختیارات	اختیار	NOUN	N_IANM	_	9	obj	_	_
 5	وکالتی	وکالتی	ADJ	ADJ_AJP	_	4	amod	_	_
 6	خود	خود	PRON	PR_CREFX	_	4	nmod	_	_
 7	را	را	ADP	POSTP	_	4	case	_	_
-8	محدود	محدود	ADJ	ADJ_AJP	_	2	ccomp	_	_
-9	سازد	ساخت#ساز	VERB	V_ACT	_	8	cop	_	_
-10	مشروط	مشروط	ADJ	ADJ_AJP	_	8	advmod	_	_
+8	محدود	محدود	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	سازد	ساخت#ساز	VERB	V_ACT	_	2	ccomp	_	_
+10	مشروط	مشروط	ADJ	ADJ_AJP	_	9	advmod	_	_
 11	بر	بر	ADP	PREP	_	12	case	_	_
 12	آنکه	آنکه	NOUN	N_IANM	_	10	obl	_	_
 13	محدودسازی	محدودسازی	NOUN	N_IANM	_	15	nsubj	_	_
@@ -24258,26 +24258,26 @@
 3	نیز	نیز	ADV	ADV_SADV	_	2	dep	_	SpaceAfter=No
 4	،	،	PUNCT	PUNC	_	3	punct	_	_
 5	چون	چون	SCONJ	SUBR	_	32	advcl	_	_
-6	جنگ‌افروزان	جنگ‌افروز	NOUN	N_ANM	_	12	nsubj	_	_
+6	جنگ‌افروزان	جنگ‌افروز	NOUN	N_ANM	_	13	nsubj	_	_
 7	نهروانی	نهروانی	ADJ	ADJ_AJP	_	6	amod	_	SpaceAfter=No
 8	،	،	PUNCT	PUNC	_	7	punct	_	_
-9	گوهر	گوهر	NOUN	N_IANM	_	12	obj	_	_
+9	گوهر	گوهر	NOUN	N_IANM	_	13	obj	_	_
 10	اسلام	اسلام	NOUN	N_IANM	_	9	nmod	_	_
 11	را	را	ADP	POSTP	_	9	case	_	_
-12	رها	رها	ADJ	ADJ_AJP	_	5	advcl	_	_
-13	کرده	کرد#کن	VERB	V_ACT	_	12	cop	_	_
+12	رها	رها	ADJ	ADJ_AJP	_	13	xcomp	_	_
+13	کرده	کرد#کن	VERB	V_ACT	_	5	advcl	_	_
 14	بودند	بود#باش	AUX	AUX	_	13	aux	_	_
 15	و	و	CCONJ	CONJ	_	19	cc	_	_
 16	به	به	ADP	PREP	_	17	case	_	_
 17	امور	امر	NOUN	N_IANM	_	19	obl	_	_
 18	ظاهری	ظاهری	ADJ	ADJ_AJP	_	17	amod	_	_
-19	چسبیده	چسبید#چسب	VERB	V_ACT	_	12	conj	_	_
+19	چسبیده	چسبید#چسب	VERB	V_ACT	_	13	conj	_	_
 20	بودند	بود#باش	AUX	AUX	_	19	aux	_	_
 21	و	و	CCONJ	CONJ	_	25	cc	_	_
 22	در	در	ADP	PREP	_	23	case	_	_
 23	جامعه	جامعه	NOUN	N_IANM	_	25	obl	_	_
 24	افساد	افساد	NOUN	N_IANM	_	25	compound	_	_
-25	می‌کردند	کرد#کن	VERB	V_ACT	_	12	conj	_	SpaceAfter=No
+25	می‌کردند	کرد#کن	VERB	V_ACT	_	13	conj	_	SpaceAfter=No
 26	،	،	PUNCT	PUNC	_	25	punct	_	_
 27	امام	امام	NOUN	N_ANM	_	32	nsubj	_	_
 28	با	با	ADP	PREP	_	29	case	_	_
@@ -24442,15 +24442,15 @@
 5-6	شیرین‌زبانند	_	_	_	_	_	_	_	_
 5	شیرین‌زبان	شیرین‌زبان	ADJ	ADJ_AJP	_	3	conj	_	_
 6	ند	#هست	AUX	AUX	_	3	cop	_	_
-7	که	که	SCONJ	SUBR	_	13	mark	_	_
+7	که	که	SCONJ	SUBR	_	14	mark	_	_
 8	هیچ	هیچ	DET	PREM_AMBAJ	_	9	det	_	_
-9	کس	کس	NOUN	N_ANM	_	13	nsubj	_	_
+9	کس	کس	NOUN	N_ANM	_	14	nsubj	_	_
 10	از	از	ADP	PREP	_	11	case	_	_
 11-12	صحبتشان	_	_	_	_	_	_	_	_
 11	صحبت	صحبت	NOUN	N_IANM	_	13	nmod	_	_
 12	شان	آنها	PRON	PR_JOPER	_	11	nmod	_	_
-13	سیر	سیر	NOUN	N_IANM	_	2	acl	_	_
-14	نمی‌شود	شد#شو	VERB	V_ACT	_	13	cop	_	SpaceAfter=No
+13	سیر	سیر	NOUN	N_IANM	_	14	xcomp	_	_
+14	نمی‌شود	شد#شو	VERB	V_ACT	_	2	acl	_	SpaceAfter=No
 15	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s1249
@@ -24493,16 +24493,16 @@
 
 # sent_id = test-s1252
 # text = خود را از بدی‌ها دور می‌کنم اما باز فایده نمی‌کند.
-1	خود	خود	PRON	PR_CREFX	_	5	obj	_	_
+1	خود	خود	PRON	PR_CREFX	_	6	obj	_	_
 2	را	را	ADP	POSTP	_	1	case	_	_
 3	از	از	ADP	PREP	_	4	case	_	_
 4	بدی‌ها	بدی	NOUN	N_IANM	_	5	obl	_	_
-5	دور	دور	ADJ	ADJ_AJP	_	0	root	_	_
-6	می‌کنم	کرد#کن	VERB	V_ACT	_	5	cop	_	_
+5	دور	دور	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	می‌کنم	کرد#کن	VERB	V_ACT	_	0	root	_	_
 7	اما	اما	CCONJ	CONJ	_	10	cc	_	_
 8	باز	باز	ADV	ADV_SADV	_	10	advmod	_	_
 9	فایده	فایده	NOUN	N_IANM	_	10	compound	_	_
-10	نمی‌کند	کرد#کن	VERB	V_ACT	_	5	conj	_	SpaceAfter=No
+10	نمی‌کند	کرد#کن	VERB	V_ACT	_	6	conj	_	SpaceAfter=No
 11	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s1253
@@ -24575,7 +24575,7 @@
 
 # sent_id = test-s1257
 # text = زن باشید، ناز کنید و غمزه کنید.
-1	زن	زن	NOUN	N_ANM	_	5	root	_	_
+1	زن	زن	NOUN	N_ANM	_	5	vocative	_	_
 2	باشید	بود#باش	AUX	AUX	_	1	cop	_	SpaceAfter=No
 3	،	،	PUNCT	PUNC	_	1	punct	_	_
 4	ناز	ناز	NOUN	N_IANM	_	5	compound	_	_
@@ -24673,7 +24673,7 @@
 
 # sent_id = test-s1261
 # text = آیا اگر شخصی مژه‌هایش را قیچی کند دوباره بلند می‌شود؟
-1	آیا	آیا	PART	PART	_	10	mark	_	_
+1	آیا	آیا	PART	PART	_	11	mark	_	_
 2	اگر	اگر	SCONJ	SUBR	_	8	mark	_	_
 3	شخصی	شخص	NOUN	N_ANM	_	8	nsubj	_	_
 4-5	مژه‌هایش	_	_	_	_	_	_	_	_
@@ -24681,11 +24681,11 @@
 5	یش	او	PRON	PR_JOPER	_	4	nmod	_	_
 6	را	را	ADP	POSTP	_	4	case	_	_
 7	قیچی	قیچی	NOUN	N_IANM	_	8	compound	_	_
-8	کند	کرد#کن	VERB	V_ACT	_	10	advcl	_	_
-9	دوباره	دوباره	ADJ	ADJ_AJP	_	10	advmod	_	_
-10	بلند	بلند	ADJ	ADJ_AJP	_	0	root	_	_
-11	می‌شود	شد#شو	VERB	V_ACT	_	10	cop	_	SpaceAfter=No
-12	؟	؟	PUNCT	PUNC	_	10	punct	_	_
+8	کند	کرد#کن	VERB	V_ACT	_	11	advcl	_	_
+9	دوباره	دوباره	ADJ	ADJ_AJP	_	11	advmod	_	_
+10	بلند	بلند	ADJ	ADJ_AJP	_	11	xcomp	_	_
+11	می‌شود	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+12	؟	؟	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s1262
 # text = ای کاش مانند بهار دل‌های ما نیز شکوفه می‌زد و درخت دلمان صفا و صمیمیت را به ارمغان می‌آورد.
@@ -24728,11 +24728,11 @@
 
 # sent_id = test-s1264
 # text = قدرت تفکر، باعث شده است تا انسان بتواند، برای آیندهٔ خود برنامه‌ریزی کند و در آن برنامه، مشکلات و موانع احتمالی را حدس بزند، و برای فائق آمدن بر آنها، چاره بیاندیشد.
-1	قدرت	قدرت	NOUN	N_IANM	_	4	nsubj	_	_
+1	قدرت	قدرت	NOUN	N_IANM	_	5	nsubj	_	_
 2	تفکر	تفکر	NOUN	N_IANM	_	1	nmod	_	SpaceAfter=No
 3	،	،	PUNCT	PUNC	_	2	punct	_	_
-4	باعث	باعث	ADJ	ADJ_AJP	_	0	root	_	_
-5	شده	شد#شو	VERB	V_ACT	_	4	cop	_	_
+4	باعث	باعث	ADJ	ADJ_AJP	_	5	xcomp	_	_
+5	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 6	است	#است	AUX	AUX	_	5	aux	_	_
 7	تا	تا	SCONJ	SUBR	_	9	mark	_	_
 8	انسان	انسان	NOUN	N_ANM	_	9	nsubj	_	_
@@ -24802,7 +24802,7 @@
 20	شلیک	شلیک	NOUN	N_IANM	_	21	compound	_	_
 21	می‌کردند	کرد#کن	VERB	V_ACT	_	17	acl	_	_
 22	می‌توانست	توانست#توان	VERB	V_ACT	_	8	acl	_	_
-23	سپر	سپر	NOUN	N_IANM	_	30	obj	_	_
+23	سپر	سپر	NOUN	N_IANM	_	31	obj	_	_
 24	و	و	CCONJ	CONJ	_	25	cc	_	_
 25	زره	زره	NOUN	N_IANM	_	23	conj	_	_
 26-27	دشمنانش	_	_	_	_	_	_	_	_
@@ -24810,8 +24810,8 @@
 27	ش	او	PRON	PR_JOPER	_	26	nmod	_	_
 28	را	را	ADP	POSTP	_	23	case	_	_
 29	هم	هم	ADV	ADV_SADV	_	23	dep	_	_
-30	سوراخ	سوراخ	NOUN	N_IANM	_	22	ccomp	_	_
-31	کند	کرد#کن	VERB	V_ACT	_	30	cop	_	SpaceAfter=No
+30	سوراخ	سوراخ	NOUN	N_IANM	_	31	xcomp	_	_
+31	کند	کرد#کن	VERB	V_ACT	_	22	ccomp	_	SpaceAfter=No
 32	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s1267
@@ -24837,11 +24837,11 @@
 
 # sent_id = test-s1268
 # text = گردابی برای آنان فراهم سازم که جز من کسی نتواند آن را چاره کند.
-1	گردابی	گرداب	NOUN	N_IANM	_	4	obj	_	_
+1	گردابی	گرداب	NOUN	N_IANM	_	5	obj	_	_
 2	برای	برای	ADP	PREP	_	3	case	_	_
-3	آنان	آنان	PRON	PR_SEPER	_	4	obl	_	_
-4	فراهم	فراهم	ADJ	ADJ_AJP	_	0	root	_	_
-5	سازم	ساخت#ساز	VERB	V_ACT	_	4	cop	_	_
+3	آنان	آنان	PRON	PR_SEPER	_	5	obl	_	_
+4	فراهم	فراهم	ADJ	ADJ_AJP	_	5	xcomp	_	_
+5	سازم	ساخت#ساز	VERB	V_ACT	_	0	root	_	_
 6	که	که	SCONJ	SUBR	_	10	mark	_	_
 7	جز	جز	ADP	PREP	_	8	case	_	_
 8	من	من	PRON	PR_SEPER	_	9	nmod	_	_
@@ -24851,7 +24851,7 @@
 12	را	را	ADP	POSTP	_	11	case	_	_
 13	چاره	چاره	NOUN	N_IANM	_	14	compound	_	_
 14	کند	کرد#کن	VERB	V_ACT	_	10	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	4	punct	_	_
+15	.	.	PUNCT	PUNC	_	5	punct	_	_
 
 # sent_id = test-s1269
 # text = برای مشکلات کودکان و نوجوانان چاره‌جویی کنید.
@@ -24976,12 +24976,12 @@
 # text = از این غم زمین یکسر آتشفشان شد.
 1	از	از	ADP	PREP	_	3	case	_	_
 2	این	این	DET	PREM_DEMAJ	_	3	det	_	_
-3	غم	غم	NOUN	N_IANM	_	6	obl	_	_
-4	زمین	زمین	NOUN	N_IANM	_	6	nsubj	_	_
-5	یکسر	یکسر	ADV	ADV_SADV	_	6	advmod	_	_
-6	آتشفشان	آتشفشان	NOUN	N_IANM	_	0	root	_	_
-7	شد	شد#شو	VERB	V_ACT	_	6	cop	_	SpaceAfter=No
-8	.	.	PUNCT	PUNC	_	6	punct	_	_
+3	غم	غم	NOUN	N_IANM	_	7	obl	_	_
+4	زمین	زمین	NOUN	N_IANM	_	7	nsubj	_	_
+5	یکسر	یکسر	ADV	ADV_SADV	_	7	advmod	_	_
+6	آتشفشان	آتشفشان	NOUN	N_IANM	_	7	xcomp	_	_
+7	شد	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	PUNC	_	7	punct	_	_
 
 # sent_id = test-s1278
 # text = این نیروگاه به طور میانگین به 4 میلیون ایرانی برق‌رسانی می‌کند.
@@ -25137,14 +25137,14 @@
 16	دنیا	دنیا	NOUN	N_IANM	_	18	obl	_	_
 17	کناره	کناره	NOUN	N_IANM	_	18	compound	_	_
 18	جسته	جست#جو	VERB	V_ACT	_	11	acl	_	_
-19	و	و	CCONJ	CONJ	_	22	cc	_	_
-20	خود	خود	PRON	PR_CREFX	_	22	obj	_	_
+19	و	و	CCONJ	CONJ	_	26	cc	_	_
+20	خود	خود	PRON	PR_CREFX	_	26	obj	_	_
 21	را	را	ADP	POSTP	_	20	case	_	_
-22	وقف	وقف	NOUN	N_IANM	_	18	conj	_	_
+22	وقف	وقف	NOUN	N_IANM	_	26	xcomp	_	_
 23	عبادت	عبادت	NOUN	N_IANM	_	22	nmod	_	_
 24	و	و	CCONJ	CONJ	_	25	cc	_	_
 25	ریاضت	ریاضت	NOUN	N_IANM	_	23	conj	_	_
-26	نموده	نمود#نما	VERB	V_ACT	_	22	cop	_	_
+26	نموده	نمود#نما	VERB	V_ACT	_	18	conj	_	_
 27	بودند	بود#باش	AUX	AUX	_	26	aux	_	SpaceAfter=No
 28	.	.	PUNCT	PUNC	_	13	punct	_	_
 
@@ -25158,7 +25158,7 @@
 6	(	(	PUNCT	PUNC	_	7	punct	_	SpaceAfter=No
 7	ع	ع	NOUN	N_IANM	_	5	advmod	_	SpaceAfter=No
 8	)	)	PUNCT	PUNC	_	7	punct	_	_
-9	فردی	فرد	NOUN	N_ANM	_	22	root	_	_
+9	فردی	فرد	NOUN	N_ANM	_	22	vocative	_	_
 10	است	#است	AUX	AUX	_	9	cop	_	_
 11	با	با	ADP	PREP	_	15	case	_	_
 12	نام	نام	NOUN	N_IANM	_	9	nmod	_	_
@@ -25229,26 +25229,26 @@
 
 # sent_id = test-s1288
 # text = Severo Ochoa جایزهٔ نوبل را در سال 1959 (مشترکاً با Arthur Kornberg) برنده شد، بعد از اینکه او یک آنزیمی را کشف کرد که RNA را در آزمایشگاه سنتز می‌کرد.
-1	Severo	Severo	PROPN	N_ANM	_	15	nsubj	_	_
-2	Ochoa	Ochoa	PROPN	N_ANM	_	15	obj	_	_
+1	Severo	Severo	PROPN	N_ANM	_	16	nsubj	_	_
+2	Ochoa	Ochoa	PROPN	N_ANM	_	16	obj	_	_
 3	جایزهٔ	جایزه	PROPN	N_IANM	_	2	flat	_	_
 4	نوبل	نوبل	PROPN	N_IANM	_	2	flat	_	_
 5	را	را	ADP	POSTP	_	3	case	_	_
 6	در	در	ADP	PREP	_	7	case	_	_
-7	سال	سال	NOUN	N_IANM	_	15	obl	_	_
+7	سال	سال	NOUN	N_IANM	_	16	obl	_	_
 8	1959	1959	NOUN	N_IANM	_	7	nmod	_	_
 9	(	(	PUNCT	PUNC	_	10	punct	_	SpaceAfter=No
-10	مشترکاً	مشترکاً	NOUN	N_IANM	_	15	obl	_	_
+10	مشترکاً	مشترکاً	NOUN	N_IANM	_	16	obl	_	_
 11	با	با	ADP	PREP	_	12	case	_	_
 12	Arthur	Arthur	PROPN	N_ANM	_	10	nmod	_	_
 13	Kornberg	Kornberg	PROPN	N_ANM	_	12	flat	_	_
 14	)	)	PUNCT	PUNC	_	10	punct	_	_
-15	برنده	برنده	ADJ	ADJ_AJP	_	0	root	_	_
-16	شد	شد#شو	VERB	V_ACT	_	15	cop	_	SpaceAfter=No
-17	،	،	PUNCT	PUNC	_	15	punct	_	_
+15	برنده	برنده	ADJ	ADJ_AJP	_	16	xcomp	_	_
+16	شد	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+17	،	،	PUNCT	PUNC	_	16	punct	_	_
 18	بعد	بعد	ADP	PREP	_	20	case	_	_
 19	از	از	ADP	PREP	_	18	fixed	_	_
-20	اینکه	اینکه	NOUN	N_IANM	_	15	obl	_	_
+20	اینکه	اینکه	NOUN	N_IANM	_	16	obl	_	_
 21	او	او	PRON	PR_SEPER	_	26	nsubj	_	_
 22	یک	یک	NUM	PRENUM	_	23	nummod	_	_
 23	آنزیمی	آنزیم	NOUN	N_IANM	_	26	obj	_	_
@@ -25281,8 +25281,8 @@
 13	LCD	LCD	PROPN	N_IANM	_	12	nmod	_	_
 14	در	در	ADP	PREP	_	15	case	_	_
 15	جهان	جهان	PROPN	N_IANM	_	10	nmod	_	_
-16	یعنی	یعنی	SCONJ	SUBR	_	17	cop	_	_
-17	LG	LG	PROPN	N_IANM	_	10	acl	_	_
+16	یعنی	یعنی	SCONJ	SUBR	_	10	acl	_	_
+17	LG	LG	PROPN	N_IANM	_	16	xcomp	_	_
 18	که	که	SCONJ	SUBR	_	21	mark	_	_
 19	آن	آن	PRON	PR_DEMON	_	21	nsubj	_	_
 20	هم	هم	ADV	ADV_SADV	_	19	dep	_	_
@@ -25326,17 +25326,17 @@
 18	زوال	زوال	NOUN	N_IANM	_	20	compound	_	_
 19	خواهد	خواست#خواه	AUX	AUX	_	20	aux	_	_
 20	کرد	کرد#کن	VERB	V_ACT	_	7	ccomp	_	_
-21	اما	اما	CCONJ	CONJ	_	30	cc	_	_
-22	خداوند	خداوند	NOUN	N_ANM	_	30	nsubj	_	_
-23	ابوبکر	ابوبکر	PROPN	N_ANM	_	30	obj	_	_
+21	اما	اما	CCONJ	CONJ	_	31	cc	_	_
+22	خداوند	خداوند	NOUN	N_ANM	_	31	nsubj	_	_
+23	ابوبکر	ابوبکر	PROPN	N_ANM	_	31	obj	_	_
 24	را	را	ADP	POSTP	_	23	case	_	_
 25	برای	برای	ADP	PREP	_	27	case	_	_
 26	جاوید	جاوید	ADJ	ADJ_AJP	_	27	advmod	_	_
 27	ماندن	ماندن	NOUN	N_IANM	_	30	obl	_	_
 28	این	این	DET	PREM_DEMAJ	_	29	det	_	_
 29	دین	دین	NOUN	N_IANM	_	27	nmod	_	_
-30	آماده	آماده	ADJ	ADJ_AJP	_	20	conj	_	_
-31	نموده	نمود#نما	VERB	V_ACT	_	30	cop	_	_
+30	آماده	آماده	ADJ	ADJ_AJP	_	31	xcomp	_	_
+31	نموده	نمود#نما	VERB	V_ACT	_	20	conj	_	_
 32	بود	بود#باش	AUX	AUX	_	31	aux	_	_
 33	ابوبکر	ابوبکر	PROPN	N_ANM	_	23	appos	_	_
 34	که	که	SCONJ	SUBR	_	35	mark	_	_
@@ -25872,7 +25872,7 @@
 
 # sent_id = test-s1325
 # text = غیر از نام که مشخص‌کنندهٔ هر فرد از دیگران است صفات و ویژگی‌های اخلاقی و علمی اشخاص نیز آنان را از دیگران متمایز می‌کند و به خاطر آن خصوصیات بر آن‌ها «لقب» نهاده می‌شود و با آن لقب‌ها آنان را صدا می‌زنند و یا از آن‌ها یاد می‌کنند.
-1	غیر	غیر	NOUN	N_IANM	_	23	obl	_	_
+1	غیر	غیر	NOUN	N_IANM	_	24	obl	_	_
 2	از	از	ADP	PREP	_	3	case	_	_
 3	نام	نام	NOUN	N_IANM	_	1	nmod	_	_
 4	که	که	SCONJ	SUBR	_	5	mark	_	_
@@ -25882,7 +25882,7 @@
 8	از	از	ADP	PREP	_	9	case	_	_
 9	دیگران	دیگری	NOUN	N_ANM	_	5	obl	_	_
 10	است	#است	AUX	AUX	_	5	cop	_	_
-11	صفات	صفت	NOUN	N_IANM	_	23	nsubj	_	_
+11	صفات	صفت	NOUN	N_IANM	_	24	nsubj	_	_
 12	و	و	CCONJ	CONJ	_	13	cc	_	_
 13	ویژگی‌های	ویژگی	NOUN	N_IANM	_	11	conj	_	_
 14	اخلاقی	اخلاقی	ADJ	ADJ_AJP	_	11	amod	_	_
@@ -25890,12 +25890,12 @@
 16	علمی	علمی	ADJ	ADJ_AJP	_	14	conj	_	_
 17	اشخاص	شخص	NOUN	N_ANM	_	11	nmod	_	_
 18	نیز	نیز	ADV	ADV_SADV	_	11	dep	_	_
-19	آنان	آنان	PRON	PR_SEPER	_	23	obj	_	_
+19	آنان	آنان	PRON	PR_SEPER	_	24	obj	_	_
 20	را	را	ADP	POSTP	_	19	case	_	_
 21	از	از	ADP	PREP	_	22	case	_	_
 22	دیگران	دیگری	NOUN	N_ANM	_	23	obl	_	_
-23	متمایز	متمایز	ADJ	ADJ_AJP	_	0	root	_	_
-24	می‌کند	کرد#کن	VERB	V_ACT	_	23	cop	_	_
+23	متمایز	متمایز	ADJ	ADJ_AJP	_	24	xcomp	_	_
+24	می‌کند	کرد#کن	VERB	V_ACT	_	0	root	_	_
 25	و	و	CCONJ	CONJ	_	35	cc	_	_
 26	به	به	ADP	PREP	_	27	case	_	_
 27	خاطر	خاطر	NOUN	N_IANM	_	35	obl	_	_
@@ -25906,7 +25906,7 @@
 32	«	«	PUNCT	PUNC	_	33	punct	_	SpaceAfter=No
 33	لقب	لقب	NOUN	N_IANM	_	35	obj	_	SpaceAfter=No
 34	»	»	PUNCT	PUNC	_	33	punct	_	_
-35	نهاده	نهاد#نه	VERB	V_PASS	_	23	conj	_	_
+35	نهاده	نهاد#نه	VERB	V_PASS	_	24	conj	_	_
 36	می‌شود	کرد#کن	AUX	AUX	_	35	aux	_	_
 37	و	و	CCONJ	CONJ	_	44	cc	_	_
 38	با	با	ADP	PREP	_	40	case	_	_
@@ -25915,19 +25915,19 @@
 41	آنان	آنان	PRON	PR_SEPER	_	44	obj	_	_
 42	را	را	ADP	POSTP	_	41	case	_	_
 43	صدا	صدا	NOUN	N_IANM	_	44	compound	_	_
-44	می‌زنند	زد#زن	VERB	V_ACT	_	23	conj	_	_
+44	می‌زنند	زد#زن	VERB	V_ACT	_	24	conj	_	_
 45	و	و	CCONJ	CONJ	_	50	cc	_	_
 46	یا	یا	CCONJ	CONJ	_	45	advmod	_	_
 47	از	از	ADP	PREP	_	48	case	_	_
 48	آن‌ها	آنها	PRON	PR_SEPER	_	50	obl	_	_
 49	یاد	یاد	NOUN	N_IANM	_	50	compound	_	_
-50	می‌کنند	کرد#کن	VERB	V_ACT	_	23	conj	_	SpaceAfter=No
+50	می‌کنند	کرد#کن	VERB	V_ACT	_	24	conj	_	SpaceAfter=No
 51	.	.	PUNCT	PUNC	_	50	punct	_	_
 
 # sent_id = test-s1326
 # text = ابتدا وسط پیشانی‌ام بود، بعد پشت لب‌هایم لک آورد.
 1	ابتدا	ابتدا	NOUN	N_IANM	_	2	obl	_	_
-2	وسط	وسط	NOUN	N_IANM	_	12	root	_	_
+2	وسط	وسط	NOUN	N_IANM	_	12	vocative	_	_
 3-4	پیشانی‌ام	_	_	_	_	_	_	_	_
 3	پیشانی‌	پیشانی	NOUN	N_IANM	_	2	nmod	_	_
 4	ام	من	PRON	PR_JOPER	_	3	nmod	_	_
@@ -25946,18 +25946,18 @@
 # text = برای پاک کردن لکهٔ قیر اول محل لکه را آغشته به روغن خوراکی می‌کنید و به دستوری که در روغن اتومبیل گذشت لکه‌زدایی می‌کنید.
 1	برای	برای	ADP	PREP	_	3	case	_	_
 2	پاک	پاک	ADJ	ADJ_AJP	_	3	advmod	_	_
-3	کردن	کردن	NOUN	N_IANM	_	10	obl	_	_
+3	کردن	کردن	NOUN	N_IANM	_	14	obl	_	_
 4	لکهٔ	لکه	NOUN	N_IANM	_	3	nmod	_	_
 5	قیر	قیر	NOUN	N_IANM	_	4	nmod	_	_
-6	اول	اول	NOUN	N_IANM	_	10	obl	_	_
-7	محل	محل	NOUN	N_IANM	_	10	obj	_	_
+6	اول	اول	NOUN	N_IANM	_	14	obl	_	_
+7	محل	محل	NOUN	N_IANM	_	14	obj	_	_
 8	لکه	لکه	NOUN	N_IANM	_	7	nmod	_	_
 9	را	را	ADP	POSTP	_	7	case	_	_
-10	آغشته	آغشته	ADJ	ADJ_AJP	_	0	root	_	_
+10	آغشته	آغشته	ADJ	ADJ_AJP	_	14	xcomp	_	_
 11	به	به	ADP	PREP	_	12	case	_	_
 12	روغن	روغن	NOUN	N_IANM	_	10	obl	_	_
 13	خوراکی	خوراکی	ADJ	ADJ_AJP	_	12	amod	_	_
-14	می‌کنید	کرد#کن	VERB	V_ACT	_	10	cop	_	_
+14	می‌کنید	کرد#کن	VERB	V_ACT	_	0	root	_	_
 15	و	و	CCONJ	CONJ	_	24	cc	_	_
 16	به	به	ADP	PREP	_	17	case	_	_
 17	دستوری	دستور	NOUN	N_IANM	_	24	obl	_	_
@@ -25967,7 +25967,7 @@
 21	اتومبیل	اتومبیل	NOUN	N_IANM	_	20	nmod	_	_
 22	گذشت	گذشت#گذر	VERB	V_ACT	_	17	acl	_	_
 23	لکه‌زدایی	لکه‌زدایی	NOUN	N_IANM	_	24	compound	_	_
-24	می‌کنید	کرد#کن	VERB	V_ACT	_	10	conj	_	SpaceAfter=No
+24	می‌کنید	کرد#کن	VERB	V_ACT	_	14	conj	_	SpaceAfter=No
 25	.	.	PUNCT	PUNC	_	24	punct	_	_
 
 # sent_id = test-s1328
@@ -26012,14 +26012,14 @@
 
 # sent_id = test-s1331
 # text = بدبخت بینوا همین فردا پس‌فردا متوجه خواهی شد که با همه سوادت توی صف استخدام له‌له خواهی زد.
-1	بدبخت	بدبخت	NOUN	N_IANM	_	6	root	_	_
+1	بدبخت	بدبخت	NOUN	N_IANM	_	8	vocative	_	_
 2	بینوا	بینوا	ADJ	ADJ_AJP	_	1	amod	_	_
 3	همین	همین	DET	PREM_DEMAJ	_	4	det	_	_
-4	فردا	فردا	NOUN	N_IANM	_	6	obl	_	_
+4	فردا	فردا	NOUN	N_IANM	_	8	obl	_	_
 5	پس‌فردا	پس‌فردا	NOUN	N_IANM	_	4	conj	_	_
-6	متوجه	متوجه	ADJ	ADJ_AJP	_	0	root	_	_
+6	متوجه	متوجه	ADJ	ADJ_AJP	_	8	xcomp	_	_
 7	خواهی	خواست#خواه	AUX	AUX	_	8	aux	_	_
-8	شد	کرد#کن	VERB	V_ACT	_	6	cop	_	_
+8	شد	کرد#کن	VERB	V_ACT	_	0	root	_	_
 9	که	که	SCONJ	SUBR	_	19	mark	_	_
 10	با	با	ADP	PREP	_	11	case	_	_
 11	همه	همه	NOUN	N_IANM	_	19	obl	_	_
@@ -26032,16 +26032,16 @@
 17	له‌له	له‌له	NOUN	N_IANM	_	19	compound	_	_
 18	خواهی	خواست#خواه	AUX	AUX	_	19	aux	_	_
 19	زد	زد#زن	VERB	V_ACT	_	6	ccomp	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	6	punct	_	_
+20	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = test-s1332
 # text = مواد را به خوبی مخلوط کنید و به مدت 15 دقیقه روی صورتتان قرار دهید و در پایان با آب سرد آب‌کشی کنید.
-1	مواد	ماده	NOUN	N_IANM	_	5	obj	_	_
+1	مواد	ماده	NOUN	N_IANM	_	6	obj	_	_
 2	را	را	ADP	POSTP	_	1	case	_	_
 3	به	به	ADP	PREP	_	4	case	_	_
-4	خوبی	خوبی	NOUN	N_IANM	_	5	obl	_	_
-5	مخلوط	مخلوط	ADJ	ADJ_AJP	_	0	root	_	_
-6	کنید	کرد#کن	VERB	V_ACT	_	5	cop	_	_
+4	خوبی	خوبی	NOUN	N_IANM	_	6	obl	_	_
+5	مخلوط	مخلوط	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	کنید	کرد#کن	VERB	V_ACT	_	0	root	_	_
 7	و	و	CCONJ	CONJ	_	16	cc	_	_
 8	به	به	ADP	PREP	_	9	case	_	_
 9	مدت	مدت	NOUN	N_IANM	_	16	obl	_	_
@@ -26052,7 +26052,7 @@
 13	صورت	صورت	NOUN	N_IANM	_	16	obl	_	_
 14	تان	شما	PRON	PR_JOPER	_	13	nmod	_	_
 15	قرار	قرار	NOUN	N_IANM	_	16	compound	_	_
-16	دهید	داد#ده	VERB	V_ACT	_	5	conj	_	_
+16	دهید	داد#ده	VERB	V_ACT	_	6	conj	_	_
 17	و	و	CCONJ	CONJ	_	24	cc	_	_
 18	در	در	ADP	PREP	_	19	case	_	_
 19	پایان	پایان	NOUN	N_IANM	_	24	obl	_	_
@@ -26060,7 +26060,7 @@
 21	آب	آب	NOUN	N_IANM	_	24	obl	_	_
 22	سرد	سرد	ADJ	ADJ_AJP	_	21	amod	_	_
 23	آب‌کشی	آب‌کشی	NOUN	N_IANM	_	24	compound	_	_
-24	کنید	کرد#کن	VERB	V_ACT	_	5	conj	_	SpaceAfter=No
+24	کنید	کرد#کن	VERB	V_ACT	_	6	conj	_	SpaceAfter=No
 25	.	.	PUNCT	PUNC	_	24	punct	_	_
 
 # sent_id = test-s1333
@@ -26250,11 +26250,11 @@
 
 # sent_id = test-s1341
 # text = کبوتر شدی و بال زدی.
-1	کبوتر	کبوتر	NOUN	N_ANM	_	0	root	_	_
-2	شدی	شد#شو	VERB	V_ACT	_	1	cop	_	_
+1	کبوتر	کبوتر	NOUN	N_ANM	_	2	xcomp	_	_
+2	شدی	شد#شو	VERB	V_ACT	_	0	root	_	_
 3	و	و	CCONJ	CONJ	_	5	cc	_	_
 4	بال	بال	NOUN	N_IANM	_	5	compound	_	_
-5	زدی	زد#زن	VERB	V_ACT	_	1	conj	_	SpaceAfter=No
+5	زدی	زد#زن	VERB	V_ACT	_	2	conj	_	SpaceAfter=No
 6	.	.	PUNCT	PUNC	_	5	punct	_	_
 
 # sent_id = test-s1342
@@ -26350,7 +26350,7 @@
 4	چنانچه	چنانچه	SCONJ	SUBR	_	21	advcl	_	_
 5	از	از	ADP	PREP	_	7	case	_	_
 6	همان	همان	DET	PREM_DEMAJ	_	7	det	_	_
-7	اوان	اوان	NOUN	N_IANM	_	16	obl	_	_
+7	اوان	اوان	NOUN	N_IANM	_	19	obl	_	_
 8	کودکی	کودکی	NOUN	N_IANM	_	7	nmod	_	_
 9	آن‌ها	آنها	PRON	PR_SEPER	_	14	obj	_	_
 10	را	را	ADP	POSTP	_	9	case	_	_
@@ -26358,11 +26358,11 @@
 12	مراقبت	مراقبت	NOUN	N_IANM	_	14	obl	_	_
 13	قرار	قرار	NOUN	N_IANM	_	14	compound	_	_
 14	می‌دادند	داد#ده	VERB	V_ACT	_	4	advcl	_	_
-15	و	و	CCONJ	CONJ	_	16	cc	_	_
-16	اصلاح	اصلاح	NOUN	N_IANM	_	14	conj	_	_
+15	و	و	CCONJ	CONJ	_	19	cc	_	_
+16	اصلاح	اصلاح	NOUN	N_IANM	_	19	xcomp	_	_
 17	و	و	CCONJ	CONJ	_	18	cc	_	_
 18	بازپروری	بازپروری	NOUN	N_IANM	_	16	conj	_	_
-19	می‌کردند	کرد#کن	VERB	V_ACT	_	16	cop	_	_
+19	می‌کردند	کرد#کن	VERB	V_ACT	_	14	conj	_	_
 20	شاید	شاید	ADV	ADV_SADV	_	21	advmod	_	_
 21	می‌توانستند	توانست#توان	VERB	V_ACT	_	0	root	_	_
 22	از	از	ADP	PREP	_	23	case	_	_
@@ -26406,7 +26406,7 @@
 
 # sent_id = test-s1350
 # text = سروران، حکیمان، والیان و جبارانشان را مست خواهم کرد تا به خواب ابدی که از آن بیدار نشوند، فروروند.
-1	سروران	سرور	NOUN	N_ANM	_	10	obj	_	SpaceAfter=No
+1	سروران	سرور	NOUN	N_ANM	_	12	obj	_	SpaceAfter=No
 2	،	،	PUNCT	PUNC	_	1	punct	_	_
 3	حکیمان	حکیم	NOUN	N_ANM	_	1	conj	_	SpaceAfter=No
 4	،	،	PUNCT	PUNC	_	3	punct	_	_
@@ -26416,21 +26416,21 @@
 7	جباران	جبار	NOUN	N_ANM	_	1	conj	_	_
 8	شان	آنها	PRON	PR_JOPER	_	7	nmod	_	_
 9	را	را	ADP	POSTP	_	1	case	_	_
-10	مست	مست	ADJ	ADJ_AJP	_	0	root	_	_
+10	مست	مست	ADJ	ADJ_AJP	_	12	xcomp	_	_
 11	خواهم	خواست#خواه	AUX	AUX	_	12	aux	_	_
-12	کرد	کرد#کن	VERB	V_ACT	_	10	cop	_	_
+12	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	_
 13	تا	تا	SCONJ	SUBR	_	23	mark	_	_
 14	به	به	ADP	PREP	_	15	case	_	_
 15	خواب	خواب	NOUN	N_IANM	_	23	obl	_	_
 16	ابدی	ابدی	ADJ	ADJ_AJP	_	15	amod	_	_
-17	که	که	SCONJ	SUBR	_	20	mark	_	_
+17	که	که	SCONJ	SUBR	_	21	mark	_	_
 18	از	از	ADP	PREP	_	19	case	_	_
 19	آن	آن	PRON	PR_DEMON	_	20	obl	_	_
-20	بیدار	بیدار	ADJ	ADJ_AJP	_	15	acl	_	_
-21	نشوند	کرد#کن	VERB	V_ACT	_	20	cop	_	SpaceAfter=No
-22	،	،	PUNCT	PUNC	_	20	punct	_	_
-23	فروروند	فرو#رفت#رو	VERB	V_ACT	_	10	advcl	_	SpaceAfter=No
-24	.	.	PUNCT	PUNC	_	10	punct	_	_
+20	بیدار	بیدار	ADJ	ADJ_AJP	_	21	xcomp	_	_
+21	نشوند	کرد#کن	VERB	V_ACT	_	15	acl	_	SpaceAfter=No
+22	،	،	PUNCT	PUNC	_	21	punct	_	_
+23	فروروند	فرو#رفت#رو	VERB	V_ACT	_	12	advcl	_	SpaceAfter=No
+24	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s1351
 # text = کبوتران آشتی بر آسمان زندگی بال خواهند زد.
@@ -26512,14 +26512,14 @@
 5	خود	خود	PRON	PR_CREFX	_	4	advmod	_	_
 6	چیزی	چیز	NOUN	N_IANM	_	17	obj	_	_
 7	را	را	ADP	POSTP	_	6	case	_	_
-8	که	که	SCONJ	SUBR	_	10	mark	_	_
-9	خدا	خدا	NOUN	N_ANM	_	10	nsubj	_	_
-10	پاک	پاک	ADJ	ADJ_AJP	_	6	acl	_	_
+8	که	که	SCONJ	SUBR	_	14	mark	_	_
+9	خدا	خدا	NOUN	N_ANM	_	14	nsubj	_	_
+10	پاک	پاک	ADJ	ADJ_AJP	_	14	xcomp	_	_
 11	و	و	CCONJ	CONJ	_	12	cc	_	_
 12	حلال	حلال	ADJ	ADJ_AJP	_	10	conj	_	_
-13	قرار	قرار	NOUN	N_IANM	_	10	compound	_	_
-14	داده	داد#ده	VERB	V_ACT	_	10	cop	_	SpaceAfter=No
-15	،	،	PUNCT	PUNC	_	10	punct	_	_
+13	قرار	قرار	NOUN	N_IANM	_	14	compound	_	_
+14	داده	داد#ده	VERB	V_ACT	_	6	acl	_	SpaceAfter=No
+15	،	،	PUNCT	PUNC	_	14	punct	_	_
 16	تحریم	تحریم	NOUN	N_IANM	_	17	compound	_	_
 17	کنید	کرد#کن	VERB	V_ACT	_	1	obj	_	_
 18	و	و	CCONJ	CONJ	_	23	cc	_	_
@@ -26605,22 +26605,22 @@
 
 # sent_id = test-s1361
 # text = خداوند عمرشان را پربرکت بکند.
-1	خداوند	خداوند	NOUN	N_ANM	_	5	nsubj	_	_
+1	خداوند	خداوند	NOUN	N_ANM	_	6	nsubj	_	_
 2-3	عمرشان	_	_	_	_	_	_	_	_
-2	عمر	عمر	NOUN	N_IANM	_	5	obj	_	_
+2	عمر	عمر	NOUN	N_IANM	_	6	obj	_	_
 3	شان	آنها	PRON	PR_JOPER	_	2	nmod	_	_
 4	را	را	ADP	POSTP	_	2	case	_	_
-5	پربرکت	پربرکت	ADJ	ADJ_AJP	_	0	root	_	_
-6	بکند	کرد#کن	VERB	V_ACT	_	5	cop	_	SpaceAfter=No
-7	.	.	PUNCT	PUNC	_	5	punct	_	_
+5	پربرکت	پربرکت	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	بکند	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	PUNC	_	6	punct	_	_
 
 # sent_id = test-s1362
 # text = حرکات خود را کوچک کنید اندازهٔ حرکات به وسیلهٔ دوربین بزرگ‌نمایی خواهد شد.
-1	حرکات	حرکت	NOUN	N_IANM	_	4	obj	_	_
+1	حرکات	حرکت	NOUN	N_IANM	_	5	obj	_	_
 2	خود	خود	PRON	PR_CREFX	_	1	nmod	_	_
 3	را	را	ADP	POSTP	_	1	case	_	_
-4	کوچک	کوچک	ADJ	ADJ_AJP	_	0	root	_	_
-5	کنید	کرد#کن	VERB	V_ACT	_	4	cop	_	_
+4	کوچک	کوچک	ADJ	ADJ_AJP	_	5	xcomp	_	_
+5	کنید	کرد#کن	VERB	V_ACT	_	0	root	_	_
 6	اندازهٔ	اندازه	NOUN	N_IANM	_	13	nsubj	_	_
 7	حرکات	حرکت	NOUN	N_IANM	_	6	nmod	_	_
 8	به	به	ADP	PREP	_	9	case	_	_
@@ -26628,7 +26628,7 @@
 10	دوربین	دوربین	NOUN	N_IANM	_	9	nmod	_	_
 11	بزرگ‌نمایی	بزرگ‌نمایی	NOUN	N_IANM	_	13	compound	_	_
 12	خواهد	خواست#خواه	AUX	AUX	_	13	aux	_	_
-13	شد	کرد#کن	VERB	V_ACT	_	4	conj	_	SpaceAfter=No
+13	شد	کرد#کن	VERB	V_ACT	_	5	conj	_	SpaceAfter=No
 14	.	.	PUNCT	PUNC	_	13	punct	_	_
 
 # sent_id = test-s1363
@@ -26644,13 +26644,13 @@
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	بهتر	به	ADJ	ADJ_AJCM	_	0	root	_	_
 11	است	#است	AUX	AUX	_	10	cop	_	_
-12	دست	دست	NOUN	N_IANM	_	10	csubj	_	_
+12	دست	دست	NOUN	N_IANM	_	15	xcomp	_	_
 13	به	به	ADP	PREP	_	14	case	_	_
 14	کار	کار	NOUN	N_IANM	_	12	nmod	_	_
-15	شویم	شد#شو	VERB	V_ACT	_	12	cop	_	_
+15	شویم	شد#شو	VERB	V_ACT	_	10	csubj	_	_
 16	و	و	CCONJ	CONJ	_	18	cc	_	_
 17	فعالیت	فعالیت	NOUN	N_IANM	_	18	compound	_	_
-18	کنیم	کرد#کن	VERB	V_ACT	_	12	conj	_	SpaceAfter=No
+18	کنیم	کرد#کن	VERB	V_ACT	_	15	conj	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s1364
@@ -26753,9 +26753,9 @@
 3	واقعی	واقعی	ADJ	ADJ_AJP	_	2	amod	_	_
 4	نمی‌گذارند	گذارد#گذار	VERB	V_ACT	_	0	root	_	_
 5	این	این	DET	PREM_DEMAJ	_	6	det	_	_
-6	جنایت	جنایت	NOUN	N_IANM	_	7	nsubj	_	_
-7	بی‌پاسخ	بی‌پاسخ	ADJ	ADJ_AJP	_	4	ccomp	_	_
-8	بماند	ماند#مان	VERB	V_ACT	_	7	cop	_	_
+6	جنایت	جنایت	NOUN	N_IANM	_	8	nsubj	_	_
+7	بی‌پاسخ	بی‌پاسخ	ADJ	ADJ_AJP	_	8	xcomp	_	_
+8	بماند	ماند#مان	VERB	V_ACT	_	4	ccomp	_	_
 9	و	و	CCONJ	CONJ	_	12	cc	_	_
 10	انتقام‌جویی	انتقام‌جویی	NOUN	N_IANM	_	12	compound	_	_
 11	خواهند	خواست#خواه	AUX	AUX	_	12	aux	_	_
@@ -26960,15 +26960,15 @@
 
 # sent_id = test-s1376
 # text = صید دریا و مأکولات آن برای شما حلال شده است تا برای شما و مسافران بهره‌ای باشد ولی صید بیابان مادام که محرم می‌باشید بر شما حرام گردیده است.
-1	صید	صید	NOUN	N_IANM	_	8	nsubj	_	_
+1	صید	صید	NOUN	N_IANM	_	9	nsubj	_	_
 2	دریا	دریا	NOUN	N_IANM	_	1	nmod	_	_
 3	و	و	CCONJ	CONJ	_	4	cc	_	_
 4	مأکولات	مأکول	NOUN	N_IANM	_	2	conj	_	_
 5	آن	آن	PRON	PR_DEMON	_	4	nmod	_	_
 6	برای	برای	ADP	PREP	_	7	case	_	_
-7	شما	شما	PRON	PR_SEPER	_	8	obl	_	_
-8	حلال	حلال	ADJ	ADJ_AJP	_	0	root	_	_
-9	شده	شد#شو	VERB	V_ACT	_	8	cop	_	_
+7	شما	شما	PRON	PR_SEPER	_	9	obl	_	_
+8	حلال	حلال	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	شده	شد#شو	VERB	V_ACT	_	0	root	_	_
 10	است	#است	AUX	AUX	_	9	aux	_	_
 11	تا	تا	SCONJ	SUBR	_	17	mark	_	_
 12	برای	برای	ADP	PREP	_	13	case	_	_
@@ -26976,20 +26976,20 @@
 14	و	و	CCONJ	CONJ	_	15	cc	_	_
 15	مسافران	مسافر	NOUN	N_ANM	_	13	conj	_	_
 16	بهره‌ای	بهره	NOUN	N_IANM	_	17	nsubj	_	_
-17	باشد	بود#باش	AUX	AUX	_	8	advcl	_	_
-18	ولی	ولی	CCONJ	CONJ	_	27	cc	_	_
-19	صید	صید	NOUN	N_IANM	_	27	nsubj	_	_
+17	باشد	بود#باش	AUX	AUX	_	9	advcl	_	_
+18	ولی	ولی	CCONJ	CONJ	_	28	cc	_	_
+19	صید	صید	NOUN	N_IANM	_	28	nsubj	_	_
 20	بیابان	بیابان	NOUN	N_IANM	_	19	nmod	_	_
-21	مادام	مادام	NOUN	N_IANM	_	27	obl	_	_
+21	مادام	مادام	NOUN	N_IANM	_	28	obl	_	_
 22	که	که	SCONJ	SUBR	_	23	mark	_	_
 23	محرم	محرم	ADJ	ADJ_AJP	_	21	acl	_	_
 24	می‌باشید	بود#باش	AUX	AUX	_	23	cop	_	_
 25	بر	بر	ADP	PREP	_	26	case	_	_
 26	شما	شما	PRON	PR_SEPER	_	27	obl	_	_
-27	حرام	حرام	ADJ	ADJ_AJP	_	8	conj	_	_
-28	گردیده	گردید#گرد	VERB	V_PASS	_	27	cop	_	_
+27	حرام	حرام	ADJ	ADJ_AJP	_	28	xcomp	_	_
+28	گردیده	گردید#گرد	VERB	V_PASS	_	9	conj	_	_
 29	است	#است	AUX	AUX	_	28	aux	_	SpaceAfter=No
-30	.	.	PUNCT	PUNC	_	27	punct	_	_
+30	.	.	PUNCT	PUNC	_	28	punct	_	_
 
 # sent_id = test-s1377
 # text = باید زودتر از این به دامان نظام برمی‌گشتیم.
@@ -27076,13 +27076,13 @@
 # text = اگر در دنیا دستی برای خدا شویم و بخواهیم دین خدا را رونق بخشیم خود رونق پیدا می‌کنیم.
 1	اگر	اگر	SCONJ	SUBR	_	18	advcl	_	_
 2	در	در	ADP	PREP	_	3	case	_	_
-3	دنیا	دنیا	NOUN	N_IANM	_	4	obl	_	_
-4	دستی	دست	NOUN	N_IANM	_	1	advcl	_	_
+3	دنیا	دنیا	NOUN	N_IANM	_	7	obl	_	_
+4	دستی	دست	NOUN	N_IANM	_	7	xcomp	_	_
 5	برای	برای	ADP	PREP	_	6	case	_	_
 6	خدا	خدا	NOUN	N_ANM	_	4	nmod	_	_
-7	شویم	شد#شو	VERB	V_ACT	_	4	cop	_	_
+7	شویم	شد#شو	VERB	V_ACT	_	1	advcl	_	_
 8	و	و	CCONJ	CONJ	_	9	cc	_	_
-9	بخواهیم	خواست#خواه	VERB	V_ACT	_	4	conj	_	_
+9	بخواهیم	خواست#خواه	VERB	V_ACT	_	7	conj	_	_
 10	دین	دین	NOUN	N_IANM	_	14	obl	_	_
 11	خدا	خدا	NOUN	N_ANM	_	10	nmod	_	_
 12	را	را	ADP	POSTP	_	10	case	_	_
@@ -27195,15 +27195,15 @@
 
 # sent_id = test-s1388
 # text = اگر به اختیار خود به محضر حضرت مشرف نشوی حضرت بر تو ظفر پیدا می‌کند.
-1	اگر	اگر	SCONJ	SUBR	_	8	mark	_	_
+1	اگر	اگر	SCONJ	SUBR	_	9	mark	_	_
 2	به	به	ADP	PREP	_	3	case	_	_
-3	اختیار	اختیار	NOUN	N_IANM	_	8	obl	_	_
+3	اختیار	اختیار	NOUN	N_IANM	_	9	obl	_	_
 4	خود	خود	PRON	PR_CREFX	_	3	nmod	_	_
 5	به	به	ADP	PREP	_	6	case	_	_
 6	محضر	محضر	NOUN	N_IANM	_	8	obl	_	_
 7	حضرت	حضرت	NOUN	N_ANM	_	6	nmod	_	_
-8	مشرف	مشرف	ADJ	ADJ_AJP	_	15	advcl	_	_
-9	نشوی	شد#شو	VERB	V_ACT	_	8	cop	_	_
+8	مشرف	مشرف	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	نشوی	شد#شو	VERB	V_ACT	_	15	advcl	_	_
 10	حضرت	حضرت	NOUN	N_ANM	_	15	nsubj	_	_
 11	بر	بر	ADP	PREP	_	12	case	_	_
 12	تو	تو	PRON	PR_SEPER	_	13	nmod	_	_
@@ -27251,7 +27251,7 @@
 1	تو	تو	PRON	PR_SEPER	_	3	nsubj	_	_
 2	یک	یک	NUM	PRENUM	_	3	nummod	_	_
 3-4	انسانی	_	_	_	_	_	_	_	_
-3	انسان	انسان	NOUN	N_ANM	_	5	root	_	_
+3	انسان	انسان	NOUN	N_ANM	_	5	vocative	_	_
 4	ی	#هست	AUX	AUX	_	3	cop	_	_
 5	و	و	CCONJ	CONJ	_	0	root	_	_
 6	با	با	ADP	PREP	_	7	case	_	_
@@ -27312,9 +27312,9 @@
 1	ما	ما	PRON	PR_SEPER	_	9	nsubj	_	_
 2	به	به	ADP	PREP	_	3	case	_	_
 3	میزانی	میزان	NOUN	N_IANM	_	9	obl	_	_
-4	که	که	SCONJ	SUBR	_	5	mark	_	_
-5	عادل	عادل	ADJ	ADJ_AJP	_	3	acl	_	_
-6	شویم	شد#شو	VERB	V_ACT	_	5	cop	_	_
+4	که	که	SCONJ	SUBR	_	6	mark	_	_
+5	عادل	عادل	ADJ	ADJ_AJP	_	6	xcomp	_	_
+6	شویم	شد#شو	VERB	V_ACT	_	3	acl	_	_
 7	کمال	کمال	NOUN	N_IANM	_	9	obj	_	_
 8	پیدا	پیدا	ADJ	ADJ_AJP	_	9	compound	_	_
 9	می‌کنیم	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
@@ -27604,12 +27604,12 @@
 1	خودمان	خودمان	PRON	PR_UCREFX	_	3	nsubj	_	_
 2	بنا	بنا	NOUN	N_IANM	_	3	compound	_	_
 3	گذاردیم	گذارد#گذار	VERB	V_ACT	_	0	root	_	_
-4	که	که	SCONJ	SUBR	_	8	mark	_	_
+4	که	که	SCONJ	SUBR	_	9	mark	_	_
 5	همین	همین	DET	PREM_DEMAJ	_	6	det	_	_
-6	ورقه	ورقه	NOUN	N_IANM	_	8	obj	_	_
+6	ورقه	ورقه	NOUN	N_IANM	_	9	obj	_	_
 7	را	را	ADP	POSTP	_	6	case	_	_
-8	ممهور	ممهور	ADJ	ADJ_AJP	_	3	ccomp	_	_
-9	نماییم	نمود#نما	VERB	V_ACT	_	8	cop	_	SpaceAfter=No
+8	ممهور	ممهور	ADJ	ADJ_AJP	_	9	xcomp	_	_
+9	نماییم	نمود#نما	VERB	V_ACT	_	3	ccomp	_	SpaceAfter=No
 10	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s1410
@@ -27806,7 +27806,7 @@
 3	نگاه	نگاه	NOUN	N_IANM	_	2	nmod	_	_
 4	به	به	ADP	PREP	_	5	case	_	_
 5	موضوع	موضوع	NOUN	N_IANM	_	3	nmod	_	_
-6	این	این	PRON	PR_DEMON	_	38	root	_	_
+6	این	این	PRON	PR_DEMON	_	38	vocative	_	_
 7	است	#است	AUX	AUX	_	6	cop	_	_
 8	که	که	SCONJ	SUBR	_	9	mark	_	_
 9	بگوییم	گفت#گو	VERB	V_ACT	_	6	acl	_	_
@@ -27974,7 +27974,7 @@
 # sent_id = test-s1423
 # text = به یاد مادرم بودم، در رؤیایم او را حس می‌کردم و گاهی با او امتزاج می‌کردم و حرف می‌زدم.
 1	به	به	ADP	PREP	_	2	case	_	_
-2	یاد	یاد	NOUN	N_IANM	_	13	root	_	_
+2	یاد	یاد	NOUN	N_IANM	_	13	vocative	_	_
 3-4	مادرم	_	_	_	_	_	_	_	_
 3	مادر	مادر	NOUN	N_ANM	_	2	nmod	_	_
 4	م	من	PRON	PR_JOPER	_	3	nmod	_	_
@@ -28018,7 +28018,7 @@
 
 # sent_id = test-s1425
 # text = جاسم کرار بازیکن ستاره و محبوب تیم تراکتور که در حساس‌ترین بازی‌ها برای تراکتور امتیازگیری کرده بود در این فصل بنا به دلایلی از تیم محبوب خود جدا شد.
-1	جاسم	جاسم	PROPN	N_ANM	_	28	nsubj	_	_
+1	جاسم	جاسم	PROPN	N_ANM	_	29	nsubj	_	_
 2	کرار	کرار	PROPN	N_ANM	_	1	flat	_	_
 3	بازیکن	بازیکن	NOUN	N_ANM	_	1	appos	_	_
 4	ستاره	ستاره	NOUN	N_IANM	_	3	nmod	_	_
@@ -28037,17 +28037,17 @@
 17	بود	بود#باش	AUX	AUX	_	16	aux	_	_
 18	در	در	ADP	PREP	_	20	case	_	_
 19	این	این	DET	PREM_DEMAJ	_	20	det	_	_
-20	فصل	فصل	NOUN	N_IANM	_	28	obl	_	_
-21	بنا	بنا	NOUN	N_IANM	_	28	obl	_	_
+20	فصل	فصل	NOUN	N_IANM	_	29	obl	_	_
+21	بنا	بنا	NOUN	N_IANM	_	29	obl	_	_
 22	به	به	ADP	PREP	_	23	case	_	_
 23	دلایلی	دلیل	NOUN	N_IANM	_	21	nmod	_	_
 24	از	از	ADP	PREP	_	25	case	_	_
 25	تیم	تیم	NOUN	N_ANM	_	28	obl	_	_
 26	محبوب	محبوب	ADJ	ADJ_AJP	_	25	amod	_	_
 27	خود	خود	PRON	PR_CREFX	_	25	nmod	_	_
-28	جدا	جدا	ADJ	ADJ_AJP	_	0	root	_	_
-29	شد	شد#شو	VERB	V_ACT	_	28	cop	_	SpaceAfter=No
-30	.	.	PUNCT	PUNC	_	28	punct	_	_
+28	جدا	جدا	ADJ	ADJ_AJP	_	29	xcomp	_	_
+29	شد	شد#شو	VERB	V_ACT	_	0	root	_	SpaceAfter=No
+30	.	.	PUNCT	PUNC	_	29	punct	_	_
 
 # sent_id = test-s1426
 # text = کدام فیلم مشکلات اجتماعی را بهتر انعکاس داده است؟
@@ -28074,7 +28074,7 @@
 8	عیاشی	عیاشی	NOUN	N_IANM	_	9	compound	_	_
 9	کند	کرد#کن	VERB	V_ACT	_	11	advcl	_	_
 10	نیز	نیز	ADV	ADV_SADV	_	8	dep	_	_
-11	جوان	جوان	ADJ	ADJ_AJP	_	13	root	_	_
+11	جوان	جوان	ADJ	ADJ_AJP	_	13	vocative	_	_
 12	است	#است	AUX	AUX	_	11	cop	_	_
 13	ولی	ولی	CCONJ	CONJ	_	0	root	_	_
 14	جوان	جوان	NOUN	N_ANM	_	21	nsubj	_	_
@@ -28106,16 +28106,16 @@
 14	کودکان	کودک	NOUN	N_ANM	_	12	conj	_	_
 15	خواب	خواب	NOUN	N_IANM	_	11	advcl	_	_
 16	باشند	بود#باش	AUX	AUX	_	15	cop	_	_
-17	و	و	CCONJ	CONJ	_	24	cc	_	_
-18	چشم	چشم	NOUN	N_IANM	_	15	conj	_	_
+17	و	و	CCONJ	CONJ	_	26	cc	_	_
+18	چشم	چشم	NOUN	N_IANM	_	22	xcomp	_	_
 19	در	در	ADP	PREP	_	20	case	_	_
 20	چشم	چشم	NOUN	N_IANM	_	18	nmod	_	_
 21	آن‌ها	آنها	PRON	PR_SEPER	_	20	nmod	_	_
-22	نشده	شد#شو	VERB	V_ACT	_	18	cop	_	_
-23	و	و	CCONJ	CONJ	_	24	cc	_	_
-24	شرمندهٔ	شرمنده	ADJ	ADJ_AJP	_	15	conj	_	_
+22	نشده	شد#شو	VERB	V_ACT	_	15	conj	_	_
+23	و	و	CCONJ	CONJ	_	26	cc	_	_
+24	شرمندهٔ	شرمنده	ADJ	ADJ_AJP	_	26	xcomp	_	_
 25	آن‌ها	آنها	PRON	PR_SEPER	_	24	obl	_	_
-26	نشود	شد#شو	VERB	V_ACT	_	24	cop	_	SpaceAfter=No
+26	نشود	شد#شو	VERB	V_ACT	_	15	conj	_	SpaceAfter=No
 27	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = test-s1429
@@ -28155,19 +28155,19 @@
 # sent_id = test-s1430
 # text = هر بند یک باب برای ما باز می‌کند که چگونه باید فقاهت کرد.
 1	هر	هر	DET	PREM_AMBAJ	_	2	det	_	_
-2	بند	بند	NOUN	N_IANM	_	7	nsubj	_	_
+2	بند	بند	NOUN	N_IANM	_	8	nsubj	_	_
 3	یک	یک	NUM	PRENUM	_	4	nummod	_	_
-4	باب	باب	NOUN	N_IANM	_	7	obj	_	_
+4	باب	باب	NOUN	N_IANM	_	8	obj	_	_
 5	برای	برای	ADP	PREP	_	6	case	_	_
-6	ما	ما	PRON	PR_SEPER	_	7	obl	_	_
-7	باز	باز	ADJ	ADJ_AJP	_	0	root	_	_
-8	می‌کند	کرد#کن	VERB	V_ACT	_	7	cop	_	_
+6	ما	ما	PRON	PR_SEPER	_	8	obl	_	_
+7	باز	باز	ADJ	ADJ_AJP	_	8	xcomp	_	_
+8	می‌کند	کرد#کن	VERB	V_ACT	_	0	root	_	_
 9	که	که	SCONJ	SUBR	_	13	mark	_	_
 10	چگونه	چگونه	ADV	ADV_SADV	_	13	advmod	_	_
 11	باید	بایست#باید	AUX	V_MODL	_	13	aux	_	_
 12	فقاهت	فقاهت	NOUN	N_IANM	_	13	compound	_	_
 13	کرد	کرد#کن	VERB	V_ACT	_	4	acl	_	SpaceAfter=No
-14	.	.	PUNCT	PUNC	_	7	punct	_	_
+14	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = test-s1431
 # text = نویسندهٔ «تنگسیر» هم همهٔ عمر ابراز پشیمانی می‌کرد که چرا اجازه داده امیر نادری رمانش را فیلم کند و اینکه چرا او داستانش را خراب کرده.
@@ -28193,16 +28193,16 @@
 19	را	را	ADP	POSTP	_	17	case	_	_
 20	فیلم	فیلم	NOUN	N_IANM	_	21	compound	_	_
 21	کند	کرد#کن	VERB	V_ACT	_	14	acl	_	_
-22	و	و	CCONJ	CONJ	_	29	cc	_	_
-23	اینکه	اینکه	NOUN	N_IANM	_	29	obl	_	_
-24	چرا	چرا	ADV	ADV_SADV	_	29	advmod	_	_
-25	او	او	PRON	PR_SEPER	_	29	nsubj	_	_
+22	و	و	CCONJ	CONJ	_	30	cc	_	_
+23	اینکه	اینکه	NOUN	N_IANM	_	30	obl	_	_
+24	چرا	چرا	ADV	ADV_SADV	_	30	advmod	_	_
+25	او	او	PRON	PR_SEPER	_	30	nsubj	_	_
 26-27	داستانش	_	_	_	_	_	_	_	_
-26	داستان	داستان	NOUN	N_IANM	_	29	obj	_	_
+26	داستان	داستان	NOUN	N_IANM	_	30	obj	_	_
 27	ش	او	PRON	PR_JOPER	_	26	nmod	_	_
 28	را	را	ADP	POSTP	_	26	case	_	_
-29	خراب	خراب	ADJ	ADJ_AJP	_	21	conj	_	_
-30	کرده	کرد#کن	VERB	V_ACT	_	29	cop	_	SpaceAfter=No
+29	خراب	خراب	ADJ	ADJ_AJP	_	30	xcomp	_	_
+30	کرده	کرد#کن	VERB	V_ACT	_	21	conj	_	SpaceAfter=No
 31	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s1432
@@ -28351,14 +28351,14 @@
 10	دلار	دلار	NOUN	N_IANM	_	12	obl	_	_
 11	نیز	نیز	ADV	ADV_SADV	_	10	dep	_	_
 12	رسید	رسید#رس	VERB	V_ACT	_	0	root	_	_
-13	و	و	CCONJ	CONJ	_	17	cc	_	_
-14	اقتصاد	اقتصاد	NOUN	N_IANM	_	17	obj	_	_
+13	و	و	CCONJ	CONJ	_	19	cc	_	_
+14	اقتصاد	اقتصاد	NOUN	N_IANM	_	19	obj	_	_
 15	جهانی	جهانی	ADJ	ADJ_AJP	_	14	amod	_	_
 16	را	را	ADP	POSTP	_	14	case	_	_
-17	دست‌خوش	دست‌خوش	NOUN	N_IANM	_	12	conj	_	_
+17	دست‌خوش	دست‌خوش	NOUN	N_IANM	_	19	xcomp	_	_
 18	تلاطم	تلاطم	NOUN	N_IANM	_	17	nmod	_	_
-19	کرد	کرد#کن	VERB	V_ACT	_	17	cop	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	17	punct	_	_
+19	کرد	کرد#کن	VERB	V_ACT	_	12	conj	_	SpaceAfter=No
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s1439
 # text = علی دایی وقتی علی دایی است که گاهی یکدندگی کند و با سخت‌سری پای حرفش بایستد.
@@ -28503,10 +28503,10 @@
 10	راحتی	راحتی	NOUN	N_IANM	_	11	obl	_	_
 11	می‌توانم	توانست#توان	VERB	V_ACT	_	6	conj	_	_
 12	بگویم	گفت#گو	VERB	V_ACT	_	11	ccomp	_	_
-13	سنگ	سنگ	NOUN	N_IANM	_	12	ccomp	_	_
+13	سنگ	سنگ	NOUN	N_IANM	_	16	xcomp	_	_
 14	صبور	صبور	ADJ	ADJ_AJP	_	13	amod	_	_
 15	بچه‌ها	بچه	NOUN	N_ANM	_	13	nmod	_	_
-16	شده	شد#شو	VERB	V_ACT	_	13	cop	_	_
+16	شده	شد#شو	VERB	V_ACT	_	12	ccomp	_	_
 17	بود	بود#باش	AUX	AUX	_	16	aux	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	11	punct	_	_
 
@@ -28515,7 +28515,7 @@
 1	دیگر	دیگر	ADV	ADV_SADV	_	4	advmod	_	_
 2	بلک	بلک	NOUN	N_IANM	_	4	nsubj	_	_
 3	متال	متال	NOUN	N_IANM	_	2	advmod	_	_
-4	منحصر	منحصر	ADJ	ADJ_AJP	_	9	root	_	_
+4	منحصر	منحصر	ADJ	ADJ_AJP	_	9	vocative	_	_
 5	به	به	ADP	PREP	_	6	case	_	_
 6	کشورهای	کشور	NOUN	N_IANM	_	4	obl	_	_
 7	اسکاندیناوی	اسکاندیناوی	PROPN	N_IANM	_	6	nmod	_	_
@@ -28570,7 +28570,7 @@
 2	در	در	ADP	PREP	_	3	case	_	_
 3	نبردهای	نبرد	NOUN	N_IANM	_	5	obl	_	_
 4	هوایی	هوایی	ADJ	ADJ_AJP	_	3	amod	_	_
-5	موفق	موفق	ADJ	ADJ_AJP	_	7	root	_	_
+5	موفق	موفق	ADJ	ADJ_AJP	_	7	vocative	_	_
 6	بود	بود#باش	AUX	AUX	_	5	cop	_	_
 7	و	و	CCONJ	CONJ	_	0	root	_	_
 8	نه	نه	ADV	ADV_SADV	_	11	advmod	_	_
@@ -28627,13 +28627,13 @@
 11	نخواهد	خواست#خواه	AUX	AUX	_	12	aux	_	_
 12	داشت	داشت#دار	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	12	punct	_	_
-14	و	و	CCONJ	CONJ	_	15	cc	_	_
-15	دچار	دچار	ADJ	ADJ_AJP	_	12	conj	_	_
+14	و	و	CCONJ	CONJ	_	20	cc	_	_
+15	دچار	دچار	ADJ	ADJ_AJP	_	20	xcomp	_	_
 16	سستی	سستی	NOUN	N_IANM	_	15	obl	_	_
 17	و	و	CCONJ	CONJ	_	18	cc	_	_
 18	لغزش	لغزش	NOUN	N_IANM	_	16	conj	_	_
 19	خواهد	خواست#خواه	AUX	AUX	_	20	aux	_	_
-20	شد	کرد#کن	VERB	V_ACT	_	15	cop	_	_
+20	شد	کرد#کن	VERB	V_ACT	_	12	conj	_	_
 21	و	و	CCONJ	CONJ	_	29	cc	_	_
 22	از	از	ADP	PREP	_	23	case	_	_
 23	راه	راه	NOUN	N_IANM	_	26	nmod	_	_
@@ -28656,7 +28656,7 @@
 7	پیدا	پیدا	ADJ	ADJ_AJP	_	8	compound	_	_
 8	کرده	کرد#کن	VERB	V_ACT	_	4	acl	_	_
 9	است	#است	AUX	AUX	_	8	aux	_	_
-10	قابل	قابل	ADJ	ADJ_AJP	_	13	root	_	_
+10	قابل	قابل	ADJ	ADJ_AJP	_	13	vocative	_	_
 11	دفاع	دفاع	NOUN	N_IANM	_	10	obl	_	_
 12	نیست	#هست	AUX	AUX	_	10	cop	_	_
 13	و	و	CCONJ	CONJ	_	0	root	_	_
