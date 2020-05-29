@@ -391,7 +391,7 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
             else:
                 # B: No multi-word token => align according to spans.
                 if (gold_words[gi].span.start, gold_words[gi].span.end) == (
-                system_words[si].span.start, system_words[si].span.end):
+                        system_words[si].span.start, system_words[si].span.end):
                     alignment.append_aligned_words(gold_words[gi], system_words[si])
                     gi += 1
                     si += 1
