@@ -134,7 +134,7 @@ class DependencyTree:
 
     def is_valid_tree(self):
         spans = self.get_span(0)
-        return len(spans) == len(self.words) + 1
+        return len(spans) == len(self.words) + 1 and len([x for x in self.labels if x=="root"])==1
 
     @staticmethod
     def is_nonprojective_arc(d1, h1, d2, h2):
@@ -944,9 +944,6 @@ class DependencyTree:
         for idx in range(0, len(self.words)):
             old_role = self.labels[idx]
             old_head = self.heads[idx]
-            old_pos = self.tags[idx]
-            lemma = self.lemmas[idx]
-            rol_changed = False
             if old_role == 'PARCL':
                 punct_child = [key for key, val in enumerate(self.heads) if
                                val == self.index[idx] and self.labels[key] == 'punct']
@@ -993,13 +990,10 @@ class DependencyTree:
                 #    rol_changed=True
             if old_role == 'AJUCL':
                 self.exchange_pars_with_PRD(idx, 'mark', 'advcl')
-                rol_changed = True
             if old_role == 'VCL' or old_role == 'ACL':
                 self.exchange_pars_with_PRD(idx, 'mark', 'ccomp')
-                rol_changed = True
             if old_role == 'NCL':
                 self.exchange_pars_with_PRD(idx, 'mark', 'acl')
-                rol_changed = True
             self.other_features[idx].add_feat('old_r', old_role)
             self.other_features[idx].add_feat('old_h', str(old_head))
 
@@ -1151,21 +1145,26 @@ class DependencyTree:
         for idx in range(0, len(self.words)):
             old_role = self.labels[idx]
             old_head = self.heads[idx]
+            head_pos = self.tags[old_head - 1]
             old_pos = self.tags[idx]
+            head_lemma = self.lemmas[old_head - 1]
             lemma = self.lemmas[idx]
             word = self.words[idx]
             rol_changed = False
             senID = self.sen_id
             if old_role == 'MOS':
-                self.exchange_child_parent(self.reverse_index[old_head], idx, 'cop')
-                cop_child = self.find_all_children(old_head)
-                for ch in cop_child:
-                    if self.labels[ch] != 'aux' and self.labels[ch] != 'aux:pass':
-                        old_ch_h = self.heads[ch]
-                        old_ch_r = self.labels[ch]
-                        self.heads[ch] = self.index[idx]
-                        self.other_features[ch].add_feat('old_h', str(old_ch_h))
-                        self.other_features[ch].add_feat('old_r', old_ch_r)
+                if head_pos == "AUX":
+                    self.exchange_child_parent(self.reverse_index[old_head], idx, 'cop')
+                    cop_child = self.find_all_children(old_head)
+                    for ch in cop_child:
+                        if self.labels[ch] != 'aux' and self.labels[ch] != 'aux:pass':
+                            old_ch_h = self.heads[ch]
+                            old_ch_r = self.labels[ch]
+                            self.heads[ch] = self.index[idx]
+                            self.other_features[ch].add_feat('old_h', str(old_ch_h))
+                            self.other_features[ch].add_feat('old_r', old_ch_r)
+                else:
+                    self.labels[idx] = "xcomp"
                 rol_changed = True
             if (word == 'نیز' or word == 'هم') and old_pos == 'ADV':
                 head_pos = self.tags[self.reverse_index[old_head]]
