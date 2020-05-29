@@ -69,5 +69,6 @@ os.system(
 os.system("python3 remove_feat_column.py UD_Dadegan/ parser_data//dadegan/ xpos")
 os.system("python3 remove_feat_column.py UD_Dadegan-nt/ parser_data//dadegan-nt/ xpos")
 os.system("python3 conllu2raw.py UD_Dadegan parser_data/dadegan_raw/")
+os.system("python3 conllu2raw.py parser_data/seraji-nt parser_data/seraji_raw/")
 
 print("FINISHED!")
