@@ -33,9 +33,9 @@
 31	با	با	ADP	_	_	32	case	_	_
 32	رحلت	رحلت	NOUN	_	_	40	obl	_	_
 33	نبی	نبی	PROPN	_	_	32	nmod	_	_
-34	مکرم	مکرم	PROPN	_	_	40	nsubj	_	_
-35	اسلام	اسلام	PROPN	_	_	34	flat:name	_	_
-36	جهان	جهان	PROPN	_	_	34	flat:name	_	_
+34	مکرم	مکرم	PROPN	_	_	33	flat:name	_	_
+35	اسلام	اسلام	PROPN	_	_	33	flat:name	_	_
+36	جهان	جهان	PROPN	_	_	40	nsubj	_	_
 37	عزادار	عزادار	ADJ	_	_	40	xcomp	_	_
 38-39	ماتمش	_	_	_	_	_	_	_	_
 38	ماتم	ماتم	NOUN	_	_	37	obl:arg	_	_
@@ -381,7 +381,7 @@
 17	26	26	NUM	_	_	21	nummod	_	_
 18	هزار	هزار	NUM	_	_	17	flat:num	_	_
 19	و	و	CCONJ	_	_	20	cc	_	_
-20	251	251	NOUN	_	_	17	conj	_	_
+20	251	251	NUM	_	_	17	flat:num	_	_
 21	مسافر	مسافر	NOUN	_	_	27	nsubj	_	_
 22	در	در	ADP	_	_	23	case	_	_
 23	همدان	همدان	PROPN	_	_	27	obl	_	_
@@ -2324,7 +2324,7 @@
 23	کاروان	کاروان	PROPN	_	_	22	flat:name	_	_
 24	اسرای	اسیر	PROPN	_	_	22	flat:name	_	_
 25	کربلا	کربلا	PROPN	_	_	22	flat:name	_	_
-26	و	و	CCONJ	_	_	28	cc	_	_
+26	و	و	CCONJ	_	_	27	cc	_	_
 27	حضرت	حضرت	PROPN	_	_	23	conj	_	_
 28	زینب	زینب	PROPN	_	_	27	flat:name	_	_
 29	(	(	PUNCT	_	_	30	punct	_	SpaceAfter=No
@@ -3584,9 +3584,9 @@
 # sent_id = dev-s121
 # text = بشار اسد کاخ سفید را تحقیر کرد.
 1	بشار	بشار	PROPN	_	_	7	nsubj	_	_
-2	اسد	اسد	PROPN	_	_	7	obj	_	_
-3	کاخ	کاخ	PROPN	_	_	2	flat:name	_	_
-4	سفید	سفید	PROPN	_	_	2	flat:name	_	_
+2	اسد	اسد	PROPN	_	_	1	flat:name	_	_
+3	کاخ	کاخ	PROPN	_	_	7	obj	_	_
+4	سفید	سفید	PROPN	_	_	3	flat:name	_	_
 5	را	را	ADP	_	_	3	case	_	_
 6	تحقیر	تحقیر	NOUN	_	_	7	compound:lvc	_	_
 7	کرد	کرد#کن	VERB	_	_	0	root	_	SpaceAfter=No
@@ -12280,7 +12280,7 @@
 6	از	از	ADP	_	_	7	case	_	_
 7	سطوح	سطح	NOUN	_	_	4	nmod	_	_
 8	رهبری	رهبری	NOUN	_	_	7	nmod	_	_
-9	نظیر	نظیر	ADP	_	_	11	case	_	_
+9	نظیر	نظیر	ADP	_	_	10	case	_	_
 10	ملا	ملا	PROPN	_	_	4	nmod	_	_
 11	حسن	حسن	PROPN	_	_	10	flat:name	_	_
 12	رستگار	رستگار	PROPN	_	_	10	flat:name	_	_
@@ -12485,9 +12485,9 @@
 8	،	،	PUNCT	_	_	7	punct	_	_
 9	ظاهراً	ظاهراً	ADV	_	_	26	advmod	_	_
 10	سفارت	سفارت	PROPN	_	_	26	nsubj	_	_
-11	انگلستان	انگلستان	PROPN	_	_	26	obj	_	_
-12	باغ	باغ	PROPN	_	_	11	flat:name	_	_
-13	قلهک	قلهک	PROPN	_	_	11	flat:name	_	_
+11	انگلستان	انگلستان	PROPN	_	_	10	flat:name	_	_
+12	باغ	باغ	PROPN	_	_	26	obj	_	_
+13	قلهک	قلهک	PROPN	_	_	12	flat:name	_	_
 14	را	را	ADP	_	_	12	case	_	_
 15	از	از	ADP	_	_	16	case	_	_
 16	زمان	زمان	NOUN	_	_	26	obl	_	_
@@ -19059,20 +19059,20 @@
 11	جعفر	جعفر	PROPN	_	_	10	flat:name	_	_
 12	کاشف‌الغطا	کاشف‌الغطا	PROPN	_	_	10	flat:name	_	_
 13	،	،	PUNCT	_	_	12	punct	_	_
-14	صاحب	صاحب	PROPN	_	_	7	conj	_	_
+14	صاحب	صاحب	PROPN	_	_	11	conj	_	_
 15	جواهر	جواهر	PROPN	_	_	14	flat:name	_	_
 16	،	،	PUNCT	_	_	15	punct	_	_
-17	شیخ	شیخ	PROPN	_	_	7	conj	_	_
+17	شیخ	شیخ	PROPN	_	_	11	conj	_	_
 18	مرتضی	مرتضی	PROPN	_	_	17	flat:name	_	_
 19	انصاری	انصاری	PROPN	_	_	17	flat:name	_	_
 20	،	،	PUNCT	_	_	19	punct	_	_
-21	میرزای	میرزا	PROPN	_	_	7	conj	_	_
+21	میرزای	میرزا	PROPN	_	_	11	conj	_	_
 22	شیرازی	شیرازی	PROPN	_	_	21	flat:name	_	_
 23	،	،	PUNCT	_	_	22	punct	_	_
-24	آخوند	آخوند	PROPN	_	_	7	conj	_	_
+24	آخوند	آخوند	PROPN	_	_	11	conj	_	_
 25	خراسانی	خراسانی	PROPN	_	_	24	flat:name	_	_
-26	و	و	CCONJ	_	_	28	cc	_	_
-27	سید	سید	PROPN	_	_	7	conj	_	_
+26	و	و	CCONJ	_	_	27	cc	_	_
+27	سید	سید	PROPN	_	_	11	conj	_	_
 28	ابوالحسن	ابوالحسن	PROPN	_	_	27	flat:name	_	_
 29	اصفهانی	اصفهانی	PROPN	_	_	27	flat:name	_	_
 30	بودند	بود#باش	AUX	_	_	2	cop	_	_
@@ -19771,7 +19771,7 @@
 5	اظهارات	اظهار	NOUN	_	_	12	obj	_	_
 6	وزیر	وزیر	NOUN	_	_	5	nmod	_	_
 7	خارجهٔ	خارجه	PROPN	_	_	6	nmod	_	_
-8	اسرائیل	اسرائیل	PROPN	_	_	6	nmod	_	_
+8	اسرائیل	اسرائیل	PROPN	_	_	7	flat:name	_	_
 9	را	را	ADP	_	_	5	case	_	_
 10	استماع	استماع	NOUN	_	_	12	compound:lvc	_	_
 11	خواهد	خواست#خواه	AUX	_	_	12	aux	_	_
@@ -20146,8 +20146,8 @@
 # sent_id = dev-s1015
 # text = شرکت‌های هواپیمایی هند در سال جاری زیان خواهند داد.
 1	شرکت‌های	شرکت	NOUN	_	_	9	nsubj	_	_
-2	هواپیمایی	هواپیمایی	PROPN	_	_	1	amod	_	_
-3	هند	هند	PROPN	_	_	1	nmod	_	_
+2	هواپیمایی	هواپیمایی	PROPN	_	_	1	nmod	_	_
+3	هند	هند	PROPN	_	_	2	flat:name	_	_
 4	در	در	ADP	_	_	5	case	_	_
 5	سال	سال	NOUN	_	_	9	obl	_	_
 6	جاری	جاری	ADJ	_	_	5	amod	_	_
@@ -20265,7 +20265,7 @@
 2	ما	ما	PRON	_	_	1	nmod	_	_
 3	به	به	ADP	_	_	4	case	_	_
 4	یقین	یقین	NOUN	_	_	12	obl	_	_
-5	به	به	ADP	_	_	7	case	_	_
+5	به	به	ADP	_	_	6	case	_	_
 6	امام	امام	PROPN	_	_	12	obl:arg	_	_
 7	حسین	حسین	PROPN	_	_	6	flat:name	_	_
 8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No
@@ -22957,7 +22957,7 @@
 9	بهانه‌ای	بهانه	NOUN	_	_	18	obl	_	_
 10	دکتر	دکتر	PROPN	_	_	18	obj	_	_
 11	مصدق	مصدق	PROPN	_	_	10	flat:name	_	_
-12	را	را	ADP	_	_	11	case	_	_
+12	را	را	ADP	_	_	10	case	_	_
 13	دستگیر	دستگیر	NOUN	_	_	18	compound:lvc	_	_
 14	و	و	CCONJ	_	_	18	cc	_	_
 15	به	به	ADP	_	_	16	case	_	_
@@ -23350,7 +23350,7 @@
 6	1344	1344	NOUN	_	_	5	nmod	_	_
 7	هم	هم	ADV	_	_	5	case	_	_
 8	مدتی	مدت	NOUN	_	_	13	obl	_	_
-9	با	با	ADP	_	_	11	case	_	_
+9	با	با	ADP	_	_	10	case	_	_
 10	مرحوم	مرحوم	PROPN	_	_	12	nmod	_	_
 11	مطهری	مطهری	PROPN	_	_	10	flat:name	_	_
 12	مراوده	مراوده	NOUN	_	_	13	obj	_	_

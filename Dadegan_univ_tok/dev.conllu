@@ -381,7 +381,7 @@
 17	26	26	PRENUM	PRENUM	attachment=ISO|senID=23602	18	NPREMOD	_	_
 18	هزار	هزار	PRENUM	PRENUM	attachment=ISO|number=SING|senID=23602	21	NPREMOD	_	_
 19	و	و	CONJ	CONJ	attachment=ISO|senID=23602	18	NCONJ	_	_
-20	251	251	N	IANM	attachment=ISO|number=SING|senID=23602	19	POSDEP	_	_
+20	251	251	PRENUM	PRENUM	attachment=ISO|number=SING|senID=23602	19	POSDEP	_	_
 21	مسافر	مسافر	N	ANM	attachment=ISO|number=SING|senID=23602	27	SBJ	_	_
 22	در	در	PREP	PREP	attachment=ISO|senID=23602	27	ADV	_	_
 23	همدان	همدان	N	IANM	attachment=ISO|number=SING|senID=23602	22	POSDEP	_	_
@@ -19066,7 +19066,7 @@
 18	مرتضی	مرتضی	N	ANM	attachment=ISO|number=SING|senID=47721	14	NCONJ	_	_
 19	انصاری	انصاری	N	ANM	attachment=ISO|number=SING|senID=47721	18	MOZ	_	_
 20	،	،	PUNC	PUNC	attachment=ISO|senID=47721	19	PUNC	_	_
-21	میرزای	میرزا	N	ANM	attachment=ISO|number=SING|senID=47721	18	NCONJ	_	_
+21	میرزای	میرزا	N	ANM	attachment=ISO|number=SING|senID=47721	17	NCONJ	_	_
 22	شیرازی	شیرازی	N	ANM	attachment=ISO|number=SING|senID=47721	21	MOZ	_	_
 23	،	،	PUNC	PUNC	attachment=ISO|senID=47721	22	PUNC	_	_
 24	آخوند	آخوند	N	ANM	attachment=ISO|number=SING|senID=47721	21	NCONJ	_	_

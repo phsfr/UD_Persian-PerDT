@@ -1,6 +1,6 @@
 import os
 from collections import defaultdict
-from typing import List, Set
+from typing import Dict, List, Set
 
 univ_dep_labels = {"nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated", "advcl",
                    "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl", "amod", "det", "clf",
@@ -113,6 +113,64 @@ class DependencyTree:
                 spans.add(s)
         return spans
 
+    def extend_subchildren(self, sub_children: List[int], head: int, level: int) -> List[int]:
+        # The following labels are permitted to go beyond a yield subtree deep.
+        allowed_yields = {"MOZ", "APP", "NPOSTMOD", "PREDEP", "POSDEP"}
+        sub_children = []
+        for child in self.children[head]:
+            if self.labels[child - 1] in allowed_yields:
+                sub_children.extend(self.children[child])
+                sub_children.extend(self.extend_subchildren(sub_children, child, level + 1))
+        return sub_children
+
+    def get_flat_spans(self) -> Dict[int, Set]:
+        """
+        For each word index, returns words that are in the same flat chunk neighborhood wrt current tree.
+        """
+        spans = []
+        for i in range(0, len(self.words)):
+            sub_children = self.extend_subchildren([], i + 1, 0)
+
+            all_children = sorted([i + 1] + sub_children + list(self.children[i + 1]))
+
+            if self.labels[i] in {"MOZ"}:
+                h = self.heads[i]
+                all_children = sorted(all_children + [h] + list(self.children[h]))
+
+            if len(all_children) == 1:
+                continue
+
+            conseq_spans = []
+            cur_span = [all_children[0]]
+            for c, child in enumerate(all_children[1:]):
+                if child == cur_span[-1] + 1:
+                    cur_span.append(child)
+                else:
+                    if len(cur_span) > 1:
+                        conseq_spans.append(cur_span)
+                    cur_span = list([child])
+            if len(cur_span) > 1:
+                conseq_spans.append(cur_span)
+
+            spans += conseq_spans
+
+        span_dict = {i: set() for i in range(len(self.words))}
+        for subspan in spans:
+            for v in subspan:
+                for v2 in subspan:
+                    span_dict[v - 1].add(v2 - 1)  # One index off due to Python indexing vs CONLLU indexing.
+        return span_dict
+
+    def all_in_flat(self, span_dict, flat_candidate) -> bool:
+        """
+        Determines of a list of words are in the same chunk (yield subtree including head of yield).
+        :return:
+        """
+        for elem in flat_candidate[1:]:
+            if elem not in span_dict[flat_candidate[0]]:
+                return False
+        return True
+
     @staticmethod
     def trav(rev_head, h,
              visited):  # method to traverse tree rev_head: list of heads, h: the head to be visited, visited: the list of already visited heads
@@ -134,7 +192,7 @@ class DependencyTree:
 
     def is_valid_tree(self):
         spans = self.get_span(0)
-        return len(spans) == len(self.words) + 1 and len([x for x in self.labels if x=="root"])==1
+        return len(spans) == len(self.words) + 1 and len([x for x in self.labels if x == "root"]) == 1
 
     @staticmethod
     def is_nonprojective_arc(d1, h1, d2, h2):
@@ -636,30 +694,27 @@ class DependencyTree:
         return all_num_groups
 
     def find_name_groups(self):
+        flat_spans = self.get_flat_spans()
         name_group_idxs = []
         all_name_groups = []
         for idx in range(len(self.tags)):
-            # if self.sen_id=='23604':
-            #    print('pos {} word {} idx {}'.format(pos,word,idx))
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
             pos = self.tags[idx]
             word = self.words[idx]
-            if (dadeg_pos == 'IDEN' or pos == 'PROPN'):
-                name_group_idxs.append(idx)
+            if pos == 'PROPN':
+                if self.all_in_flat(flat_spans, name_group_idxs + [idx]):
+                    name_group_idxs.append(idx)
+                else:
+                    if len(name_group_idxs) > 1:
+                        all_name_groups.append(name_group_idxs)
+                    name_group_idxs = [idx]
             else:
                 if len(name_group_idxs) > 1:
-                    head_candids = []
-                    for item in name_group_idxs:
-                        h_idx = -1
-                        if self.heads[item] != 0:
-                            h_idx = self.reverse_index[self.heads[item]]
-                        if h_idx not in name_group_idxs:
-                            head_candids.append(item)
-                    head_candids.sort()
-                    if len(head_candids) > 1:
-                        name_group_idxs.remove(head_candids[0])
                     all_name_groups.append(name_group_idxs)
                 name_group_idxs = []
+
+        if len(name_group_idxs) > 1:
+            all_name_groups.append(name_group_idxs)
+
         return all_name_groups
 
     def find_tag_fixed_groupds(self):
@@ -1444,14 +1499,14 @@ class DependencyTree:
             self.other_features[idx].add_feat('old_h', str(old_head))
 
     def convert_tree(self):
+        # NOTE: the order of execution is important. Don't change it.
         self.reverse_modal()
-        self.zero_level_dep_mapping()
-        # self.convert_PARCL_rel()
-        self.first_level_dep_mapping()
+        self.convert_name_groups()
         not_num_process = ['53393', '58877', '46067', '36338']
         if self.sen_id not in not_num_process:
             self.convert_num_groups()
-        self.convert_name_groups()
+        self.zero_level_dep_mapping()
+        self.first_level_dep_mapping()
         self.convert_PARCL_rel()
         self.second_level_dep_mapping()
         self.third_level_dep_mapping()

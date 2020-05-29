@@ -2106,7 +2106,7 @@
 3	در	در	ADP	PREP	_	4	case	_	_
 4	برابر	برابر	NOUN	N_IANM	_	10	obl	_	_
 5	حمله	حمله	NOUN	N_IANM	_	4	nmod	_	_
-6	به	به	ADP	PREP	_	8	case	_	_
+6	به	به	ADP	PREP	_	7	case	_	_
 7	مرحوم	مرحوم	PROPN	IDEN	_	5	nmod	_	_
 8	مجلسی	مجلسی	PROPN	N_ANM	_	7	flat	_	_
 9	ساکت	ساکت	ADJ	ADJ_AJP	_	10	xcomp	_	_
@@ -7417,7 +7417,7 @@
 3	شهید	شهید	PROPN	IDEN	_	8	obj	_	_
 4	ابراهیم	ابراهیم	PROPN	N_ANM	_	3	flat	_	_
 5	همت	همت	PROPN	N_IANM	_	3	flat	_	_
-6	را	را	ADP	POSTP	_	4	case	_	_
+6	را	را	ADP	POSTP	_	3	case	_	_
 7	خاک	خاک	NOUN	N_IANM	_	8	compound	_	_
 8	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 9	؟	؟	PUNCT	PUNC	_	8	punct	_	_
@@ -10693,8 +10693,8 @@
 8	حتی	حتی	ADV	ADV_SADV	_	9	advmod	_	_
 9	شبانه	شبانه	ADJ	ADJ_AJP	_	7	advmod	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
-11	شهر	شهر	PROPN	N_IANM	_	13	compound	_	_
-12	گشت‌زنی	گشت‌زنی	PROPN	N_IANM	_	11	flat	_	_
+11	شهر	شهر	PROPN	N_IANM	_	13	obl	_	_
+12	گشت‌زنی	گشت‌زنی	PROPN	N_IANM	_	13	compound	_	_
 13	می‌کنم	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 14	.	.	PUNCT	PUNC	_	13	punct	_	_
 
@@ -13691,8 +13691,8 @@
 # sent_id = test-s714
 # text = ارتش سوریه حمص را گلوله‌باران کرد.
 1	ارتش	ارتش	PROPN	N_IANM	_	6	nsubj	_	_
-2	سوریه	سوریه	PROPN	N_IANM	_	6	obj	_	_
-3	حمص	حمص	PROPN	N_IANM	_	2	flat	_	_
+2	سوریه	سوریه	PROPN	N_IANM	_	1	flat	_	_
+3	حمص	حمص	PROPN	N_IANM	_	6	obj	_	_
 4	را	را	ADP	POSTP	_	3	case	_	_
 5	گلوله‌باران	گلوله‌باران	NOUN	N_IANM	_	6	compound	_	_
 6	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
@@ -15287,9 +15287,9 @@
 # sent_id = test-s799
 # text = فرماندهٔ انتظامی خراسان رضوی خاطرنشان کرد: اگر از منابع طبیعی حفاظت نکنیم آیندگان ما را نفرین خواهند کرد.
 1	فرماندهٔ	فرمانده	NOUN	N_ANM	_	6	nsubj	_	_
-2	انتظامی	انتظامی	PROPN	ADJ_AJP	_	1	amod	_	_
-3	خراسان	خراسان	PROPN	N_IANM	_	1	nmod	_	_
-4	رضوی	رضوی	PROPN	ADJ_AJP	_	3	flat	_	_
+2	انتظامی	انتظامی	PROPN	ADJ_AJP	_	1	nmod	_	_
+3	خراسان	خراسان	PROPN	N_IANM	_	2	flat	_	_
+4	رضوی	رضوی	PROPN	ADJ_AJP	_	2	flat	_	_
 5	خاطرنشان	خاطرنشان	NOUN	N_IANM	_	6	compound	_	_
 6	کرد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
 7	:	:	PUNCT	PUNC	_	6	punct	_	_
@@ -17941,7 +17941,7 @@
 
 # sent_id = test-s938
 # text = به دکتر نبوی توصیه می‌کنم همان طور که مالی و بازرسی را سالم‌سازی کردند آموزش و پشتیبانی را نیز سالم‌سازی کنند.
-1	به	به	ADP	PREP	_	3	case	_	_
+1	به	به	ADP	PREP	_	2	case	_	_
 2	دکتر	دکتر	PROPN	IDEN	_	5	obl	_	_
 3	نبوی	نبوی	PROPN	N_ANM	_	2	flat	_	_
 4	توصیه	توصیه	NOUN	N_IANM	_	5	compound	_	_
@@ -19692,7 +19692,7 @@
 2	با	با	ADP	PREP	_	3	case	_	_
 3	دشمنان	دشمن	NOUN	N_ANM	_	16	obl	_	_
 4	انقلاب	انقلاب	NOUN	N_IANM	_	3	nmod	_	_
-5	و	و	CCONJ	CONJ	_	7	cc	_	_
+5	و	و	CCONJ	CONJ	_	6	cc	_	_
 6	امام	امام	PROPN	IDEN	_	4	conj	_	_
 7	حسین	حسین	PROPN	N_ANM	_	6	flat	_	_
 8	(	(	PUNCT	PUNC	_	9	punct	_	SpaceAfter=No
@@ -20321,7 +20321,7 @@
 21	ره	ره	NOUN	N_IANM	_	19	advmod	_	SpaceAfter=No
 22	)	)	PUNCT	PUNC	_	21	punct	_	_
 23	را	را	ADP	POSTP	_	16	case	_	_
-24	به	به	ADP	PREP	_	26	case	_	_
+24	به	به	ADP	PREP	_	25	case	_	_
 25	سید	سید	PROPN	IDEN	_	28	obl	_	_
 26	حسن	حسن	PROPN	N_ANM	_	25	flat	_	_
 27	هدیه	هدیه	NOUN	N_IANM	_	28	compound	_	_
@@ -22715,8 +22715,8 @@
 
 # sent_id = test-s1163
 # text = الهاشمی غیابی محاکمه خواهد شد.
-1	الهاشمی	الهاشمی	PROPN	N_IANM	_	5	nsubj	_	_
-2	غیابی	غیابی	PROPN	ADJ_AJP	_	5	obl	_	_
+1	الهاشمی	الهاشمی	PROPN	N_IANM	_	5	obl	_	_
+2	غیابی	غیابی	PROPN	ADJ_AJP	_	1	flat	_	_
 3	محاکمه	محاکمه	NOUN	N_IANM	_	5	compound	_	_
 4	خواهد	خواست#خواه	AUX	AUX	_	5	aux	_	_
 5	شد	کرد#کن	VERB	V_ACT	_	0	root	_	SpaceAfter=No
@@ -25230,9 +25230,9 @@
 # sent_id = test-s1288
 # text = Severo Ochoa جایزهٔ نوبل را در سال 1959 (مشترکاً با Arthur Kornberg) برنده شد، بعد از اینکه او یک آنزیمی را کشف کرد که RNA را در آزمایشگاه سنتز می‌کرد.
 1	Severo	Severo	PROPN	N_ANM	_	16	nsubj	_	_
-2	Ochoa	Ochoa	PROPN	N_ANM	_	16	obj	_	_
-3	جایزهٔ	جایزه	PROPN	N_IANM	_	2	flat	_	_
-4	نوبل	نوبل	PROPN	N_IANM	_	2	flat	_	_
+2	Ochoa	Ochoa	PROPN	N_ANM	_	1	flat	_	_
+3	جایزهٔ	جایزه	PROPN	N_IANM	_	16	obj	_	_
+4	نوبل	نوبل	PROPN	N_IANM	_	3	flat	_	_
 5	را	را	ADP	POSTP	_	3	case	_	_
 6	در	در	ADP	PREP	_	7	case	_	_
 7	سال	سال	NOUN	N_IANM	_	16	obl	_	_

@@ -1,7 +1,6 @@
 import sys
 
 from dep_tree import *
-from dep_tree import remove_semispace
 
 # For removing feature column!
 

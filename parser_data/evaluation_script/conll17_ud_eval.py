@@ -91,9 +91,11 @@ import unittest
 # CoNLL-U column names
 ID, FORM, LEMMA, UPOS, XPOS, FEATS, HEAD, DEPREL, DEPS, MISC = range(10)
 
+
 # UD Error is used when raising exceptions in this module
 class UDError(Exception):
     pass
+
 
 # Load given CoNLL-U file into internal representation
 def load_conllu(file):
@@ -109,12 +111,14 @@ def load_conllu(file):
             self.words = []
             # List of UDSpan instances with start&end indices into `characters`.
             self.sentences = []
+
     class UDSpan:
         def __init__(self, start, end):
             self.start = start
             # Note that self.end marks the first position **after the end** of span,
             # so we can use characters[start:end] or range(start, end).
             self.end = end
+
     class UDWord:
         def __init__(self, span, columns, is_multiword):
             # Span of this word (or MWT, see below) within ud_representation.characters.
@@ -214,7 +218,9 @@ def load_conllu(file):
             except:
                 raise UDError("Cannot parse word ID '{}'".format(columns[ID]))
             if word_id != len(ud.words) - sentence_start + 1:
-                raise UDError("Incorrect word ID '{}' for word '{}', expected '{}'".format(columns[ID], columns[FORM], len(ud.words) - sentence_start + 1))
+                raise UDError("Incorrect word ID '{}' for word '{}', expected '{}'".format(columns[ID], columns[FORM],
+                                                                                           len(
+                                                                                               ud.words) - sentence_start + 1))
 
             try:
                 head_id = int(columns[HEAD])
@@ -230,6 +236,7 @@ def load_conllu(file):
 
     return ud
 
+
 # Evaluate the gold and system treebanks (loaded using load_conllu).
 def evaluate(gold_ud, system_ud, deprel_weights=None):
     class Score:
@@ -238,21 +245,25 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
             self.recall = correct / gold_total if gold_total else 0.0
             self.f1 = 2 * correct / (system_total + gold_total) if system_total + gold_total else 0.0
             self.aligned_accuracy = correct / aligned_total if aligned_total else aligned_total
+
     class AlignmentWord:
         def __init__(self, gold_word, system_word):
             self.gold_word = gold_word
             self.system_word = system_word
             self.gold_parent = None
             self.system_parent_gold_aligned = None
+
     class Alignment:
         def __init__(self, gold_words, system_words):
             self.gold_words = gold_words
             self.system_words = system_words
             self.matched_words = []
             self.matched_words_map = {}
+
         def append_aligned_words(self, gold_word, system_word):
             self.matched_words.append(AlignmentWord(gold_word, system_word))
             self.matched_words_map[system_word] = gold_word
+
         def fill_parents(self):
             # We represent root parents in both gold and system data by '0'.
             # For gold data, we represent non-root parent by corresponding gold word.
@@ -299,7 +310,8 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
             return Score(gold, system, aligned)
 
         for words in alignment.matched_words:
-            if key_fn(words.gold_word, words.gold_parent) == key_fn(words.system_word, words.system_parent_gold_aligned):
+            if key_fn(words.gold_word, words.gold_parent) == key_fn(words.system_word,
+                                                                    words.system_parent_gold_aligned):
                 correct += weight_fn(words.gold_word)
 
         return Score(gold, system, correct, aligned)
@@ -324,7 +336,7 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
             multiword_span_end = gold_words[gi].span.end
             if not system_words[si].is_multiword and system_words[si].span.start < gold_words[gi].span.start:
                 si += 1
-        else: # if system_words[si].is_multiword
+        else:  # if system_words[si].is_multiword
             multiword_span_end = system_words[si].span.end
             if not gold_words[gi].is_multiword and gold_words[gi].span.start < system_words[si].span.start:
                 gi += 1
@@ -333,7 +345,7 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
         # Find the end of the multiword span
         # (so both gi and si are pointing to the word following the multiword span end).
         while not beyond_end(gold_words, gi, multiword_span_end) or \
-              not beyond_end(system_words, si, multiword_span_end):
+                not beyond_end(system_words, si, multiword_span_end):
             if gi < len(gold_words) and (si >= len(system_words) or
                                          gold_words[gi].span.start <= system_words[si].span.start):
                 multiword_span_end = extend_end(gold_words[gi], multiword_span_end)
@@ -348,9 +360,9 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
         for g in reversed(range(gi - gs)):
             for s in reversed(range(si - ss)):
                 if lower(gold_words[gs + g].columns[FORM]) == lower(system_words[ss + s].columns[FORM]):
-                    lcs[g][s] = 1 + (lcs[g+1][s+1] if g+1 < gi-gs and s+1 < si-ss else 0)
-                lcs[g][s] = max(lcs[g][s], lcs[g+1][s] if g+1 < gi-gs else 0)
-                lcs[g][s] = max(lcs[g][s], lcs[g][s+1] if s+1 < si-ss else 0)
+                    lcs[g][s] = 1 + (lcs[g + 1][s + 1] if g + 1 < gi - gs and s + 1 < si - ss else 0)
+                lcs[g][s] = max(lcs[g][s], lcs[g + 1][s] if g + 1 < gi - gs else 0)
+                lcs[g][s] = max(lcs[g][s], lcs[g][s + 1] if s + 1 < si - ss else 0)
         return lcs
 
     def align_words(gold_words, system_words):
@@ -369,16 +381,17 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
                     s, g = 0, 0
                     while g < gi - gs and s < si - ss:
                         if lower(gold_words[gs + g].columns[FORM]) == lower(system_words[ss + s].columns[FORM]):
-                            alignment.append_aligned_words(gold_words[gs+g], system_words[ss+s])
+                            alignment.append_aligned_words(gold_words[gs + g], system_words[ss + s])
                             g += 1
                             s += 1
-                        elif lcs[g][s] == (lcs[g+1][s] if g+1 < gi-gs else 0):
+                        elif lcs[g][s] == (lcs[g + 1][s] if g + 1 < gi - gs else 0):
                             g += 1
                         else:
                             s += 1
             else:
                 # B: No multi-word token => align according to spans.
-                if (gold_words[gi].span.start, gold_words[gi].span.end) == (system_words[si].span.start, system_words[si].span.end):
+                if (gold_words[gi].span.start, gold_words[gi].span.end) == (
+                system_words[si].span.start, system_words[si].span.end):
                     alignment.append_aligned_words(gold_words[gi], system_words[si])
                     gi += 1
                     si += 1
@@ -426,9 +439,11 @@ def evaluate(gold_ud, system_ud, deprel_weights=None):
     if deprel_weights is not None:
         def weighted_las(word):
             return deprel_weights.get(word.columns[DEPREL], 1.0)
+
         result["WeightedLAS"] = alignment_score(alignment, lambda w, parent: (parent, w.columns[DEPREL]), weighted_las)
 
     return result
+
 
 def load_deprel_weights(weights_file):
     if weights_file is None:
@@ -448,9 +463,11 @@ def load_deprel_weights(weights_file):
 
     return deprel_weights
 
+
 def load_conllu_file(path):
     _file = open(path, mode="r", **({"encoding": "utf-8"} if sys.version_info >= (3, 0) else {}))
     return load_conllu(_file)
+
 
 def evaluate_wrapper(args):
     # Load CoNLL-U files
@@ -461,6 +478,7 @@ def evaluate_wrapper(args):
     deprel_weights = load_deprel_weights(args.weights)
 
     return evaluate(gold_ud, system_ud, deprel_weights)
+
 
 def main():
     # Parse arguments
@@ -499,11 +517,14 @@ def main():
                 100 * evaluation[metric].precision,
                 100 * evaluation[metric].recall,
                 100 * evaluation[metric].f1,
-                "{:10.2f}".format(100 * evaluation[metric].aligned_accuracy) if evaluation[metric].aligned_accuracy is not None else ""
+                "{:10.2f}".format(100 * evaluation[metric].aligned_accuracy) if evaluation[
+                                                                                    metric].aligned_accuracy is not None else ""
             ))
+
 
 if __name__ == "__main__":
     main()
+
 
 # Tests, which can be executed with `python -m unittest conll17_ud_eval`.
 class TestAlignment(unittest.TestCase):
@@ -515,13 +536,14 @@ class TestAlignment(unittest.TestCase):
             parts = w.split(" ")
             if len(parts) == 1:
                 num_words += 1
-                lines.append("{}\t{}\t_\t_\t_\t_\t{}\t_\t_\t_".format(num_words, parts[0], int(num_words>1)))
+                lines.append("{}\t{}\t_\t_\t_\t_\t{}\t_\t_\t_".format(num_words, parts[0], int(num_words > 1)))
             else:
-                lines.append("{}-{}\t{}\t_\t_\t_\t_\t_\t_\t_\t_".format(num_words + 1, num_words + len(parts) - 1, parts[0]))
+                lines.append(
+                    "{}-{}\t{}\t_\t_\t_\t_\t_\t_\t_\t_".format(num_words + 1, num_words + len(parts) - 1, parts[0]))
                 for part in parts[1:]:
                     num_words += 1
-                    lines.append("{}\t{}\t_\t_\t_\t_\t{}\t_\t_\t_".format(num_words, part, int(num_words>1)))
-        return load_conllu((io.StringIO if sys.version_info >= (3, 0) else io.BytesIO)("\n".join(lines+["\n"])))
+                    lines.append("{}\t{}\t_\t_\t_\t_\t{}\t_\t_\t_".format(num_words, part, int(num_words > 1)))
+        return load_conllu((io.StringIO if sys.version_info >= (3, 0) else io.BytesIO)("\n".join(lines + ["\n"])))
 
     def _test_exception(self, gold, system):
         self.assertRaises(UDError, evaluate, self._load_words(gold), self._load_words(system))
