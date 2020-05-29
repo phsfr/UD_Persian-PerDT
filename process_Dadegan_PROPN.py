@@ -118,10 +118,12 @@ def find_pro_head(pro_par, tok_dic, lin):
                 print('ERROR: ??')
     return hPar
 
+
 def propn_manual_override(old_pos, word_form, isPROPN, tok_id, sent_id):
     if sent_id == "56171" and tok_id == "1":
         return "PROPN"
     return None
+
 
 def convert_pos(old_pos, word_form, isPROPN, tok_id, sent_id):
     pos_map = {'V': 'VERB', 'N': 'NOUN', 'SUBR': 'SCONJ', 'PR': 'PRON', 'ADJ': 'ADJ', 'ADV': 'ADV', 'PUNC': 'PUNCT',

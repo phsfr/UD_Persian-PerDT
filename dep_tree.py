@@ -301,7 +301,6 @@ class DependencyTree:
                 labels.append(spl[7])  # dep_rol
                 semiFinal_tags.append(spl[8])  # semi UD_Dadegan tag
                 final_tags.append(spl[9])  # last tag
-
         tree = DependencyTree(sent_descript, sent_str, words, tags, ftags, heads, labels, lemmas, other_features,
                               semiFinal_tags, final_tags, mw_line)
         return tree
