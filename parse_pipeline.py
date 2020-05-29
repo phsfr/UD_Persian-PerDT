@@ -19,8 +19,8 @@ for model_name in model_names:
         os.makedirs(output_folder)
 
     for file_type in ["train.conllu", "dev.conllu", "test.conllu"]:
-        seraji_input = input_path + seraji_prefix + file_type[:-7] + ".raw"
-        dadegan_input = input_path + dadegan_prefix + file_type[:-7] + ".raw"
+        seraji_input = input_path + seraji_prefix + file_type[:-7] + ".txt"
+        dadegan_input = input_path + dadegan_prefix + file_type[:-7] + ".txt"
         seraji_output = os.path.join(output_folder, "seraji." + file_type)
         dadegan_output = os.path.join(output_folder, "dadegan." + file_type)
         model = os.path.join(model_path, model_name + ".model")
