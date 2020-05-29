@@ -118,6 +118,10 @@ def find_pro_head(pro_par, tok_dic, lin):
                 print('ERROR: ??')
     return hPar
 
+def propn_manual_override(old_pos, word_form, isPROPN, tok_id, sent_id):
+    if sent_id == "56171" and tok_id == "1":
+        return "PROPN"
+    return None
 
 def convert_pos(old_pos, word_form, isPROPN, tok_id, sent_id):
     pos_map = {'V': 'VERB', 'N': 'NOUN', 'SUBR': 'SCONJ', 'PR': 'PRON', 'ADJ': 'ADJ', 'ADV': 'ADV', 'PUNC': 'PUNCT',
@@ -127,8 +131,10 @@ def convert_pos(old_pos, word_form, isPROPN, tok_id, sent_id):
                     'چهار']  # IMPORTANT!! => multi-part numbers (sent=43340 & 43230 & 24317) such as بیست و نهم word بیست should recieve adj pos like نهم so we ignored written form of this word
     # ['ششصد','یک‌صد','هفت','شانزده','پانزده','دویست','هشتاد','نهصد','یازده','سی','پنجاه','هزار','ده','صفر','بیست','چهارده','یکصد','سیصد','صد','هفتاد','پنج','شش','چهارصد','پانصد','شصت','دوازده','هجده','صدها','نه','نوزده','چهل','هیجده','یک','سیزده','هفده','نود','هشت']
     adj_prenum_sents = ['23671', '24163', '24217', '26683', '37528', '44859', '46632', '49435']
-    if isPROPN and (old_pos == 'N' or old_pos == 'ADJ'):  # (old_pos!='PR' and old_pos!='V' and old_pos!='AUX'):
-        # new_p=old_pos.strip().split('|')
+    manual_override = propn_manual_override(old_pos, word_form, isPROPN, tok_id, sent_id)
+    if manual_override is not None:
+        new_pos = manual_override
+    elif isPROPN and (old_pos == 'N' or old_pos == 'ADJ'):
         new_pos = 'PROPN'
     else:
         new_pos = pos_map[old_pos]
