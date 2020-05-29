@@ -24,9 +24,9 @@ os.system("python3 -u tree_checker.py")
 print("remove_subtypes.py")
 os.system("python3 -u remove_subtypes.py")
 
-os.system("python3 remove_feat_column.py UD_Dadegan/ ../data/dadegan/")
-os.system("python3 remove_feat_column.py UD_Dadegan-nt/ ../data/dadegan-nt/")
-os.system("python3 remove_feat_column.py Dadegan_univ_tok/ ../data/dadegan_orig/ xpos")
+os.system("python3 remove_feat_column.py UD_Dadegan/ parser_data//dadegan/")
+os.system("python3 remove_feat_column.py UD_Dadegan-nt/ parser_data//dadegan-nt/")
+os.system("python3 remove_feat_column.py Dadegan_univ_tok/ parser_data//dadegan_orig/ xpos")
 
 os.system("cat parser_data/dadegan/fa_dadegan-ud-train.conllu parser_data/seraji/fa_seraji-ud-train.conllu > parser_data/d+s/train.conllu")
 os.system("cat parser_data/dadegan/fa_dadegan-ud-dev.conllu parser_data/seraji/fa_seraji-ud-dev.conllu > parser_data/d+s/dev.conllu")
@@ -35,8 +35,8 @@ os.system("cat parser_data/dadegan-nt/fa_dadegan-ud-test.conllu parser_data/sera
 os.system("cat parser_data/dadegan-nt/fa_dadegan-ud-train.conllu parser_data/seraji-nt/fa_seraji-ud-train.conllu > parser_data/d+s-nt/train.conllu")
 os.system("cat parser_data/dadegan-nt/fa_dadegan-ud-dev.conllu parser_data/seraji-nt/fa_seraji-ud-dev.conllu > parser_data/d+s-nt/dev.conllu")
 
-os.system("python3 remove_feat_column.py UD_Dadegan/ ../data/dadegan/ xpos")
-os.system("python3 remove_feat_column.py UD_Dadegan-nt/ ../data/dadegan-nt/ xpos")
+os.system("python3 remove_feat_column.py UD_Dadegan/ parser_data//dadegan/ xpos")
+os.system("python3 remove_feat_column.py UD_Dadegan-nt/ parser_data//dadegan-nt/ xpos")
 os.system("python3 conllu2raw.py UD_Dadegan parser_data/dadegan_raw/")
 
 print("FINISHED!")
