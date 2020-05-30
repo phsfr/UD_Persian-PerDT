@@ -101,6 +101,9 @@ class DependencyTree:
     def __hash__(self):
         return hash(self.conllu_str())
 
+    def __len__(self):
+        return len(self.words)
+
     def get_span(self, node_id) -> Set[int]:
         """
         Get all children and subchildren
@@ -656,17 +659,6 @@ class DependencyTree:
         self.labels[node_idx] = new_role
         return old_head, old_role
 
-    def map_obj2_role(self, idx):
-        iobj_l = [56498, 57047, 38194, 43357, 26296, 26302, 57151]
-        comp_l = [26621, 30910, 31081, 31682, 47333, 38599, 38600, 38601, 38604, 39924, 41245, 41857, 46975, 51705,
-                  53316, 53769, 54158, 54346, 54349, 54350, 48985, 36024, 26621, 30910, 31081, 31682]
-        obj2_new_role = ''
-        if int(self.sen_id) in iobj_l:
-            obj2_new_role = 'iobj'
-        elif int(self.sen_id) in comp_l:
-            obj2_new_role = 'compound:lvc'
-        return obj2_new_role
-
     def find_compound_num_groups(self):
         num_group_idxs = []
         all_num_groups = []
@@ -1090,11 +1082,7 @@ class DependencyTree:
                 self.labels[idx] = 'obj'
                 rol_changed = True
             if old_role == 'OBJ2':
-                obj2_new_role = self.map_obj2_role(idx)
-                # if obj2_new_role=='':
-                #    print('obj2 not mapped!!!!!!!!!! in sent {}'.format(self.sent_descript))
-                # else:
-                self.node_assign_new_role(idx, self.reverse_index[old_head], obj2_new_role)
+                self.node_assign_new_role(idx, self.reverse_index[old_head], "iobj")
                 rol_changed = True
             if old_role in {"MOZ", "NADV"}:
                 if old_pos == 'ADV':
@@ -1139,10 +1127,6 @@ class DependencyTree:
                     self.labels[idx] = 'advmod'
                     rol_changed = True
                 else:
-                    if old_pos not in poss:
-                        #    print(old_pos,self.sent_descript)
-                        poss.append(old_pos)
-                    # print(poss)
                     self.labels[idx] = 'obl'
                     rol_changed = True
             if old_role == 'NPP':

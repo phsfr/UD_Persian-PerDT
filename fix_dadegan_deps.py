@@ -4,6 +4,7 @@
 * Change VConj order.
 * Convert active to passive for Shodan verbs.
 * Modifiers for PRENUM
+* Fixes some of obj2
 """
 
 from dep_tree import DependencyTree, remove_semispace
@@ -85,12 +86,16 @@ if __name__ == '__main__':
                     'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//dev.conll',
                     'Persian_Dependency_Treebank_(PerDT)_V1.1.1/Data//test.conll']
 
+    comp_l = {26621, 30910, 31081, 31682, 47333, 38599, 38600, 38601, 38604, 39924, 41245, 41857, 46975, 51705,
+              53316, 53769, 54158, 54346, 54349, 54350, 48985, 36024, 26621, 30910, 31081, 31682}
     for f_idx, inp_f in enumerate(input_files):
         parcl_trees = []
         vconj_trees = []
         tree_list = DependencyTree.load_trees_from_conll_file(inp_f)
         for i, tree in enumerate(tree_list):
             for w, (lemma, word, ftag) in enumerate(zip(tree.lemmas, tree.words, tree.ftags)):
+                if tree.labels[w] == "OBJ2" and tree.sen_id in comp_l:
+                    tree.labels[w] = "NVE"
                 if tree.labels[w] == "ROOT":
                     tree.labels[w] = "root"
                 if lemma == "گشت#گرد" and ftag == "PASS":
