@@ -36,7 +36,7 @@ for model_name in ["dadegan", "seraji"]:
 
         output_folder = os.path.join(output_path, parse_model_name)
         parse_model = os.path.join(model_path, parse_model_name + ".model")
-        parse_output = os.path.join(output_folder, parse_model_name + ".pos.parse." + file_type)
+        parse_output = os.path.join(output_folder, model_name + ".pos.parse." + file_type)
         parse_command = " ".join(
             [udpipe, p_commands, parse_model, p_format_commands, pos_output, ">", parse_output])
         print(parse_command)
@@ -44,7 +44,7 @@ for model_name in ["dadegan", "seraji"]:
 
         output_folder = os.path.join(output_path, ds_parse_model_name)
         ds_parse_model = os.path.join(model_path, ds_parse_model_name + ".model")
-        ds_parse_output = os.path.join(output_folder, parse_model_name + ".pos.parse." + file_type)
+        ds_parse_output = os.path.join(output_folder, model_name + ".pos.parse." + file_type)
         ds_parse_command = " ".join(
             [udpipe, p_commands, ds_parse_model, p_format_commands, pos_output, ">", ds_parse_output])
         print(ds_parse_command)
