@@ -21,9 +21,19 @@ for model_name in model_names:
         print("\n", model_name, "Seraji", file_type)
         os.system("python3 eval/conll18_ud_eval.py " + seraji_input + " " + seraji_output + " -v")
 
+        if model_name in {"dadegan", "d+s"}:
+            seraji_output = os.path.join(output_folder, "seraji.pos.parse." + file_type)
+            print("\n", model_name, "Seraji+POS", file_type)
+            os.system("python3 eval/conll18_ud_eval.py " + seraji_input + " " + seraji_output + " -v")
+
         dadegan_input = input_path + "/dadegan" + nt_str + dadegan_prefix + file_type
         dadegan_output = os.path.join(output_folder, "dadegan." + file_type)
         print("\n", model_name, "Dadegan", file_type)
         os.system("python3 eval/conll18_ud_eval.py " + dadegan_input + " " + dadegan_output + " -v")
+
+        if model_name in {"seraji", "d+s"}:
+            dadegan_output = os.path.join(output_folder, "dadegan.pos.parse." + file_type)
+            print("\n", model_name, "Dadegan+POS", file_type)
+            os.system("python3 eval/conll18_ud_eval.py " + dadegan_input + " " + dadegan_output + " -v")
 
 print("FINISHED")
