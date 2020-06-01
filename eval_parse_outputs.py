@@ -7,7 +7,7 @@ output_path = os.path.abspath(sys.argv[2])
 seraji_prefix = "/fa_seraji-ud-"
 dadegan_prefix = "/fa_dadegan-ud-"
 
-model_names = ["dadegan", "dadegan-nt", "dadegan_orig", "seraji", "seraji-nt", "d+s", "d+s-nt"]
+model_names = ["dadegan", "seraji", "d+s"]
 
 for model_name in model_names:
     output_folder = os.path.join(output_path, model_name)
