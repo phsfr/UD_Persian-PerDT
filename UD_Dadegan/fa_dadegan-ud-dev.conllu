@@ -11621,18 +11621,20 @@
 5	قبل	قبل	ADP	PREP	attachment=ISO|senID=33315|dadeg_pos=PREP|old_r=ADV|old_h=1	7	case	_	_
 6	از	از	ADP	PREP	attachment=ISO|senID=33315|dadeg_pos=PREP|old_r=POSDEP|old_h=5	5	fixed	_	_
 7	این	این	PRON	PR_DEMON	attachment=ISO|number=SING|senID=33315|dadeg_pos=PR|old_r=POSDEP|old_h=6	1	obl	_	_
-8	که	که	SCONJ	SUBR	attachment=ISO|senID=33315|dadeg_pos=SUBR|old_r=NCL|old_h=7	18	mark	_	_
-9	خویشتنت	خویشتن	PRON	PR_CREFX	attachment=ISO|senID=33315|dadeg_pos=PR|old_r=PREDEP|old_h=10	18	obj	_	_
-10	را	را	ADP	POSTP	attachment=ISO|senID=33315|dadeg_pos=POSTP|old_r=OBJ|old_h=18	9	case	_	_
-11	پیش	پیش	ADJ	ADJ_AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ|old_r=ADV|old_h=18	18	advmod	_	_
-12	از	از	ADP	PREP	attachment=ISO|senID=33315|dadeg_pos=PREP|old_r=AJPP|old_h=11	13	case	_	_
-13	این	این	PRON	PR_DEMON	attachment=ISO|number=SING|senID=33315|dadeg_pos=PR|old_r=POSDEP|old_h=12	11	obl:arg	_	_
-14	که	که	SCONJ	SUBR	attachment=ISO|senID=33315|dadeg_pos=SUBR|old_r=NCL|old_h=13	16	mark	_	_
-15	گم	گم	ADJ	ADJ_AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ|old_r=NVE|old_h=16	16	compound:lvc	_	_
-16	شد	شد#شو	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=33315|dadeg_pos=V|old_r=PRD|old_h=14	13	acl	_	_
-17	گم	گم	ADJ	ADJ_AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ|old_r=NVE|old_h=18	18	compound:lvc	_	_
-18	کنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=33315|dadeg_pos=V|old_r=PRD|old_h=8	7	acl	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	attachment=ISO|senID=33315|dadeg_pos=PUNC|old_r=PUNC|old_h=1	1	punct	_	_
+8	که	که	SCONJ	SUBR	attachment=ISO|senID=33315|dadeg_pos=SUBR|old_r=NCL|old_h=7	19	mark	_	_
+9-10	خویشتنت	_	_	_	_	_	_	_	_
+9	خویشتن	خویشتن	PRON	PR_CREFX	attachment=ISO|senID=33315|dadeg_pos=PR|old_r=PREDEP|old_h=11	19	obj	_	_
+10	ت	تو	PRON	PR_JOPER	number=SING|person=2|pronType=Prs|senID=33315|dadeg_pos=PR|old_r=MOZ|old_h=9	9	nmod	_	_
+11	را	را	ADP	POSTP	attachment=ISO|senID=33315|dadeg_pos=POSTP|old_r=OBJ|old_h=19	9	case	_	_
+12	پیش	پیش	ADJ	ADJ_AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ|old_r=ADV|old_h=19	19	advmod	_	_
+13	از	از	ADP	PREP	attachment=ISO|senID=33315|dadeg_pos=PREP|old_r=AJPP|old_h=12	14	case	_	_
+14	این	این	PRON	PR_DEMON	attachment=ISO|number=SING|senID=33315|dadeg_pos=PR|old_r=POSDEP|old_h=13	12	obl:arg	_	_
+15	که	که	SCONJ	SUBR	attachment=ISO|senID=33315|dadeg_pos=SUBR|old_r=NCL|old_h=14	17	mark	_	_
+16	گم	گم	ADJ	ADJ_AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ|old_r=NVE|old_h=17	17	compound:lvc	_	_
+17	شد	شد#شو	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=33315|dadeg_pos=V|old_r=PRD|old_h=15	14	acl	_	_
+18	گم	گم	ADJ	ADJ_AJP	attachment=ISO|senID=33315|dadeg_pos=ADJ|old_r=NVE|old_h=19	19	compound:lvc	_	_
+19	کنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=33315|dadeg_pos=V|old_r=PRD|old_h=8	7	acl	_	SpaceAfter=No
+20	.	.	PUNCT	PUNC	attachment=ISO|senID=33315|dadeg_pos=PUNC|old_r=PUNC|old_h=1	1	punct	_	_
 
 # sent_id = dev-s558
 # text = صورت‌های ملکوتی بهشت و جهنم توسط فرشتگان به او نمایانده می‌شود.

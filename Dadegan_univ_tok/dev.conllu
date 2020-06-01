@@ -11622,17 +11622,19 @@
 6	از	از	PREP	PREP	attachment=ISO|senID=33315	5	POSDEP	_	_
 7	این	این	PR	DEMON	attachment=ISO|number=SING|senID=33315	6	POSDEP	_	_
 8	که	که	SUBR	SUBR	attachment=ISO|senID=33315	7	NCL	_	_
-9	خویشتنت	خویشتن	PR	CREFX	attachment=ISO|senID=33315	10	PREDEP	_	_
-10	را	را	POSTP	POSTP	attachment=ISO|senID=33315	18	OBJ	_	_
-11	پیش	پیش	ADJ	AJP	attachment=ISO|senID=33315	18	ADV	_	_
-12	از	از	PREP	PREP	attachment=ISO|senID=33315	11	AJPP	_	_
-13	این	این	PR	DEMON	attachment=ISO|number=SING|senID=33315	12	POSDEP	_	_
-14	که	که	SUBR	SUBR	attachment=ISO|senID=33315	13	NCL	_	_
-15	گم	گم	ADJ	AJP	attachment=ISO|senID=33315	16	NVE	_	_
-16	شد	شد#شو	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=33315	14	PRD	_	_
-17	گم	گم	ADJ	AJP	attachment=ISO|senID=33315	18	NVE	_	_
-18	کنی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=33315	8	PRD	_	SpaceAfter=No
-19	.	.	PUNC	PUNC	attachment=ISO|senID=33315	1	PUNC	_	_
+9-10	خویشتنت	_	_	_	_	_	_	_	_
+9	خویشتن	خویشتن	PR	CREFX	attachment=ISO|senID=33315	11	PREDEP	_	_
+10	ت	تو	PR	JOPER	number=SING|person=2|pronType=Prs|senID=33315	9	MOZ	_	_
+11	را	را	POSTP	POSTP	attachment=ISO|senID=33315	19	OBJ	_	_
+12	پیش	پیش	ADJ	AJP	attachment=ISO|senID=33315	19	ADV	_	_
+13	از	از	PREP	PREP	attachment=ISO|senID=33315	12	AJPP	_	_
+14	این	این	PR	DEMON	attachment=ISO|number=SING|senID=33315	13	POSDEP	_	_
+15	که	که	SUBR	SUBR	attachment=ISO|senID=33315	14	NCL	_	_
+16	گم	گم	ADJ	AJP	attachment=ISO|senID=33315	17	NVE	_	_
+17	شد	شد#شو	V	ACT	person=3|attachment=ISO|number=SING|tma=GS|senID=33315	15	PRD	_	_
+18	گم	گم	ADJ	AJP	attachment=ISO|senID=33315	19	NVE	_	_
+19	کنی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=33315	8	PRD	_	SpaceAfter=No
+20	.	.	PUNC	PUNC	attachment=ISO|senID=33315	1	PUNC	_	_
 
 # sent_id = dev-s558
 # text = صورت‌های ملکوتی بهشت و جهنم توسط فرشتگان به او نمایانده می‌شود.
