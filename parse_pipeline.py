@@ -44,7 +44,7 @@ for model_name in ["dadegan", "seraji"]:
 
         output_folder = os.path.join(output_path, ds_parse_model_name)
         ds_parse_model = os.path.join(model_path, ds_parse_model_name + ".model")
-        ds_parse_output = os.path.join(output_folder, ds_parse_model_name + ".pos.parse." + file_type)
+        ds_parse_output = os.path.join(output_folder, parse_model_name + ".pos.parse." + file_type)
         ds_parse_command = " ".join(
             [udpipe, p_commands, ds_parse_model, p_format_commands, pos_output, ">", ds_parse_output])
         print(ds_parse_command)
