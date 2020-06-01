@@ -18,7 +18,7 @@ def is_potentioal_pronounContained(word, lemma, line, file_type, noun_num='SING'
             if orig_noun.endswith('های'):
                 sing_noun = remove_semispace(orig_noun[:-3])
                 if sing_noun == lemma:
-                    return True, ye + pron, orig_noun[:-1]
+                    return True, pron, orig_noun[:-1] + ye
             if orig_noun.endswith('ان'):  # another form of plural noun -> ان جمع
                 sing_noun = remove_semispace(orig_noun[:-2])
                 if sing_noun == lemma:
@@ -63,7 +63,7 @@ def is_potentioal_pronounContained(word, lemma, line, file_type, noun_num='SING'
                 if orig_noun.endswith('های'):
                     sing_noun = remove_semispace(orig_noun[:-3])
                     if sing_noun == lemma:
-                        return True, ye + pron, orig_noun[:-1]
+                        return True, pron, orig_noun[:-1] + ye
                 elif pron == 'ات' and noun_num == 'PLUR' and orig_noun_no_semi_space == lemma:  # like اشتباهات with lemma=اشتباه , in this word ات is mokasar sign not pronoun
                     return False, '', ''
                 if orig_noun_no_semi_space == lemma:
