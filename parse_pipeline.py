@@ -18,7 +18,7 @@ for model_name in model_names:
     if not os.path.isdir(output_folder):
         os.makedirs(output_folder)
 
-    for file_type in ["train.conllu", "dev.conllu", "test.conllu"]:
+    for file_type in ["dev.conllu", "test.conllu"]:
         seraji_input = input_path + seraji_prefix + file_type[:-7] + ".txt"
         dadegan_input = input_path + dadegan_prefix + file_type[:-7] + ".txt"
         seraji_output = os.path.join(output_folder, "seraji." + file_type)
