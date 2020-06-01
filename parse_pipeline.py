@@ -32,7 +32,7 @@ for model_name in ["dadegan", "seraji"]:
         pos_output = os.path.join(output_folder, model_name + ".pos." + file_type)
         tag_command = " ".join([udpipe, tag_commands, model, tag_format_commands, input, ">", pos_output])
         print(tag_command)
-        os.system(tag_command + " &")
+        os.system(tag_command)
 
         output_folder = os.path.join(output_path, parse_model_name)
         parse_model = os.path.join(model_path, parse_model_name + ".model")
