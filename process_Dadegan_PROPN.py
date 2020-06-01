@@ -489,7 +489,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
 
             # seperating concatinated pronouns to nouns
             line_added = False
-            if (pos == 'N' or pos == 'PSUS' or pos == "PR") and (word_form != word_lemma or pos == "PR"):
+            if (pos == 'N' or pos == 'PSUS' or pos == "PR" or pos=="PREP") and (word_form != word_lemma or pos == "PR"):
                 result, pronoun, orig_noun = is_potentioal_pronounContained(word_form, word_lemma, line, file_type,
                                                                             number)
                 if result == True:
