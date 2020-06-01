@@ -1195,13 +1195,15 @@
 
 # sent_id = test-s58
 # text = تو با وجود خودت پا می‌گیری.
-1	تو	تو	PRON	PR_SEPER	person=2|attachment=ISO|number=SING|senID=40438|dadeg_pos=PR|old_r=SBJ|old_h=6	6	nsubj	_	_
-2	با	با	ADP	PREP	attachment=ISO|senID=40438|dadeg_pos=PREP|old_r=ADV|old_h=6	3	case	_	_
-3	وجود	وجود	NOUN	N_IANM	attachment=ISO|number=SING|senID=40438|dadeg_pos=N|old_r=POSDEP|old_h=2	6	obl	_	_
-4	خودت	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=40438|dadeg_pos=PR|old_r=MOZ|old_h=3	3	nmod	_	_
-5	پا	پا	NOUN	N_IANM	attachment=ISO|number=SING|senID=40438|dadeg_pos=N|old_r=NVE|old_h=6	6	compound:lvc	_	_
-6	می‌گیری	گرفت#گیر	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=40438|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	PUNC	attachment=ISO|senID=40438|dadeg_pos=PUNC|old_r=PUNC|old_h=6	6	punct	_	_
+1	تو	تو	PRON	PR_SEPER	person=2|attachment=ISO|number=SING|senID=40438|dadeg_pos=PR|old_r=SBJ|old_h=7	7	nsubj	_	_
+2	با	با	ADP	PREP	attachment=ISO|senID=40438|dadeg_pos=PREP|old_r=ADV|old_h=7	3	case	_	_
+3	وجود	وجود	NOUN	N_IANM	attachment=ISO|number=SING|senID=40438|dadeg_pos=N|old_r=POSDEP|old_h=2	7	obl	_	_
+4-5	خودت	_	_	_	_	_	_	_	_
+4	خود	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=40438|dadeg_pos=PR|old_r=MOZ|old_h=3	3	nmod	_	_
+5	ت	تو	PRON	PR_JOPER	number=SING|person=2|pronType=Prs|senID=40438|dadeg_pos=PR|old_r=MOZ|old_h=4	4	nmod	_	_
+6	پا	پا	NOUN	N_IANM	attachment=ISO|number=SING|senID=40438|dadeg_pos=N|old_r=NVE|old_h=7	7	compound:lvc	_	_
+7	می‌گیری	گرفت#گیر	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=40438|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	PUNC	attachment=ISO|senID=40438|dadeg_pos=PUNC|old_r=PUNC|old_h=7	7	punct	_	_
 
 # sent_id = test-s59
 # text = اگر همگان مانند میثم، سلمان، ابوذر، حبیب و رشید هجری و... به ساحت قدسی امامان آگاهی داشتند، کسی به آنها بی‌حرمتی نمی‌کرد.
@@ -1568,12 +1570,14 @@
 
 # sent_id = test-s80
 # text = مدام دور خودم پیچ می‌زنم.
-1	مدام	مدام	ADJ	ADJ_AJP	attachment=ISO|senID=40658|dadeg_pos=ADJ|old_r=ADV|old_h=5	5	advmod	_	_
-2	دور	دور	ADP	PREP	attachment=ISO|senID=40658|dadeg_pos=PREP|old_r=ADV|old_h=5	3	case	_	_
-3	خودم	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=40658|dadeg_pos=PR|old_r=POSDEP|old_h=2	5	obl	_	_
-4	پیچ	پیچ	NOUN	N_IANM	attachment=ISO|number=SING|senID=40658|dadeg_pos=N|old_r=NVE|old_h=5	5	compound:lvc	_	_
-5	می‌زنم	زد#زن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40658|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-6	.	.	PUNCT	PUNC	attachment=ISO|senID=40658|dadeg_pos=PUNC|old_r=PUNC|old_h=5	5	punct	_	_
+1	مدام	مدام	ADJ	ADJ_AJP	attachment=ISO|senID=40658|dadeg_pos=ADJ|old_r=ADV|old_h=6	6	advmod	_	_
+2	دور	دور	ADP	PREP	attachment=ISO|senID=40658|dadeg_pos=PREP|old_r=ADV|old_h=6	3	case	_	_
+3-4	خودم	_	_	_	_	_	_	_	_
+3	خود	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=40658|dadeg_pos=PR|old_r=POSDEP|old_h=2	6	obl	_	_
+4	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=40658|dadeg_pos=PR|old_r=MOZ|old_h=3	3	nmod	_	_
+5	پیچ	پیچ	NOUN	N_IANM	attachment=ISO|number=SING|senID=40658|dadeg_pos=N|old_r=NVE|old_h=6	6	compound:lvc	_	_
+6	می‌زنم	زد#زن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40658|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	PUNC	attachment=ISO|senID=40658|dadeg_pos=PUNC|old_r=PUNC|old_h=6	6	punct	_	_
 
 # sent_id = test-s81
 # text = با آنها نیکی کن.
@@ -2164,19 +2168,21 @@
 
 # sent_id = test-s114
 # text = در این خطبه هم خودم و شما را از گناهان پرهیز می‌دارم.
-1	در	در	ADP	PREP	attachment=ISO|senID=40998|dadeg_pos=PREP|old_r=ADV|old_h=12	3	case	_	_
+1	در	در	ADP	PREP	attachment=ISO|senID=40998|dadeg_pos=PREP|old_r=ADV|old_h=13	3	case	_	_
 2	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=40998|dadeg_pos=PREM|old_r=NPREMOD|old_h=3	3	det	_	_
-3	خطبه	خطبه	NOUN	N_IANM	attachment=ISO|number=SING|senID=40998|dadeg_pos=N|old_r=POSDEP|old_h=1	12	obl	_	_
+3	خطبه	خطبه	NOUN	N_IANM	attachment=ISO|number=SING|senID=40998|dadeg_pos=N|old_r=POSDEP|old_h=1	13	obl	_	_
 4	هم	هم	ADV	ADV_SADV	attachment=ISO|senID=40998|dadeg_pos=ADV|old_r=POSDEP|old_h=3	3	dep	_	_
-5	خودم	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=40998|dadeg_pos=PR|old_r=PREDEP|old_h=8	12	obj	_	_
-6	و	و	CCONJ	CONJ	attachment=ISO|senID=40998|dadeg_pos=CONJ|old_r=NCONJ|old_h=5	7	cc	_	_
-7	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=40998|dadeg_pos=PR|old_r=POSDEP|old_h=6	5	conj	_	_
-8	را	را	ADP	POSTP	attachment=ISO|senID=40998|dadeg_pos=POSTP|old_r=OBJ|old_h=12	5	case	_	_
-9	از	از	ADP	PREP	attachment=ISO|senID=40998|dadeg_pos=PREP|old_r=NPP|old_h=11	10	case	_	_
-10	گناهان	گناه	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=40998|dadeg_pos=N|old_r=POSDEP|old_h=9	12	obl:arg	_	_
-11	پرهیز	پرهیز	NOUN	N_IANM	attachment=ISO|number=SING|senID=40998|dadeg_pos=N|old_r=NVE|old_h=12	12	compound:lvc	_	_
-12	می‌دارم	داشت#دار	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40998|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-13	.	.	PUNCT	PUNC	attachment=ISO|senID=40998|dadeg_pos=PUNC|old_r=PUNC|old_h=12	12	punct	_	_
+5-6	خودم	_	_	_	_	_	_	_	_
+5	خود	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=40998|dadeg_pos=PR|old_r=PREDEP|old_h=9	13	obj	_	_
+6	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=40998|dadeg_pos=PR|old_r=MOZ|old_h=5	5	nmod	_	_
+7	و	و	CCONJ	CONJ	attachment=ISO|senID=40998|dadeg_pos=CONJ|old_r=NCONJ|old_h=5	8	cc	_	_
+8	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=40998|dadeg_pos=PR|old_r=POSDEP|old_h=7	5	conj	_	_
+9	را	را	ADP	POSTP	attachment=ISO|senID=40998|dadeg_pos=POSTP|old_r=OBJ|old_h=13	5	case	_	_
+10	از	از	ADP	PREP	attachment=ISO|senID=40998|dadeg_pos=PREP|old_r=NPP|old_h=12	11	case	_	_
+11	گناهان	گناه	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=40998|dadeg_pos=N|old_r=POSDEP|old_h=10	13	obl:arg	_	_
+12	پرهیز	پرهیز	NOUN	N_IANM	attachment=ISO|number=SING|senID=40998|dadeg_pos=N|old_r=NVE|old_h=13	13	compound:lvc	_	_
+13	می‌دارم	داشت#دار	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40998|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	PUNC	attachment=ISO|senID=40998|dadeg_pos=PUNC|old_r=PUNC|old_h=13	13	punct	_	_
 
 # sent_id = test-s115
 # text = برخی سرویس‌های جستجوی یاهو به‌سازی شد.
@@ -2223,15 +2229,17 @@
 
 # sent_id = test-s119
 # text = در شهر هم خودمان پخت و پز می‌کردیم.
-1	در	در	ADP	PREP	attachment=ISO|senID=41048|dadeg_pos=PREP|old_r=ADV|old_h=8	2	case	_	_
-2	شهر	شهر	NOUN	N_IANM	attachment=ISO|number=SING|senID=41048|dadeg_pos=N|old_r=POSDEP|old_h=1	8	obl	_	_
+1	در	در	ADP	PREP	attachment=ISO|senID=41048|dadeg_pos=PREP|old_r=ADV|old_h=9	2	case	_	_
+2	شهر	شهر	NOUN	N_IANM	attachment=ISO|number=SING|senID=41048|dadeg_pos=N|old_r=POSDEP|old_h=1	9	obl	_	_
 3	هم	هم	ADV	ADV_SADV	attachment=ISO|senID=41048|dadeg_pos=ADV|old_r=POSDEP|old_h=2	2	dep	_	_
-4	خودمان	خودمان	PRON	PR_UCREFX	person=1|attachment=ISO|number=PLUR|senID=41048|dadeg_pos=PR|old_r=SBJ|old_h=8	8	nsubj	_	_
-5	پخت	پخت	NOUN	N_IANM	attachment=ISO|number=SING|senID=41048|dadeg_pos=N|old_r=NVE|old_h=8	8	compound:lvc	_	_
-6	و	و	CCONJ	CONJ	attachment=ISO|senID=41048|dadeg_pos=CONJ|old_r=NCONJ|old_h=5	7	cc	_	_
-7	پز	پز	NOUN	N_IANM	attachment=ISO|number=SING|senID=41048|dadeg_pos=N|old_r=POSDEP|old_h=6	5	conj	_	_
-8	می‌کردیم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=GES|senID=41048|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-9	.	.	PUNCT	PUNC	attachment=ISO|senID=41048|dadeg_pos=PUNC|old_r=PUNC|old_h=8	8	punct	_	_
+4-5	خودمان	_	_	_	_	_	_	_	_
+4	خود	خودمان	PRON	PR_UCREFX	person=1|attachment=ISO|number=PLUR|senID=41048|dadeg_pos=PR|old_r=SBJ|old_h=9	9	nsubj	_	_
+5	مان	ما	PRON	PR_JOPER	number=PLUR|person=1|pronType=Prs|senID=41048|dadeg_pos=PR|old_r=MOZ|old_h=4	4	nmod	_	_
+6	پخت	پخت	NOUN	N_IANM	attachment=ISO|number=SING|senID=41048|dadeg_pos=N|old_r=NVE|old_h=9	9	compound:lvc	_	_
+7	و	و	CCONJ	CONJ	attachment=ISO|senID=41048|dadeg_pos=CONJ|old_r=NCONJ|old_h=6	8	cc	_	_
+8	پز	پز	NOUN	N_IANM	attachment=ISO|number=SING|senID=41048|dadeg_pos=N|old_r=POSDEP|old_h=7	6	conj	_	_
+9	می‌کردیم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=GES|senID=41048|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	PUNC	attachment=ISO|senID=41048|dadeg_pos=PUNC|old_r=PUNC|old_h=9	9	punct	_	_
 
 # sent_id = test-s120
 # text = اگر شوق پرواز در سینه‌اش پرپر نمی‌زد، هرگز وصیت نمی‌کرد.
@@ -4282,36 +4290,38 @@
 
 # sent_id = test-s230
 # text = اگر در خواب ببینید که خودتان سوت می‌زنید و این کار را با دهان و لب خود انجام می‌دهید دروغ خواهید گفت یا سخنی زشت بر زبان خواهید آورد.
-1	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=42178|dadeg_pos=SUBR|old_r=AJUCL|old_h=22	4	mark	_	_
+1	اگر	اگر	SCONJ	SUBR	attachment=ISO|senID=42178|dadeg_pos=SUBR|old_r=AJUCL|old_h=23	4	mark	_	_
 2	در	در	ADP	PREP	attachment=ISO|senID=42178|dadeg_pos=PREP|old_r=ADV|old_h=4	3	case	_	_
 3	خواب	خواب	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=POSDEP|old_h=2	4	obl	_	_
-4	ببینید	دید#بین	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=42178|dadeg_pos=V|old_r=PRD|old_h=1	22	advcl	_	_
+4	ببینید	دید#بین	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=42178|dadeg_pos=V|old_r=PRD|old_h=1	23	advcl	_	_
 5	که	که	SCONJ	SUBR	attachment=ISO|senID=42178|dadeg_pos=SUBR|old_r=VCL|old_h=4	4	ccomp	_	_
-6	خودتان	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=42178|dadeg_pos=PR|old_r=SBJ|old_h=8	8	nsubj	_	_
-7	سوت	سوت	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=NVE|old_h=8	8	compound:lvc	_	_
-8	می‌زنید	زد#زن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178|dadeg_pos=V|old_r=VCL|old_h=5	5	ccomp	_	_
-9	و	و	CCONJ	CONJ	attachment=ISO|senID=42178|dadeg_pos=CONJ|old_r=VCONJ|old_h=8	19	cc	_	_
-10	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=42178|dadeg_pos=PREM|old_r=NPREMOD|old_h=11	11	det	_	_
-11	کار	کار	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=PREDEP|old_h=12	19	obj	_	_
-12	را	را	ADP	POSTP	attachment=ISO|senID=42178|dadeg_pos=POSTP|old_r=OBJ|old_h=19	11	case	_	_
-13	با	با	ADP	PREP	attachment=ISO|senID=42178|dadeg_pos=PREP|old_r=ADV|old_h=19	14	case	_	_
-14	دهان	دهان	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=POSDEP|old_h=13	19	obl	_	_
-15	و	و	CCONJ	CONJ	attachment=ISO|senID=42178|dadeg_pos=CONJ|old_r=NCONJ|old_h=14	16	cc	_	_
-16	لب	لب	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=POSDEP|old_h=15	14	conj	_	_
-17	خود	خود	PRON	PR_CREFX	attachment=ISO|senID=42178|dadeg_pos=PR|old_r=MOZ|old_h=14	14	nmod	_	_
-18	انجام	انجام	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=NVE|old_h=19	19	compound:lvc	_	_
-19	می‌دهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178|dadeg_pos=V|old_r=POSDEP|old_h=9	8	conj	_	_
-20	دروغ	دروغ	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=OBJ|old_h=22	22	obj	_	_
-21	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178|dadeg_pos=AUX|old_r=aux|old_h=22	22	aux	_	_
-22	گفت	گفت#گو	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=42178|old_r=root|old_h=0	0	root	_	_
-23	یا	یا	CCONJ	CONJ	attachment=ISO|senID=42178|dadeg_pos=CONJ|old_r=VCONJ|old_h=22	29	cc	_	_
-24	سخنی	سخن	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=OBJ|old_h=29	29	obj	_	_
-25	زشت	زشت	ADJ	ADJ_AJP	attachment=ISO|senID=42178|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=24	24	amod	_	_
-26	بر	بر	ADP	PREP	attachment=ISO|senID=42178|dadeg_pos=PREP|old_r=VPP|old_h=29	27	case	_	_
-27	زبان	زبان	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=POSDEP|old_h=26	29	obl:arg	_	_
-28	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178|dadeg_pos=AUX|old_r=aux|old_h=29	29	aux	_	_
-29	آورد	آورد#آور	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=42178|old_r=POSDEP|old_h=23	22	conj	_	SpaceAfter=No
-30	.	.	PUNCT	PUNC	attachment=ISO|senID=42178|dadeg_pos=PUNC|old_r=PUNC|old_h=29	29	punct	_	_
+6-7	خودتان	_	_	_	_	_	_	_	_
+6	خود	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=42178|dadeg_pos=PR|old_r=SBJ|old_h=9	9	nsubj	_	_
+7	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=42178|dadeg_pos=PR|old_r=MOZ|old_h=6	6	nmod	_	_
+8	سوت	سوت	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=NVE|old_h=9	9	compound:lvc	_	_
+9	می‌زنید	زد#زن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178|dadeg_pos=V|old_r=VCL|old_h=5	5	ccomp	_	_
+10	و	و	CCONJ	CONJ	attachment=ISO|senID=42178|dadeg_pos=CONJ|old_r=VCONJ|old_h=9	20	cc	_	_
+11	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=42178|dadeg_pos=PREM|old_r=NPREMOD|old_h=12	12	det	_	_
+12	کار	کار	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=PREDEP|old_h=13	20	obj	_	_
+13	را	را	ADP	POSTP	attachment=ISO|senID=42178|dadeg_pos=POSTP|old_r=OBJ|old_h=20	12	case	_	_
+14	با	با	ADP	PREP	attachment=ISO|senID=42178|dadeg_pos=PREP|old_r=ADV|old_h=20	15	case	_	_
+15	دهان	دهان	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=POSDEP|old_h=14	20	obl	_	_
+16	و	و	CCONJ	CONJ	attachment=ISO|senID=42178|dadeg_pos=CONJ|old_r=NCONJ|old_h=15	17	cc	_	_
+17	لب	لب	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=POSDEP|old_h=16	15	conj	_	_
+18	خود	خود	PRON	PR_CREFX	attachment=ISO|senID=42178|dadeg_pos=PR|old_r=MOZ|old_h=15	15	nmod	_	_
+19	انجام	انجام	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=NVE|old_h=20	20	compound:lvc	_	_
+20	می‌دهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178|dadeg_pos=V|old_r=POSDEP|old_h=10	9	conj	_	_
+21	دروغ	دروغ	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=OBJ|old_h=23	23	obj	_	_
+22	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178|dadeg_pos=AUX|old_r=aux|old_h=23	23	aux	_	_
+23	گفت	گفت#گو	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=42178|old_r=root|old_h=0	0	root	_	_
+24	یا	یا	CCONJ	CONJ	attachment=ISO|senID=42178|dadeg_pos=CONJ|old_r=VCONJ|old_h=23	30	cc	_	_
+25	سخنی	سخن	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=OBJ|old_h=30	30	obj	_	_
+26	زشت	زشت	ADJ	ADJ_AJP	attachment=ISO|senID=42178|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=25	25	amod	_	_
+27	بر	بر	ADP	PREP	attachment=ISO|senID=42178|dadeg_pos=PREP|old_r=VPP|old_h=30	28	case	_	_
+28	زبان	زبان	NOUN	N_IANM	attachment=ISO|number=SING|senID=42178|dadeg_pos=N|old_r=POSDEP|old_h=27	30	obl:arg	_	_
+29	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178|dadeg_pos=AUX|old_r=aux|old_h=30	30	aux	_	_
+30	آورد	آورد#آور	VERB	V_ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_pos=V|dadeg_fpos=ACT|senID=42178|old_r=POSDEP|old_h=24	23	conj	_	SpaceAfter=No
+31	.	.	PUNCT	PUNC	attachment=ISO|senID=42178|dadeg_pos=PUNC|old_r=PUNC|old_h=30	30	punct	_	_
 
 # sent_id = test-s231
 # text = با کلمات می‌توان جمله‌سازی کرد و در هر زبانی با ادای جملات صحبت می‌کنیم.
@@ -5072,16 +5082,18 @@
 
 # sent_id = test-s278
 # text = من حساب خود را با خودم تسویه کرده بودم.
-1	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=42662|dadeg_pos=PR|old_r=SBJ|old_h=8	8	nsubj	_	_
-2	حساب	حساب	NOUN	N_IANM	attachment=ISO|number=SING|senID=42662|dadeg_pos=N|old_r=PREDEP|old_h=4	8	obj	_	_
+1	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=42662|dadeg_pos=PR|old_r=SBJ|old_h=9	9	nsubj	_	_
+2	حساب	حساب	NOUN	N_IANM	attachment=ISO|number=SING|senID=42662|dadeg_pos=N|old_r=PREDEP|old_h=4	9	obj	_	_
 3	خود	خود	PRON	PR_CREFX	attachment=ISO|senID=42662|dadeg_pos=PR|old_r=MOZ|old_h=2	2	nmod	_	_
-4	را	را	ADP	POSTP	attachment=ISO|senID=42662|dadeg_pos=POSTP|old_r=OBJ|old_h=8	2	case	_	_
-5	با	با	ADP	PREP	attachment=ISO|senID=42662|dadeg_pos=PREP|old_r=NPP|old_h=7	6	case	_	_
-6	خودم	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=42662|dadeg_pos=PR|old_r=POSDEP|old_h=5	8	obl:arg	_	_
-7	تسویه	تسویه	NOUN	N_IANM	attachment=ISO|number=SING|senID=42662|dadeg_pos=N|old_r=NVE|old_h=8	8	compound:lvc	_	_
-8	کرده	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=42662|old_r=root|old_h=0	0	root	_	_
-9	بودم	بود#باش	AUX	AUX	number=SING|person=1|tense=Past|senID=42662|dadeg_pos=AUX|old_r=aux|old_h=8	8	aux	_	SpaceAfter=No
-10	.	.	PUNCT	PUNC	attachment=ISO|senID=42662|dadeg_pos=PUNC|old_r=PUNC|old_h=8	8	punct	_	_
+4	را	را	ADP	POSTP	attachment=ISO|senID=42662|dadeg_pos=POSTP|old_r=OBJ|old_h=9	2	case	_	_
+5	با	با	ADP	PREP	attachment=ISO|senID=42662|dadeg_pos=PREP|old_r=NPP|old_h=8	6	case	_	_
+6-7	خودم	_	_	_	_	_	_	_	_
+6	خود	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=42662|dadeg_pos=PR|old_r=POSDEP|old_h=5	9	obl:arg	_	_
+7	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=42662|dadeg_pos=PR|old_r=MOZ|old_h=6	6	nmod	_	_
+8	تسویه	تسویه	NOUN	N_IANM	attachment=ISO|number=SING|senID=42662|dadeg_pos=N|old_r=NVE|old_h=9	9	compound:lvc	_	_
+9	کرده	کرد#کن	VERB	V_ACT	number=SING|person=3|tense=Part|tma=GB|dadeg_pos=V|dadeg_fpos=ACT|senID=42662|old_r=root|old_h=0	0	root	_	_
+10	بودم	بود#باش	AUX	AUX	number=SING|person=1|tense=Past|senID=42662|dadeg_pos=AUX|old_r=aux|old_h=9	9	aux	_	SpaceAfter=No
+11	.	.	PUNCT	PUNC	attachment=ISO|senID=42662|dadeg_pos=PUNC|old_r=PUNC|old_h=9	9	punct	_	_
 
 # sent_id = test-s279
 # text = آیا حدیثی از انبیا است که برآورده شدن حاجت بعد از ختم قرآن را تضمین بکند؟
@@ -6511,24 +6523,26 @@
 
 # sent_id = test-s349
 # text = زنان چابهاری نقاب‌هایی که خودشان چون تابلویی رؤیایی از رنگ‌های زیبا سوزن‌دوزی کرده‌اند را به صورت می‌زنند.
-1	زنان	زن	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=46689|dadeg_pos=N|old_r=SBJ|old_h=17	17	nsubj	_	_
+1	زنان	زن	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=46689|dadeg_pos=N|old_r=SBJ|old_h=18	18	nsubj	_	_
 2	چابهاری	چابهاری	ADJ	ADJ_AJP	attachment=ISO|senID=46689|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=1	1	amod	_	_
-3	نقاب‌هایی	نقاب	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=46689|dadeg_pos=N|old_r=PREDEP|old_h=14	17	obj	_	_
-4	که	که	SCONJ	SUBR	attachment=ISO|senID=46689|dadeg_pos=SUBR|old_r=NCL|old_h=3	13	mark	_	_
-5	خودشان	خودشان	PRON	PR_UCREFX	person=3|attachment=ISO|number=PLUR|senID=46689|dadeg_pos=PR|old_r=SBJ|old_h=13	13	nsubj	_	_
-6	چون	چون	ADP	PREP	attachment=ISO|senID=46689|dadeg_pos=PREP|old_r=ADV|old_h=13	7	case	_	_
-7	تابلویی	تابلو	NOUN	N_IANM	attachment=ISO|number=SING|senID=46689|dadeg_pos=N|old_r=POSDEP|old_h=6	13	obl	_	_
-8	رؤیایی	رؤیایی	ADJ	ADJ_AJP	attachment=ISO|senID=46689|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=7	7	amod	_	_
-9	از	از	ADP	PREP	attachment=ISO|senID=46689|dadeg_pos=PREP|old_r=NPP|old_h=7	10	case	_	_
-10	رنگ‌های	رنگ	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=46689|dadeg_pos=N|old_r=POSDEP|old_h=9	7	nmod	_	_
-11	زیبا	زیبا	ADJ	ADJ_AJP	attachment=ISO|senID=46689|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=10	10	amod	_	_
-12	سوزن‌دوزی	سوزن‌دوزی	NOUN	N_IANM	attachment=ISO|number=SING|senID=46689|dadeg_pos=N|old_r=NVE|old_h=13	13	compound:lvc	_	_
-13	کرده‌اند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=46689|dadeg_pos=V|old_r=PRD|old_h=4	3	acl	_	_
-14	را	را	ADP	POSTP	attachment=ISO|senID=46689|dadeg_pos=POSTP|old_r=OBJ|old_h=17	3	case	_	_
-15	به	به	ADP	PREP	attachment=ISO|senID=46689|dadeg_pos=PREP|old_r=VPP|old_h=17	16	case	_	_
-16	صورت	صورت	NOUN	N_IANM	attachment=ISO|number=SING|senID=46689|dadeg_pos=N|old_r=POSDEP|old_h=15	17	obl:arg	_	_
-17	می‌زنند	زد#زن	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=46689|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	attachment=ISO|senID=46689|dadeg_pos=PUNC|old_r=PUNC|old_h=17	17	punct	_	_
+3	نقاب‌هایی	نقاب	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=46689|dadeg_pos=N|old_r=PREDEP|old_h=15	18	obj	_	_
+4	که	که	SCONJ	SUBR	attachment=ISO|senID=46689|dadeg_pos=SUBR|old_r=NCL|old_h=3	14	mark	_	_
+5-6	خودشان	_	_	_	_	_	_	_	_
+5	خود	خودشان	PRON	PR_UCREFX	person=3|attachment=ISO|number=PLUR|senID=46689|dadeg_pos=PR|old_r=SBJ|old_h=14	14	nsubj	_	_
+6	شان	آنها	PRON	PR_JOPER	number=PLUR|person=3|pronType=Prs|senID=46689|dadeg_pos=PR|old_r=MOZ|old_h=5	5	nmod	_	_
+7	چون	چون	ADP	PREP	attachment=ISO|senID=46689|dadeg_pos=PREP|old_r=ADV|old_h=14	8	case	_	_
+8	تابلویی	تابلو	NOUN	N_IANM	attachment=ISO|number=SING|senID=46689|dadeg_pos=N|old_r=POSDEP|old_h=7	14	obl	_	_
+9	رؤیایی	رؤیایی	ADJ	ADJ_AJP	attachment=ISO|senID=46689|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=8	8	amod	_	_
+10	از	از	ADP	PREP	attachment=ISO|senID=46689|dadeg_pos=PREP|old_r=NPP|old_h=8	11	case	_	_
+11	رنگ‌های	رنگ	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=46689|dadeg_pos=N|old_r=POSDEP|old_h=10	8	nmod	_	_
+12	زیبا	زیبا	ADJ	ADJ_AJP	attachment=ISO|senID=46689|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=11	11	amod	_	_
+13	سوزن‌دوزی	سوزن‌دوزی	NOUN	N_IANM	attachment=ISO|number=SING|senID=46689|dadeg_pos=N|old_r=NVE|old_h=14	14	compound:lvc	_	_
+14	کرده‌اند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=46689|dadeg_pos=V|old_r=PRD|old_h=4	3	acl	_	_
+15	را	را	ADP	POSTP	attachment=ISO|senID=46689|dadeg_pos=POSTP|old_r=OBJ|old_h=18	3	case	_	_
+16	به	به	ADP	PREP	attachment=ISO|senID=46689|dadeg_pos=PREP|old_r=VPP|old_h=18	17	case	_	_
+17	صورت	صورت	NOUN	N_IANM	attachment=ISO|number=SING|senID=46689|dadeg_pos=N|old_r=POSDEP|old_h=16	18	obl:arg	_	_
+18	می‌زنند	زد#زن	VERB	V_ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=46689|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+19	.	.	PUNCT	PUNC	attachment=ISO|senID=46689|dadeg_pos=PUNC|old_r=PUNC|old_h=18	18	punct	_	_
 
 # sent_id = test-s350
 # text = دشمن از اختلاف شیعه و سنی سوء استفاده می‌کند.
@@ -7892,17 +7906,19 @@
 
 # sent_id = test-s428
 # text = او هر روز با اسم پرسپولیس برای خودش بازارگرمی می‌کند.
-1	او	او	PRON	PR_SEPER	person=3|attachment=ISO|number=SING|senID=48994|dadeg_pos=PR|old_r=SBJ|old_h=10	10	nsubj	_	_
+1	او	او	PRON	PR_SEPER	person=3|attachment=ISO|number=SING|senID=48994|dadeg_pos=PR|old_r=SBJ|old_h=11	11	nsubj	_	_
 2	هر	هر	DET	PREM_AMBAJ	attachment=ISO|senID=48994|dadeg_pos=PREM|old_r=NPREMOD|old_h=3	3	det	_	_
-3	روز	روز	NOUN	N_IANM	attachment=ISO|number=SING|senID=48994|dadeg_pos=N|old_r=ADV|old_h=10	10	obl	_	_
-4	با	با	ADP	PREP	attachment=ISO|senID=48994|dadeg_pos=PREP|old_r=ADV|old_h=10	5	case	_	_
-5	اسم	اسم	NOUN	N_IANM	attachment=ISO|number=SING|senID=48994|dadeg_pos=N|old_r=POSDEP|old_h=4	10	obl	_	_
+3	روز	روز	NOUN	N_IANM	attachment=ISO|number=SING|senID=48994|dadeg_pos=N|old_r=ADV|old_h=11	11	obl	_	_
+4	با	با	ADP	PREP	attachment=ISO|senID=48994|dadeg_pos=PREP|old_r=ADV|old_h=11	5	case	_	_
+5	اسم	اسم	NOUN	N_IANM	attachment=ISO|number=SING|senID=48994|dadeg_pos=N|old_r=POSDEP|old_h=4	11	obl	_	_
 6	پرسپولیس	پرسپولیس	PROPN	N_IANM	attachment=ISO|number=SING|senID=48994|dadeg_pos=N|old_r=MOZ|old_h=5	5	nmod	_	_
-7	برای	برای	ADP	PREP	attachment=ISO|senID=48994|dadeg_pos=PREP|old_r=ADV|old_h=10	8	case	_	_
-8	خودش	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=48994|dadeg_pos=PR|old_r=POSDEP|old_h=7	10	obl	_	_
-9	بازارگرمی	بازارگرمی	NOUN	N_IANM	attachment=ISO|number=SING|senID=48994|dadeg_pos=N|old_r=NVE|old_h=10	10	compound:lvc	_	_
-10	می‌کند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=48994|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	attachment=ISO|senID=48994|dadeg_pos=PUNC|old_r=PUNC|old_h=10	10	punct	_	_
+7	برای	برای	ADP	PREP	attachment=ISO|senID=48994|dadeg_pos=PREP|old_r=ADV|old_h=11	8	case	_	_
+8-9	خودش	_	_	_	_	_	_	_	_
+8	خود	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=48994|dadeg_pos=PR|old_r=POSDEP|old_h=7	11	obl	_	_
+9	ش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=48994|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
+10	بازارگرمی	بازارگرمی	NOUN	N_IANM	attachment=ISO|number=SING|senID=48994|dadeg_pos=N|old_r=NVE|old_h=11	11	compound:lvc	_	_
+11	می‌کند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=48994|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	PUNC	attachment=ISO|senID=48994|dadeg_pos=PUNC|old_r=PUNC|old_h=11	11	punct	_	_
 
 # sent_id = test-s429
 # text = ای مولای من، کنیزهای دربار با هم دربارهٔ آن نگین بگومگو کرده‌اند.
@@ -8533,25 +8549,29 @@
 
 # sent_id = test-s457
 # text = قانون اساسی در محدودهٔ کار خودش این حق را به مجلس خبرگان داده که برای خودش قانون‌گذاری بکند.
-1	قانون	قانون	NOUN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=SBJ|old_h=13	13	nsubj	_	_
+1	قانون	قانون	NOUN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=SBJ|old_h=14	14	nsubj	_	_
 2	اساسی	اساسی	ADJ	ADJ_AJP	attachment=ISO|senID=49287|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=1	1	amod	_	_
-3	در	در	ADP	PREP	attachment=ISO|senID=49287|dadeg_pos=PREP|old_r=ADV|old_h=13	4	case	_	_
-4	محدودهٔ	محدوده	NOUN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=POSDEP|old_h=3	13	obl	_	_
+3	در	در	ADP	PREP	attachment=ISO|senID=49287|dadeg_pos=PREP|old_r=ADV|old_h=14	4	case	_	_
+4	محدودهٔ	محدوده	NOUN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=POSDEP|old_h=3	14	obl	_	_
 5	کار	کار	NOUN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=MOZ|old_h=4	4	nmod	_	_
-6	خودش	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=49287|dadeg_pos=PR|old_r=MOZ|old_h=5	5	nmod	_	_
-7	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=49287|dadeg_pos=PREM|old_r=NPREMOD|old_h=8	8	det	_	_
-8	حق	حق	NOUN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=PREDEP|old_h=9	13	obj	_	_
-9	را	را	ADP	POSTP	attachment=ISO|senID=49287|dadeg_pos=POSTP|old_r=OBJ|old_h=13	8	case	_	_
-10	به	به	ADP	PREP	attachment=ISO|senID=49287|dadeg_pos=PREP|old_r=VPP|old_h=13	11	case	_	_
-11	مجلس	مجلس	PROPN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=POSDEP|old_h=10	13	obl:arg	_	_
-12	خبرگان	خبره	PROPN	N_IANM	attachment=ISO|number=PLUR|senID=49287|dadeg_pos=N|old_r=MOZ|old_h=11	11	flat:name	_	_
-13	داده	داد#ده	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=49287|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-14	که	که	SCONJ	SUBR	attachment=ISO|senID=49287|dadeg_pos=SUBR|old_r=NCL|old_h=8	18	mark	_	_
-15	برای	برای	ADP	PREP	attachment=ISO|senID=49287|dadeg_pos=PREP|old_r=ADV|old_h=18	16	case	_	_
-16	خودش	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=49287|dadeg_pos=PR|old_r=POSDEP|old_h=15	18	obl	_	_
-17	قانون‌گذاری	قانون‌گذاری	NOUN	N_IANM	attachment=ISO|senID=49287|dadeg_pos=N|old_r=NVE|old_h=18	18	compound:lvc	_	_
-18	بکند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=49287|dadeg_pos=V|old_r=PRD|old_h=14	8	acl	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	attachment=ISO|senID=49287|dadeg_pos=PUNC|old_r=PUNC|old_h=13	13	punct	_	_
+6-7	خودش	_	_	_	_	_	_	_	_
+6	خود	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=49287|dadeg_pos=PR|old_r=MOZ|old_h=5	5	nmod	_	_
+7	ش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=49287|dadeg_pos=PR|old_r=MOZ|old_h=6	6	nmod	_	_
+8	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=49287|dadeg_pos=PREM|old_r=NPREMOD|old_h=9	9	det	_	_
+9	حق	حق	NOUN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=PREDEP|old_h=10	14	obj	_	_
+10	را	را	ADP	POSTP	attachment=ISO|senID=49287|dadeg_pos=POSTP|old_r=OBJ|old_h=14	9	case	_	_
+11	به	به	ADP	PREP	attachment=ISO|senID=49287|dadeg_pos=PREP|old_r=VPP|old_h=14	12	case	_	_
+12	مجلس	مجلس	PROPN	N_IANM	attachment=ISO|number=SING|senID=49287|dadeg_pos=N|old_r=POSDEP|old_h=11	14	obl:arg	_	_
+13	خبرگان	خبره	PROPN	N_IANM	attachment=ISO|number=PLUR|senID=49287|dadeg_pos=N|old_r=MOZ|old_h=12	12	flat:name	_	_
+14	داده	داد#ده	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=49287|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
+15	که	که	SCONJ	SUBR	attachment=ISO|senID=49287|dadeg_pos=SUBR|old_r=NCL|old_h=9	20	mark	_	_
+16	برای	برای	ADP	PREP	attachment=ISO|senID=49287|dadeg_pos=PREP|old_r=ADV|old_h=20	17	case	_	_
+17-18	خودش	_	_	_	_	_	_	_	_
+17	خود	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=49287|dadeg_pos=PR|old_r=POSDEP|old_h=16	20	obl	_	_
+18	ش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=49287|dadeg_pos=PR|old_r=MOZ|old_h=17	17	nmod	_	_
+19	قانون‌گذاری	قانون‌گذاری	NOUN	N_IANM	attachment=ISO|senID=49287|dadeg_pos=N|old_r=NVE|old_h=20	20	compound:lvc	_	_
+20	بکند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=49287|dadeg_pos=V|old_r=PRD|old_h=15	9	acl	_	SpaceAfter=No
+21	.	.	PUNCT	PUNC	attachment=ISO|senID=49287|dadeg_pos=PUNC|old_r=PUNC|old_h=14	14	punct	_	_
 
 # sent_id = test-s458
 # text = آقای دکتر لطف می‌کنید گوشیتان را به من قرض بدهید؟
@@ -12486,9 +12506,11 @@
 10	آنان	آنان	PRON	PR_SEPER	person=3|attachment=ISO|number=PLUR|senID=45660|dadeg_pos=PR|old_r=MOZ|old_h=9	9	nmod	_	_
 11	جرأت	جرأت	NOUN	N_IANM	attachment=ISO|number=SING|senID=45660|dadeg_pos=N|old_r=NVE|old_h=12	12	compound:lvc	_	_
 12	می‌کنیم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=45660|dadeg_pos=V|old_r=PRD|old_h=6	4	acl	_	_
-13	خودمان	خودمان	PRON	PR_UCREFX	person=1|attachment=ISO|number=PLUR|senID=45660|dadeg_pos=PR|old_r=SBJ|old_h=14	14	nsubj	_	_
-14	باشیم	بود#باش	AUX	AUX	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=45660|dadeg_pos=AUX|old_r=VCL|old_h=12	12	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	attachment=ISO|senID=45660|dadeg_pos=PUNC|old_r=PUNC|old_h=5	4	punct	_	_
+13-14	خودمان	_	_	_	_	_	_	_	_
+13	خود	خودمان	PRON	PR_UCREFX	person=1|attachment=ISO|number=PLUR|senID=45660|dadeg_pos=PR|old_r=SBJ|old_h=15	15	nsubj	_	_
+14	مان	ما	PRON	PR_JOPER	number=PLUR|person=1|pronType=Prs|senID=45660|dadeg_pos=PR|old_r=MOZ|old_h=13	13	nmod	_	_
+15	باشیم	بود#باش	AUX	AUX	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=45660|dadeg_pos=AUX|old_r=VCL|old_h=12	12	ccomp	_	SpaceAfter=No
+16	.	.	PUNCT	PUNC	attachment=ISO|senID=45660|dadeg_pos=PUNC|old_r=PUNC|old_h=5	4	punct	_	_
 
 # sent_id = test-s648
 # text = جرقه بزن!
@@ -13064,15 +13086,17 @@
 4	و	و	CCONJ	CONJ	attachment=ISO|senID=45960|dadeg_pos=CONJ|old_r=NCONJ|old_h=3	5	cc	_	_
 5	حفظ	حفظ	NOUN	N_IANM	attachment=ISO|number=SING|senID=45960|dadeg_pos=N|old_r=POSDEP|old_h=4	3	conj	_	_
 6	کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=45960|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-7	و	و	CCONJ	CONJ	attachment=ISO|senID=45960|dadeg_pos=CONJ|old_r=VCONJ|old_h=6	14	cc	_	_
-8	خودتان	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=45960|dadeg_pos=PR|old_r=PREDEP|old_h=9	14	obj	_	_
-9	را	را	ADP	POSTP	attachment=ISO|senID=45960|dadeg_pos=POSTP|old_r=OBJ|old_h=14	8	case	_	_
-10	به	به	ADP	PREP	attachment=ISO|senID=45960|dadeg_pos=PREP|old_r=ADV|old_h=14	11	case	_	_
-11	وسیلهٔ	وسیله	NOUN	N_IANM	attachment=ISO|number=SING|senID=45960|dadeg_pos=N|old_r=POSDEP|old_h=10	14	obl	_	_
-12	تقوا	تقوا	NOUN	N_IANM	attachment=ISO|number=SING|senID=45960|dadeg_pos=N|old_r=MOZ|old_h=11	11	nmod	_	_
-13	صیانت	صیانت	NOUN	N_IANM	attachment=ISO|number=SING|senID=45960|dadeg_pos=N|old_r=NVE|old_h=14	14	compound:lvc	_	_
-14	کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=45960|dadeg_pos=V|old_r=POSDEP|old_h=7	6	conj	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	attachment=ISO|senID=45960|dadeg_pos=PUNC|old_r=PUNC|old_h=14	14	punct	_	_
+7	و	و	CCONJ	CONJ	attachment=ISO|senID=45960|dadeg_pos=CONJ|old_r=VCONJ|old_h=6	15	cc	_	_
+8-9	خودتان	_	_	_	_	_	_	_	_
+8	خود	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=45960|dadeg_pos=PR|old_r=PREDEP|old_h=10	15	obj	_	_
+9	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=45960|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
+10	را	را	ADP	POSTP	attachment=ISO|senID=45960|dadeg_pos=POSTP|old_r=OBJ|old_h=15	8	case	_	_
+11	به	به	ADP	PREP	attachment=ISO|senID=45960|dadeg_pos=PREP|old_r=ADV|old_h=15	12	case	_	_
+12	وسیلهٔ	وسیله	NOUN	N_IANM	attachment=ISO|number=SING|senID=45960|dadeg_pos=N|old_r=POSDEP|old_h=11	15	obl	_	_
+13	تقوا	تقوا	NOUN	N_IANM	attachment=ISO|number=SING|senID=45960|dadeg_pos=N|old_r=MOZ|old_h=12	12	nmod	_	_
+14	صیانت	صیانت	NOUN	N_IANM	attachment=ISO|number=SING|senID=45960|dadeg_pos=N|old_r=NVE|old_h=15	15	compound:lvc	_	_
+15	کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=45960|dadeg_pos=V|old_r=POSDEP|old_h=7	6	conj	_	SpaceAfter=No
+16	.	.	PUNCT	PUNC	attachment=ISO|senID=45960|dadeg_pos=PUNC|old_r=PUNC|old_h=15	15	punct	_	_
 
 # sent_id = test-s678
 # text = خاوری از پاسخ به خبرنگاران طفره می‌رود.
@@ -13829,21 +13853,23 @@
 
 # sent_id = test-s723
 # text = تو داری تنها برای خودت مبارزه می‌کنی و به در و دیوار مشت می‌زنی.
-1	تو	تو	PRON	PR_SEPER	person=2|attachment=ISO|number=SING|senID=50905|dadeg_pos=PR|old_r=SBJ|old_h=7	7	nsubj	_	_
-2	داری	داشت#دار	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905|dadeg_pos=V|old_r=PROG|old_h=7	7	aux	_	_
-3	تنها	تنها	ADV	ADV_SADV	attachment=ISO|senID=50905|dadeg_pos=ADV|old_r=PREDEP|old_h=4	7	advmod	_	_
-4	برای	برای	ADP	PREP	attachment=ISO|senID=50905|dadeg_pos=PREP|old_h=7|old_r=ADV	5	case	_	_
-5	خودت	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=50905|dadeg_pos=PR|old_r=POSDEP|old_h=4	3	case	_	_
-6	مبارزه	مبارزه	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=NVE|old_h=7	7	compound:lvc	_	_
-7	می‌کنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-8	و	و	CCONJ	CONJ	attachment=ISO|senID=50905|dadeg_pos=CONJ|old_r=VCONJ|old_h=7	14	cc	_	_
-9	به	به	ADP	PREP	attachment=ISO|senID=50905|dadeg_pos=PREP|old_r=VPP|old_h=14	10	case	_	_
-10	در	در	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=POSDEP|old_h=9	14	obl:arg	_	_
-11	و	و	CCONJ	CONJ	attachment=ISO|senID=50905|dadeg_pos=CONJ|old_r=NCONJ|old_h=10	12	cc	_	_
-12	دیوار	دیوار	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=POSDEP|old_h=11	10	conj	_	_
-13	مشت	مشت	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=NVE|old_h=14	14	compound:lvc	_	_
-14	می‌زنی	زد#زن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905|dadeg_pos=V|old_r=POSDEP|old_h=8	7	conj	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	attachment=ISO|senID=50905|dadeg_pos=PUNC|old_r=PUNC|old_h=14	14	punct	_	_
+1	تو	تو	PRON	PR_SEPER	person=2|attachment=ISO|number=SING|senID=50905|dadeg_pos=PR|old_r=SBJ|old_h=8	8	nsubj	_	_
+2	داری	داشت#دار	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905|dadeg_pos=V|old_r=PROG|old_h=8	8	aux	_	_
+3	تنها	تنها	ADV	ADV_SADV	attachment=ISO|senID=50905|dadeg_pos=ADV|old_r=PREDEP|old_h=4	8	advmod	_	_
+4	برای	برای	ADP	PREP	attachment=ISO|senID=50905|dadeg_pos=PREP|old_h=8|old_r=ADV	5	case	_	_
+5-6	خودت	_	_	_	_	_	_	_	_
+5	خود	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=50905|dadeg_pos=PR|old_r=POSDEP|old_h=4	3	case	_	_
+6	ت	تو	PRON	PR_JOPER	number=SING|person=2|pronType=Prs|senID=50905|dadeg_pos=PR|old_r=MOZ|old_h=5	5	nmod	_	_
+7	مبارزه	مبارزه	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=NVE|old_h=8	8	compound:lvc	_	_
+8	می‌کنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
+9	و	و	CCONJ	CONJ	attachment=ISO|senID=50905|dadeg_pos=CONJ|old_r=VCONJ|old_h=8	15	cc	_	_
+10	به	به	ADP	PREP	attachment=ISO|senID=50905|dadeg_pos=PREP|old_r=VPP|old_h=15	11	case	_	_
+11	در	در	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=POSDEP|old_h=10	15	obl:arg	_	_
+12	و	و	CCONJ	CONJ	attachment=ISO|senID=50905|dadeg_pos=CONJ|old_r=NCONJ|old_h=11	13	cc	_	_
+13	دیوار	دیوار	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=POSDEP|old_h=12	11	conj	_	_
+14	مشت	مشت	NOUN	N_IANM	attachment=ISO|number=SING|senID=50905|dadeg_pos=N|old_r=NVE|old_h=15	15	compound:lvc	_	_
+15	می‌زنی	زد#زن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905|dadeg_pos=V|old_r=POSDEP|old_h=9	8	conj	_	SpaceAfter=No
+16	.	.	PUNCT	PUNC	attachment=ISO|senID=50905|dadeg_pos=PUNC|old_r=PUNC|old_h=15	15	punct	_	_
 
 # sent_id = test-s724
 # text = مواد را با هم ترکیب می‌کنیم و حسابی مشت و مال می‌دهیم.
@@ -14461,22 +14487,26 @@
 # text = شما نمی‌توانید خودتان را غلغلک بدهید و به خودتان هم اجازه نمی‌دهید که غریبه‌ها را غلغلک بدهید.
 1	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=51268|dadeg_pos=PR|old_r=SBJ|old_h=2	2	nsubj	_	_
 2	نمی‌توانید	توانست#توان	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=51268|polarity=NEG|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-3	خودتان	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268|dadeg_pos=PR|old_r=PREDEP|old_h=4	6	obj	_	_
-4	را	را	ADP	POSTP	attachment=ISO|senID=51268|dadeg_pos=POSTP|old_r=OBJ|old_h=6	3	case	_	_
-5	غلغلک	غلغلک	NOUN	N_IANM	attachment=ISO|number=SING|senID=51268|dadeg_pos=N|old_r=NVE|old_h=6	6	compound:lvc	_	_
-6	بدهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268|dadeg_pos=V|old_r=VCL|old_h=2	2	ccomp	_	_
-7	و	و	CCONJ	CONJ	attachment=ISO|senID=51268|dadeg_pos=CONJ|old_r=VCONJ|old_h=2	12	cc	_	_
-8	به	به	ADP	PREP	attachment=ISO|senID=51268|dadeg_pos=PREP|old_r=NPP|old_h=11	9	case	_	_
-9	خودتان	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268|dadeg_pos=PR|old_r=POSDEP|old_h=8	11	nmod	_	_
-10	هم	هم	ADV	ADV_SADV	attachment=ISO|senID=51268|dadeg_pos=ADV|old_r=POSDEP|old_h=9	9	dep	_	_
-11	اجازه	اجازه	NOUN	N_IANM	attachment=ISO|number=SING|senID=51268|dadeg_pos=N|old_r=OBJ|old_h=12	12	obj	_	_
-12	نمی‌دهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=51268|polarity=NEG|dadeg_pos=V|old_r=POSDEP|old_h=7	2	conj	_	_
-13	که	که	SCONJ	SUBR	attachment=ISO|senID=51268|dadeg_pos=SUBR|old_r=NCL|old_h=11	17	mark	_	_
-14	غریبه‌ها	غریبه	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=51268|dadeg_pos=N|old_r=PREDEP|old_h=15	17	obj	_	_
-15	را	را	ADP	POSTP	attachment=ISO|senID=51268|dadeg_pos=POSTP|old_r=OBJ|old_h=17	14	case	_	_
-16	غلغلک	غلغلک	NOUN	N_IANM	attachment=ISO|number=SING|senID=51268|dadeg_pos=N|old_r=NVE|old_h=17	17	compound:lvc	_	_
-17	بدهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268|dadeg_pos=V|old_r=PRD|old_h=13	11	acl	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	attachment=ISO|senID=51268|dadeg_pos=PUNC|old_r=PUNC|old_h=12	12	punct	_	_
+3-4	خودتان	_	_	_	_	_	_	_	_
+3	خود	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268|dadeg_pos=PR|old_r=PREDEP|old_h=5	7	obj	_	_
+4	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=51268|dadeg_pos=PR|old_r=MOZ|old_h=3	3	nmod	_	_
+5	را	را	ADP	POSTP	attachment=ISO|senID=51268|dadeg_pos=POSTP|old_r=OBJ|old_h=7	3	case	_	_
+6	غلغلک	غلغلک	NOUN	N_IANM	attachment=ISO|number=SING|senID=51268|dadeg_pos=N|old_r=NVE|old_h=7	7	compound:lvc	_	_
+7	بدهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268|dadeg_pos=V|old_r=VCL|old_h=2	2	ccomp	_	_
+8	و	و	CCONJ	CONJ	attachment=ISO|senID=51268|dadeg_pos=CONJ|old_r=VCONJ|old_h=2	14	cc	_	_
+9	به	به	ADP	PREP	attachment=ISO|senID=51268|dadeg_pos=PREP|old_r=NPP|old_h=13	10	case	_	_
+10-11	خودتان	_	_	_	_	_	_	_	_
+10	خود	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268|dadeg_pos=PR|old_r=POSDEP|old_h=9	13	nmod	_	_
+11	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=51268|dadeg_pos=PR|old_r=MOZ|old_h=10	10	nmod	_	_
+12	هم	هم	ADV	ADV_SADV	attachment=ISO|senID=51268|dadeg_pos=ADV|old_r=POSDEP|old_h=10	10	dep	_	_
+13	اجازه	اجازه	NOUN	N_IANM	attachment=ISO|number=SING|senID=51268|dadeg_pos=N|old_r=OBJ|old_h=14	14	obj	_	_
+14	نمی‌دهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=51268|polarity=NEG|dadeg_pos=V|old_r=POSDEP|old_h=8	2	conj	_	_
+15	که	که	SCONJ	SUBR	attachment=ISO|senID=51268|dadeg_pos=SUBR|old_r=NCL|old_h=13	19	mark	_	_
+16	غریبه‌ها	غریبه	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=51268|dadeg_pos=N|old_r=PREDEP|old_h=17	19	obj	_	_
+17	را	را	ADP	POSTP	attachment=ISO|senID=51268|dadeg_pos=POSTP|old_r=OBJ|old_h=19	16	case	_	_
+18	غلغلک	غلغلک	NOUN	N_IANM	attachment=ISO|number=SING|senID=51268|dadeg_pos=N|old_r=NVE|old_h=19	19	compound:lvc	_	_
+19	بدهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268|dadeg_pos=V|old_r=PRD|old_h=15	13	acl	_	SpaceAfter=No
+20	.	.	PUNCT	PUNC	attachment=ISO|senID=51268|dadeg_pos=PUNC|old_r=PUNC|old_h=14	14	punct	_	_
 
 # sent_id = test-s760
 # text = این روسری را دو جای دیگر هم قیمت کرده بودم 30 و 32 می‌گفتند.
@@ -15770,15 +15800,17 @@
 # sent_id = test-s822
 # text = هر پژوهشگری در حوزهٔ تخصصی خودش می‌تواند نظریه‌پردازی بکند.
 1	هر	هر	DET	PREM_AMBAJ	attachment=ISO|senID=51905|dadeg_pos=PREM|old_r=NPREMOD|old_h=2	2	det	_	_
-2	پژوهشگری	پژوهشگر	NOUN	N_ANM	attachment=ISO|number=SING|senID=51905|dadeg_pos=N|old_r=SBJ|old_h=7	7	nsubj	_	_
-3	در	در	ADP	PREP	attachment=ISO|senID=51905|dadeg_pos=PREP|old_r=NPP|old_h=8	4	case	_	_
-4	حوزهٔ	حوزه	NOUN	N_IANM	attachment=ISO|number=SING|senID=51905|dadeg_pos=N|old_r=POSDEP|old_h=3	9	obl:arg	_	_
+2	پژوهشگری	پژوهشگر	NOUN	N_ANM	attachment=ISO|number=SING|senID=51905|dadeg_pos=N|old_r=SBJ|old_h=8	8	nsubj	_	_
+3	در	در	ADP	PREP	attachment=ISO|senID=51905|dadeg_pos=PREP|old_r=NPP|old_h=9	4	case	_	_
+4	حوزهٔ	حوزه	NOUN	N_IANM	attachment=ISO|number=SING|senID=51905|dadeg_pos=N|old_r=POSDEP|old_h=3	10	obl:arg	_	_
 5	تخصصی	تخصصی	ADJ	ADJ_AJP	attachment=ISO|senID=51905|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=4	4	amod	_	_
-6	خودش	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=51905|dadeg_pos=PR|old_r=MOZ|old_h=4	4	nmod	_	_
-7	می‌تواند	توانست#توان	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=51905|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-8	نظریه‌پردازی	نظریه‌پردازی	NOUN	N_IANM	attachment=ISO|number=SING|senID=51905|dadeg_pos=N|old_r=NVE|old_h=9	9	compound:lvc	_	_
-9	بکند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=51905|dadeg_pos=V|old_r=VCL|old_h=7	7	ccomp	_	SpaceAfter=No
-10	.	.	PUNCT	PUNC	attachment=ISO|senID=51905|dadeg_pos=PUNC|old_r=PUNC|old_h=7	7	punct	_	_
+6-7	خودش	_	_	_	_	_	_	_	_
+6	خود	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=51905|dadeg_pos=PR|old_r=MOZ|old_h=4	4	nmod	_	_
+7	ش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=51905|dadeg_pos=PR|old_r=MOZ|old_h=6	6	nmod	_	_
+8	می‌تواند	توانست#توان	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=H|senID=51905|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
+9	نظریه‌پردازی	نظریه‌پردازی	NOUN	N_IANM	attachment=ISO|number=SING|senID=51905|dadeg_pos=N|old_r=NVE|old_h=10	10	compound:lvc	_	_
+10	بکند	کرد#کن	VERB	V_ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=51905|dadeg_pos=V|old_r=VCL|old_h=8	8	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	PUNC	attachment=ISO|senID=51905|dadeg_pos=PUNC|old_r=PUNC|old_h=8	8	punct	_	_
 
 # sent_id = test-s823
 # text = روی درخت‌هایش نشانه گذاشت.
@@ -18709,17 +18741,19 @@
 
 # sent_id = test-s974
 # text = تو اوج افسردگی و ناراحتی، به خودم نیشتر زدم.
-1	تو	تو	ADP	PREP	attachment=ISO|senID=53546|dadeg_pos=PREP|old_r=ADV|old_h=10	2	case	_	_
-2	اوج	اوج	NOUN	N_IANM	attachment=ISO|number=SING|senID=53546|dadeg_pos=N|old_r=POSDEP|old_h=1	10	obl	_	_
+1	تو	تو	ADP	PREP	attachment=ISO|senID=53546|dadeg_pos=PREP|old_r=ADV|old_h=11	2	case	_	_
+2	اوج	اوج	NOUN	N_IANM	attachment=ISO|number=SING|senID=53546|dadeg_pos=N|old_r=POSDEP|old_h=1	11	obl	_	_
 3	افسردگی	افسردگی	NOUN	N_IANM	attachment=ISO|number=SING|senID=53546|dadeg_pos=N|old_r=MOZ|old_h=2	2	nmod	_	_
 4	و	و	CCONJ	CONJ	attachment=ISO|senID=53546|dadeg_pos=CONJ|old_r=NCONJ|old_h=3	5	cc	_	_
 5	ناراحتی	ناراحتی	NOUN	N_IANM	attachment=ISO|number=SING|senID=53546|dadeg_pos=N|old_r=POSDEP|old_h=4	3	conj	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	attachment=ISO|senID=53546|dadeg_pos=PUNC|old_r=PUNC|old_h=5	5	punct	_	_
-7	به	به	ADP	PREP	attachment=ISO|senID=53546|dadeg_pos=PREP|old_r=VPP|old_h=10	8	case	_	_
-8	خودم	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=53546|dadeg_pos=PR|old_r=POSDEP|old_h=7	10	obl:arg	_	_
-9	نیشتر	نیشتر	NOUN	N_IANM	attachment=ISO|number=SING|senID=53546|dadeg_pos=N|old_r=NVE|old_h=10	10	compound:lvc	_	_
-10	زدم	زد#زن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=53546|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	attachment=ISO|senID=53546|dadeg_pos=PUNC|old_r=PUNC|old_h=10	10	punct	_	_
+7	به	به	ADP	PREP	attachment=ISO|senID=53546|dadeg_pos=PREP|old_r=VPP|old_h=11	8	case	_	_
+8-9	خودم	_	_	_	_	_	_	_	_
+8	خود	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=53546|dadeg_pos=PR|old_r=POSDEP|old_h=7	11	obl:arg	_	_
+9	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=53546|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
+10	نیشتر	نیشتر	NOUN	N_IANM	attachment=ISO|number=SING|senID=53546|dadeg_pos=N|old_r=NVE|old_h=11	11	compound:lvc	_	_
+11	زدم	زد#زن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=53546|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	PUNC	attachment=ISO|senID=53546|dadeg_pos=PUNC|old_r=PUNC|old_h=11	11	punct	_	_
 
 # sent_id = test-s975
 # text = شخص انجام وضو را در قلب خود، و بدون بر زبان راندن آن نیت می‌کند.
@@ -19015,12 +19049,14 @@
 20	قدر	قدر	NOUN	N_IANM	attachment=ISO|number=SING|senID=53676|dadeg_pos=N|old_r=APREMOD|old_h=21	21	advmod	_	_
 21	بزرگ	بزرگ	ADJ	ADJ_AJP	attachment=ISO|senID=53676|dadeg_pos=ADJ|old_r=MOS|old_h=22	22	xcomp	_	_
 22	نشدم	شد#شو	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=53676|polarity=NEG|dadeg_pos=V|old_r=POSDEP|old_h=18	9	conj	_	_
-23	که	که	SCONJ	SUBR	attachment=ISO|senID=53676|dadeg_pos=SUBR|old_r=NCL|old_h=20	27	mark	_	_
-24	از	از	ADP	PREP	attachment=ISO|senID=53676|dadeg_pos=PREP|old_r=NPP|old_h=26	25	case	_	_
-25	خودم	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=53676|dadeg_pos=PR|old_r=POSDEP|old_h=24	27	obl:arg	_	_
-26	مراقبت	مراقبت	NOUN	N_IANM	attachment=ISO|number=SING|senID=53676|dadeg_pos=N|old_r=NVE|old_h=27	27	compound:lvc	_	_
-27	بکنم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=53676|dadeg_pos=V|old_r=PRD|old_h=23	20	acl	_	SpaceAfter=No
-28	.	.	PUNCT	PUNC	attachment=ISO|senID=53676|dadeg_pos=PUNC|old_r=PUNC|old_h=2	2	punct	_	_
+23	که	که	SCONJ	SUBR	attachment=ISO|senID=53676|dadeg_pos=SUBR|old_r=NCL|old_h=20	28	mark	_	_
+24	از	از	ADP	PREP	attachment=ISO|senID=53676|dadeg_pos=PREP|old_r=NPP|old_h=27	25	case	_	_
+25-26	خودم	_	_	_	_	_	_	_	_
+25	خود	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=53676|dadeg_pos=PR|old_r=POSDEP|old_h=24	28	obl:arg	_	_
+26	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=53676|dadeg_pos=PR|old_r=MOZ|old_h=25	25	nmod	_	_
+27	مراقبت	مراقبت	NOUN	N_IANM	attachment=ISO|number=SING|senID=53676|dadeg_pos=N|old_r=NVE|old_h=28	28	compound:lvc	_	_
+28	بکنم	کرد#کن	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=53676|dadeg_pos=V|old_r=PRD|old_h=23	20	acl	_	SpaceAfter=No
+29	.	.	PUNCT	PUNC	attachment=ISO|senID=53676|dadeg_pos=PUNC|old_r=PUNC|old_h=2	2	punct	_	_
 
 # sent_id = test-s988
 # text = آقا، دهنم کف کرد از بس در فراق اینترنت مرثیه‌سرایی کردم.
@@ -20077,15 +20113,17 @@
 # sent_id = test-s1038
 # text = نمی‌دانم چگونه خودم را به مطالعه کردن عادت بدهم.
 1	نمی‌دانم	دانست#دان	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=H|senID=48597|polarity=NEG|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-2	چگونه	چگونه	ADV	ADV_SADV	attachment=ISO|senID=48597|dadeg_pos=ADV|old_r=ADV|old_h=9	9	advmod	_	_
-3	خودم	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=48597|dadeg_pos=PR|old_r=PREDEP|old_h=4	9	obj	_	_
-4	را	را	ADP	POSTP	attachment=ISO|senID=48597|dadeg_pos=POSTP|old_r=OBJ|old_h=9	3	case	_	_
-5	به	به	ADP	PREP	attachment=ISO|senID=48597|dadeg_pos=PREP|old_r=NPP|old_h=8	7	case	_	_
-6	مطالعه	مطالعه	NOUN	N_IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|old_r=NE|old_h=7	7	compound:lvc	_	_
-7	کردن	کردن	NOUN	N_IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|old_r=POSDEP|old_h=5	9	obl:arg	_	_
-8	عادت	عادت	NOUN	N_IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|old_r=NVE|old_h=9	9	compound:lvc	_	_
-9	بدهم	داد#ده	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=48597|dadeg_pos=V|old_r=VCL|old_h=1	1	ccomp	_	SpaceAfter=No
-10	.	.	PUNCT	PUNC	attachment=ISO|senID=48597|dadeg_pos=PUNC|old_r=PUNC|old_h=1	1	punct	_	_
+2	چگونه	چگونه	ADV	ADV_SADV	attachment=ISO|senID=48597|dadeg_pos=ADV|old_r=ADV|old_h=10	10	advmod	_	_
+3-4	خودم	_	_	_	_	_	_	_	_
+3	خود	خودم	PRON	PR_UCREFX	person=1|attachment=ISO|number=SING|senID=48597|dadeg_pos=PR|old_r=PREDEP|old_h=5	10	obj	_	_
+4	م	من	PRON	PR_JOPER	number=SING|person=1|pronType=Prs|senID=48597|dadeg_pos=PR|old_r=MOZ|old_h=3	3	nmod	_	_
+5	را	را	ADP	POSTP	attachment=ISO|senID=48597|dadeg_pos=POSTP|old_r=OBJ|old_h=10	3	case	_	_
+6	به	به	ADP	PREP	attachment=ISO|senID=48597|dadeg_pos=PREP|old_r=NPP|old_h=9	8	case	_	_
+7	مطالعه	مطالعه	NOUN	N_IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|old_r=NE|old_h=8	8	compound:lvc	_	_
+8	کردن	کردن	NOUN	N_IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|old_r=POSDEP|old_h=6	10	obl:arg	_	_
+9	عادت	عادت	NOUN	N_IANM	attachment=ISO|number=SING|senID=48597|dadeg_pos=N|old_r=NVE|old_h=10	10	compound:lvc	_	_
+10	بدهم	داد#ده	VERB	V_ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=48597|dadeg_pos=V|old_r=VCL|old_h=1	1	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	PUNC	attachment=ISO|senID=48597|dadeg_pos=PUNC|old_r=PUNC|old_h=1	1	punct	_	_
 
 # sent_id = test-s1039
 # text = بنابراین، بی‌توجهی به بانکداری الکترونیک، موجب عقب‌ماندگی از همهٔ دستاوردهای نوین در عرصهٔ بانکداری می‌شود.
@@ -21928,19 +21966,21 @@
 
 # sent_id = test-s1125
 # text = کارهایی که باید انجام دهید را سر وقت خودشان به انجام برسانید.
-1	کارهایی	کار	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=55115|dadeg_pos=N|old_r=PREDEP|old_h=6	12	obj	_	_
+1	کارهایی	کار	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=55115|dadeg_pos=N|old_r=PREDEP|old_h=6	13	obj	_	_
 2	که	که	SCONJ	SUBR	attachment=ISO|senID=55115|dadeg_pos=SUBR|old_r=NCL|old_h=1	5	mark	_	_
 3	باید	بایست#باید	AUX	V_MODL	attachment=ISO|tma=H|senID=55115|dadeg_pos=V|old_h=2|old_r=PRD	5	aux	_	_
 4	انجام	انجام	NOUN	N_IANM	attachment=ISO|number=SING|senID=55115|dadeg_pos=N|old_r=NVE|old_h=5	5	compound:lvc	_	_
 5	دهید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=55115|dadeg_pos=V|old_h=3|old_r=VCL	1	acl	_	_
-6	را	را	ADP	POSTP	attachment=ISO|senID=55115|dadeg_pos=POSTP|old_r=OBJ|old_h=12	1	case	_	_
-7	سر	سر	ADP	PREP	attachment=ISO|senID=55115|dadeg_pos=PREP|old_r=ADV|old_h=12	8	case	_	_
-8	وقت	وقت	NOUN	N_IANM	attachment=ISO|number=SING|senID=55115|dadeg_pos=N|old_r=POSDEP|old_h=7	12	obl	_	_
-9	خودشان	خودشان	PRON	PR_UCREFX	person=3|attachment=ISO|number=PLUR|senID=55115|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
-10	به	به	ADP	PREP	attachment=ISO|senID=55115|dadeg_pos=PREP|old_r=VPP|old_h=12	11	case	_	_
-11	انجام	انجام	NOUN	N_IANM	attachment=ISO|number=SING|senID=55115|dadeg_pos=N|old_r=POSDEP|old_h=10	12	obl:arg	_	_
-12	برسانید	رسانید#رسان	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55115|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-13	.	.	PUNCT	PUNC	attachment=ISO|senID=55115|dadeg_pos=PUNC|old_r=PUNC|old_h=12	12	punct	_	_
+6	را	را	ADP	POSTP	attachment=ISO|senID=55115|dadeg_pos=POSTP|old_r=OBJ|old_h=13	1	case	_	_
+7	سر	سر	ADP	PREP	attachment=ISO|senID=55115|dadeg_pos=PREP|old_r=ADV|old_h=13	8	case	_	_
+8	وقت	وقت	NOUN	N_IANM	attachment=ISO|number=SING|senID=55115|dadeg_pos=N|old_r=POSDEP|old_h=7	13	obl	_	_
+9-10	خودشان	_	_	_	_	_	_	_	_
+9	خود	خودشان	PRON	PR_UCREFX	person=3|attachment=ISO|number=PLUR|senID=55115|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
+10	شان	آنها	PRON	PR_JOPER	number=PLUR|person=3|pronType=Prs|senID=55115|dadeg_pos=PR|old_r=MOZ|old_h=9	9	nmod	_	_
+11	به	به	ADP	PREP	attachment=ISO|senID=55115|dadeg_pos=PREP|old_r=VPP|old_h=13	12	case	_	_
+12	انجام	انجام	NOUN	N_IANM	attachment=ISO|number=SING|senID=55115|dadeg_pos=N|old_r=POSDEP|old_h=11	13	obl:arg	_	_
+13	برسانید	رسانید#رسان	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55115|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	PUNC	attachment=ISO|senID=55115|dadeg_pos=PUNC|old_r=PUNC|old_h=13	13	punct	_	_
 
 # sent_id = test-s1126
 # text = گردن آن بازیکن را می‌زنم که بخواهد پرسپولیس را به باد بدهد.
@@ -22391,19 +22431,21 @@
 
 # sent_id = test-s1149
 # text = به هر یک از فرزندانتان به زبان خودش عشق بورزید.
-1	به	به	ADP	PREP	attachment=ISO|senID=55382|dadeg_pos=PREP|old_r=VPP|old_h=11	3	case	_	_
+1	به	به	ADP	PREP	attachment=ISO|senID=55382|dadeg_pos=PREP|old_r=VPP|old_h=12	3	case	_	_
 2	هر	هر	DET	PREM_AMBAJ	attachment=ISO|senID=55382|dadeg_pos=PREM|old_r=NPREMOD|old_h=3	3	det	_	_
-3	یک	یک	NOUN	N_IANM	attachment=ISO|number=SING|senID=55382|dadeg_pos=N|old_r=POSDEP|old_h=1	11	obl:arg	_	_
+3	یک	یک	NOUN	N_IANM	attachment=ISO|number=SING|senID=55382|dadeg_pos=N|old_r=POSDEP|old_h=1	12	obl:arg	_	_
 4	از	از	ADP	PREP	attachment=ISO|senID=55382|dadeg_pos=PREP|old_r=NPP|old_h=3	5	case	_	_
 5-6	فرزندانتان	_	_	_	_	_	_	_	_
 5	فرزندان	فرزند	NOUN	N_ANM	attachment=ISO|number=PLUR|senID=55382|dadeg_pos=N|old_r=POSDEP|old_h=4	3	nmod	_	_
 6	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=55382|dadeg_pos=PR|old_r=MOZ|old_h=5	5	nmod	_	_
-7	به	به	ADP	PREP	attachment=ISO|senID=55382|dadeg_pos=PREP|old_r=ADV|old_h=11	8	case	_	_
-8	زبان	زبان	NOUN	N_IANM	attachment=ISO|number=SING|senID=55382|dadeg_pos=N|old_r=POSDEP|old_h=7	11	obl	_	_
-9	خودش	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=55382|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
-10	عشق	عشق	NOUN	N_IANM	attachment=ISO|number=SING|senID=55382|dadeg_pos=N|old_r=NVE|old_h=11	11	compound:lvc	_	_
-11	بورزید	ورزید#ورز	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55382|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	attachment=ISO|senID=55382|dadeg_pos=PUNC|old_r=PUNC|old_h=11	11	punct	_	_
+7	به	به	ADP	PREP	attachment=ISO|senID=55382|dadeg_pos=PREP|old_r=ADV|old_h=12	8	case	_	_
+8	زبان	زبان	NOUN	N_IANM	attachment=ISO|number=SING|senID=55382|dadeg_pos=N|old_r=POSDEP|old_h=7	12	obl	_	_
+9-10	خودش	_	_	_	_	_	_	_	_
+9	خود	خودش	PRON	PR_UCREFX	person=3|attachment=ISO|number=SING|senID=55382|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
+10	ش	او	PRON	PR_JOPER	number=SING|person=3|pronType=Prs|senID=55382|dadeg_pos=PR|old_r=MOZ|old_h=9	9	nmod	_	_
+11	عشق	عشق	NOUN	N_IANM	attachment=ISO|number=SING|senID=55382|dadeg_pos=N|old_r=NVE|old_h=12	12	compound:lvc	_	_
+12	بورزید	ورزید#ورز	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55382|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	PUNC	attachment=ISO|senID=55382|dadeg_pos=PUNC|old_r=PUNC|old_h=12	12	punct	_	_
 
 # sent_id = test-s1150
 # text = آنقدر هنگامه زیر گوشم وزوز کرده بود که حسابی عصبی بودم.
@@ -23933,11 +23975,13 @@
 
 # sent_id = test-s1227
 # text = برای خودت مخاطب‌سازی کردی.
-1	برای	برای	ADP	PREP	attachment=ISO|senID=56247|dadeg_pos=PREP|old_r=NPP|old_h=3	2	case	_	_
-2	خودت	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=56247|dadeg_pos=PR|old_r=POSDEP|old_h=1	4	obl:arg	_	_
-3	مخاطب‌سازی	مخاطب‌سازی	NOUN	N_IANM	attachment=ISO|number=SING|senID=56247|dadeg_pos=N|old_r=NVE|old_h=4	4	compound:lvc	_	_
-4	کردی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=56247|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
-5	.	.	PUNCT	PUNC	attachment=ISO|senID=56247|dadeg_pos=PUNC|old_r=PUNC|old_h=4	4	punct	_	_
+1	برای	برای	ADP	PREP	attachment=ISO|senID=56247|dadeg_pos=PREP|old_r=NPP|old_h=4	2	case	_	_
+2-3	خودت	_	_	_	_	_	_	_	_
+2	خود	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=56247|dadeg_pos=PR|old_r=POSDEP|old_h=1	5	obl:arg	_	_
+3	ت	تو	PRON	PR_JOPER	number=SING|person=2|pronType=Prs|senID=56247|dadeg_pos=PR|old_r=MOZ|old_h=2	2	nmod	_	_
+4	مخاطب‌سازی	مخاطب‌سازی	NOUN	N_IANM	attachment=ISO|number=SING|senID=56247|dadeg_pos=N|old_r=NVE|old_h=5	5	compound:lvc	_	_
+5	کردی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=56247|dadeg_pos=V|old_r=root|old_h=0	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	PUNC	attachment=ISO|senID=56247|dadeg_pos=PUNC|old_r=PUNC|old_h=5	5	punct	_	_
 
 # sent_id = test-s1228
 # text = حداکثر امتیاز زبان اول از 16 امتیاز به 20 امتیاز افزایش خواهد یافت و برای هر شغل یک حداقل امتیازی را مد نظر خواهند گرفت.
@@ -25982,26 +26026,28 @@
 
 # sent_id = test-s1329
 # text = شما به خودتان این اجازه را دادید که جلوی این همه آدم شخصیت من را به راحتی لگدمال بکنی.
-1	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=57574|dadeg_pos=PR|old_r=SBJ|old_h=7	7	nsubj	_	_
-2	به	به	ADP	PREP	attachment=ISO|senID=57574|dadeg_pos=PREP|old_r=VPP|old_h=7	3	case	_	_
-3	خودتان	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=57574|dadeg_pos=PR|old_r=POSDEP|old_h=2	7	obl:arg	_	_
-4	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=57574|dadeg_pos=PREM|old_r=NPREMOD|old_h=5	5	det	_	_
-5	اجازه	اجازه	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=PREDEP|old_h=6	7	obj	_	_
-6	را	را	ADP	POSTP	attachment=ISO|senID=57574|dadeg_pos=POSTP|old_r=OBJ|old_h=7	5	case	_	_
-7	دادید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=GS|senID=57574|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-8	که	که	SCONJ	SUBR	attachment=ISO|senID=57574|dadeg_pos=SUBR|old_r=NCL|old_h=5	19	mark	_	_
-9	جلوی	جلوی	ADP	PREP	attachment=ISO|senID=57574|dadeg_pos=PREP|old_r=ADV|old_h=19	12	case	_	_
-10	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=57574|dadeg_pos=PREM|old_r=NPREMOD|old_h=11	11	det	_	_
-11	همه	همه	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=57574|dadeg_pos=N|old_r=MESU|old_h=12	19	obl	_	_
-12	آدم	آدم	NOUN	N_ANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=POSDEP|old_h=9	11	nmod	_	_
-13	شخصیت	شخصیت	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=PREDEP|old_h=15	19	obj	_	_
-14	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=57574|dadeg_pos=PR|old_r=MOZ|old_h=13	13	nmod	_	_
-15	را	را	ADP	POSTP	attachment=ISO|senID=57574|dadeg_pos=POSTP|old_r=OBJ|old_h=19	13	case	_	_
-16	به	به	ADP	PREP	attachment=ISO|senID=57574|dadeg_pos=PREP|old_r=ADV|old_h=19	17	case	_	_
-17	راحتی	راحتی	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=POSDEP|old_h=16	19	obl	_	_
-18	لگدمال	لگدمال	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=NVE|old_h=19	19	compound:lvc	_	_
-19	بکنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=57574|dadeg_pos=V|old_r=PRD|old_h=8	5	acl	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	attachment=ISO|senID=57574|dadeg_pos=PUNC|old_r=PUNC|old_h=7	7	punct	_	_
+1	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=57574|dadeg_pos=PR|old_r=SBJ|old_h=8	8	nsubj	_	_
+2	به	به	ADP	PREP	attachment=ISO|senID=57574|dadeg_pos=PREP|old_r=VPP|old_h=8	3	case	_	_
+3-4	خودتان	_	_	_	_	_	_	_	_
+3	خود	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=57574|dadeg_pos=PR|old_r=POSDEP|old_h=2	8	obl:arg	_	_
+4	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=57574|dadeg_pos=PR|old_r=MOZ|old_h=3	3	nmod	_	_
+5	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=57574|dadeg_pos=PREM|old_r=NPREMOD|old_h=6	6	det	_	_
+6	اجازه	اجازه	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=PREDEP|old_h=7	8	obj	_	_
+7	را	را	ADP	POSTP	attachment=ISO|senID=57574|dadeg_pos=POSTP|old_r=OBJ|old_h=8	6	case	_	_
+8	دادید	داد#ده	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=GS|senID=57574|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
+9	که	که	SCONJ	SUBR	attachment=ISO|senID=57574|dadeg_pos=SUBR|old_r=NCL|old_h=6	20	mark	_	_
+10	جلوی	جلوی	ADP	PREP	attachment=ISO|senID=57574|dadeg_pos=PREP|old_r=ADV|old_h=20	13	case	_	_
+11	این	این	DET	PREM_DEMAJ	attachment=ISO|senID=57574|dadeg_pos=PREM|old_r=NPREMOD|old_h=12	12	det	_	_
+12	همه	همه	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=57574|dadeg_pos=N|old_r=MESU|old_h=13	20	obl	_	_
+13	آدم	آدم	NOUN	N_ANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=POSDEP|old_h=10	12	nmod	_	_
+14	شخصیت	شخصیت	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=PREDEP|old_h=16	20	obj	_	_
+15	من	من	PRON	PR_SEPER	person=1|attachment=ISO|number=SING|senID=57574|dadeg_pos=PR|old_r=MOZ|old_h=14	14	nmod	_	_
+16	را	را	ADP	POSTP	attachment=ISO|senID=57574|dadeg_pos=POSTP|old_r=OBJ|old_h=20	14	case	_	_
+17	به	به	ADP	PREP	attachment=ISO|senID=57574|dadeg_pos=PREP|old_r=ADV|old_h=20	18	case	_	_
+18	راحتی	راحتی	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=POSDEP|old_h=17	20	obl	_	_
+19	لگدمال	لگدمال	NOUN	N_IANM	attachment=ISO|number=SING|senID=57574|dadeg_pos=N|old_r=NVE|old_h=20	20	compound:lvc	_	_
+20	بکنی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=57574|dadeg_pos=V|old_r=PRD|old_h=9	6	acl	_	SpaceAfter=No
+21	.	.	PUNCT	PUNC	attachment=ISO|senID=57574|dadeg_pos=PUNC|old_r=PUNC|old_h=8	8	punct	_	_
 
 # sent_id = test-s1330
 # text = بازیکنان لوطی‌گری کردند.
@@ -27253,21 +27299,25 @@
 3-4	انسانی	_	_	_	_	_	_	_	_
 3	انسان	انسان	NOUN	N_ANM	attachment=NXT|number=SING|senID=58650|dadeg_pos=N|old_r=MOS|old_h=4	0	root	_	_
 4	ی	#هست	AUX	AUX	person=3|attachment=PRV|number=SING|tma=H|senID=58650|dadeg_pos=AUX|old_r=root|old_h=0	3	cop	_	_
-5	و	و	CCONJ	CONJ	attachment=ISO|senID=58650|dadeg_pos=CONJ|old_r=VCONJ|old_h=4	11	cc	_	_
-6	با	با	ADP	PREP	attachment=ISO|senID=58650|dadeg_pos=PREP|old_r=ADV|old_h=11	7	case	_	_
-7	ارادهٔ	اراده	NOUN	N_IANM	attachment=ISO|number=SING|senID=58650|dadeg_pos=N|old_r=POSDEP|old_h=6	11	obl	_	_
-8	خودت	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=58650|dadeg_pos=PR|old_r=MOZ|old_h=7	7	nmod	_	_
-9	خودت	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=58650|dadeg_pos=PR|old_r=PREDEP|old_h=10	11	obj	_	_
-10	را	را	ADP	POSTP	attachment=ISO|senID=58650|dadeg_pos=POSTP|old_r=OBJ|old_h=11	9	case	_	_
-11	ساختی	ساخت#ساز	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650|dadeg_pos=V|old_r=POSDEP|old_h=5	3	conj	_	_
-12	و	و	CCONJ	CONJ	attachment=ISO|senID=58650|dadeg_pos=CONJ|old_r=VCONJ|old_h=11	18	cc	_	_
-13	بر	بر	ADP	PREP	attachment=ISO|senID=58650|dadeg_pos=PREP|old_r=NPP|old_h=16	14	case	_	_
-14	نیروهای	نیرو	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=58650|dadeg_pos=N|old_r=POSDEP|old_h=13	18	obl:arg	_	_
-15	اهریمنی	اهریمنی	ADJ	ADJ_AJP	attachment=ISO|senID=58650|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=14	14	amod	_	_
-16	غلبه	غلبه	NOUN	N_IANM	attachment=ISO|number=SING|senID=58650|dadeg_pos=N|old_r=NVE|old_h=18	18	compound:lvc	_	_
-17	پیدا	پیدا	ADJ	ADJ_AJP	attachment=ISO|senID=58650|dadeg_pos=ADJ|old_r=LVP|old_h=18	18	compound:lv	_	_
-18	کردی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650|dadeg_pos=V|old_r=POSDEP|old_h=12	3	conj	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	attachment=ISO|senID=58650|dadeg_pos=PUNC|old_r=PUNC|old_h=18	18	punct	_	_
+5	و	و	CCONJ	CONJ	attachment=ISO|senID=58650|dadeg_pos=CONJ|old_r=VCONJ|old_h=4	13	cc	_	_
+6	با	با	ADP	PREP	attachment=ISO|senID=58650|dadeg_pos=PREP|old_r=ADV|old_h=13	7	case	_	_
+7	ارادهٔ	اراده	NOUN	N_IANM	attachment=ISO|number=SING|senID=58650|dadeg_pos=N|old_r=POSDEP|old_h=6	13	obl	_	_
+8-9	خودت	_	_	_	_	_	_	_	_
+8	خود	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=58650|dadeg_pos=PR|old_r=MOZ|old_h=7	7	nmod	_	_
+9	ت	تو	PRON	PR_JOPER	number=SING|person=2|pronType=Prs|senID=58650|dadeg_pos=PR|old_r=MOZ|old_h=8	8	nmod	_	_
+10-11	خودت	_	_	_	_	_	_	_	_
+10	خود	خودت	PRON	PR_UCREFX	person=2|attachment=ISO|number=SING|senID=58650|dadeg_pos=PR|old_r=PREDEP|old_h=12	13	obj	_	_
+11	ت	تو	PRON	PR_JOPER	number=SING|person=2|pronType=Prs|senID=58650|dadeg_pos=PR|old_r=MOZ|old_h=10	10	nmod	_	_
+12	را	را	ADP	POSTP	attachment=ISO|senID=58650|dadeg_pos=POSTP|old_r=OBJ|old_h=13	10	case	_	_
+13	ساختی	ساخت#ساز	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650|dadeg_pos=V|old_r=POSDEP|old_h=5	3	conj	_	_
+14	و	و	CCONJ	CONJ	attachment=ISO|senID=58650|dadeg_pos=CONJ|old_r=VCONJ|old_h=13	20	cc	_	_
+15	بر	بر	ADP	PREP	attachment=ISO|senID=58650|dadeg_pos=PREP|old_r=NPP|old_h=18	16	case	_	_
+16	نیروهای	نیرو	NOUN	N_IANM	attachment=ISO|number=PLUR|senID=58650|dadeg_pos=N|old_r=POSDEP|old_h=15	20	obl:arg	_	_
+17	اهریمنی	اهریمنی	ADJ	ADJ_AJP	attachment=ISO|senID=58650|dadeg_pos=ADJ|old_r=NPOSTMOD|old_h=16	16	amod	_	_
+18	غلبه	غلبه	NOUN	N_IANM	attachment=ISO|number=SING|senID=58650|dadeg_pos=N|old_r=NVE|old_h=20	20	compound:lvc	_	_
+19	پیدا	پیدا	ADJ	ADJ_AJP	attachment=ISO|senID=58650|dadeg_pos=ADJ|old_r=LVP|old_h=20	20	compound:lv	_	_
+20	کردی	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650|dadeg_pos=V|old_r=POSDEP|old_h=14	3	conj	_	SpaceAfter=No
+21	.	.	PUNCT	PUNC	attachment=ISO|senID=58650|dadeg_pos=PUNC|old_r=PUNC|old_h=20	20	punct	_	_
 
 # sent_id = test-s1392
 # text = پر و بالشان به سرعت فرسایش پیدا می‌کند.
@@ -27601,16 +27651,18 @@
 
 # sent_id = test-s1409
 # text = خودمان بنا گذاردیم که همین ورقه را ممهور نماییم.
-1	خودمان	خودمان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=58832|dadeg_pos=PR|old_r=SBJ|old_h=3	3	nsubj	_	_
-2	بنا	بنا	NOUN	N_IANM	attachment=ISO|number=SING|senID=58832|dadeg_pos=N|old_r=NVE|old_h=3	3	compound:lvc	_	_
-3	گذاردیم	گذارد#گذار	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=58832|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-4	که	که	SCONJ	SUBR	attachment=ISO|senID=58832|dadeg_pos=SUBR|old_r=VCL|old_h=3	9	mark	_	_
-5	همین	همین	DET	PREM_DEMAJ	attachment=ISO|senID=58832|dadeg_pos=PREM|old_r=NPREMOD|old_h=6	6	det	_	_
-6	ورقه	ورقه	NOUN	N_IANM	attachment=ISO|number=SING|senID=58832|dadeg_pos=N|old_r=PREDEP|old_h=7	9	obj	_	_
-7	را	را	ADP	POSTP	attachment=ISO|senID=58832|dadeg_pos=POSTP|old_r=OBJ|old_h=9	6	case	_	_
-8	ممهور	ممهور	ADJ	ADJ_AJP	attachment=ISO|senID=58832|dadeg_pos=ADJ|old_r=MOS|old_h=9	9	xcomp	_	_
-9	نماییم	نمود#نما	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=58832|dadeg_pos=V|old_r=PRD|old_h=4	3	ccomp	_	SpaceAfter=No
-10	.	.	PUNCT	PUNC	attachment=ISO|senID=58832|dadeg_pos=PUNC|old_r=PUNC|old_h=3	3	punct	_	_
+1-2	خودمان	_	_	_	_	_	_	_	_
+1	خود	خودمان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=58832|dadeg_pos=PR|old_r=SBJ|old_h=4	4	nsubj	_	_
+2	مان	ما	PRON	PR_JOPER	number=PLUR|person=1|pronType=Prs|senID=58832|dadeg_pos=PR|old_r=MOZ|old_h=1	1	nmod	_	_
+3	بنا	بنا	NOUN	N_IANM	attachment=ISO|number=SING|senID=58832|dadeg_pos=N|old_r=NVE|old_h=4	4	compound:lvc	_	_
+4	گذاردیم	گذارد#گذار	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=58832|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
+5	که	که	SCONJ	SUBR	attachment=ISO|senID=58832|dadeg_pos=SUBR|old_r=VCL|old_h=4	10	mark	_	_
+6	همین	همین	DET	PREM_DEMAJ	attachment=ISO|senID=58832|dadeg_pos=PREM|old_r=NPREMOD|old_h=7	7	det	_	_
+7	ورقه	ورقه	NOUN	N_IANM	attachment=ISO|number=SING|senID=58832|dadeg_pos=N|old_r=PREDEP|old_h=8	10	obj	_	_
+8	را	را	ADP	POSTP	attachment=ISO|senID=58832|dadeg_pos=POSTP|old_r=OBJ|old_h=10	7	case	_	_
+9	ممهور	ممهور	ADJ	ADJ_AJP	attachment=ISO|senID=58832|dadeg_pos=ADJ|old_r=MOS|old_h=10	10	xcomp	_	_
+10	نماییم	نمود#نما	VERB	V_ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=58832|dadeg_pos=V|old_r=PRD|old_h=5	4	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	PUNC	attachment=ISO|senID=58832|dadeg_pos=PUNC|old_r=PUNC|old_h=4	4	punct	_	_
 
 # sent_id = test-s1410
 # text = ابتدا در بازار کار، بنایی کردم.
@@ -28229,24 +28281,26 @@
 # text = شما می‌خواهید تا آخر عمرتان حسرت بخورید و خودتان را سرزنش کنید و با خدا غریبی کنید؟
 1	شما	شما	PRON	PR_SEPER	person=2|attachment=ISO|number=PLUR|senID=59076|dadeg_pos=PR|old_r=SBJ|old_h=2	2	nsubj	_	_
 2	می‌خواهید	خواست#خواه	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=59076|dadeg_pos=V|old_r=root|old_h=0	0	root	_	_
-3	تا	تا	ADP	PREP	attachment=ISO|senID=59076|dadeg_pos=PREP|old_r=ADV|old_h=18	4	case	_	_
-4	آخر	آخر	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=POSDEP|old_h=3	18	obl	_	_
+3	تا	تا	ADP	PREP	attachment=ISO|senID=59076|dadeg_pos=PREP|old_r=ADV|old_h=19	4	case	_	_
+4	آخر	آخر	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=POSDEP|old_h=3	19	obl	_	_
 5-6	عمرتان	_	_	_	_	_	_	_	_
 5	عمر	عمر	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=MOZ|old_h=4	4	nmod	_	_
 6	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=59076|dadeg_pos=PR|old_r=MOZ|old_h=5	5	nmod	_	_
 7	حسرت	حسرت	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=NVE|old_h=8	8	compound:lvc	_	_
 8	بخورید	خورد#خور	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076|dadeg_pos=V|old_r=VCL|old_h=2	2	ccomp	_	_
-9	و	و	CCONJ	CONJ	attachment=ISO|senID=59076|dadeg_pos=CONJ|old_r=VCONJ|old_h=8	13	cc	_	_
-10	خودتان	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=59076|dadeg_pos=PR|old_r=PREDEP|old_h=11	13	obj	_	_
-11	را	را	ADP	POSTP	attachment=ISO|senID=59076|dadeg_pos=POSTP|old_r=OBJ|old_h=13	10	case	_	_
-12	سرزنش	سرزنش	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=NVE|old_h=13	13	compound:lvc	_	_
-13	کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076|dadeg_pos=V|old_r=POSDEP|old_h=9	8	conj	_	_
-14	و	و	CCONJ	CONJ	attachment=ISO|senID=59076|dadeg_pos=CONJ|old_r=VCONJ|old_h=13	18	cc	_	_
-15	با	با	ADP	PREP	attachment=ISO|senID=59076|dadeg_pos=PREP|old_r=NPP|old_h=17	16	case	_	_
-16	خدا	خدا	NOUN	N_ANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=POSDEP|old_h=15	18	obl:arg	_	_
-17	غریبی	غریبی	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=NVE|old_h=18	18	compound:lvc	_	_
-18	کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076|dadeg_pos=V|old_r=POSDEP|old_h=14	8	conj	_	SpaceAfter=No
-19	؟	؟	PUNCT	PUNC	attachment=ISO|senID=59076|dadeg_pos=PUNC|old_r=PUNC|old_h=2	2	punct	_	_
+9	و	و	CCONJ	CONJ	attachment=ISO|senID=59076|dadeg_pos=CONJ|old_r=VCONJ|old_h=8	14	cc	_	_
+10-11	خودتان	_	_	_	_	_	_	_	_
+10	خود	خودتان	PRON	PR_UCREFX	person=2|attachment=ISO|number=PLUR|senID=59076|dadeg_pos=PR|old_r=PREDEP|old_h=12	14	obj	_	_
+11	تان	شما	PRON	PR_JOPER	number=PLUR|person=2|pronType=Prs|senID=59076|dadeg_pos=PR|old_r=MOZ|old_h=10	10	nmod	_	_
+12	را	را	ADP	POSTP	attachment=ISO|senID=59076|dadeg_pos=POSTP|old_r=OBJ|old_h=14	10	case	_	_
+13	سرزنش	سرزنش	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=NVE|old_h=14	14	compound:lvc	_	_
+14	کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076|dadeg_pos=V|old_r=POSDEP|old_h=9	8	conj	_	_
+15	و	و	CCONJ	CONJ	attachment=ISO|senID=59076|dadeg_pos=CONJ|old_r=VCONJ|old_h=14	19	cc	_	_
+16	با	با	ADP	PREP	attachment=ISO|senID=59076|dadeg_pos=PREP|old_r=NPP|old_h=18	17	case	_	_
+17	خدا	خدا	NOUN	N_ANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=POSDEP|old_h=16	19	obl:arg	_	_
+18	غریبی	غریبی	NOUN	N_IANM	attachment=ISO|number=SING|senID=59076|dadeg_pos=N|old_r=NVE|old_h=19	19	compound:lvc	_	_
+19	کنید	کرد#کن	VERB	V_ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076|dadeg_pos=V|old_r=POSDEP|old_h=15	8	conj	_	SpaceAfter=No
+20	؟	؟	PUNCT	PUNC	attachment=ISO|senID=59076|dadeg_pos=PUNC|old_r=PUNC|old_h=2	2	punct	_	_
 
 # sent_id = test-s1434
 # text = من شبهه را می‌پذیرم و اگر تفکر فلسفی را با آسیب‌هایی که گفتیم در نظر بگیریم، بسیار طبیعی است که ذهن بتواند خودکامگی بکند.

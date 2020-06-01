@@ -1195,13 +1195,15 @@
 
 # sent_id = test-s58
 # text = تو با وجود خودت پا می‌گیری.
-1	تو	تو	PR	SEPER	person=2|attachment=ISO|number=SING|senID=40438	6	SBJ	_	_
-2	با	با	PREP	PREP	attachment=ISO|senID=40438	6	ADV	_	_
+1	تو	تو	PR	SEPER	person=2|attachment=ISO|number=SING|senID=40438	7	SBJ	_	_
+2	با	با	PREP	PREP	attachment=ISO|senID=40438	7	ADV	_	_
 3	وجود	وجود	N	IANM	attachment=ISO|number=SING|senID=40438	2	POSDEP	_	_
-4	خودت	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=40438	3	MOZ	_	_
-5	پا	پا	N	IANM	attachment=ISO|number=SING|senID=40438	6	NVE	_	_
-6	می‌گیری	گرفت#گیر	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=40438	0	root	_	SpaceAfter=No
-7	.	.	PUNC	PUNC	attachment=ISO|senID=40438	6	PUNC	_	_
+4-5	خودت	_	_	_	_	_	_	_	_
+4	خود	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=40438	3	MOZ	_	_
+5	ت	تو	PR	JOPER	number=SING|person=2|pronType=Prs|senID=40438	4	MOZ	_	_
+6	پا	پا	N	IANM	attachment=ISO|number=SING|senID=40438	7	NVE	_	_
+7	می‌گیری	گرفت#گیر	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=40438	0	root	_	SpaceAfter=No
+8	.	.	PUNC	PUNC	attachment=ISO|senID=40438	7	PUNC	_	_
 
 # sent_id = test-s59
 # text = اگر همگان مانند میثم، سلمان، ابوذر، حبیب و رشید هجری و... به ساحت قدسی امامان آگاهی داشتند، کسی به آنها بی‌حرمتی نمی‌کرد.
@@ -1568,12 +1570,14 @@
 
 # sent_id = test-s80
 # text = مدام دور خودم پیچ می‌زنم.
-1	مدام	مدام	ADJ	AJP	attachment=ISO|senID=40658	5	ADV	_	_
-2	دور	دور	PREP	PREP	attachment=ISO|senID=40658	5	ADV	_	_
-3	خودم	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=40658	2	POSDEP	_	_
-4	پیچ	پیچ	N	IANM	attachment=ISO|number=SING|senID=40658	5	NVE	_	_
-5	می‌زنم	زد#زن	V	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40658	0	root	_	SpaceAfter=No
-6	.	.	PUNC	PUNC	attachment=ISO|senID=40658	5	PUNC	_	_
+1	مدام	مدام	ADJ	AJP	attachment=ISO|senID=40658	6	ADV	_	_
+2	دور	دور	PREP	PREP	attachment=ISO|senID=40658	6	ADV	_	_
+3-4	خودم	_	_	_	_	_	_	_	_
+3	خود	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=40658	2	POSDEP	_	_
+4	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=40658	3	MOZ	_	_
+5	پیچ	پیچ	N	IANM	attachment=ISO|number=SING|senID=40658	6	NVE	_	_
+6	می‌زنم	زد#زن	V	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40658	0	root	_	SpaceAfter=No
+7	.	.	PUNC	PUNC	attachment=ISO|senID=40658	6	PUNC	_	_
 
 # sent_id = test-s81
 # text = با آنها نیکی کن.
@@ -2164,19 +2168,21 @@
 
 # sent_id = test-s114
 # text = در این خطبه هم خودم و شما را از گناهان پرهیز می‌دارم.
-1	در	در	PREP	PREP	attachment=ISO|senID=40998	12	ADV	_	_
+1	در	در	PREP	PREP	attachment=ISO|senID=40998	13	ADV	_	_
 2	این	این	PREM	DEMAJ	attachment=ISO|senID=40998	3	NPREMOD	_	_
 3	خطبه	خطبه	N	IANM	attachment=ISO|number=SING|senID=40998	1	POSDEP	_	_
 4	هم	هم	ADV	SADV	attachment=ISO|senID=40998	3	POSDEP	_	_
-5	خودم	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=40998	8	PREDEP	_	_
-6	و	و	CONJ	CONJ	attachment=ISO|senID=40998	5	NCONJ	_	_
-7	شما	شما	PR	SEPER	person=2|attachment=ISO|number=PLUR|senID=40998	6	POSDEP	_	_
-8	را	را	POSTP	POSTP	attachment=ISO|senID=40998	12	OBJ	_	_
-9	از	از	PREP	PREP	attachment=ISO|senID=40998	11	NPP	_	_
-10	گناهان	گناه	N	IANM	attachment=ISO|number=PLUR|senID=40998	9	POSDEP	_	_
-11	پرهیز	پرهیز	N	IANM	attachment=ISO|number=SING|senID=40998	12	NVE	_	_
-12	می‌دارم	داشت#دار	V	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40998	0	root	_	SpaceAfter=No
-13	.	.	PUNC	PUNC	attachment=ISO|senID=40998	12	PUNC	_	_
+5-6	خودم	_	_	_	_	_	_	_	_
+5	خود	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=40998	9	PREDEP	_	_
+6	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=40998	5	MOZ	_	_
+7	و	و	CONJ	CONJ	attachment=ISO|senID=40998	5	NCONJ	_	_
+8	شما	شما	PR	SEPER	person=2|attachment=ISO|number=PLUR|senID=40998	7	POSDEP	_	_
+9	را	را	POSTP	POSTP	attachment=ISO|senID=40998	13	OBJ	_	_
+10	از	از	PREP	PREP	attachment=ISO|senID=40998	12	NPP	_	_
+11	گناهان	گناه	N	IANM	attachment=ISO|number=PLUR|senID=40998	10	POSDEP	_	_
+12	پرهیز	پرهیز	N	IANM	attachment=ISO|number=SING|senID=40998	13	NVE	_	_
+13	می‌دارم	داشت#دار	V	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=40998	0	root	_	SpaceAfter=No
+14	.	.	PUNC	PUNC	attachment=ISO|senID=40998	13	PUNC	_	_
 
 # sent_id = test-s115
 # text = برخی سرویس‌های جستجوی یاهو به‌سازی شد.
@@ -2223,15 +2229,17 @@
 
 # sent_id = test-s119
 # text = در شهر هم خودمان پخت و پز می‌کردیم.
-1	در	در	PREP	PREP	attachment=ISO|senID=41048	8	ADV	_	_
+1	در	در	PREP	PREP	attachment=ISO|senID=41048	9	ADV	_	_
 2	شهر	شهر	N	IANM	attachment=ISO|number=SING|senID=41048	1	POSDEP	_	_
 3	هم	هم	ADV	SADV	attachment=ISO|senID=41048	2	POSDEP	_	_
-4	خودمان	خودمان	PR	UCREFX	person=1|attachment=ISO|number=PLUR|senID=41048	8	SBJ	_	_
-5	پخت	پخت	N	IANM	attachment=ISO|number=SING|senID=41048	8	NVE	_	_
-6	و	و	CONJ	CONJ	attachment=ISO|senID=41048	5	NCONJ	_	_
-7	پز	پز	N	IANM	attachment=ISO|number=SING|senID=41048	6	POSDEP	_	_
-8	می‌کردیم	کرد#کن	V	ACT	person=1|attachment=ISO|number=PLUR|tma=GES|senID=41048	0	root	_	SpaceAfter=No
-9	.	.	PUNC	PUNC	attachment=ISO|senID=41048	8	PUNC	_	_
+4-5	خودمان	_	_	_	_	_	_	_	_
+4	خود	خودمان	PR	UCREFX	person=1|attachment=ISO|number=PLUR|senID=41048	9	SBJ	_	_
+5	مان	ما	PR	JOPER	number=PLUR|person=1|pronType=Prs|senID=41048	4	MOZ	_	_
+6	پخت	پخت	N	IANM	attachment=ISO|number=SING|senID=41048	9	NVE	_	_
+7	و	و	CONJ	CONJ	attachment=ISO|senID=41048	6	NCONJ	_	_
+8	پز	پز	N	IANM	attachment=ISO|number=SING|senID=41048	7	POSDEP	_	_
+9	می‌کردیم	کرد#کن	V	ACT	person=1|attachment=ISO|number=PLUR|tma=GES|senID=41048	0	root	_	SpaceAfter=No
+10	.	.	PUNC	PUNC	attachment=ISO|senID=41048	9	PUNC	_	_
 
 # sent_id = test-s120
 # text = اگر شوق پرواز در سینه‌اش پرپر نمی‌زد، هرگز وصیت نمی‌کرد.
@@ -4282,36 +4290,38 @@
 
 # sent_id = test-s230
 # text = اگر در خواب ببینید که خودتان سوت می‌زنید و این کار را با دهان و لب خود انجام می‌دهید دروغ خواهید گفت یا سخنی زشت بر زبان خواهید آورد.
-1	اگر	اگر	SUBR	SUBR	attachment=ISO|senID=42178	22	AJUCL	_	_
+1	اگر	اگر	SUBR	SUBR	attachment=ISO|senID=42178	23	AJUCL	_	_
 2	در	در	PREP	PREP	attachment=ISO|senID=42178	4	ADV	_	_
 3	خواب	خواب	N	IANM	attachment=ISO|number=SING|senID=42178	2	POSDEP	_	_
 4	ببینید	دید#بین	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=42178	1	PRD	_	_
 5	که	که	SUBR	SUBR	attachment=ISO|senID=42178	4	VCL	_	_
-6	خودتان	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=42178	8	SBJ	_	_
-7	سوت	سوت	N	IANM	attachment=ISO|number=SING|senID=42178	8	NVE	_	_
-8	می‌زنید	زد#زن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178	5	VCL	_	_
-9	و	و	CONJ	CONJ	attachment=ISO|senID=42178	8	VCONJ	_	_
-10	این	این	PREM	DEMAJ	attachment=ISO|senID=42178	11	NPREMOD	_	_
-11	کار	کار	N	IANM	attachment=ISO|number=SING|senID=42178	12	PREDEP	_	_
-12	را	را	POSTP	POSTP	attachment=ISO|senID=42178	19	OBJ	_	_
-13	با	با	PREP	PREP	attachment=ISO|senID=42178	19	ADV	_	_
-14	دهان	دهان	N	IANM	attachment=ISO|number=SING|senID=42178	13	POSDEP	_	_
-15	و	و	CONJ	CONJ	attachment=ISO|senID=42178	14	NCONJ	_	_
-16	لب	لب	N	IANM	attachment=ISO|number=SING|senID=42178	15	POSDEP	_	_
-17	خود	خود	PR	CREFX	attachment=ISO|senID=42178	14	MOZ	_	_
-18	انجام	انجام	N	IANM	attachment=ISO|number=SING|senID=42178	19	NVE	_	_
-19	می‌دهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178	9	POSDEP	_	_
-20	دروغ	دروغ	N	IANM	attachment=ISO|number=SING|senID=42178	22	OBJ	_	_
-21	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178	22	aux	_	_
-22	گفت	گفت#گو	V	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_fpos=ACT|senID=42178	0	root	_	_
-23	یا	یا	CONJ	CONJ	attachment=ISO|senID=42178	22	VCONJ	_	_
-24	سخنی	سخن	N	IANM	attachment=ISO|number=SING|senID=42178	29	OBJ	_	_
-25	زشت	زشت	ADJ	AJP	attachment=ISO|senID=42178	24	NPOSTMOD	_	_
-26	بر	بر	PREP	PREP	attachment=ISO|senID=42178	29	VPP	_	_
-27	زبان	زبان	N	IANM	attachment=ISO|number=SING|senID=42178	26	POSDEP	_	_
-28	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178	29	aux	_	_
-29	آورد	آورد#آور	V	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_fpos=ACT|senID=42178	23	POSDEP	_	SpaceAfter=No
-30	.	.	PUNC	PUNC	attachment=ISO|senID=42178	29	PUNC	_	_
+6-7	خودتان	_	_	_	_	_	_	_	_
+6	خود	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=42178	9	SBJ	_	_
+7	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=42178	6	MOZ	_	_
+8	سوت	سوت	N	IANM	attachment=ISO|number=SING|senID=42178	9	NVE	_	_
+9	می‌زنید	زد#زن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178	5	VCL	_	_
+10	و	و	CONJ	CONJ	attachment=ISO|senID=42178	9	VCONJ	_	_
+11	این	این	PREM	DEMAJ	attachment=ISO|senID=42178	12	NPREMOD	_	_
+12	کار	کار	N	IANM	attachment=ISO|number=SING|senID=42178	13	PREDEP	_	_
+13	را	را	POSTP	POSTP	attachment=ISO|senID=42178	20	OBJ	_	_
+14	با	با	PREP	PREP	attachment=ISO|senID=42178	20	ADV	_	_
+15	دهان	دهان	N	IANM	attachment=ISO|number=SING|senID=42178	14	POSDEP	_	_
+16	و	و	CONJ	CONJ	attachment=ISO|senID=42178	15	NCONJ	_	_
+17	لب	لب	N	IANM	attachment=ISO|number=SING|senID=42178	16	POSDEP	_	_
+18	خود	خود	PR	CREFX	attachment=ISO|senID=42178	15	MOZ	_	_
+19	انجام	انجام	N	IANM	attachment=ISO|number=SING|senID=42178	20	NVE	_	_
+20	می‌دهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=42178	10	POSDEP	_	_
+21	دروغ	دروغ	N	IANM	attachment=ISO|number=SING|senID=42178	23	OBJ	_	_
+22	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178	23	aux	_	_
+23	گفت	گفت#گو	V	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_fpos=ACT|senID=42178	0	root	_	_
+24	یا	یا	CONJ	CONJ	attachment=ISO|senID=42178	23	VCONJ	_	_
+25	سخنی	سخن	N	IANM	attachment=ISO|number=SING|senID=42178	30	OBJ	_	_
+26	زشت	زشت	ADJ	AJP	attachment=ISO|senID=42178	25	NPOSTMOD	_	_
+27	بر	بر	PREP	PREP	attachment=ISO|senID=42178	30	VPP	_	_
+28	زبان	زبان	N	IANM	attachment=ISO|number=SING|senID=42178	27	POSDEP	_	_
+29	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|tense=Fut|verbForm=Fin|senID=42178	30	aux	_	_
+30	آورد	آورد#آور	V	ACT	number=SING|person=3|tense=Past|tma=AY|dadeg_fpos=ACT|senID=42178	24	POSDEP	_	SpaceAfter=No
+31	.	.	PUNC	PUNC	attachment=ISO|senID=42178	30	PUNC	_	_
 
 # sent_id = test-s231
 # text = با کلمات می‌توان جمله‌سازی کرد و در هر زبانی با ادای جملات صحبت می‌کنیم.
@@ -5072,16 +5082,18 @@
 
 # sent_id = test-s278
 # text = من حساب خود را با خودم تسویه کرده بودم.
-1	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=42662	8	SBJ	_	_
+1	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=42662	9	SBJ	_	_
 2	حساب	حساب	N	IANM	attachment=ISO|number=SING|senID=42662	4	PREDEP	_	_
 3	خود	خود	PR	CREFX	attachment=ISO|senID=42662	2	MOZ	_	_
-4	را	را	POSTP	POSTP	attachment=ISO|senID=42662	8	OBJ	_	_
-5	با	با	PREP	PREP	attachment=ISO|senID=42662	7	NPP	_	_
-6	خودم	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=42662	5	POSDEP	_	_
-7	تسویه	تسویه	N	IANM	attachment=ISO|number=SING|senID=42662	8	NVE	_	_
-8	کرده	کرد#کن	V	ACT	number=SING|person=3|tense=Part|tma=GB|dadeg_fpos=ACT|senID=42662	0	root	_	_
-9	بودم	بود#باش	AUX	AUX	number=SING|person=1|tense=Past|senID=42662	8	aux	_	SpaceAfter=No
-10	.	.	PUNC	PUNC	attachment=ISO|senID=42662	8	PUNC	_	_
+4	را	را	POSTP	POSTP	attachment=ISO|senID=42662	9	OBJ	_	_
+5	با	با	PREP	PREP	attachment=ISO|senID=42662	8	NPP	_	_
+6-7	خودم	_	_	_	_	_	_	_	_
+6	خود	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=42662	5	POSDEP	_	_
+7	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=42662	6	MOZ	_	_
+8	تسویه	تسویه	N	IANM	attachment=ISO|number=SING|senID=42662	9	NVE	_	_
+9	کرده	کرد#کن	V	ACT	number=SING|person=3|tense=Part|tma=GB|dadeg_fpos=ACT|senID=42662	0	root	_	_
+10	بودم	بود#باش	AUX	AUX	number=SING|person=1|tense=Past|senID=42662	9	aux	_	SpaceAfter=No
+11	.	.	PUNC	PUNC	attachment=ISO|senID=42662	9	PUNC	_	_
 
 # sent_id = test-s279
 # text = آیا حدیثی از انبیا است که برآورده شدن حاجت بعد از ختم قرآن را تضمین بکند؟
@@ -6511,24 +6523,26 @@
 
 # sent_id = test-s349
 # text = زنان چابهاری نقاب‌هایی که خودشان چون تابلویی رؤیایی از رنگ‌های زیبا سوزن‌دوزی کرده‌اند را به صورت می‌زنند.
-1	زنان	زن	N	ANM	attachment=ISO|number=PLUR|senID=46689	17	SBJ	_	_
+1	زنان	زن	N	ANM	attachment=ISO|number=PLUR|senID=46689	18	SBJ	_	_
 2	چابهاری	چابهاری	ADJ	AJP	attachment=ISO|senID=46689	1	NPOSTMOD	_	_
-3	نقاب‌هایی	نقاب	N	IANM	attachment=ISO|number=PLUR|senID=46689	14	PREDEP	_	_
+3	نقاب‌هایی	نقاب	N	IANM	attachment=ISO|number=PLUR|senID=46689	15	PREDEP	_	_
 4	که	که	SUBR	SUBR	attachment=ISO|senID=46689	3	NCL	_	_
-5	خودشان	خودشان	PR	UCREFX	person=3|attachment=ISO|number=PLUR|senID=46689	13	SBJ	_	_
-6	چون	چون	PREP	PREP	attachment=ISO|senID=46689	13	ADV	_	_
-7	تابلویی	تابلو	N	IANM	attachment=ISO|number=SING|senID=46689	6	POSDEP	_	_
-8	رؤیایی	رؤیایی	ADJ	AJP	attachment=ISO|senID=46689	7	NPOSTMOD	_	_
-9	از	از	PREP	PREP	attachment=ISO|senID=46689	7	NPP	_	_
-10	رنگ‌های	رنگ	N	IANM	attachment=ISO|number=PLUR|senID=46689	9	POSDEP	_	_
-11	زیبا	زیبا	ADJ	AJP	attachment=ISO|senID=46689	10	NPOSTMOD	_	_
-12	سوزن‌دوزی	سوزن‌دوزی	N	IANM	attachment=ISO|number=SING|senID=46689	13	NVE	_	_
-13	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=46689	4	PRD	_	_
-14	را	را	POSTP	POSTP	attachment=ISO|senID=46689	17	OBJ	_	_
-15	به	به	PREP	PREP	attachment=ISO|senID=46689	17	VPP	_	_
-16	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=46689	15	POSDEP	_	_
-17	می‌زنند	زد#زن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=46689	0	root	_	SpaceAfter=No
-18	.	.	PUNC	PUNC	attachment=ISO|senID=46689	17	PUNC	_	_
+5-6	خودشان	_	_	_	_	_	_	_	_
+5	خود	خودشان	PR	UCREFX	person=3|attachment=ISO|number=PLUR|senID=46689	14	SBJ	_	_
+6	شان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=46689	5	MOZ	_	_
+7	چون	چون	PREP	PREP	attachment=ISO|senID=46689	14	ADV	_	_
+8	تابلویی	تابلو	N	IANM	attachment=ISO|number=SING|senID=46689	7	POSDEP	_	_
+9	رؤیایی	رؤیایی	ADJ	AJP	attachment=ISO|senID=46689	8	NPOSTMOD	_	_
+10	از	از	PREP	PREP	attachment=ISO|senID=46689	8	NPP	_	_
+11	رنگ‌های	رنگ	N	IANM	attachment=ISO|number=PLUR|senID=46689	10	POSDEP	_	_
+12	زیبا	زیبا	ADJ	AJP	attachment=ISO|senID=46689	11	NPOSTMOD	_	_
+13	سوزن‌دوزی	سوزن‌دوزی	N	IANM	attachment=ISO|number=SING|senID=46689	14	NVE	_	_
+14	کرده‌اند	کرد#کن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=GN|senID=46689	4	PRD	_	_
+15	را	را	POSTP	POSTP	attachment=ISO|senID=46689	18	OBJ	_	_
+16	به	به	PREP	PREP	attachment=ISO|senID=46689	18	VPP	_	_
+17	صورت	صورت	N	IANM	attachment=ISO|number=SING|senID=46689	16	POSDEP	_	_
+18	می‌زنند	زد#زن	V	ACT	person=3|attachment=ISO|number=PLUR|tma=H|senID=46689	0	root	_	SpaceAfter=No
+19	.	.	PUNC	PUNC	attachment=ISO|senID=46689	18	PUNC	_	_
 
 # sent_id = test-s350
 # text = دشمن از اختلاف شیعه و سنی سوء استفاده می‌کند.
@@ -7892,17 +7906,19 @@
 
 # sent_id = test-s428
 # text = او هر روز با اسم پرسپولیس برای خودش بازارگرمی می‌کند.
-1	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=48994	10	SBJ	_	_
+1	او	او	PR	SEPER	person=3|attachment=ISO|number=SING|senID=48994	11	SBJ	_	_
 2	هر	هر	PREM	AMBAJ	attachment=ISO|senID=48994	3	NPREMOD	_	_
-3	روز	روز	N	IANM	attachment=ISO|number=SING|senID=48994	10	ADV	_	_
-4	با	با	PREP	PREP	attachment=ISO|senID=48994	10	ADV	_	_
+3	روز	روز	N	IANM	attachment=ISO|number=SING|senID=48994	11	ADV	_	_
+4	با	با	PREP	PREP	attachment=ISO|senID=48994	11	ADV	_	_
 5	اسم	اسم	N	IANM	attachment=ISO|number=SING|senID=48994	4	POSDEP	_	_
 6	پرسپولیس	پرسپولیس	N	IANM	attachment=ISO|number=SING|senID=48994	5	MOZ	_	_
-7	برای	برای	PREP	PREP	attachment=ISO|senID=48994	10	ADV	_	_
-8	خودش	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=48994	7	POSDEP	_	_
-9	بازارگرمی	بازارگرمی	N	IANM	attachment=ISO|number=SING|senID=48994	10	NVE	_	_
-10	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=48994	0	root	_	SpaceAfter=No
-11	.	.	PUNC	PUNC	attachment=ISO|senID=48994	10	PUNC	_	_
+7	برای	برای	PREP	PREP	attachment=ISO|senID=48994	11	ADV	_	_
+8-9	خودش	_	_	_	_	_	_	_	_
+8	خود	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=48994	7	POSDEP	_	_
+9	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=48994	8	MOZ	_	_
+10	بازارگرمی	بازارگرمی	N	IANM	attachment=ISO|number=SING|senID=48994	11	NVE	_	_
+11	می‌کند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=48994	0	root	_	SpaceAfter=No
+12	.	.	PUNC	PUNC	attachment=ISO|senID=48994	11	PUNC	_	_
 
 # sent_id = test-s429
 # text = ای مولای من، کنیزهای دربار با هم دربارهٔ آن نگین بگومگو کرده‌اند.
@@ -8533,25 +8549,29 @@
 
 # sent_id = test-s457
 # text = قانون اساسی در محدودهٔ کار خودش این حق را به مجلس خبرگان داده که برای خودش قانون‌گذاری بکند.
-1	قانون	قانون	N	IANM	attachment=ISO|number=SING|senID=49287	13	SBJ	_	_
+1	قانون	قانون	N	IANM	attachment=ISO|number=SING|senID=49287	14	SBJ	_	_
 2	اساسی	اساسی	ADJ	AJP	attachment=ISO|senID=49287	1	NPOSTMOD	_	_
-3	در	در	PREP	PREP	attachment=ISO|senID=49287	13	ADV	_	_
+3	در	در	PREP	PREP	attachment=ISO|senID=49287	14	ADV	_	_
 4	محدودهٔ	محدوده	N	IANM	attachment=ISO|number=SING|senID=49287	3	POSDEP	_	_
 5	کار	کار	N	IANM	attachment=ISO|number=SING|senID=49287	4	MOZ	_	_
-6	خودش	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=49287	5	MOZ	_	_
-7	این	این	PREM	DEMAJ	attachment=ISO|senID=49287	8	NPREMOD	_	_
-8	حق	حق	N	IANM	attachment=ISO|number=SING|senID=49287	9	PREDEP	_	_
-9	را	را	POSTP	POSTP	attachment=ISO|senID=49287	13	OBJ	_	_
-10	به	به	PREP	PREP	attachment=ISO|senID=49287	13	VPP	_	_
-11	مجلس	مجلس	N	IANM	attachment=ISO|number=SING|senID=49287	10	POSDEP	_	_
-12	خبرگان	خبره	N	IANM	attachment=ISO|number=PLUR|senID=49287	11	MOZ	_	_
-13	داده	داد#ده	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=49287	0	root	_	_
-14	که	که	SUBR	SUBR	attachment=ISO|senID=49287	8	NCL	_	_
-15	برای	برای	PREP	PREP	attachment=ISO|senID=49287	18	ADV	_	_
-16	خودش	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=49287	15	POSDEP	_	_
-17	قانون‌گذاری	قانون‌گذاری	N	IANM	attachment=ISO|senID=49287	18	NVE	_	_
-18	بکند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=49287	14	PRD	_	SpaceAfter=No
-19	.	.	PUNC	PUNC	attachment=ISO|senID=49287	13	PUNC	_	_
+6-7	خودش	_	_	_	_	_	_	_	_
+6	خود	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=49287	5	MOZ	_	_
+7	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=49287	6	MOZ	_	_
+8	این	این	PREM	DEMAJ	attachment=ISO|senID=49287	9	NPREMOD	_	_
+9	حق	حق	N	IANM	attachment=ISO|number=SING|senID=49287	10	PREDEP	_	_
+10	را	را	POSTP	POSTP	attachment=ISO|senID=49287	14	OBJ	_	_
+11	به	به	PREP	PREP	attachment=ISO|senID=49287	14	VPP	_	_
+12	مجلس	مجلس	N	IANM	attachment=ISO|number=SING|senID=49287	11	POSDEP	_	_
+13	خبرگان	خبره	N	IANM	attachment=ISO|number=PLUR|senID=49287	12	MOZ	_	_
+14	داده	داد#ده	V	ACT	person=3|attachment=ISO|number=SING|tma=GN|senID=49287	0	root	_	_
+15	که	که	SUBR	SUBR	attachment=ISO|senID=49287	9	NCL	_	_
+16	برای	برای	PREP	PREP	attachment=ISO|senID=49287	20	ADV	_	_
+17-18	خودش	_	_	_	_	_	_	_	_
+17	خود	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=49287	16	POSDEP	_	_
+18	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=49287	17	MOZ	_	_
+19	قانون‌گذاری	قانون‌گذاری	N	IANM	attachment=ISO|senID=49287	20	NVE	_	_
+20	بکند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=49287	15	PRD	_	SpaceAfter=No
+21	.	.	PUNC	PUNC	attachment=ISO|senID=49287	14	PUNC	_	_
 
 # sent_id = test-s458
 # text = آقای دکتر لطف می‌کنید گوشیتان را به من قرض بدهید؟
@@ -12486,9 +12506,11 @@
 10	آنان	آنان	PR	SEPER	person=3|attachment=ISO|number=PLUR|senID=45660	9	MOZ	_	_
 11	جرأت	جرأت	N	IANM	attachment=ISO|number=SING|senID=45660	12	NVE	_	_
 12	می‌کنیم	کرد#کن	V	ACT	person=1|attachment=ISO|number=PLUR|tma=H|senID=45660	6	PRD	_	_
-13	خودمان	خودمان	PR	UCREFX	person=1|attachment=ISO|number=PLUR|senID=45660	14	SBJ	_	_
-14	باشیم	بود#باش	AUX	AUX	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=45660	12	VCL	_	SpaceAfter=No
-15	.	.	PUNC	PUNC	attachment=ISO|senID=45660	5	PUNC	_	_
+13-14	خودمان	_	_	_	_	_	_	_	_
+13	خود	خودمان	PR	UCREFX	person=1|attachment=ISO|number=PLUR|senID=45660	15	SBJ	_	_
+14	مان	ما	PR	JOPER	number=PLUR|person=1|pronType=Prs|senID=45660	13	MOZ	_	_
+15	باشیم	بود#باش	AUX	AUX	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=45660	12	VCL	_	SpaceAfter=No
+16	.	.	PUNC	PUNC	attachment=ISO|senID=45660	5	PUNC	_	_
 
 # sent_id = test-s648
 # text = جرقه بزن!
@@ -13065,14 +13087,16 @@
 5	حفظ	حفظ	N	IANM	attachment=ISO|number=SING|senID=45960	4	POSDEP	_	_
 6	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=45960	0	root	_	_
 7	و	و	CONJ	CONJ	attachment=ISO|senID=45960	6	VCONJ	_	_
-8	خودتان	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=45960	9	PREDEP	_	_
-9	را	را	POSTP	POSTP	attachment=ISO|senID=45960	14	OBJ	_	_
-10	به	به	PREP	PREP	attachment=ISO|senID=45960	14	ADV	_	_
-11	وسیلهٔ	وسیله	N	IANM	attachment=ISO|number=SING|senID=45960	10	POSDEP	_	_
-12	تقوا	تقوا	N	IANM	attachment=ISO|number=SING|senID=45960	11	MOZ	_	_
-13	صیانت	صیانت	N	IANM	attachment=ISO|number=SING|senID=45960	14	NVE	_	_
-14	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=45960	7	POSDEP	_	SpaceAfter=No
-15	.	.	PUNC	PUNC	attachment=ISO|senID=45960	14	PUNC	_	_
+8-9	خودتان	_	_	_	_	_	_	_	_
+8	خود	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=45960	10	PREDEP	_	_
+9	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=45960	8	MOZ	_	_
+10	را	را	POSTP	POSTP	attachment=ISO|senID=45960	15	OBJ	_	_
+11	به	به	PREP	PREP	attachment=ISO|senID=45960	15	ADV	_	_
+12	وسیلهٔ	وسیله	N	IANM	attachment=ISO|number=SING|senID=45960	11	POSDEP	_	_
+13	تقوا	تقوا	N	IANM	attachment=ISO|number=SING|senID=45960	12	MOZ	_	_
+14	صیانت	صیانت	N	IANM	attachment=ISO|number=SING|senID=45960	15	NVE	_	_
+15	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=45960	7	POSDEP	_	SpaceAfter=No
+16	.	.	PUNC	PUNC	attachment=ISO|senID=45960	15	PUNC	_	_
 
 # sent_id = test-s678
 # text = خاوری از پاسخ به خبرنگاران طفره می‌رود.
@@ -13829,21 +13853,23 @@
 
 # sent_id = test-s723
 # text = تو داری تنها برای خودت مبارزه می‌کنی و به در و دیوار مشت می‌زنی.
-1	تو	تو	PR	SEPER	person=2|attachment=ISO|number=SING|senID=50905	7	SBJ	_	_
-2	داری	داشت#دار	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905	7	PROG	_	_
+1	تو	تو	PR	SEPER	person=2|attachment=ISO|number=SING|senID=50905	8	SBJ	_	_
+2	داری	داشت#دار	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905	8	PROG	_	_
 3	تنها	تنها	ADV	SADV	attachment=ISO|senID=50905	4	PREDEP	_	_
-4	برای	برای	PREP	PREP	attachment=ISO|senID=50905	7	ADV	_	_
-5	خودت	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=50905	4	POSDEP	_	_
-6	مبارزه	مبارزه	N	IANM	attachment=ISO|number=SING|senID=50905	7	NVE	_	_
-7	می‌کنی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905	0	root	_	_
-8	و	و	CONJ	CONJ	attachment=ISO|senID=50905	7	VCONJ	_	_
-9	به	به	PREP	PREP	attachment=ISO|senID=50905	14	VPP	_	_
-10	در	در	N	IANM	attachment=ISO|number=SING|senID=50905	9	POSDEP	_	_
-11	و	و	CONJ	CONJ	attachment=ISO|senID=50905	10	NCONJ	_	_
-12	دیوار	دیوار	N	IANM	attachment=ISO|number=SING|senID=50905	11	POSDEP	_	_
-13	مشت	مشت	N	IANM	attachment=ISO|number=SING|senID=50905	14	NVE	_	_
-14	می‌زنی	زد#زن	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905	8	POSDEP	_	SpaceAfter=No
-15	.	.	PUNC	PUNC	attachment=ISO|senID=50905	14	PUNC	_	_
+4	برای	برای	PREP	PREP	attachment=ISO|senID=50905	8	ADV	_	_
+5-6	خودت	_	_	_	_	_	_	_	_
+5	خود	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=50905	4	POSDEP	_	_
+6	ت	تو	PR	JOPER	number=SING|person=2|pronType=Prs|senID=50905	5	MOZ	_	_
+7	مبارزه	مبارزه	N	IANM	attachment=ISO|number=SING|senID=50905	8	NVE	_	_
+8	می‌کنی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905	0	root	_	_
+9	و	و	CONJ	CONJ	attachment=ISO|senID=50905	8	VCONJ	_	_
+10	به	به	PREP	PREP	attachment=ISO|senID=50905	15	VPP	_	_
+11	در	در	N	IANM	attachment=ISO|number=SING|senID=50905	10	POSDEP	_	_
+12	و	و	CONJ	CONJ	attachment=ISO|senID=50905	11	NCONJ	_	_
+13	دیوار	دیوار	N	IANM	attachment=ISO|number=SING|senID=50905	12	POSDEP	_	_
+14	مشت	مشت	N	IANM	attachment=ISO|number=SING|senID=50905	15	NVE	_	_
+15	می‌زنی	زد#زن	V	ACT	person=2|attachment=ISO|number=SING|tma=H|senID=50905	9	POSDEP	_	SpaceAfter=No
+16	.	.	PUNC	PUNC	attachment=ISO|senID=50905	15	PUNC	_	_
 
 # sent_id = test-s724
 # text = مواد را با هم ترکیب می‌کنیم و حسابی مشت و مال می‌دهیم.
@@ -14461,22 +14487,26 @@
 # text = شما نمی‌توانید خودتان را غلغلک بدهید و به خودتان هم اجازه نمی‌دهید که غریبه‌ها را غلغلک بدهید.
 1	شما	شما	PR	SEPER	person=2|attachment=ISO|number=PLUR|senID=51268	2	SBJ	_	_
 2	نمی‌توانید	توانست#توان	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=51268|polarity=NEG	0	root	_	_
-3	خودتان	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268	4	PREDEP	_	_
-4	را	را	POSTP	POSTP	attachment=ISO|senID=51268	6	OBJ	_	_
-5	غلغلک	غلغلک	N	IANM	attachment=ISO|number=SING|senID=51268	6	NVE	_	_
-6	بدهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268	2	VCL	_	_
-7	و	و	CONJ	CONJ	attachment=ISO|senID=51268	2	VCONJ	_	_
-8	به	به	PREP	PREP	attachment=ISO|senID=51268	11	NPP	_	_
-9	خودتان	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268	8	POSDEP	_	_
-10	هم	هم	ADV	SADV	attachment=ISO|senID=51268	9	POSDEP	_	_
-11	اجازه	اجازه	N	IANM	attachment=ISO|number=SING|senID=51268	12	OBJ	_	_
-12	نمی‌دهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=51268|polarity=NEG	7	POSDEP	_	_
-13	که	که	SUBR	SUBR	attachment=ISO|senID=51268	11	NCL	_	_
-14	غریبه‌ها	غریبه	N	ANM	attachment=ISO|number=PLUR|senID=51268	15	PREDEP	_	_
-15	را	را	POSTP	POSTP	attachment=ISO|senID=51268	17	OBJ	_	_
-16	غلغلک	غلغلک	N	IANM	attachment=ISO|number=SING|senID=51268	17	NVE	_	_
-17	بدهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268	13	PRD	_	SpaceAfter=No
-18	.	.	PUNC	PUNC	attachment=ISO|senID=51268	12	PUNC	_	_
+3-4	خودتان	_	_	_	_	_	_	_	_
+3	خود	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268	5	PREDEP	_	_
+4	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=51268	3	MOZ	_	_
+5	را	را	POSTP	POSTP	attachment=ISO|senID=51268	7	OBJ	_	_
+6	غلغلک	غلغلک	N	IANM	attachment=ISO|number=SING|senID=51268	7	NVE	_	_
+7	بدهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268	2	VCL	_	_
+8	و	و	CONJ	CONJ	attachment=ISO|senID=51268	2	VCONJ	_	_
+9	به	به	PREP	PREP	attachment=ISO|senID=51268	13	NPP	_	_
+10-11	خودتان	_	_	_	_	_	_	_	_
+10	خود	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=51268	9	POSDEP	_	_
+11	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=51268	10	MOZ	_	_
+12	هم	هم	ADV	SADV	attachment=ISO|senID=51268	10	POSDEP	_	_
+13	اجازه	اجازه	N	IANM	attachment=ISO|number=SING|senID=51268	14	OBJ	_	_
+14	نمی‌دهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=51268|polarity=NEG	8	POSDEP	_	_
+15	که	که	SUBR	SUBR	attachment=ISO|senID=51268	13	NCL	_	_
+16	غریبه‌ها	غریبه	N	ANM	attachment=ISO|number=PLUR|senID=51268	17	PREDEP	_	_
+17	را	را	POSTP	POSTP	attachment=ISO|senID=51268	19	OBJ	_	_
+18	غلغلک	غلغلک	N	IANM	attachment=ISO|number=SING|senID=51268	19	NVE	_	_
+19	بدهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=51268	15	PRD	_	SpaceAfter=No
+20	.	.	PUNC	PUNC	attachment=ISO|senID=51268	14	PUNC	_	_
 
 # sent_id = test-s760
 # text = این روسری را دو جای دیگر هم قیمت کرده بودم 30 و 32 می‌گفتند.
@@ -15770,15 +15800,17 @@
 # sent_id = test-s822
 # text = هر پژوهشگری در حوزهٔ تخصصی خودش می‌تواند نظریه‌پردازی بکند.
 1	هر	هر	PREM	AMBAJ	attachment=ISO|senID=51905	2	NPREMOD	_	_
-2	پژوهشگری	پژوهشگر	N	ANM	attachment=ISO|number=SING|senID=51905	7	SBJ	_	_
-3	در	در	PREP	PREP	attachment=ISO|senID=51905	8	NPP	_	_
+2	پژوهشگری	پژوهشگر	N	ANM	attachment=ISO|number=SING|senID=51905	8	SBJ	_	_
+3	در	در	PREP	PREP	attachment=ISO|senID=51905	9	NPP	_	_
 4	حوزهٔ	حوزه	N	IANM	attachment=ISO|number=SING|senID=51905	3	POSDEP	_	_
 5	تخصصی	تخصصی	ADJ	AJP	attachment=ISO|senID=51905	4	NPOSTMOD	_	_
-6	خودش	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=51905	4	MOZ	_	_
-7	می‌تواند	توانست#توان	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=51905	0	root	_	_
-8	نظریه‌پردازی	نظریه‌پردازی	N	IANM	attachment=ISO|number=SING|senID=51905	9	NVE	_	_
-9	بکند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=51905	7	VCL	_	SpaceAfter=No
-10	.	.	PUNC	PUNC	attachment=ISO|senID=51905	7	PUNC	_	_
+6-7	خودش	_	_	_	_	_	_	_	_
+6	خود	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=51905	4	MOZ	_	_
+7	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=51905	6	MOZ	_	_
+8	می‌تواند	توانست#توان	V	ACT	person=3|attachment=ISO|number=SING|tma=H|senID=51905	0	root	_	_
+9	نظریه‌پردازی	نظریه‌پردازی	N	IANM	attachment=ISO|number=SING|senID=51905	10	NVE	_	_
+10	بکند	کرد#کن	V	ACT	person=3|attachment=ISO|number=SING|tma=HEL|senID=51905	8	VCL	_	SpaceAfter=No
+11	.	.	PUNC	PUNC	attachment=ISO|senID=51905	8	PUNC	_	_
 
 # sent_id = test-s823
 # text = روی درخت‌هایش نشانه گذاشت.
@@ -18709,17 +18741,19 @@
 
 # sent_id = test-s974
 # text = تو اوج افسردگی و ناراحتی، به خودم نیشتر زدم.
-1	تو	تو	PREP	PREP	attachment=ISO|senID=53546	10	ADV	_	_
+1	تو	تو	PREP	PREP	attachment=ISO|senID=53546	11	ADV	_	_
 2	اوج	اوج	N	IANM	attachment=ISO|number=SING|senID=53546	1	POSDEP	_	_
 3	افسردگی	افسردگی	N	IANM	attachment=ISO|number=SING|senID=53546	2	MOZ	_	_
 4	و	و	CONJ	CONJ	attachment=ISO|senID=53546	3	NCONJ	_	_
 5	ناراحتی	ناراحتی	N	IANM	attachment=ISO|number=SING|senID=53546	4	POSDEP	_	SpaceAfter=No
 6	،	،	PUNC	PUNC	attachment=ISO|senID=53546	5	PUNC	_	_
-7	به	به	PREP	PREP	attachment=ISO|senID=53546	10	VPP	_	_
-8	خودم	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=53546	7	POSDEP	_	_
-9	نیشتر	نیشتر	N	IANM	attachment=ISO|number=SING|senID=53546	10	NVE	_	_
-10	زدم	زد#زن	V	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=53546	0	root	_	SpaceAfter=No
-11	.	.	PUNC	PUNC	attachment=ISO|senID=53546	10	PUNC	_	_
+7	به	به	PREP	PREP	attachment=ISO|senID=53546	11	VPP	_	_
+8-9	خودم	_	_	_	_	_	_	_	_
+8	خود	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=53546	7	POSDEP	_	_
+9	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=53546	8	MOZ	_	_
+10	نیشتر	نیشتر	N	IANM	attachment=ISO|number=SING|senID=53546	11	NVE	_	_
+11	زدم	زد#زن	V	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=53546	0	root	_	SpaceAfter=No
+12	.	.	PUNC	PUNC	attachment=ISO|senID=53546	11	PUNC	_	_
 
 # sent_id = test-s975
 # text = شخص انجام وضو را در قلب خود، و بدون بر زبان راندن آن نیت می‌کند.
@@ -19016,11 +19050,13 @@
 21	بزرگ	بزرگ	ADJ	AJP	attachment=ISO|senID=53676	22	MOS	_	_
 22	نشدم	شد#شو	V	ACT	person=1|attachment=ISO|number=SING|tma=GS|senID=53676|polarity=NEG	18	POSDEP	_	_
 23	که	که	SUBR	SUBR	attachment=ISO|senID=53676	20	NCL	_	_
-24	از	از	PREP	PREP	attachment=ISO|senID=53676	26	NPP	_	_
-25	خودم	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=53676	24	POSDEP	_	_
-26	مراقبت	مراقبت	N	IANM	attachment=ISO|number=SING|senID=53676	27	NVE	_	_
-27	بکنم	کرد#کن	V	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=53676	23	PRD	_	SpaceAfter=No
-28	.	.	PUNC	PUNC	attachment=ISO|senID=53676	2	PUNC	_	_
+24	از	از	PREP	PREP	attachment=ISO|senID=53676	27	NPP	_	_
+25-26	خودم	_	_	_	_	_	_	_	_
+25	خود	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=53676	24	POSDEP	_	_
+26	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=53676	25	MOZ	_	_
+27	مراقبت	مراقبت	N	IANM	attachment=ISO|number=SING|senID=53676	28	NVE	_	_
+28	بکنم	کرد#کن	V	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=53676	23	PRD	_	SpaceAfter=No
+29	.	.	PUNC	PUNC	attachment=ISO|senID=53676	2	PUNC	_	_
 
 # sent_id = test-s988
 # text = آقا، دهنم کف کرد از بس در فراق اینترنت مرثیه‌سرایی کردم.
@@ -20077,15 +20113,17 @@
 # sent_id = test-s1038
 # text = نمی‌دانم چگونه خودم را به مطالعه کردن عادت بدهم.
 1	نمی‌دانم	دانست#دان	V	ACT	person=1|attachment=ISO|number=SING|tma=H|senID=48597|polarity=NEG	0	root	_	_
-2	چگونه	چگونه	ADV	SADV	attachment=ISO|senID=48597	9	ADV	_	_
-3	خودم	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=48597	4	PREDEP	_	_
-4	را	را	POSTP	POSTP	attachment=ISO|senID=48597	9	OBJ	_	_
-5	به	به	PREP	PREP	attachment=ISO|senID=48597	8	NPP	_	_
-6	مطالعه	مطالعه	N	IANM	attachment=ISO|number=SING|senID=48597	7	NE	_	_
-7	کردن	کردن	N	IANM	attachment=ISO|number=SING|senID=48597	5	POSDEP	_	_
-8	عادت	عادت	N	IANM	attachment=ISO|number=SING|senID=48597	9	NVE	_	_
-9	بدهم	داد#ده	V	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=48597	1	VCL	_	SpaceAfter=No
-10	.	.	PUNC	PUNC	attachment=ISO|senID=48597	1	PUNC	_	_
+2	چگونه	چگونه	ADV	SADV	attachment=ISO|senID=48597	10	ADV	_	_
+3-4	خودم	_	_	_	_	_	_	_	_
+3	خود	خودم	PR	UCREFX	person=1|attachment=ISO|number=SING|senID=48597	5	PREDEP	_	_
+4	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=48597	3	MOZ	_	_
+5	را	را	POSTP	POSTP	attachment=ISO|senID=48597	10	OBJ	_	_
+6	به	به	PREP	PREP	attachment=ISO|senID=48597	9	NPP	_	_
+7	مطالعه	مطالعه	N	IANM	attachment=ISO|number=SING|senID=48597	8	NE	_	_
+8	کردن	کردن	N	IANM	attachment=ISO|number=SING|senID=48597	6	POSDEP	_	_
+9	عادت	عادت	N	IANM	attachment=ISO|number=SING|senID=48597	10	NVE	_	_
+10	بدهم	داد#ده	V	ACT	person=1|attachment=ISO|number=SING|tma=HEL|senID=48597	1	VCL	_	SpaceAfter=No
+11	.	.	PUNC	PUNC	attachment=ISO|senID=48597	1	PUNC	_	_
 
 # sent_id = test-s1039
 # text = بنابراین، بی‌توجهی به بانکداری الکترونیک، موجب عقب‌ماندگی از همهٔ دستاوردهای نوین در عرصهٔ بانکداری می‌شود.
@@ -21933,14 +21971,16 @@
 3	باید	بایست#باید	V	MODL	attachment=ISO|tma=H|senID=55115	2	PRD	_	_
 4	انجام	انجام	N	IANM	attachment=ISO|number=SING|senID=55115	5	NVE	_	_
 5	دهید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=55115	3	VCL	_	_
-6	را	را	POSTP	POSTP	attachment=ISO|senID=55115	12	OBJ	_	_
-7	سر	سر	PREP	PREP	attachment=ISO|senID=55115	12	ADV	_	_
+6	را	را	POSTP	POSTP	attachment=ISO|senID=55115	13	OBJ	_	_
+7	سر	سر	PREP	PREP	attachment=ISO|senID=55115	13	ADV	_	_
 8	وقت	وقت	N	IANM	attachment=ISO|number=SING|senID=55115	7	POSDEP	_	_
-9	خودشان	خودشان	PR	UCREFX	person=3|attachment=ISO|number=PLUR|senID=55115	8	MOZ	_	_
-10	به	به	PREP	PREP	attachment=ISO|senID=55115	12	VPP	_	_
-11	انجام	انجام	N	IANM	attachment=ISO|number=SING|senID=55115	10	POSDEP	_	_
-12	برسانید	رسانید#رسان	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55115	0	root	_	SpaceAfter=No
-13	.	.	PUNC	PUNC	attachment=ISO|senID=55115	12	PUNC	_	_
+9-10	خودشان	_	_	_	_	_	_	_	_
+9	خود	خودشان	PR	UCREFX	person=3|attachment=ISO|number=PLUR|senID=55115	8	MOZ	_	_
+10	شان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=55115	9	MOZ	_	_
+11	به	به	PREP	PREP	attachment=ISO|senID=55115	13	VPP	_	_
+12	انجام	انجام	N	IANM	attachment=ISO|number=SING|senID=55115	11	POSDEP	_	_
+13	برسانید	رسانید#رسان	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55115	0	root	_	SpaceAfter=No
+14	.	.	PUNC	PUNC	attachment=ISO|senID=55115	13	PUNC	_	_
 
 # sent_id = test-s1126
 # text = گردن آن بازیکن را می‌زنم که بخواهد پرسپولیس را به باد بدهد.
@@ -22391,19 +22431,21 @@
 
 # sent_id = test-s1149
 # text = به هر یک از فرزندانتان به زبان خودش عشق بورزید.
-1	به	به	PREP	PREP	attachment=ISO|senID=55382	11	VPP	_	_
+1	به	به	PREP	PREP	attachment=ISO|senID=55382	12	VPP	_	_
 2	هر	هر	PREM	AMBAJ	attachment=ISO|senID=55382	3	NPREMOD	_	_
 3	یک	یک	N	IANM	attachment=ISO|number=SING|senID=55382	1	POSDEP	_	_
 4	از	از	PREP	PREP	attachment=ISO|senID=55382	3	NPP	_	_
 5-6	فرزندانتان	_	_	_	_	_	_	_	_
 5	فرزندان	فرزند	N	ANM	attachment=ISO|number=PLUR|senID=55382	4	POSDEP	_	_
 6	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=55382	5	MOZ	_	_
-7	به	به	PREP	PREP	attachment=ISO|senID=55382	11	ADV	_	_
+7	به	به	PREP	PREP	attachment=ISO|senID=55382	12	ADV	_	_
 8	زبان	زبان	N	IANM	attachment=ISO|number=SING|senID=55382	7	POSDEP	_	_
-9	خودش	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=55382	8	MOZ	_	_
-10	عشق	عشق	N	IANM	attachment=ISO|number=SING|senID=55382	11	NVE	_	_
-11	بورزید	ورزید#ورز	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55382	0	root	_	SpaceAfter=No
-12	.	.	PUNC	PUNC	attachment=ISO|senID=55382	11	PUNC	_	_
+9-10	خودش	_	_	_	_	_	_	_	_
+9	خود	خودش	PR	UCREFX	person=3|attachment=ISO|number=SING|senID=55382	8	MOZ	_	_
+10	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=55382	9	MOZ	_	_
+11	عشق	عشق	N	IANM	attachment=ISO|number=SING|senID=55382	12	NVE	_	_
+12	بورزید	ورزید#ورز	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HA|senID=55382	0	root	_	SpaceAfter=No
+13	.	.	PUNC	PUNC	attachment=ISO|senID=55382	12	PUNC	_	_
 
 # sent_id = test-s1150
 # text = آنقدر هنگامه زیر گوشم وزوز کرده بود که حسابی عصبی بودم.
@@ -23933,11 +23975,13 @@
 
 # sent_id = test-s1227
 # text = برای خودت مخاطب‌سازی کردی.
-1	برای	برای	PREP	PREP	attachment=ISO|senID=56247	3	NPP	_	_
-2	خودت	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=56247	1	POSDEP	_	_
-3	مخاطب‌سازی	مخاطب‌سازی	N	IANM	attachment=ISO|number=SING|senID=56247	4	NVE	_	_
-4	کردی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=56247	0	root	_	SpaceAfter=No
-5	.	.	PUNC	PUNC	attachment=ISO|senID=56247	4	PUNC	_	_
+1	برای	برای	PREP	PREP	attachment=ISO|senID=56247	4	NPP	_	_
+2-3	خودت	_	_	_	_	_	_	_	_
+2	خود	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=56247	1	POSDEP	_	_
+3	ت	تو	PR	JOPER	number=SING|person=2|pronType=Prs|senID=56247	2	MOZ	_	_
+4	مخاطب‌سازی	مخاطب‌سازی	N	IANM	attachment=ISO|number=SING|senID=56247	5	NVE	_	_
+5	کردی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=56247	0	root	_	SpaceAfter=No
+6	.	.	PUNC	PUNC	attachment=ISO|senID=56247	5	PUNC	_	_
 
 # sent_id = test-s1228
 # text = حداکثر امتیاز زبان اول از 16 امتیاز به 20 امتیاز افزایش خواهد یافت و برای هر شغل یک حداقل امتیازی را مد نظر خواهند گرفت.
@@ -25982,26 +26026,28 @@
 
 # sent_id = test-s1329
 # text = شما به خودتان این اجازه را دادید که جلوی این همه آدم شخصیت من را به راحتی لگدمال بکنی.
-1	شما	شما	PR	SEPER	person=2|attachment=ISO|number=PLUR|senID=57574	7	SBJ	_	_
-2	به	به	PREP	PREP	attachment=ISO|senID=57574	7	VPP	_	_
-3	خودتان	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=57574	2	POSDEP	_	_
-4	این	این	PREM	DEMAJ	attachment=ISO|senID=57574	5	NPREMOD	_	_
-5	اجازه	اجازه	N	IANM	attachment=ISO|number=SING|senID=57574	6	PREDEP	_	_
-6	را	را	POSTP	POSTP	attachment=ISO|senID=57574	7	OBJ	_	_
-7	دادید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=GS|senID=57574	0	root	_	_
-8	که	که	SUBR	SUBR	attachment=ISO|senID=57574	5	NCL	_	_
-9	جلوی	جلوی	PREP	PREP	attachment=ISO|senID=57574	19	ADV	_	_
-10	این	این	PREM	DEMAJ	attachment=ISO|senID=57574	11	NPREMOD	_	_
-11	همه	همه	N	IANM	attachment=ISO|number=PLUR|senID=57574	12	MESU	_	_
-12	آدم	آدم	N	ANM	attachment=ISO|number=SING|senID=57574	9	POSDEP	_	_
-13	شخصیت	شخصیت	N	IANM	attachment=ISO|number=SING|senID=57574	15	PREDEP	_	_
-14	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=57574	13	MOZ	_	_
-15	را	را	POSTP	POSTP	attachment=ISO|senID=57574	19	OBJ	_	_
-16	به	به	PREP	PREP	attachment=ISO|senID=57574	19	ADV	_	_
-17	راحتی	راحتی	N	IANM	attachment=ISO|number=SING|senID=57574	16	POSDEP	_	_
-18	لگدمال	لگدمال	N	IANM	attachment=ISO|number=SING|senID=57574	19	NVE	_	_
-19	بکنی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=57574	8	PRD	_	SpaceAfter=No
-20	.	.	PUNC	PUNC	attachment=ISO|senID=57574	7	PUNC	_	_
+1	شما	شما	PR	SEPER	person=2|attachment=ISO|number=PLUR|senID=57574	8	SBJ	_	_
+2	به	به	PREP	PREP	attachment=ISO|senID=57574	8	VPP	_	_
+3-4	خودتان	_	_	_	_	_	_	_	_
+3	خود	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=57574	2	POSDEP	_	_
+4	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=57574	3	MOZ	_	_
+5	این	این	PREM	DEMAJ	attachment=ISO|senID=57574	6	NPREMOD	_	_
+6	اجازه	اجازه	N	IANM	attachment=ISO|number=SING|senID=57574	7	PREDEP	_	_
+7	را	را	POSTP	POSTP	attachment=ISO|senID=57574	8	OBJ	_	_
+8	دادید	داد#ده	V	ACT	person=2|attachment=ISO|number=PLUR|tma=GS|senID=57574	0	root	_	_
+9	که	که	SUBR	SUBR	attachment=ISO|senID=57574	6	NCL	_	_
+10	جلوی	جلوی	PREP	PREP	attachment=ISO|senID=57574	20	ADV	_	_
+11	این	این	PREM	DEMAJ	attachment=ISO|senID=57574	12	NPREMOD	_	_
+12	همه	همه	N	IANM	attachment=ISO|number=PLUR|senID=57574	13	MESU	_	_
+13	آدم	آدم	N	ANM	attachment=ISO|number=SING|senID=57574	10	POSDEP	_	_
+14	شخصیت	شخصیت	N	IANM	attachment=ISO|number=SING|senID=57574	16	PREDEP	_	_
+15	من	من	PR	SEPER	person=1|attachment=ISO|number=SING|senID=57574	14	MOZ	_	_
+16	را	را	POSTP	POSTP	attachment=ISO|senID=57574	20	OBJ	_	_
+17	به	به	PREP	PREP	attachment=ISO|senID=57574	20	ADV	_	_
+18	راحتی	راحتی	N	IANM	attachment=ISO|number=SING|senID=57574	17	POSDEP	_	_
+19	لگدمال	لگدمال	N	IANM	attachment=ISO|number=SING|senID=57574	20	NVE	_	_
+20	بکنی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=HEL|senID=57574	9	PRD	_	SpaceAfter=No
+21	.	.	PUNC	PUNC	attachment=ISO|senID=57574	8	PUNC	_	_
 
 # sent_id = test-s1330
 # text = بازیکنان لوطی‌گری کردند.
@@ -27254,20 +27300,24 @@
 3	انسان	انسان	N	ANM	attachment=NXT|number=SING|senID=58650	4	MOS	_	_
 4	ی	#هست	AUX	AUX	person=3|attachment=PRV|number=SING|tma=H|senID=58650	0	root	_	_
 5	و	و	CONJ	CONJ	attachment=ISO|senID=58650	4	VCONJ	_	_
-6	با	با	PREP	PREP	attachment=ISO|senID=58650	11	ADV	_	_
+6	با	با	PREP	PREP	attachment=ISO|senID=58650	13	ADV	_	_
 7	ارادهٔ	اراده	N	IANM	attachment=ISO|number=SING|senID=58650	6	POSDEP	_	_
-8	خودت	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=58650	7	MOZ	_	_
-9	خودت	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=58650	10	PREDEP	_	_
-10	را	را	POSTP	POSTP	attachment=ISO|senID=58650	11	OBJ	_	_
-11	ساختی	ساخت#ساز	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650	5	POSDEP	_	_
-12	و	و	CONJ	CONJ	attachment=ISO|senID=58650	11	VCONJ	_	_
-13	بر	بر	PREP	PREP	attachment=ISO|senID=58650	16	NPP	_	_
-14	نیروهای	نیرو	N	IANM	attachment=ISO|number=PLUR|senID=58650	13	POSDEP	_	_
-15	اهریمنی	اهریمنی	ADJ	AJP	attachment=ISO|senID=58650	14	NPOSTMOD	_	_
-16	غلبه	غلبه	N	IANM	attachment=ISO|number=SING|senID=58650	18	NVE	_	_
-17	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=58650	18	LVP	_	_
-18	کردی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650	12	POSDEP	_	SpaceAfter=No
-19	.	.	PUNC	PUNC	attachment=ISO|senID=58650	18	PUNC	_	_
+8-9	خودت	_	_	_	_	_	_	_	_
+8	خود	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=58650	7	MOZ	_	_
+9	ت	تو	PR	JOPER	number=SING|person=2|pronType=Prs|senID=58650	8	MOZ	_	_
+10-11	خودت	_	_	_	_	_	_	_	_
+10	خود	خودت	PR	UCREFX	person=2|attachment=ISO|number=SING|senID=58650	12	PREDEP	_	_
+11	ت	تو	PR	JOPER	number=SING|person=2|pronType=Prs|senID=58650	10	MOZ	_	_
+12	را	را	POSTP	POSTP	attachment=ISO|senID=58650	13	OBJ	_	_
+13	ساختی	ساخت#ساز	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650	5	POSDEP	_	_
+14	و	و	CONJ	CONJ	attachment=ISO|senID=58650	13	VCONJ	_	_
+15	بر	بر	PREP	PREP	attachment=ISO|senID=58650	18	NPP	_	_
+16	نیروهای	نیرو	N	IANM	attachment=ISO|number=PLUR|senID=58650	15	POSDEP	_	_
+17	اهریمنی	اهریمنی	ADJ	AJP	attachment=ISO|senID=58650	16	NPOSTMOD	_	_
+18	غلبه	غلبه	N	IANM	attachment=ISO|number=SING|senID=58650	20	NVE	_	_
+19	پیدا	پیدا	ADJ	AJP	attachment=ISO|senID=58650	20	LVP	_	_
+20	کردی	کرد#کن	V	ACT	person=2|attachment=ISO|number=SING|tma=GS|senID=58650	14	POSDEP	_	SpaceAfter=No
+21	.	.	PUNC	PUNC	attachment=ISO|senID=58650	20	PUNC	_	_
 
 # sent_id = test-s1392
 # text = پر و بالشان به سرعت فرسایش پیدا می‌کند.
@@ -27601,16 +27651,18 @@
 
 # sent_id = test-s1409
 # text = خودمان بنا گذاردیم که همین ورقه را ممهور نماییم.
-1	خودمان	خودمان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=58832	3	SBJ	_	_
-2	بنا	بنا	N	IANM	attachment=ISO|number=SING|senID=58832	3	NVE	_	_
-3	گذاردیم	گذارد#گذار	V	ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=58832	0	root	_	_
-4	که	که	SUBR	SUBR	attachment=ISO|senID=58832	3	VCL	_	_
-5	همین	همین	PREM	DEMAJ	attachment=ISO|senID=58832	6	NPREMOD	_	_
-6	ورقه	ورقه	N	IANM	attachment=ISO|number=SING|senID=58832	7	PREDEP	_	_
-7	را	را	POSTP	POSTP	attachment=ISO|senID=58832	9	OBJ	_	_
-8	ممهور	ممهور	ADJ	AJP	attachment=ISO|senID=58832	9	MOS	_	_
-9	نماییم	نمود#نما	V	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=58832	4	PRD	_	SpaceAfter=No
-10	.	.	PUNC	PUNC	attachment=ISO|senID=58832	3	PUNC	_	_
+1-2	خودمان	_	_	_	_	_	_	_	_
+1	خود	خودمان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=58832	4	SBJ	_	_
+2	مان	ما	PR	JOPER	number=PLUR|person=1|pronType=Prs|senID=58832	1	MOZ	_	_
+3	بنا	بنا	N	IANM	attachment=ISO|number=SING|senID=58832	4	NVE	_	_
+4	گذاردیم	گذارد#گذار	V	ACT	person=1|attachment=ISO|number=PLUR|tma=GS|senID=58832	0	root	_	_
+5	که	که	SUBR	SUBR	attachment=ISO|senID=58832	4	VCL	_	_
+6	همین	همین	PREM	DEMAJ	attachment=ISO|senID=58832	7	NPREMOD	_	_
+7	ورقه	ورقه	N	IANM	attachment=ISO|number=SING|senID=58832	8	PREDEP	_	_
+8	را	را	POSTP	POSTP	attachment=ISO|senID=58832	10	OBJ	_	_
+9	ممهور	ممهور	ADJ	AJP	attachment=ISO|senID=58832	10	MOS	_	_
+10	نماییم	نمود#نما	V	ACT	person=1|attachment=ISO|number=PLUR|tma=HEL|senID=58832	5	PRD	_	SpaceAfter=No
+11	.	.	PUNC	PUNC	attachment=ISO|senID=58832	4	PUNC	_	_
 
 # sent_id = test-s1410
 # text = ابتدا در بازار کار، بنایی کردم.
@@ -28229,7 +28281,7 @@
 # text = شما می‌خواهید تا آخر عمرتان حسرت بخورید و خودتان را سرزنش کنید و با خدا غریبی کنید؟
 1	شما	شما	PR	SEPER	person=2|attachment=ISO|number=PLUR|senID=59076	2	SBJ	_	_
 2	می‌خواهید	خواست#خواه	V	ACT	person=2|attachment=ISO|number=PLUR|tma=H|senID=59076	0	root	_	_
-3	تا	تا	PREP	PREP	attachment=ISO|senID=59076	18	ADV	_	_
+3	تا	تا	PREP	PREP	attachment=ISO|senID=59076	19	ADV	_	_
 4	آخر	آخر	N	IANM	attachment=ISO|number=SING|senID=59076	3	POSDEP	_	_
 5-6	عمرتان	_	_	_	_	_	_	_	_
 5	عمر	عمر	N	IANM	attachment=ISO|number=SING|senID=59076	4	MOZ	_	_
@@ -28237,16 +28289,18 @@
 7	حسرت	حسرت	N	IANM	attachment=ISO|number=SING|senID=59076	8	NVE	_	_
 8	بخورید	خورد#خور	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076	2	VCL	_	_
 9	و	و	CONJ	CONJ	attachment=ISO|senID=59076	8	VCONJ	_	_
-10	خودتان	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=59076	11	PREDEP	_	_
-11	را	را	POSTP	POSTP	attachment=ISO|senID=59076	13	OBJ	_	_
-12	سرزنش	سرزنش	N	IANM	attachment=ISO|number=SING|senID=59076	13	NVE	_	_
-13	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076	9	POSDEP	_	_
-14	و	و	CONJ	CONJ	attachment=ISO|senID=59076	13	VCONJ	_	_
-15	با	با	PREP	PREP	attachment=ISO|senID=59076	17	NPP	_	_
-16	خدا	خدا	N	ANM	attachment=ISO|number=SING|senID=59076	15	POSDEP	_	_
-17	غریبی	غریبی	N	IANM	attachment=ISO|number=SING|senID=59076	18	NVE	_	_
-18	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076	14	POSDEP	_	SpaceAfter=No
-19	؟	؟	PUNC	PUNC	attachment=ISO|senID=59076	2	PUNC	_	_
+10-11	خودتان	_	_	_	_	_	_	_	_
+10	خود	خودتان	PR	UCREFX	person=2|attachment=ISO|number=PLUR|senID=59076	12	PREDEP	_	_
+11	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=59076	10	MOZ	_	_
+12	را	را	POSTP	POSTP	attachment=ISO|senID=59076	14	OBJ	_	_
+13	سرزنش	سرزنش	N	IANM	attachment=ISO|number=SING|senID=59076	14	NVE	_	_
+14	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076	9	POSDEP	_	_
+15	و	و	CONJ	CONJ	attachment=ISO|senID=59076	14	VCONJ	_	_
+16	با	با	PREP	PREP	attachment=ISO|senID=59076	18	NPP	_	_
+17	خدا	خدا	N	ANM	attachment=ISO|number=SING|senID=59076	16	POSDEP	_	_
+18	غریبی	غریبی	N	IANM	attachment=ISO|number=SING|senID=59076	19	NVE	_	_
+19	کنید	کرد#کن	V	ACT	person=2|attachment=ISO|number=PLUR|tma=HEL|senID=59076	15	POSDEP	_	SpaceAfter=No
+20	؟	؟	PUNC	PUNC	attachment=ISO|senID=59076	2	PUNC	_	_
 
 # sent_id = test-s1434
 # text = من شبهه را می‌پذیرم و اگر تفکر فلسفی را با آسیب‌هایی که گفتیم در نظر بگیریم، بسیار طبیعی است که ذهن بتواند خودکامگی بکند.
