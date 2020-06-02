@@ -43,6 +43,9 @@ os.system("python3 -u dep_tree.py")
 print("merge_stanza.py")
 os.system("python3 -u merge_stanza.py")
 
+print("converting_feats.py")
+os.system("python3 -u converting_feats.py")
+
 print("tree_checker.py")
 os.system("python3 -u tree_checker.py")
 
