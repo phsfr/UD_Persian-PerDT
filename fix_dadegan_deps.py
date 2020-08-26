@@ -180,7 +180,8 @@ if __name__ == '__main__':
         for tree in tree_list:
             for i, word in enumerate(tree.words):
                 if has_two_vconj_deps(tree, i):
-                    print("PROBLEM in VCONJ", tree.sen_id)
+                    if tree.sen_id not in {31882, 31083}:
+                        print("POSSIBLE PROBLEM in VCONJ", tree.sen_id)
         print(len(sen_changed))
 
         for tree in tree_list:
