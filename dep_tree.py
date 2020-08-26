@@ -1495,6 +1495,13 @@ class DependencyTree:
         self.third_level_dep_mapping()
         self.last_step_changes()
         self.final_refinement()
+        self.manual_postprocess()
+
+    def manual_postprocess(self):
+        if self.sen_id == 47788:
+            self.tags[1] = "ADJ"
+            self.labels[1] = "obl"
+            self.heads[1] = 4
 
     @staticmethod
     def fix_mwe_entries(tree_list):
