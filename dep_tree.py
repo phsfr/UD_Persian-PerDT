@@ -1502,6 +1502,46 @@ class DependencyTree:
             self.tags[1] = "ADJ"
             self.labels[1] = "obl"
             self.heads[1] = 4
+        elif self.sen_id == 47435:
+            self.tags[23] = "NOUN"
+        elif self.sen_id == 23570:
+            self.tags[0] = "PROPN"
+            self.tags[1] = "PROPN"
+            self.tags[2] = "PROPN"
+            self.labels[1] = "flat:name"
+            self.labels[2] = "flat:name"
+        elif self.sen_id == 51672:
+            self.tags[0] = "PROPN"
+            self.labels[1] = "flat:name"
+            self.heads[2] = 0
+            self.heads[3] = 0
+        elif self.sen_id==34084:
+            self.tags[11] = "PROPN"
+            self.labels[11] = "flat:name"
+            self.heads[11] = 10
+        elif self.sen_id == 50328:
+            self.tags[10] = "NOUN"
+            self.tags[11] = "NOUN"
+        elif self.sen_id == 23472:
+            self.tags[-6] = "NOUN"
+        elif self.sen_id == 23520:
+            self.labels[1] = "goeswith"
+        elif self.sen_id == 23483:
+            self.tags[20] = "NUM"
+        elif self.sen_id == 40708:
+            self.labels[1] = "goeswith"
+            self.labels[0] = "nsubj"
+            self.heads[0] = 5
+            self.heads[1] = 1
+        elif self.sen_id == 33833:
+            self.tags[5] = "PROPN"
+            self.tags[6] = "PROPN"
+            self.heads[6] = 6
+            self.labels[6] = "flat:name"
+            self.heads[7] = 5
+
+
+
 
     @staticmethod
     def fix_mwe_entries(tree_list):

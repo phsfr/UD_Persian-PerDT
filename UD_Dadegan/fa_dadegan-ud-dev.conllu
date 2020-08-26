@@ -35,7 +35,7 @@
 33	نبی	نبی	PROPN	N_ANM	Number=Sing	32	nmod	_	_
 34	مکرم	مکرم	PROPN	ADJ_AJP	_	33	flat:name	_	_
 35	اسلام	اسلام	PROPN	N_IANM	Number=Sing	33	flat:name	_	_
-36	جهان	جهان	PROPN	N_IANM	Number=Sing	40	nsubj	_	_
+36	جهان	جهان	NOUN	N_IANM	Number=Sing	40	nsubj	_	_
 37	عزادار	عزادار	ADJ	ADJ_AJP	_	40	xcomp	_	_
 38-39	ماتمش	_	_	_	_	_	_	_	_
 38	ماتم	ماتم	NOUN	N_IANM	Number=Sing	37	obl:arg	_	_
@@ -12938,7 +12938,7 @@
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	خیابان	خیابان	PROPN	N_IANM	Number=Sing	8	conj	_	_
 11	سی	سی	PROPN	N_IANM	Number=Sing	10	flat:name	_	_
-12	تیر	تیر	NOUN	N_IANM	Number=Sing	11	nmod	_	SpaceAfter=No
+12	تیر	تیر	PROPN	N_IANM	Number=Sing	10	flat:name	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	12	punct	_	_
 14	ساختمان	ساختمان	PROPN	N_IANM	Number=Sing	8	conj	_	_
 15	وزارت	وزارت	PROPN	N_IANM	Number=Sing	14	flat:name	_	_

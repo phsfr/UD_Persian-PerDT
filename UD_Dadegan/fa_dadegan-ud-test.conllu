@@ -1651,8 +1651,8 @@
 
 # sent_id = test-s85
 # text = دختر بچه‌ای دارد تاب‌بازی می‌کند.
-1	دختر	دختر	NOUN	N_ANM	Number=Sing	2	advmod	_	_
-2	بچه‌ای	بچه	NOUN	N_ANM	Number=Sing	5	nsubj	_	_
+1	دختر	دختر	NOUN	N_ANM	Number=Sing	5	nsubj	_	_
+2	بچه‌ای	بچه	NOUN	N_ANM	Number=Sing	1	goeswith	_	_
 3	دارد	داشت#دار	VERB	V_ACT	Person=3|Number=Sing|Tense=Pres|Voice=Act	5	aux	_	_
 4	تاب‌بازی	تاب‌بازی	NOUN	N_IANM	Number=Sing	5	compound:lvc	_	_
 5	می‌کند	کرد#کن	VERB	V_ACT	Person=3|Number=Sing|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
@@ -10713,8 +10713,8 @@
 8	حتی	حتی	ADV	ADV_SADV	_	9	advmod	_	_
 9	شبانه	شبانه	ADJ	ADJ_AJP	_	7	advmod	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
-11	شهر	شهر	PROPN	N_IANM	Number=Sing	13	obl:arg	_	_
-12	گشت‌زنی	گشت‌زنی	PROPN	N_IANM	Number=Sing	13	compound:lvc	_	_
+11	شهر	شهر	NOUN	N_IANM	Number=Sing	13	obl:arg	_	_
+12	گشت‌زنی	گشت‌زنی	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
 13	می‌کنم	کرد#کن	VERB	V_ACT	Person=1|Number=Sing|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 14	.	.	PUNCT	PUNC	_	13	punct	_	_
 
@@ -15316,10 +15316,10 @@
 
 # sent_id = test-s799
 # text = فرماندهٔ انتظامی خراسان رضوی خاطرنشان کرد: اگر از منابع طبیعی حفاظت نکنیم آیندگان ما را نفرین خواهند کرد.
-1	فرماندهٔ	فرمانده	NOUN	N_ANM	Number=Sing	6	nsubj	_	_
-2	انتظامی	انتظامی	PROPN	ADJ_AJP	_	1	nmod	_	_
-3	خراسان	خراسان	PROPN	N_IANM	Number=Sing	2	flat:name	_	_
-4	رضوی	رضوی	PROPN	ADJ_AJP	_	2	flat:name	_	_
+1	فرماندهٔ	فرمانده	PROPN	N_ANM	Number=Sing	6	nsubj	_	_
+2	انتظامی	انتظامی	PROPN	ADJ_AJP	_	1	flat:name	_	_
+3	خراسان	خراسان	PROPN	N_IANM	Number=Sing	0	flat:name	_	_
+4	رضوی	رضوی	PROPN	ADJ_AJP	_	0	flat:name	_	_
 5	خاطرنشان	خاطرنشان	NOUN	N_IANM	Number=Sing	6	compound:lvc	_	_
 6	کرد	کرد#کن	VERB	V_ACT	Person=3|Number=Sing|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 7	:	:	PUNCT	PUNC	_	6	punct	_	_
