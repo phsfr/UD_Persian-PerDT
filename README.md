@@ -9,7 +9,7 @@ This is an automatic coversion of Persian Dependency Treebank (PerDT) with manua
 
 #
 
-# STATISTICAL OVERVIEW OF THE Universal PerDT
+# STATISTICAL OVERVIEW OF UNIVERSAL PERDT
 
 
 # DATA SPLIT
@@ -41,7 +41,7 @@ XPOS: manual native
 Features: converted with corrections
 Relations: converted with corrections 
 Contributors: Rasooli, Mohammad Sadegh;Safari, Pegah; Moloodi, AmirSaeid; Nourian, Alireza
-Contributing: elsewhere
-Contact: pegh.safari@gmail.com
+Contributing: here source
+Contact: rasooli@seas.upenn.edu, pegh.safari@gmail.com
 ===============================================================================
 </pre>
