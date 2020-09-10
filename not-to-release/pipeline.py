@@ -77,4 +77,7 @@ os.system("python3 remove_feat_column.py UD_Dadegan-nt/ parser_data//dadegan-nt/
 os.system("python3 conllu2raw.py UD_Dadegan parser_data/dadegan_raw/")
 os.system("python3 conllu2raw.py parser_data/seraji-nt parser_data/seraji_raw/")
 
+os.system("cp UD_Dadegan/fa_dadegan-ud-dev.conllu ../fa_perdt-ud-dev.conllu")
+os.system("cp UD_Dadegan/fa_dadegan-ud-train.conllu ../fa_perdt-ud-train.conllu")
+os.system("cp UD_Dadegan/fa_dadegan-ud-test.conllu ../fa_perdt-ud-test.conllu")
 print("FINISHED!")
