@@ -9,7 +9,7 @@ This is an automatic coversion of Persian Dependency Treebank (PerDT) with manua
 
 #
 
-# STATISTICAL OVERVIEW OF THE PERSIAN UD
+# STATISTICAL OVERVIEW OF THE Universal PerDT
 
 
 # DATA SPLIT
