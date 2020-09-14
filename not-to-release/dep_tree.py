@@ -1512,6 +1512,8 @@ class DependencyTree:
                 self.labels[i] = "obl"
             if (self.tags[i] == "PUNCT" and self.words[i]!="-") and self.heads[i]>i:
                 self.final_tags[i] = "SpaceAfter=No"
+            # if self.tags[self.heads[i]-1] == "AUX":
+            #     self.labels[i] = "obl"
         if self.sen_id == 23558:
             self.heads[16] = 19
 

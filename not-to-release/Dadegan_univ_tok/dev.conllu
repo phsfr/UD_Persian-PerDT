@@ -57,7 +57,7 @@
 10	ایرانی	ایرانی	ADJ	AJP	attachment=ISO|senID=23485	9	NPOSTMOD	_	_
 11	ترتیب	ترتیب	N	IANM	attachment=ISO|number=SING|senID=23485	12	NVE	_	_
 12	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=23485|tense=Past|tma=GS	0	root	_	_
-13	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=23485|tense=Past	12	aux:pass	_	SpaceAfter=No
+13	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=23485|tense=Past	12	aux:pass	_	SpaceAfter=No
 14	.	.	PUNC	PUNC	attachment=ISO|senID=23485	12	PUNC	_	_
 
 # sent_id = dev-s3
@@ -284,7 +284,7 @@
 33	دارد	داشت#دار	V	ACT	attachment=ISO|number=SING|person=3|senID=23568|tma=H	28	PRD	_	SpaceAfter=No
 34	،	،	PUNC	PUNC	attachment=ISO|senID=23568	33	PUNC	_	_
 35	برچیده	بر#چید#چین	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=23568|tense=Past|tma=HEL	9	VCL	_	_
-36	شود	کرد#کن	AUX	AUX	mood=Sub|number=SING|person=3|senID=23568|tense=Pres	35	aux:pass	_	SpaceAfter=No
+36	شود	شد#شو	AUX	AUX	mood=Sub|number=SING|person=3|senID=23568|tense=Pres	35	aux:pass	_	SpaceAfter=No
 37	.	.	PUNC	PUNC	attachment=ISO|senID=23568	4	PUNC	_	_
 
 # sent_id = dev-s10
@@ -597,7 +597,7 @@
 51	اهالی	اهل	N	ANM	attachment=ISO|number=PLUR|senID=23656	50	MOZ	_	_
 52	تئاتر	تئاتر	N	IANM	attachment=ISO|number=SING|senID=23656	51	MOZ	_	_
 53	شنیده	شنید#شنو	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=23656|tense=Past|tma=H	40	PRD	_	_
-54	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=23656|tense=Pres	53	aux:pass	_	SpaceAfter=No
+54	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=23656|tense=Pres	53	aux:pass	_	SpaceAfter=No
 55	.	.	PUNC	PUNC	attachment=ISO|senID=23656	21	PUNC	_	_
 
 # sent_id = dev-s18
@@ -1499,7 +1499,7 @@
 28	چاله‌ها	چاله	N	IANM	attachment=ISO|number=PLUR|senID=23955	30	SBJ	_	_
 29	آتش	آتش	N	IANM	attachment=ISO|number=SING|senID=23955	30	NVE	_	_
 30	زده	زد#زن	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=23955|tense=Past|tma=GN	21	PRD	_	_
-31	شده	کرد#کن	AUX	AUX	number=SING|person=3|senID=23955|tense=Past	30	aux:pass	_	_
+31	شده	شد#شو	AUX	AUX	number=SING|person=3|senID=23955|tense=Past	30	aux:pass	_	_
 32	است	#است	AUX	AUX	number=SING|person=3|senID=23955|tense=Pres	31	aux	_	SpaceAfter=No
 33	.	.	PUNC	PUNC	attachment=ISO|senID=23955	20	PUNC	_	_
 
@@ -1588,7 +1588,7 @@
 35	شبکهٔ	شبکه	N	IANM	attachment=ISO|number=SING|senID=23994	33	MOZ	_	_
 36	تهران	تهران	N	IANM	attachment=ISO|number=SING|senID=23994	35	MOZ	_	_
 37	ساخته	ساخت#ساز	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=23994|tense=Past|tma=H	17	PRD	_	_
-38	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=23994|tense=Pres	37	aux:pass	_	SpaceAfter=No
+38	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=23994|tense=Pres	37	aux:pass	_	SpaceAfter=No
 39	.	.	PUNC	PUNC	attachment=ISO|senID=23994	16	PUNC	_	_
 
 # sent_id = dev-s46
@@ -1807,7 +1807,7 @@
 54	و	و	CONJ	CONJ	attachment=ISO|senID=24038	53	VCONJ	_	_
 55	تطابق	تطابق	N	IANM	attachment=ISO|number=SING|senID=24038	56	NVE	_	_
 56	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=24038|tense=Past|tma=GN	54	POSDEP	_	_
-57	شده	کرد#کن	AUX	PASS	number=SING|person=3|senID=24038|verbForm=Part	56	aux:pass	_	_
+57	شده	شد#شو	AUX	PASS	number=SING|person=3|senID=24038|verbForm=Part	56	aux:pass	_	_
 58	که	که	SUBR	SUBR	attachment=ISO|senID=24038	51	NCL	_	_
 59	به	به	PREP	PREP	attachment=ISO|senID=24038	62	VPP	_	_
 60	چاپ	چاپ	N	IANM	attachment=ISO|number=SING|senID=24038	59	POSDEP	_	_
@@ -1970,7 +1970,7 @@
 11	کارکردهای	کارکرد	N	IANM	attachment=ISO|number=PLUR|senID=24131	10	MOZ	_	_
 12	مشخصی	مشخص	ADJ	AJP	attachment=ISO|senID=24131	11	NPOSTMOD	_	_
 13	ساخته	ساخت#ساز	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=24131|tense=Past|tma=H	5	PRD	_	_
-14	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=24131|tense=Pres	13	aux:pass	_	SpaceAfter=No
+14	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=24131|tense=Pres	13	aux:pass	_	SpaceAfter=No
 15	،	،	PUNC	PUNC	attachment=ISO|senID=24131	13	PUNC	_	_
 16	نمی‌توان	#توان	V	MODL	attachment=ISO|polarity=NEG|senID=24131|tma=HEL	0	root	_	_
 17	به	به	PREP	PREP	attachment=ISO|senID=24131	19	NPP	_	_
@@ -2056,7 +2056,7 @@
 27	متحد	متحد	ADJ	AJP	attachment=ISO|senID=24167	26	NPOSTMOD	_	_
 28	بنا	بنا	N	IANM	attachment=ISO|number=SING|senID=24167	29	NVE	_	_
 29	نهاده	نهاد#نه	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=24167|tense=Past|tma=GS	12	PRD	_	_
-30	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=24167|tense=Past	29	aux:pass	_	SpaceAfter=No
+30	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=24167|tense=Past	29	aux:pass	_	SpaceAfter=No
 31	.	.	PUNC	PUNC	attachment=ISO|senID=24167	11	PUNC	_	_
 
 # sent_id = dev-s61
@@ -3271,7 +3271,7 @@
 16	چنین	چنین	PREM	DEMAJ	attachment=ISO|senID=28001	17	NPREMOD	_	_
 17	مراسمی	مراسم	N	IANM	attachment=ISO|number=SING|senID=28001	18	SBJ	_	_
 18	دیده	دید#بین	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=28001|tense=Past|tma=H	12	POSDEP	_	_
-19	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=28001|tense=Pres	18	aux:pass	_	SpaceAfter=No
+19	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=28001|tense=Pres	18	aux:pass	_	SpaceAfter=No
 20	.	.	PUNC	PUNC	attachment=ISO|senID=28001	18	PUNC	_	_
 
 # sent_id = dev-s107
@@ -5027,7 +5027,7 @@
 14	احتیاج	احتیاج	N	IANM	attachment=ISO|number=SING|senID=26108	13	POSDEP	_	_
 15	تشخیص	تشخیص	N	IANM	attachment=ISO|number=SING|senID=26108	16	NVE	_	_
 16	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=26108|tense=Past|tma=GS	0	root	_	_
-17	شدند	کرد#کن	AUX	AUX	number=PLUR|person=3|senID=26108|tense=Past	16	aux:pass	_	SpaceAfter=No
+17	شدند	شد#شو	AUX	AUX	number=PLUR|person=3|senID=26108|tense=Past	16	aux:pass	_	SpaceAfter=No
 18	.	.	PUNC	PUNC	attachment=ISO|senID=26108	16	PUNC	_	_
 
 # sent_id = dev-s203
@@ -6043,7 +6043,7 @@
 8	آن	آن	PREM	DEMAJ	attachment=ISO|senID=26673	9	NPREMOD	_	_
 9	سال‌ها	سال	N	IANM	attachment=ISO|number=PLUR|senID=26673	7	POSDEP	_	_
 10	ساخته	ساخت#ساز	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=26673|tense=Past|tma=GS	0	root	_	_
-11	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=26673|tense=Past	10	aux:pass	_	_
+11	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=26673|tense=Past	10	aux:pass	_	_
 12	که	که	SUBR	SUBR	attachment=ISO|senID=26673	4	NCL	_	_
 13	به	به	PREP	PREP	attachment=ISO|senID=26673	19	VPP	_	_
 14	نوع	نوع	N	IANM	attachment=ISO|number=SING|senID=26673	13	POSDEP	_	_
@@ -6936,7 +6936,7 @@
 13	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=30979	12	MOZ	_	_
 14	آمیخته	آمیخت#آمیز	V	ACT	Dadeg_fpos=ACT|number=SING|person=3|senID=30979|tense=Past|tma=AY	0	root	_	_
 15	خواهد	خواست#خواه	AUX	AUX	number=SING|person=3|senID=30979|tense=Fut|verbForm=Fin	16	aux	_	_
-16	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=30979|tense=Past	14	aux:pass	_	SpaceAfter=No
+16	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=30979|tense=Past	14	aux:pass	_	SpaceAfter=No
 17	.	.	PUNC	PUNC	attachment=ISO|senID=30979	14	PUNC	_	_
 
 # sent_id = dev-s301
@@ -7860,7 +7860,7 @@
 12	جامعه	جامعه	N	IANM	attachment=ISO|number=SING|senID=31442	11	MOZ	_	_
 13	برآورده	بر#آورد#آور	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=31442|tense=Past|tma=AY	0	root	_	_
 14	خواهد	خواست#خواه	AUX	AUX	number=SING|person=3|senID=31442|tense=Fut|verbForm=Fin	15	aux	_	_
-15	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=31442|tense=Past	13	aux:pass	_	SpaceAfter=No
+15	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=31442|tense=Past	13	aux:pass	_	SpaceAfter=No
 16	.	.	PUNC	PUNC	attachment=ISO|senID=31442	13	PUNC	_	_
 
 # sent_id = dev-s344
@@ -8241,7 +8241,7 @@
 6	خاطره	خاطره	N	IANM	attachment=ISO|number=SING|senID=31688	5	MOZ	_	_
 7	افروخته	افروخت#افروز	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=31688|tense=Past|tma=AY	0	root	_	_
 8	خواهد	خواست#خواه	AUX	AUX	number=SING|person=3|senID=31688|tense=Fut|verbForm=Fin	9	aux	_	_
-9	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=31688|tense=Past	7	aux:pass	_	SpaceAfter=No
+9	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=31688|tense=Past	7	aux:pass	_	SpaceAfter=No
 10	.	.	PUNC	PUNC	attachment=ISO|senID=31688	7	PUNC	_	_
 
 # sent_id = dev-s367
@@ -9159,7 +9159,7 @@
 27	آزمون	آزمون	N	IANM	attachment=ISO|number=SING|senID=32245	29	SBJ	_	_
 28	شان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=32245	27	MOZ	_	_
 29	گرفته	گرفت#گیر	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=32245|tense=Past|tma=GN	0	root	_	_
-30	شده	کرد#کن	AUX	AUX	number=SING|person=3|senID=32245|tense=Past	29	aux:pass	_	_
+30	شده	شد#شو	AUX	AUX	number=SING|person=3|senID=32245|tense=Past	29	aux:pass	_	_
 31	است	#است	AUX	AUX	number=SING|person=3|senID=32245|tense=Pres	30	aux	_	SpaceAfter=No
 32	.	.	PUNC	PUNC	attachment=ISO|senID=32245	29	PUNC	_	_
 
@@ -9502,7 +9502,7 @@
 13	ورزید	ورزید#ورز	V	ACT	attachment=ISO|number=SING|person=3|senID=32431|tma=GS	11	VCL	_	_
 14	حرام	حرام	ADJ	AJP	attachment=ISO|senID=32431	15	TAM	_	_
 15	گفته	گفت#گو	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=32431|tense=Past|tma=H	0	root	_	_
-16	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=32431|tense=Pres	15	aux:pass	_	SpaceAfter=No
+16	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=32431|tense=Pres	15	aux:pass	_	SpaceAfter=No
 17	.	.	PUNC	PUNC	attachment=ISO|senID=32431	15	PUNC	_	_
 
 # sent_id = dev-s438
@@ -10081,7 +10081,7 @@
 3	باید	بایست#باید	V	MODL	attachment=ISO|senID=44775|tma=H	0	root	_	_
 4	بارها	بار	N	IANM	attachment=ISO|number=PLUR|senID=44775	5	ADV	_	_
 5	خوانده	خواند#خوان	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=44775|tense=Past|tma=HEL	3	VCL	_	_
-6	بشود	کرد#کن	AUX	AUX	mood=Sub|number=SING|person=3|senID=44775|tense=Pres	5	aux:pass	_	_
+6	بشود	شد#شو	AUX	AUX	mood=Sub|number=SING|person=3|senID=44775|tense=Pres	5	aux:pass	_	_
 7	و	و	CONJ	CONJ	attachment=ISO|senID=44775	5	VCONJ	_	_
 8	روی	روی	PREP	PREP	attachment=ISO|senID=44775	10	NPP	_	_
 9	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=44775	8	POSDEP	_	_
@@ -10371,7 +10371,7 @@
 24	،	،	PUNC	PUNC	attachment=ISO|senID=32483	22	PUNC	_	_
 25	ایرادهایی	ایراد	N	IANM	attachment=ISO|number=PLUR|senID=32483	26	SBJ	_	_
 26	گرفته	گرفت#گیر	V	ACT	Dadeg_fpos=ACT|number=SING|person=3|senID=32483|tense=Past|tma=GN	0	root	_	_
-27	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=32483|tense=Past	26	aux:pass	_	SpaceAfter=No
+27	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=32483|tense=Past	26	aux:pass	_	SpaceAfter=No
 28	.	.	PUNC	PUNC	attachment=ISO|senID=32483	26	PUNC	_	_
 
 # sent_id = dev-s478
@@ -10551,7 +10551,7 @@
 3	راه	راه	N	IANM	attachment=ISO|number=SING|senID=32595	2	MOZ	_	_
 4	شیری	شیری	ADJ	AJP	attachment=ISO|senID=32595	3	NPOSTMOD	_	_
 5	سنجیده	سنجید#سنج	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=32595|tense=Past|tma=GS	0	root	_	_
-6	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=32595|tense=Past	5	aux:pass	_	SpaceAfter=No
+6	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=32595|tense=Past	5	aux:pass	_	SpaceAfter=No
 7	.	.	PUNC	PUNC	attachment=ISO|senID=32595	5	PUNC	_	_
 
 # sent_id = dev-s489
@@ -10841,7 +10841,7 @@
 10	جامعهٔ	جامعه	N	IANM	attachment=ISO|number=SING|senID=32799	8	MOZ	_	_
 11	اطلاعاتی	اطلاعاتی	ADJ	AJP	attachment=ISO|senID=32799	10	NPOSTMOD	_	_
 12	بازشمرده	باز#شمرد#شمر	V	ACT	Dadeg_fpos=ACT|number=SING|person=3|senID=32799|tense=Past|tma=GS	0	root	_	_
-13	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=32799|tense=Past	12	aux:pass	_	SpaceAfter=No
+13	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=32799|tense=Past	12	aux:pass	_	SpaceAfter=No
 14	.	.	PUNC	PUNC	attachment=ISO|senID=32799	12	PUNC	_	_
 
 # sent_id = dev-s509
@@ -10980,7 +10980,7 @@
 3	اسیر	اسیر	ADJ	AJP	attachment=ISO|senID=32893	2	NPOSTMOD	_	_
 4	آمریکایی	آمریکایی	ADJ	AJP	attachment=ISO|senID=32893	2	NPOSTMOD	_	_
 5	رهانده	رهاند#رهان	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=32893|tense=Past|tma=GS	0	root	_	_
-6	شدند	کرد#کن	AUX	AUX	number=PLUR|person=3|senID=32893|tense=Past	5	aux:pass	_	SpaceAfter=No
+6	شدند	شد#شو	AUX	AUX	number=PLUR|person=3|senID=32893|tense=Past	5	aux:pass	_	SpaceAfter=No
 7	.	.	PUNC	PUNC	attachment=ISO|senID=32893	5	PUNC	_	_
 
 # sent_id = dev-s518
@@ -11240,7 +11240,7 @@
 7	به	به	PREP	PREP	attachment=ISO|senID=33051	9	VPP	_	_
 8	من	من	PR	SEPER	attachment=ISO|number=SING|person=1|senID=33051	7	POSDEP	_	_
 9	واگذاشته	وا#گذاشت#گذار	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=33051|tense=Past|tma=GS	0	root	_	_
-10	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=33051|tense=Past	9	aux:pass	_	SpaceAfter=No
+10	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=33051|tense=Past	9	aux:pass	_	SpaceAfter=No
 11	.	.	PUNC	PUNC	attachment=ISO|senID=33051	9	PUNC	_	_
 
 # sent_id = dev-s533
@@ -11253,7 +11253,7 @@
 6	میدان	میدان	N	IANM	attachment=ISO|number=SING|senID=33061	5	POSDEP	_	_
 7	تحریر	تحریر	N	IANM	attachment=ISO|number=SING|senID=33061	6	MOZ	_	_
 8	سوزانده	سوزاند#سوزان	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=33061|tense=Past|tma=GS	0	root	_	_
-9	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=33061|tense=Past	8	aux:pass	_	SpaceAfter=No
+9	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=33061|tense=Past	8	aux:pass	_	SpaceAfter=No
 10	.	.	PUNC	PUNC	attachment=ISO|senID=33061	8	PUNC	_	_
 
 # sent_id = dev-s534
@@ -11458,7 +11458,7 @@
 4	این	این	PREM	DEMAJ	attachment=ISO|senID=33199	5	NPREMOD	_	_
 5	مجسمه	مجسمه	N	IANM	attachment=ISO|number=SING|senID=33199	6	SBJ	_	_
 6	تراشیده	تراشید#تراش	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=33199|tense=Past|tma=GN	3	PRD	_	_
-7	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=33199|tense=Past	6	aux:pass	_	SpaceAfter=No
+7	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=33199|tense=Past	6	aux:pass	_	SpaceAfter=No
 8	،	،	PUNC	PUNC	attachment=ISO|senID=33199	6	PUNC	_	_
 9	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=33199	10	NPREMOD	_	_
 10	بنای	بنا	N	IANM	attachment=ISO|number=SING|senID=33199	24	SBJ	_	_
@@ -11476,7 +11476,7 @@
 22	و	و	CONJ	CONJ	attachment=ISO|senID=33199	21	NCONJ	_	_
 23	باران	باران	N	IANM	attachment=ISO|number=SING|senID=33199	22	POSDEP	_	_
 24	ساخته	ساخت#ساز	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=33199|tense=Past|tma=GS	0	root	_	_
-25	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=33199|tense=Past	24	aux:pass	_	SpaceAfter=No
+25	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=33199|tense=Past	24	aux:pass	_	SpaceAfter=No
 26	.	.	PUNC	PUNC	attachment=ISO|senID=33199	24	PUNC	_	_
 
 # sent_id = dev-s547
@@ -11485,7 +11485,7 @@
 2	چیزی	چیز	N	IANM	attachment=ISO|number=SING|senID=33209	4	OBJ	_	_
 3	ناپسند	ناپسند	ADJ	AJP	attachment=ISO|senID=33209	4	TAM	_	_
 4	پنداشته	پنداشت#پندار	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=33209|tense=Past|tma=H	1	PRD	_	_
-5	شود	کرد#کن	AUX	AUX	mood=Sub|number=SING|person=3|senID=33209|tense=Pres	4	aux:pass	_	SpaceAfter=No
+5	شود	شد#شو	AUX	AUX	mood=Sub|number=SING|person=3|senID=33209|tense=Pres	4	aux:pass	_	SpaceAfter=No
 6	،	،	PUNC	PUNC	attachment=ISO|senID=33209	4	PUNC	_	_
 7	شریعت	شریعت	N	IANM	attachment=ISO|number=SING|senID=33209	11	SBJ	_	_
 8	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=33209	9	PREDEP	_	_
@@ -11664,7 +11664,7 @@
 8	به	به	PREP	PREP	attachment=ISO|senID=33325	10	VPP	_	_
 9	او	او	PR	SEPER	attachment=ISO|number=SING|person=3|senID=33325	8	POSDEP	_	_
 10	نمایانده	نمایاند#نمایان	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=33325|tense=Past|tma=GN	0	root	_	_
-11	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=33325|tense=Pres	10	aux:pass	_	SpaceAfter=No
+11	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=33325|tense=Pres	10	aux:pass	_	SpaceAfter=No
 12	.	.	PUNC	PUNC	attachment=ISO|senID=33325	10	PUNC	_	_
 
 # sent_id = dev-s559
@@ -12855,7 +12855,7 @@
 1	اذان	اذان	N	IANM	attachment=ISO|number=SING|senID=34023	3	OBJ	_	_
 2	ظهر	ظهر	N	IANM	attachment=ISO|number=SING|senID=34023	1	MOZ	_	_
 3	درداده	در#داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=34023|tense=Past|tma=GS	0	root	_	_
-4	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=34023|tense=Past	3	aux:pass	_	SpaceAfter=No
+4	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=34023|tense=Past	3	aux:pass	_	SpaceAfter=No
 5	.	.	PUNC	PUNC	attachment=ISO|senID=34023	3	PUNC	_	_
 
 # sent_id = dev-s628
@@ -12914,7 +12914,7 @@
 5	به	به	PREP	PREP	attachment=ISO|senID=34073	7	VPP	_	_
 6	زنان	زن	N	ANM	attachment=ISO|number=PLUR|senID=34073	5	POSDEP	_	_
 7	قبولانده	قبولاند#قبولان	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=34073|tense=Past|tma=H	0	root	_	_
-8	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=34073|tense=Pres	7	aux:pass	_	_
+8	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=34073|tense=Pres	7	aux:pass	_	_
 9	که	که	SUBR	SUBR	attachment=ISO|senID=34073	7	VCL	_	_
 10	باید	بایست#باید	V	MODL	attachment=ISO|senID=34073|tma=H	9	PRD	_	_
 11	همهٔ	همه	N	IANM	attachment=ISO|number=PLUR|senID=34073	14	PREDEP	_	_
@@ -12946,7 +12946,7 @@
 17	و	و	CONJ	CONJ	attachment=ISO|senID=34084	16	NCONJ	_	_
 18	پرورش	پرورش	N	IANM	attachment=ISO|number=SING|senID=34084	17	POSDEP	_	_
 19	فراخوانده	فرا#خواند#خوان	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=34084|tense=Past|tma=GS	0	root	_	_
-20	شدیم	کرد#کن	AUX	AUX	number=PLUR|person=1|senID=34084|tense=Past	19	aux:pass	_	SpaceAfter=No
+20	شدیم	شد#شو	AUX	AUX	number=PLUR|person=1|senID=34084|tense=Past	19	aux:pass	_	SpaceAfter=No
 21	.	.	PUNC	PUNC	attachment=ISO|senID=34084	19	PUNC	_	_
 
 # sent_id = dev-s634
@@ -14207,7 +14207,7 @@
 12	حاجی	حاجی	IDEN	IDEN	attachment=ISO|number=SING|senID=46480	13	PREDEP	_	_
 13	بخشی	بخشی	N	ANM	attachment=ISO|number=SING|senID=46480	14	SBJ	_	_
 14	کشته	کشت#کش	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=46480|tense=Past|tma=GN	11	VCL	_	_
-15	شده	کرد#کن	AUX	AUX	number=SING|person=3|senID=46480|tense=Past	14	aux:pass	_	_
+15	شده	شد#شو	AUX	AUX	number=SING|person=3|senID=46480|tense=Past	14	aux:pass	_	_
 16	است	#است	AUX	AUX	number=SING|person=3|senID=46480|tense=Pres	15	aux	_	SpaceAfter=No
 17	.	.	PUNC	PUNC	attachment=ISO|senID=46480	11	PUNC	_	_
 
@@ -14459,7 +14459,7 @@
 31	آنها	آنها	PR	SEPER	attachment=ISO|number=PLUR|person=3|senID=46591	30	POSDEP	_	_
 32	سرکوفت	سرکوفت	N	IANM	attachment=ISO|number=SING|senID=46591	33	NVE	_	_
 33	زده	زد#زن	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=46591|tense=Past|tma=H	29	NCL	_	_
-34	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=46591|tense=Pres	33	aux:pass	_	_
+34	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=46591|tense=Pres	33	aux:pass	_	_
 35-36	ناراحتیشان	_	_	_	_	_	_	_	_
 35	ناراحتی	ناراحتی	N	IANM	attachment=ISO|number=SING|senID=46591	38	SBJ	_	_
 36	شان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=46591	35	MOZ	_	_
@@ -14745,7 +14745,7 @@
 16	دوربین	دوربین	N	IANM	attachment=ISO|number=SING|senID=34315	12	POSDEP	_	_
 17	همواره	همواره	ADV	SADV	attachment=ISO|senID=34315	18	ADV	_	_
 18	پاییده	پایید#پا	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=34315|tense=Past|tma=H	0	root	_	_
-19	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=34315|tense=Pres	18	aux:pass	_	SpaceAfter=No
+19	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=34315|tense=Pres	18	aux:pass	_	SpaceAfter=No
 20	.	.	PUNC	PUNC	attachment=ISO|senID=34315	18	PUNC	_	_
 
 # sent_id = dev-s721
@@ -15122,7 +15122,7 @@
 3	چوبهٔ	چوبه	N	IANM	attachment=ISO|number=SING|senID=34569	2	POSDEP	_	_
 4	در	در	N	IANM	attachment=ISO|number=SING|senID=34569	3	MOZ	_	_
 5	گرفته	گرفت#گیر	V	ACT	Dadeg_fpos=ACT|number=SING|person=3|senID=34569|tense=Past|tma=GS	0	root	_	_
-6	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=34569|tense=Past	5	aux:pass	_	_
+6	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=34569|tense=Past	5	aux:pass	_	_
 
 # sent_id = dev-s746
 # text = ما از رنج دوستانمان آتش می‌گیریم.
@@ -15323,7 +15323,7 @@
 8	معادلهٔ	معادله	N	IANM	attachment=ISO|number=SING|senID=34700	6	MOZ	_	_
 9	ریاضی	ریاضی	N	IANM	attachment=ISO|number=SING|senID=34700	8	MOZ	_	_
 10	گذارده	گذارد#گذار	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=34700|tense=Past|tma=H	0	root	_	_
-11	می‌شوند	کرد#کن	AUX	AUX	number=PLUR|person=3|senID=34700|tense=Pres	10	aux:pass	_	SpaceAfter=No
+11	می‌شوند	شد#شو	AUX	AUX	number=PLUR|person=3|senID=34700|tense=Pres	10	aux:pass	_	SpaceAfter=No
 12	.	.	PUNC	PUNC	attachment=ISO|senID=34700	10	PUNC	_	_
 
 # sent_id = dev-s759
@@ -15754,7 +15754,7 @@
 5	انقراض	انقراض	N	IANM	attachment=ISO|number=SING|senID=35002	4	MOZ	_	_
 6	نجات	نجات	N	IANM	attachment=ISO|number=SING|senID=35002	7	NVE	_	_
 7	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=35002|tense=Past|tma=GS	0	root	_	_
-8	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=35002|tense=Past	7	aux:pass	_	SpaceAfter=No
+8	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=35002|tense=Past	7	aux:pass	_	SpaceAfter=No
 9	.	.	PUNC	PUNC	attachment=ISO|senID=35002	7	PUNC	_	_
 
 # sent_id = dev-s789
@@ -15926,7 +15926,7 @@
 9	به	به	PREP	PREP	attachment=ISO|senID=35082	11	VPRT	_	_
 10	رخ	رخ	N	IANM	attachment=ISO|number=SING|senID=35082	9	POSDEP	_	_
 11	کشیده	کشید#کش	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=35082|tense=Past|tma=GS	0	root	_	_
-12	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=35082|tense=Past	11	aux:pass	_	SpaceAfter=No
+12	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=35082|tense=Past	11	aux:pass	_	SpaceAfter=No
 13	.	.	PUNC	PUNC	attachment=ISO|senID=35082	11	PUNC	_	_
 
 # sent_id = dev-s797
@@ -16289,7 +16289,7 @@
 8	پرسپولیس	پرسپولیس	N	IANM	attachment=ISO|number=SING|senID=35314	7	MOZ	_	_
 9	کنار	کنار	N	IANM	attachment=ISO|number=SING|senID=35314	10	NVE	_	_
 10	گذاشته	گذاشت#گذار	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=35314|tense=Past|tma=GS	0	root	_	_
-11	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=35314|tense=Past	10	aux:pass	_	SpaceAfter=No
+11	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=35314|tense=Past	10	aux:pass	_	SpaceAfter=No
 12	.	.	PUNC	PUNC	attachment=ISO|senID=35314	10	PUNC	_	_
 
 # sent_id = dev-s820
@@ -17126,7 +17126,7 @@
 6	بازیکنان	بازیکن	N	ANM	attachment=ISO|number=PLUR|senID=35764	5	POSDEP	_	_
 7	آشتی	آشتی	N	IANM	attachment=ISO|number=SING|senID=35764	8	NVE	_	_
 8	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=35764|tense=Past|tma=GS	0	root	_	_
-9	شدند	کرد#کن	AUX	AUX	number=PLUR|person=3|senID=35764|tense=Past	8	aux:pass	_	SpaceAfter=No
+9	شدند	شد#شو	AUX	AUX	number=PLUR|person=3|senID=35764|tense=Past	8	aux:pass	_	SpaceAfter=No
 10	.	.	PUNC	PUNC	attachment=ISO|senID=35764	8	PUNC	_	_
 
 # sent_id = dev-s865
@@ -17519,7 +17519,7 @@
 3	بالأخره	بالأخره	ADV	SADV	attachment=ISO|senID=36014	5	ADV	_	_
 4	استعفا	استعفا	N	IANM	attachment=ISO|number=SING|senID=36014	5	NVE	_	_
 5	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=36014|tense=Past|tma=GS	0	root	_	_
-6	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=36014|tense=Past	5	aux:pass	_	SpaceAfter=No
+6	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=36014|tense=Past	5	aux:pass	_	SpaceAfter=No
 7	!	!	PUNC	PUNC	attachment=ISO|senID=36014	5	PUNC	_	_
 
 # sent_id = dev-s890
@@ -18066,7 +18066,7 @@
 7	سال	سال	N	IANM	attachment=ISO|number=SING|senID=47240	9	ADV	_	_
 8	پیش	پیش	ADJ	AJP	attachment=ISO|senID=47240	7	NPOSTMOD	_	_
 9	گذاشته	گذاشت#گذار	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=47240|tense=Past|tma=GN	0	root	_	_
-10	شده	کرد#کن	AUX	PASS	number=SING|person=3|senID=47240|verbForm=Part	9	aux:pass	_	_
+10	شده	شد#شو	AUX	PASS	number=SING|person=3|senID=47240|verbForm=Part	9	aux:pass	_	_
 11	و	و	CONJ	CONJ	attachment=ISO|senID=47240	9	VCONJ	_	_
 12	حکومت	حکومت	N	IANM	attachment=ISO|number=SING|senID=47240	19	SBJ	_	_
 13	و	و	CONJ	CONJ	attachment=ISO|senID=47240	12	NCONJ	_	_
@@ -20644,7 +20644,7 @@
 1	از	از	PREP	PREP	attachment=ISO|senID=36529	3	VPP	_	_
 2	جناب‌عالی	جناب‌عالی	N	ANM	attachment=ISO|number=SING|senID=36529	1	POSDEP	_	_
 3	خواسته	خواست#خواه	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=36529|tense=Past|tma=GS	0	root	_	_
-4	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=36529|tense=Past	3	aux:pass	_	_
+4	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=36529|tense=Past	3	aux:pass	_	_
 5	که	که	SUBR	SUBR	attachment=ISO|senID=36529	3	VCL	_	_
 6	پادرمیانی	پادرمیانی	N	IANM	attachment=ISO|number=SING|senID=36529	7	NVE	_	_
 7	کنید	کرد#کن	V	ACT	attachment=ISO|number=PLUR|person=2|senID=36529|tma=HEL	5	VCL	_	_
@@ -21251,7 +21251,7 @@
 7	جرمی	جرم	N	IANM	attachment=ISO|number=SING|senID=36871	6	MOZ	_	_
 8	که	که	SUBR	SUBR	attachment=ISO|senID=36871	7	NCL	_	_
 9	انجام	انجام	N	IANM	attachment=ISO|number=SING|senID=36871	10	NVE	_	_
-10	داده	کرد#کن	V	ACT	Dadeg_fpos=ACT|Dadeg_lemma=داد#ده|number=SING|person=3|senID=36871|tense=Past|tma=GN	8	PRD	_	_
+10	داده	شد#شو	V	ACT	Dadeg_fpos=ACT|Dadeg_lemma=داد#ده|number=SING|person=3|senID=36871|tense=Past|tma=GN	8	PRD	_	_
 11	است	#است	AUX	AUX	number=SING|person=3|senID=36871|tense=Pres	10	aux	_	_
 12	دستگیر	دستگیر	ADJ	AJP	attachment=ISO|senID=36871	13	NVE	_	_
 13	می‌کنیم	کرد#کن	V	ACT	attachment=ISO|number=PLUR|person=1|senID=36871|tma=H	0	root	_	SpaceAfter=No
@@ -21719,7 +21719,7 @@
 22	گنبد	گنبد	N	IANM	attachment=ISO|number=SING|senID=37129	21	POSDEP	_	_
 23	قابوس	قابوس	N	IANM	attachment=ISO|number=SING|senID=37129	22	MOZ	_	_
 24	کشته	کشت#کش	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=37129|tense=Past|tma=GS	8	NCL	_	_
-25	شدند	کرد#کن	AUX	AUX	number=PLUR|person=3|senID=37129|tense=Past	24	aux:pass	_	SpaceAfter=No
+25	شدند	شد#شو	AUX	AUX	number=PLUR|person=3|senID=37129|tense=Past	24	aux:pass	_	SpaceAfter=No
 26	.	.	PUNC	PUNC	attachment=ISO|senID=37129	10	PUNC	_	_
 
 # sent_id = dev-s1100
@@ -21980,7 +21980,7 @@
 6	توضیح	توضیح	N	IANM	attachment=ISO|number=SING|senID=37230	7	NVE	_	_
 7	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=37230|tense=Past|tma=AY	0	root	_	_
 8	خواهد	خواست#خواه	AUX	AUX	number=SING|person=3|senID=37230|tense=Fut|verbForm=Fin	9	aux	_	_
-9	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=37230|tense=Past	7	aux:pass	_	_
+9	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=37230|tense=Past	7	aux:pass	_	_
 10	و	و	CONJ	CONJ	attachment=ISO|senID=37230	7	VCONJ	_	_
 11	سپس	سپس	ADV	SADV	attachment=ISO|senID=37230	20	ADV	_	_
 12	به	به	PREP	PREP	attachment=ISO|senID=37230	20	ADV	_	_
@@ -22186,7 +22186,7 @@
 26	فارسی	فارسی	ADJ	AJP	attachment=ISO|senID=37331	25	NPOSTMOD	_	_
 27	شرح	شرح	N	IANM	attachment=ISO|number=SING|senID=37331	28	NVE	_	_
 28	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=37331|tense=Past|tma=H	15	POSDEP	_	_
-29	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=37331|tense=Pres	28	aux:pass	_	SpaceAfter=No
+29	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=37331|tense=Pres	28	aux:pass	_	SpaceAfter=No
 30	.	.	PUNC	PUNC	attachment=ISO|senID=37331	28	PUNC	_	_
 
 # sent_id = dev-s1120
@@ -22295,7 +22295,7 @@
 14	ایران	ایران	N	IANM	attachment=ISO|number=SING|senID=37381	13	POSDEP	_	_
 15	حمله	حمله	N	IANM	attachment=ISO|number=SING|senID=37381	16	NVE	_	_
 16	آورده	آورد#آور	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=37381|tense=Past|tma=GS	0	root	_	_
-17	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=37381|tense=Past	16	aux:pass	_	SpaceAfter=No
+17	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=37381|tense=Past	16	aux:pass	_	SpaceAfter=No
 18	.	.	PUNC	PUNC	attachment=ISO|senID=37381	16	PUNC	_	_
 
 # sent_id = dev-s1125
@@ -22985,7 +22985,7 @@
 4	قتل	قتل	N	IANM	attachment=ISO|number=SING|senID=37754	6	TAM	_	_
 5	تشخیص	تشخیص	N	IANM	attachment=ISO|number=SING|senID=37754	6	NVE	_	_
 6	داده	داد#ده	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=37754|tense=Past|tma=GS	0	root	_	_
-7	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=37754|tense=Past	6	aux:pass	_	SpaceAfter=No
+7	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=37754|tense=Past	6	aux:pass	_	SpaceAfter=No
 8	.	.	PUNC	PUNC	attachment=ISO|senID=37754	6	PUNC	_	_
 
 # sent_id = dev-s1162
@@ -27563,7 +27563,7 @@
 13	مقدماتی	مقدماتی	ADJ	AJP	attachment=ISO|senID=39385	12	NPOSTMOD	_	_
 14	جمع	جمع	N	IANM	attachment=ISO|number=SING|senID=39385	15	NVE	_	_
 15	زده	زد#زن	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=39385|tense=Past|tma=GS	0	root	_	_
-16	شد	کرد#کن	AUX	AUX	number=SING|person=3|senID=39385|tense=Past	15	aux:pass	_	SpaceAfter=No
+16	شد	شد#شو	AUX	AUX	number=SING|person=3|senID=39385|tense=Past	15	aux:pass	_	SpaceAfter=No
 17	.	.	PUNC	PUNC	attachment=ISO|senID=39385	15	PUNC	_	_
 
 # sent_id = dev-s1356
@@ -29211,7 +29211,7 @@
 # sent_id = dev-s1426
 # text = گفته می‌شود نماز جمعهٔ مزبور پیش از این تعطیل شده بود اما یزدی و صباغیان با حضور خود، عناصر وهابی را برای برگزاری نماز جمعه تشجیع کرده‌اند.
 1	گفته	گفت#گو	V	PASS	Dadeg_fpos=PASS|number=SING|person=3|senID=44897|tense=Past|tma=H	0	root	_	_
-2	می‌شود	کرد#کن	AUX	AUX	number=SING|person=3|senID=44897|tense=Pres	1	aux:pass	_	_
+2	می‌شود	شد#شو	AUX	AUX	number=SING|person=3|senID=44897|tense=Pres	1	aux:pass	_	_
 3	نماز	نماز	N	IANM	attachment=ISO|number=SING|senID=44897	10	SBJ	_	_
 4	جمعهٔ	جمعه	N	IANM	attachment=ISO|number=SING|senID=44897	3	MOZ	_	_
 5	مزبور	مزبور	ADJ	AJP	attachment=ISO|senID=44897	3	NPOSTMOD	_	_

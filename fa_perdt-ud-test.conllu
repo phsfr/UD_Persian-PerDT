@@ -42,7 +42,7 @@
 20	تاریخ	تاریخ	NOUN	N_IANM	Number=Sing	19	nmod	_	_
 21	پی	پی	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
 22	نهاده	نهاد#نه	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-23	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	22	aux:pass	_	SpaceAfter=No
+23	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	22	aux:pass	_	SpaceAfter=No
 24	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s3
@@ -328,14 +328,14 @@
 11	و	و	CCONJ	CONJ	_	13	cc	_	_
 12	تاریخ	تاریخ	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
 13	زده	زد#زن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	10	conj	_	_
-14	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	13	aux:pass	_	_
+14	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	13	aux:pass	_	_
 15	و	و	CCONJ	CONJ	_	20	cc	_	_
 16	روی	روی	ADP	PREP	_	17	case	_	_
 17	آن	آن	PRON	PR_DEMON	Number=Sing	20	obl	_	_
 18	حرف	حرف	NOUN	N_IANM	Number=Sing	20	nsubj:pass	_	_
 19	DC	DC	PROPN	N_IANM	Number=Sing	18	nmod	_	_
 20	نوشته	نوشت#نویس	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	13	conj	_	_
-21	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	20	aux:pass	_	SpaceAfter=No
+21	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	20	aux:pass	_	SpaceAfter=No
 22	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s18
@@ -346,7 +346,7 @@
 4	چنین	چنین	DET	PREM_DEMAJ	_	5	det	_	_
 5	گام‌هایی	گام	NOUN	N_IANM	Number=Plur	6	obj	_	_
 6	برداشته	بر#داشت#دار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	2	acl	_	_
-7	نشود	کرد#کن	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	6	aux:pass	_	SpaceAfter=No
+7	نشود	شد#شو	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	6	aux:pass	_	SpaceAfter=No
 8	،	،	PUNCT	PUNC	_	6	punct	_	_
 9	توسعهٔ	توسعه	NOUN	N_IANM	Number=Sing	13	nsubj	_	_
 10	کشورهای	کشور	NOUN	N_IANM	Number=Plur	9	nmod	_	_
@@ -2059,7 +2059,7 @@
 6	عکس‌های	عکس	NOUN	N_IANM	Number=Plur	8	obl	_	_
 7	من	من	PRON	PR_SEPER	Number=Sing|Person=1	6	nmod	_	_
 8	دیده	دید#بین	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	2	acl	_	_
-9	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	8	aux:pass	_	_
+9	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	8	aux:pass	_	_
 10	از	از	ADP	PREP	_	11	case	_	_
 11	نور	نور	NOUN	N_IANM	Number=Sing	0	root	_	_
 12	داخل	داخل	NOUN	N_IANM	Number=Sing	11	nmod	_	_
@@ -2704,7 +2704,7 @@
 9	احساس	احساس	NOUN	N_IANM	Number=Sing	7	conj	_	_
 10	بهره	بهره	NOUN	N_IANM	Number=Sing	11	compound:lvc	_	_
 11	گرفته	گرفت#گیر	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	21	advcl	_	_
-12	شود	کرد#کن	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	11	aux:pass	_	SpaceAfter=No
+12	شود	شد#شو	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	11	aux:pass	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	11	punct	_	_
 14	این	این	DET	PREM_DEMAJ	_	15	det	_	_
 15	کار	کار	NOUN	N_IANM	Number=Sing	21	nsubj	_	_
@@ -2793,7 +2793,7 @@
 26	ص	ص	NOUN	N_IANM	Number=Sing	23	obl	_	SpaceAfter=No
 27	)	)	PUNCT	PUNC	_	26	punct	_	_
 28	کاشته	کاشت#کار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	17	acl	_	_
-29	شده	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	28	aux:pass	_	_
+29	شده	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	28	aux:pass	_	_
 30	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	29	aux	_	SpaceAfter=No
 31	،	،	PUNCT	PUNC	_	28	punct	_	_
 32	رنج‌های	رنج	NOUN	N_IANM	Number=Plur	34	obj	_	_
@@ -3410,7 +3410,7 @@
 9	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	6	nmod	_	_
 10	نوازش	نوازش	NOUN	N_IANM	Number=Sing	11	compound:lvc	_	_
 11	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-12	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	11	aux:pass	_	SpaceAfter=No
+12	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	11	aux:pass	_	SpaceAfter=No
 13	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s184
@@ -4404,7 +4404,7 @@
 15	مناطق	منطقه	NOUN	N_IANM	Number=Plur	14	nmod	_	_
 16	دنیا	دنیا	NOUN	N_IANM	Number=Sing	15	nmod	_	_
 17	فرستاده	فرستاد#فرست	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	11	conj	_	_
-18	می‌شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	17	aux:pass	_	SpaceAfter=No
+18	می‌شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	17	aux:pass	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s236
@@ -5145,7 +5145,7 @@
 10	انقلاب	انقلاب	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 11	تطبیق	تطبیق	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
 12	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-13	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	12	aux:pass	_	SpaceAfter=No
+13	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	12	aux:pass	_	SpaceAfter=No
 14	!	!	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s282
@@ -7164,7 +7164,7 @@
 9	هم	هم	PRON	PR_RECPR	_	11	obl	_	_
 10	بیرون	بیرون	NOUN	N_IANM	Number=Sing	11	obl:arg	_	_
 11	آورده	آورد#آور	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Pass	6	acl	_	_
-12	شده‌اند	کرد#کن	AUX	AUX_PASS	Number=Plur|Person=3|VerbForm=Part|Voice=Pass	11	aux:pass	_	_
+12	شده‌اند	شد#شو	AUX	AUX_PASS	Number=Plur|Person=3|VerbForm=Part|Voice=Pass	11	aux:pass	_	_
 13	شیهه	شیهه	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	می‌کشد	کشید#کش	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	1	acl	_	_
 15	در	در	ADP	PREP	_	16	case	_	_
@@ -7694,7 +7694,7 @@
 7	برای	برای	ADP	PREP	_	8	case	_	_
 8	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	9	obl	_	_
 9	نوشته	نوشت#نویس	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-10	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	9	aux:pass	_	SpaceAfter=No
+10	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	9	aux:pass	_	SpaceAfter=No
 11	.	.	PUNCT	PUNC	_	9	punct	_	_
 
 # sent_id = test-s415
@@ -7761,7 +7761,7 @@
 10	نکات	نکته	NOUN	N_IANM	Number=Plur	12	nsubj:pass	_	_
 11	جا	جا	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
 12	گذاشته	گذاشت#گذار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-13	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	12	aux:pass	_	SpaceAfter=No
+13	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	12	aux:pass	_	SpaceAfter=No
 14	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s419
@@ -8264,7 +8264,7 @@
 31	بیرون	بیرون	NOUN	N_IANM	Number=Sing	32	obl:arg	_	_
 32	کشیده	کشید#کش	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	10	conj	_	_
 33	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Fut|VerbForm=Fin	34	aux	_	_
-34	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Past	32	aux:pass	_	_
+34	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Past	32	aux:pass	_	_
 35	و	و	CCONJ	CONJ	_	44	cc	_	_
 36	در	در	ADP	PREP	_	38	case	_	_
 37	این	این	DET	PREM_DEMAJ	_	38	det	_	_
@@ -8494,7 +8494,7 @@
 12	خاک	خاک	NOUN	N_IANM	Number=Sing	14	obl	_	_
 13	خودی	خودی	ADJ	ADJ_AJP	_	12	amod	_	_
 14	کاشته	کاشت#کار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Pass	8	conj	_	_
-15	شده	کرد#کن	AUX	AUX_PASS	Number=Sing|Person=3|VerbForm=Part|Voice=Pass	14	aux:pass	_	_
+15	شده	شد#شو	AUX	AUX_PASS	Number=Sing|Person=3|VerbForm=Part|Voice=Pass	14	aux:pass	_	_
 16	یا	یا	CCONJ	CONJ	_	18	cc	_	_
 17	قلمه	قلمه	NOUN	N_IANM	Number=Sing	18	compound:lvc	_	_
 18	زده‌اند	زد#زن	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	8	conj	_	SpaceAfter=No
@@ -8903,7 +8903,7 @@
 14	گناه	گناه	NOUN	N_IANM	Number=Sing	16	nsubj:pass	_	_
 15	کفاره	کفاره	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
 16	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	12	ccomp	_	_
-17	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	16	aux:pass	_	SpaceAfter=No
+17	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	16	aux:pass	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = test-s475
@@ -10470,7 +10470,7 @@
 13	کرده‌اند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	3	acl	_	_
 14	عتیقه	عتیقه	NOUN	N_IANM	Number=Sing	15	xcomp	_	_
 15	نامیده	نامید#نام	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-16	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	15	aux:pass	_	SpaceAfter=No
+16	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	15	aux:pass	_	SpaceAfter=No
 17	.	.	PUNCT	PUNC	_	15	punct	_	_
 
 # sent_id = test-s549
@@ -11806,7 +11806,7 @@
 1	صورت	صورت	NOUN	N_IANM	Number=Sing	3	nsubj:pass	_	_
 2	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	1	nmod	_	_
 3	شناخته	شناخت#شناس	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-4	نمی‌شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Past	3	aux:pass	_	SpaceAfter=No
+4	نمی‌شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Past	3	aux:pass	_	SpaceAfter=No
 5	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s614
@@ -12127,7 +12127,7 @@
 26	فلسفی	فلسفی	ADJ	ADJ_AJP	_	25	amod	_	_
 27	مادی	مادی	ADJ	ADJ_AJP	_	25	amod	_	_
 28	زاییده	زایید#زا	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	45	advcl	_	_
-29	شوند	کرد#کن	AUX	AUX	Mood=Sub|Number=Plur|Person=3|Tense=Pres	28	aux:pass	_	_
+29	شوند	شد#شو	AUX	AUX	Mood=Sub|Number=Plur|Person=3|Tense=Pres	28	aux:pass	_	_
 30	که	که	SCONJ	SUBR	_	34	mark	_	_
 31	در	در	ADP	PREP	_	33	case	_	_
 32	آن	آن	DET	PREM_DEMAJ	_	33	det	_	_
@@ -12296,7 +12296,7 @@
 23	،	،	PUNCT	PUNC	_	21	punct	_	_
 24	ترک	ترک	NOUN	N_IANM	Number=Sing	25	compound:lvc	_	_
 25	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-26	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	25	aux:pass	_	SpaceAfter=No
+26	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	25	aux:pass	_	SpaceAfter=No
 27	.	.	PUNCT	PUNC	_	25	punct	_	_
 
 # sent_id = test-s635
@@ -13012,7 +13012,7 @@
 2	زمین	زمین	NOUN	N_IANM	Number=Sing	4	obl	_	_
 3	طوری	طور	NOUN	N_IANM	Number=Sing	4	obl	_	_
 4	دیده	دید#بین	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-5	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	4	aux:pass	_	_
+5	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	4	aux:pass	_	_
 6	که	که	SCONJ	SUBR	_	7	mark	_	_
 7	انگار	انگار	INTJ	PSUS	_	3	acl	_	_
 8	آسمان	آسمان	NOUN	N_IANM	Number=Sing	12	nsubj	_	_
@@ -13606,7 +13606,7 @@
 7	سینمایی	سینمایی	ADJ	ADJ_AJP	_	6	amod	_	_
 8	مایه	مایه	NOUN	N_IANM	Number=Sing	9	compound:lvc	_	_
 9	گرفته	گرفت#گیر	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-10	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	9	aux:pass	_	SpaceAfter=No
+10	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	9	aux:pass	_	SpaceAfter=No
 11	.	.	PUNCT	PUNC	_	9	punct	_	_
 
 # sent_id = test-s707
@@ -13752,7 +13752,7 @@
 6	صورت	صورت	NOUN	N_IANM	Number=Sing	8	obl:arg	_	_
 7	مان	ما	PRON	PR_JOPER	Number=Plur|Person=1|PronType=Prs	6	nmod	_	_
 8	نواخته	نواخت#نواز	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	3	acl	_	_
-9	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	8	aux:pass	_	_
+9	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	8	aux:pass	_	_
 10	سر	سر	NOUN	N_IANM	_	12	obl:arg	_	_
 11	حال	حال	NOUN	N_IANM	Number=Sing	10	obl	_	_
 12	نیامده‌ایم	آمد#آ	VERB	V_ACT	Number=Plur|Person=1|Polarity=Neg|VerbForm=Part|Voice=Act	0	root	_	_
@@ -15185,7 +15185,7 @@
 20	نقل	نقل	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
 21	مکان	مکان	NOUN	N_IANM	Number=Sing	20	nmod	_	_
 22	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-23	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	22	aux:pass	_	SpaceAfter=No
+23	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	22	aux:pass	_	SpaceAfter=No
 24	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s794
@@ -16179,7 +16179,7 @@
 21	خاصی	خاص	ADJ	ADJ_AJP	_	20	amod	_	_
 22	مبذول	مبذول	ADJ	ADJ_AJP	_	23	compound:lvc	_	_
 23	داشته	داشت#دار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-24	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	23	aux:pass	_	SpaceAfter=No
+24	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	23	aux:pass	_	SpaceAfter=No
 25	.	.	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s841
@@ -16338,7 +16338,7 @@
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	4	acl	_	_
 11	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
-12	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	10	aux:pass	_	SpaceAfter=No
+12	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	10	aux:pass	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	10	punct	_	_
 14	توسط	توسط	ADP	PREP	_	15	case	_	_
 15	بلاگرها	بلاگر	NOUN	N_ANM	Number=Plur	24	obl	_	_
@@ -16487,7 +16487,7 @@
 6	،	،	PUNCT	PUNC	_	5	punct	_	_
 7	مصلحت	مصلحت	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	دیده	دید#بین	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-9	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	8	aux:pass	_	_
+9	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	8	aux:pass	_	_
 10	که	که	SCONJ	SUBR	_	16	mark	_	_
 11	دربارهٔ	درباره	ADP	PREP	_	12	case	_	_
 12	موضوع	موضوع	NOUN	N_IANM	Number=Sing	16	obl:arg	_	_
@@ -16925,7 +16925,7 @@
 9	تلویزیون	تلویزیون	NOUN	N_IANM	Number=Sing	8	nmod	_	_
 10	نمایش	نمایش	NOUN	N_IANM	Number=Sing	11	compound:lvc	_	_
 11	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	1	acl	_	_
-12	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	11	aux:pass	_	SpaceAfter=No
+12	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	11	aux:pass	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	11	punct	_	_
 14	تصویر	تصویر	NOUN	N_IANM	Number=Sing	25	nsubj	_	_
 15	به	به	ADP	PREP	_	16	case	_	_
@@ -17930,7 +17930,7 @@
 15	از	از	ADP	PREP	_	16	case	_	_
 16	دین	دین	NOUN	N_IANM	Number=Sing	14	nmod	_	_
 17	دیده	دید#بین	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	2	conj	_	_
-18	نمی‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Pres	17	aux:pass	_	SpaceAfter=No
+18	نمی‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Pres	17	aux:pass	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s936
@@ -18434,7 +18434,7 @@
 6	سال	سال	NOUN	N_IANM	Number=Sing	3	obl:arg	_	_
 7	شل	شل	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	گرفته	گرفت#گیر	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
-9	شده	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	8	aux:pass	_	_
+9	شده	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	8	aux:pass	_	_
 10	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	9	aux	_	SpaceAfter=No
 11	،	،	PUNCT	PUNC	_	8	punct	_	_
 12	حالا	حالا	NOUN	N_IANM	Number=Sing	24	obl	_	_
@@ -21430,7 +21430,7 @@
 25	عشق	عشق	NOUN	N_IANM	Number=Sing	24	nmod	_	_
 26	مایه	مایه	NOUN	N_IANM	Number=Sing	27	compound:lvc	_	_
 27	گذاشته	گذاشت#گذار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-28	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	27	aux:pass	_	SpaceAfter=No
+28	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	27	aux:pass	_	SpaceAfter=No
 29	.	.	PUNCT	PUNC	_	27	punct	_	_
 
 # sent_id = test-s1100
@@ -22177,7 +22177,7 @@
 14	گودرزی	گودرزی	PROPN	N_ANM	Number=Sing	13	nmod	_	_
 15	مسائلی	مسئله	NOUN	N_IANM	Number=Plur	16	nsubj:pass	_	_
 16	پرسیده	پرسید#پرس	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	9	acl	_	_
-17	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	16	aux:pass	_	SpaceAfter=No
+17	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	16	aux:pass	_	SpaceAfter=No
 18	،	،	PUNCT	PUNC	_	16	punct	_	_
 19	وی	وی	PRON	PR_SEPER	Number=Sing|Person=3	22	nsubj	_	_
 20	قرآن	قرآن	PROPN	N_IANM	Number=Sing	22	obj	_	_
@@ -24132,7 +24132,7 @@
 19	به	به	ADP	PREP	_	20	case	_	_
 20	اجرا	اجرا	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
 21	گذاشته	گذاشت#گذار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	12	acl	_	_
-22	شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	21	aux:pass	_	SpaceAfter=No
+22	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	21	aux:pass	_	SpaceAfter=No
 23	،	،	PUNCT	PUNC	_	21	punct	_	_
 24	تأکید	تأکید	NOUN	N_IANM	Number=Sing	25	compound:lvc	_	_
 25	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	7	acl	_	_
@@ -25834,7 +25834,7 @@
 12	از	از	ADP	PREP	_	13	case	_	_
 13	ایشان	ایشان	PRON	PR_SEPER	Number=Plur|Person=3	14	obl:arg	_	_
 14	بازگرفته	باز#گرفت#گیر	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	3	advcl	_	_
-15	شود	کرد#کن	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	14	aux:pass	_	SpaceAfter=No
+15	شود	شد#شو	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	14	aux:pass	_	SpaceAfter=No
 16	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s1319
@@ -25951,7 +25951,7 @@
 33	لقب	لقب	NOUN	N_IANM	Number=Sing	35	obj	_	SpaceAfter=No
 34	»	»	PUNCT	PUNC	_	33	punct	_	_
 35	نهاده	نهاد#نه	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	24	conj	_	_
-36	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	35	aux:pass	_	_
+36	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	35	aux:pass	_	_
 37	و	و	CCONJ	CONJ	_	44	cc	_	_
 38	با	با	ADP	PREP	_	40	case	_	_
 39	آن	آن	DET	PREM_DEMAJ	_	40	det	_	_
@@ -26186,7 +26186,7 @@
 27	توسط	توسط	ADP	PREP	_	28	case	_	_
 28	طرفین	طرف	NOUN	N_ANM	Number=Plur	29	obl	_	_
 29	پرداخته	پرداخت#پرداز	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	25	acl	_	_
-30	شده	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	29	aux:pass	_	_
+30	شده	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	29	aux:pass	_	_
 31	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	30	aux	_	SpaceAfter=No
 32	،	،	PUNCT	PUNC	_	29	punct	_	_
 33	برسد	رسید#رس	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	20	advcl	_	SpaceAfter=No
@@ -27350,7 +27350,7 @@
 13	خبر	خبر	NOUN	N_IANM	Number=Sing	12	nmod	_	_
 14	درگوشی	درگوشی	ADJ	ADJ_AJP	_	13	amod	_	_
 15	شنیده	شنید#شنو	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	2	acl	_	_
-16	می‌شد	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Past	15	aux:pass	_	SpaceAfter=No
+16	می‌شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	15	aux:pass	_	SpaceAfter=No
 17	،	،	PUNCT	PUNC	_	15	punct	_	_
 18	قطعیت	قطعیت	NOUN	N_IANM	Number=Sing	20	compound:lvc	_	_
 19	پیدا	پیدا	ADJ	ADJ_AJP	_	20	compound:lv	_	_
@@ -27391,7 +27391,7 @@
 17	کرهٔ	کره	NOUN	N_IANM	Number=Sing	14	nmod	_	_
 18	خاکی	خاکی	ADJ	ADJ_AJP	_	17	amod	_	_
 19	افزوده	افزود#افزا	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
-20	می‌شود	کرد#کن	AUX	AUX	Number=Sing|Person=3|Tense=Pres	19	aux:pass	_	SpaceAfter=No
+20	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	19	aux:pass	_	SpaceAfter=No
 21	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s1396
