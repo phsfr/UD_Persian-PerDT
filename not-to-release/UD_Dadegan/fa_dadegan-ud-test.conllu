@@ -77,9 +77,9 @@
 1	ابن	ابن	PROPN	N_ANM	Number=Sing	11	nsubj	_	_
 2	سینا	سینا	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	هم	هم	ADV	ADV_SADV	_	11	advmod	_	_
-4	برای	برای	ADP	PREP	_	5	case	_	_
+4	برای	برای	ADP	PREP	_	3	case	_	_
 5	شیخ	شیخ	PROPN	N_ANM	Number=Sing	3	case	_	_
-6	اشراق	اشراق	PROPN	N_ANM	Number=Sing	5	flat:name	_	_
+6	اشراق	اشراق	PROPN	N_ANM	Number=Sing	3	flat:name	_	_
 7	و	و	CCONJ	CONJ	_	9	cc	_	_
 8	هم	هم	ADV	ADV_SADV	_	9	dep	_	_
 9	صدرالمتألهین	صدرالمتألهین	PROPN	N_ANM	Number=Sing	6	conj	_	_
@@ -691,7 +691,7 @@
 55	می‌کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	25	conj	_	_
 56	و	و	CCONJ	CONJ	_	79	cc	_	_
 57	پس	پس	ADP	PREP	_	59	case	_	_
-58	از	از	ADP	PREP	_	57	fixed	_	_
+58	از	از	ADP	PREP	_	59	fixed	_	_
 59	ایجاد	ایجاد	NOUN	N_IANM	Number=Sing	79	obl	_	_
 60	فاصله	فاصله	NOUN	N_IANM	Number=Sing	59	nmod	_	_
 61	بین	بین	ADP	PREP	_	62	case	_	_
@@ -931,7 +931,7 @@
 10	که	که	SCONJ	SUBR	_	17	mark	_	_
 11	شخصی	شخص	NOUN	N_ANM	Number=Sing	17	nsubj	_	_
 12	نسبت	نسبت	ADP	PREP	_	14	case	_	_
-13	به	به	ADP	PREP	_	12	fixed	_	_
+13	به	به	ADP	PREP	_	14	fixed	_	_
 14	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	17	obl:arg	_	_
 15	بی‌وفایی	بی‌وفایی	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 16	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	aux	_	_
@@ -1075,7 +1075,7 @@
 2	کودک	کودک	NOUN	N_ANM	Number=Sing	8	nsubj	_	_
 3	تان	شما	PRON	PR_JOPER	Number=Plur|Person=2|PronType=Prs	2	nmod	_	_
 4	قبل	قبل	ADP	PREP	_	6	case	_	_
-5	از	از	ADP	PREP	_	4	fixed	_	_
+5	از	از	ADP	PREP	_	6	fixed	_	_
 6	ناهار	ناهار	NOUN	N_IANM	Number=Sing	8	obl	_	_
 7	بهانه‌گیری	بهانه‌گیری	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	1	advcl	_	_
@@ -1181,11 +1181,11 @@
 4	با	با	ADP	PREP	_	5	case	_	_
 5	درایوی	درایو	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 6	که	که	SCONJ	SUBR	_	15	mark	_	_
-7	به	به	ADP	PREP	_	10	case	_	_
+7	به	به	ADP	PREP	_	8	case	_	_
 8	روش	روش	NOUN	N_IANM	Number=Sing	15	obl	_	_
 9	Fdisk	Fdisk	PROPN	N_IANM	Number=Sing	8	nmod	_	_
 10	یا	یا	CCONJ	CONJ	_	8	case	_	_
-11	هنگام	هنگام	NOUN	N_IANM	Number=Sing	10	obl	_	_
+11	هنگام	هنگام	NOUN	N_IANM	Number=Sing	8	obl	_	_
 12	نصب	نصب	NOUN	N_IANM	Number=Sing	11	nmod	_	_
 13	ویندوز	ویندوز	PROPN	N_IANM	Number=Sing	12	nmod	_	_
 14	پارتیشن‌بندی	پارتیشن‌بندی	NOUN	N_IANM	Number=Sing	15	compound:lvc	_	_
@@ -2068,7 +2068,7 @@
 15	است	#است	AUX	AUX	Number=Sing|Person=3	11	cop	_	_
 16	که	که	SCONJ	SUBR	_	22	mark	_	_
 17	بر	بر	ADP	PREP	_	19	case	_	_
-18	روی	رو	NOUN	N_IANM	Number=Sing	17	fixed	_	_
+18	روی	رو	NOUN	N_IANM	Number=Sing	19	fixed	_	_
 19	بخش‌های	بخش	NOUN	N_IANM	Number=Plur	22	obl:arg	_	_
 20	خارجی	خارجی	ADJ	ADJ_AJP	_	19	amod	_	_
 21	بازتاب	بازتاب	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
@@ -2296,7 +2296,7 @@
 # text = کمونیست‌ها بعد از جنگ جهانی دوم در روسیه، شوم‌ترین حکومت استبدادی را در تاریخ پدیدار کردند.
 1	کمونیست‌ها	کمونیست	NOUN	N_ANM	Number=Plur	17	nsubj	_	_
 2	بعد	بعد	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	جنگ	جنگ	NOUN	N_IANM	Number=Sing	17	obl	_	_
 5	جهانی	جهانی	ADJ	ADJ_AJP	_	4	amod	_	_
 6	دوم	دوم	ADJ	POSNUM	_	4	amod	_	_
@@ -2665,7 +2665,7 @@
 13	شوری	شور	NOUN	N_IANM	Number=Sing	11	conj	_	_
 14	که	که	SCONJ	SUBR	_	38	mark	_	_
 15	نسبت	نسبت	ADP	PREP	_	17	case	_	_
-16	به	به	ADP	PREP	_	15	fixed	_	_
+16	به	به	ADP	PREP	_	17	fixed	_	_
 17	ماندگاری	ماندگاری	NOUN	N_IANM	Number=Sing	38	obl	_	_
 18	نوروز	نوروز	NOUN	N_IANM	Number=Sing	17	nmod	_	SpaceAfter=No
 19	،	،	PUNCT	PUNC	_	18	punct	_	_
@@ -2794,7 +2794,7 @@
 27	)	)	PUNCT	PUNC	_	26	punct	_	_
 28	کاشته	کاشت#کار	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	17	acl	_	_
 29	شده	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	28	aux:pass	_	_
-30	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	29	aux	_	SpaceAfter=No
+30	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	28	aux	_	SpaceAfter=No
 31	،	،	PUNCT	PUNC	_	28	punct	_	_
 32	رنج‌های	رنج	NOUN	N_IANM	Number=Plur	34	obj	_	_
 33	بسیار	بسیار	ADJ	ADJ_AJP	_	32	amod	_	_
@@ -3006,7 +3006,7 @@
 6	شخص	شخص	NOUN	N_ANM	Number=Sing	14	nsubj	_	_
 7	ملامت‌شونده	ملامت‌شونده	ADJ	ADJ_AJP	_	6	amod	_	_
 8	نسبت	نسبت	ADP	PREP	_	10	case	_	_
-9	به	به	ADP	PREP	_	8	fixed	_	_
+9	به	به	ADP	PREP	_	10	fixed	_	_
 10	ملامت‌کننده	ملامت‌کننده	NOUN	N_ANM	Number=Sing	11	nmod	_	_
 11	کینه	کینه	NOUN	N_IANM	Number=Sing	14	obj	_	_
 12	به	به	ADP	PREP	_	13	case	_	_
@@ -3378,7 +3378,7 @@
 # sent_id = test-s182
 # text = پس از سخنرانی حجت‌الاسلام شوشتری، حاج صادق آهنگران مداح سال‌های انقلاب اسلامی و دفاع مقدس نوحه‌سرایی کرد.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	سخنرانی	سخنرانی	NOUN	N_IANM	Number=Sing	18	obl	_	_
 4	حجت‌الاسلام	حجت‌الاسلام	PROPN	IDEN	Number=Sing	3	nmod	_	_
 5	شوشتری	شوشتری	PROPN	N_ANM	Number=Sing	4	flat:name	_	SpaceAfter=No
@@ -3490,7 +3490,7 @@
 # sent_id = test-s188
 # text = قبل از خارج شدن از خانه، خود را در آینه با دقت ورانداز کنید.
 1	قبل	قبل	ADP	PREP	_	4	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	4	fixed	_	_
 3	خارج	خارج	ADJ	ADJ_AJP	_	4	advmod	_	_
 4	شدن	شدن	NOUN	N_IANM	Number=Sing	15	obl	_	_
 5	از	از	ADP	PREP	_	6	case	_	_
@@ -3516,12 +3516,12 @@
 6	فیلسوفی	فیلسوف	NOUN	N_ANM	Number=Sing	2	conj	_	_
 7	غریب	غریب	ADJ	ADJ_AJP	_	6	amod	_	_
 8	که	که	SCONJ	SUBR	_	19	mark	_	_
-9	بی	بی	ADP	PREP	_	12	case	_	_
+9	بی	بی	ADP	PREP	_	11	case	_	_
 10	هیچ	هیچ	DET	PREM_AMBAJ	_	11	det	_	_
 11	دلیلی	دلیل	NOUN	N_IANM	Number=Sing	19	obl	_	_
 12	و	و	CCONJ	CONJ	_	11	case	_	_
 13	به	به	ADP	PREP	_	14	case	_	_
-14	اشتباه	اشتباه	NOUN	N_IANM	Number=Sing	12	obl	_	_
+14	اشتباه	اشتباه	NOUN	N_IANM	Number=Sing	11	obl	_	_
 15	از	از	ADP	PREP	_	17	case	_	_
 16	این	این	DET	PREM_DEMAJ	_	17	det	_	_
 17	زمانه	زمانه	NOUN	N_IANM	Number=Sing	19	obl:arg	_	_
@@ -4012,7 +4012,7 @@
 # text = ایکسیون پس از قتل پدرزنش در دسیسه‌ای، از جمع آدمیان و خدایان طرد شد اما عفو زئوس را که بر او رحم آورده بود، به دست آورد.
 1	ایکسیون	ایکسیون	PROPN	N_ANM	Number=Sing	16	nsubj	_	_
 2	پس	پس	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	قتل	قتل	NOUN	N_IANM	Number=Sing	16	obl	_	_
 5-6	پدرزنش	_	_	_	_	_	_	_	_
 5	پدرزن	پدرزن	NOUN	N_ANM	Number=Sing	4	nmod	_	_
@@ -4077,7 +4077,7 @@
 3	که	که	SCONJ	SUBR	_	12	mark	_	_
 4	من	من	PRON	PR_SEPER	Number=Sing|Person=1	12	nsubj	_	_
 5	نسبت	نسبت	ADP	PREP	_	7	case	_	_
-6	به	به	ADP	PREP	_	5	fixed	_	_
+6	به	به	ADP	PREP	_	7	fixed	_	_
 7	دخترهای	دختر	NOUN	N_ANM	Number=Plur	12	obl	_	_
 8	دیگر	دیگر	ADJ	ADJ_AJP	_	7	amod	_	_
 9	نسبتاً	نسبتاً	ADV	ADV_SADV	_	10	advmod	_	_
@@ -4659,14 +4659,14 @@
 # text = من هم با تمام قوایم و با تکیه بر عقلم، طبیعت اطرافم را تخریب می‌کنم.
 1	من	من	PRON	PR_SEPER	Number=Sing|Person=1	19	nsubj	_	_
 2	هم	هم	ADV	ADV_SADV	_	1	dep	_	_
-3	با	با	ADP	PREP	_	7	case	_	_
+3	با	با	ADP	PREP	_	4	case	_	_
 4	تمام	تمام	NOUN	N_IANM	Number=Plur	19	obl	_	_
 5-6	قوایم	_	_	_	_	_	_	_	_
 5	قوا	قوا	NOUN	N_IANM	Number=Sing	4	nmod	_	_
 6	یم	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	5	nmod	_	_
 7	و	و	CCONJ	CONJ	_	4	case	_	_
 8	با	با	ADP	PREP	_	9	case	_	_
-9	تکیه	تکیه	NOUN	N_IANM	Number=Sing	7	obl	_	_
+9	تکیه	تکیه	NOUN	N_IANM	Number=Sing	4	obl	_	_
 10	بر	بر	ADP	PREP	_	11	case	_	_
 11-12	عقلم	_	_	_	_	_	_	_	SpaceAfter=No
 11	عقل	عقل	NOUN	N_IANM	Number=Sing	9	nmod	_	_
@@ -5107,7 +5107,7 @@
 8	شدن	شدن	NOUN	N_IANM	Number=Sing	16	obj	_	_
 9	حاجت	حاجت	NOUN	N_IANM	Number=Sing	8	nmod	_	_
 10	بعد	بعد	ADP	PREP	_	12	case	_	_
-11	از	از	ADP	PREP	_	10	fixed	_	_
+11	از	از	ADP	PREP	_	12	fixed	_	_
 12	ختم	ختم	NOUN	N_IANM	Number=Sing	16	obl	_	_
 13	قرآن	قرآن	PROPN	N_IANM	Number=Sing	12	nmod	_	_
 14	را	را	ADP	POSTP	_	8	case	_	_
@@ -5253,7 +5253,7 @@
 # text = اوباما پس از پیروزی دوباره با ایران تعامل می‌کند!
 1	اوباما	اوباما	PROPN	N_ANM	Number=Sing	9	nsubj	_	_
 2	پس	پس	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	پیروزی	پیروزی	NOUN	N_IANM	Number=Sing	9	obl	_	_
 5	دوباره	دوباره	ADJ	ADJ_AJP	_	9	advmod	_	_
 6	با	با	ADP	PREP	_	7	case	_	_
@@ -5683,7 +5683,7 @@
 # text = من پیش از این، دو سریال کارتونی معروف را دوبله کرده‌ام.
 1	من	من	PRON	PR_SEPER	Number=Sing|Person=1	12	nsubj	_	_
 2	پیش	پیش	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	این	این	PRON	PR_DEMON	Number=Sing	12	obl	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
 6	دو	دو	NUM	PRENUM	_	7	nummod	_	_
@@ -5755,7 +5755,7 @@
 # sent_id = test-s311
 # text = ای کسانی که ایمان آورده‌اید، رکوع کنید و سجده نمایید و پروردگارتان را بپرستید و کار خیر انجام دهید باشد که رستگار شوید.
 1	ای	ای	INTJ	ADR_PRADR	_	17	case	_	_
-2	کسانی	کس	NOUN	N_ANM	Number=Plur	1	obl	_	_
+2	کسانی	کس	NOUN	N_ANM	Number=Plur	17	obl	_	_
 3	که	که	SCONJ	SUBR	_	5	mark	_	_
 4	ایمان	ایمان	NOUN	N_IANM	Number=Sing	5	compound:lvc	_	_
 5	آورده‌اید	آورد#آور	VERB	V_ACT	Number=Plur|Person=2|VerbForm=Part|Voice=Act	2	acl	_	SpaceAfter=No
@@ -5775,7 +5775,7 @@
 18	کار	کار	NOUN	N_IANM	Number=Sing	21	obj	_	_
 19	خیر	خیر	ADJ	ADJ_AJP	_	18	amod	_	_
 20	انجام	انجام	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
-21	دهید	داد#ده	VERB	V_ACT	Mood=Imp|Number=Plur|Person=2|Tense=Pres|Voice=Act	1	conj	_	_
+21	دهید	داد#ده	VERB	V_ACT	Mood=Imp|Number=Plur|Person=2|Tense=Pres|Voice=Act	17	conj	_	_
 22	باشد	باشد	INTJ	PSUS	_	21	ccomp	_	_
 23	که	که	SCONJ	SUBR	_	25	mark	_	_
 24	رستگار	رستگار	ADJ	ADJ_AJP	_	25	xcomp	_	_
@@ -5785,7 +5785,7 @@
 # sent_id = test-s312
 # text = پیش از تشریفات نوروز بزرگان و نمایندگان کشورها به تخت جمشید می‌آمدند و در دشت وسیع مرودشت و مغرب تخت جمشید قرار گرفته و خیمه می‌زدند.
 1	پیش	پیش	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	تشریفات	تشریفات	NOUN	N_IANM	Number=Sing	12	obl	_	_
 4	نوروز	نوروز	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 5	بزرگان	بزرگ	NOUN	N_ANM	Number=Plur	12	nsubj	_	_
@@ -5797,12 +5797,12 @@
 11	جمشید	جمشید	PROPN	N_IANM	Number=Sing	10	flat:name	_	_
 12	می‌آمدند	آمد#آ	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	0	root	_	_
 13	و	و	CCONJ	CONJ	_	26	cc	_	_
-14	در	در	ADP	PREP	_	18	case	_	_
+14	در	در	ADP	PREP	_	15	case	_	_
 15	دشت	دشت	PROPN	N_IANM	Number=Sing	23	obl:arg	_	_
 16	وسیع	وسیع	PROPN	ADJ_AJP	_	15	flat:name	_	_
 17	مرودشت	مرودشت	PROPN	N_IANM	Number=Sing	15	flat:name	_	_
 18	و	و	CCONJ	CONJ	_	15	case	_	_
-19	مغرب	مغرب	NOUN	N_IANM	Number=Sing	18	obl	_	_
+19	مغرب	مغرب	NOUN	N_IANM	Number=Sing	15	obl	_	_
 20	تخت	تخت	PROPN	N_IANM	Number=Sing	19	nmod	_	_
 21	جمشید	جمشید	PROPN	N_IANM	Number=Sing	20	flat:name	_	_
 22	قرار	قرار	NOUN	N_IANM	Number=Sing	23	compound:lvc	_	_
@@ -6021,7 +6021,7 @@
 8	که	که	SCONJ	SUBR	_	20	mark	_	_
 9	چرا	چرا	ADV	ADV_SADV	_	20	advmod	_	_
 10	نسبت	نسبت	ADP	PREP	_	14	case	_	_
-11	به	به	ADP	PREP	_	10	fixed	_	_
+11	به	به	ADP	PREP	_	14	fixed	_	_
 12	این	این	DET	PREM_DEMAJ	_	14	det	_	_
 13	14	14	NUM	PRENUM	_	14	nummod	_	_
 14	تن	تن	NOUN	N_IANM	Number=Sing	20	obl:arg	_	_
@@ -6240,7 +6240,7 @@
 2	شعر	شعر	NOUN	N_IANM	Number=Sing	1	nmod	_	_
 3	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	2	nmod	_	_
 4	را	را	ADP	POSTP	_	1	case	_	SpaceAfter=No
-5	،	،	PUNCT	PUNC	_	4	punct	_	_
+5	،	،	PUNCT	PUNC	_	1	punct	_	_
 6	چنین	چنین	NOUN	N_IANM	Number=Sing	10	obl	_	_
 7	زیباترین	زیبا	ADJ	ADJ_AJSUP	_	8	amod	_	_
 8	تقویم	تقویم	NOUN	N_IANM	Number=Sing	10	xcomp	_	_
@@ -6688,14 +6688,14 @@
 # sent_id = test-s358
 # text = پس از داریوش مقام زن مخصوصاً در طبقهٔ ثروتمندان تنزل پیدا کرد.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	داریوش	داریوش	PROPN	N_ANM	Number=Sing	12	obl	_	_
 4	مقام	مقام	NOUN	N_IANM	Number=Sing	12	nsubj	_	_
 5	زن	زن	NOUN	N_ANM	Number=Sing	4	nmod	_	_
 6	مخصوصاً	مخصوصاً	ADV	ADV_SADV	_	12	advmod	_	_
-7	در	در	ADP	PREP	_	8	case	_	_
+7	در	در	ADP	PREP	_	6	case	_	_
 8	طبقهٔ	طبقه	NOUN	N_IANM	Number=Sing	6	case	_	_
-9	ثروتمندان	ثروتمند	NOUN	N_ANM	Number=Plur	8	nmod	_	_
+9	ثروتمندان	ثروتمند	NOUN	N_ANM	Number=Plur	6	nmod	_	_
 10	تنزل	تنزل	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
 11	پیدا	پیدا	ADJ	ADJ_AJP	_	12	compound:lv	_	_
 12	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
@@ -6742,7 +6742,7 @@
 1	فرماندار	فرماندار	NOUN	N_ANM	Number=Sing	8	nsubj	_	_
 2	مسجدسلیمان	مسجدسلیمان	PROPN	N_IANM	Number=Sing	1	nmod	_	_
 3	پس	پس	ADP	PREP	_	6	case	_	_
-4	از	از	ADP	PREP	_	3	fixed	_	_
+4	از	از	ADP	PREP	_	6	fixed	_	_
 5	20	20	NUM	PRENUM	_	6	nummod	_	_
 6	ماه	ماه	NOUN	N_IANM	Number=Sing	8	obl	_	_
 7	تودیع	تودیع	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
@@ -7584,7 +7584,7 @@
 1	نقاشی	نقاشی	NOUN	N_IANM	Number=Sing	20	nsubj	_	_
 2	چینی	چینی	ADJ	ADJ_AJP	_	1	amod	_	SpaceAfter=No
 3	،	،	PUNCT	PUNC	_	2	punct	_	_
-4	در	در	ADP	PREP	_	11	case	_	_
+4	در	در	ADP	PREP	_	5	case	_	_
 5	وهلهٔ	وهله	NOUN	N_IANM	Number=Sing	20	obl	_	_
 6	اول	اول	ADJ	POSNUM	_	5	amod	_	SpaceAfter=No
 7	،	،	PUNCT	PUNC	_	6	punct	_	_
@@ -7593,7 +7593,7 @@
 10	دینی	دینی	ADJ	ADJ_AJP	_	9	amod	_	_
 11	و	و	CCONJ	CONJ	_	5	case	_	_
 12	در	در	ADP	PREP	_	13	case	_	_
-13	وهلهٔ	وهله	NOUN	N_IANM	Number=Sing	11	obl	_	_
+13	وهلهٔ	وهله	NOUN	N_IANM	Number=Sing	5	obl	_	_
 14	دوم	دوم	ADJ	POSNUM	_	13	amod	_	SpaceAfter=No
 15	،	،	PUNCT	PUNC	_	14	punct	_	_
 16	از	از	ADP	PREP	_	17	case	_	_
@@ -7621,7 +7621,7 @@
 14	نثر	نثر	NOUN	N_IANM	Number=Sing	12	nmod	_	_
 15	این	این	DET	PREM_DEMAJ	_	16	det	_	_
 16	کتاب	کتاب	NOUN	N_IANM	Number=Sing	14	nmod	_	_
-17	را	را	ADP	POSTP	_	18	case	_	_
+17	را	را	ADP	POSTP	_	12	case	_	_
 18	نیز	نیز	ADV	ADV_SADV	_	12	case	_	_
 19	برای	برای	ADP	PREP	_	20	case	_	_
 20	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	23	obl	_	_
@@ -7788,13 +7788,13 @@
 
 # sent_id = test-s420
 # text = با شهامت و شجاعت و برای آزادی جان‌فشانی بکنید.
-1	با	با	ADP	PREP	_	5	case	_	_
+1	با	با	ADP	PREP	_	2	case	_	_
 2	شهامت	شهامت	NOUN	N_IANM	Number=Sing	9	obl	_	_
 3	و	و	CCONJ	CONJ	_	4	cc	_	_
 4	شجاعت	شجاعت	NOUN	N_IANM	Number=Sing	2	conj	_	_
 5	و	و	CCONJ	CONJ	_	2	case	_	_
 6	برای	برای	ADP	PREP	_	7	case	_	_
-7	آزادی	آزادی	NOUN	N_IANM	Number=Sing	5	obl	_	_
+7	آزادی	آزادی	NOUN	N_IANM	Number=Sing	2	obl	_	_
 8	جان‌فشانی	جان‌فشانی	NOUN	N_IANM	Number=Sing	9	compound:lvc	_	_
 9	بکنید	کرد#کن	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	PUNC	_	9	punct	_	_
@@ -7943,7 +7943,7 @@
 2	نمی‌خواهم	خواست#خواه	VERB	V_ACT	Number=Sing|Person=1|Polarity=Neg|Tense=Pres|Voice=Act	0	root	_	_
 3	که	که	SCONJ	SUBR	_	9	mark	_	_
 4	بعد	بعد	ADP	PREP	_	6	case	_	_
-5	از	از	ADP	PREP	_	4	fixed	_	_
+5	از	از	ADP	PREP	_	6	fixed	_	_
 6	مرگ	مرگ	NOUN	N_IANM	Number=Sing	9	obl	_	_
 7	من	من	PRON	PR_SEPER	Number=Sing|Person=1	6	nmod	_	_
 8	فغان	فغان	NOUN	N_IANM	Number=Sing	9	compound:lvc	_	_
@@ -8111,7 +8111,7 @@
 12	می‌کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	_
 13	بلکه	بلکه	ADV	ADV_SADV	_	19	advmod	_	_
 14	بر	بر	ADP	PREP	_	16	case	_	_
-15	علیه	علیه	ADP	PREP	_	14	fixed	_	_
+15	علیه	علیه	ADP	PREP	_	16	fixed	_	_
 16	شوروی	شوروی	PROPN	N_IANM	Number=Sing	19	obl:arg	_	_
 17	فتوا	فتوا	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 18	خواهند	خواست#خواه	AUX	AUX	Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	aux	_	_
@@ -8175,7 +8175,7 @@
 14-15	دستم	_	_	_	_	_	_	_	_
 14	دست	دست	NOUN	N_IANM	Number=Sing	19	obj	_	_
 15	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	14	nmod	_	_
-16	را	را	ADP	POSTP	_	17	case	_	_
+16	را	را	ADP	POSTP	_	14	case	_	_
 17	هم	هم	ADV	ADV_SADV	_	14	case	_	_
 18	گچ	گچ	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	بگیرد	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	5	conj	_	SpaceAfter=No
@@ -8263,7 +8263,7 @@
 30	شده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	25	acl	_	_
 31	بیرون	بیرون	NOUN	N_IANM	Number=Sing	32	obl:arg	_	_
 32	کشیده	کشید#کش	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	10	conj	_	_
-33	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Fut|VerbForm=Fin	34	aux	_	_
+33	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Fut|VerbForm=Fin	32	aux	_	_
 34	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Past	32	aux:pass	_	_
 35	و	و	CCONJ	CONJ	_	44	cc	_	_
 36	در	در	ADP	PREP	_	38	case	_	_
@@ -8272,7 +8272,7 @@
 39	،	،	PUNCT	PUNC	_	38	punct	_	_
 40	هم	هم	ADV	ADV_SADV	_	44	obj	_	_
 41	عدالت	عدالت	NOUN	N_IANM	Number=Sing	40	case	_	_
-42	را	را	ADP	POSTP	_	41	case	_	_
+42	را	را	ADP	POSTP	_	40	case	_	_
 43	خواهند	خواست#خواه	AUX	AUX	Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	44	aux	_	_
 44	یافت	یافت#یاب	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	10	conj	_	_
 45	و	و	CCONJ	CONJ	_	51	cc	_	_
@@ -8344,7 +8344,7 @@
 # sent_id = test-s448
 # text = بعد از این که نوک دو دندان پایین پیدا شد، کودک می‌تواند یک هویج یا یک تکه سیب خنک را گاز بزند.
 1	بعد	بعد	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	این	این	PRON	PR_DEMON	Number=Sing	13	obl	_	_
 4	که	که	SCONJ	SUBR	_	10	mark	_	_
 5	نوک	نوک	NOUN	N_IANM	Number=Sing	10	nsubj	_	_
@@ -8443,7 +8443,7 @@
 # sent_id = test-s453
 # text = ایشان از این زنان و مردانی که علیه سلطه ملایان و حاکمیت ولایت فقیه در سخت‌ترین شرایط، چه در داخل کشور و چه در خارج، به پا خاسته‌اند نیز قدرشناسی خواهد کرد.
 1	ایشان	ایشان	PRON	PR_SEPER	Number=Plur|Person=3	34	nsubj	_	_
-2	از	از	ADP	PREP	_	31	case	_	_
+2	از	از	ADP	PREP	_	4	case	_	_
 3	این	این	DET	PREM_DEMAJ	_	4	det	_	_
 4	زنان	زن	NOUN	N_ANM	Number=Plur	34	obl:arg	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
@@ -8466,9 +8466,9 @@
 22	کشور	کشور	NOUN	N_IANM	Number=Sing	21	nmod	_	_
 23	و	و	CCONJ	CONJ	_	24	cc	_	_
 24	چه	چه	ADV	ADV_SADV	_	20	conj	_	_
-25	در	در	ADP	PREP	_	26	case	_	_
+25	در	در	ADP	PREP	_	24	case	_	_
 26	خارج	خارج	NOUN	N_IANM	Number=Sing	24	case	_	SpaceAfter=No
-27	،	،	PUNCT	PUNC	_	26	punct	_	_
+27	،	،	PUNCT	PUNC	_	24	punct	_	_
 28	به	به	ADP	PREP	_	29	case	_	_
 29	پا	پا	NOUN	N_IANM	Number=Sing	30	compound:lvc	_	_
 30	خاسته‌اند	خاست#خیز	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	4	acl	_	_
@@ -8503,7 +8503,7 @@
 # sent_id = test-s455
 # text = بعد از انجام تمامی موارد، جنس مورد نظر به قیمت رسیده و طرف بسته به نوع جنس، با تخفیف اندکی آن را به شما قالب خواهد کرد.
 1	بعد	بعد	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	انجام	انجام	NOUN	N_IANM	Number=Sing	12	obl	_	_
 4	تمامی	تمامی	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 5	موارد	مورد	NOUN	N_IANM	Number=Plur	4	nmod	_	SpaceAfter=No
@@ -8957,11 +8957,11 @@
 7	جهان	جهان	NOUN	N_IANM	Number=Sing	4	conj	_	_
 8	غرب	غرب	NOUN	N_IANM	Number=Sing	7	nmod	_	_
 9	اوضاع	وضع	NOUN	N_ANM	Number=Plur	15	nsubj	_	SpaceAfter=No
-10	-	-	PUNCT	PUNC	_	11	punct	_	_
+10	-	-	PUNCT	PUNC	_	12	punct	_	_
 11	به	به	ADP	PREP	_	12	case	_	_
 12	تعبیر	تعبیر	NOUN	N_IANM	Number=Sing	15	obl	_	_
 13	تهرانی‌ها	تهرانی	NOUN	N_ANM	Number=Plur	12	nmod	_	SpaceAfter=No
-14	-	-	PUNCT	PUNC	_	11	punct	_	_
+14	-	-	PUNCT	PUNC	_	12	punct	_	_
 15	شکرآب	شکرآب	NOUN	N_IANM	Number=Sing	2	acl	_	_
 16	است	#است	AUX	AUX	Number=Sing|Person=3	15	cop	_	SpaceAfter=No
 17	،	،	PUNCT	PUNC	_	15	punct	_	_
@@ -8971,7 +8971,7 @@
 21	که	که	SCONJ	SUBR	_	31	mark	_	_
 22	غربی‌ها	غربی	NOUN	N_ANM	Number=Plur	31	nsubj	_	_
 23	نسبت	نسبت	ADP	PREP	_	25	case	_	_
-24	به	به	ADP	PREP	_	23	fixed	_	_
+24	به	به	ADP	PREP	_	25	fixed	_	_
 25	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	31	obl	_	_
 26	و	و	CCONJ	CONJ	_	27	cc	_	_
 27-28	ادبیاتمان	_	_	_	_	_	_	_	_
@@ -9303,7 +9303,7 @@
 23	این	این	DET	PREM_DEMAJ	_	24	det	_	_
 24	شبکه	شبکه	NOUN	N_IANM	Number=Sing	39	nsubj	_	_
 25	بعد	بعد	ADP	PREP	_	27	case	_	_
-26	از	از	ADP	PREP	_	25	fixed	_	_
+26	از	از	ADP	PREP	_	27	fixed	_	_
 27	جذب	جذب	NOUN	N_IANM	Number=Sing	39	obl	_	_
 28	سپرده‌های	سپرده	NOUN	N_IANM	Number=Plur	27	nmod	_	_
 29	مردم	مردم	NOUN	N_ANM	Number=Plur	28	nmod	_	_
@@ -9449,7 +9449,7 @@
 17	داده	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	2	acl	_	_
 18	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	17	aux	_	SpaceAfter=No
 19	،	،	PUNCT	PUNC	_	17	punct	_	_
-20	از	از	ADP	PREP	_	23	case	_	_
+20	از	از	ADP	PREP	_	21	case	_	_
 21	گرانی	گرانی	NOUN	N_IANM	Number=Sing	25	obl:arg	_	_
 22	سیمان	سیمان	NOUN	N_IANM	Number=Sing	21	nmod	_	_
 23	نیز	نیز	ADV	ADV_SADV	_	21	case	_	_
@@ -9627,7 +9627,7 @@
 6	300	300	NUM	PRENUM	_	7	nummod	_	_
 7	سال	سال	NOUN	N_IANM	Number=Sing	13	obl	_	_
 8	بر	بر	ADP	PREP	_	10	case	_	_
-9	روی	روی	ADP	PREP	_	8	fixed	_	_
+9	روی	روی	ADP	PREP	_	10	fixed	_	_
 10	زمین	زمین	PROPN	N_IANM	Number=Sing	13	obl	_	_
 11	خلافت	خلافت	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
 12	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	aux	_	_
@@ -10567,7 +10567,7 @@
 # text = یهود پس از شکست از مسلمانان در عرصهٔ نظامی، تهاجم فرهنگی خود را با اشاعهٔ اخبار منحرف و ساختگی در بین مسلمانان سامان‌دهی کردند.
 1	یهود	یهود	NOUN	N_ANM	Number=Sing	25	nsubj	_	_
 2	پس	پس	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	شکست	شکست	NOUN	N_IANM	Number=Sing	25	obl	_	_
 5	از	از	ADP	PREP	_	6	case	_	_
 6	مسلمانان	مسلمان	NOUN	N_ANM	Number=Plur	4	nmod	_	_
@@ -10595,12 +10595,12 @@
 # sent_id = test-s554
 # text = ما به هواداری روستا و به حمایت از روستاییان و عشایر اسلامی افتخار می‌کنیم و در خدمت به این جامعه سبقت می‌جوییم.
 1	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	14	nsubj	_	_
-2	به	به	ADP	PREP	_	5	case	_	_
+2	به	به	ADP	PREP	_	3	case	_	_
 3	هواداری	هواداری	NOUN	N_IANM	Number=Sing	14	obl:arg	_	_
 4	روستا	روستا	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 5	و	و	CCONJ	CONJ	_	3	case	_	_
 6	به	به	ADP	PREP	_	7	case	_	_
-7	حمایت	حمایت	NOUN	N_IANM	Number=Sing	5	obl	_	_
+7	حمایت	حمایت	NOUN	N_IANM	Number=Sing	3	obl	_	_
 8	از	از	ADP	PREP	_	9	case	_	_
 9	روستاییان	روستایی	NOUN	N_ANM	Number=Plur	7	nmod	_	_
 10	و	و	CCONJ	CONJ	_	11	cc	_	_
@@ -10692,7 +10692,7 @@
 5	تا	تا	SCONJ	SUBR	_	4	obl	_	_
 6	6	6	NOUN	N_IANM	Number=Sing	5	obl	_	_
 7	بعد	بعد	ADP	PREP	_	9	case	_	_
-8	از	از	ADP	PREP	_	7	fixed	_	_
+8	از	از	ADP	PREP	_	9	fixed	_	_
 9	ظهر	ظهر	NOUN	N_IANM	Number=Sing	3	amod	_	_
 10	کل	کل	NOUN	N_IANM	Number=Sing	14	obj	_	_
 11	جزیره	جزیره	NOUN	N_IANM	Number=Sing	10	nmod	_	_
@@ -10707,11 +10707,11 @@
 2	با	با	ADP	PREP	_	3	case	_	_
 3	خودروی	خودرو	NOUN	N_IANM	Number=Sing	13	obl	_	_
 4	غیراداری	غیراداری	ADJ	ADJ_AJP	_	3	amod	_	_
-5	در	در	ADP	PREP	_	7	case	_	_
+5	در	در	ADP	PREP	_	6	case	_	_
 6	بعدازظهرها	بعدازظهر	NOUN	N_IANM	Number=Plur	13	obl	_	_
 7	و	و	CCONJ	CONJ	_	6	case	_	_
 8	حتی	حتی	ADV	ADV_SADV	_	9	advmod	_	_
-9	شبانه	شبانه	ADJ	ADJ_AJP	_	7	advmod	_	_
+9	شبانه	شبانه	ADJ	ADJ_AJP	_	6	advmod	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
 11	شهر	شهر	NOUN	N_IANM	Number=Sing	13	obl:arg	_	_
 12	گشت‌زنی	گشت‌زنی	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
@@ -10761,11 +10761,11 @@
 1	می‌دانستم	دانست#دان	VERB	V_ACT	Number=Sing|Person=1|Voice=Act	0	root	_	_
 2	که	که	SCONJ	SUBR	_	17	mark	_	_
 3	حتی	حتی	ADV	ADV_SADV	_	17	advmod	_	_
-4	پس	پس	ADP	PREP	_	6	case	_	_
-5	از	از	ADP	PREP	_	4	fixed	_	_
+4	پس	پس	ADP	PREP	_	3	case	_	_
+5	از	از	ADP	PREP	_	3	fixed	_	_
 6	حضور	حضور	NOUN	N_IANM	Number=Sing	3	case	_	_
 7	در	در	ADP	PREP	_	8	case	_	_
-8	جمع	جمع	NOUN	N_IANM	Number=Sing	6	nmod	_	_
+8	جمع	جمع	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 9	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	8	nmod	_	_
 10	باز	باز	ADV	ADV_SADV	_	17	advmod	_	_
 11	هم	هم	ADV	ADV_SADV	_	10	dep	_	_
@@ -10791,7 +10791,7 @@
 10	دلبستگی	دلبستگی	NOUN	N_IANM	Number=Sing	16	obl	_	_
 11	خاصی	خاص	ADJ	ADJ_AJP	_	10	amod	_	_
 12	بر	بر	ADP	PREP	_	14	case	_	_
-13	روی	روی	ADP	PREP	_	12	fixed	_	_
+13	روی	روی	ADP	PREP	_	14	fixed	_	_
 14	پرچم‌ها	پرچم	NOUN	N_IANM	Number=Plur	16	obl	_	_
 15	گلدوزی	گلدوزی	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
 16	می‌کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
@@ -11420,8 +11420,8 @@
 13	بخواهید	خواست#خواه	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	25	advcl	_	_
 14-15	رنگش	_	_	_	_	_	_	_	_
 14	رنگ	رنگ	NOUN	N_IANM	Number=Sing	8	case	_	_
-15	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	14	nmod	_	_
-16	را	را	ADP	POSTP	_	14	case	_	_
+15	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	8	nmod	_	_
+16	را	را	ADP	POSTP	_	8	case	_	_
 17	تعویض	تعویض	NOUN	N_IANM	Number=Sing	18	compound:lvc	_	_
 18	کنید	کرد#کن	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	13	ccomp	_	_
 19	گاهی	گاه	NOUN	N_IANM	Number=Sing	20	obl	_	_
@@ -11594,7 +11594,7 @@
 # sent_id = test-s605
 # text = پس از زخم خوردن سهراب یل با خنجر رستم، کاووس خدعه کرد و تمام نوشداروها را از سطح دواخانه‌های سیستان جمع کرد.
 1	پس	پس	ADP	PREP	_	4	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	4	fixed	_	_
 3	زخم	زخم	NOUN	N_IANM	Number=Sing	4	obl	_	_
 4	خوردن	خوردن	NOUN	N_IANM	Number=Sing	13	obl	_	_
 5	سهراب	سهراب	PROPN	N_ANM	Number=Sing	4	nmod	_	_
@@ -11652,7 +11652,7 @@
 13	گرمی	گرم	ADJ	ADJ_AJP	_	12	amod	_	_
 14	می‌کارند	کاشت#کار	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	10	conj	_	_
 15	پس	پس	ADP	PREP	_	17	case	_	_
-16	از	از	ADP	PREP	_	15	fixed	_	_
+16	از	از	ADP	PREP	_	17	fixed	_	_
 17	آن	آن	PRON	PR_DEMON	Number=Sing	30	obl	_	_
 18	که	که	SCONJ	SUBR	_	22	mark	_	_
 19	به	به	ADP	PREP	_	20	case	_	_
@@ -12642,14 +12642,14 @@
 
 # sent_id = test-s656
 # text = در محضر قاضی و حتی در جاهای دیگر به طرف مقابل خود جسارت نکنید.
-1	در	در	ADP	PREP	_	4	case	_	_
+1	در	در	ADP	PREP	_	2	case	_	_
 2	محضر	محضر	NOUN	N_IANM	Number=Sing	14	obl	_	_
 3	قاضی	قاضی	NOUN	N_ANM	Number=Sing	2	nmod	_	_
 4	و	و	CCONJ	CONJ	_	2	case	_	_
-5	حتی	حتی	ADV	ADV_SADV	_	4	advmod	_	_
-6	در	در	ADP	PREP	_	7	case	_	_
+5	حتی	حتی	ADV	ADV_SADV	_	2	advmod	_	_
+6	در	در	ADP	PREP	_	5	case	_	_
 7	جاهای	جاها	NOUN	N_IANM	Number=Plur	5	case	_	_
-8	دیگر	دیگر	ADJ	ADJ_AJP	_	7	amod	_	_
+8	دیگر	دیگر	ADJ	ADJ_AJP	_	5	amod	_	_
 9	به	به	ADP	PREP	_	10	case	_	_
 10	طرف	طرف	NOUN	N_ANM	Number=Sing	14	obl:arg	_	_
 11	مقابل	مقابل	ADJ	ADJ_AJP	_	10	amod	_	_
@@ -13204,7 +13204,7 @@
 
 # sent_id = test-s684
 # text = در زمان خلیفهٔ اول به عراق و شام، در زمان خلیفهٔ دوم به دمشق لشگرکشی شد.
-1	در	در	ADP	PREP	_	10	case	_	_
+1	در	در	ADP	PREP	_	2	case	_	_
 2	زمان	زمان	NOUN	N_IANM	Number=Sing	17	obl	_	_
 3	خلیفهٔ	خلیفه	PROPN	N_ANM	Number=Sing	2	nmod	_	_
 4	اول	اول	ADJ	POSNUM	_	3	amod	_	_
@@ -13214,7 +13214,7 @@
 8	شام	شام	PROPN	N_IANM	Number=Sing	6	conj	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	در	در	ADP	PREP	_	2	case	_	_
-11	زمان	زمان	NOUN	N_IANM	Number=Sing	10	obl	_	_
+11	زمان	زمان	NOUN	N_IANM	Number=Sing	2	obl	_	_
 12	خلیفهٔ	خلیفه	PROPN	N_ANM	Number=Sing	11	nmod	_	_
 13	دوم	دوم	ADJ	POSNUM	_	12	amod	_	_
 14	به	به	ADP	PREP	_	15	case	_	_
@@ -13301,7 +13301,7 @@
 9	سیب‌های	سیب	NOUN	N_IANM	Number=Plur	15	nsubj	_	_
 10	خوش‌رنگ	خوش‌رنگ	ADJ	ADJ_AJP	_	9	amod	_	_
 11	بر	بر	ADP	PREP	_	13	case	_	_
-12	روی	رو	NOUN	N_IANM	Number=Sing	11	fixed	_	_
+12	روی	رو	NOUN	N_IANM	Number=Sing	13	fixed	_	_
 13	آن	آن	PRON	PR_DEMON	Number=Sing	15	obl	_	_
 14	خودنمایی	خودنمایی	NOUN	N_IANM	Number=Sing	15	compound:lvc	_	_
 15	می‌کردند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	4	conj	_	_
@@ -13314,7 +13314,7 @@
 # text = من قبل از تو از دنیا و این زندگی محنت‌بار دل خواهم برید.
 1	من	من	PRON	PR_SEPER	Number=Sing|Person=1	13	nsubj	_	_
 2	قبل	قبل	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	13	obl	_	_
 5	از	از	ADP	PREP	_	6	case	_	_
 6	دنیا	دنیا	NOUN	N_IANM	Number=Sing	13	obl:arg	_	_
@@ -13360,7 +13360,7 @@
 3	اجازه	اجازه	NOUN	N_IANM	Number=Sing	4	obj	_	_
 4	می‌دهند	داد#ده	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	_
 5	نسبت	نسبت	ADP	PREP	_	7	case	_	_
-6	به	به	ADP	PREP	_	5	fixed	_	_
+6	به	به	ADP	PREP	_	7	fixed	_	_
 7	خواهران	خواهر	NOUN	N_ANM	Number=Plur	12	obl:arg	_	_
 8	خود	خود	PRON	PR_CREFX	_	7	nmod	_	_
 9	بزرگی	بزرگی	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
@@ -13630,9 +13630,9 @@
 1	لپ‌های	لپ	NOUN	N_IANM	Number=Plur	8	nsubj	_	_
 2	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	1	nmod	_	_
 3	حتی	حتی	ADV	ADV_SADV	_	8	advmod	_	_
-4	زیر	زیر	ADP	PREP	_	5	case	_	_
+4	زیر	زیر	ADP	PREP	_	3	case	_	_
 5	رژگونه	رژگونه	NOUN	N_IANM	Number=Sing	3	case	_	_
-6	هم	هم	ADV	ADV_SADV	_	5	dep	_	_
+6	هم	هم	ADV	ADV_SADV	_	3	dep	_	_
 7	گل	گل	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	انداختند	انداخت#انداز	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	PUNC	_	8	punct	_	_
@@ -13764,10 +13764,10 @@
 # sent_id = test-s717
 # text = آدمیان در همه جای جهان لابه کرده‌اند.
 1	آدمیان	آدمی	NOUN	N_ANM	Number=Plur	7	nsubj	_	_
-2	در	در	ADP	PREP	_	4	case	_	_
+2	در	در	ADP	PREP	_	3	case	_	_
 3	همه	همه	NOUN	N_IANM	Number=Plur	7	obl	_	_
 4	جای	جا	NOUN	N_IANM	Number=Sing	3	case	_	_
-5	جهان	جهان	PROPN	N_IANM	Number=Sing	4	nmod	_	_
+5	جهان	جهان	PROPN	N_IANM	Number=Sing	3	nmod	_	_
 6	لابه	لابه	NOUN	N_IANM	Number=Sing	7	compound:lvc	_	_
 7	کرده‌اند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	PUNC	_	7	punct	_	_
@@ -13856,10 +13856,10 @@
 1	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	8	nsubj	_	_
 2	داری	داشت#دار	VERB	V_ACT	Number=Sing|Person=2|Tense=Pres|Voice=Act	8	aux	_	_
 3	تنها	تنها	ADV	ADV_SADV	_	8	advmod	_	_
-4	برای	برای	ADP	PREP	_	5	case	_	_
+4	برای	برای	ADP	PREP	_	3	case	_	_
 5-6	خودت	_	_	_	_	_	_	_	_
 5	خود	خودت	PRON	PR_UCREFX	Number=Sing|Person=2	3	case	_	_
-6	ت	تو	PRON	PR_JOPER	Number=Sing|Person=2|PronType=Prs	5	nmod	_	_
+6	ت	تو	PRON	PR_JOPER	Number=Sing|Person=2|PronType=Prs	3	nmod	_	_
 7	مبارزه	مبارزه	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	می‌کنی	کرد#کن	VERB	V_ACT	Number=Sing|Person=2|Tense=Pres|Voice=Act	0	root	_	_
 9	و	و	CCONJ	CONJ	_	15	cc	_	_
@@ -14365,7 +14365,7 @@
 # text = بارها بر علیه نظام سخنان سخیف و ناشایستی بر زبان رانده‌اند و هر گاه که فرصت کرده‌اند به همکاری با هالیوود و سینماگران اروپایی پرداخته‌اند.
 1	بارها	بار	NOUN	N_IANM	Number=Plur	11	obl	_	_
 2	بر	بر	ADP	PREP	_	4	case	_	_
-3	علیه	علیه	ADP	PREP	_	2	fixed	_	_
+3	علیه	علیه	ADP	PREP	_	4	fixed	_	_
 4	نظام	نظام	NOUN	N_IANM	Number=Sing	11	obl	_	_
 5	سخنان	سخن	NOUN	N_IANM	Number=Plur	11	compound:lvc	_	_
 6	سخیف	سخیف	ADJ	ADJ_AJP	_	5	amod	_	_
@@ -14574,7 +14574,7 @@
 1	امام	امام	PROPN	IDEN	Number=Sing	20	nsubj	_	_
 2	مجتبی	مجتبی	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	پس	پس	ADP	PREP	_	5	case	_	_
-4	از	از	ADP	PREP	_	3	fixed	_	_
+4	از	از	ADP	PREP	_	5	fixed	_	_
 5	اعزام	اعزام	NOUN	N_IANM	Number=Sing	20	obl	_	_
 6	عبیدالله	عبیدالله	PROPN	N_ANM	Number=Sing	5	nmod	_	SpaceAfter=No
 7	،	،	PUNCT	PUNC	_	6	punct	_	_
@@ -14826,7 +14826,7 @@
 # sent_id = test-s775
 # text = پس از تحقیق می‌توان ضوابط علمی که برای تبلیغات بازرگانی ویژهٔ کودکان تهیه شده است را در اختیار شرکت‌هایی که درخواست پخش تبلیغاتشان را دارند گذاشت و در صورت عدم اجرای آنها از پخش تبلیغ ممانعت ورزید.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	تحقیق	تحقیق	NOUN	N_IANM	Number=Sing	27	obl	_	_
 4	می‌توان	#توان	AUX	V_MODL	_	27	aux	_	_
 5	ضوابط	ضابطه	NOUN	N_IANM	Number=Plur	27	obj	_	_
@@ -15470,7 +15470,7 @@
 22	گرفت	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	1	ccomp	_	_
 23	و	و	CCONJ	CONJ	_	32	cc	_	_
 24	بر	بر	ADP	PREP	_	26	case	_	_
-25	روی	روی	ADP	PREP	_	24	fixed	_	_
+25	روی	روی	ADP	PREP	_	26	fixed	_	_
 26	درخت	درخت	NOUN	N_IANM	Number=Sing	32	obl	_	_
 27	شکوفهٔ	شکوفه	NOUN	N_IANM	Number=Sing	26	nmod	_	_
 28	بادام	بادام	NOUN	N_IANM	Number=Sing	27	nmod	_	_
@@ -16337,7 +16337,7 @@
 8	قرار	قرار	NOUN	N_IANM	Number=Sing	7	nmod	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	4	acl	_	_
-11	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
+11	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux	_	_
 12	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	10	aux:pass	_	SpaceAfter=No
 13	،	،	PUNCT	PUNC	_	10	punct	_	_
 14	توسط	توسط	ADP	PREP	_	15	case	_	_
@@ -17003,7 +17003,7 @@
 8	کوچک	کوچک	ADJ	ADJ_AJP	_	7	amod	_	_
 9	را	را	ADP	POSTP	_	7	case	_	_
 10	قبل	قبل	ADP	PREP	_	12	case	_	_
-11	از	از	ADP	PREP	_	10	fixed	_	_
+11	از	از	ADP	PREP	_	12	fixed	_	_
 12	دختر	دختر	NOUN	N_ANM	Number=Sing	15	obl	_	_
 13	بزرگ	بزرگ	ADJ	ADJ_AJP	_	12	amod	_	_
 14	شوهر	شوهر	NOUN	N_ANM	Number=Sing	15	compound:lvc	_	_
@@ -17049,7 +17049,7 @@
 2	مقصر	مقصر	NOUN	N_IANM	Number=Sing	13	nsubj	_	_
 3	حادثه	حادثه	NOUN	N_IANM	Number=Sing	2	nmod	_	_
 4	پیش	پیش	ADP	PREP	_	6	case	_	_
-5	از	از	ADP	PREP	_	4	fixed	_	_
+5	از	از	ADP	PREP	_	6	fixed	_	_
 6	مراجعه	مراجعه	NOUN	N_IANM	Number=Sing	13	obl	_	_
 7	به	به	ADP	PREP	_	8	case	_	_
 8	بیمه	بیمه	NOUN	N_IANM	Number=Sing	6	nmod	_	_
@@ -17071,7 +17071,7 @@
 # sent_id = test-s890
 # text = قبل از قائم مقام، میرزا شفیع و صدر اصفهانی قریب سی سال صدارت کردند، و بعد از او میرزا آقاسی سیزده سال زمامدار بود.
 1	قبل	قبل	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	قائم	قائم	PROPN	N_ANM	Number=Sing	15	obl	_	_
 4	مقام	مقام	PROPN	N_ANM	Number=Sing	3	flat:name	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
@@ -17088,7 +17088,7 @@
 16	،	،	PUNCT	PUNC	_	15	punct	_	_
 17	و	و	CCONJ	CONJ	_	25	cc	_	_
 18	بعد	بعد	ADP	PREP	_	20	case	_	_
-19	از	از	ADP	PREP	_	18	fixed	_	_
+19	از	از	ADP	PREP	_	20	fixed	_	_
 20	او	او	PRON	PR_SEPER	Number=Sing|Person=3	25	obl	_	_
 21	میرزا	میرزا	PROPN	N_ANM	Number=Sing	25	nsubj	_	_
 22	آقاسی	آقاسی	PROPN	N_ANM	Number=Sing	21	flat:name	_	_
@@ -17497,9 +17497,9 @@
 
 # sent_id = test-s912
 # text = از جمله این روش‌ها را می‌توان همه‌پرسی، حسابرسی دوباره، وتوی مردمی، پله بیسیت، ابتکار عام و گزینش‌گری دانست که در همهٔ این موارد شهروندان مستقیماً در اعمال قدرت مباشرت می‌کنند.
-1	از	از	ADP	PREP	_	4	case	_	_
+1	از	از	ADP	PREP	_	2	case	_	_
 2	جمله	جمله	NOUN	N_IANM	Number=Sing	22	obj	_	_
-3	این	این	DET	PREM_DEMAJ	_	4	det	_	_
+3	این	این	DET	PREM_DEMAJ	_	2	det	_	_
 4	روش‌ها	روش	NOUN	N_IANM	Number=Plur	2	case	_	_
 5	را	را	ADP	POSTP	_	2	case	_	_
 6	می‌توان	#توان	AUX	V_MODL	_	22	aux	_	_
@@ -17688,7 +17688,7 @@
 1	پدران	پدر	NOUN	N_ANM	Number=Plur	10	nsubj	_	_
 2	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	1	nmod	_	_
 3	راجع	راجع	ADP	PREP	_	6	case	_	_
-4	به	به	ADP	PREP	_	3	fixed	_	_
+4	به	به	ADP	PREP	_	6	fixed	_	_
 5	همین	همین	DET	PREM_DEMAJ	_	6	det	_	_
 6	موضوع	موضوع	NOUN	N_IANM	Number=Sing	10	obl	_	_
 7	با	با	ADP	PREP	_	8	case	_	_
@@ -17786,7 +17786,7 @@
 # text = گنجشکی بر روی درخت بیدی کنار چشمه جیک‌جیک کرد.
 1	گنجشکی	گنجشک	NOUN	N_ANM	Number=Sing	9	nsubj	_	_
 2	بر	بر	ADP	PREP	_	4	case	_	_
-3	روی	روی	ADP	PREP	_	2	fixed	_	_
+3	روی	روی	ADP	PREP	_	4	fixed	_	_
 4	درخت	درخت	NOUN	N_ANM	Number=Sing	9	obl	_	_
 5	بیدی	بید	NOUN	N_IANM	Number=Sing	4	nmod	_	_
 6	کنار	کنار	NOUN	N_IANM	_	9	obl	_	_
@@ -17890,7 +17890,7 @@
 # sent_id = test-s934
 # text = غیر از اسلام شاید مذهبی یافت نشود که تا این قدر حکومت و اقتدارش دوام کرده باشد.
 1	غیر	غیر	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	اسلام	اسلام	NOUN	N_IANM	Number=Sing	5	nmod	_	_
 4	شاید	شاید	ADV	ADV_SADV	_	7	advmod	_	_
 5	مذهبی	مذهب	NOUN	N_IANM	Number=Sing	7	nsubj	_	_
@@ -18157,7 +18157,7 @@
 # text = وی پیش از آغاز سخنرانی به یکی از حاضرین چشمک زده است.
 1	وی	وی	PRON	PR_SEPER	Number=Sing|Person=3	11	nsubj	_	_
 2	پیش	پیش	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	آغاز	آغاز	NOUN	N_IANM	Number=Sing	11	obl	_	_
 5	سخنرانی	سخنرانی	NOUN	N_IANM	Number=Sing	4	nmod	_	_
 6	به	به	ADP	PREP	_	7	case	_	_
@@ -18398,7 +18398,7 @@
 # sent_id = test-s958
 # text = پس از من شعرهایم را چو جان محفوظ خواهی داشت و با هر شعر من آتش به جانت شعله خواهد زد.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	من	من	PRON	PR_SEPER	Number=Sing|Person=1	11	obl	_	_
 4-5	شعرهایم	_	_	_	_	_	_	_	_
 4	شعرهای	شعر	NOUN	N_IANM	Number=Plur	11	obj	_	_
@@ -18435,7 +18435,7 @@
 7	شل	شل	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	گرفته	گرفت#گیر	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
 9	شده	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	8	aux:pass	_	_
-10	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	9	aux	_	SpaceAfter=No
+10	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	8	aux	_	SpaceAfter=No
 11	،	،	PUNCT	PUNC	_	8	punct	_	_
 12	حالا	حالا	NOUN	N_IANM	Number=Sing	24	obl	_	_
 13	که	که	SCONJ	SUBR	_	17	mark	_	_
@@ -18727,7 +18727,7 @@
 11	مار	مار	NOUN	N_ANM	Number=Sing	6	ccomp	_	_
 12	زخم‌خورده	زخم‌خورده	ADJ	ADJ_AJP	_	11	amod	_	_
 13	در	در	ADP	PREP	_	15	case	_	_
-14	زیر	زیر	ADP	PREP	_	13	fixed	_	_
+14	زیر	زیر	ADP	PREP	_	15	fixed	_	_
 15-16	علف‌هاست	_	_	_	_	_	_	_	_
 15	علف‌ها	علف	NOUN	N_IANM	Number=Plur	11	obl	_	_
 16	ست	#است	AUX	AUX	Number=Sing|Person=3	11	cop	_	_
@@ -18761,7 +18761,7 @@
 2	انجام	انجام	NOUN	N_IANM	Number=Sing	16	obj	_	_
 3	وضو	وضو	NOUN	N_IANM	Number=Sing	2	nmod	_	_
 4	را	را	ADP	POSTP	_	2	case	_	_
-5	در	در	ADP	PREP	_	9	case	_	_
+5	در	در	ADP	PREP	_	6	case	_	_
 6	قلب	قلب	NOUN	N_IANM	Number=Sing	16	obl	_	_
 7	خود	خود	PRON	PR_CREFX	_	6	nmod	_	SpaceAfter=No
 8	،	،	PUNCT	PUNC	_	7	punct	_	_
@@ -18769,7 +18769,7 @@
 10	بدون	بدون	ADP	PREP	_	13	case	_	_
 11	بر	بر	ADP	PREP	_	12	case	_	_
 12	زبان	زبان	NOUN	N_IANM	Number=Sing	13	nmod	_	_
-13	راندن	راندن	NOUN	N_IANM	Number=Sing	9	obl	_	_
+13	راندن	راندن	NOUN	N_IANM	Number=Sing	6	obl	_	_
 14	آن	آن	PRON	PR_DEMON	Number=Sing	13	nmod	_	_
 15	نیت	نیت	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
 16	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
@@ -18835,7 +18835,7 @@
 # sent_id = test-s979
 # text = پس از گذشت حدود دو قرن از ظهور اسلام، این دین توانست بخش زیادی از جهان آن روز را با تعالیم خود نورافشانی بکند.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	گذشت	گذشت	NOUN	N_IANM	Number=Sing	13	obl	_	_
 4	حدود	حدود	NOUN	N_IANM	_	5	obl	_	_
 5	دو	دو	NUM	PRENUM	_	6	nummod	_	_
@@ -19587,9 +19587,9 @@
 9	می‌دانیم	دانست#دان	VERB	V_ACT	Number=Plur|Person=1|Tense=Pres|Voice=Act	5	ccomp	_	_
 10	و	و	CCONJ	CONJ	_	15	cc	_	_
 11	حتی	حتی	ADV	ADV_SADV	_	15	obl:arg	_	_
-12	به	به	ADP	PREP	_	13	case	_	_
+12	به	به	ADP	PREP	_	11	case	_	_
 13	دولتمردان	دولتمرد	NOUN	N_ANM	Number=Plur	11	case	_	_
-14	هم	هم	ADV	ADV_SADV	_	13	dep	_	_
+14	هم	هم	ADV	ADV_SADV	_	11	dep	_	_
 15	رسیده	رسید#رس	VERB	V_ACT	Number=Sing|Person=3|VerbForm=Part|Voice=Act	9	conj	_	_
 16	و	و	CCONJ	CONJ	_	19	cc	_	_
 17	اعتراف	اعتراف	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
@@ -19971,7 +19971,7 @@
 23	و	و	CCONJ	CONJ	_	24	cc	_	_
 24	اطلاعات	اطلاعات	NOUN	N_IANM	Number=Plur	22	conj	_	_
 25	راجع	راجع	ADP	PREP	_	27	case	_	_
-26	به	به	ADP	PREP	_	25	fixed	_	_
+26	به	به	ADP	PREP	_	27	fixed	_	_
 27	گذشتهٔ	گذشته	NOUN	N_IANM	Number=Sing	24	nmod	_	_
 28	ایران	ایران	PROPN	N_IANM	Number=Sing	27	nmod	_	_
 29	علاقه	علاقه	NOUN	N_IANM	Number=Sing	30	compound:lvc	_	_
@@ -20024,7 +20024,7 @@
 17	کرده‌اند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	9	acl	_	SpaceAfter=No
 18	،	،	PUNCT	PUNC	_	17	punct	_	_
 19	جز	جز	ADP	PREP	_	22	case	_	_
-20	با	با	ADP	PREP	_	19	fixed	_	_
+20	با	با	ADP	PREP	_	22	fixed	_	_
 21	کشته	کشته	ADJ	ADJ_AJP	_	22	advmod	_	_
 22	شدن	شدن	NOUN	N_IANM	Number=Sing	27	obl	_	_
 23	آن	آن	DET	PREM_DEMAJ	_	24	det	_	_
@@ -20224,7 +20224,7 @@
 11	نشست	نشست#نشین	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 12	،	،	PUNCT	PUNC	_	11	punct	_	_
 13	اما	اما	CCONJ	CONJ	_	44	cc	_	_
-14	با	با	ADP	PREP	_	28	case	_	_
+14	با	با	ADP	PREP	_	15	case	_	_
 15	صهیونیستی	صهیونیست	NOUN	N_ANM	Number=Sing	44	obl:arg	_	_
 16	که	که	SCONJ	SUBR	_	41	mark	_	_
 17	انقلاب	انقلاب	NOUN	N_IANM	Number=Sing	41	obj	_	_
@@ -20240,7 +20240,7 @@
 27	،	،	PUNCT	PUNC	_	26	punct	_	_
 28	و	و	CCONJ	CONJ	_	15	case	_	_
 29	با	با	ADP	PREP	_	30	case	_	_
-30	نویسنده‌ای	نویسنده	NOUN	N_ANM	Number=Sing	28	obl	_	_
+30	نویسنده‌ای	نویسنده	NOUN	N_ANM	Number=Sing	15	obl	_	_
 31	که	که	SCONJ	SUBR	_	30	acl	_	_
 32	انقلاب	انقلاب	NOUN	N_IANM	Number=Sing	41	obj	_	_
 33	اسلامی	اسلامی	ADJ	ADJ_AJP	_	32	amod	_	_
@@ -21201,7 +21201,7 @@
 # sent_id = test-s1087
 # text = نسبت به کار زشت و زیانبار چشم‌پوشی و مسامحه می‌کنید!
 1	نسبت	نسبت	ADP	PREP	_	3	case	_	_
-2	به	به	ADP	PREP	_	1	fixed	_	_
+2	به	به	ADP	PREP	_	3	fixed	_	_
 3	کار	کار	NOUN	N_IANM	Number=Sing	10	obl:arg	_	_
 4	زشت	زشت	ADJ	ADJ_AJP	_	3	amod	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
@@ -21405,7 +21405,7 @@
 # text = بالاخره بعد از 1600- 1700 سال برای یک بار هم شده توی دنیا به روش خود سن ولنتاین و به اندازهٔ اهمیت بقای عشق مایه گذاشته شد.
 1	بالاخره	بالاخره	ADV	ADV_SADV	_	27	advmod	_	_
 2	بعد	بعد	ADP	PREP	_	7	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	7	fixed	_	_
 4	1600	1600	NUM	PRENUM	_	7	nummod	_	SpaceAfter=No
 5	-	-	PUNCT	PUNC	_	4	punct	_	_
 6	1700	1700	NUM	PRENUM	_	4	conj	_	_
@@ -21417,14 +21417,14 @@
 12	شده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|VerbForm=Part|Voice=Act	10	acl	_	_
 13	توی	توی	ADP	PREP	_	14	case	_	_
 14	دنیا	دنیا	NOUN	N_IANM	Number=Sing	27	obl	_	_
-15	به	به	ADP	PREP	_	20	case	_	_
+15	به	به	ADP	PREP	_	16	case	_	_
 16	روش	روش	NOUN	N_IANM	Number=Sing	27	obl	_	_
 17	خود	خود	PRON	PR_CREFX	_	16	nmod	_	_
 18	سن	سن	PROPN	N_ANM	Number=Sing	17	nmod	_	_
 19	ولنتاین	ولنتاین	PROPN	N_ANM	Number=Sing	18	flat:name	_	_
 20	و	و	CCONJ	CONJ	_	16	case	_	_
 21	به	به	ADP	PREP	_	22	case	_	_
-22	اندازهٔ	اندازه	NOUN	N_IANM	Number=Sing	20	obl	_	_
+22	اندازهٔ	اندازه	NOUN	N_IANM	Number=Sing	16	obl	_	_
 23	اهمیت	اهمیت	NOUN	N_IANM	Number=Sing	22	nmod	_	_
 24	بقای	بقا	NOUN	N_IANM	Number=Sing	23	nmod	_	_
 25	عشق	عشق	NOUN	N_IANM	Number=Sing	24	nmod	_	_
@@ -21450,7 +21450,7 @@
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	امامان	امام	NOUN	N_ANM	Number=Plur	9	conj	_	_
 15	نسبت	نسبت	ADP	PREP	_	17	case	_	_
-16	به	به	ADP	PREP	_	15	fixed	_	_
+16	به	به	ADP	PREP	_	17	fixed	_	_
 17	آن	آن	PRON	PR_DEMON	Number=Sing	19	obl:arg	_	_
 18	اصرار	اصرار	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	ورزیده‌اند	ورزید#ورز	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	2	acl	_	_
@@ -21468,13 +21468,13 @@
 5	رانندهٔ	راننده	NOUN	N_ANM	Number=Sing	2	nmod	_	_
 6	تاکسی	تاکسی	NOUN	N_IANM	Number=Sing	5	nmod	_	_
 7	که	که	SCONJ	SUBR	_	17	mark	_	_
-8	در	در	ADP	PREP	_	12	case	_	_
+8	در	در	ADP	PREP	_	9	case	_	_
 9	تمام	تمام	NOUN	N_IANM	Number=Plur	16	nmod	_	_
 10	نقاط	نقطه	NOUN	N_IANM	Number=Plur	9	nmod	_	_
 11	شهر	شهر	NOUN	N_IANM	Number=Sing	10	nmod	_	_
 12	و	و	CCONJ	CONJ	_	9	case	_	_
 13	به	به	ADP	PREP	_	14	case	_	_
-14	طور	طور	NOUN	N_IANM	Number=Sing	12	obl	_	_
+14	طور	طور	NOUN	N_IANM	Number=Sing	9	obl	_	_
 15	شبانه‌روزی	شبانه‌روزی	ADJ	ADJ_AJP	_	14	amod	_	_
 16	حضور	حضور	NOUN	N_IANM	Number=Sing	17	obj	_	_
 17	دارند	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	5	acl	_	SpaceAfter=No
@@ -22347,12 +22347,12 @@
 16	غلبه	غلبه	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 17	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	6	acl	_	SpaceAfter=No
 18	،	،	PUNCT	PUNC	_	17	punct	_	_
-19	در	در	ADP	PREP	_	22	case	_	_
+19	در	در	ADP	PREP	_	20	case	_	_
 20	مسائل	مسئله	NOUN	N_IANM	Number=Plur	28	obl	_	_
 21	فرهنگی	فرهنگی	ADJ	ADJ_AJP	_	20	amod	_	_
 22	و	و	CCONJ	CONJ	_	20	case	_	_
 23	در	در	ADP	PREP	_	24	case	_	_
-24	مسائل	مسئله	NOUN	N_IANM	Number=Plur	22	obl	_	_
+24	مسائل	مسئله	NOUN	N_IANM	Number=Plur	20	obl	_	_
 25	حقوقی	حقوقی	ADJ	ADJ_AJP	_	24	amod	_	_
 26	هم	هم	ADV	ADV_SADV	_	20	dep	_	_
 27	سلطه	سلطه	NOUN	N_IANM	Number=Sing	28	compound:lvc	_	_
@@ -22776,11 +22776,11 @@
 8-9	شوهرش	_	_	_	_	_	_	_	_
 8	شوهر	شوهر	NOUN	N_ANM	Number=Sing	22	nsubj	_	_
 9	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	8	nmod	_	_
-10	به	به	ADP	PREP	_	12	case	_	_
+10	به	به	ADP	PREP	_	11	case	_	_
 11	آرامی	آرامی	NOUN	N_IANM	Number=Sing	22	obl	_	_
 12	و	و	CCONJ	CONJ	_	11	case	_	_
 13	با	با	ADP	PREP	_	14	case	_	_
-14	صرف	صرف	NOUN	N_IANM	Number=Sing	12	obl	_	_
+14	صرف	صرف	NOUN	N_IANM	Number=Sing	11	obl	_	_
 15	زمان	زمان	NOUN	N_IANM	Number=Sing	14	nmod	_	_
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
 17	دقت	دقت	NOUN	N_IANM	Number=Sing	15	conj	_	_
@@ -22871,7 +22871,7 @@
 # sent_id = test-s1170
 # text = پس از ترور رزم‌آرا، حسین علا در 21 اسفند 1329 به نخست‌وزیری رسید اما چون از اجرای طرح ملی شدن صنعت نفت استنکاف می‌ورزید با مخالفت مردم و مجلس روبه‌رو شد.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	ترور	ترور	NOUN	N_IANM	Number=Sing	14	obl	_	_
 4	رزم‌آرا	رزم‌آرا	PROPN	N_ANM	Number=Sing	3	nmod	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	4	punct	_	_
@@ -22927,7 +22927,7 @@
 7	استیلا	استیلا	NOUN	N_IANM	Number=Sing	8	obj	_	_
 8	داشت	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	1	acl	_	_
 9	پس	پس	ADP	PREP	_	11	case	_	_
-10	از	از	ADP	PREP	_	9	fixed	_	_
+10	از	از	ADP	PREP	_	11	fixed	_	_
 11	مرگ	مرگ	NOUN	N_IANM	Number=Sing	23	obl	_	_
 12	تئودوزیس	تئودوزیس	PROPN	N_ANM	Number=Sing	11	nmod	_	_
 13	(	(	PUNCT	PUNC	_	14	punct	_	SpaceAfter=No
@@ -23134,10 +23134,10 @@
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	کتب	کتاب	NOUN	N_IANM	Number=Plur	8	conj	_	_
 15	عهدین	عهد	NOUN	N_IANM	Number=Plur	14	nmod	_	_
-16	از	از	ADP	PREP	_	18	case	_	_
+16	از	از	ADP	PREP	_	17	case	_	_
 17	جمله	جمله	NOUN	N_IANM	Number=Sing	14	nmod	_	_
 18	اناجیل	انجیل	PROPN	N_IANM	Number=Plur	17	case	_	_
-19	اربعه	اربعه	PROPN	ADJ_AJP	_	18	flat:name	_	_
+19	اربعه	اربعه	PROPN	ADJ_AJP	_	17	flat:name	_	_
 20	نقل	نقل	NOUN	N_IANM	Number=Sing	23	compound:lvc	_	_
 21	و	و	CCONJ	CONJ	_	22	cc	_	_
 22	اقتباس	اقتباس	NOUN	N_IANM	Number=Sing	20	conj	_	_
@@ -23552,7 +23552,7 @@
 1	جهاد	جهاد	NOUN	N_IANM	Number=Sing	12	nsubj	_	_
 2	دانشگاهی	دانشگاهی	ADJ	ADJ_AJP	_	1	amod	_	_
 3	بعد	بعد	ADP	PREP	_	5	case	_	_
-4	از	از	ADP	PREP	_	3	fixed	_	_
+4	از	از	ADP	PREP	_	5	fixed	_	_
 5	گذشت	گذشت	NOUN	N_IANM	Number=Sing	12	obl	_	_
 6	سه	سه	NUM	PRENUM	_	7	nummod	_	_
 7	دهه	دهه	ADJ	ADJ_AJP	_	5	amod	_	_
@@ -23917,7 +23917,7 @@
 21	در	در	ADP	PREP	_	22	case	_	_
 22	بزرگسالی	بزرگسالی	NOUN	N_IANM	Number=Sing	28	obl	_	_
 23	نسبت	نسبت	ADP	PREP	_	25	case	_	_
-24	به	به	ADP	PREP	_	23	fixed	_	_
+24	به	به	ADP	PREP	_	25	fixed	_	_
 25	دیگران	دیگری	NOUN	N_ANM	Number=Plur	28	obl:arg	_	_
 26	محبت	محبت	NOUN	N_IANM	Number=Sing	28	compound:lvc	_	_
 27	خواهند	خواست#خواه	AUX	AUX	Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	28	aux	_	_
@@ -24862,11 +24862,11 @@
 # text = ما صرفاً برای این که شفاف‌سازی کرده باشیم بخشی از دلیل این کارمان را می‌گوییم.
 1	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	16	nsubj	_	_
 2	صرفاً	صرفاً	ADV	ADV_SADV	_	16	advmod	_	_
-3	برای	برای	ADP	PREP	_	4	case	_	_
+3	برای	برای	ADP	PREP	_	2	case	_	_
 4	این	این	PRON	PR_DEMON	Number=Sing	2	case	_	_
 5	که	که	SCONJ	SUBR	_	7	mark	_	_
 6	شفاف‌سازی	شفاف‌سازی	NOUN	N_IANM	Number=Sing	7	compound:lvc	_	_
-7	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	4	acl	_	_
+7	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	2	acl	_	_
 8	باشیم	بود#باش	AUX	AUX	Mood=Sub|Number=Plur|Person=1|Tense=Pres	7	aux	_	_
 9	بخشی	بخش	NOUN	N_IANM	Number=Sing	16	obj	_	_
 10	از	از	ADP	PREP	_	11	case	_	_
@@ -24914,7 +24914,7 @@
 2	دولت‌هایی	دولت	NOUN	N_IANM	Number=Plur	1	nmod	_	_
 3	که	که	SCONJ	SUBR	_	8	mark	_	_
 4	پس	پس	ADP	PREP	_	6	case	_	_
-5	از	از	ADP	PREP	_	4	fixed	_	_
+5	از	از	ADP	PREP	_	6	fixed	_	_
 6	انقلاب	انقلاب	NOUN	N_IANM	Number=Sing	8	obl	_	_
 7	شکل	شکل	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	گرفتند	گرفت#گیر	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	2	acl	_	_
@@ -25204,15 +25204,15 @@
 8	)	)	PUNCT	PUNC	_	7	punct	_	_
 9	فردی	فرد	NOUN	N_ANM	Number=Sing	0	root	_	_
 10	است	#است	AUX	AUX	Number=Sing|Person=3	9	cop	_	_
-11	با	با	ADP	PREP	_	15	case	_	_
+11	با	با	ADP	PREP	_	12	case	_	_
 12	نام	نام	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 13	عثمان	عثمان	PROPN	N_ANM	Number=Sing	12	nmod	_	_
-14	از	از	ADP	PREP	_	17	case	_	_
+14	از	از	ADP	PREP	_	15	case	_	_
 15	نوادگان	نواده	NOUN	N_ANM	Number=Plur	12	case	_	_
-16	ابوسفیان	ابوسفیان	PROPN	N_ANM	Number=Sing	15	nmod	_	_
-17	و	و	CCONJ	CONJ	_	15	case	_	_
+16	ابوسفیان	ابوسفیان	PROPN	N_ANM	Number=Sing	12	nmod	_	_
+17	و	و	CCONJ	CONJ	_	12	case	_	_
 18	بسیار	بسیار	ADV	ADV_SADV	_	19	advmod	_	_
-19	خبیث	خبیث	ADJ	ADJ_AJP	_	17	advmod	_	_
+19	خبیث	خبیث	ADJ	ADJ_AJP	_	12	advmod	_	_
 20	و	و	CCONJ	CONJ	_	21	cc	_	_
 21	قسی‌القلب	قسی‌القلب	ADJ	ADJ_AJP	_	19	conj	_	_
 22	و	و	CCONJ	CONJ	_	31	cc	_	_
@@ -25291,7 +25291,7 @@
 16	شد	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 17	،	،	PUNCT	PUNC	_	16	punct	_	_
 18	بعد	بعد	ADP	PREP	_	20	case	_	_
-19	از	از	ADP	PREP	_	18	fixed	_	_
+19	از	از	ADP	PREP	_	20	fixed	_	_
 20	اینکه	اینکه	NOUN	N_IANM	Number=Sing	16	obl	_	_
 21	او	او	PRON	PR_SEPER	Number=Sing|Person=3	26	nsubj	_	_
 22	یک	یک	NUM	PRENUM	_	23	nummod	_	_
@@ -25778,7 +25778,7 @@
 2	تسهیلات	تسهیلات	NOUN	N_IANM	Number=Plur	23	obj	_	_
 3	را	را	ADP	POSTP	_	2	case	_	_
 4	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	23	nsubj	_	_
-5	به	به	ADP	PREP	_	14	case	_	_
+5	به	به	ADP	PREP	_	6	case	_	_
 6	صورت	صورت	NOUN	N_IANM	Number=Sing	23	obl	_	_
 7	ماهانه	ماهانه	ADJ	ADJ_AJP	_	6	amod	_	_
 8	(	(	PUNCT	PUNC	_	12	punct	_	SpaceAfter=No
@@ -25789,7 +25789,7 @@
 13	)	)	PUNCT	PUNC	_	12	punct	_	_
 14	و	و	CCONJ	CONJ	_	6	case	_	_
 15	به	به	ADP	PREP	_	16	case	_	_
-16	تعداد	تعداد	NOUN	N_IANM	Number=Sing	14	obl	_	_
+16	تعداد	تعداد	NOUN	N_IANM	Number=Sing	6	obl	_	_
 17	اقساط	قسط	NOUN	N_IANM	Number=Plur	16	nmod	_	_
 18	12	12	NUM	PRENUM	_	19	nummod	_	_
 19	ماه	ماه	NOUN	N_IANM	Number=Sing	17	nmod	_	_
@@ -26187,7 +26187,7 @@
 28	طرفین	طرف	NOUN	N_ANM	Number=Plur	29	obl	_	_
 29	پرداخته	پرداخت#پرداز	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	25	acl	_	_
 30	شده	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	29	aux:pass	_	_
-31	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	30	aux	_	SpaceAfter=No
+31	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	29	aux	_	SpaceAfter=No
 32	،	،	PUNCT	PUNC	_	29	punct	_	_
 33	برسد	رسید#رس	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	20	advcl	_	SpaceAfter=No
 34	.	.	PUNCT	PUNC	_	20	punct	_	_
@@ -26580,7 +26580,7 @@
 # text = من پس از ایشان بدعت گذاشتم.
 1	من	من	PRON	PR_SEPER	Number=Sing|Person=1	6	nsubj	_	_
 2	پس	پس	ADP	PREP	_	4	case	_	_
-3	از	از	ADP	PREP	_	2	fixed	_	_
+3	از	از	ADP	PREP	_	4	fixed	_	_
 4	ایشان	ایشان	PRON	PR_SEPER	Number=Plur|Person=3	6	obl	_	_
 5	بدعت	بدعت	NOUN	N_IANM	Number=Sing	6	compound:lvc	_	_
 6	گذاشتم	گذاشت#گذار	VERB	V_ACT	Number=Sing|Person=1|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
@@ -26611,7 +26611,7 @@
 2	با	با	ADP	PREP	_	3	case	_	_
 3	حسین	حسین	PROPN	N_ANM	Number=Sing	9	obl:arg	_	_
 4	پس	پس	ADP	PREP	_	6	case	_	_
-5	از	از	ADP	PREP	_	4	fixed	_	_
+5	از	از	ADP	PREP	_	6	fixed	_	_
 6	او	او	PRON	PR_SEPER	Number=Sing|Person=3	9	obl	_	SpaceAfter=No
 7	،	،	PUNCT	PUNC	_	6	punct	_	_
 8	برابری	برابری	NOUN	N_IANM	Number=Sing	9	compound:lvc	_	_
@@ -26870,7 +26870,7 @@
 8	امکان	امکان	NOUN	N_IANM	Number=Sing	9	compound:lvc	_	_
 9	دارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	7	ccomp	_	_
 10	قبل	قبل	ADP	PREP	_	12	case	_	_
-11	از	از	ADP	PREP	_	10	fixed	_	_
+11	از	از	ADP	PREP	_	12	fixed	_	_
 12	پایان	پایان	NOUN	N_IANM	Number=Sing	25	obl	_	_
 13	مدت	مدت	NOUN	N_IANM	Number=Sing	12	nmod	_	_
 14-15	قراردادش	_	_	_	_	_	_	_	_
@@ -26947,7 +26947,7 @@
 13	ارسال	ارسال	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	نمایید	نمود#نما	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	0	root	_	_
 15	بعد	بعد	ADP	PREP	_	17	case	_	_
-16	از	از	ADP	PREP	_	15	fixed	_	_
+16	از	از	ADP	PREP	_	17	fixed	_	_
 17	محاسبه	محاسبه	NOUN	N_IANM	Number=Sing	22	obl	_	_
 18	به	به	ADP	PREP	_	19	case	_	_
 19	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	22	obl:arg	_	_
@@ -27200,7 +27200,7 @@
 # sent_id = test-s1386
 # text = پس از عرضهٔ PS Jailbreak، همگی شاهد بودیم که ادعاهای سازندگان این هک صحت پیدا کردند.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	عرضهٔ	عرضه	NOUN	N_IANM	Number=Sing	8	obl	_	_
 4	PS	PS	PROPN	N_IANM	Number=Sing	3	nmod	_	_
 5	Jailbreak	Jailbreak	PROPN	N_IANM	Number=Sing	4	flat:name	_	SpaceAfter=No
@@ -27423,7 +27423,7 @@
 # sent_id = test-s1397
 # text = بعد از دریافت شمارهٔ شناسایی (آی‌پی آدرس)، شما در اینترنت موجودیت پیدا می‌کنید.
 1	بعد	بعد	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	دریافت	دریافت	NOUN	N_IANM	Number=Sing	16	obl	_	_
 4	شمارهٔ	شماره	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 5	شناسایی	شناسایی	NOUN	N_IANM	Number=Sing	4	nmod	_	_
@@ -27549,7 +27549,7 @@
 11	اگر	اگر	SCONJ	SUBR	_	17	mark	_	_
 12	وجود	وجود	NOUN	N_IANM	Number=Sing	17	nsubj	_	_
 13	بعد	بعد	ADP	PREP	_	15	case	_	_
-14	از	از	ADP	PREP	_	13	fixed	_	_
+14	از	از	ADP	PREP	_	15	fixed	_	_
 15	عدم	عدم	NOUN	N_IANM	Number=Sing	12	amod	_	_
 16	پیدا	پیدا	ADJ	ADJ_AJP	_	17	compound:lvc	_	_
 17	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	20	advcl	_	_
@@ -27563,7 +27563,7 @@
 24	وجود	وجود	NOUN	N_IANM	Number=Sing	30	nsubj	_	_
 25	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	24	nmod	_	_
 26	بعد	بعد	ADP	PREP	_	28	case	_	_
-27	از	از	ADP	PREP	_	26	fixed	_	_
+27	از	از	ADP	PREP	_	28	fixed	_	_
 28	عدم	عدم	NOUN	N_IANM	Number=Sing	24	nmod	_	_
 29	هم	هم	ADV	ADV_SADV	_	28	dep	_	_
 30	نباشد	بود#باش	AUX	AUX	Number=Sing|Person=3|Polarity=Neg	32	advcl	_	_
@@ -27680,12 +27680,12 @@
 1	امروز	امروز	NOUN	N_IANM	Number=Sing	30	obl	_	_
 2	وقتی	وقت	NOUN	N_IANM	Number=Sing	30	obl	_	_
 3	مدتی	مدت	NOUN	N_IANM	Number=Sing	19	obl	_	_
-4	در	در	ADP	PREP	_	7	case	_	_
+4	در	در	ADP	PREP	_	5	case	_	_
 5	خیابان	خیابان	PROPN	N_IANM	Number=Sing	19	obl:arg	_	_
 6	ولیعصر	ولیعصر	PROPN	N_IANM	Number=Sing	5	flat:name	_	_
 7	یا	یا	CCONJ	CONJ	_	5	case	_	_
 8	در	در	ADP	PREP	_	9	case	_	_
-9	پارک	پارک	PROPN	N_IANM	Number=Sing	7	obl	_	_
+9	پارک	پارک	PROPN	N_IANM	Number=Sing	5	obl	_	_
 10	ملت	ملت	PROPN	N_ANM	Number=Sing	9	flat:name	_	_
 11	یا	یا	CCONJ	CONJ	_	12	cc	_	_
 12	میدان	میدان	PROPN	N_IANM	Number=Sing	9	conj	_	_
@@ -27718,10 +27718,10 @@
 37	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	36	nmod	_	_
 38	را	را	ADP	POSTP	_	36	case	_	_
 39	دقیقاً	دقیقاً	ADV	ADV_SADV	_	45	advmod	_	_
-40	طبق	طبق	ADP	PREP	_	41	case	_	_
+40	طبق	طبق	ADP	PREP	_	39	case	_	_
 41	مدل	مدل	NOUN	N_IANM	Number=Sing	39	case	_	_
-42	روز	روز	ADJ	ADJ_AJP	_	41	amod	_	_
-43	ابروی	ابرو	NOUN	N_IANM	Number=Sing	41	nmod	_	_
+42	روز	روز	ADJ	ADJ_AJP	_	39	amod	_	_
+43	ابروی	ابرو	NOUN	N_IANM	Number=Sing	39	nmod	_	_
 44	زنان	زن	NOUN	N_ANM	Number=Plur	43	nmod	_	_
 45	برداشته‌اند	بر#داشت#دار	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	34	conj	_	_
 46	و	و	CCONJ	CONJ	_	61	cc	_	_
@@ -27999,7 +27999,7 @@
 2	شش	شش	NUM	PRENUM	_	3	nummod	_	_
 3	هفته	هفته	NOUN	N_IANM	Number=Sing	9	obl	_	_
 4	قبل	قبل	ADP	PREP	_	6	case	_	_
-5	از	از	ADP	PREP	_	4	fixed	_	_
+5	از	از	ADP	PREP	_	6	fixed	_	_
 6	لیزر	لیزر	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 7	نباید	بایست#باید	AUX	V_MODL	Polarity=Neg	9	aux	_	_
 8	الکترولیز	الکترولیز	NOUN	N_IANM	Number=Sing	9	compound:lvc	_	_
@@ -28374,7 +28374,7 @@
 # sent_id = test-s1437
 # text = پس از فوت حاجی سبزواری به مشهد عودت کرد و در مدرسهٔ میرزا جعفر سکونت گزید.
 1	پس	پس	ADP	PREP	_	3	case	_	_
-2	از	از	ADP	PREP	_	1	fixed	_	_
+2	از	از	ADP	PREP	_	3	fixed	_	_
 3	فوت	فوت	NOUN	N_IANM	Number=Sing	9	obl	_	_
 4	حاجی	حاجی	PROPN	IDEN	Number=Sing	3	nmod	_	_
 5	سبزواری	سبزواری	PROPN	N_ANM	Number=Sing	4	flat:name	_	_
@@ -28440,13 +28440,13 @@
 # text = افرادی که از یک زبان و از یک نژاد هستند، به انگیزهٔ وجه اشتراکشان با هم اتحاد پیدا خواهند کرد.
 1	افرادی	فرد	NOUN	N_ANM	Number=Plur	22	nsubj	_	_
 2	که	که	SCONJ	SUBR	_	5	mark	_	_
-3	از	از	ADP	PREP	_	6	case	_	_
+3	از	از	ADP	PREP	_	5	case	_	_
 4	یک	یک	NUM	PRENUM	_	5	nummod	_	_
 5	زبان	زبان	NOUN	N_IANM	Number=Sing	1	acl	_	_
 6	و	و	CCONJ	CONJ	_	5	case	_	_
 7	از	از	ADP	PREP	_	9	case	_	_
 8	یک	یک	NUM	PRENUM	_	9	nummod	_	_
-9	نژاد	نژاد	NOUN	N_IANM	Number=Sing	6	obl	_	_
+9	نژاد	نژاد	NOUN	N_IANM	Number=Sing	5	obl	_	_
 10	هستند	#هست	AUX	AUX	Number=Plur|Person=3	5	cop	_	SpaceAfter=No
 11	،	،	PUNCT	PUNC	_	5	punct	_	_
 12	به	به	ADP	PREP	_	13	case	_	_
