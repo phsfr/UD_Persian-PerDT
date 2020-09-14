@@ -10582,7 +10582,7 @@
 
 # sent_id = dev-s491
 # text = بنده از فرط خشم داشتم به کبودی می‌گراییدم.
-1	بنده	بنده	NOUN	N_ANM	Number=Sing	5	nsubj	_	_
+1	بنده	بنده	NOUN	N_ANM	Number=Sing	8	nsubj	_	_
 2	از	از	ADP	PREP	_	3	case	_	_
 3	فرط	فرط	NOUN	N_IANM	Number=Sing	8	obl	_	_
 4	خشم	خشم	NOUN	N_IANM	Number=Sing	3	nmod	_	_
@@ -10590,7 +10590,7 @@
 6	به	به	ADP	PREP	_	7	case	_	_
 7	کبودی	کبودی	NOUN	N_IANM	Number=Sing	8	obl:arg	_	_
 8	می‌گراییدم	گرایید#گرا	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	0	root	_	SpaceAfter=No
-9	.	.	PUNCT	PUNC	_	5	punct	_	_
+9	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = dev-s492
 # text = وبلاگ تبیان را نمی‌پسندم.
