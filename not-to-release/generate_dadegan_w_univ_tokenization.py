@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
         for tree in trees:
             for t, ftag in enumerate(tree.ftags):
-                tree.other_features[t].remove_feat("dadeg_pos")
+                tree.other_features[t].remove_feat("Dadeg_pos")
                 tag, fpos = ftag.split("_") if "_" in ftag else (ftag, ftag)
                 tree.tags[t] = tag
                 tree.ftags[t] = fpos

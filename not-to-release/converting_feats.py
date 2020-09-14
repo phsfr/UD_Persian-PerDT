@@ -55,7 +55,7 @@ if __name__ == '__main__':
                 tree.other_features[w].remove_feat('tma')
                 tree.other_features[w].remove_feat('attachment')
                 tree.other_features[w].remove_feat('senID')
-                tree.other_features[w].remove_feat('dadeg_pos')
+                tree.other_features[w].remove_feat('Dadeg_pos')
                 tree.other_features[w].remove_feat('Dadeg_fpos')
                 tree.other_features[w].remove_feat('Dadeg_lemma')
                 tree.other_features[w].remove_feat('old_r')

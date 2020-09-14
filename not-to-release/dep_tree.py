@@ -472,10 +472,10 @@ class DependencyTree:
         pass
 
     def verb_mood_detection(self, verb_idx):
-        dadeg_fpos = self.ftags[verb_idx]
-        if 'dadeg_fpos' in self.other_features[verb_idx].feat_dict.keys():
-            dadeg_fpos = self.other_features[verb_idx].feat_dict['dadeg_fpos']
-        return dadeg_fpos
+        Dadeg_fpos = self.ftags[verb_idx]
+        if 'Dadeg_fpos' in self.other_features[verb_idx].feat_dict.keys():
+            Dadeg_fpos = self.other_features[verb_idx].feat_dict['Dadeg_fpos']
+        return Dadeg_fpos
 
     def exchange_pars_with_PRD(self, par_idx, par_new_role, child_new_role):
         prd_child = self.find_children_with_role(self.index[par_idx], 'PRD')
@@ -714,9 +714,9 @@ class DependencyTree:
             old_head = self.heads[idx]
             old_pos = self.tags[idx]
             word = self.words[idx]
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
+            Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
             rol_changed = False
-            if dadeg_pos == 'PREP' or dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
+            if Dadeg_pos == 'PREP' or Dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
                 children = self.find_all_children(self.index[idx], ['PUNCT'])
                 if len(children) == 2:
                     ch1_w = self.words[children[0]]
@@ -773,12 +773,12 @@ class DependencyTree:
             old_pos = self.tags[idx]
             word = self.words[idx]
             rol_changed = False
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
+            Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
 
-            if dadeg_pos == 'ADR' and (self.labels[idx] == 'PREDEP' or self.labels[idx] == 'POSDEP'):
+            if Dadeg_pos == 'ADR' and (self.labels[idx] == 'PREDEP' or self.labels[idx] == 'POSDEP'):
                 self.labels[idx] = 'case'
                 rol_changed = True
-            elif dadeg_pos == 'ADR':
+            elif Dadeg_pos == 'ADR':
                 pre_pos_child = [key for key, val in enumerate(self.heads) if val == self.index[idx] and (
                         self.labels[key] == 'PREDEP' or self.labels[key] == 'POSDEP')]
                 if len(pre_pos_child) > 0:
@@ -820,7 +820,7 @@ class DependencyTree:
                     raise Exception("SHOULD NOT HAVE MORE THAN ONE DEP!")
                 rol_changed = True
 
-            if dadeg_pos == 'PREP' or dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
+            if Dadeg_pos == 'PREP' or Dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
                 children = self.find_all_children(self.index[idx], ['PUNCT'])  # because of را in sent=44271
                 if len(children) == 2:
                     if self.words[children[0]] == 'هم' or self.words[children[0]] == 'نیز':
@@ -1054,7 +1054,7 @@ class DependencyTree:
             lemma = self.lemmas[idx]
             word = self.words[idx]
             rol_changed = False
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
+            Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
             # *************************************************
             # **** It's so important to put nsubj mapping after case in second level: because of this example:
             # (the dep role of child of را is SBJ)
@@ -1102,17 +1102,17 @@ class DependencyTree:
             # if word in adj_prenums and self.words[idx-1]=='و':
             #    print(self.words[idx-2]+' '+self.words[idx-1]+' '+word+' in sent='+self.sent_descript)
             if old_role == 'NPREMOD':
-                dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
-                if dadeg_pos == 'PREM':
+                Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
+                if Dadeg_pos == 'PREM':
                     self.labels[idx] = 'det'
-                # elif dadeg_pos=='PRENUM' and word not in adj_prenums:
+                # elif Dadeg_pos=='PRENUM' and word not in adj_prenums:
                 elif old_pos == 'NUM':
                     self.labels[idx] = 'nummod'
                 else:
                     # if word=='نصف' or word=='تک' or word=='چند':
                     # print('word {} in sent={}'.format(word,self.sent_descript))
                     self.labels[idx] = 'amod'
-                # if dadeg_pos=='POSNUM':
+                # if Dadeg_pos=='POSNUM':
                 #    print('POSTNUM in NPREMOD {}'.format(self.sent_descript))
                 rol_changed = True
             if old_role == 'NPOSTMOD':

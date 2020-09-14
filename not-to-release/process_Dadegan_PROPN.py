@@ -207,8 +207,8 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             old_cpos = elems[5]
             if old_pos != old_cpos:
                 old_cpos = old_pos + '_' + old_cpos
-            dadeg_pos = old_pos  # .strip().split('|')[0]
-            old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
+            Dadeg_pos = old_pos  # .strip().split('|')[0]
+            old_dadegan_pos = '|Dadeg_pos=' + Dadeg_pos
             isPROPN = False
             if elems[-1] == 'isPROPN':
                 isPROPN = True
@@ -227,8 +227,8 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             old_cpos = elems[5]
             if old_pos != old_cpos:
                 old_cpos = old_pos + '_' + old_cpos
-            dadeg_pos = old_pos  # .strip().split('|')[0]
-            old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
+            Dadeg_pos = old_pos  # .strip().split('|')[0]
+            old_dadegan_pos = '|Dadeg_pos=' + Dadeg_pos
             isPROPN = False
             if elems[-1] == 'isPROPN':
                 isPROPN = True
@@ -247,8 +247,8 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             old_cpos = elems[5]
             if old_pos != old_cpos:
                 old_cpos = old_pos + '_' + old_cpos
-            dadeg_pos = old_pos
-            old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
+            Dadeg_pos = old_pos
+            old_dadegan_pos = '|Dadeg_pos=' + Dadeg_pos
             isPROPN = False
             if elems[-1] == 'isPROPN':
                 isPROPN = True
@@ -281,8 +281,8 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             old_cpos = elems[4]
             if old_pos != old_cpos:
                 old_cpos = old_pos + '_' + old_cpos
-            dadeg_pos = old_pos  # .strip().split('|')[0]
-            old_dadegan_pos = '|dadeg_pos=' + dadeg_pos
+            Dadeg_pos = old_pos  # .strip().split('|')[0]
+            old_dadegan_pos = '|Dadeg_pos=' + Dadeg_pos
             isPROPN = False
             if elems[-1] == 'isPROPN':
                 isPROPN = True
@@ -729,7 +729,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         v_p_id = tokens_ids[token_id] - 1
                         old_dadegan_info_aux = '|senID=' + seperated_feature['senID']
                         old_dadegan_info_v = '|tma=' + seperated_feature[
-                            'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
+                            'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         added_line_verb = 'X' + '\t' + str(
                             v_p_id) + '\t' + v_first_part_form + '\t' + aux_v_prefix + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=' + \
@@ -751,10 +751,10 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         v_p_id = tokens_ids[token_id] + 1
                         old_dadegan_info_aux = '|senID=' + seperated_feature['senID']
                         old_dadegan_info_v = '|tma=' + seperated_feature[
-                            'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
+                            'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         if v_second_part_form == 'است' and word_lemma == 'داد#ده' and prev_tok_form == 'انجام':  # changeing lemma of شده or نشده in انجام شده است phrase from داد#ده to کرد#کن
-                            old_dadegan_info_v += '|dadeg_lemma=' + word_lemma
+                            old_dadegan_info_v += '|Dadeg_lemma=' + word_lemma
                             word_lemma = 'کرد#کن'
                         polarity_v = detect_verb_polarity(v_first_part, word_lemma, line)
                         eddited_line = str(
@@ -774,7 +774,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         v_p_id = tokens_ids[token_id] + 1
                         old_dadegan_info_aux = '|senID=' + seperated_feature['senID']
                         old_dadegan_info_v = '|tma=' + seperated_feature[
-                            'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
+                            'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         polarity_v = detect_verb_polarity(v_first_part, word_lemma, line)
                         eddited_line = str(
@@ -795,7 +795,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         v_p_id = tokens_ids[token_id] - 1
                         old_dadegan_info_aux = '|senID=' + seperated_feature['senID']
                         old_dadegan_info_v = '|tma=' + seperated_feature[
-                            'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
+                            'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         added_line_verb = 'X' + '\t' + str(
                             v_p_id) + '\t' + v_first_part_form + '\t' + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=SING|person=3|polarity=NEG' + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
@@ -845,7 +845,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         v_p_two_id = v_p_one_id + 1
                         old_dadegan_info_aux = '|senID=' + seperated_feature['senID']
                         old_dadegan_info_v = '|tma=' + seperated_feature[
-                            'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
+                            'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         eddited_line = str(
                             token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
@@ -875,7 +875,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         v_p_two_id = v_p_one_id + 1
                         old_dadegan_info_aux = '|senID=' + seperated_feature['senID']
                         old_dadegan_info_v = '|tma=' + seperated_feature[
-                            'tma'] + '|dadeg_pos=' + pos + '|dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
+                            'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         eddited_line = str(
                             token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
@@ -898,7 +898,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 if pos == 'V':
                     old_dadegan_lem = ''
                     if prev_tok_form == 'انجام' and cpos == 'PASS' and word_lemma == 'داد#ده':
-                        old_dadegan_lem += '|dadeg_lemma=' + word_lemma
+                        old_dadegan_lem += '|Dadeg_lemma=' + word_lemma
                         word_lemma = 'کرد#کن'
                     if word_lemma in {"بود#باش", "#هست", "#است"}:
                         elems[3] = "AUX"
