@@ -31,7 +31,8 @@ class Features:
                 pass
 
     def __str__(self):
-        return "|".join([feat + "=" + v for feat, v in dict(sorted(self.feat_dict.items())).items()]) if len(self.feat_dict) > 0 else "_"
+        return "|".join([feat + "=" + v for feat, v in dict(sorted(self.feat_dict.items())).items()]) if len(
+            self.feat_dict) > 0 else "_"
 
     def feat(self, feat):  # get the value of a specific feature (feat)
         return self.feat_dict[feat]
@@ -1497,6 +1498,14 @@ class DependencyTree:
         self.final_refinement()
         self.manual_postprocess()
 
+    def ud_validate_fix(self):
+        # Fixes errors by validator
+        for i in range(len(self.words)):
+            if self.tags[i] == "PUNCT":
+                self.labels[i] = "punct"
+        if self.sen_id == 23558:
+            self.heads[16] = 19
+
     def manual_postprocess(self):
         if self.sen_id == 47788:
             self.tags[1] = "ADJ"
@@ -1515,7 +1524,7 @@ class DependencyTree:
             self.labels[1] = "flat:name"
             self.heads[2] = 0
             self.heads[3] = 0
-        elif self.sen_id==34084:
+        elif self.sen_id == 34084:
             self.tags[11] = "PROPN"
             self.labels[11] = "flat:name"
             self.heads[11] = 10
@@ -1540,8 +1549,7 @@ class DependencyTree:
             self.labels[6] = "flat:name"
             self.heads[7] = 5
 
-
-
+        self.ud_validate_fix()
 
     @staticmethod
     def fix_mwe_entries(tree_list):

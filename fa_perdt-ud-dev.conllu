@@ -240,7 +240,7 @@
 14	با	با	ADP	PREP	_	16	case	_	_
 15	ذوب‌آهن	ذوب‌آهن	PROPN	N_IANM	Number=Sing	21	obl:arg	_	_
 16	و	و	CCONJ	CONJ	_	15	case	_	_
-17	سپس	سپس	ADV	ADV_SADV	_	16	advmod	_	_
+17	سپس	سپس	ADV	ADV_SADV	_	19	advmod	_	_
 18	با	با	ADP	PREP	_	19	case	_	_
 19	جگوار	جگوار	PROPN	N_IANM	Number=Sing	17	case	_	_
 20	دیدار	دیدار	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
@@ -764,9 +764,9 @@
 35	که	که	SCONJ	SUBR	_	44	mark	_	_
 36	امام	امام	PROPN	IDEN	Number=Sing	44	nsubj	_	_
 37	حسین	حسین	PROPN	N_ANM	Number=Sing	36	flat:name	_	_
-38	(	(	PUNCT	PUNC	_	39	advmod	_	SpaceAfter=No
+38	(	(	PUNCT	PUNC	_	39	punct	_	SpaceAfter=No
 39	ع	ع	NOUN	N_IANM	Number=Sing	37	advmod	_	SpaceAfter=No
-40	)	)	PUNCT	PUNC	_	39	advmod	_	_
+40	)	)	PUNCT	PUNC	_	39	punct	_	_
 41	برای	برای	ADP	PREP	_	42	case	_	_
 42	آنها	آنها	PRON	PR_SEPER	Number=Plur|Person=3	44	obl	_	_
 43	قیام	قیام	NOUN	N_IANM	Number=Sing	44	compound:lvc	_	_
@@ -790,9 +790,9 @@
 61	که	که	SCONJ	SUBR	_	60	advmod	_	_
 62	امام	امام	PROPN	IDEN	Number=Sing	72	nsubj	_	_
 63	حسین	حسین	PROPN	N_ANM	Number=Sing	62	flat:name	_	_
-64	(	(	PUNCT	PUNC	_	65	advmod	_	SpaceAfter=No
+64	(	(	PUNCT	PUNC	_	65	punct	_	SpaceAfter=No
 65	ع	ع	NOUN	N_IANM	Number=Sing	63	advmod	_	SpaceAfter=No
-66	)	)	PUNCT	PUNC	_	65	advmod	_	_
+66	)	)	PUNCT	PUNC	_	65	punct	_	_
 67	در	در	ADP	PREP	_	68	case	_	_
 68	زمان	زمان	NOUN	N_IANM	Number=Sing	72	obl	_	_
 69	حرکت	حرکت	NOUN	N_IANM	Number=Sing	68	nmod	_	_
@@ -1024,7 +1024,7 @@
 32	که	که	SCONJ	SUBR	_	57	mark	_	_
 33	با	با	ADP	PREP	_	34	case	_	_
 34	تلاش	تلاش	NOUN	N_IANM	Number=Sing	57	obl	_	SpaceAfter=No
-35	،	،	PUNCT	PUNC	_	34	conj	_	_
+35	،	،	PUNCT	PUNC	_	34	punct	_	_
 36	همدلی	همدلی	NOUN	N_IANM	Number=Sing	34	conj	_	_
 37	و	و	CCONJ	CONJ	_	38	cc	_	_
 38	همکاری	همکاری	NOUN	N_IANM	Number=Sing	34	conj	_	_
@@ -13026,7 +13026,7 @@
 10	برمی‌آیند	بر#آمد#آ	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	5	acl	_	_
 11	معلومات	معلومات	NOUN	N_IANM	Number=Plur	0	root	_	_
 12	ذهنی	ذهنی	ADJ	ADJ_AJP	_	11	amod	_	_
-13	(	(	PUNCT	PUNC	_	12	conj	_	SpaceAfter=No
+13	(	(	PUNCT	PUNC	_	12	punct	_	SpaceAfter=No
 14	یا	یا	CCONJ	CONJ	_	13	cc	_	_
 15	قبلی	قبلی	ADJ	ADJ_AJP	_	14	advmod	_	SpaceAfter=No
 16	)	)	PUNCT	PUNC	_	14	punct	_	_
@@ -13041,7 +13041,7 @@
 25	،	،	PUNCT	PUNC	_	24	punct	_	_
 26	معلومات	معلومات	NOUN	N_IANM	Number=Plur	11	xcomp	_	_
 27	حسی	حسی	ADJ	ADJ_AJP	_	26	amod	_	_
-28	(	(	PUNCT	PUNC	_	27	conj	_	SpaceAfter=No
+28	(	(	PUNCT	PUNC	_	27	punct	_	SpaceAfter=No
 29	یا	یا	CCONJ	CONJ	_	28	cc	_	_
 30	بعدی	بعدی	ADJ	ADJ_AJP	_	29	advmod	_	SpaceAfter=No
 31	)	)	PUNCT	PUNC	_	29	punct	_	_
