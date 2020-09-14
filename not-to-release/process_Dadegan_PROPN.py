@@ -758,7 +758,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             word_lemma = 'کرد#کن'
                         polarity_v = detect_verb_polarity(v_first_part, word_lemma, line)
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         spaceAft = '_'
                         if noSpace:
                             spaceAft = 'SpaceAfter=No'
@@ -778,7 +778,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                                                  'senID']
                         polarity_v = detect_verb_polarity(v_first_part, word_lemma, line)
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3' + polarity_v + '|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         spaceAft = '_'
                         if noSpace:
                             spaceAft = 'SpaceAfter=No'
@@ -848,9 +848,9 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         added_line_verb_one = 'X' + '\t' + str(
-                            v_p_one_id) + '\t' + v_second_part_form + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=SING|person=3' + polarity + '|tense=Part' + old_dadegan_info_aux + '\t' + str(
+                            v_p_one_id) + '\t' + v_second_part_form + '\t' + 'کرد#کن' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=SING|person=3' + polarity + '|tense=Past' + old_dadegan_info_aux + '\t' + str(
                             token_id) + '\t' + 'aux:pass' + '\t' + '_' + '\t' + '_' + '\n'
                         spaceAft = '_'
                         if noSpace:
@@ -878,7 +878,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                             'tma'] + '|Dadeg_pos=' + pos + '|Dadeg_fpos=' + cpos + '|senID=' + seperated_feature[
                                                  'senID']
                         eddited_line = str(
-                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Part' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
+                            token_id) + '\t' + v_first_part + '\t' + word_lemma + '\t' + 'V' + '\t' + cpos + '\t' + 'number=SING|person=3|tense=Past' + old_dadegan_info_v + '\t' + hParent + '\t' + rParent + '\t' + semanticRoles + '\n'
                         added_line_verb_one = 'Z' + '\t' + str(
                             v_p_one_id) + '\t' + v_second_part + '\t' + 'خواست#خواه' + '\t' + 'AUX' + '\t' + 'AUX' + '\t' + 'number=' + aux_num + '|person=3' + polarity + '|tense=Fut|verbForm=Fin' + old_dadegan_info_aux + '\t' + str(
                             v_p_two_id) + '\t' + 'aux' + '\t' + '_' + '\t' + '_' + '\n'
