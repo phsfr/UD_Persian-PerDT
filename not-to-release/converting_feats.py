@@ -32,7 +32,7 @@ if __name__ == '__main__':
                         if 'tense' not in tree.other_features[w].feat_dict:
                             tree.other_features[w].add_feat('Tense', 'Past')
                     if tma == 'GN':
-                        if 'verbForm' not in tree.other_features[w].feat_dict:
+                        if 'VerbForm' not in tree.other_features[w].feat_dict:
                             tree.other_features[w].add_feat('VerbForm', 'Part')
                     if tma == 'H':
                         if 'tense' not in tree.other_features[w].feat_dict:

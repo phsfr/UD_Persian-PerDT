@@ -500,7 +500,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                         if v_second_part == 'بوده':  # in sent_id=26076
                             aux_number = 'SING'
                             aux_count = '3'
-                            tense = 'Part'
+                            tense = 'Past'
                             fpos = 'V_PP'
                         else:
                             aux_number = tobe_base[v_second_part][0]
