@@ -59,6 +59,6 @@ if __name__ == '__main__':
     if len(illegal_labels) > 0:
         print("Illegal labels:", " ".join([l + ":" + str(c) for l, c in illegal_labels.items()]))
     if len(problematic_sens) > 0:
-        print("Number of wrong sentences", len(problematic_sens))
+        print("Number of wrong sentences", len(problematic_sens), problematic_sens)
     if len(illegal_tokenization) > 0:
         print("Number of wrong tokenization", len(illegal_tokenization))

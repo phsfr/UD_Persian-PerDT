@@ -332,7 +332,7 @@ class DependencyTree:
             if word_indx in self.mw_line.keys():
                 mwline = "\t".join(self.mw_line[word_indx].strip().split("\t")[:10])
                 lst.append(mwline)
-            feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i],
+            feats = [word_indx, self.words[i].strip().replace(" ",""), self.lemmas[i], self.tags[i],
                      self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             lst.append('\t'.join(feats))
@@ -1510,6 +1510,8 @@ class DependencyTree:
                 self.labels[i] = "punct"
             if self.tags[i] == "NOUN" and self.labels[i] == "advmod":
                 self.labels[i] = "obl"
+            if (self.tags[i] == "PUNCT" and self.words[i]!="-") and self.heads[i]>i:
+                self.final_tags[i] = "SpaceAfter=No"
         if self.sen_id == 23558:
             self.heads[16] = 19
 
