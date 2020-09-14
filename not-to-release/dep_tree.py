@@ -1292,8 +1292,10 @@ class DependencyTree:
                     self.labels[l] = "dep"
                 elif self.tags[l] == "NUM":
                     self.labels[l] = "nummod"
-                else:
+                elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
+                else:
+                    self.labels[l] = "obl"
                 changed = True
             if label == "POSDEP":
                 if self.words[l] in {"نیز", "هم"}:
@@ -1302,8 +1304,11 @@ class DependencyTree:
                     self.labels[l] = "fixed"
                 elif self.tags[l] == "NUM":
                     self.labels[l] = "nummod"
-                else:
+                elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
+                else:
+                    self.labels[l] = "obl"
+
                 changed = True
 
             if not changed and label.split(":")[0] not in univ_dep_labels:
@@ -1503,6 +1508,8 @@ class DependencyTree:
         for i in range(len(self.words)):
             if self.tags[i] == "PUNCT":
                 self.labels[i] = "punct"
+            if self.tags[i] == "NOUN" and self.labels[i] == "advmod":
+                self.labels[i] = "obl"
         if self.sen_id == 23558:
             self.heads[16] = 19
 
