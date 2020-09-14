@@ -26,7 +26,7 @@ if __name__ == '__main__':
         if output_path.endswith(".conllu"):
             output_path = output_path[:-6] + "txt"
         print(input_path)
-        with open(output_path, "w") as writer:
+        with open(output_path, "w",encoding='utf-8') as writer:
             univ_trees: List[DependencyTree] = DependencyTree.load_trees_from_conllu_file(input_path)
             for t, univ_tree in enumerate(univ_trees):
                 sent_str = univ_tree.sent_str.strip()

@@ -57,14 +57,15 @@ if __name__ == '__main__':
                 tree.other_features[w].remove_feat('senID')
                 tree.other_features[w].remove_feat('dadeg_pos')
                 tree.other_features[w].remove_feat('Dadeg_fpos')
+                tree.other_features[w].remove_feat('Dadeg_lemma')
                 tree.other_features[w].remove_feat('old_r')
                 tree.other_features[w].remove_feat('old_h')
                 if 'number' in tree.other_features[w].feat_dict:
                     tree.other_features[w].feat_dict['number'] = feature.feat('number').capitalize()
                 if 'polarity' in tree.other_features[w].feat_dict:
                     tree.other_features[w].feat_dict['polarity'] = feature.feat('polarity').capitalize()
-
-                tree.other_features[w].feat_dict = {k.capitalize(): v for k, v in
+                #k.capitalize()
+                tree.other_features[w].feat_dict = { k[0].upper()+k[1:] : v for k, v in
                                                     tree.other_features[w].feat_dict.items()}
 
         DependencyTree.write_to_conllu(tree_list, output_files[f_idx])

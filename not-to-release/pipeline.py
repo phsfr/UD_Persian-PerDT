@@ -4,8 +4,8 @@ if not os.path.exists("Universal_Dadegan"):
     os.makedirs("Universal_Dadegan")
 if not os.path.exists("Universal_Dadegan_with_DepRels"):
     os.makedirs("Universal_Dadegan_with_DepRels")
-if not os.path.exists("Universal_Dadegan_with_DepRels"):
-    os.makedirs("Universal_Dadegan_with_DepRels")
+if not os.path.exists("UD_Dadegan_feat"):
+    os.makedirs("UD_Dadegan_feat")
 if not os.path.exists("UD_Dadegan"):
     os.makedirs("UD_Dadegan")
 if not os.path.exists("UD_Dadegan-nt"):

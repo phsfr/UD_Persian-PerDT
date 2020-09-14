@@ -286,6 +286,7 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
             isPROPN = False
             if elems[-1] == 'isPROPN':
                 isPROPN = True
+                elems=elems[:-1]
             sent_id = extract_sent_id(elems[5])
             new_pos = convert_pos(old_pos, elems[1].strip(), isPROPN, str(new_token_id), sent_id)
             lin = str(new_token_id) + '\t' + '\t'.join(elems[1:3]) + '\t' + new_pos + '\t' + old_cpos + '\t' + elems[
@@ -296,9 +297,14 @@ def process_line_to_write(lin, tokens_ids, space_toks, tok_dic):
                       elems[5] + old_dadegan_pos + '\t' + str(new_hParent_id) + '\t' + '\t'.join(
                     elems[7:-1]) + '\t' + 'SpaceAfter=No' + '\n'
             # lin=str(new_token_id)+'\t'+'\t'.join(elems[1:6])+'\t'+str(new_hParent_id)+'\t'+'\t'.join(elems[7:])+'\n'
-    if 'isPROPN' in lin:
-        lin_p = lin.strip().split('\t')
-        lin = '\t'.join(lin_p[:-1]) + '\n'
+    #if 'isPROPN' in lin:
+    #    lin_p = lin.strip().split('\t')
+    #    tok_i=int(lin_p[0])
+    #    if tok_i in space_toks: #and (not contain_noSpace):
+    #        space_toks.remove(tok_i)
+    #        lin = '\t'.join(lin_p[:-2]) + '\t' + 'SpaceAfter=No' + '\n'
+    #    else:
+    #    lin = '\t'.join(lin_p[:-1]) + '\n'
     return lin
 
 
@@ -441,6 +447,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
 
             elif prev_pos == 'PUNC' and prev_tok_form == '"' and len(punc_stack) == 1:
                 sent_text = sent_text + word_form
+                #noSpace=True
             elif pos == 'PUNC' and word_form not in punc_attach_after:
                 sent_text = sent_text + word_form
                 if (' ' not in prev_tok_form) and (

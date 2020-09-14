@@ -31,7 +31,7 @@ class Features:
                 pass
 
     def __str__(self):
-        return "|".join([feat + "=" + v for feat, v in self.feat_dict.items()]) if len(self.feat_dict) > 0 else "_"
+        return "|".join([feat + "=" + v for feat, v in dict(sorted(self.feat_dict.items())).items()]) if len(self.feat_dict) > 0 else "_"
 
     def feat(self, feat):  # get the value of a specific feature (feat)
         return self.feat_dict[feat]
