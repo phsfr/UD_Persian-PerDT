@@ -429,7 +429,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 # sent_text=sent_text+' '+word_form
                 if ' ' in word_form or attachment == 'PRV':
                     noSpace = True
-            if word_form == '"' and pos == 'PUNC':  # Reseting SpaceAfter feature for the second or third " punct in the same sentence
+            if word_form in {'"', "<"} and pos == 'PUNC':  # Reseting SpaceAfter feature for the second or third " punct in the same sentence
                 #    noSpace_current_punct=False
                 #    paired=True
                 if len(punc_stack) == 1:
@@ -445,7 +445,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                 else:
                     print('Error in punc stack size')
 
-            elif prev_pos == 'PUNC' and prev_tok_form == '"' and len(punc_stack) == 1:
+            elif prev_pos == 'PUNC' and prev_tok_form in {'"',"<"} and len(punc_stack) == 1:
                 sent_text = sent_text + word_form
                 #noSpace=True
             elif pos == 'PUNC' and word_form not in punc_attach_after:
@@ -907,7 +907,7 @@ def convert_to_universal(old_fileP, new_fileP, file_type):
                     line = '\t'.join(elems[:2]) + '\t' + word_lemma + '\t' + '\t'.join(elems[3:5]) + '\t' + elems[
                         5] + polarity_v + old_dadegan_lem + '\t' + '\t'.join(elems[6:]) + '\n'
                     # print(line)
-                if (pos == 'PUNC' and word_form in punc_attach_after) or (word_form == '"' and noSpace_current_punct):
+                if (pos == 'PUNC' and word_form in punc_attach_after) or (word_form in {'"',"<"} and noSpace_current_punct):
                     line = '\t'.join(elems[:-1]) + '\t' + "SpaceAfter=No" + '\n'
                 if pos == 'PR' and cpos == 'JOPER':  # and attachment=='PRV':
                     new_lemm = pro_info[elems[1]][0]
