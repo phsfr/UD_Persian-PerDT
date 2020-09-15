@@ -1329,8 +1329,8 @@ class DependencyTree:
                 elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
                 else:
-                    if self.labels[self.heads[l]-1] in {"obl:arg"}:
-                        self.labels[l] = self.labels[self.heads[l]-1]
+                    if self.labels[self.heads[l] - 1] in {"obl:arg"}:
+                        self.labels[l] = self.labels[self.heads[l] - 1]
                     else:
                         self.labels[l] = "obl"
 
@@ -1546,6 +1546,8 @@ class DependencyTree:
                 self.heads[i] = self.heads[self.heads[i] - 1]
                 if self.tags[i] == "PRON":
                     self.labels[i] = "nmod"
+            if self.labels[i] == "case" and self.tags[i] == "ADV":
+                self.labels[i] = "advmod"
             if self.tags[i] == "ADP" and self.labels[i] == "advmod":
                 self.labels[i] = "case"
             if self.tags[i] == "VERB" and self.labels[i] == "aux":
