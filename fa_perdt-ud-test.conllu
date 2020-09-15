@@ -9437,7 +9437,7 @@
 5	از	از	ADP	PREP	_	6	case	_	_
 6	افزایش	افزایش	NOUN	N_IANM	Number=Sing	16	nmod	_	_
 7	15	15	NUM	PRENUM	_	10	nummod	_	_
-8	تا	تا	ADP	PREP	_	9	advmod	_	_
+8	تا	تا	ADP	PREP	_	9	case	_	_
 9	20	20	NUM	PRENUM	_	7	nummod	_	_
 10	درصدی	درصدی	ADJ	ADJ_AJP	_	6	amod	_	_
 11	قیمت	قیمت	NOUN	N_IANM	Number=Sing	6	nmod	_	_
@@ -21344,7 +21344,7 @@
 
 # sent_id = test-s1096
 # text = حدود نیم ساعت، علی مارش زد و من و امیر چرت و پرت گفتیم.
-1	حدود	حدود	ADP	PREP	_	2	advmod	_	_
+1	حدود	حدود	ADP	PREP	_	2	case	_	_
 2	نیم	نیم	NUM	PRENUM	_	3	nummod	_	_
 3	ساعت	ساعت	NOUN	N_IANM	Number=Sing	7	obl	_	SpaceAfter=No
 4	،	،	PUNCT	PUNC	_	3	punct	_	_
@@ -25782,7 +25782,7 @@
 6	صورت	صورت	NOUN	N_IANM	Number=Sing	23	obl	_	_
 7	ماهانه	ماهانه	ADJ	ADJ_AJP	_	6	amod	_	_
 8	(	(	PUNCT	PUNC	_	12	punct	_	SpaceAfter=No
-9	حدود	حدود	ADP	PREP	_	10	advmod	_	_
+9	حدود	حدود	ADP	PREP	_	10	case	_	_
 10	80	80	NUM	PRENUM	_	12	nummod	_	_
 11	هزار	هزار	NUM	PRENUM	Number=Sing	10	flat:num	_	_
 12	تومان	تومان	NOUN	N_IANM	Number=Sing	7	appos	_	SpaceAfter=No

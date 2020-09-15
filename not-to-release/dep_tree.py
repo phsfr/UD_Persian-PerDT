@@ -1539,6 +1539,8 @@ class DependencyTree:
                 self.heads[i] = self.heads[self.heads[i] - 1]
                 if self.tags[i] == "PRON":
                     self.labels[i] == "nmod"
+            if self.tags[i] == "ADP" and self.labels[i] == "advmod":
+                self.labels[i] = "case"
         if self.sen_id == 23558:
             self.heads[16] = 19
 
