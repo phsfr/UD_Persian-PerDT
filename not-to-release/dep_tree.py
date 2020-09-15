@@ -332,7 +332,7 @@ class DependencyTree:
             if word_indx in self.mw_line.keys():
                 mwline = "\t".join(self.mw_line[word_indx].strip().split("\t")[:10])
                 lst.append(mwline)
-            feats = [word_indx, self.words[i].replace(" ",""), self.lemmas[i].replace(" ",""), self.tags[i],
+            feats = [word_indx, self.words[i].replace(" ", ""), self.lemmas[i].replace(" ", ""), self.tags[i],
                      self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             lst.append('\t'.join(feats))
@@ -963,9 +963,25 @@ class DependencyTree:
                     self.labels[idx] = 'advmod'
                     rol_changed = True
 
-            if old_role == "APREMOD" and self.tags[idx] == "NUM":
-                self.labels[idx] = 'nummod'
-                rol_changed = True
+            if old_role == "APREMOD":
+                if self.tags[idx] == "NUM":
+                    self.labels[idx] = 'nummod'
+                    rol_changed = True
+                elif self.tags[idx] == "ADJ":
+                    self.labels[idx] = 'amod'
+                    rol_changed = True
+                elif self.tags[idx] == "ADP":
+                    self.labels[idx] = 'obl'
+                    rol_changed = True
+                elif self.tags[idx] == "ADV":
+                    self.labels[idx] = 'advmod'
+                    rol_changed = True
+                elif self.tags[idx] == "DET":
+                    self.labels[idx] = 'det'
+                    rol_changed = True
+                elif self.tags[idx] in {"NOUN", "PRON", "PROPN"}:
+                    self.labels[idx] = 'nmod'
+                    rol_changed = True
             if self.tags[idx] == "PART" and self.words[idx] == "را":
                 head_children = self.children[self.heads[idx]]
                 head_children_labels = [self.labels[child - 1] for child in head_children]
@@ -1045,7 +1061,7 @@ class DependencyTree:
         # TAM is third level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
         simple_dep_map = {'TAM': 'xcomp', 'VPP': 'obl:arg', 'PART': 'mark', 'NPRT': 'compound:lvc',
                           'NVE': 'compound:lvc', 'ENC': 'compound:lvc', 'LVP': 'compound:lv', 'NE': 'compound:lvc',
-                          'APREMOD': 'advmod', 'ADVC': 'obl:arg', 'AJPP': 'obl:arg', 'NEZ': 'obl:arg',
+                          'ADVC': 'obl:arg', 'AJPP': 'obl:arg', 'NEZ': 'obl:arg',
                           'VPRT': 'compound:lvc'}
         v_copula = ['کرد#کن', 'گشت#گرد', 'گردید#گرد']
         for idx in range(0, len(self.words)):
@@ -1162,6 +1178,8 @@ class DependencyTree:
                     self.heads[idx] = self.index[head_idx]
                     if old_pos == 'ADV':
                         self.labels[idx] = 'advmod'
+                    elif old_pos == 'NUM':
+                        self.labels[idx] = 'nummod'
                     elif old_pos == 'NOUN' or old_pos == 'PROPN' or old_pos == 'PRON':
                         self.labels[idx] = 'nmod'
                     elif old_pos == 'ADJ':
@@ -1510,15 +1528,17 @@ class DependencyTree:
                 self.labels[i] = "punct"
             if self.tags[i] == "NOUN" and self.labels[i] == "advmod":
                 self.labels[i] = "obl"
-            if (self.tags[i] == "PUNCT" and self.words[i]!="-") and self.heads[i]>i:
+            if (self.tags[i] == "PUNCT" and self.words[i] != "-") and self.heads[i] > i:
                 self.final_tags[i] = "SpaceAfter=No"
-            if self.heads[i]>0 and self.labels[self.heads[i]-1] in {"aux", "aux:pass", "cop"}:
-                self.heads[i] = self.heads[self.heads[i]-1]
-            if self.heads[i]>0 and self.labels[self.heads[i]-1] in {"case"} and self.labels[i]=="fixed":
-                self.heads[i] = self.heads[self.heads[i]-1]
+            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"aux", "aux:pass", "cop"}:
+                self.heads[i] = self.heads[self.heads[i] - 1]
+            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"case"} and self.labels[i] == "fixed":
+                self.heads[i] = self.heads[self.heads[i] - 1]
                 self.labels[i] = "case"
-            if self.heads[i]>0 and self.labels[self.heads[i]-1] in {"case"} and self.labels[i]!="fixed":
-                self.heads[i] = self.heads[self.heads[i]-1]
+            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"case"} and self.labels[i] != "fixed":
+                self.heads[i] = self.heads[self.heads[i] - 1]
+                if self.tags[i] == "PRON":
+                    self.labels[i] == "nmod"
         if self.sen_id == 23558:
             self.heads[16] = 19
 

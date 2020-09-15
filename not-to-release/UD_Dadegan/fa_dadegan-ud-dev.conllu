@@ -5400,7 +5400,7 @@
 4	حدود	حدود	ADP	PREP	_	5	advmod	_	_
 5	بیست	بیست	NUM	PRENUM	_	8	nummod	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	5	punct	_	_
-7	سی	سی	ADJ	PRENUM	_	5	conj	_	_
+7	سی	سی	NUM	PRENUM	_	5	conj	_	_
 8	نفر	نفر	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 9	میهمان	میهمان	NOUN	N_ANM	Number=Sing	8	nmod	_	_
 10	و	و	CCONJ	CONJ	_	11	cc	_	_
@@ -6882,7 +6882,7 @@
 8	ت	تو	PRON	PR_JOPER	Number=Sing|Person=2|PronType=Prs	7	nmod	_	_
 9	می‌آورد	آورد#آور	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	_
 10	که	که	SCONJ	SUBR	_	9	ccomp	_	_
-11	چه	چه	DET	PREM_EXAJ	_	12	advmod	_	_
+11	چه	چه	DET	PREM_EXAJ	_	12	det	_	_
 12	زیبا	زیبا	ADJ	ADJ_AJP	_	13	advmod	_	_
 13	می‌خندد	خندید#خند	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	10	ccomp	_	_
 14	و	و	CCONJ	CONJ	_	19	cc	_	_
@@ -8266,7 +8266,7 @@
 # sent_id = dev-s369
 # text = جهان چه بی‌دریغ می‌فرسود.
 1	جهان	جهان	NOUN	N_IANM	Number=Sing	4	nsubj	_	_
-2	چه	چه	DET	PREM_EXAJ	_	3	advmod	_	_
+2	چه	چه	DET	PREM_EXAJ	_	3	det	_	_
 3	بی‌دریغ	بی‌دریغ	ADJ	ADJ_AJP	_	4	advmod	_	_
 4	می‌فرسود	فرسود#فرسا	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	PUNC	_	4	punct	_	_
@@ -14121,8 +14121,8 @@
 30	تا	تا	SCONJ	SUBR	_	40	mark	_	_
 31	مزدک	مزدک	NOUN	N_ANM	Number=Sing	40	obj	_	_
 32	و	و	CCONJ	CONJ	_	35	cc	_	_
-33	سی	سی	ADJ	PRENUM	_	34	amod	_	_
-34	هزار	هزار	NUM	PRENUM	Number=Sing	35	nummod	_	_
+33	سی	سی	NUM	PRENUM	_	35	nummod	_	_
+34	هزار	هزار	NUM	PRENUM	Number=Sing	33	flat:num	_	_
 35	تن	تن	NOUN	N_ANM	Number=Sing	31	conj	_	_
 36	از	از	ADP	PREP	_	37	case	_	_
 37	طرفداران	طرفدار	NOUN	N_ANM	Number=Plur	35	nmod	_	_
@@ -15232,7 +15232,7 @@
 7	در	در	ADP	PREP	_	8	case	_	_
 8	مقابل	مقابل	NOUN	N_IANM	Number=Sing	5	nmod	_	_
 9	انگلیس	انگلیس	PROPN	N_IANM	Number=Sing	8	nmod	_	_
-10	شصت	شصت	ADJ	PRENUM	_	11	amod	_	_
+10	شصت	شصت	NUM	PRENUM	_	11	nummod	_	_
 11	سال	سال	NOUN	N_IANM	Number=Sing	13	obl	_	_
 12	انتظار	انتظار	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
 13	کشیدند	کشید#کش	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
@@ -22281,7 +22281,7 @@
 # text = بیش از سی بار از شرق و غرب و شمال و جنوب به ایران حمله آورده شد.
 1	بیش	بیش	ADJ	ADJ_AJCM	_	3	advmod	_	_
 2	از	از	ADP	PREP	_	1	fixed	_	_
-3	سی	سی	ADJ	PRENUM	_	4	advmod	_	_
+3	سی	سی	NUM	PRENUM	_	4	nummod	_	_
 4	بار	بار	NOUN	N_IANM	Number=Sing	16	obl	_	_
 5	از	از	ADP	PREP	_	6	case	_	_
 6	شرق	شرق	PROPN	N_IANM	Number=Sing	16	obl	_	_
@@ -22838,8 +22838,8 @@
 3	را	را	ADP	POSTP	_	1	case	_	_
 4	به	به	ADP	PREP	_	5	case	_	_
 5	حضور	حضور	NOUN	N_IANM	Number=Sing	19	obl:arg	_	_
-6	هر	هر	DET	PREM_AMBAJ	_	7	advmod	_	_
-7	چه	چه	DET	PREM_QUAJ	_	8	advmod	_	_
+6	هر	هر	DET	PREM_AMBAJ	_	7	det	_	_
+7	چه	چه	DET	PREM_QUAJ	_	8	det	_	_
 8	بیشتر	بیش	ADJ	ADJ_AJCM	_	5	amod	_	_
 9	در	در	ADP	PREP	_	10	case	_	_
 10	روستاهای	روستا	NOUN	N_IANM	Number=Plur	5	nmod	_	_
@@ -23622,7 +23622,7 @@
 5	ایران	ایران	PROPN	N_IANM	Number=Sing	3	flat:name	_	_
 6	گفت	گفت#گو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 7	:	:	PUNCT	PUNC	_	6	punct	_	_
-8	هر	هر	DET	PREM_AMBAJ	_	9	advmod	_	_
+8	هر	هر	DET	PREM_AMBAJ	_	9	det	_	_
 9	تشکلی	تشکل	NOUN	N_IANM	Number=Sing	14	obj	_	_
 10	را	را	ADP	POSTP	_	9	case	_	_
 11	نمی‌توان	#توان	AUX	V_MODL	Polarity=Neg	14	aux	_	_
@@ -25321,7 +25321,7 @@
 16	نهر	نهر	NOUN	N_IANM	Number=Sing	15	obl	_	_
 17	را	را	ADP	POSTP	_	14	case	_	_
 18	دیده‌ای	دید#بین	VERB	V_ACT	Number=Sing|Person=2|VerbForm=Part|Voice=Act	5	conj	_	_
-19	چه	چه	DET	PREM_EXAJ	_	20	advmod	_	_
+19	چه	چه	DET	PREM_EXAJ	_	20	det	_	_
 20	زیبا	زیبا	ADJ	ADJ_AJP	_	24	advmod	_	_
 21	چشم	چشم	NOUN	N_IANM	Number=Sing	24	obj	_	_
 22	را	را	ADP	POSTP	_	21	case	_	_
@@ -27438,7 +27438,7 @@
 6	هر	هر	DET	PREM_AMBAJ	_	7	det	_	_
 7	چند	چند	NOUN	N_IANM	Number=Sing	18	obl	_	_
 8	خود	خود	PRON	PR_CREFX	_	10	nsubj	_	_
-9	سخت	سخت	ADJ	ADJ_AJP	_	10	advmod	_	_
+9	سخت	سخت	ADJ	ADJ_AJP	_	10	amod	_	_
 10	نیازمند	نیازمند	ADJ	ADJ_AJP	_	7	ccomp	_	_
 11	باشند	بود#باش	AUX	AUX	Number=Plur|Person=3	10	cop	_	SpaceAfter=No
 12	،	،	PUNCT	PUNC	_	10	punct	_	_

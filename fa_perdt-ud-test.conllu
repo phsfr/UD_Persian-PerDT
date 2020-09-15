@@ -156,7 +156,7 @@
 
 # sent_id = test-s10
 # text = چه خوب است که به جای پوشش‌های مبتذل غرب، مردم کشورمان پوشش‌های سنتی و اصیل ترکمن را پسند کرده‌اند.
-1	چه	چه	DET	PREM_EXAJ	_	2	advmod	_	_
+1	چه	چه	DET	PREM_EXAJ	_	2	det	_	_
 2	خوب	خوب	ADJ	ADJ_AJP	_	0	root	_	_
 3	است	#است	AUX	AUX	Number=Sing|Person=3	2	cop	_	_
 4	که	که	SCONJ	SUBR	_	2	csubj	_	_
@@ -743,7 +743,7 @@
 15	خطر	خطر	NOUN	N_IANM	Number=Sing	19	nsubj	_	_
 16	آن	آن	PRON	PR_DEMON	Number=Sing	15	nmod	_	_
 17	به	به	ADP	PREP	_	18	case	_	_
-18	مراتب	مرتبه	NOUN	N_IANM	Number=Plur	19	obl	_	_
+18	مراتب	مرتبه	NOUN	N_IANM	Number=Plur	19	nmod	_	_
 19	بیشتر	بیش	ADJ	ADJ_AJCM	_	0	root	_	_
 20	از	از	ADP	PREP	_	21	case	_	_
 21	انجمن	انجمن	PROPN	N_IANM	Number=Sing	19	obl:arg	_	_
@@ -1742,7 +1742,7 @@
 6	تاکنون	تاکنون	ADV	ADV_SADV	_	12	advmod	_	_
 7	بیش	بیش	ADJ	ADJ_AJCM	_	9	advmod	_	_
 8	از	از	ADP	PREP	_	7	fixed	_	_
-9	سی	سی	ADJ	PRENUM	_	10	advmod	_	_
+9	سی	سی	NUM	PRENUM	_	10	nummod	_	_
 10	کتاب	کتاب	NOUN	N_IANM	Number=Sing	12	obj	_	_
 11	تألیف	تألیف	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
 12	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
@@ -2991,7 +2991,7 @@
 27	ارتفاع	ارتفاع	NOUN	N_IANM	Number=Sing	32	nsubj	_	_
 28	آن	آن	PRON	PR_DEMON	Number=Sing	27	nmod	_	_
 29	به	به	ADP	PREP	_	31	case	_	_
-30	سی	سی	ADJ	PRENUM	_	31	amod	_	_
+30	سی	سی	NUM	PRENUM	_	31	nummod	_	_
 31	متر	متر	NOUN	N_IANM	Number=Sing	32	obl:arg	_	_
 32	می‌رسد	رسید#رس	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	10	acl	_	SpaceAfter=No
 33	.	.	PUNCT	PUNC	_	24	punct	_	_
@@ -4097,7 +4097,7 @@
 7	کشید	کشید#کش	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
 8	و	و	CCONJ	CONJ	_	12	cc	_	_
 9	نه	نه	ADV	ADV_SADV	_	10	advmod	_	_
-10	چندان	چندان	DET	PREM_AMBAJ	_	11	advmod	_	_
+10	چندان	چندان	DET	PREM_AMBAJ	_	11	det	_	_
 11	کوتاه	کوتاه	ADJ	ADJ_AJP	_	12	xcomp	_	_
 12	شد	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	7	conj	_	_
 13	که	که	SCONJ	SUBR	_	15	mark	_	_
@@ -13923,7 +13923,7 @@
 # sent_id = test-s727
 # text = حدود سی سال با من مصاحبت کردی.
 1	حدود	حدود	NOUN	N_IANM	Number=Sing	7	obl	_	_
-2	سی	سی	ADJ	PRENUM	_	3	amod	_	_
+2	سی	سی	NUM	PRENUM	_	3	nummod	_	_
 3	سال	سال	NOUN	N_IANM	Number=Sing	1	nmod	_	_
 4	با	با	ADP	PREP	_	5	case	_	_
 5	من	من	PRON	PR_SEPER	Number=Sing|Person=1	7	obl:arg	_	_
@@ -15308,7 +15308,7 @@
 16	محیطی	محیطی	ADJ	ADJ_AJP	_	15	amod	_	_
 17	به	به	ADP	PREP	_	18	case	_	_
 18	میزان	میزان	NOUN	N_IANM	Number=Sing	22	obl	_	_
-19	بسیار	بسیار	ADJ	ADJ_AJP	_	20	advmod	_	_
+19	بسیار	بسیار	ADJ	ADJ_AJP	_	20	amod	_	_
 20	کمی	کم	ADJ	ADJ_AJP	_	18	amod	_	_
 21	نوسان	نوسان	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
 22	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
@@ -15574,9 +15574,9 @@
 2	فراری	فراری	ADJ	ADJ_AJP	_	1	amod	_	_
 3	از	از	ADP	PREP	_	4	case	_	_
 4	ایران	ایران	PROPN	N_IANM	Number=Sing	2	obl:arg	_	_
-5	سی	سی	ADJ	PRENUM	_	8	amod	_	_
+5	سی	سی	NUM	PRENUM	_	8	nummod	_	_
 6	و	و	CCONJ	CONJ	_	7	cc	_	_
-7	یک	یک	NUM	PRENUM	_	5	conj	_	_
+7	یک	یک	NUM	PRENUM	_	5	flat:num	_	_
 8	سال	سال	NOUN	N_IANM	Number=Sing	14	obl	_	_
 9	با	با	ADP	PREP	_	10	case	_	_
 10	نظام	نظام	PROPN	N_IANM	Number=Sing	14	obl:arg	_	_
@@ -17080,8 +17080,8 @@
 8	و	و	CCONJ	CONJ	_	9	cc	_	_
 9	صدر	صدر	PROPN	N_ANM	Number=Sing	6	conj	_	_
 10	اصفهانی	اصفهانی	PROPN	N_ANM	Number=Sing	9	flat:name	_	_
-11	قریب	قریب	ADJ	ADJ_AJP	_	12	advmod	_	_
-12	سی	سی	ADJ	PRENUM	_	13	amod	_	_
+11	قریب	قریب	ADJ	ADJ_AJP	_	12	amod	_	_
+12	سی	سی	NUM	PRENUM	_	13	nummod	_	_
 13	سال	سال	NOUN	N_IANM	Number=Sing	15	obl	_	_
 14	صدارت	صدارت	NOUN	N_IANM	Number=Sing	15	compound:lvc	_	_
 15	کردند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
@@ -18837,7 +18837,7 @@
 1	پس	پس	ADP	PREP	_	3	case	_	_
 2	از	از	ADP	PREP	_	3	case	_	_
 3	گذشت	گذشت	NOUN	N_IANM	Number=Sing	13	obl	_	_
-4	حدود	حدود	NOUN	N_IANM	_	5	obl	_	_
+4	حدود	حدود	NOUN	N_IANM	_	5	nmod	_	_
 5	دو	دو	NUM	PRENUM	_	6	nummod	_	_
 6	قرن	قرن	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 7	از	از	ADP	PREP	_	8	case	_	_
@@ -19032,7 +19032,7 @@
 4	که	که	SCONJ	SUBR	_	3	acl	_	_
 5	من	من	PRON	PR_SEPER	Number=Sing|Person=1	9	nsubj	_	_
 6	آن	آن	DET	PREM_DEMAJ	_	7	det	_	_
-7	قدر	قدر	NOUN	N_IANM	Number=Sing	8	obl	_	_
+7	قدر	قدر	NOUN	N_IANM	Number=Sing	8	nmod	_	_
 8	بزرگ	بزرگ	ADJ	ADJ_AJP	_	9	xcomp	_	_
 9	شدم	شد#شو	VERB	V_ACT	Number=Sing|Person=1|Tense=Past|Voice=Act	4	acl	_	_
 10	که	که	SCONJ	SUBR	_	17	mark	_	_
@@ -19046,7 +19046,7 @@
 17	کنم	کرد#کن	VERB	V_ACT	Number=Sing|Person=1|Voice=Act	7	acl	_	_
 18	ولی	ولی	CCONJ	CONJ	_	22	cc	_	_
 19	آن	آن	DET	PREM_DEMAJ	_	20	det	_	_
-20	قدر	قدر	NOUN	N_IANM	Number=Sing	21	obl	_	_
+20	قدر	قدر	NOUN	N_IANM	Number=Sing	21	nmod	_	_
 21	بزرگ	بزرگ	ADJ	ADJ_AJP	_	22	xcomp	_	_
 22	نشدم	شد#شو	VERB	V_ACT	Number=Sing|Person=1|Polarity=Neg|Tense=Past|Voice=Act	9	conj	_	_
 23	که	که	SCONJ	SUBR	_	28	mark	_	_
@@ -22974,7 +22974,7 @@
 2	روزها	روز	NOUN	N_IANM	Number=Plur	3	obl	_	_
 3	شاهد	شاهد	ADJ	ADJ_AJP	_	0	root	_	_
 4	جشن	جشن	NOUN	N_IANM	Number=Sing	3	obl:arg	_	_
-5	سی	سی	ADJ	PRENUM	_	6	advmod	_	_
+5	سی	سی	NUM	PRENUM	_	6	nummod	_	_
 6	سالگی	سالگی	NOUN	N_IANM	Number=Sing	4	nmod	_	_
 7	انقلاب	انقلاب	NOUN	N_IANM	Number=Sing	4	nmod	_	_
 8	شکوهمند	شکوهمند	ADJ	ADJ_AJP	_	7	amod	_	_

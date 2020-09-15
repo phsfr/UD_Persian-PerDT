@@ -153,7 +153,7 @@ def convert_pos(old_pos, word_form, isPROPN, tok_id, sent_id):
             new_pos = 'NUM'
         if old_pos == 'PRENUM' and word_form in adj_prenums:
             new_pos = 'ADJ'
-        if old_pos == 'PRENUM' and sent_id in adj_prenum_sents and word_form == 'بیست' or word_form == 'شصت' or word_form == 'سی':  # for cases such as : بیست و هشتمین
+        if old_pos == 'PRENUM' and sent_id in adj_prenum_sents and (word_form == 'بیست' or word_form == 'شصت' or word_form == 'سی'):  # for cases such as : بیست و هشتمین
             new_pos = 'ADJ'
         if old_pos == 'POSTP' and word_form == 'ی':  # for sentid=39792 «کافه پیانو» ی فرهاد جعفری را برای نشر چشمه پس می‌فرستم
             new_pos = 'X'
