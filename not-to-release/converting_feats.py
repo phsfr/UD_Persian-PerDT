@@ -8,9 +8,9 @@ if __name__ == '__main__':
     input_files = ['UD_Dadegan_feat/fa_dadegan-ud-train.conllu',
                    'UD_Dadegan_feat/fa_dadegan-ud-dev.conllu',
                    'UD_Dadegan_feat/fa_dadegan-ud-test.conllu']
-    output_files = ['UD_Dadegan/fa_dadegan-ud-train.conllu',
-                    'UD_Dadegan/fa_dadegan-ud-dev.conllu',
-                    'UD_Dadegan/fa_dadegan-ud-test.conllu']
+    output_files = ['../fa_perdt-ud-train.conllu',
+                    '../fa_perdt-ud-dev.conllu',
+                    '../fa_perdt-ud-test.conllu']
 
     for f_idx, inp_f in enumerate(input_files):
         tree_list = DependencyTree.load_trees_from_conllu_file(inp_f)

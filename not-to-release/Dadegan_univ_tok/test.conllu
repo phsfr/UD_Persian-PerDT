@@ -960,7 +960,7 @@
 8	محل	محل	N	IANM	attachment=ISO|number=SING|senID=40308	7	POSDEP	_	_
 9-10	کارتان	_	_	_	_	_	_	_	SpaceAfter=No
 9	کار	کار	N	IANM	attachment=ISO|number=SING|senID=40308	8	MOZ	_	_
-10	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=40308	9	MOZ	_	_
+10	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=40308	9	MOZ	_	SpaceAfter=No
 11	،	،	PUNC	PUNC	attachment=ISO|senID=40308	9	PUNC	_	_
 12	پست	پست	N	IANM	attachment=ISO|number=SING|senID=40308	14	NVE	_	_
 13	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|senID=40308|tense=Fut|verbForm=Fin	14	aux	_	_
@@ -1627,7 +1627,7 @@
 9	گذاشتن	گذاشتن	N	IANM	attachment=ISO|number=SING|senID=40688	6	POSDEP	_	_
 10-11	پاچه‌اش	_	_	_	_	_	_	_	SpaceAfter=No
 10	پاچه‌	پاچه	N	IANM	attachment=ISO|number=SING|senID=40688	9	MOZ	_	_
-11	اش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=40688	10	MOZ	_	_
+11	اش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=40688	10	MOZ	_	SpaceAfter=No
 12	،	،	PUNC	PUNC	attachment=ISO|senID=40688	10	PUNC	_	_
 13	شلوار	شلوار	N	IANM	attachment=ISO|number=SING|senID=40688	15	PREDEP	_	_
 14	خود	خود	PR	CREFX	attachment=ISO|senID=40688	13	MOZ	_	_
@@ -2163,7 +2163,7 @@
 12	آن	آن	PR	DEMON	attachment=ISO|number=SING|senID=40988	9	MOZ	_	_
 13-14	چیست	_	_	_	_	_	_	_	SpaceAfter=No
 13	چی	چه	PR	INTG	attachment=NXT|number=SING|senID=40988	14	MOS	_	_
-14	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=40988|tma=H	8	VCL	_	_
+14	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=40988|tma=H	8	VCL	_	SpaceAfter=No
 15	.	.	PUNC	PUNC	attachment=ISO|senID=40988	7	PUNC	_	_
 
 # sent_id = test-s114
@@ -3280,7 +3280,7 @@
 11	،	،	PUNC	PUNC	attachment=ISO|senID=41643	10	PUNC	_	_
 12-13	شوهرش	_	_	_	_	_	_	_	SpaceAfter=No
 12	شوهر	شوهر	N	ANM	attachment=ISO|number=SING|senID=41643	10	APP	_	_
-13	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=41643	12	MOZ	_	_
+13	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=41643	12	MOZ	_	SpaceAfter=No
 14	،	،	PUNC	PUNC	attachment=ISO|senID=41643	12	PUNC	_	_
 15	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=41643	16	NPREMOD	_	_
 16	زندگی	زندگی	N	IANM	attachment=ISO|number=SING|senID=41643	18	PREDEP	_	_
@@ -4670,7 +4670,7 @@
 10	بر	بر	PREP	PREP	attachment=ISO|senID=42390	9	NPP	_	_
 11-12	عقلم	_	_	_	_	_	_	_	SpaceAfter=No
 11	عقل	عقل	N	IANM	attachment=ISO|number=SING|senID=42390	10	POSDEP	_	_
-12	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=42390	11	MOZ	_	_
+12	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=42390	11	MOZ	_	SpaceAfter=No
 13	،	،	PUNC	PUNC	attachment=ISO|senID=42390	11	PUNC	_	_
 14	طبیعت	طبیعت	N	IANM	attachment=ISO|number=SING|senID=42390	17	PREDEP	_	_
 15-16	اطرافم	_	_	_	_	_	_	_	_
@@ -5517,7 +5517,7 @@
 12	هم	هم	ADV	SADV	attachment=ISO|senID=42862	11	POSDEP	_	_
 13-14	ندیدمت	_	_	_	_	_	_	_	SpaceAfter=No
 13	ندیدم	دید#بین	V	ACT	attachment=NXT|number=SING|person=1|polarity=NEG|senID=42862|tma=GS	0	root	_	_
-14	ت	تو	PR	JOPER	attachment=PRV|number=SING|person=2|senID=42862	13	OBJ	_	_
+14	ت	تو	PR	JOPER	attachment=PRV|number=SING|person=2|senID=42862	13	OBJ	_	SpaceAfter=No
 15	.	.	PUNC	PUNC	attachment=ISO|senID=42862	13	PUNC	_	_
 
 # sent_id = test-s299
@@ -12907,7 +12907,7 @@
 4	مطلب	مطلب	N	IANM	attachment=ISO|number=SING|senID=45860	1	POSDEP	_	_
 5-6	بروزم	_	_	_	_	_	_	_	SpaceAfter=No
 5	بروز	بروز	ADJ	AJP	attachment=NXT|senID=45860	6	MOS	_	_
-6	م	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=45860|tma=H	0	root	_	_
+6	م	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=45860|tma=H	0	root	_	SpaceAfter=No
 7	،	،	PUNC	PUNC	attachment=ISO|senID=45860	6	PUNC	_	_
 8	لطفاً	لطفاً	ADV	SADV	attachment=ISO|senID=45860	10	ADV	_	_
 9	تشریف‌فرمایی	تشریف‌فرمایی	N	IANM	attachment=ISO|number=SING|senID=45860	10	NVE	_	_
@@ -15450,7 +15450,7 @@
 4	که	که	SUBR	SUBR	attachment=ISO|senID=51743	3	NCL	_	_
 5-6	مدت‌هاست	_	_	_	_	_	_	_	SpaceAfter=No
 5	مدت‌ها	مدت	N	IANM	attachment=NXT|number=PLUR|senID=51743	6	MOS	_	_
-6	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=51743|tma=H	4	PRD	_	_
+6	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=51743|tma=H	4	PRD	_	SpaceAfter=No
 7	،	،	PUNC	PUNC	attachment=ISO|senID=51743	6	PUNC	_	_
 8	دیگر	دیگر	ADJ	AJP	attachment=ISO|senID=51743	17	ADV	_	_
 9-10	حنجره‌اش	_	_	_	_	_	_	_	_
@@ -17144,7 +17144,7 @@
 20	جمعی	جمع	N	ANM	attachment=ISO|number=PLUR|senID=52610	22	MOS	_	_
 21-22	منافقند	_	_	_	_	_	_	_	SpaceAfter=No
 21	منافق	منافق	ADJ	AJP	attachment=NXT|senID=52610	20	NPOSTMOD	_	_
-22	ند	#هست	AUX	AUX	attachment=PRV|number=PLUR|person=3|senID=52610|tma=H	6	PRD	_	_
+22	ند	#هست	AUX	AUX	attachment=PRV|number=PLUR|person=3|senID=52610|tma=H	6	PRD	_	SpaceAfter=No
 23	.	.	PUNC	PUNC	attachment=ISO|senID=52610	5	PUNC	_	_
 
 # sent_id = test-s893
@@ -20053,7 +20053,7 @@
 46	مانند	مانند	PREP	PREP	attachment=ISO|senID=48546	51	ADV	_	_
 47-48	پدرش	_	_	_	_	_	_	_	SpaceAfter=No
 47	پدر	پدر	N	ANM	attachment=ISO|number=SING|senID=48546	46	POSDEP	_	_
-48	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=48546	47	MOZ	_	_
+48	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=48546	47	MOZ	_	SpaceAfter=No
 49	،	،	PUNC	PUNC	attachment=ISO|senID=48546	47	PUNC	_	_
 50	عهدشکنی	عهدشکنی	N	IANM	attachment=ISO|number=SING|senID=48546	51	NVE	_	_
 51	می‌کرد	کرد#کن	V	ACT	attachment=ISO|number=SING|person=3|senID=48546|tma=GES	43	NCL	_	SpaceAfter=No
@@ -25068,7 +25068,7 @@
 3	شهادت	شهادت	N	IANM	attachment=ISO|number=SING|senID=44232	2	POSDEP	_	_
 4-5	فرزندانمان	_	_	_	_	_	_	_	SpaceAfter=No
 4	فرزندان	فرزند	N	ANM	attachment=ISO|number=PLUR|senID=44232	3	MOZ	_	_
-5	مان	ما	PR	JOPER	number=PLUR|person=1|pronType=Prs|senID=44232	4	MOZ	_	_
+5	مان	ما	PR	JOPER	number=PLUR|person=1|pronType=Prs|senID=44232	4	MOZ	_	SpaceAfter=No
 6	،	،	PUNC	PUNC	attachment=ISO|senID=44232	4	PUNC	_	_
 7	صبر	صبر	N	IANM	attachment=ISO|number=SING|senID=44232	10	NVE	_	_
 8	و	و	CONJ	CONJ	attachment=ISO|senID=44232	7	NCONJ	_	_

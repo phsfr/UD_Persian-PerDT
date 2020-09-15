@@ -330,7 +330,15 @@ class DependencyTree:
         for i in range(len(self.words)):
             word_indx = str(i + 1)
             if word_indx in self.mw_line.keys():
-                mwline = "\t".join(self.mw_line[word_indx].strip().split("\t")[:10])
+                mw_spl = self.mw_line[word_indx].strip().split("\t")[:10]
+                indices = [int(x) for x in mw_spl[0].split("-")]
+                if mw_spl[-1] != "_":
+                    self.final_tags[indices[-1] - 1] = mw_spl[-1]
+                    # mw_spl[-1] = "_"
+                # for f in indices[:-1]:
+                #     self.final_tags[f - 1] = "SpaceAfter=No"
+
+                mwline = "\t".join(mw_spl)
                 lst.append(mwline)
             feats = [word_indx, self.words[i].replace(" ", ""), self.lemmas[i].replace(" ", ""), self.tags[i],
                      self.ftags[i], str(self.other_features[i]),

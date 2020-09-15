@@ -2975,7 +2975,7 @@
 15	دوهفته‌نامه	دوهفته‌نامه	N	IANM	attachment=ISO|number=SING|senID=25786	12	MOZ	_	_
 16-17	معذورم	_	_	_	_	_	_	_	SpaceAfter=No
 16	معذور	معذور	ADJ	AJP	attachment=NXT|senID=25786	17	MOS	_	_
-17	م	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=25786|tma=H	4	PRD	_	_
+17	م	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=25786|tma=H	4	PRD	_	SpaceAfter=No
 18	.	.	PUNC	PUNC	attachment=ISO|senID=25786	3	PUNC	_	_
 
 # sent_id = dev-s88
@@ -3107,7 +3107,7 @@
 2	مشکل	مشکل	N	IANM	attachment=ISO|number=SING|senID=25901	4	SBJ	_	_
 3-4	چیست	_	_	_	_	_	_	_	SpaceAfter=No
 3	چی	چه	PR	INTG	attachment=NXT|number=SING|senID=25901	4	MOS	_	_
-4	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=25901|tma=H	0	root	_	_
+4	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=25901|tma=H	0	root	_	SpaceAfter=No
 5	؟	؟	PUNC	PUNC	attachment=ISO|senID=25901	4	PUNC	_	_
 
 # sent_id = dev-s98
@@ -3208,7 +3208,7 @@
 7	نصب‌های	نصب	N	IANM	attachment=ISO|number=PLUR|senID=25974	6	POSDEP	_	_
 8-9	بیجایشان	_	_	_	_	_	_	_	SpaceAfter=No
 8	بیجا	بیجا	ADJ	AJP	attachment=ISO|senID=25974	5	NPOSTMOD	_	_
-9	یشان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=25974	5	MOZ	_	_
+9	یشان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=25974	5	MOZ	_	SpaceAfter=No
 10	،	،	PUNC	PUNC	attachment=ISO|senID=25974	8	PUNC	_	_
 11	علت	علت	N	IANM	attachment=ISO|number=SING|senID=25974	17	MOS	_	_
 12	اصلی	اصلی	ADJ	AJP	attachment=ISO|senID=25974	11	NPOSTMOD	_	_
@@ -5178,7 +5178,7 @@
 22	همه	همه	N	IANM	attachment=ISO|number=PLUR|senID=26207	23	TAM	_	_
 23-24	بی‌خیالی‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 23	بی‌خیالی‌	بی‌خیالی	N	IANM	attachment=ISO|number=SING|senID=26207	20	MOZ	_	_
-24	ام	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=26207	23	MOZ	_	_
+24	ام	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=26207	23	MOZ	_	SpaceAfter=No
 25	.	.	PUNC	PUNC	attachment=ISO|senID=26207	17	PUNC	_	_
 
 # sent_id = dev-s211
@@ -5193,7 +5193,7 @@
 8	خاطر	خاطر	N	IANM	attachment=ISO|number=SING|senID=26221	7	POSDEP	_	_
 9-10	غرغرهایش	_	_	_	_	_	_	_	SpaceAfter=No
 9	غرغرهای	غرغر	N	IANM	attachment=ISO|number=PLUR|senID=26221	8	MOZ	_	_
-10	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=26221	9	MOZ	_	_
+10	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=26221	9	MOZ	_	SpaceAfter=No
 11	،	،	PUNC	PUNC	attachment=ISO|senID=26221	9	PUNC	_	_
 12	با	با	PREP	PREP	attachment=ISO|senID=26221	19	ADV	_	_
 13	ضربهٔ	ضربه	N	IANM	attachment=ISO|number=SING|senID=26221	12	POSDEP	_	_
@@ -5350,7 +5350,7 @@
 26	روی	روی	PREP	PREP	attachment=ISO|senID=26324	25	VPP	_	_
 27-28	سرشان	_	_	_	_	_	_	_	SpaceAfter=No
 27	سر	سر	N	IANM	attachment=ISO|number=SING|senID=26324	26	POSDEP	_	_
-28	شان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=26324	27	MOZ	_	_
+28	شان	آنها	PR	JOPER	number=PLUR|person=3|pronType=Prs|senID=26324	27	MOZ	_	SpaceAfter=No
 29	.	.	PUNC	PUNC	attachment=ISO|senID=26324	4	PUNC	_	_
 
 # sent_id = dev-s221
@@ -5852,7 +5852,7 @@
 37	پای	پا	N	IANM	attachment=ISO|number=SING|senID=26611	36	POSDEP	_	_
 38-39	بچه‌هایش	_	_	_	_	_	_	_	SpaceAfter=No
 38	بچه‌های	بچه	N	ANM	attachment=ISO|number=PLUR|senID=26611	37	MOZ	_	_
-39	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=26611	38	MOZ	_	_
+39	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=26611	38	MOZ	_	SpaceAfter=No
 40	،	،	PUNC	PUNC	attachment=ISO|senID=26611	38	PUNC	_	_
 41-42	برایش	_	_	_	_	_	_	_	_
 41	برای	برای	PREP	PREP	attachment=NXT|senID=26611	44	ADV	_	_
@@ -7796,7 +7796,7 @@
 3	می‌آید	آمد#آ	V	ACT	attachment=ISO|number=SING|person=3|senID=31399|tma=H	0	root	_	_
 4-5	سراغم	_	_	_	_	_	_	_	SpaceAfter=No
 4	سراغ	سراغ	N	IANM	attachment=ISO|number=SING|senID=31399	3	ADVC	_	_
-5	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=31399	4	MOZ	_	_
+5	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=31399	4	MOZ	_	SpaceAfter=No
 6	.	.	PUNC	PUNC	attachment=ISO|senID=31399	3	PUNC	_	_
 
 # sent_id = dev-s340
@@ -11956,7 +11956,7 @@
 5	پیلهٔ	پیله	N	IANM	attachment=ISO|number=SING|senID=33508	4	MOZ	_	_
 6-7	تنهایی‌هایم	_	_	_	_	_	_	_	SpaceAfter=No
 6	تنهایی‌های	تنهایی	N	IANM	attachment=ISO|number=PLUR|senID=33508	5	MOZ	_	_
-7	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=33508	6	MOZ	_	_
+7	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=33508	6	MOZ	_	SpaceAfter=No
 8	.	.	PUNC	PUNC	attachment=ISO|senID=33508	2	PUNC	_	_
 
 # sent_id = dev-s577
@@ -15453,7 +15453,7 @@
 9	زده‌ام	زد#زن	V	ACT	attachment=ISO|number=SING|person=1|senID=34790|tma=GN	4	PRD	_	_
 10-11	شرمنده‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 10	شرمنده‌	شرمنده	ADJ	AJP	attachment=NXT|senID=34790	11	MOS	_	_
-11	ام	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=34790|tma=H	0	root	_	_
+11	ام	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=34790|tma=H	0	root	_	SpaceAfter=No
 12	.	.	PUNC	PUNC	attachment=ISO|senID=34790	11	PUNC	_	_
 
 # sent_id = dev-s768
@@ -15608,7 +15608,7 @@
 12	بزرگ	بزرگ	ADJ	AJP	attachment=ISO|senID=34911	11	NPOSTMOD	_	_
 13-14	آفریقاست	_	_	_	_	_	_	_	SpaceAfter=No
 13	آفریقا	آفریقا	N	IANM	attachment=NXT|number=SING|senID=34911	11	MOZ	_	_
-14	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=34911|tma=H	0	root	_	_
+14	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=34911|tma=H	0	root	_	SpaceAfter=No
 15	.	.	PUNC	PUNC	attachment=ISO|senID=34911	14	PUNC	_	_
 
 # sent_id = dev-s780
@@ -16162,7 +16162,7 @@
 3	روح	روح	N	IANM	attachment=ISO|number=SING|senID=35222	5	PREDEP	_	_
 4-5	مرا	_	_	_	_	_	_	_	SpaceAfter=No
 4	م	من	PR	JOPER	attachment=NXT|number=SING|person=1|senID=35222	3	MOZ	_	_
-5	را	را	POSTP	POSTP	attachment=PRV|senID=35222	2	OBJ	_	_
+5	را	را	POSTP	POSTP	attachment=PRV|senID=35222	2	OBJ	_	SpaceAfter=No
 6	!	!	PUNC	PUNC	attachment=ISO|senID=35222	2	PUNC	_	_
 
 # sent_id = dev-s811
@@ -17150,7 +17150,7 @@
 3	تکان‌دهندهٔ	تکان‌دهنده	ADJ	AJP	attachment=ISO|senID=35784	2	NPOSTMOD	_	_
 4-5	زندگی‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 4	زندگی‌	زندگی	N	IANM	attachment=ISO|number=SING|senID=35784	2	MOZ	_	_
-5	ام	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=35784	4	MOZ	_	_
+5	ام	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=35784	4	MOZ	_	SpaceAfter=No
 6	،	،	PUNC	PUNC	attachment=ISO|senID=35784	4	PUNC	_	_
 7	نخستین	نخستین	PRENUM	PRENUM	attachment=ISO|senID=35784	8	NPREMOD	_	_
 8	باری	بار	N	IANM	attachment=ISO|number=SING|senID=35784	9	MOS	_	_
@@ -18000,7 +18000,7 @@
 29	سالهٔ	ساله	ADJ	AJP	attachment=ISO|senID=47210	27	NPOSTMOD	_	_
 30-31	شماست	_	_	_	_	_	_	_	SpaceAfter=No
 30	شما	شما	PR	SEPER	attachment=NXT|number=PLUR|person=2|senID=47210	27	MOZ	_	_
-31	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=47210|tma=H	20	POSDEP	_	_
+31	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=47210|tma=H	20	POSDEP	_	SpaceAfter=No
 32	.	.	PUNC	PUNC	attachment=ISO|senID=47210	31	PUNC	_	_
 
 # sent_id = dev-s912
@@ -18592,7 +18592,7 @@
 4	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=47451	5	NPREMOD	_	_
 5-6	اتاقش	_	_	_	_	_	_	_	SpaceAfter=No
 5	اتاق	اتاق	N	IANM	attachment=ISO|number=SING|senID=47451	3	MOZ	_	_
-6	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=47451	5	MOZ	_	_
+6	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=47451	5	MOZ	_	SpaceAfter=No
 7	،	،	PUNC	PUNC	attachment=ISO|senID=47451	5	PUNC	_	_
 8	کنار	کنار	N	IANM	attachment=ISO|senID=47451	18	ADV	_	_
 9	قفسهٔ	قفسه	N	IANM	attachment=ISO|number=SING|senID=47451	8	POSDEP	_	_
@@ -19568,7 +19568,7 @@
 8	کاملاً	کاملاً	ADV	SADV	attachment=ISO|senID=47911	9	APREMOD	_	_
 9-10	پشیمانم	_	_	_	_	_	_	_	SpaceAfter=No
 9	پشیمان	پشیمان	ADJ	AJP	attachment=NXT|senID=47911	10	MOS	_	_
-10	م	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=47911|tma=H	4	POSDEP	_	_
+10	م	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=47911|tma=H	4	POSDEP	_	SpaceAfter=No
 11	.	.	PUNC	PUNC	attachment=ISO|senID=47911	10	PUNC	_	_
 
 # sent_id = dev-s982
@@ -19653,7 +19653,7 @@
 2	سرزمین	سرزمین	N	IANM	attachment=ISO|number=SING|senID=47961	1	MOZ	_	_
 3-4	امیدم	_	_	_	_	_	_	_	SpaceAfter=No
 3	امید	امید	N	IANM	attachment=ISO|number=SING|senID=47961	2	MOZ	_	_
-4	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=47961	3	MOZ	_	_
+4	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=47961	3	MOZ	_	SpaceAfter=No
 5	،	،	PUNC	PUNC	attachment=ISO|senID=47961	3	PUNC	_	_
 6	همه	همه	N	IANM	attachment=ISO|number=PLUR|senID=47961	1	APP	_	_
 7	سوسو	سوسو	N	IANM	attachment=ISO|number=SING|senID=47961	8	NVE	_	_
@@ -20163,7 +20163,7 @@
 25	و	و	CONJ	CONJ	attachment=ISO|senID=36257	24	AJCONJ	_	_
 26-27	دورافتاده‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 26	دورافتاده‌	دورافتاده	ADJ	AJP	attachment=NXT|senID=36257	25	POSDEP	_	_
-27	ام	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=36257|tma=H	21	POSDEP	_	_
+27	ام	#هست	AUX	AUX	attachment=PRV|number=SING|person=1|senID=36257|tma=H	21	POSDEP	_	SpaceAfter=No
 28	.	.	PUNC	PUNC	attachment=ISO|senID=36257	8	PUNC	_	_
 
 # sent_id = dev-s1014
@@ -24523,7 +24523,7 @@
 18	روی	روی	PREP	PREP	attachment=ISO|senID=38246	17	VPP	_	_
 19-20	میزم	_	_	_	_	_	_	_	SpaceAfter=No
 19	میز	میز	N	IANM	attachment=ISO|number=SING|senID=38246	18	POSDEP	_	_
-20	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=38246	19	MOZ	_	_
+20	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=38246	19	MOZ	_	SpaceAfter=No
 21	.	.	PUNC	PUNC	attachment=ISO|senID=38246	17	PUNC	_	_
 
 # sent_id = dev-s1244
@@ -25367,7 +25367,7 @@
 62	با	با	PREP	PREP	attachment=ISO|senID=38605	64	MOS	_	_
 63-64	توست	_	_	_	_	_	_	_	SpaceAfter=No
 63	تو	تو	PR	SEPER	attachment=NXT|number=SING|person=2|senID=38605	62	POSDEP	_	_
-64	ست	_	V	ACT	attachment=PRV|number=SING|person=3|senID=38605|tma=H	57	VCL	_	_
+64	ست	_	V	ACT	attachment=PRV|number=SING|person=3|senID=38605|tma=H	57	VCL	_	SpaceAfter=No
 65	.	.	PUNC	PUNC	attachment=ISO|senID=38605	43	PUNC	_	_
 
 # sent_id = dev-s1279
@@ -25846,7 +25846,7 @@
 21	صدای	صدا	N	IANM	attachment=ISO|number=SING|senID=38706	23	MOS	_	_
 22-23	خداست	_	_	_	_	_	_	_	SpaceAfter=No
 22	خدا	خدا	N	ANM	attachment=NXT|number=SING|senID=38706	21	MOZ	_	_
-23	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=38706|tma=H	20	PRD	_	_
+23	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=38706|tma=H	20	PRD	_	SpaceAfter=No
 24	»	»	PUNC	PUNC	attachment=ISO|senID=38706	18	PUNC	_	_
 25	لحن	لحن	N	IANM	attachment=ISO|number=SING|senID=38706	30	OBJ	_	_
 26	بی‌شرمانهٔ	بی‌شرمانه	ADJ	AJP	attachment=ISO|senID=38706	25	NPOSTMOD	_	_
@@ -25897,7 +25897,7 @@
 21	خود	خود	PR	CREFX	attachment=ISO|senID=38717	20	MOZ	_	_
 22-23	اوست	_	_	_	_	_	_	_	SpaceAfter=No
 22	او	او	PR	DEMON	attachment=NXT|number=SING|person=3|senID=38717	21	MOZ	_	_
-23	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=38717|tma=H	0	root	_	_
+23	ست	#است	AUX	AUX	attachment=PRV|number=SING|person=3|senID=38717|tma=H	0	root	_	SpaceAfter=No
 24	.	.	PUNC	PUNC	attachment=ISO|senID=38717	23	PUNC	_	_
 
 # sent_id = dev-s1290
@@ -26060,7 +26060,7 @@
 2	امروز	امروز	N	IANM	attachment=ISO|number=SING|senID=38799	1	MOZ	_	_
 3-4	شبح‌وارند	_	_	_	_	_	_	_	SpaceAfter=No
 3	شبح‌وار	شبح‌وار	ADJ	AJP	attachment=NXT|senID=38799	4	MOS	_	_
-4	ند	#هست	AUX	AUX	attachment=PRV|number=PLUR|person=3|senID=38799|tma=H	0	root	_	_
+4	ند	#هست	AUX	AUX	attachment=PRV|number=PLUR|person=3|senID=38799|tma=H	0	root	_	SpaceAfter=No
 5	.	.	PUNC	PUNC	attachment=ISO|senID=38799	4	PUNC	_	_
 
 # sent_id = dev-s1298
@@ -26673,7 +26673,7 @@
 17	اجتماعی	اجتماعی	ADJ	AJP	attachment=ISO|senID=39022	14	NPOSTMOD	_	_
 18-19	یکدیگرند	_	_	_	_	_	_	_	SpaceAfter=No
 18	یکدیگر	یکدیگر	PR	RECPR	attachment=NXT|senID=39022	14	MOZ	_	_
-19	ند	#هست	AUX	AUX	attachment=PRV|number=PLUR|person=3|senID=39022|tma=H	4	VCL	_	_
+19	ند	#هست	AUX	AUX	attachment=PRV|number=PLUR|person=3|senID=39022|tma=H	4	VCL	_	SpaceAfter=No
 20	.	.	PUNC	PUNC	attachment=ISO|senID=39022	4	PUNC	_	_
 
 # sent_id = dev-s1320
@@ -27233,7 +27233,7 @@
 3-5	خودتی	_	_	_	_	_	_	_	SpaceAfter=No
 3	خود	خودت	PR	UCREFX	attachment=NXT|number=SING|person=2|senID=39234	5	MOS	_	_
 4	ت	تو	PR	JOPER	number=SING|person=2|pronType=Prs|senID=39234	3	MOZ	_	_
-5	ی	#هست	AUX	AUX	attachment=PRV|number=SING|person=2|senID=39234|tma=H	0	root	_	_
+5	ی	#هست	AUX	AUX	attachment=PRV|number=SING|person=2|senID=39234|tma=H	0	root	_	SpaceAfter=No
 6	.	.	PUNC	PUNC	attachment=ISO|senID=39234	5	PUNC	_	_
 
 # sent_id = dev-s1341
@@ -27247,7 +27247,7 @@
 6	:	:	PUNC	PUNC	attachment=ISO|senID=39244	5	PUNC	_	_
 7-8	دخترم	_	_	_	_	_	_	_	SpaceAfter=No
 7	دختر	دختر	N	ANM	attachment=ISO|number=SING|senID=39244	5	VCL	_	_
-8	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=39244	7	MOZ	_	_
+8	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=39244	7	MOZ	_	SpaceAfter=No
 9	،	،	PUNC	PUNC	attachment=ISO|senID=39244	7	PUNC	_	_
 10	تو	تو	PR	SEPER	attachment=ISO|number=SING|person=2|senID=39244	16	SBJ	_	_
 11	داری	داشت#دار	V	ACT	attachment=ISO|number=SING|person=2|senID=39244|tma=H	16	PROG	_	_

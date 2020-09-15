@@ -3,9 +3,9 @@ from dep_tree import *
 # For removing subtypes after : in labels.
 
 if __name__ == '__main__':
-    input_files = ['UD_Dadegan/fa_dadegan-ud-train.conllu',
-                   'UD_Dadegan/fa_dadegan-ud-dev.conllu',
-                   'UD_Dadegan/fa_dadegan-ud-test.conllu']
+    input_files = ['../fa_perdt-ud-train.conllu',
+                   '../fa_perdt-ud-dev.conllu',
+                   '../fa_perdt-ud-test.conllu']
     output_files = ['UD_Dadegan-nt/fa_dadegan-ud-train.conllu',
                     'UD_Dadegan-nt/fa_dadegan-ud-dev.conllu',
                     'UD_Dadegan-nt/fa_dadegan-ud-test.conllu']

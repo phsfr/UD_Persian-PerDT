@@ -2975,7 +2975,7 @@
 15	دوهفته‌نامه	دوهفته‌نامه	NOUN	N_IANM	Number=Sing	12	nmod	_	_
 16-17	معذورم	_	_	_	_	_	_	_	SpaceAfter=No
 16	معذور	معذور	ADJ	ADJ_AJP	_	3	advcl	_	_
-17	م	#هست	AUX	AUX	Number=Sing|Person=1	16	cop	_	_
+17	م	#هست	AUX	AUX	Number=Sing|Person=1	16	cop	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = dev-s88
@@ -3107,7 +3107,7 @@
 2	مشکل	مشکل	NOUN	N_IANM	Number=Sing	3	nsubj	_	_
 3-4	چیست	_	_	_	_	_	_	_	SpaceAfter=No
 3	چی	چه	PRON	PR_INTG	Number=Sing	0	root	_	_
-4	ست	#است	AUX	AUX	Number=Sing|Person=3	3	cop	_	_
+4	ست	#است	AUX	AUX	Number=Sing|Person=3	3	cop	_	SpaceAfter=No
 5	؟	؟	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = dev-s98
@@ -3208,7 +3208,7 @@
 7	نصب‌های	نصب	NOUN	N_IANM	Number=Plur	1	conj	_	_
 8-9	بیجایشان	_	_	_	_	_	_	_	SpaceAfter=No
 8	بیجا	بیجا	ADJ	ADJ_AJP	_	5	amod	_	_
-9	یشان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	5	nmod	_	_
+9	یشان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	5	nmod	_	SpaceAfter=No
 10	،	،	PUNCT	PUNC	_	8	punct	_	_
 11	علت	علت	NOUN	N_IANM	Number=Sing	0	root	_	_
 12	اصلی	اصلی	ADJ	ADJ_AJP	_	11	amod	_	_
@@ -5178,7 +5178,7 @@
 22	همه	همه	NOUN	N_IANM	Number=Plur	23	xcomp	_	_
 23-24	بی‌خیالی‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 23	بی‌خیالی‌	بی‌خیالی	NOUN	N_IANM	Number=Sing	20	nmod	_	_
-24	ام	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	23	nmod	_	_
+24	ام	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	23	nmod	_	SpaceAfter=No
 25	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = dev-s211
@@ -5193,7 +5193,7 @@
 8	خاطر	خاطر	NOUN	N_IANM	Number=Sing	19	obl	_	_
 9-10	غرغرهایش	_	_	_	_	_	_	_	SpaceAfter=No
 9	غرغرهای	غرغر	NOUN	N_IANM	Number=Plur	8	nmod	_	_
-10	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	9	nmod	_	_
+10	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	9	nmod	_	SpaceAfter=No
 11	،	،	PUNCT	PUNC	_	9	punct	_	_
 12	با	با	ADP	PREP	_	13	case	_	_
 13	ضربهٔ	ضربه	NOUN	N_IANM	Number=Sing	19	obl	_	_
@@ -5350,7 +5350,7 @@
 26	روی	روی	ADP	PREP	_	27	case	_	_
 27-28	سرشان	_	_	_	_	_	_	_	SpaceAfter=No
 27	سر	سر	NOUN	N_IANM	Number=Sing	25	obl:arg	_	_
-28	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	27	nmod	_	_
+28	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	27	nmod	_	SpaceAfter=No
 29	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = dev-s221
@@ -5852,7 +5852,7 @@
 37	پای	پا	NOUN	N_IANM	Number=Sing	44	obl	_	_
 38-39	بچه‌هایش	_	_	_	_	_	_	_	SpaceAfter=No
 38	بچه‌های	بچه	NOUN	N_ANM	Number=Plur	37	nmod	_	_
-39	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	38	nmod	_	_
+39	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	38	nmod	_	SpaceAfter=No
 40	،	،	PUNCT	PUNC	_	38	punct	_	_
 41-42	برایش	_	_	_	_	_	_	_	_
 41	برای	برای	ADP	PREP	_	42	case	_	_
@@ -7796,7 +7796,7 @@
 3	می‌آید	آمد#آ	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	_
 4-5	سراغم	_	_	_	_	_	_	_	SpaceAfter=No
 4	سراغ	سراغ	NOUN	N_IANM	Number=Sing	3	obl:arg	_	_
-5	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	4	nmod	_	_
+5	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	4	nmod	_	SpaceAfter=No
 6	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = dev-s340
@@ -11956,7 +11956,7 @@
 5	پیلهٔ	پیله	NOUN	N_IANM	Number=Sing	4	nmod	_	_
 6-7	تنهایی‌هایم	_	_	_	_	_	_	_	SpaceAfter=No
 6	تنهایی‌های	تنهایی	NOUN	N_IANM	Number=Plur	5	nmod	_	_
-7	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	6	nmod	_	_
+7	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	6	nmod	_	SpaceAfter=No
 8	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = dev-s577
@@ -15453,7 +15453,7 @@
 9	زده‌ام	زد#زن	VERB	V_ACT	Number=Sing|Person=1|VerbForm=Part|Voice=Act	3	acl	_	_
 10-11	شرمنده‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 10	شرمنده‌	شرمنده	ADJ	ADJ_AJP	_	0	root	_	_
-11	ام	#هست	AUX	AUX	Number=Sing|Person=1	10	cop	_	_
+11	ام	#هست	AUX	AUX	Number=Sing|Person=1	10	cop	_	SpaceAfter=No
 12	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = dev-s768
@@ -15608,7 +15608,7 @@
 12	بزرگ	بزرگ	ADJ	ADJ_AJP	_	11	amod	_	_
 13-14	آفریقاست	_	_	_	_	_	_	_	SpaceAfter=No
 13	آفریقا	آفریقا	PROPN	N_IANM	Number=Sing	11	nmod	_	_
-14	ست	#است	AUX	AUX	Number=Sing|Person=3	11	cop	_	_
+14	ست	#است	AUX	AUX	Number=Sing|Person=3	11	cop	_	SpaceAfter=No
 15	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = dev-s780
@@ -16162,7 +16162,7 @@
 3	روح	روح	NOUN	N_IANM	Number=Sing	2	obj	_	_
 4-5	مرا	_	_	_	_	_	_	_	SpaceAfter=No
 4	م	من	PRON	PR_JOPER	Number=Sing|Person=1	3	nmod	_	_
-5	را	را	ADP	POSTP	_	3	case	_	_
+5	را	را	ADP	POSTP	_	3	case	_	SpaceAfter=No
 6	!	!	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = dev-s811
@@ -17150,7 +17150,7 @@
 3	تکان‌دهندهٔ	تکان‌دهنده	ADJ	ADJ_AJP	_	2	amod	_	_
 4-5	زندگی‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 4	زندگی‌	زندگی	NOUN	N_IANM	Number=Sing	2	nmod	_	_
-5	ام	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	4	nmod	_	_
+5	ام	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	4	nmod	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	4	punct	_	_
 7	نخستین	نخستین	ADJ	PRENUM	_	8	amod	_	_
 8	باری	بار	NOUN	N_IANM	Number=Sing	0	root	_	_
@@ -18000,7 +18000,7 @@
 29	سالهٔ	ساله	ADJ	ADJ_AJP	_	27	amod	_	_
 30-31	شماست	_	_	_	_	_	_	_	SpaceAfter=No
 30	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	27	nmod	_	_
-31	ست	#است	AUX	AUX	Number=Sing|Person=3	26	cop	_	_
+31	ست	#است	AUX	AUX	Number=Sing|Person=3	26	cop	_	SpaceAfter=No
 32	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = dev-s912
@@ -18592,7 +18592,7 @@
 4	یک	یک	NUM	PRENUM	_	5	nummod	_	_
 5-6	اتاقش	_	_	_	_	_	_	_	SpaceAfter=No
 5	اتاق	اتاق	NOUN	N_IANM	Number=Sing	3	nmod	_	_
-6	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	5	nmod	_	_
+6	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	5	nmod	_	SpaceAfter=No
 7	،	،	PUNCT	PUNC	_	5	punct	_	_
 8	کنار	کنار	NOUN	N_IANM	_	18	obl	_	_
 9	قفسهٔ	قفسه	NOUN	N_IANM	Number=Sing	8	obl	_	_
@@ -19568,7 +19568,7 @@
 8	کاملاً	کاملاً	ADV	ADV_SADV	_	9	advmod	_	_
 9-10	پشیمانم	_	_	_	_	_	_	_	SpaceAfter=No
 9	پشیمان	پشیمان	ADJ	ADJ_AJP	_	3	conj	_	_
-10	م	#هست	AUX	AUX	Number=Sing|Person=1	9	cop	_	_
+10	م	#هست	AUX	AUX	Number=Sing|Person=1	9	cop	_	SpaceAfter=No
 11	.	.	PUNCT	PUNC	_	9	punct	_	_
 
 # sent_id = dev-s982
@@ -19653,7 +19653,7 @@
 2	سرزمین	سرزمین	NOUN	N_IANM	Number=Sing	1	nmod	_	_
 3-4	امیدم	_	_	_	_	_	_	_	SpaceAfter=No
 3	امید	امید	NOUN	N_IANM	Number=Sing	2	nmod	_	_
-4	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	3	nmod	_	_
+4	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	3	nmod	_	SpaceAfter=No
 5	،	،	PUNCT	PUNC	_	3	punct	_	_
 6	همه	همه	NOUN	N_IANM	Number=Plur	1	appos	_	_
 7	سوسو	سوسو	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
@@ -20163,7 +20163,7 @@
 25	و	و	CCONJ	CONJ	_	26	cc	_	_
 26-27	دورافتاده‌ام	_	_	_	_	_	_	_	SpaceAfter=No
 26	دورافتاده‌	دورافتاده	ADJ	ADJ_AJP	_	24	conj	_	_
-27	ام	#هست	AUX	AUX	Number=Sing|Person=1	24	cop	_	_
+27	ام	#هست	AUX	AUX	Number=Sing|Person=1	24	cop	_	SpaceAfter=No
 28	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = dev-s1014
@@ -24523,7 +24523,7 @@
 18	روی	روی	ADP	PREP	_	19	case	_	_
 19-20	میزم	_	_	_	_	_	_	_	SpaceAfter=No
 19	میز	میز	NOUN	N_IANM	Number=Sing	17	obl:arg	_	_
-20	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	19	nmod	_	_
+20	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	19	nmod	_	SpaceAfter=No
 21	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = dev-s1244
@@ -25367,7 +25367,7 @@
 62	با	با	ADP	PREP	_	63	case	_	_
 63-64	توست	_	_	_	_	_	_	_	SpaceAfter=No
 63	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	64	xcomp	_	_
-64	ست	_	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	57	ccomp	_	_
+64	ست	_	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	57	ccomp	_	SpaceAfter=No
 65	.	.	PUNCT	PUNC	_	35	punct	_	_
 
 # sent_id = dev-s1279
@@ -25846,7 +25846,7 @@
 21	صدای	صدا	NOUN	N_IANM	Number=Sing	18	acl	_	_
 22-23	خداست	_	_	_	_	_	_	_	SpaceAfter=No
 22	خدا	خدا	NOUN	N_ANM	Number=Sing	21	nmod	_	_
-23	ست	#است	AUX	AUX	Number=Sing|Person=3	21	cop	_	_
+23	ست	#است	AUX	AUX	Number=Sing|Person=3	21	cop	_	SpaceAfter=No
 24	»	»	PUNCT	PUNC	_	18	punct	_	_
 25	لحن	لحن	NOUN	N_IANM	Number=Sing	30	obj	_	_
 26	بی‌شرمانهٔ	بی‌شرمانه	ADJ	ADJ_AJP	_	25	amod	_	_
@@ -25897,7 +25897,7 @@
 21	خود	خود	PRON	PR_CREFX	_	20	nmod	_	_
 22-23	اوست	_	_	_	_	_	_	_	SpaceAfter=No
 22	او	او	PRON	PR_DEMON	Number=Sing|Person=3	21	nmod	_	_
-23	ست	#است	AUX	AUX	Number=Sing|Person=3	18	cop	_	_
+23	ست	#است	AUX	AUX	Number=Sing|Person=3	18	cop	_	SpaceAfter=No
 24	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = dev-s1290
@@ -26060,7 +26060,7 @@
 2	امروز	امروز	NOUN	N_IANM	Number=Sing	1	nmod	_	_
 3-4	شبح‌وارند	_	_	_	_	_	_	_	SpaceAfter=No
 3	شبح‌وار	شبح‌وار	ADJ	ADJ_AJP	_	0	root	_	_
-4	ند	#هست	AUX	AUX	Number=Plur|Person=3	3	cop	_	_
+4	ند	#هست	AUX	AUX	Number=Plur|Person=3	3	cop	_	SpaceAfter=No
 5	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = dev-s1298
@@ -26673,7 +26673,7 @@
 17	اجتماعی	اجتماعی	ADJ	ADJ_AJP	_	14	amod	_	_
 18-19	یکدیگرند	_	_	_	_	_	_	_	SpaceAfter=No
 18	یکدیگر	یکدیگر	PRON	PR_RECPR	_	14	nmod	_	_
-19	ند	#هست	AUX	AUX	Number=Plur|Person=3	14	cop	_	_
+19	ند	#هست	AUX	AUX	Number=Plur|Person=3	14	cop	_	SpaceAfter=No
 20	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = dev-s1320
@@ -27233,7 +27233,7 @@
 3-5	خودتی	_	_	_	_	_	_	_	SpaceAfter=No
 3	خود	خودت	PRON	PR_UCREFX	Number=Sing|Person=2	0	root	_	_
 4	ت	تو	PRON	PR_JOPER	Number=Sing|Person=2|PronType=Prs	3	nmod	_	_
-5	ی	#هست	AUX	AUX	Number=Sing|Person=2	3	cop	_	_
+5	ی	#هست	AUX	AUX	Number=Sing|Person=2	3	cop	_	SpaceAfter=No
 6	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = dev-s1341
@@ -27247,7 +27247,7 @@
 6	:	:	PUNCT	PUNC	_	5	punct	_	_
 7-8	دخترم	_	_	_	_	_	_	_	SpaceAfter=No
 7	دختر	دختر	NOUN	N_ANM	Number=Sing	5	ccomp	_	_
-8	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	7	nmod	_	_
+8	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	7	nmod	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	7	punct	_	_
 10	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	16	nsubj	_	_
 11	داری	داشت#دار	AUX	V_ACT	Number=Sing|Person=2|Voice=Act	16	aux	_	_
