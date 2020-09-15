@@ -333,8 +333,15 @@ class DependencyTree:
                 mw_spl = self.mw_line[word_indx].strip().split("\t")[:10]
                 indices = [int(x) for x in mw_spl[0].split("-")]
                 if mw_spl[-1] != "_":
-                    self.final_tags[indices[-1] - 1] = mw_spl[-1]
-                    # mw_spl[-1] = "_"
+                    while True:
+                        indices.append(indices[-1] + 1)
+                        mw_spl[0] = str(indices[0]) + '-' + str(indices[-1])
+                        mw_spl[1] += self.words[indices[-1] - 1]
+                        if self.final_tags[indices[-1] - 1] == "_":
+                            break
+                        self.final_tags[indices[-1] - 1] = "_"
+                        # self.final_tags[indices[-1] - 1] = mw_spl[-1]
+                    mw_spl[-1] = "_"
                 # for f in indices[:-1]:
                 #     self.final_tags[f - 1] = "SpaceAfter=No"
 
