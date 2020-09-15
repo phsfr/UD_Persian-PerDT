@@ -325,8 +325,9 @@ class DependencyTree:
         """
         lst = list()
         lst.append(self.sent_descript)  # adding first line as sentence number
-        lst.append(
-            " ".join([w for w in self.sent_str.split(" ")]))  # adding second line as sentence string
+        self.sent_str = remove_semispace(self.sent_str.strip())
+
+        lst.append(self.sent_str)  # adding second line as sentence string
         for i in range(len(self.words)):
             word_indx = str(i + 1)
             if word_indx in self.mw_line.keys():
@@ -1563,13 +1564,19 @@ class DependencyTree:
                     self.labels[i] = "nmod"
             if self.labels[i] == "case" and self.tags[i] == "ADV":
                 self.labels[i] = "advmod"
+            if self.labels[i] == "case" and self.tags[i] == "NUM":
+                self.labels[i] = "nummod"
+            if self.labels[i] == "case" and self.tags[i] in {"PRON", "PROPN", "NOUN"}:
+                self.labels[i] = "nmod"
             if self.tags[i] == "ADP" and self.labels[i] == "advmod":
                 self.labels[i] = "case"
             if self.tags[i] == "VERB" and self.labels[i] == "aux":
                 self.tags[i] = "AUX"
             if self.tags[i] == "PUNCT":
                 self.labels[i] = "punct"
-            if self.labels[i] == "punct":
+            if self.labels[i] == "punct" and self.tags[i]=="CONJ":
+                self.labels[i] = "cc"
+            if self.labels[i] == "punct" and self.tags[i]!="CONJ":
                 self.tags[i] = "PUNCT"
         if self.sen_id == 23558:
             self.heads[16] = 19
