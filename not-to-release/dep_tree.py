@@ -1315,7 +1315,7 @@ class DependencyTree:
                 elif self.tags[l] == "CCONJ":
                     self.labels[l] = "cc"
                 else:
-                    self.labels[l] = "obl"
+                    self.labels[l] = "nmod"
                 changed = True
             if label == "POSDEP":
                 if self.words[l] in {"نیز", "هم"}:
@@ -1329,7 +1329,10 @@ class DependencyTree:
                 elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
                 else:
-                    self.labels[l] = "obl"
+                    if self.labels[self.heads[l]-1] in {"obl:arg"}:
+                        self.labels[l] = self.labels[self.heads[l]-1]
+                    else:
+                        self.labels[l] = "obl"
 
                 changed = True
 
