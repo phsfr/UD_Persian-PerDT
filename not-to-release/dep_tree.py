@@ -1547,6 +1547,9 @@ class DependencyTree:
     def ud_validate_fix(self):
         # Fixes errors by validator
         for i in range(len(self.words)):
+            if (self.words[i] == "و" or self.ftags[i] == "CONJ") and self.tags[i] == "PUNCT":
+                self.labels[i] = "cc"
+                self.tags[i] = "CCONJ"
             if self.tags[i] == "PUNCT":
                 self.labels[i] = "punct"
             if self.tags[i] == "NOUN" and self.labels[i] == "advmod":
@@ -1572,14 +1575,12 @@ class DependencyTree:
                 self.labels[i] = "case"
             if self.tags[i] == "VERB" and self.labels[i] == "aux":
                 self.tags[i] = "AUX"
-            if self.ftags[i] == "CONJ" and self.tags[i] == "PUNCT":
-                self.labels[i] = "cc"
-                self.tags[i] = "CONJ"
+
             if self.tags[i] == "PUNCT":
                 self.labels[i] = "punct"
-            if self.labels[i] == "punct" and self.tags[i]=="CONJ":
+            if self.labels[i] == "punct" and self.tags[i] == "CONJ":
                 self.labels[i] = "cc"
-            if self.labels[i] == "punct" and self.tags[i]!="CONJ":
+            if self.labels[i] == "punct" and self.tags[i] != "CONJ":
                 self.tags[i] = "PUNCT"
         if self.sen_id == 23558:
             self.heads[16] = 19
