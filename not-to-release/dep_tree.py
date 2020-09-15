@@ -1312,6 +1312,8 @@ class DependencyTree:
                     self.labels[l] = "nummod"
                 elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
+                elif self.tags[l] == "CCONJ":
+                    self.labels[l] = "cc"
                 else:
                     self.labels[l] = "obl"
                 changed = True
@@ -1322,6 +1324,8 @@ class DependencyTree:
                     self.labels[l] = "fixed"
                 elif self.tags[l] == "NUM":
                     self.labels[l] = "nummod"
+                elif self.tags[l] == "CCONJ":
+                    self.labels[l] = "cc"
                 elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
                 else:
@@ -1530,7 +1534,7 @@ class DependencyTree:
                 self.labels[i] = "obl"
             if (self.tags[i] == "PUNCT" and self.words[i] != "-") and self.heads[i] > i:
                 self.final_tags[i] = "SpaceAfter=No"
-            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"aux", "aux:pass", "cop"}:
+            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"aux", "aux:pass", "cop", "cc"}:
                 self.heads[i] = self.heads[self.heads[i] - 1]
             if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"case"} and self.labels[i] == "fixed":
                 self.heads[i] = self.heads[self.heads[i] - 1]

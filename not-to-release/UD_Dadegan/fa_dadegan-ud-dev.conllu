@@ -1301,7 +1301,7 @@
 11	مغناطیسی	مغناطیسی	ADJ	ADJ_AJP	_	10	amod	_	_
 12	و	و	CCONJ	CONJ	_	13	cc	_	_
 13	یا	یا	CCONJ	CONJ	_	8	conj	_	_
-14	تصویربرداری	تصویربرداری	NOUN	N_IANM	Number=Sing	12	obl	_	_
+14	تصویربرداری	تصویربرداری	NOUN	N_IANM	Number=Sing	13	obl	_	_
 15	با	با	ADP	PREP	_	16	case	_	_
 16	رزونانس	رزونانس	NOUN	N_IANM	Number=Sing	14	nmod	_	_
 17	مغناطیسی	مغناطیسی	ADJ	ADJ_AJP	_	16	amod	_	_
@@ -4708,7 +4708,7 @@
 10	مرگ	مرگ	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 11	باشد	بود#باش	AUX	AUX	Number=Sing|Person=3	9	cop	_	_
 12	و	و	CCONJ	CONJ	_	16	cc	_	_
-13	یا	یا	CCONJ	CONJ	_	12	obl	_	_
+13	یا	یا	CCONJ	CONJ	_	16	cc	_	_
 14-15	حالش	_	_	_	_	_	_	_	_
 14	حال	حال	NOUN	N_IANM	Number=Sing	16	nsubj	_	_
 15	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	14	nmod	_	_
@@ -6778,7 +6778,7 @@
 13	موضوع	موضوع	NOUN	N_IANM	Number=Sing	12	nmod	_	_
 14	قرارداد	قرارداد	NOUN	N_IANM	Number=Sing	13	nmod	_	_
 15	و	و	CCONJ	CONJ	_	12	case	_	_
-16	یا	یا	CCONJ	CONJ	_	12	obl	_	_
+16	یا	یا	CCONJ	CONJ	_	12	cc	_	_
 17	در	در	ADP	PREP	_	19	case	_	_
 18	هر	هر	DET	PREM_AMBAJ	_	19	det	_	_
 19	یک	یک	NOUN	N_IANM	Number=Sing	12	obl	_	_
@@ -7249,7 +7249,7 @@
 58	روی	روی	NOUN	N_IANM	Number=Sing	59	obj	_	_
 59	برتابانده‌اند	بر#تاباند#تابان	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	21	conj	_	_
 60	و	و	CCONJ	CONJ	_	73	cc	_	_
-61	یا	یا	CCONJ	CONJ	_	60	obl	_	_
+61	یا	یا	CCONJ	CONJ	_	73	cc	_	_
 62	به	به	ADP	PREP	_	63	case	_	_
 63	خاطر	خاطر	NOUN	N_IANM	Number=Sing	73	obl	_	_
 64	عدم	عدم	NOUN	N_IANM	Number=Sing	63	nmod	_	_
@@ -8177,7 +8177,7 @@
 23	زباله	زباله	NOUN	N_IANM	Number=Sing	22	nmod	_	_
 24	و	و	CCONJ	CONJ	_	25	cc	_	_
 25	یا	یا	CCONJ	CONJ	_	23	conj	_	_
-26	طبیعت	طبیعت	NOUN	N_IANM	Number=Sing	24	obl	_	SpaceAfter=No
+26	طبیعت	طبیعت	NOUN	N_IANM	Number=Sing	25	obl	_	SpaceAfter=No
 27	،	،	PUNCT	PUNC	_	26	punct	_	_
 28	موجب	موجب	ADJ	ADJ_AJP	_	32	xcomp	_	_
 29	انتقال	انتقال	NOUN	N_IANM	Number=Sing	28	obl:arg	_	_
@@ -8447,7 +8447,7 @@
 6	جاندار	جاندار	NOUN	N_ANM	Number=Sing	4	obl:arg	_	_
 7	و	و	CCONJ	CONJ	_	8	cc	_	_
 8	یا	یا	CCONJ	CONJ	_	6	conj	_	_
-9	ساختهٔ	ساخته	ADJ	ADJ_AJP	_	7	advmod	_	_
+9	ساختهٔ	ساخته	ADJ	ADJ_AJP	_	8	advmod	_	_
 10	دست	دست	NOUN	N_IANM	Number=Sing	9	obl:arg	_	_
 11	بشر	بشر	NOUN	N_ANM	Number=Sing	10	nmod	_	SpaceAfter=No
 12	)	)	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
@@ -8458,7 +8458,7 @@
 17	موشک‌ها	موشک	NOUN	N_IANM	Number=Plur	2	conj	_	_
 18	و	و	CCONJ	CONJ	_	19	cc	_	_
 19	یا	یا	CCONJ	CONJ	_	2	conj	_	_
-20	هواپیماهای	هواپیما	NOUN	N_IANM	Number=Plur	18	obl	_	_
+20	هواپیماهای	هواپیما	NOUN	N_IANM	Number=Plur	19	obl	_	_
 21	جت	جت	NOUN	N_IANM	Number=Sing	20	nmod	_	_
 22	عمودپرواز	عمودپرواز	ADJ	ADJ_AJP	_	21	amod	_	_
 23	که	که	SCONJ	SUBR	_	27	mark	_	_
@@ -8598,7 +8598,7 @@
 12	آرسنیک	آرسنیک	NOUN	N_IANM	Number=Sing	20	nsubj	_	_
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	یا	یا	CCONJ	CONJ	_	12	conj	_	_
-15	سایر	سایر	NOUN	N_IANM	Number=Sing	13	obl	_	_
+15	سایر	سایر	NOUN	N_IANM	Number=Sing	14	obl	_	_
 16	فلزات	فلز	NOUN	N_IANM	Number=Plur	15	nmod	_	_
 17	موجود	موجود	ADJ	ADJ_AJP	_	16	amod	_	_
 18	در	در	ADP	PREP	_	19	case	_	_
@@ -9991,8 +9991,8 @@
 13	که	که	SCONJ	SUBR	_	21	mark	_	_
 14	از	از	ADP	PREP	_	15	case	_	_
 15	در	در	NOUN	N_IANM	Number=Sing	21	obl:arg	_	_
-16	و	و	CCONJ	CONJ	_	15	obl	_	_
-17	پیکر	پیکر	NOUN	N_IANM	Number=Sing	16	obl	_	_
+16	و	و	CCONJ	CONJ	_	15	cc	_	_
+17	پیکر	پیکر	NOUN	N_IANM	Number=Sing	15	obl	_	_
 18	آنها	آنها	PRON	PR_DEMON	Number=Plur	15	nmod	_	_
 19	نور	نور	NOUN	N_IANM	Number=Sing	21	nsubj	_	_
 20	تلألؤ	تلألؤ	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
@@ -13028,8 +13028,8 @@
 12	ذهنی	ذهنی	ADJ	ADJ_AJP	_	11	amod	_	_
 13	(	(	PUNCT	PUNC	_	12	punct	_	SpaceAfter=No
 14	یا	یا	CCONJ	CONJ	_	13	cc	_	_
-15	قبلی	قبلی	ADJ	ADJ_AJP	_	14	advmod	_	SpaceAfter=No
-16	)	)	PUNCT	PUNC	_	14	punct	_	_
+15	قبلی	قبلی	ADJ	ADJ_AJP	_	13	advmod	_	SpaceAfter=No
+16	)	)	PUNCT	PUNC	_	13	punct	_	_
 17	و	و	CCONJ	CONJ	_	11	dep	_	_
 18	معلوماتی	معلومات	NOUN	N_IANM	Number=Plur	11	nsubj	_	_
 19	که	که	SCONJ	SUBR	_	24	mark	_	_
@@ -13043,8 +13043,8 @@
 27	حسی	حسی	ADJ	ADJ_AJP	_	26	amod	_	_
 28	(	(	PUNCT	PUNC	_	27	punct	_	SpaceAfter=No
 29	یا	یا	CCONJ	CONJ	_	28	cc	_	_
-30	بعدی	بعدی	ADJ	ADJ_AJP	_	29	advmod	_	SpaceAfter=No
-31	)	)	PUNCT	PUNC	_	29	punct	_	_
+30	بعدی	بعدی	ADJ	ADJ_AJP	_	28	advmod	_	SpaceAfter=No
+31	)	)	PUNCT	PUNC	_	28	punct	_	_
 32	هستند	#هست	AUX	AUX	Number=Plur|Person=3	11	cop	_	SpaceAfter=No
 33	.	.	PUNCT	PUNC	_	11	punct	_	_
 
@@ -18849,7 +18849,7 @@
 6	باکتری	باکتری	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 7	و	و	CCONJ	CONJ	_	8	cc	_	_
 8	یا	یا	CCONJ	CONJ	_	6	conj	_	_
-9	قارچ	قارچ	NOUN	N_IANM	Number=Sing	7	obl	_	_
+9	قارچ	قارچ	NOUN	N_IANM	Number=Sing	8	obl	_	_
 10	در	در	ADP	PREP	_	11	case	_	_
 11	طبیعت	طبیعت	NOUN	N_IANM	Number=Sing	20	obl	_	_
 12	بیشتر	بیش	ADJ	ADJ_AJCM	_	20	advmod	_	_
@@ -18858,7 +18858,7 @@
 15	دست‌ها	دست	NOUN	N_IANM	Number=Plur	14	nmod	_	_
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
 17	یا	یا	CCONJ	CONJ	_	15	conj	_	_
-18	لباس	لباس	NOUN	N_IANM	Number=Sing	16	obl	_	_
+18	لباس	لباس	NOUN	N_IANM	Number=Sing	17	obl	_	_
 19	سرایت	سرایت	NOUN	N_IANM	Number=Sing	20	compound:lvc	_	_
 20	می‌کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 21	.	.	PUNCT	PUNC	_	20	punct	_	_
@@ -19526,7 +19526,7 @@
 14	boom	boom	PROPN	N_IANM	Number=Sing	13	flat:name	_	SpaceAfter=No
 15	)	)	PUNCT	PUNC	_	13	punct	_	_
 16	اصابت	اصابت	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
-17	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	22	obl	_	_
+17	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	31	obl	_	_
 18	در	در	ADP	PREP	_	19	case	_	_
 19	محفظه	محفظه	NOUN	N_IANM	Number=Sing	20	obl:arg	_	_
 20	مانده	ماند#مان	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -19870,7 +19870,7 @@
 11	زده	زد#زن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	1	conj	_	_
 12	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	11	aux	_	_
 13	و	و	CCONJ	CONJ	_	11	cc	_	_
-14	زن	زن	NOUN	N_ANM	Number=Sing	13	obl	_	_
+14	زن	زن	NOUN	N_ANM	Number=Sing	11	obl	_	_
 15	که	که	SCONJ	SUBR	_	19	mark	_	_
 16	دست	دست	NOUN	N_IANM	Number=Sing	19	obj	_	_
 17	در	در	ADP	PREP	_	18	case	_	_
@@ -20727,13 +20727,13 @@
 10	و	و	CCONJ	CONJ	_	11	cc	_	_
 11	یا	یا	CCONJ	CONJ	_	9	conj	_	_
 12	بالا	بالا	ADJ	ADJ_AJP	_	13	advmod	_	_
-13	رفتن	رفتن	NOUN	N_IANM	Number=Sing	10	obl	_	_
+13	رفتن	رفتن	NOUN	N_IANM	Number=Sing	11	obl	_	_
 14	از	از	ADP	PREP	_	15	case	_	_
 15	پله	پله	NOUN	N_IANM	Number=Sing	13	nmod	_	_
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
 17	یا	یا	CCONJ	CONJ	_	13	conj	_	_
 18	بلند	بلند	ADJ	ADJ_AJP	_	19	advmod	_	_
-19	شدن	شدن	NOUN	N_IANM	Number=Sing	16	obl	_	_
+19	شدن	شدن	NOUN	N_IANM	Number=Sing	17	obl	_	_
 20	از	از	ADP	PREP	_	21	case	_	_
 21	زمین	زمین	NOUN	N_IANM	Number=Sing	19	nmod	_	_
 22	صدا	صدا	NOUN	N_IANM	Number=Sing	23	compound:lvc	_	_
@@ -24397,7 +24397,7 @@
 # sent_id = dev-s1235
 # text = هر چیز به جای خود و نه یک ذره گرد.
 1	هر	هر	DET	PREM_AMBAJ	_	2	det	_	_
-2	چیز	چیز	NOUN	N_IANM	Number=Sing	6	obl	_	_
+2	چیز	چیز	NOUN	N_IANM	Number=Sing	10	obl	_	_
 3	به	به	ADP	PREP	_	2	case	_	_
 4	جای	جا	NOUN	N_IANM	Number=Sing	2	case	_	_
 5	خود	خود	PRON	PR_CREFX	_	2	nmod	_	_
@@ -25343,7 +25343,7 @@
 38	مهربانی	مهربانی	NOUN	N_IANM	Number=Sing	36	conj	_	_
 39	نهر	نهر	NOUN	N_IANM	Number=Sing	38	nmod	_	_
 40	کوچک	کوچک	ADJ	ADJ_AJP	_	39	amod	_	_
-41	اما	اما	CCONJ	CONJ	_	42	obl	_	_
+41	اما	اما	CCONJ	CONJ	_	42	cc	_	_
 42	جاری	جاری	ADJ	ADJ_AJP	_	40	conj	_	_
 43	است	#است	AUX	AUX	Number=Sing|Person=3	35	cop	_	SpaceAfter=No
 44	،	،	PUNCT	PUNC	_	35	punct	_	_
@@ -26777,7 +26777,7 @@
 12	فرهنگی	فرهنگی	ADJ	ADJ_AJP	_	11	amod	_	_
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	یا	یا	CCONJ	CONJ	_	12	conj	_	_
-15	هنری	هنری	ADJ	ADJ_AJP	_	13	advmod	_	_
+15	هنری	هنری	ADJ	ADJ_AJP	_	14	advmod	_	_
 16	افتخارآفرینی	افتخارآفرینی	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 17	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	4	acl	_	_
 18	باشند	بود#باش	AUX	AUX	Mood=Sub|Number=Plur|Person=3|Tense=Pres	17	aux	_	SpaceAfter=No
@@ -27485,7 +27485,7 @@
 9	رخداد	رخداد	NOUN	N_IANM	Number=Sing	8	nmod	_	_
 10	پدیده‌ای	پدیده	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 11	سؤال	سؤال	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
-12	شود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	19	obl	_	_
+12	شود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	29	obl	_	_
 13	نه	نه	ADV	ADV_SADV	_	18	advmod	_	_
 14	الفاظ	لفظ	NOUN	N_IANM	Number=Plur	18	nsubj	_	_
 15	فلاسفه	فیلسوف	NOUN	N_ANM	Number=Plur	14	nmod	_	_
@@ -28378,7 +28378,7 @@
 14	خود	خود	PRON	PR_CREFX	_	12	nmod	_	_
 15	نرسید	رسید#رس	VERB	V_ACT	Number=Sing|Person=3|Polarity=Neg|Tense=Past|Voice=Act	10	ccomp	_	_
 16	و	و	CCONJ	CONJ	_	19	cc	_	_
-17	یا	یا	CCONJ	CONJ	_	16	obl	_	_
+17	یا	یا	CCONJ	CONJ	_	19	cc	_	_
 18	دیر	دیر	ADJ	ADJ_AJP	_	19	advmod	_	_
 19	برسید	رسید#رس	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	15	conj	_	SpaceAfter=No
 20	،	،	PUNCT	PUNC	_	19	punct	_	_
@@ -28933,7 +28933,7 @@
 20	و	و	CCONJ	CONJ	_	21	cc	_	_
 21	یا	یا	CCONJ	CONJ	_	12	conj	_	_
 22	از	از	ADP	PREP	_	23	case	_	_
-23	سر	سر	NOUN	N_IANM	Number=Sing	20	obl	_	_
+23	سر	سر	NOUN	N_IANM	Number=Sing	21	obl	_	_
 24	اجبار	اجبار	NOUN	N_IANM	Number=Sing	23	nmod	_	SpaceAfter=No
 25	.	.	PUNCT	PUNC	_	19	punct	_	_
 

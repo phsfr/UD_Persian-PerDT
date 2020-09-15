@@ -1724,7 +1724,7 @@
 14	،	،	PUNCT	PUNC	_	13	punct	_	_
 15	و	و	CCONJ	CONJ	_	22	cc	_	_
 16	نه	نه	ADV	ADV_SADV	_	17	advmod	_	_
-17	ساعتی	ساعت	NOUN	N_IANM	Number=Sing	15	obl	_	_
+17	ساعتی	ساعت	NOUN	N_IANM	Number=Sing	22	obl	_	_
 18	بر	بر	ADP	PREP	_	19	case	_	_
 19	آن	آن	PRON	PR_DEMON	Number=Sing	22	obl:arg	_	_
 20	پیشی	پیشی	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
@@ -1929,7 +1929,7 @@
 3	ضرورت	ضرورت	NOUN	N_IANM	Number=Sing	2	nmod	_	_
 4	این	این	DET	PREM_DEMAJ	_	5	det	_	_
 5	قروض	قروض	NOUN	N_IANM	Number=Sing	20	nsubj	_	_
-6	یا	یا	CCONJ	CONJ	_	8	obl	_	_
+6	یا	یا	CCONJ	CONJ	_	8	cc	_	_
 7	باید	بایست#باید	AUX	V_MODL	_	20	aux	_	_
 8	از	از	ADP	PREP	_	20	obl	_	_
 9	محل	محل	NOUN	N_IANM	Number=Sing	8	obl	_	_
@@ -2354,7 +2354,7 @@
 # sent_id = test-s128
 # text = گفت یا به دلخواه بیعت کنید یا با نادلخواه بیعت می‌کنید و آنها بیعت کردند.
 1	گفت	گفت#گو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
-2	یا	یا	CCONJ	CONJ	_	6	obl	_	_
+2	یا	یا	CCONJ	CONJ	_	6	cc	_	_
 3	به	به	ADP	PREP	_	4	case	_	_
 4	دلخواه	دلخواه	NOUN	N_IANM	Number=Sing	6	obl	_	_
 5	بیعت	بیعت	NOUN	N_IANM	Number=Sing	6	compound:lvc	_	_
@@ -4493,8 +4493,8 @@
 3	صلی	صلی	NOUN	N_IANM	Number=Sing	1	obl	_	_
 4	الله	الله	NOUN	N_ANM	Number=Sing	3	obl	_	_
 5	علیه	علیه	NOUN	N_IANM	Number=Sing	4	obl	_	_
-6	و	و	CCONJ	CONJ	_	5	obl	_	_
-7	آله	آله	NOUN	N_IANM	Number=Sing	6	obl	_	_
+6	و	و	CCONJ	CONJ	_	5	cc	_	_
+7	آله	آله	NOUN	N_IANM	Number=Sing	5	obl	_	_
 8	معجزه‌ای	معجزه	NOUN	N_IANM	Number=Sing	11	obj	_	_
 9	جز	جز	ADP	PREP	_	10	case	_	_
 10	قرآن	قرآن	PROPN	N_IANM	Number=Sing	8	nmod	_	_
@@ -6135,12 +6135,12 @@
 4	تکلیف	تکلیف	NOUN	N_IANM	Number=Sing	5	compound:lvc	_	_
 5	می‌کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	_
 6	که	که	SCONJ	SUBR	_	5	ccomp	_	_
-7	یا	یا	CCONJ	CONJ	_	10	obl	_	_
+7	یا	یا	CCONJ	CONJ	_	10	cc	_	_
 8	باید	بایست#باید	AUX	V_MODL	_	10	aux	_	_
 9	سکوت	سکوت	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 10	کنید	کرد#کن	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	6	ccomp	_	_
 11	و	و	CCONJ	CONJ	_	16	cc	_	_
-12	یا	یا	CCONJ	CONJ	_	11	obl	_	_
+12	یا	یا	CCONJ	CONJ	_	16	cc	_	_
 13	عراق	عراق	PROPN	N_IANM	Number=Sing	16	obj	_	_
 14	را	را	ADP	POSTP	_	13	case	_	_
 15	ترک	ترک	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
@@ -6452,8 +6452,8 @@
 2	جلوی	جلو	ADP	PREP	Number=Sing	3	case	_	_
 3	پیشرفت	پیشرفت	NOUN	N_IANM	Number=Sing	5	obj	_	_
 4	را	را	ADP	POSTP	_	3	case	_	_
-5	بگیرد	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	6	obl	_	_
-6	یا	یا	CCONJ	CONJ	_	15	obl	_	_
+5	بگیرد	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	15	obl	_	_
+6	یا	یا	CCONJ	CONJ	_	15	cc	_	_
 7	حتی	حتی	ADV	ADV_SADV	_	12	advmod	_	_
 8	اگر	اگر	SCONJ	SUBR	_	12	mark	_	_
 9	جلوی	جلو	ADP	PREP	Number=Sing	10	case	_	_
@@ -9849,7 +9849,7 @@
 9	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	22	advcl	_	_
 10	و	و	CCONJ	CONJ	_	11	cc	_	_
 11	یا	یا	CCONJ	CONJ	_	9	conj	_	_
-12	دوستان	دوست	NOUN	N_ANM	Number=Plur	10	obl	_	_
+12	دوستان	دوست	NOUN	N_ANM	Number=Plur	11	obl	_	_
 13	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	12	nmod	_	_
 14	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	9	cop	_	SpaceAfter=No
 15	،	،	PUNCT	PUNC	_	9	punct	_	_
@@ -13038,7 +13038,7 @@
 11	عرضه	عرضه	NOUN	N_IANM	Number=Sing	15	compound:lvc	_	_
 12	و	و	CCONJ	CONJ	_	13	cc	_	_
 13	یا	یا	CCONJ	CONJ	_	11	conj	_	_
-14	تحفه	تحفه	NOUN	N_IANM	Number=Sing	12	obl	_	_
+14	تحفه	تحفه	NOUN	N_IANM	Number=Sing	13	obl	_	_
 15	بکنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	5	acl	_	SpaceAfter=No
 16	.	.	PUNCT	PUNC	_	2	punct	_	_
 
@@ -15503,7 +15503,7 @@
 11	عاشق	عاشق	NOUN	N_ANM	Number=Sing	9	ccomp	_	_
 12	است	#است	AUX	AUX	Number=Sing|Person=3	11	cop	_	_
 13	و	و	CCONJ	CONJ	_	27	cc	_	_
-14	یا	یا	CCONJ	CONJ	_	13	obl	_	_
+14	یا	یا	CCONJ	CONJ	_	27	cc	_	_
 15	دلی	دل	NOUN	N_IANM	Number=Sing	27	nsubj	_	_
 16	که	که	SCONJ	SUBR	_	18	mark	_	_
 17	در	در	ADP	PREP	_	18	case	_	_
@@ -25961,7 +25961,7 @@
 43	صدا	صدا	NOUN	N_IANM	Number=Sing	44	compound:lvc	_	_
 44	می‌زنند	زد#زن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	24	conj	_	_
 45	و	و	CCONJ	CONJ	_	50	cc	_	_
-46	یا	یا	CCONJ	CONJ	_	45	obl	_	_
+46	یا	یا	CCONJ	CONJ	_	50	cc	_	_
 47	از	از	ADP	PREP	_	48	case	_	_
 48	آن‌ها	آنها	PRON	PR_SEPER	Number=Plur|Person=3	50	obl:arg	_	_
 49	یاد	یاد	NOUN	N_IANM	Number=Sing	50	compound:lvc	_	_
@@ -26764,7 +26764,7 @@
 4	مرده	مرده	NOUN	N_ANM	Number=Sing	12	obl:arg	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
 6	یا	یا	CCONJ	CONJ	_	4	conj	_	_
-7	فرد	فرد	NOUN	N_ANM	Number=Sing	5	obl	_	_
+7	فرد	فرد	NOUN	N_ANM	Number=Sing	6	obl	_	_
 8	دور	دور	ADJ	ADJ_AJP	_	7	amod	_	_
 9	از	از	ADP	PREP	_	10	case	_	_
 10	نظر	نظر	NOUN	N_IANM	Number=Sing	8	obl:arg	_	_
@@ -28135,7 +28135,7 @@
 17	کشاورز	کشاورز	ADJ	ADJ_AJP	_	14	amod	_	_
 18	و	و	CCONJ	CONJ	_	19	cc	_	_
 19	یا	یا	CCONJ	CONJ	_	17	conj	_	_
-20	بوشهری	بوشهری	ADJ	ADJ_AJP	_	18	advmod	_	_
+20	بوشهری	بوشهری	ADJ	ADJ_AJP	_	19	advmod	_	_
 21	جوان	جوان	ADJ	ADJ_AJP	_	11	conj	_	_
 22	نیست	#هست	AUX	AUX	Number=Sing|Person=3|Polarity=Neg	21	cop	_	SpaceAfter=No
 23	.	.	PUNCT	PUNC	_	21	punct	_	_
