@@ -1572,6 +1572,9 @@ class DependencyTree:
                 self.labels[i] = "case"
             if self.tags[i] == "VERB" and self.labels[i] == "aux":
                 self.tags[i] = "AUX"
+            if self.ftags[i] == "CONJ" and self.tags[i] == "PUNCT":
+                self.labels[i] = "cc"
+                self.tags[i] = "CONJ"
             if self.tags[i] == "PUNCT":
                 self.labels[i] = "punct"
             if self.labels[i] == "punct" and self.tags[i]=="CONJ":
@@ -1580,6 +1583,9 @@ class DependencyTree:
                 self.tags[i] = "PUNCT"
         if self.sen_id == 23558:
             self.heads[16] = 19
+        if self.sen_id == 23480:
+            self.heads[10] = 9
+            self.heads[13] = 3
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
