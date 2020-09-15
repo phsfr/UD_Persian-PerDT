@@ -1156,7 +1156,7 @@
 8	خود	خود	PRON	PR_CREFX	_	7	obl:arg	_	_
 9	را	را	ADP	POSTP	_	6	case	_	_
 10	یافته	یافت#یاب	VERB	V_ACT	Number=Sing|Person=3|VerbForm=Part|Voice=Act	11	nmod	_	_
-11	و	و	CCONJ	CONJ	_	18	punct	_	_
+11	و	و	PUNCT	CONJ	_	18	punct	_	_
 12	عزت	عزت	NOUN	N_IANM	Number=Sing	18	obl:arg	_	_
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
 14	آبروی	آبرو	NOUN	N_IANM	Number=Sing	12	conj	_	_
@@ -3805,7 +3805,7 @@
 # sent_id = dev-s137
 # text = ما داریم برنامه‌های تند تلویزیون را تلطیف می‌کنیم.
 1	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	8	nsubj	_	_
-2	داریم	داشت#دار	VERB	V_ACT	Number=Plur|Person=1|Tense=Pres|Voice=Act	8	aux	_	_
+2	داریم	داشت#دار	AUX	V_ACT	Number=Plur|Person=1|Voice=Act	8	aux	_	_
 3	برنامه‌های	برنامه	NOUN	N_IANM	Number=Plur	8	obj	_	_
 4	تند	تند	ADJ	ADJ_AJP	_	3	amod	_	_
 5	تلویزیون	تلویزیون	NOUN	N_IANM	Number=Sing	3	nmod	_	_
@@ -7123,7 +7123,7 @@
 # sent_id = dev-s310
 # text = اینها دارند زحمات شما را به هدر می‌دهند.
 1	اینها	اینها	PRON	PR_DEMON	Number=Plur	8	nsubj	_	_
-2	دارند	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	8	aux	_	_
+2	دارند	داشت#دار	AUX	V_ACT	Number=Plur|Person=3|Voice=Act	8	aux	_	_
 3	زحمات	زحمت	NOUN	N_IANM	Number=Plur	8	obj	_	_
 4	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	3	nmod	_	_
 5	را	را	ADP	POSTP	_	3	case	_	_
@@ -7358,7 +7358,7 @@
 
 # sent_id = dev-s318
 # text = دارد پژمرده می‌شود.
-1	دارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	3	aux	_	_
+1	دارد	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	3	aux	_	_
 2	پژمرده	پژمرده	ADJ	ADJ_AJP	_	3	xcomp	_	_
 3	می‌شود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	PUNC	_	3	punct	_	_
@@ -9254,7 +9254,7 @@
 11	من	من	PRON	PR_SEPER	Number=Sing|Person=1	7	acl	_	_
 12	و	و	CCONJ	CONJ	_	11	case	_	_
 13	در	در	ADP	PREP	_	14	case	_	_
-14	من	من	PRON	PR_SEPER	Number=Sing|Person=1	11	obl	_	_
+14	من	من	PRON	PR_SEPER	Number=Sing|Person=1	11	nmod	_	_
 15	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	11	cop	_	SpaceAfter=No
 16	.	.	PUNCT	PUNC	_	4	punct	_	_
 
@@ -10586,7 +10586,7 @@
 2	از	از	ADP	PREP	_	3	case	_	_
 3	فرط	فرط	NOUN	N_IANM	Number=Sing	8	obl	_	_
 4	خشم	خشم	NOUN	N_IANM	Number=Sing	3	nmod	_	_
-5	داشتم	داشت#دار	VERB	V_ACT	Number=Sing|Person=1|Tense=Past|Voice=Act	8	aux	_	_
+5	داشتم	داشت#دار	AUX	V_ACT	Number=Sing|Person=1|Voice=Act	8	aux	_	_
 6	به	به	ADP	PREP	_	7	case	_	_
 7	کبودی	کبودی	NOUN	N_IANM	Number=Sing	8	obl:arg	_	_
 8	می‌گراییدم	گرایید#گرا	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	0	root	_	SpaceAfter=No
@@ -22947,7 +22947,7 @@
 9	کپسول	کپسول	NOUN	N_IANM	Number=Sing	8	nmod	_	_
 10	را	را	ADP	POSTP	_	8	case	_	_
 11	کشیده	کشید#کش	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
-12	و	و	CCONJ	CONJ	_	11	punct	_	_
+12	و	و	PUNCT	CONJ	_	11	punct	_	_
 13	اهرم	اهرم	NOUN	N_IANM	Number=Sing	17	obj	_	_
 14	آن	آن	PRON	PR_DEMON	Number=Sing	13	nmod	_	_
 15	را	را	ADP	POSTP	_	13	case	_	_
@@ -27250,7 +27250,7 @@
 8	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	7	nmod	_	_
 9	،	،	PUNCT	PUNC	_	7	punct	_	_
 10	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	16	nsubj	_	_
-11	داری	داشت#دار	VERB	V_ACT	Number=Sing|Person=2|Tense=Pres|Voice=Act	16	aux	_	_
+11	داری	داشت#دار	AUX	V_ACT	Number=Sing|Person=2|Voice=Act	16	aux	_	_
 12	از	از	ADP	PREP	_	13	case	_	_
 13	خود	خود	PRON	PR_CREFX	_	16	obl:arg	_	_
 14	من	من	PRON	PR_SEPER	Number=Sing|Person=1	13	nmod	_	_
@@ -27907,7 +27907,7 @@
 2-3	امیدم	_	_	_	_	_	_	_	_
 2	امید	امید	NOUN	N_IANM	Number=Sing	1	nmod	_	_
 3	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	2	nmod	_	_
-4	دارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	5	aux	_	_
+4	دارد	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	5	aux	_	_
 5	می‌خشکد	خشکید#خشک	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	PUNC	_	5	punct	_	_
 
@@ -28291,7 +28291,7 @@
 13	حالا	حالا	NOUN	N_IANM	Number=Sing	18	obl	_	_
 14	هم	هم	ADV	ADV_SADV	_	13	dep	_	_
 15	آمریکا	آمریکا	PROPN	N_IANM	Number=Sing	18	nsubj	_	_
-16	دارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	18	aux	_	_
+16	دارد	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	18	aux	_	_
 17	پشتیبانی	پشتیبانی	NOUN	N_IANM	Number=Sing	18	compound:lvc	_	_
 18	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	11	conj	_	SpaceAfter=No
 19	.	.	PUNCT	PUNC	_	18	punct	_	_

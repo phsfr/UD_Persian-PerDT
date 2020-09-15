@@ -1653,7 +1653,7 @@
 # text = دختر بچه‌ای دارد تاب‌بازی می‌کند.
 1	دختر	دختر	NOUN	N_ANM	Number=Sing	5	nsubj	_	_
 2	بچه‌ای	بچه	NOUN	N_ANM	Number=Sing	1	goeswith	_	_
-3	دارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	5	aux	_	_
+3	دارد	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	5	aux	_	_
 4	تاب‌بازی	تاب‌بازی	NOUN	N_IANM	Number=Sing	5	compound:lvc	_	_
 5	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	PUNC	_	5	punct	_	_
@@ -2006,7 +2006,7 @@
 10	به	به	ADP	PREP	_	11	case	_	_
 11	قانون	قانون	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 12	نداشته	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|Polarity=Neg|Tense=Pres|Voice=Act	0	root	_	_
-13	و	و	CCONJ	CONJ	_	12	punct	_	_
+13	و	و	PUNCT	CONJ	_	12	punct	_	_
 14	به	به	ADP	PREP	_	15	case	_	_
 15	بهانه‌های	بهانه	NOUN	N_IANM	Number=Plur	22	obl	_	_
 16	مختلف	مختلف	ADJ	ADJ_AJP	_	15	amod	_	_
@@ -2093,7 +2093,7 @@
 # sent_id = test-s110
 # text = حالا داریم دقیقاً از آن یکی سمت پس می‌افتیم.
 1	حالا	حالا	NOUN	N_IANM	Number=Sing	9	obl	_	_
-2	داریم	داشت#دار	VERB	V_ACT	Number=Plur|Person=1|Tense=Pres|Voice=Act	9	aux	_	_
+2	داریم	داشت#دار	AUX	V_ACT	Number=Plur|Person=1|Voice=Act	9	aux	_	_
 3	دقیقاً	دقیقاً	ADV	ADV_SADV	_	9	advmod	_	_
 4	از	از	ADP	PREP	_	7	case	_	_
 5	آن	آن	DET	PREM_DEMAJ	_	6	det	_	_
@@ -7169,7 +7169,7 @@
 14	می‌کشد	کشید#کش	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	1	acl	_	_
 15	در	در	ADP	PREP	_	16	case	_	_
 16	واقع	واقع	NOUN	N_IANM	Number=Sing	22	obl	_	_
-17	دارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	22	aux	_	_
+17	دارد	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	22	aux	_	_
 18	به	به	ADP	PREP	_	19	case	_	_
 19	اسب‌های	اسب	NOUN	N_ANM	Number=Plur	22	obl:arg	_	_
 20	دیگر	دیگر	ADJ	ADJ_AJP	_	19	amod	_	_
@@ -8681,7 +8681,7 @@
 # sent_id = test-s463
 # text = علی داشت شربت پرتقال را داخل دهانش قرقره می‌کرد.
 1	علی	علی	PROPN	N_ANM	Number=Sing	10	nsubj	_	_
-2	داشت	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	10	aux	_	_
+2	داشت	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	10	aux	_	_
 3	شربت	شربت	NOUN	N_IANM	Number=Sing	10	obj	_	_
 4	پرتقال	پرتقال	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 5	را	را	ADP	POSTP	_	3	case	_	_
@@ -10952,7 +10952,7 @@
 
 # sent_id = test-s573
 # text = داشت ناخن‌های پایش را لاک می‌زد.
-1	داشت	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	7	aux	_	_
+1	داشت	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	7	aux	_	_
 2	ناخن‌های	ناخن	NOUN	N_IANM	Number=Plur	7	obj	_	_
 3-4	پایش	_	_	_	_	_	_	_	_
 3	پا	پا	NOUN	N_IANM	Number=Sing	2	nmod	_	_
@@ -11015,7 +11015,7 @@
 3	نمی‌زنی	زد#زن	VERB	V_ACT	Number=Sing|Person=2|Polarity=Neg|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 4	،	،	PUNCT	PUNC	_	3	punct	_	_
 5	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	8	nsubj	_	_
-6	داری	داشت#دار	VERB	V_ACT	Number=Sing|Person=2|Tense=Pres|Voice=Act	8	aux	_	_
+6	داری	داشت#دار	AUX	V_ACT	Number=Sing|Person=2|Voice=Act	8	aux	_	_
 7	لاس	لاس	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	می‌زنی	زد#زن	VERB	V_ACT	Number=Sing|Person=2|Tense=Pres|Voice=Act	3	conj	_	SpaceAfter=No
 9	!	!	PUNCT	PUNC	_	8	punct	_	_
@@ -13854,7 +13854,7 @@
 # sent_id = test-s723
 # text = تو داری تنها برای خودت مبارزه می‌کنی و به در و دیوار مشت می‌زنی.
 1	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	8	nsubj	_	_
-2	داری	داشت#دار	VERB	V_ACT	Number=Sing|Person=2|Tense=Pres|Voice=Act	8	aux	_	_
+2	داری	داشت#دار	AUX	V_ACT	Number=Sing|Person=2|Voice=Act	8	aux	_	_
 3	تنها	تنها	ADV	ADV_SADV	_	8	advmod	_	_
 4	برای	برای	ADP	PREP	_	3	case	_	_
 5-6	خودت	_	_	_	_	_	_	_	_
@@ -19677,7 +19677,7 @@
 # text = کتیبه‌های یزد دارد از چشم می‌افتد.
 1	کتیبه‌های	کتیبه	NOUN	N_IANM	Number=Plur	6	nsubj	_	_
 2	یزد	یزد	PROPN	N_IANM	Number=Sing	1	nmod	_	_
-3	دارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	6	aux	_	_
+3	دارد	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	6	aux	_	_
 4	از	از	ADP	PREP	_	5	case	_	_
 5	چشم	چشم	NOUN	N_IANM	Number=Sing	6	compound:lvc	_	_
 6	می‌افتد	افتاد#افت	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
@@ -23369,7 +23369,7 @@
 20	را	را	ADP	POSTP	_	16	case	_	_
 21	عصاره‌گیری	عصاره‌گیری	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
 22	کرده	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	13	conj	_	_
-23	و	و	CCONJ	CONJ	_	28	punct	_	_
+23	و	و	PUNCT	CONJ	_	28	punct	_	_
 24	با	با	ADP	PREP	_	26	case	_	_
 25	راسب	راسب	ADJ	ADJ_AJP	_	26	advmod	_	_
 26	کردن	کردن	NOUN	N_IANM	Number=Sing	28	obl	_	_
@@ -23620,7 +23620,7 @@
 4	ام	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	1	nmod	_	_
 5	سینا	سینا	PROPN	N_ANM	Number=Sing	1	appos	_	SpaceAfter=No
 6	،	،	PUNCT	PUNC	_	5	punct	_	_
-7	داشت	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	15	aux	_	_
+7	داشت	داشت#دار	AUX	V_ACT	Number=Sing|Person=3|Voice=Act	15	aux	_	_
 8	سر	سر	ADP	PREP	_	10	case	_	_
 9	یک	یک	NUM	PRENUM	_	10	nummod	_	_
 10	اسباب‌بازی	اسباب‌بازی	NOUN	N_IANM	Number=Sing	15	obl	_	_
@@ -24690,7 +24690,7 @@
 21	قذافی	قذافی	NOUN	N_ANM	Number=Sing	17	nmod	_	_
 22	ظاهر	ظاهر	NOUN	N_IANM	Number=Sing	23	compound:lvc	_	_
 23	بشود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	24	nmod	_	_
-24	و	و	CCONJ	CONJ	_	34	punct	_	_
+24	و	و	PUNCT	CONJ	_	34	punct	_	_
 25	ابتدایی‌ترین	ابتدایی	ADJ	ADJ_AJSUP	_	26	amod	_	_
 26	حقوق	حق	NOUN	N_IANM	Number=Plur	34	obj	_	_
 27	مخالفان	مخالف	NOUN	N_ANM	Number=Plur	26	nmod	_	_

@@ -1545,9 +1545,15 @@ class DependencyTree:
             if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"case"} and self.labels[i] != "fixed":
                 self.heads[i] = self.heads[self.heads[i] - 1]
                 if self.tags[i] == "PRON":
-                    self.labels[i] == "nmod"
+                    self.labels[i] = "nmod"
             if self.tags[i] == "ADP" and self.labels[i] == "advmod":
                 self.labels[i] = "case"
+            if self.tags[i] == "VERB" and self.labels[i] == "aux":
+                self.tags[i] = "AUX"
+            if self.tags[i] == "PUNCT":
+                self.labels[i] = "punct"
+            if self.labels[i] == "punct":
+                self.tags[i] = "PUNCT"
         if self.sen_id == 23558:
             self.heads[16] = 19
 
