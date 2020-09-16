@@ -1227,7 +1227,7 @@ class DependencyTree:
                     self.exchange_child_parent(self.reverse_index[old_head], idx, 'cop')
                     cop_child = self.find_all_children(old_head)
                     for ch in cop_child:
-                        if self.labels[ch] != 'aux' and self.labels[ch] != 'aux:pass':
+                        if self.labels[ch] not in {'aux', 'aux:pass'}:
                             old_ch_h = self.heads[ch]
                             old_ch_r = self.labels[ch]
                             self.heads[ch] = self.index[idx]
@@ -1598,6 +1598,10 @@ class DependencyTree:
             self.heads[-1] = 5
         if self.sen_id == 25955:
             self.heads[19] = 19
+        if self.sen_id == 23847:
+            self.heads[17] = 17
+            self.heads[18] = 10
+
 
 
     def manual_postprocess(self):
