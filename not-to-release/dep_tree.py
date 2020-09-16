@@ -817,6 +817,15 @@ class DependencyTree:
             if old_role == 'MESU':
                 # 'MESU':'nmod' and change child and parent position; before case because of ...kilogram of ra in sentid=23499
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'nmod')
+                mesu_children = self.find_all_children(old_head)
+                for ch in mesu_children:
+                    if self.labels[ch] in {'punct'}:
+                        old_ch_h = self.heads[ch]
+                        old_ch_r = self.labels[ch]
+                        self.heads[ch] = self.index[idx]
+                        self.other_features[ch].add_feat('old_h', str(old_ch_h))
+                        self.other_features[ch].add_feat('old_r', old_ch_r)
+
                 rol_changed = True
 
             if old_role == 'COMPPP':
@@ -1604,7 +1613,8 @@ class DependencyTree:
         if self.sen_id == 23877:
             self.heads[17] = 19
             self.heads[24] = 19
-
+        if self.sen_id == 24095:
+            self.heads[30] = 28
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
