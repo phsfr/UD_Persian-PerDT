@@ -69,7 +69,7 @@
 5	پیشنهادی	پیشنهادی	ADJ	ADJ_AJP	_	4	amod	_	_
 6	دولت	دولت	PROPN	N_ANM	Number=Sing	4	nmod	_	_
 7	روسیه	روسیه	PROPN	N_IANM	Number=Sing	6	flat:name	_	SpaceAfter=No
-8	،	،	PUNCT	PUNC	_	7	punct	_	_
+8	،	،	PUNCT	PUNC	_	6	punct	_	_
 9	مبنی	مبنی	ADJ	ADJ_AJP	_	4	amod	_	_
 10	بر	بر	ADP	PREP	_	11	case	_	_
 11	تسلیم	تسلیم	NOUN	N_IANM	Number=Sing	9	obl:arg	_	_
@@ -398,7 +398,7 @@
 2	دانشگاه	دانشگاه	PROPN	N_IANM	Number=Sing	1	flat:name	_	_
 3	آزاد	آزاد	PROPN	ADJ_AJP	_	1	flat:name	_	_
 4	اسلامی	اسلامی	PROPN	ADJ_AJP	_	1	flat:name	_	SpaceAfter=No
-5	،	،	PUNCT	PUNC	_	4	punct	_	_
+5	،	،	PUNCT	PUNC	_	1	punct	_	_
 6	دارندهٔ	دارنده	ADJ	ADJ_AJP	_	1	appos	_	_
 7	عنوان	عنوان	NOUN	N_IANM	Number=Sing	6	obl:arg	_	_
 8	سومی	سوم	ADJ	POSNUM	_	7	amod	_	_
@@ -765,7 +765,7 @@
 36	امام	امام	PROPN	IDEN	Number=Sing	44	nsubj	_	_
 37	حسین	حسین	PROPN	N_ANM	Number=Sing	36	flat:name	_	_
 38	(	(	PUNCT	PUNC	_	39	punct	_	SpaceAfter=No
-39	ع	ع	NOUN	N_IANM	Number=Sing	37	obl	_	SpaceAfter=No
+39	ع	ع	NOUN	N_IANM	Number=Sing	36	obl	_	SpaceAfter=No
 40	)	)	PUNCT	PUNC	_	39	punct	_	_
 41	برای	برای	ADP	PREP	_	42	case	_	_
 42	آنها	آنها	PRON	PR_SEPER	Number=Plur|Person=3	44	obl	_	_
@@ -791,7 +791,7 @@
 62	امام	امام	PROPN	IDEN	Number=Sing	72	nsubj	_	_
 63	حسین	حسین	PROPN	N_ANM	Number=Sing	62	flat:name	_	_
 64	(	(	PUNCT	PUNC	_	65	punct	_	SpaceAfter=No
-65	ع	ع	NOUN	N_IANM	Number=Sing	63	obl	_	SpaceAfter=No
+65	ع	ع	NOUN	N_IANM	Number=Sing	62	obl	_	SpaceAfter=No
 66	)	)	PUNCT	PUNC	_	65	punct	_	_
 67	در	در	ADP	PREP	_	68	case	_	_
 68	زمان	زمان	NOUN	N_IANM	Number=Sing	72	obl	_	_
@@ -825,9 +825,9 @@
 14	بارگاه	بارگاه	PROPN	N_IANM	Number=Sing	13	nmod	_	_
 15	ملکوتی	ملکوتی	PROPN	ADJ_AJP	_	14	flat:name	_	_
 16	امام	امام	PROPN	N_ANM	Number=Sing	14	flat:name	_	_
-17	هشتم	هشتم	ADJ	POSNUM	_	16	amod	_	_
+17	هشتم	هشتم	ADJ	POSNUM	_	14	amod	_	_
 18	(	(	PUNCT	PUNC	_	19	punct	_	SpaceAfter=No
-19	ع	ع	NOUN	N_IANM	Number=Sing	16	obl	_	SpaceAfter=No
+19	ع	ع	NOUN	N_IANM	Number=Sing	14	obl	_	SpaceAfter=No
 20	)	)	PUNCT	PUNC	_	19	punct	_	_
 21	برگزار	برگزار	ADJ	ADJ_AJP	_	41	compound:lvc	_	_
 22	و	و	CCONJ	CONJ	_	41	cc	_	_
@@ -1713,7 +1713,7 @@
 46	امور	امر	PROPN	N_IANM	Number=Plur	45	flat:name	_	_
 47	اقتصادی	اقتصادی	PROPN	ADJ_AJP	_	45	flat:name	_	_
 48	و	و	CCONJ	CONJ	_	49	cc	_	_
-49	دارایی	دارایی	PROPN	ADJ_AJP	_	47	conj	_	_
+49	دارایی	دارایی	PROPN	ADJ_AJP	_	45	conj	_	_
 50	با	با	ADP	PREP	_	51	case	_	_
 51	همکاری	همکاری	NOUN	N_IANM	Number=Sing	59	obl	_	_
 52	بانک	بانک	PROPN	N_IANM	Number=Sing	51	nmod	_	_
@@ -2047,7 +2047,7 @@
 18	دفتر	دفتر	PROPN	N_IANM	Number=Sing	17	nmod	_	_
 19	مقابله	مقابله	PROPN	N_IANM	Number=Sing	18	flat:name	_	_
 20	با	با	ADP	PREP	_	21	case	_	_
-21	مواد	ماده	PROPN	N_IANM	Number=Plur	19	nmod	_	_
+21	مواد	ماده	PROPN	N_IANM	Number=Plur	18	nmod	_	_
 22	مخدر	مخدر	PROPN	ADJ_AJP	_	21	flat:name	_	_
 23	و	و	CCONJ	CONJ	_	24	cc	_	_
 24	جرم	جرم	PROPN	N_IANM	Number=Sing	21	conj	_	_
@@ -2214,7 +2214,7 @@
 1	امام	امام	PROPN	IDEN	Number=Sing	16	nsubj	_	_
 2	خمینی	خمینی	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	(	(	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
-4	ره	ره	NOUN	N_IANM	Number=Sing	2	obl	_	SpaceAfter=No
+4	ره	ره	NOUN	N_IANM	Number=Sing	1	obl	_	SpaceAfter=No
 5	)	)	PUNCT	PUNC	_	4	punct	_	_
 6	به	به	ADP	PREP	_	7	case	_	_
 7	دنبال	دنبال	NOUN	N_IANM	Number=Sing	16	obl	_	_
@@ -2327,10 +2327,10 @@
 24	اسرای	اسیر	PROPN	N_ANM	Number=Plur	22	flat:name	_	_
 25	کربلا	کربلا	PROPN	N_IANM	Number=Sing	22	flat:name	_	_
 26	و	و	CCONJ	CONJ	_	27	cc	_	_
-27	حضرت	حضرت	PROPN	IDEN	Number=Sing	23	conj	_	_
+27	حضرت	حضرت	PROPN	IDEN	Number=Sing	22	conj	_	_
 28	زینب	زینب	PROPN	N_ANM	Number=Sing	27	flat:name	_	_
 29	(	(	PUNCT	PUNC	_	30	punct	_	SpaceAfter=No
-30	س	س	NOUN	N_IANM	Number=Sing	28	obl	_	SpaceAfter=No
+30	س	س	NOUN	N_IANM	Number=Sing	27	obl	_	SpaceAfter=No
 31	)	)	PUNCT	PUNC	_	30	punct	_	_
 32	گریستند	گریست#گری	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	_
 33	و	و	CCONJ	CONJ	_	35	cc	_	_
@@ -2499,7 +2499,7 @@
 5	امام	امام	PROPN	IDEN	Number=Sing	4	nmod	_	_
 6	حسین	حسین	PROPN	N_ANM	Number=Sing	5	flat:name	_	_
 7	(	(	PUNCT	PUNC	_	8	punct	_	SpaceAfter=No
-8	ع	ع	NOUN	N_IANM	Number=Sing	6	obl	_	SpaceAfter=No
+8	ع	ع	NOUN	N_IANM	Number=Sing	5	obl	_	SpaceAfter=No
 9	)	)	PUNCT	PUNC	_	8	punct	_	_
 10	جنایات	جنایت	NOUN	N_IANM	Number=Plur	32	obj	_	_
 11	رژیم	رژیم	PROPN	N_IANM	Number=Sing	10	nmod	_	_
@@ -2894,7 +2894,7 @@
 24	از	از	ADP	PREP	_	25	case	_	_
 25	شهرستان	شهرستان	PROPN	N_IANM	Number=Sing	22	nmod	_	_
 26	بم	بم	PROPN	N_IANM	Number=Sing	25	flat:name	_	SpaceAfter=No
-27	،	،	PUNCT	PUNC	_	26	punct	_	_
+27	،	،	PUNCT	PUNC	_	25	punct	_	_
 28	فاصلهٔ	فاصله	NOUN	N_IANM	Number=Sing	35	obj	_	_
 29	365	365	NUM	PRENUM	_	30	nummod	_	_
 30	کیلومتر	کیلومتر	NOUN	N_IANM	Number=Sing	28	nmod	_	_
@@ -3691,7 +3691,7 @@
 1	دولت	دولت	PROPN	N_IANM	Number=Sing	9	nsubj	_	_
 2	پاکستان	پاکستان	PROPN	N_IANM	Number=Sing	1	flat:name	_	_
 3	و	و	CCONJ	CONJ	_	4	cc	_	_
-4	هند	هند	PROPN	N_IANM	Number=Sing	2	conj	_	_
+4	هند	هند	PROPN	N_IANM	Number=Sing	1	conj	_	_
 5	در	در	ADP	PREP	_	6	case	_	_
 6	برابر	برابر	NOUN	N_IANM	Number=Sing	9	obl:arg	_	_
 7	امپریالیسم	امپریالیسم	NOUN	N_IANM	Number=Sing	6	nmod	_	_
@@ -4291,7 +4291,7 @@
 3	کشورهای	کشور	NOUN	N_IANM	Number=Plur	16	obl	_	_
 4	آفریقای	آفریقا	PROPN	N_IANM	Number=Sing	3	nmod	_	_
 5	مرکزی	مرکزی	PROPN	ADJ_AJP	_	4	flat:name	_	SpaceAfter=No
-6	،	،	PUNCT	PUNC	_	5	punct	_	_
+6	،	،	PUNCT	PUNC	_	4	punct	_	_
 7	افراد	فرد	NOUN	N_ANM	Number=Plur	16	obj	_	_
 8	مبتلا	مبتلا	ADJ	ADJ_AJP	_	7	amod	_	_
 9	به	به	ADP	PREP	_	10	case	_	_
@@ -5268,7 +5268,7 @@
 5	مؤسسهٔ	مؤسسه	PROPN	N_IANM	Number=Sing	4	nmod	_	_
 6	کفن	کفن	PROPN	N_IANM	Number=Sing	5	flat:name	_	_
 7	و	و	CCONJ	CONJ	_	8	cc	_	_
-8	دفن	دفن	PROPN	N_IANM	Number=Sing	6	conj	_	SpaceAfter=No
+8	دفن	دفن	PROPN	N_IANM	Number=Sing	5	conj	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	به	به	ADP	PREP	_	11	case	_	_
 11	آرامی	آرامی	NOUN	N_IANM	Number=Sing	18	obl	_	_
@@ -6711,10 +6711,10 @@
 12	تیم‌های	تیم	PROPN	N_IANM	Number=Plur	26	nsubj	_	_
 13	فولاد	فولاد	PROPN	N_IANM	Number=Sing	12	flat:name	_	_
 14	مبارکه	مبارکه	PROPN	N_IANM	Number=Sing	12	flat:name	_	SpaceAfter=No
-15	،	،	PUNCT	PUNC	_	14	punct	_	_
-16	ذوب‌آهن	ذوب‌آهن	PROPN	N_IANM	Number=Sing	13	conj	_	_
+15	،	،	PUNCT	PUNC	_	12	punct	_	_
+16	ذوب‌آهن	ذوب‌آهن	PROPN	N_IANM	Number=Sing	12	conj	_	_
 17	و	و	CCONJ	CONJ	_	18	cc	_	_
-18	هسا	هسا	PROPN	N_IANM	Number=Sing	13	conj	_	_
+18	هسا	هسا	PROPN	N_IANM	Number=Sing	12	conj	_	_
 19	در	در	ADP	PREP	_	20	case	_	_
 20	سوپرلیگ	سوپرلیگ	NOUN	N_IANM	Number=Sing	26	obl	_	_
 21	کشور	کشور	NOUN	N_IANM	Number=Sing	20	nmod	_	_
@@ -7628,7 +7628,7 @@
 2	همکلاس	همکلاس	NOUN	N_ANM	Number=Sing	0	root	_	_
 3	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	2	nmod	_	_
 4	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	2	cop	_	SpaceAfter=No
-5	،	،	PUNCT	PUNC	_	2	punct	_	_
+5	،	،	PUNCT	PUNC	_	3	punct	_	_
 6	ایشان	ایشان	PRON	PR_SEPER	Number=Plur|Person=3	7	nsubj	_	_
 7	دکتر	دکتر	NOUN	N_ANM	Number=Sing	2	conj	_	_
 8	بودند	بود#باش	AUX	AUX	Number=Plur|Person=3	7	cop	_	SpaceAfter=No
@@ -8071,7 +8071,7 @@
 2	سیمور	سیمور	PROPN	N_ANM	Number=Sing	12	nsubj	_	_
 3	هافمن	هافمن	PROPN	N_ANM	Number=Sing	2	flat:name	_	SpaceAfter=No
 4	»	»	PUNCT	PUNC	_	2	punct	_	SpaceAfter=No
-5	،	،	PUNCT	PUNC	_	3	punct	_	_
+5	،	،	PUNCT	PUNC	_	2	punct	_	_
 6	روی	روی	ADP	PREP	_	7	case	_	_
 7	سن	سن	NOUN	N_IANM	Number=Sing	12	obl	_	_
 8	«	«	PUNCT	PUNC	_	9	punct	_	SpaceAfter=No
@@ -8512,7 +8512,7 @@
 4	جذب	جذب	NOUN	N_IANM	Number=Sing	20	obl	_	_
 5	عماد	عماد	PROPN	N_ANM	Number=Sing	4	nmod	_	_
 6	رضا	رضا	PROPN	N_ANM	Number=Sing	5	flat:name	_	SpaceAfter=No
-7	،	،	PUNCT	PUNC	_	6	punct	_	_
+7	،	،	PUNCT	PUNC	_	5	punct	_	_
 8	مهاجم	مهاجم	NOUN	N_ANM	Number=Sing	5	appos	_	_
 9	عراقی	عراقی	ADJ	ADJ_AJP	_	8	amod	_	_
 10	باشگاه	باشگاه	PROPN	N_IANM	Number=Sing	8	nmod	_	_
@@ -10166,7 +10166,7 @@
 # text = کشور چین، بزرگ‌ترین مشتری نفت ایران در سال 2011، که واردات نفت ایران را برای ماه‌های ژانویه و فوریهٔ سال جاری میلادی به نصف تقلیل داده بود، این کاهش خرید را برای ماه مارس هم تمدید کرد.
 1	کشور	کشور	PROPN	N_IANM	Number=Sing	40	nsubj	_	_
 2	چین	چین	PROPN	N_IANM	Number=Sing	1	flat:name	_	SpaceAfter=No
-3	،	،	PUNCT	PUNC	_	2	punct	_	_
+3	،	،	PUNCT	PUNC	_	1	punct	_	_
 4	بزرگ‌ترین	بزرگ	ADJ	ADJ_AJSUP	_	5	amod	_	_
 5	مشتری	مشتری	NOUN	N_ANM	Number=Sing	1	appos	_	_
 6	نفت	نفت	NOUN	N_IANM	Number=Sing	5	nmod	_	_
@@ -12513,7 +12513,7 @@
 16	زمان	زمان	NOUN	N_IANM	Number=Sing	26	obl	_	_
 17	محمدشاه	محمدشاه	PROPN	N_IANM	Number=Sing	16	nmod	_	_
 18	قاجار	قاجار	PROPN	N_IANM	Number=Sing	17	flat:name	_	SpaceAfter=No
-19	،	،	PUNCT	PUNC	_	18	punct	_	_
+19	،	،	PUNCT	PUNC	_	17	punct	_	_
 20	تابستان‌ها	تابستان	NOUN	N_IANM	Number=Plur	26	obl	_	_
 21	برای	برای	ADP	PREP	_	22	case	_	_
 22	استراحت	استراحت	NOUN	N_IANM	Number=Sing	26	obl	_	_
@@ -12939,12 +12939,12 @@
 10	خیابان	خیابان	PROPN	N_IANM	Number=Sing	8	conj	_	_
 11	سی	سی	PROPN	N_IANM	Number=Sing	10	flat:name	_	_
 12	تیر	تیر	PROPN	N_IANM	Number=Sing	10	flat:name	_	SpaceAfter=No
-13	،	،	PUNCT	PUNC	_	12	punct	_	_
+13	،	،	PUNCT	PUNC	_	10	punct	_	_
 14	ساختمان	ساختمان	PROPN	N_IANM	Number=Sing	8	conj	_	_
 15	وزارت	وزارت	PROPN	N_IANM	Number=Sing	14	flat:name	_	_
 16	آموزش	آموزش	PROPN	N_IANM	Number=Sing	14	flat:name	_	_
 17	و	و	CCONJ	CONJ	_	18	cc	_	_
-18	پرورش	پرورش	PROPN	N_IANM	Number=Sing	16	conj	_	_
+18	پرورش	پرورش	PROPN	N_IANM	Number=Sing	14	conj	_	_
 19	فراخوانده	فرا#خواند#خوان	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 20	شدیم	شد#شو	AUX	AUX	Number=Plur|Person=1|Tense=Past	19	aux:pass	_	SpaceAfter=No
 21	.	.	PUNCT	PUNC	_	19	punct	_	_
@@ -13322,10 +13322,10 @@
 11	در	در	ADP	PREP	_	12	case	_	_
 12	ایالت‌های	ایالت	PROPN	N_IANM	Number=Plur	19	obl	_	_
 13	نیوجرسی	نیوجرسی	PROPN	N_IANM	Number=Sing	12	flat:name	_	SpaceAfter=No
-14	،	،	PUNCT	PUNC	_	13	punct	_	_
-15	نیویورک	نیویورک	PROPN	N_IANM	Number=Sing	13	conj	_	_
+14	،	،	PUNCT	PUNC	_	12	punct	_	_
+15	نیویورک	نیویورک	PROPN	N_IANM	Number=Sing	12	conj	_	_
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
-17	کالیفرنیا	کالیفرنیا	PROPN	N_IANM	Number=Sing	13	conj	_	_
+17	کالیفرنیا	کالیفرنیا	PROPN	N_IANM	Number=Sing	12	conj	_	_
 18	طبابت	طبابت	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	9	conj	_	_
 20	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	19	aux	_	SpaceAfter=No
@@ -13464,7 +13464,7 @@
 # text = سیروس ناصری: اروپا باید به ایران ضمانت بدهد.
 1	سیروس	سیروس	PROPN	N_ANM	Number=Sing	0	root	_	_
 2	ناصری	ناصری	PROPN	N_ANM	Number=Sing	1	flat:name	_	SpaceAfter=No
-3	:	:	PUNCT	PUNC	_	2	punct	_	_
+3	:	:	PUNCT	PUNC	_	1	punct	_	_
 4	اروپا	اروپا	PROPN	N_IANM	Number=Sing	9	nsubj	_	_
 5	باید	بایست#باید	AUX	V_MODL	_	9	aux	_	_
 6	به	به	ADP	PREP	_	7	case	_	_
@@ -15479,17 +15479,17 @@
 1	دکتر	دکتر	PROPN	IDEN	Number=Sing	19	nsubj	_	_
 2	محسن	محسن	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	سازگارا	سازگارا	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
-4	فعال	فعال	NOUN	N_ANM	Number=Sing	2	appos	_	_
+4	فعال	فعال	NOUN	N_ANM	Number=Sing	1	appos	_	_
 5	سیاسی	سیاسی	ADJ	ADJ_AJP	_	4	amod	_	_
 6	و	و	CCONJ	CONJ	_	7	cc	_	_
-7	مهرانگیز	مهرانگیز	NOUN	N_ANM	Number=Sing	2	conj	_	_
+7	مهرانگیز	مهرانگیز	NOUN	N_ANM	Number=Sing	1	conj	_	_
 8	کار	کار	NOUN	N_ANM	Number=Sing	7	nmod	_	_
 9	حقوقدان	حقوقدان	NOUN	N_ANM	Number=Sing	7	appos	_	_
 10	و	و	CCONJ	CONJ	_	11	cc	_	_
 11	فعال	فعال	NOUN	N_ANM	Number=Sing	9	conj	_	_
 12	حقوق	حق	NOUN	N_IANM	Number=Plur	11	nmod	_	_
 13	زنان	زن	NOUN	N_ANM	Number=Plur	12	nmod	_	_
-14	نیز	نیز	ADV	ADV_SADV	_	2	dep	_	_
+14	نیز	نیز	ADV	ADV_SADV	_	1	dep	_	_
 15	پیام‌هایی	پیام	NOUN	N_IANM	Number=Plur	19	obj	_	_
 16	به	به	ADP	PREP	_	17	case	_	_
 17	کنفرانس	کنفرانس	NOUN	N_IANM	Number=Sing	19	obl:arg	_	_
@@ -15570,7 +15570,7 @@
 7	رو	رو	NOUN	N_IANM	Number=Sing	3	acl	_	_
 8	یش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	7	nmod	_	_
 9	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	7	cop	_	SpaceAfter=No
-10	،	،	PUNCT	PUNC	_	7	punct	_	_
+10	،	،	PUNCT	PUNC	_	8	punct	_	_
 11	می‌رفت	رفت#رو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	0	root	_	_
 12	و	و	CCONJ	CONJ	_	18	cc	_	_
 13	در	در	ADP	PREP	_	14	case	_	_
@@ -15601,7 +15601,7 @@
 5	رودخانهٔ	رودخانه	PROPN	N_IANM	Number=Sing	11	obl	_	_
 6	نیل	نیل	PROPN	N_IANM	Number=Sing	5	flat:name	_	_
 7	و	و	CCONJ	CONJ	_	8	cc	_	_
-8	کنگو	کنگو	PROPN	N_IANM	Number=Sing	6	conj	_	SpaceAfter=No
+8	کنگو	کنگو	PROPN	N_IANM	Number=Sing	5	conj	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
 10	سومین	سومین	ADJ	PRENUM	_	11	amod	_	_
 11	رودخانهٔ	رودخانه	NOUN	N_IANM	Number=Sing	0	root	_	_
@@ -16755,7 +16755,7 @@
 # text = حضرت موسی، وقوع برخی از ضربات را پیش‌تر به فرعون اطلاع می‌داد تا شاید با شنیدن خبر، دست از نافرمانی بردارد.
 1	حضرت	حضرت	PROPN	N_ANM	Number=Sing	13	nsubj	_	_
 2	موسی	موسی	PROPN	N_ANM	Number=Sing	1	flat:name	_	SpaceAfter=No
-3	،	،	PUNCT	PUNC	_	2	punct	_	_
+3	،	،	PUNCT	PUNC	_	1	punct	_	_
 4	وقوع	وقوع	NOUN	N_IANM	Number=Sing	13	obj	_	_
 5	برخی	برخی	NOUN	N_IANM	Number=Plur	4	nmod	_	_
 6	از	از	ADP	PREP	_	7	case	_	_
@@ -18214,7 +18214,7 @@
 2	میرزاجواد	میرزاجواد	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	تبریزی	تبریزی	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 4	(	(	PUNCT	PUNC	_	5	punct	_	SpaceAfter=No
-5	قدس	قدس	NOUN	N_IANM	Number=Sing	2	obl	_	_
+5	قدس	قدس	NOUN	N_IANM	Number=Sing	1	obl	_	_
 6	سره	سره	NOUN	N_IANM	Number=Sing	5	obl	_	SpaceAfter=No
 7	)	)	PUNCT	PUNC	_	5	punct	_	_
 8	قبل	قبل	ADP	PREP	_	10	case	_	_
@@ -18234,7 +18234,7 @@
 21	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	20	nmod	_	_
 22	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	16	cop	_	_
 23	را	را	ADP	POSTP	_	12	case	_	_
-24	خود	خود	PRON	PR_CREFX	_	2	appos	_	_
+24	خود	خود	PRON	PR_CREFX	_	1	appos	_	_
 25	سر	سر	NOUN	N_IANM	Number=Sing	28	compound:lvc	_	_
 26	و	و	CCONJ	CONJ	_	27	cc	_	_
 27	سامان	سامان	NOUN	N_IANM	Number=Sing	25	conj	_	_
@@ -19090,25 +19090,25 @@
 6	سید	سید	PROPN	IDEN	Number=Sing	2	nsubj	_	_
 7	مهدی	مهدی	PROPN	N_ANM	Number=Sing	6	flat:name	_	_
 8	بحرالعلوم	بحرالعلوم	PROPN	N_ANM	Number=Sing	6	flat:name	_	SpaceAfter=No
-9	،	،	PUNCT	PUNC	_	8	punct	_	_
-10	شیخ	شیخ	PROPN	IDEN	Number=Sing	7	conj	_	_
+9	،	،	PUNCT	PUNC	_	6	punct	_	_
+10	شیخ	شیخ	PROPN	IDEN	Number=Sing	6	conj	_	_
 11	جعفر	جعفر	PROPN	N_ANM	Number=Sing	10	flat:name	_	_
 12	کاشف‌الغطا	کاشف‌الغطا	PROPN	N_ANM	Number=Sing	10	flat:name	_	SpaceAfter=No
-13	،	،	PUNCT	PUNC	_	12	punct	_	_
-14	صاحب	صاحب	PROPN	N_ANM	Number=Sing	11	conj	_	_
+13	،	،	PUNCT	PUNC	_	10	punct	_	_
+14	صاحب	صاحب	PROPN	N_ANM	Number=Sing	10	conj	_	_
 15	جواهر	جواهر	PROPN	N_IANM	Number=Sing	14	flat:name	_	SpaceAfter=No
-16	،	،	PUNCT	PUNC	_	15	punct	_	_
-17	شیخ	شیخ	PROPN	IDEN	Number=Sing	11	conj	_	_
+16	،	،	PUNCT	PUNC	_	14	punct	_	_
+17	شیخ	شیخ	PROPN	IDEN	Number=Sing	10	conj	_	_
 18	مرتضی	مرتضی	PROPN	N_ANM	Number=Sing	17	flat:name	_	_
 19	انصاری	انصاری	PROPN	N_ANM	Number=Sing	17	flat:name	_	SpaceAfter=No
-20	،	،	PUNCT	PUNC	_	19	punct	_	_
-21	میرزای	میرزا	PROPN	N_ANM	Number=Sing	11	conj	_	_
+20	،	،	PUNCT	PUNC	_	17	punct	_	_
+21	میرزای	میرزا	PROPN	N_ANM	Number=Sing	10	conj	_	_
 22	شیرازی	شیرازی	PROPN	N_ANM	Number=Sing	21	flat:name	_	SpaceAfter=No
-23	،	،	PUNCT	PUNC	_	22	punct	_	_
-24	آخوند	آخوند	PROPN	N_ANM	Number=Sing	11	conj	_	_
+23	،	،	PUNCT	PUNC	_	21	punct	_	_
+24	آخوند	آخوند	PROPN	N_ANM	Number=Sing	10	conj	_	_
 25	خراسانی	خراسانی	PROPN	N_ANM	Number=Sing	24	flat:name	_	_
 26	و	و	CCONJ	CONJ	_	27	cc	_	_
-27	سید	سید	PROPN	IDEN	Number=Sing	11	conj	_	_
+27	سید	سید	PROPN	IDEN	Number=Sing	10	conj	_	_
 28	ابوالحسن	ابوالحسن	PROPN	N_ANM	Number=Sing	27	flat:name	_	_
 29	اصفهانی	اصفهانی	PROPN	N_ANM	Number=Sing	27	flat:name	_	_
 30	بودند	بود#باش	AUX	AUX	Number=Plur|Person=3	2	cop	_	_
@@ -20309,7 +20309,7 @@
 6	امام	امام	PROPN	IDEN	Number=Sing	12	obl:arg	_	_
 7	حسین	حسین	PROPN	N_ANM	Number=Sing	6	flat:name	_	_
 8	(	(	PUNCT	PUNC	_	9	punct	_	SpaceAfter=No
-9	ع	ع	NOUN	N_IANM	Number=Sing	7	obl	_	SpaceAfter=No
+9	ع	ع	NOUN	N_IANM	Number=Sing	6	obl	_	SpaceAfter=No
 10	)	)	PUNCT	PUNC	_	9	punct	_	_
 11	اقتدا	اقتدا	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
 12	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
@@ -21308,7 +21308,7 @@
 3	بن	بن	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 4	موسی‌الرضا	موسی‌الرضا	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 5	علیه‌السلام	علیه‌السلام	PROPN	N_IANM	Number=Sing	1	flat:name	_	SpaceAfter=No
-6	،	،	PUNCT	PUNC	_	5	punct	_	_
+6	،	،	PUNCT	PUNC	_	1	punct	_	_
 7	در	در	ADP	PREP	_	8	case	_	_
 8	سن	سن	NOUN	N_IANM	Number=Sing	25	obl	_	_
 9	55	55	NUM	PRENUM	_	10	nummod	_	_
@@ -22875,7 +22875,7 @@
 1	نیروهای	نیرو	NOUN	N_ANM	Number=Plur	13	nsubj	_	_
 2	ارتش	ارتش	PROPN	N_IANM	Number=Sing	1	nmod	_	_
 3	افغان	افغان	PROPN	N_IANM	Number=Sing	2	flat:name	_	SpaceAfter=No
-4	،	،	PUNCT	PUNC	_	3	punct	_	_
+4	،	،	PUNCT	PUNC	_	2	punct	_	_
 5	مسئولیت	مسئولیت	NOUN	N_IANM	Number=Sing	13	obj	_	_
 6	استان	استان	PROPN	N_IANM	Number=Sing	5	nmod	_	_
 7	پنجشیر	پنجشیر	PROPN	N_IANM	Number=Sing	6	flat:name	_	_
@@ -22909,7 +22909,7 @@
 3	بزرگراه‌های	بزرگراه	PROPN	N_IANM	Number=Plur	8	obl	_	_
 4	آزادگان	آزادگان	PROPN	N_IANM	Number=Sing	3	flat:name	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
-6	تندگویان	تندگویان	PROPN	N_IANM	Number=Sing	4	conj	_	_
+6	تندگویان	تندگویان	PROPN	N_IANM	Number=Sing	3	conj	_	_
 7	قد	قد	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	کشیدند	کشید#کش	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	PUNC	_	8	punct	_	_
@@ -22995,7 +22995,7 @@
 3	1318	1318	NOUN	N_IANM	Number=Sing	2	nmod	_	_
 4	رضا	رضا	PROPN	N_ANM	Number=Sing	18	nsubj	_	_
 5	شاه	شاه	PROPN	IDEN	Number=Sing	4	flat:name	_	SpaceAfter=No
-6	،	،	PUNCT	PUNC	_	5	punct	_	_
+6	،	،	PUNCT	PUNC	_	4	punct	_	_
 7	عاقبت	عاقبت	ADV	ADV_SADV	_	18	advmod	_	_
 8	به	به	ADP	PREP	_	9	case	_	_
 9	بهانه‌ای	بهانه	NOUN	N_IANM	Number=Sing	18	obl	_	_
@@ -23216,7 +23216,7 @@
 1	شهید	شهید	PROPN	IDEN	Number=Sing	5	nsubj	_	_
 2	مهدی	مهدی	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	زین‌الدین	زین‌الدین	PROPN	N_ANM	Number=Sing	1	flat:name	_	SpaceAfter=No
-4	،	،	PUNCT	PUNC	_	3	punct	_	_
+4	،	،	PUNCT	PUNC	_	1	punct	_	_
 5	مردی	مرد	NOUN	N_ANM	Number=Sing	0	root	_	_
 6	از	از	ADP	PREP	_	7	case	_	_
 7	جنس	جنس	NOUN	N_IANM	Number=Sing	5	nmod	_	_
@@ -23590,7 +23590,7 @@
 7	شیخ	شیخ	PROPN	IDEN	Number=Sing	6	nmod	_	_
 8	محمدعلی	محمدعلی	PROPN	N_ANM	Number=Sing	7	flat:name	_	_
 9	قمی	قمی	PROPN	N_ANM	Number=Sing	7	flat:name	_	SpaceAfter=No
-10	،	،	PUNCT	PUNC	_	9	punct	_	_
+10	،	،	PUNCT	PUNC	_	7	punct	_	_
 11	احادیث	حدیث	NOUN	N_IANM	Number=Sing	14	obj	_	_
 12	را	را	ADP	POSTP	_	11	case	_	_
 13	فهرست‌بندی	فهرست‌بندی	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
@@ -23908,7 +23908,7 @@
 8	امام	امام	PROPN	IDEN	Number=Sing	6	flat:name	_	_
 9	خمینی	خمینی	PROPN	N_ANM	Number=Sing	6	flat:name	_	_
 10	(	(	PUNCT	PUNC	_	11	punct	_	SpaceAfter=No
-11	ره	ره	NOUN	N_IANM	Number=Sing	9	obl	_	SpaceAfter=No
+11	ره	ره	NOUN	N_IANM	Number=Sing	6	obl	_	SpaceAfter=No
 12	)	)	PUNCT	PUNC	_	11	punct	_	_
 13	را	را	ADP	POSTP	_	6	case	_	_
 14	با	با	ADP	PREP	_	15	case	_	_
@@ -24534,7 +24534,7 @@
 3	تصرف	تصرف	NOUN	N_IANM	Number=Sing	0	root	_	_
 4	مان	ما	PRON	PR_JOPER	Number=Plur|Person=1|PronType=Prs	3	nmod	_	_
 5	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	3	cop	_	SpaceAfter=No
-6	،	،	PUNCT	PUNC	_	3	punct	_	_
+6	،	،	PUNCT	PUNC	_	4	punct	_	_
 7	غمی	غم	NOUN	N_IANM	Number=Sing	8	obj	_	_
 8	نداشتیم	داشت#دار	VERB	V_ACT	Number=Plur|Person=1|Polarity=Neg|Tense=Past|Voice=Act	3	conj	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
@@ -24612,7 +24612,7 @@
 # text = هشام مطر نویسندهٔ لیبیایی متولد 1970 است.
 1	هشام	هشام	PROPN	N_ANM	Number=Sing	5	nsubj	_	_
 2	مطر	مطر	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
-3	نویسندهٔ	نویسنده	NOUN	N_ANM	Number=Sing	2	appos	_	_
+3	نویسندهٔ	نویسنده	NOUN	N_ANM	Number=Sing	1	appos	_	_
 4	لیبیایی	لیبیایی	ADJ	ADJ_AJP	_	3	amod	_	_
 5	متولد	متولد	ADJ	ADJ_AJP	_	0	root	_	_
 6	1970	1970	NOUN	N_IANM	Number=Sing	5	obl:arg	_	_
@@ -25466,7 +25466,7 @@
 3	ولایت	ولایت	PROPN	N_IANM	Number=Sing	9	nsubj	_	_
 4	لیدیه	لیدیه	PROPN	N_IANM	Number=Sing	3	flat:name	_	_
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
-6	مصر	مصر	PROPN	N_IANM	Number=Sing	4	conj	_	_
+6	مصر	مصر	PROPN	N_IANM	Number=Sing	3	conj	_	_
 7	از	از	ADP	PREP	_	9	case	_	_
 8	این	این	DET	PREM_DEMAJ	_	9	det	_	_
 9	جمله	جمله	NOUN	N_IANM	Number=Sing	0	root	_	_
@@ -28613,7 +28613,7 @@
 5	متحدهٔ	متحده	PROPN	ADJ_AJP	_	2	flat:name	_	_
 6	امریکا	امریکا	PROPN	N_IANM	Number=Sing	2	flat:name	_	_
 7	تنها	تنها	ADJ	ADJ_AJP	_	8	amod	_	_
-8	امپراتوری	امپراتوری	NOUN	N_IANM	Number=Sing	4	appos	_	_
+8	امپراتوری	امپراتوری	NOUN	N_IANM	Number=Sing	2	appos	_	_
 9	عصر	عصر	NOUN	N_IANM	Number=Sing	8	nmod	_	_
 10	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	9	nmod	_	_
 11	به	به	ADP	PREP	_	12	case	_	_
@@ -29113,7 +29113,7 @@
 8	کاشی‌های	کاشی	NOUN	N_IANM	Number=Plur	5	nmod	_	_
 9	کاخ	کاخ	PROPN	N_IANM	Number=Sing	8	nmod	_	_
 10	گلستان	گلستان	PROPN	N_IANM	Number=Sing	9	flat:name	_	SpaceAfter=No
-11	،	،	PUNCT	PUNC	_	10	punct	_	_
+11	،	،	PUNCT	PUNC	_	9	punct	_	_
 12	این	این	DET	PREM_DEMAJ	_	13	det	_	_
 13	کاخ	کاخ	NOUN	N_IANM	Number=Sing	9	appos	_	_
 14	قجری	قجری	ADJ	ADJ_AJP	_	13	amod	_	_
@@ -29248,7 +29248,7 @@
 4	انجمن	انجمن	PROPN	N_IANM	Number=Sing	1	nmod	_	_
 5	روزنامه‌نگاران	روزنامه‌نگار	PROPN	N_ANM	Number=Plur	4	flat:name	_	_
 6	مسلمان	مسلمان	PROPN	ADJ_AJP	_	4	flat:name	_	SpaceAfter=No
-7	:	:	PUNCT	PUNC	_	6	punct	_	_
+7	:	:	PUNCT	PUNC	_	4	punct	_	_
 8	برخی	برخی	DET	PREM_AMBAJ	_	9	det	_	_
 9	دوستان	دوست	NOUN	N_ANM	Number=Plur	15	nsubj	_	_
 10	در	در	ADP	PREP	_	12	case	_	_
@@ -29470,7 +29470,7 @@
 19	حزب	حزب	PROPN	N_IANM	Number=Sing	18	nmod	_	_
 20	خلق	خلق	PROPN	N_IANM	Number=Sing	19	flat:name	_	_
 21	و	و	CCONJ	CONJ	_	22	cc	_	_
-22	پرچم	پرچم	NOUN	N_IANM	Number=Sing	20	conj	_	_
+22	پرچم	پرچم	NOUN	N_IANM	Number=Sing	19	conj	_	_
 23	حضور	حضور	NOUN	N_IANM	Number=Sing	24	compound:lvc	_	_
 24	می‌یافت	یافت#یاب	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	3	acl	_	SpaceAfter=No
 25	.	.	PUNCT	PUNC	_	7	punct	_	_
