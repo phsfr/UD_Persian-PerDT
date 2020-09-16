@@ -1709,23 +1709,23 @@ class DependencyTree:
         if self.sen_id == 31604: 
             self.final_tags[22]='_'
         if self.sen_id == 31991:
-            self.final_tags[19]='_'
+            self.final_tags[18]='_'
         if self.sen_id == 46436:
-            self.final_tags[9]='_'
+            self.final_tags[8]='_'
         if self.sen_id == 47619:
-            self.final_tags[16]='_'
+            self.final_tags[15]='_'
         if self.sen_id == 37678:
-            self.final_tags[3]='_'
+            self.final_tags[2]='_'
         if self.sen_id == 38698:
-            self.final_tags[3]='_'
+            self.final_tags[2]='_'
         if self.sen_id == 39639:
-            self.final_tags[24]='_'
+            self.final_tags[23]='_'
         if self.sen_id == 43063:
-            self.final_tags[11]='_'
+            self.final_tags[10]='_'
         if self.sen_id == 46982:
-            self.final_tags[7]='_'
+            self.final_tags[6]='_'
         if self.sen_id == 44481:
-            self.final_tags[5]='_'  
+            self.final_tags[4]='_'  
         if self.sen_id == 51871:
             self.final_tags[2]='_'   
         if self.sen_id == 51891:
@@ -1747,7 +1747,11 @@ class DependencyTree:
         if self.sen_id == 48396:
             self.final_tags[5]='_' 
         if self.sen_id == 54741:
-            self.final_tags[0]='_'              
+            self.final_tags[0]='_'  
+        if self.sen_id == 55648:
+            self.final_tags[16]='_' 
+        if self.sen_id == 55648:
+            self.final_tags[23]='_'             
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
