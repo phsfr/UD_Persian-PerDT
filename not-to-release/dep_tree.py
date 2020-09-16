@@ -1568,9 +1568,11 @@ class DependencyTree:
             if self.labels[i] == "flat:name":
                 for lchild in self.children[i + 1]:
                     self.heads[lchild - 1] = self.heads[i]
-            if (self.words[i] == "و" or self.ftags[i] == "CONJ") and self.tags[i] == "PUNCT":
+            if self.ftags[i] == "CONJ" and self.labels[i] == "punct":
                 self.labels[i] = "cc"
                 self.tags[i] = "CCONJ"
+                if self.heads[i] - 1 > i:
+                    self.heads[i] = i
             if self.tags[i] == "PUNCT":
                 self.labels[i] = "punct"
             if self.tags[i] == "NOUN" and self.labels[i] == "advmod":
