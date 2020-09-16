@@ -1615,6 +1615,8 @@ class DependencyTree:
             self.heads[24] = 19
         if self.sen_id == 24095:
             self.heads[30] = 28
+        if self.sen_id == 25782:
+            self.heads[9] = 9
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
