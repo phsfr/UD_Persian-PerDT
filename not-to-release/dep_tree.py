@@ -1670,6 +1670,34 @@ class DependencyTree:
         if self.sen_id == 26182:
             self.heads[5] = 7
             self.rebuild_children()
+        if self.heads == 26240:
+            self.heads[8] = 10
+            self.heads[13] = 10
+            self.rebuild_children()
+        if self.sen_id == 26270:
+            self.heads[8] = 10
+            self.heads[15] = 15
+            self.heads[16] = 10
+            self.rebuild_children()
+        if self.sen_id == 26280:
+            self.heads[4] = 6
+            self.heads[8] = 6
+            self.rebuild_children()
+        if self.sen_id == 26385:
+            self.heads[12] = 14
+            self.heads[16] = 14
+            self.heads[17] = 14
+            self.rebuild_children()
+        if self.sen_id == 26403:
+            self.heads[8] = 12
+            self.heads[13] = 12
+            self.heads[14] = 12
+            self.rebuild_children()
+        if self.sen_id == 26782:
+            self.heads[164] = 15
+            self.rebuild_children()
+
+
 
 
     def manual_postprocess(self):
