@@ -1220,10 +1220,10 @@
 11	و	و	CCONJ	CONJ	_	12	cc	_	_
 12	رشید	رشید	PROPN	N_ANM	Number=Sing	4	conj	_	_
 13	هجری	هجری	PROPN	N_ANM	Number=Sing	12	flat:name	_	_
-14	و	و	CCONJ	CONJ	_	15	cc	_	SpaceAfter=No
+14	و	و	CCONJ	CONJ	_	4	cc	_	SpaceAfter=No
 15	.	.	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
-16	.	.	PUNCT	PUNC	_	15	punct	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	16	punct	_	_
+16	.	.	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
+17	.	.	PUNCT	PUNC	_	4	punct	_	_
 18	به	به	ADP	PREP	_	19	case	_	_
 19	ساحت	ساحت	NOUN	N_IANM	Number=Sing	22	nmod	_	_
 20	قدسی	قدسی	ADJ	ADJ_AJP	_	19	amod	_	_
@@ -11915,7 +11915,7 @@
 20	را	را	ADP	POSTP	_	18	case	_	_
 21	شکل	شکل	NOUN	N_IANM	Number=Sing	22	obj	_	_
 22	بخشم	بخشید#بخش	VERB	V_ACT	Number=Sing|Person=1|Voice=Act	16	ccomp	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	22	punct	_	_
+23	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s618
 # text = بادبادک شادی کودکانهٔ او را تقدس می‌کرد.
@@ -24689,7 +24689,7 @@
 20	سخت	سخت	ADJ	ADJ_AJP	_	17	amod	_	_
 21	قذافی	قذافی	NOUN	N_ANM	Number=Sing	17	nmod	_	_
 22	ظاهر	ظاهر	NOUN	N_IANM	Number=Sing	23	compound:lvc	_	_
-23	بشود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	24	nmod	_	_
+23	بشود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	34	nmod	_	_
 24	و	و	CCONJ	CONJ	_	34	cc	_	_
 25	ابتدایی‌ترین	ابتدایی	ADJ	ADJ_AJSUP	_	26	amod	_	_
 26	حقوق	حق	NOUN	N_IANM	Number=Plur	34	obj	_	_
@@ -27734,10 +27734,10 @@
 52	و	و	CCONJ	CONJ	_	53	cc	_	_
 53	رژ	رژ	NOUN	N_IANM	Number=Sing	50	conj	_	_
 54	لب	لب	NOUN	N_IANM	Number=Sing	53	nmod	_	_
-55	و	و	CCONJ	CONJ	_	56	cc	_	SpaceAfter=No
+55	و	و	CCONJ	CONJ	_	50	cc	_	SpaceAfter=No
 56	.	.	PUNCT	PUNC	_	50	punct	_	SpaceAfter=No
-57	.	.	PUNCT	PUNC	_	56	punct	_	SpaceAfter=No
-58	.	.	PUNCT	PUNC	_	57	punct	_	_
+57	.	.	PUNCT	PUNC	_	50	punct	_	SpaceAfter=No
+58	.	.	PUNCT	PUNC	_	50	punct	_	_
 59	بر	بر	ADP	PREP	_	60	case	_	_
 60	صورت	صورت	NOUN	N_IANM	Number=Sing	61	obl:arg	_	_
 61	دارند	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	34	conj	_	SpaceAfter=No

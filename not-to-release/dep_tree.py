@@ -1628,7 +1628,9 @@ class DependencyTree:
                 self.labels[i] = "cc"
             if self.labels[i] == "punct" and self.tags[i] != "CONJ":
                 self.tags[i] = "PUNCT"
-
+            if self.labels[i] in {"cc", "punct"} and len(self.children[i + 1]) > 0:
+                for pch in self.children[i + 1]:
+                    self.heads[pch - 1] = self.heads[i]
 
         if self.sen_id == 23558:
             self.heads[16] = 19
@@ -1725,57 +1727,57 @@ class DependencyTree:
             self.labels[15] = "ccomp"
             self.rebuild_children()
 
-        #fixing punctuations wih wrong spaceAfter=No attribute
+        # fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:
-            self.final_tags[21]='_'
+            self.final_tags[21] = '_'
         if self.sen_id == 26797:
-            self.final_tags[9]='_'
+            self.final_tags[9] = '_'
         if self.sen_id == 31604:
-            self.final_tags[22]='_'
+            self.final_tags[22] = '_'
         if self.sen_id == 31991:
-            self.final_tags[18]='_'
+            self.final_tags[18] = '_'
         if self.sen_id == 46436:
-            self.final_tags[8]='_'
+            self.final_tags[8] = '_'
         if self.sen_id == 47619:
-            self.final_tags[15]='_'
+            self.final_tags[15] = '_'
         if self.sen_id == 37678:
-            self.final_tags[2]='_'
+            self.final_tags[2] = '_'
         if self.sen_id == 38698:
-            self.final_tags[2]='_'
+            self.final_tags[2] = '_'
         if self.sen_id == 39639:
-            self.final_tags[23]='_'
+            self.final_tags[23] = '_'
         if self.sen_id == 43063:
-            self.final_tags[10]='_'
+            self.final_tags[10] = '_'
         if self.sen_id == 46982:
-            self.final_tags[6]='_'
+            self.final_tags[6] = '_'
         if self.sen_id == 44481:
-            self.final_tags[4]='_'
+            self.final_tags[4] = '_'
         if self.sen_id == 51871:
-            self.final_tags[2]='_'
+            self.final_tags[2] = '_'
         if self.sen_id == 51891:
-            self.final_tags[3]='_'
+            self.final_tags[3] = '_'
         if self.sen_id == 52496:
-            self.final_tags[10]='_'
+            self.final_tags[10] = '_'
         if self.sen_id == 53360:
-            self.final_tags[8]='_'
+            self.final_tags[8] = '_'
         if self.sen_id == 54078:
-            self.final_tags[13]='_'
+            self.final_tags[13] = '_'
         if self.sen_id == 54485:
-            self.final_tags[0]='_'
+            self.final_tags[0] = '_'
         if self.sen_id == 55574:
-            self.final_tags[11]='_'
+            self.final_tags[11] = '_'
         if self.sen_id == 57356:
-            self.final_tags[10]='_'
+            self.final_tags[10] = '_'
         if self.sen_id == 57548:
-            self.final_tags[14]='_'
+            self.final_tags[14] = '_'
         if self.sen_id == 48396:
-            self.final_tags[5]='_'
+            self.final_tags[5] = '_'
         if self.sen_id == 54741:
-            self.final_tags[0]='_'
+            self.final_tags[0] = '_'
         if self.sen_id == 55648:
-            self.final_tags[16]='_'
+            self.final_tags[16] = '_'
         if self.sen_id == 55648:
-            self.final_tags[23]='_'
+            self.final_tags[23] = '_'
 
     def manual_postprocess(self):
         if self.sen_id == 47788:

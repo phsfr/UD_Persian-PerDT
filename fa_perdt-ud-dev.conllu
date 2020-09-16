@@ -1155,7 +1155,7 @@
 7	دلخواه	دلخواه	ADJ	ADJ_AJP	_	6	amod	_	_
 8	خود	خود	PRON	PR_CREFX	_	7	obl:arg	_	_
 9	را	را	ADP	POSTP	_	6	case	_	_
-10	یافته	یافت#یاب	VERB	V_ACT	Number=Sing|Person=3|VerbForm=Part|Voice=Act	11	nmod	_	_
+10	یافته	یافت#یاب	VERB	V_ACT	Number=Sing|Person=3|VerbForm=Part|Voice=Act	18	nmod	_	_
 11	و	و	CCONJ	CONJ	_	18	cc	_	_
 12	عزت	عزت	NOUN	N_IANM	Number=Sing	18	obl:arg	_	_
 13	و	و	CCONJ	CONJ	_	14	cc	_	_
@@ -13027,9 +13027,9 @@
 11	معلومات	معلومات	NOUN	N_IANM	Number=Plur	0	root	_	_
 12	ذهنی	ذهنی	ADJ	ADJ_AJP	_	11	amod	_	_
 13	(	(	PUNCT	PUNC	_	12	punct	_	SpaceAfter=No
-14	یا	یا	CCONJ	CONJ	_	13	cc	_	_
-15	قبلی	قبلی	ADJ	ADJ_AJP	_	13	advmod	_	SpaceAfter=No
-16	)	)	PUNCT	PUNC	_	13	punct	_	_
+14	یا	یا	CCONJ	CONJ	_	12	cc	_	_
+15	قبلی	قبلی	ADJ	ADJ_AJP	_	12	advmod	_	SpaceAfter=No
+16	)	)	PUNCT	PUNC	_	12	punct	_	_
 17	و	و	CCONJ	CONJ	_	11	dep	_	_
 18	معلوماتی	معلومات	NOUN	N_IANM	Number=Plur	11	nsubj	_	_
 19	که	که	SCONJ	SUBR	_	24	mark	_	_
@@ -13042,9 +13042,9 @@
 26	معلومات	معلومات	NOUN	N_IANM	Number=Plur	11	xcomp	_	_
 27	حسی	حسی	ADJ	ADJ_AJP	_	26	amod	_	_
 28	(	(	PUNCT	PUNC	_	27	punct	_	SpaceAfter=No
-29	یا	یا	CCONJ	CONJ	_	28	cc	_	_
-30	بعدی	بعدی	ADJ	ADJ_AJP	_	28	advmod	_	SpaceAfter=No
-31	)	)	PUNCT	PUNC	_	28	punct	_	_
+29	یا	یا	CCONJ	CONJ	_	27	cc	_	_
+30	بعدی	بعدی	ADJ	ADJ_AJP	_	27	advmod	_	SpaceAfter=No
+31	)	)	PUNCT	PUNC	_	27	punct	_	_
 32	هستند	#هست	AUX	AUX	Number=Plur|Person=3	11	cop	_	SpaceAfter=No
 33	.	.	PUNCT	PUNC	_	11	punct	_	_
 
@@ -26346,7 +26346,7 @@
 3	(	(	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
 4	ص	ص	NOUN	N_IANM	Number=Sing	1	obl	_	SpaceAfter=No
 5	)	)	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
-6	،	،	PUNCT	PUNC	_	5	punct	_	_
+6	،	،	PUNCT	PUNC	_	4	punct	_	_
 7	حرمت	حرمت	NOUN	N_IANM	Number=Sing	16	obj	_	_
 8	یک	یک	NUM	PRENUM	_	9	nummod	_	_
 9	انسان	انسان	NOUN	N_ANM	Number=Sing	7	nmod	_	_
@@ -26857,7 +26857,7 @@
 17	مورگان	مورگان	PROPN	N_ANM	Number=Sing	16	flat:name	_	_
 18	شوستر	شوستر	PROPN	N_ANM	Number=Sing	16	flat:name	_	SpaceAfter=No
 19	»	»	PUNCT	PUNC	_	16	punct	_	SpaceAfter=No
-20	،	،	PUNCT	PUNC	_	19	punct	_	_
+20	،	،	PUNCT	PUNC	_	16	punct	_	_
 21	نخستین	نخستین	ADJ	PRENUM	_	22	amod	_	_
 22	رایزن	رایزن	NOUN	N_ANM	Number=Sing	16	appos	_	_
 23	اقتصادی	اقتصادی	ADJ	ADJ_AJP	_	22	amod	_	_
