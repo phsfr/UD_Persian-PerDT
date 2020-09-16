@@ -41,8 +41,8 @@ os.system("python3 -u generate_dadegan_w_univ_tokenization.py")
 print("dep_tree.py")
 os.system("python3 -u dep_tree.py")
 
-print("merge_stanza.py")
-os.system("python3 -u merge_stanza.py")
+#print("merge_stanza.py")
+#os.system("python3 -u merge_stanza.py")
 
 print("converting_feats.py")
 os.system("python3 -u converting_feats.py")

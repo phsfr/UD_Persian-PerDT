@@ -212,15 +212,15 @@ class DependencyTree:
     def get_nonprojective_arcs(heads):
         non_projectives = set()
         for i in range(len(heads)):
-            if i in non_projectives:
-                continue
             dep1, head1 = i + 1, heads[i]
             for j in range(len(heads)):
                 if i == j: continue
                 dep2, head2 = j + 1, heads[j]
                 if DependencyTree.is_nonprojective_arc(dep1, head1, dep2, head2):
-                    non_projectives.add(i + 1)
-                    non_projectives.add(j + 1)
+                    non_projectives.add(dep1)
+                    non_projectives.add(dep2)
+                    non_projectives.add(head1)
+                    non_projectives.add(head2)
         return non_projectives
 
     @staticmethod
@@ -1553,6 +1553,22 @@ class DependencyTree:
         self.final_refinement()
         self.manual_postprocess()
 
+    def punc_nonproj_postprocess(self):
+        # HACKY WAY to fix non-projective punctuation problems (#TODO)
+        non_projs = self.get_nonprojective_arcs(self.heads)
+
+        for i in range(len(self.words)):
+            if self.labels[i] == "punct":
+                punc_dep = i + 1
+                punc_head = self.heads[i]
+
+                if punc_head in non_projs:
+                    if punc_dep < punc_head:
+                        self.heads[i] = i + 2
+                    else:
+                        self.heads[i] = i
+                    self.rebuild_children()
+
     def ud_validate_fix(self):
         # Fixes errors by validator
         self.rebuild_children()
@@ -1612,6 +1628,8 @@ class DependencyTree:
                 self.labels[i] = "cc"
             if self.labels[i] == "punct" and self.tags[i] != "CONJ":
                 self.tags[i] = "PUNCT"
+
+
         if self.sen_id == 23558:
             self.heads[16] = 19
             self.rebuild_children()
@@ -1712,7 +1730,7 @@ class DependencyTree:
             self.final_tags[21]='_'
         if self.sen_id == 26797:
             self.final_tags[9]='_'
-        if self.sen_id == 31604: 
+        if self.sen_id == 31604:
             self.final_tags[22]='_'
         if self.sen_id == 31991:
             self.final_tags[18]='_'
@@ -1731,33 +1749,33 @@ class DependencyTree:
         if self.sen_id == 46982:
             self.final_tags[6]='_'
         if self.sen_id == 44481:
-            self.final_tags[4]='_'  
+            self.final_tags[4]='_'
         if self.sen_id == 51871:
-            self.final_tags[2]='_'   
+            self.final_tags[2]='_'
         if self.sen_id == 51891:
-            self.final_tags[3]='_'    
+            self.final_tags[3]='_'
         if self.sen_id == 52496:
-            self.final_tags[10]='_'    
+            self.final_tags[10]='_'
         if self.sen_id == 53360:
-            self.final_tags[8]='_'   
+            self.final_tags[8]='_'
         if self.sen_id == 54078:
-            self.final_tags[13]='_'   
+            self.final_tags[13]='_'
         if self.sen_id == 54485:
-            self.final_tags[0]='_' 
+            self.final_tags[0]='_'
         if self.sen_id == 55574:
-            self.final_tags[11]='_' 
+            self.final_tags[11]='_'
         if self.sen_id == 57356:
-            self.final_tags[10]='_'    
+            self.final_tags[10]='_'
         if self.sen_id == 57548:
-            self.final_tags[14]='_'  
+            self.final_tags[14]='_'
         if self.sen_id == 48396:
-            self.final_tags[5]='_' 
+            self.final_tags[5]='_'
         if self.sen_id == 54741:
-            self.final_tags[0]='_'  
+            self.final_tags[0]='_'
         if self.sen_id == 55648:
-            self.final_tags[16]='_' 
+            self.final_tags[16]='_'
         if self.sen_id == 55648:
-            self.final_tags[23]='_'             
+            self.final_tags[23]='_'
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
@@ -1800,9 +1818,10 @@ class DependencyTree:
             self.tags[6] = "PROPN"
             self.heads[6] = 6
             self.labels[6] = "flat:name"
-            self.heads[7] = 5   
+            self.heads[7] = 5
 
         self.ud_validate_fix()
+        self.punc_nonproj_postprocess()
 
     @staticmethod
     def fix_mwe_entries(tree_list):

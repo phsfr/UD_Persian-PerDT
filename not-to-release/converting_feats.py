@@ -5,9 +5,9 @@
 from dep_tree import DependencyTree
 
 if __name__ == '__main__':
-    input_files = ['UD_Dadegan_feat/fa_dadegan-ud-train.conllu',
-                   'UD_Dadegan_feat/fa_dadegan-ud-dev.conllu',
-                   'UD_Dadegan_feat/fa_dadegan-ud-test.conllu']
+    input_files = ['Universal_Dadegan_with_DepRels/train.conllu',
+                   'Universal_Dadegan_with_DepRels/dev.conllu',
+                   'Universal_Dadegan_with_DepRels/test.conllu']
     output_files = ['../fa_perdt-ud-train.conllu',
                     '../fa_perdt-ud-dev.conllu',
                     '../fa_perdt-ud-test.conllu']

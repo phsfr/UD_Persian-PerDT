@@ -128,7 +128,7 @@
 17	تاخت	تاخت	NOUN	N_IANM	Number=Sing	18	compound:lvc	_	_
 18	زده	زد#زن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	3	acl	_	_
 19	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	18	aux	_	SpaceAfter=No
-20	؟	؟	PUNCT	PUNC	_	5	punct	_	_
+20	؟	؟	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s8
 # text = هر جسمی با دمای بالاتر از صفر مطلق انرژی تابش خواهد کرد.
@@ -531,7 +531,7 @@
 38	ایمن‌سازی	ایمن‌سازی	NOUN	N_IANM	Number=Sing	39	compound:lvc	_	_
 39	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	18	acl	_	_
 40	بودند	بود#باش	AUX	AUX	Number=Plur|Person=3|Tense=Past	39	aux	_	SpaceAfter=No
-41	.	.	PUNCT	PUNC	_	22	punct	_	_
+41	.	.	PUNCT	PUNC	_	40	punct	_	_
 
 # sent_id = test-s27
 # text = این هلیکوپترها به مدت 45 دقیقه آسمان پایتخت را در مناطق آلوده‌تر آب‌پاشی خواهند کرد.
@@ -749,7 +749,7 @@
 21	انجمن	انجمن	PROPN	N_IANM	Number=Sing	19	obl:arg	_	_
 22	حجتیه	حجتیه	PROPN	N_IANM	Number=Sing	21	flat:name	_	_
 23	است	#است	AUX	AUX	Number=Sing|Person=3	19	cop	_	SpaceAfter=No
-24	.	.	PUNCT	PUNC	_	19	punct	_	_
+24	.	.	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s35
 # text = دین پایه‌های زیباشناسی مردم را نیز پی‌ریزی می‌کند.
@@ -936,7 +936,7 @@
 15	بی‌وفایی	بی‌وفایی	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 16	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	aux	_	_
 17	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	8	acl	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	7	punct	_	_
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s44
 # text = من در این قضیه بی‌تجربگی کردم.
@@ -1459,7 +1459,7 @@
 9	توکل	توکل	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 10	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	3	acl	_	_
 11	باشند	بود#باش	AUX	AUX	Mood=Sub|Number=Plur|Person=3|Tense=Pres	10	aux	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	_	5	punct	_	_
+12	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s74
 # text = افراد به جای این که سعی کنند احساسات خود را به دیگری تحمیل کنند، تلاش می‌دارند تا تفاوت‌های یکدیگر را بشناسند.
@@ -1730,7 +1730,7 @@
 20	پیشی	پیشی	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
 21	خواهید	خواست#خواه	AUX	AUX	Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	22	aux	_	_
 22	گرفت	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	13	conj	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	5	punct	_	_
+23	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s90
 # text = نجیب محفوظ نویسندهٔ معروف مصری تاکنون بیش از سی کتاب تألیف کرده است.
@@ -1783,7 +1783,7 @@
 30	زمان	زمان	NOUN	N_IANM	Number=Sing	29	nmod	_	_
 31	تغییر	تغییر	NOUN	N_IANM	Number=Sing	32	compound:lvc	_	_
 32	دهد	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	19	acl	_	SpaceAfter=No
-33	.	.	PUNCT	PUNC	_	17	punct	_	_
+33	.	.	PUNCT	PUNC	_	32	punct	_	_
 
 # sent_id = test-s92
 # text = روزنامه‌های دیجیتالی بر روند اطلاع‌رسانی تأثیر خواهند گذاشت.
@@ -1888,7 +1888,7 @@
 13	تبسم	تبسم	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	5	acl	_	_
 15	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	14	aux	_	SpaceAfter=No
-16	.	.	PUNCT	PUNC	_	2	punct	_	_
+16	.	.	PUNCT	PUNC	_	15	punct	_	_
 
 # sent_id = test-s99
 # text = هر آنچه جامد به نظر می‌رسید، تبخیر شده بود.
@@ -2804,7 +2804,7 @@
 37	نثار	نثار	NOUN	N_IANM	Number=Sing	38	compound:lvc	_	_
 38	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	2	conj	_	_
 39	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	38	aux	_	SpaceAfter=No
-40	.	.	PUNCT	PUNC	_	38	punct	_	_
+40	.	.	PUNCT	PUNC	_	39	punct	_	_
 
 # sent_id = test-s154
 # text = وزیر دفاع فرانسه از افغانستان دیدن می‌کند.
@@ -2994,7 +2994,7 @@
 30	سی	سی	NUM	PRENUM	_	31	nummod	_	_
 31	متر	متر	NOUN	N_IANM	Number=Sing	32	obl:arg	_	_
 32	می‌رسد	رسید#رس	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	10	acl	_	SpaceAfter=No
-33	.	.	PUNCT	PUNC	_	24	punct	_	_
+33	.	.	PUNCT	PUNC	_	32	punct	_	_
 
 # sent_id = test-s164
 # text = ملامت و سرزنش باعث می‌شود شخص ملامت‌شونده نسبت به ملامت‌کننده کینه به دل بگیرد.
@@ -3012,7 +3012,7 @@
 12	به	به	ADP	PREP	_	13	case	_	_
 13	دل	دل	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	بگیرد	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	4	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	5	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s165
 # text = قزوین از قرن سوم هجری به بعد از مراکز مهم علمی به حساب آمد.
@@ -4037,7 +4037,7 @@
 24	رحم	رحم	NOUN	N_IANM	Number=Sing	25	compound:lvc	_	_
 25	آورده	آورد#آور	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	19	acl	_	_
 26	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	25	aux	_	SpaceAfter=No
-27	،	،	PUNCT	PUNC	_	25	punct	_	_
+27	،	،	PUNCT	PUNC	_	26	punct	_	_
 28	به	به	ADP	PREP	_	29	case	_	_
 29	دست	دست	NOUN	N_IANM	Number=Sing	30	compound:lvc	_	_
 30	آورد	آورد#آور	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	16	conj	_	SpaceAfter=No
@@ -4104,7 +4104,7 @@
 14	گمان	گمان	NOUN	N_IANM	Number=Sing	15	compound:lvc	_	_
 15	رفته	رفت#رو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	11	ccomp	_	_
 16	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	15	aux	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	12	punct	_	_
+17	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s221
 # text = بعضی از مردم چه عابر باشند، چه نشسته و چه سواره، همیشه منتظرند تا دیگران به آنها سلام بدهند.
@@ -4149,7 +4149,7 @@
 12	خوشگل‌تر	خوشگل	ADJ	ADJ_AJCM	_	10	conj	_	_
 13	شده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	1	acl	_	_
 14	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	13	aux	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	5	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s223
 # text = کدام سلسلهٔ دیگر را در دنیا سراغ دارید که پانصد سال سلطنت کرده باشند؟
@@ -4167,7 +4167,7 @@
 12	سلطنت	سلطنت	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
 13	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	2	acl	_	_
 14	باشند	بود#باش	AUX	AUX	Mood=Sub|Number=Plur|Person=3|Tense=Pres	13	aux	_	SpaceAfter=No
-15	؟	؟	PUNCT	PUNC	_	8	punct	_	_
+15	؟	؟	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s224
 # text = احتمال دارد آنها آنقدر در انتقاد سماجت کنند که حوصلهٔ افراد سر برود و همه چیز نیست و نابود شود.
@@ -4191,7 +4191,7 @@
 18	و	و	CCONJ	CONJ	_	19	cc	_	_
 19	نابود	نابود	NOUN	N_IANM	Number=Sing	17	conj	_	_
 20	شود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	13	conj	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	2	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s225
 # text = رافق تقی، نویسنده و پزشک آذربایجانی را چند روز پیش با چاقو در باکو سلاخی کردند.
@@ -4358,7 +4358,7 @@
 12	داد	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
 13	که	که	SCONJ	SUBR	_	14	mark	_	_
 14	بنشینند	نشست#نشین	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	11	acl	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	12	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s233
 # text = من فردا صبح حرکت خواهم کرد.
@@ -4627,7 +4627,7 @@
 12	را	را	ADP	POSTP	_	11	case	_	_
 13	تحقق	تحقق	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	بدهد	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	6	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	4	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s249
 # text = نقاشی کودکتان را تحلیل بکنید.
@@ -4950,7 +4950,7 @@
 18	ترمیم	ترمیم	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	10	conj	_	_
 20	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	19	aux	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	19	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s269
 # text = چرا باید شاهنامه‌خوانی را میان کودکان و نوجوانان ترویج کرد؟
@@ -4995,7 +4995,7 @@
 15	انتشارات	انتشار	NOUN	N_IANM	Number=Plur	13	conj	_	_
 16	ترقی	ترقی	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 17	بدهند	داد#ده	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	2	acl	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	1	punct	_	_
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s272
 # text = ایشان امر کرده است تسبیح بکنید.
@@ -5113,7 +5113,7 @@
 14	را	را	ADP	POSTP	_	8	case	_	_
 15	تضمین	تضمین	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
 16	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	2	acl	_	SpaceAfter=No
-17	؟	؟	PUNCT	PUNC	_	5	punct	_	_
+17	؟	؟	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s280
 # text = حزب مخالف الجزایر به رغم ممنوعیت، روز شنبه تظاهرات خواهد کرد.
@@ -5300,7 +5300,7 @@
 33	فرسخ‌ها	فرسخ	NOUN	N_IANM	Number=Plur	25	ccomp	_	_
 34	فاصله	فاصله	NOUN	N_IANM	Number=Sing	33	nmod	_	_
 35	باشد	بود#باش	AUX	AUX	Number=Sing|Person=3	33	cop	_	SpaceAfter=No
-36	.	.	PUNCT	PUNC	_	25	punct	_	_
+36	.	.	PUNCT	PUNC	_	35	punct	_	_
 
 # sent_id = test-s288
 # text = ناظران روس حریم هوایی آمریکا را بازرسی می‌کنند.
@@ -5461,7 +5461,7 @@
 24	با	با	ADP	PREP	_	25	case	_	_
 25	فرانسویان	فرانسوی	NOUN	N_ANM	Number=Plur	26	obl:arg	_	_
 26	جنگید	جنگید#جنگ	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	22	conj	_	SpaceAfter=No
-27	.	.	PUNCT	PUNC	_	15	punct	_	_
+27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s296
 # text = من به عنوان تنها ولی دم، بدون هیچ قید و شرطی رضایت داده‌ام و دیه هم نمی‌خواهم.
@@ -5624,7 +5624,7 @@
 26	به	به	ADP	PREP	_	27	case	_	_
 27	پیش	پیش	NOUN	N_IANM	Number=Sing	28	obl:arg	_	_
 28	می‌برد	برد#بر	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	19	conj	_	SpaceAfter=No
-29	.	.	PUNCT	PUNC	_	6	punct	_	_
+29	.	.	PUNCT	PUNC	_	28	punct	_	_
 
 # sent_id = test-s304
 # text = آیا به عنوان یک شیعه تا به حال خطبهٔ غدیر را روخوانی کرده‌اید؟
@@ -5913,7 +5913,7 @@
 14	ستد	ستد	NOUN	N_IANM	Number=Sing	12	conj	_	_
 15	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	3	csubj	_	_
 16	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	15	aux	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	3	punct	_	_
+17	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s318
 # text = هر کسی از مذاکره با آمریکا دم بزند، از آرمان‌های امام عدول کرده است.
@@ -6231,7 +6231,7 @@
 8	دیگران	دیگری	NOUN	N_ANM	Number=Plur	10	obl:arg	_	_
 9	تکبر	تکبر	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 10	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	4	ccomp	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	_	5	punct	_	_
+11	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s333
 # text = دیوان شعرم را، چنین زیباترین تقویم خواهم کرد.
@@ -6466,7 +6466,7 @@
 16	که	که	SCONJ	SUBR	_	18	mark	_	_
 17	تلافی	تلافی	NOUN	N_IANM	Number=Sing	18	compound:lvc	_	_
 18	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	14	acl	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	_	5	punct	_	_
+19	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = test-s346
 # text = سرماخوردگی و آنفلوانزا مهارت رانندگی را کاهش می‌دهد.
@@ -6519,7 +6519,7 @@
 21	و	و	CCONJ	CONJ	_	22	cc	_	_
 22	روانی	روانی	ADJ	ADJ_AJP	_	20	conj	_	_
 23	است	#است	AUX	AUX	Number=Sing|Person=3	17	cop	_	SpaceAfter=No
-24	.	.	PUNCT	PUNC	_	12	punct	_	_
+24	.	.	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s349
 # text = زنان چابهاری نقاب‌هایی که خودشان چون تابلویی رؤیایی از رنگ‌های زیبا سوزن‌دوزی کرده‌اند را به صورت می‌زنند.
@@ -6772,7 +6772,7 @@
 19	را	را	ADP	POSTP	_	13	case	_	_
 20	توصیف	توصیف	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
 21	می‌کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	8	acl	_	SpaceAfter=No
-22	.	.	PUNCT	PUNC	_	11	punct	_	_
+22	.	.	PUNCT	PUNC	_	21	punct	_	_
 
 # sent_id = test-s363
 # text = گمان می‌رود که امشب دوباره توفان خواهد شد.
@@ -6784,7 +6784,7 @@
 6	توفان	توفان	NOUN	N_IANM	Number=Sing	8	xcomp	_	_
 7	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux	_	_
 8	شد	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	1	acl	_	SpaceAfter=No
-9	.	.	PUNCT	PUNC	_	2	punct	_	_
+9	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = test-s364
 # text = چندی است که رفتار فلان با من بسیار توفیر کرده است.
@@ -6799,7 +6799,7 @@
 9	توفیر	توفیر	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 10	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	1	acl	_	_
 11	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	10	aux	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	_	2	punct	_	_
+12	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s365
 # text = سامسونگ به ایران توهین کرد.
@@ -7110,7 +7110,7 @@
 32	ایشان	ایشان	PRON	PR_SEPER	Number=Plur|Person=3	33	obl:arg	_	_
 33	جدا	جدا	ADJ	ADJ_AJP	_	34	xcomp	_	_
 34	شود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	10	acl	_	SpaceAfter=No
-35	.	.	PUNCT	PUNC	_	12	punct	_	_
+35	.	.	PUNCT	PUNC	_	34	punct	_	_
 
 # sent_id = test-s382
 # text = از فضای ایران و کردستان دوری گرفته‌ام.
@@ -7181,7 +7181,7 @@
 26	نامعمول	نامعمول	ADJ	ADJ_AJP	_	25	amod	_	_
 27	شده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	21	acl	_	_
 28	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	27	aux	_	SpaceAfter=No
-29	.	.	PUNCT	PUNC	_	22	punct	_	_
+29	.	.	PUNCT	PUNC	_	28	punct	_	_
 
 # sent_id = test-s385
 # text = من دوازده سال در نظام آموزشی درس خواندم و متن دوازده هزار کتاب درسی را دوره کردم.
@@ -7223,7 +7223,7 @@
 14	رد	رد	NOUN	N_IANM	Number=Sing	15	compound:lvc	_	_
 15	زده	زد#زن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	10	acl	_	_
 16	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	15	aux	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	3	punct	_	_
+17	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s387
 # text = در صورت ادامهٔ بمباران و موشک‌باران شهرهای ایران، ما نیز شهرهای عراق را در هم خواهیم کوبید.
@@ -8438,7 +8438,7 @@
 28	را	را	ADP	POSTP	_	27	case	_	_
 29	قبض	قبض	NOUN	N_IANM	Number=Sing	30	compound:lvc	_	_
 30	کرده‌اند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	19	acl	_	SpaceAfter=No
-31	.	.	PUNCT	PUNC	_	17	punct	_	_
+31	.	.	PUNCT	PUNC	_	30	punct	_	_
 
 # sent_id = test-s453
 # text = ایشان از این زنان و مردانی که علیه سلطه ملایان و حاکمیت ولایت فقیه در سخت‌ترین شرایط، چه در داخل کشور و چه در خارج، به پا خاسته‌اند نیز قدرشناسی خواهد کرد.
@@ -8571,7 +8571,7 @@
 18	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	17	nmod	_	_
 19	قانون‌گذاری	قانون‌گذاری	NOUN	N_IANM	_	20	compound:lvc	_	_
 20	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	9	acl	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	14	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s458
 # text = آقای دکتر لطف می‌کنید گوشیتان را به من قرض بدهید؟
@@ -8980,7 +8980,7 @@
 29	کم‌لطفی	کم‌لطفی	NOUN	N_IANM	Number=Sing	31	compound:lvc	_	_
 30	خواهند	خواست#خواه	AUX	AUX	Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	31	aux	_	_
 31	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	19	acl	_	SpaceAfter=No
-32	.	.	PUNCT	PUNC	_	20	punct	_	_
+32	.	.	PUNCT	PUNC	_	31	punct	_	_
 
 # sent_id = test-s479
 # text = پشت دیوار کمین گرفتم.
@@ -9648,7 +9648,7 @@
 10	آن	آن	PRON	PR_DEMON	Number=Sing	11	nmod	_	_
 11	آگاهی	آگاهی	NOUN	N_IANM	Number=Sing	12	obj	_	_
 12	نداریم	داشت#دار	VERB	V_ACT	Number=Plur|Person=1|Polarity=Neg|Tense=Pres|Voice=Act	2	acl	_	SpaceAfter=No
-13	.	.	PUNCT	PUNC	_	6	punct	_	_
+13	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s512
 # text = هالی تامسون، در حالی که به یکی از درس‌های خسته‌کننده در کلاس گوش می‌کرد خمیازه کشید اما دیگر نتوانست دهانش را ببندد.
@@ -9852,7 +9852,7 @@
 12	دوستان	دوست	NOUN	N_ANM	Number=Plur	11	obl	_	_
 13	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	12	nmod	_	_
 14	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	9	cop	_	SpaceAfter=No
-15	،	،	PUNCT	PUNC	_	9	punct	_	_
+15	،	،	PUNCT	PUNC	_	14	punct	_	_
 16	آن	آن	PRON	PR_DEMON	Number=Sing	19	obj	_	_
 17	را	را	ADP	POSTP	_	16	case	_	_
 18	درز	درز	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
@@ -10269,7 +10269,7 @@
 22	که	که	SCONJ	SUBR	_	24	mark	_	_
 23	میخکوب	میخکوب	ADJ	ADJ_AJP	_	24	xcomp	_	_
 24	می‌شدی	شد#شو	VERB	V_ACT	Number=Sing|Person=2|Voice=Act	19	acl	_	SpaceAfter=No
-25	.	.	PUNCT	PUNC	_	21	punct	_	_
+25	.	.	PUNCT	PUNC	_	24	punct	_	_
 
 # sent_id = test-s539
 # text = دنیا ممکن است به او ریشخند بزند اما او اهمیتی نمی‌دهد.
@@ -10666,7 +10666,7 @@
 14	گوش	گوش	NOUN	N_IANM	Number=Sing	15	compound:lvc	_	_
 15	می‌دادند	داد#ده	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	8	conj	_	_
 16	و	و	CCONJ	CONJ	_	26	cc	_	_
-17	بعضی‌ها	بعضی	NOUN	N_ANM	Number=Plur	18	dislocated	_	_
+17	بعضی‌ها	بعضی	NOUN	N_ANM	Number=Plur	26	nsubj	_	_
 18-19	نگاهشان	_	_	_	_	_	_	_	_
 18	نگاه	نگاه	NOUN	N_IANM	Number=Sing	26	nsubj	_	_
 19	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	18	nmod	_	_
@@ -11242,7 +11242,7 @@
 23	که	که	SCONJ	SUBR	_	25	mark	_	_
 24	چه	چه	PRON	PR_INTG	_	25	obj	_	_
 25	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	21	ccomp	_	SpaceAfter=No
-26	؟	؟	PUNCT	PUNC	_	22	punct	_	_
+26	؟	؟	PUNCT	PUNC	_	25	punct	_	_
 
 # sent_id = test-s589
 # text = در این نزدیکی‌ها، مردی افغان کفاشی می‌کند.
@@ -11298,7 +11298,7 @@
 17	من	من	PRON	PR_SEPER	Number=Sing|Person=1	18	nmod	_	_
 18	بهره	بهره	NOUN	N_IANM	Number=Sing	19	obj	_	_
 19	ببری	برد#بر	VERB	V_ACT	Number=Sing|Person=2|Voice=Act	5	conj	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	12	punct	_	_
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s592
 # text = کتری سیاه باز هم قل‌قل کرد و قلب ساعت شماته‌دار تندتند زد.
@@ -11505,7 +11505,7 @@
 17	و	و	CCONJ	CONJ	_	19	cc	_	_
 18	زراعت	زراعت	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	کردند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	16	conj	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	2	punct	_	_
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s602
 # text = شعر، همچون ملیلهٔ آبی باید که پیراهن دنیا را حاشیه‌دوزی کند.
@@ -11521,7 +11521,7 @@
 10	را	را	ADP	POSTP	_	8	case	_	_
 11	حاشیه‌دوزی	حاشیه‌دوزی	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
 12	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	6	ccomp	_	SpaceAfter=No
-13	.	.	PUNCT	PUNC	_	6	punct	_	_
+13	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s603
 # text = عکسی که حسین پرتوی، عکاس انقلاب و جنگ از بیعت امام (ره) با همافران گرفت بلوغ زودرس انقلاب را حاصل داشت.
@@ -11697,7 +11697,7 @@
 24	ریشه‌یابی	ریشه‌یابی	NOUN	N_IANM	Number=Sing	25	compound:lvc	_	_
 25	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	11	conj	_	_
 26	بودم	بود#باش	AUX	AUX	Number=Sing|Person=1|Tense=Past	25	aux	_	SpaceAfter=No
-27	.	.	PUNCT	PUNC	_	6	punct	_	_
+27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s609
 # text = اگر شما با نمودار گانت آشنا نیستید لازم به ذکر است که این نمودار یک ابزار مدیریتی است که بر اساس زمان پروژه‌های شما را زمان‌بندی می‌کند.
@@ -11904,7 +11904,7 @@
 9	شکل	شکل	NOUN	N_IANM	Number=Sing	10	obj	_	_
 10	بخشد	بخشید#بخش	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	4	ccomp	_	_
 11	و	و	CCONJ	CONJ	_	16	cc	_	_
-12	«	«	PUNCT	PUNC	_	14	punct	_	SpaceAfter=No
+12	«	«	PUNCT	PUNC	_	13	punct	_	SpaceAfter=No
 13	من	من	PRON	PR_SEPER	Number=Sing|Person=1	16	nsubj	_	SpaceAfter=No
 14	»	»	PUNCT	PUNC	_	13	punct	_	_
 15	تقلا	تقلا	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
@@ -11915,7 +11915,7 @@
 20	را	را	ADP	POSTP	_	18	case	_	_
 21	شکل	شکل	NOUN	N_IANM	Number=Sing	22	obj	_	_
 22	بخشم	بخشید#بخش	VERB	V_ACT	Number=Sing|Person=1|Voice=Act	16	ccomp	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	16	punct	_	_
+23	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s618
 # text = بادبادک شادی کودکانهٔ او را تقدس می‌کرد.
@@ -12066,7 +12066,7 @@
 35	دانش	دانش	NOUN	N_IANM	Number=Sing	37	obl:arg	_	_
 36	خود	خود	PRON	PR_CREFX	_	35	nmod	_	_
 37	بیفزاید	افزود#افزا	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	32	conj	_	SpaceAfter=No
-38	.	.	PUNCT	PUNC	_	26	punct	_	_
+38	.	.	PUNCT	PUNC	_	37	punct	_	_
 
 # sent_id = test-s625
 # text = حوزه‌های امنیتی فرامنطقه‌ای و دامنهٔ نفوذ قدرت‌های بزرگ در کشورهای اروپای مرکزی را ارزیابی کرده و واقعیت‌های امر را به طور شفاف تبیین ساخته بود.
@@ -12293,11 +12293,11 @@
 20	عادت	عادت	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
 21	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	1	acl	_	_
 22	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	21	aux	_	SpaceAfter=No
-23	،	،	PUNCT	PUNC	_	21	punct	_	_
+23	،	،	PUNCT	PUNC	_	22	punct	_	_
 24	ترک	ترک	NOUN	N_IANM	Number=Sing	25	compound:lvc	_	_
 25	داده	داد#ده	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 26	شد	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Past	25	aux:pass	_	SpaceAfter=No
-27	.	.	PUNCT	PUNC	_	25	punct	_	_
+27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s635
 # text = ابتدا برای هر پره پیچ و مهره‌های دستگاه را باز کرده و پرهٔ مسطح را جایگذاری می‌کنیم.
@@ -12715,7 +12715,7 @@
 5	و	و	CCONJ	CONJ	_	6	cc	_	_
 6	تبهکار	تبهکار	NOUN	N_IANM	Number=Sing	4	conj	_	_
 7	نمی‌باشد	بود#باش	AUX	AUX	Number=Sing|Person=3|Polarity=Neg	4	cop	_	SpaceAfter=No
-8	،	،	PUNCT	PUNC	_	4	punct	_	_
+8	،	،	PUNCT	PUNC	_	7	punct	_	_
 9	بلکه	بلکه	ADV	ADV_SADV	_	12	advmod	_	_
 10	فطرت	فطرت	NOUN	N_IANM	Number=Sing	12	nsubj	_	_
 11	او	او	PRON	PR_SEPER	Number=Sing|Person=3	10	nmod	_	_
@@ -12744,7 +12744,7 @@
 33	را	را	ADP	POSTP	_	29	case	_	_
 34	تکوین	تکوین	NOUN	N_IANM	Number=Sing	35	compound:lvc	_	_
 35	می‌دهد	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	21	acl	_	SpaceAfter=No
-36	.	.	PUNCT	PUNC	_	22	punct	_	_
+36	.	.	PUNCT	PUNC	_	35	punct	_	_
 
 # sent_id = test-s661
 # text = هر زمان موانع و مشکلات حوزهٔ فرهنگ مرتفع شود و سیر صعودی یابد دیگر حوزه‌ها نیز به تبع آن رشد و ترقی خواهند داشت.
@@ -12908,7 +12908,7 @@
 5-7	بروزم،	_	_	_	_	_	_	_	_
 5	بروز	بروز	ADJ	ADJ_AJP	_	0	root	_	_
 6	م	#هست	AUX	AUX	Number=Sing|Person=1	5	cop	_	_
-7	،	،	PUNCT	PUNC	_	5	punct	_	_
+7	،	،	PUNCT	PUNC	_	6	punct	_	_
 8	لطفاً	لطفاً	ADV	ADV_SADV	_	10	advmod	_	_
 9	تشریف‌فرمایی	تشریف‌فرمایی	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 10	کنید	کرد#کن	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	5	conj	_	SpaceAfter=No
@@ -12950,7 +12950,7 @@
 31	بشری	بشری	ADJ	ADJ_AJP	_	30	amod	_	_
 32	تسلیم	تسلیم	NOUN	N_IANM	Number=Sing	33	compound:lvc	_	_
 33	داشته‌اند	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	9	acl	_	SpaceAfter=No
-34	.	.	PUNCT	PUNC	_	5	punct	_	_
+34	.	.	PUNCT	PUNC	_	33	punct	_	_
 
 # sent_id = test-s669
 # text = آیا علمای شیعه بر تحریف قرآن تصریح دارند؟
@@ -13021,7 +13021,7 @@
 11	پاره	پاره	ADJ	ADJ_AJP	_	9	conj	_	_
 12	شده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	7	ccomp	_	_
 13	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	12	aux	_	SpaceAfter=No
-14	.	.	PUNCT	PUNC	_	4	punct	_	_
+14	.	.	PUNCT	PUNC	_	13	punct	_	_
 
 # sent_id = test-s674
 # text = او می‌داند، صلح چیزی نیست که دیگران به او عرضه و یا تحفه بکنند.
@@ -13059,7 +13059,7 @@
 13	صیقل	صیقل	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	داده	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	1	acl	_	_
 15	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	14	aux	_	SpaceAfter=No
-16	.	.	PUNCT	PUNC	_	2	punct	_	_
+16	.	.	PUNCT	PUNC	_	15	punct	_	_
 
 # sent_id = test-s676
 # text = همهٔ افراد باید عشق به رهبر عقیدتی را در ذهن خود صیقل بزنند.
@@ -13188,7 +13188,7 @@
 8	لحظه‌شماری	لحظه‌شماری	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 9	خواهید	خواست#خواه	AUX	AUX	Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	10	aux	_	_
 10	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	1	acl	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	_	2	punct	_	_
+11	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s683
 # text = بردهای الکترونیک را با دستگاه‌های پیشرفته لحیم می‌کنند.
@@ -14022,7 +14022,7 @@
 19	را	را	ADP	POSTP	_	17	case	_	_
 20	عاریت	عاریت	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
 21	بدهد	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	14	acl	_	SpaceAfter=No
-22	.	.	PUNCT	PUNC	_	2	punct	_	_
+22	.	.	PUNCT	PUNC	_	21	punct	_	_
 
 # sent_id = test-s733
 # text = خواهرم دندانش را عصب‌کشی کرده بود.
@@ -14071,7 +14071,7 @@
 5	تا	تا	SCONJ	SUBR	_	7	mark	_	_
 6	فرافکنی	فرافکنی	NOUN	N_IANM	Number=Sing	7	compound:lvc	_	_
 7	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	3	acl	_	SpaceAfter=No
-8	.	.	PUNCT	PUNC	_	4	punct	_	_
+8	.	.	PUNCT	PUNC	_	7	punct	_	_
 
 # sent_id = test-s737
 # text = وی با بیان این که زعفران را فرآوری نکرده‌ایم، ادامه داد: فرآوری زعفران ارزش افزودهٔ بالایی دارد و باید این امر در استان محقق شود.
@@ -14293,7 +14293,7 @@
 18	فایده	فایده	NOUN	N_IANM	Number=Sing	20	compound:lvc	_	_
 19	نخواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Polarity=Neg|Tense=Fut|VerbForm=Fin	20	aux	_	_
 20	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	6	acl	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	8	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s747
 # text = در آخر وقتی موهایم را باز کرد خوب فر نخورده بود.
@@ -14506,7 +14506,7 @@
 17	را	را	ADP	POSTP	_	16	case	_	_
 18	غلغلک	غلغلک	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	بدهید	داد#ده	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	13	acl	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	14	punct	_	_
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s760
 # text = این روسری را دو جای دیگر هم قیمت کرده بودم 30 و 32 می‌گفتند.
@@ -15335,7 +15335,7 @@
 17	نفرین	نفرین	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 18	خواهند	خواست#خواه	AUX	AUX	Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	aux	_	_
 19	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	6	ccomp	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	6	punct	_	_
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s800
 # text = دولت عثمانی موقوفات موجود در مکه و دیگر شهرها را ثبت کرده و اسناد آنها را نگهداری کرده است.
@@ -15478,7 +15478,7 @@
 30	نغمه‌سرایی	نغمه‌سرایی	NOUN	N_IANM	Number=Sing	32	compound:lvc	_	_
 31	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	32	aux	_	_
 32	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	22	conj	_	SpaceAfter=No
-33	.	.	PUNCT	PUNC	_	1	punct	_	_
+33	.	.	PUNCT	PUNC	_	32	punct	_	_
 
 # sent_id = test-s807
 # text = چگونه می‌شود میل زد؟
@@ -15810,7 +15810,7 @@
 8	می‌تواند	توانست#توان	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	_
 9	نظریه‌پردازی	نظریه‌پردازی	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 10	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	8	ccomp	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	_	8	punct	_	_
+11	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = test-s823
 # text = روی درخت‌هایش نشانه گذاشت.
@@ -16019,7 +16019,7 @@
 10	را	را	ADP	POSTP	_	9	case	_	_
 11	معذور	معذور	ADJ	ADJ_AJP	_	12	xcomp	_	_
 12	داشتم	داشت#دار	VERB	V_ACT	Number=Sing|Person=1|Tense=Past|Voice=Act	3	acl	_	SpaceAfter=No
-13	.	.	PUNCT	PUNC	_	7	punct	_	_
+13	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s834
 # text = در اوج قلهٔ شرافت انسان در ارتفاع تکامل تا حد یک فرشته، تا حد یک «شهید» معراج می‌کند.
@@ -16291,7 +16291,7 @@
 15	حقیقی	حقیقی	ADJ	ADJ_AJP	_	16	xcomp	_	_
 16	بوده	بود#باش	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	10	ccomp	_	_
 17	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	16	aux	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	10	punct	_	_
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s848
 # text = پرندگانی نظیر کفچه‌نوک، می‌اکرت و کاکایی صورتی در جزایر طشک لانه‌گذاری می‌کنند.
@@ -16799,13 +16799,13 @@
 12	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	7	conj	_	_
 13	می‌گویند	گفت#گو	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 14	:	:	PUNCT	PUNC	_	13	punct	_	_
-15	"	"	PUNCT	PUNC	_	18	punct	_	SpaceAfter=No
+15	"	"	PUNCT	PUNC	_	16	punct	_	SpaceAfter=No
 16	فلانی	فلانی	NOUN	N_ANM	Number=Sing	18	nsubj	_	_
 17	زرد	زرد	ADJ	ADJ_AJP	_	18	compound:lvc	_	_
 18	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	13	ccomp	_	_
 19	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	18	aux	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	13	punct	_	SpaceAfter=No
-21	"	"	PUNCT	PUNC	_	18	punct	_	_
+20	.	.	PUNCT	PUNC	_	19	punct	_	SpaceAfter=No
+21	"	"	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s877
 # text = از بالای تپه با تیوب و نایلون سر می‌خوردیم.
@@ -16910,7 +16910,7 @@
 11	سوء	سوء	ADP	PREP	_	12	case	_	_
 12	تعبیر	تعبیر	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
 13	کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	8	ccomp	_	SpaceAfter=No
-14	.	.	PUNCT	PUNC	_	5	punct	_	_
+14	.	.	PUNCT	PUNC	_	13	punct	_	_
 
 # sent_id = test-s882
 # text = هنگامی که مضمون 3 بعدی بر روی صفحهٔ تلویزیون نمایش داده می‌شود، تصویر به سرعت مابین دو مجموعه از تصاویر مشابه سوئیچ خواهد کرد.
@@ -16953,7 +16953,7 @@
 7	به	به	ADP	PREP	_	9	case	_	_
 8	چه	چه	DET	PREM_QUAJ	_	9	det	_	_
 9	علت	علت	NOUN	N_IANM	Number=Sing	17	obl	_	SpaceAfter=No
-10	)	)	PUNCT	PUNC	_	6	punct	_	_
+10	)	)	PUNCT	PUNC	_	9	punct	_	_
 11	در	در	ADP	PREP	_	13	case	_	_
 12	بعضی	بعضی	DET	PREM_AMBAJ	_	13	det	_	_
 13	مسایل	مسئله	NOUN	N_IANM	Number=Plur	17	obl:arg	_	_
@@ -17145,7 +17145,7 @@
 21-23	منافقند.	_	_	_	_	_	_	_	_
 21	منافق	منافق	ADJ	ADJ_AJP	_	20	amod	_	_
 22	ند	#هست	AUX	AUX	Number=Plur|Person=3	20	cop	_	_
-23	.	.	PUNCT	PUNC	_	5	punct	_	_
+23	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s893
 # text = کسی حق ندارد علیه قوهٔ قضائیه جوسازی کند.
@@ -17430,7 +17430,7 @@
 9	اول	اول	ADJ	POSNUM	_	8	amod	_	_
 10	لقب	لقب	NOUN	N_IANM	Number=Sing	11	compound:lvc	_	_
 11	می‌گیرد	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	3	acl	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	_	4	punct	_	_
+12	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s909
 # text = برای همین نیازی نیست که کاستارد را تا لبه‌های رولت بمالیم.
@@ -17493,7 +17493,7 @@
 28	آله	آله	NOUN	N_IANM	Number=Sing	26	conj	_	_
 29	مباشرت	مباشرت	NOUN	N_IANM	Number=Sing	30	compound:lvc	_	_
 30	داشتید	داشت#دار	VERB	V_ACT	Number=Plur|Person=2|Tense=Past|Voice=Act	9	acl	_	SpaceAfter=No
-31	.	.	PUNCT	PUNC	_	5	punct	_	_
+31	.	.	PUNCT	PUNC	_	30	punct	_	_
 
 # sent_id = test-s912
 # text = از جمله این روش‌ها را می‌توان همه‌پرسی، حسابرسی دوباره، وتوی مردمی، پله بیسیت، ابتکار عام و گزینش‌گری دانست که در همهٔ این موارد شهروندان مستقیماً در اعمال قدرت مباشرت می‌کنند.
@@ -17539,7 +17539,7 @@
 2	«	«	PUNCT	PUNC	_	3	punct	_	SpaceAfter=No
 3	پیشین	پیشین	ADJ	ADJ_AJP	_	1	amod	_	_
 4	اسم	اسم	NOUN	N_IANM	Number=Sing	1	nmod	_	SpaceAfter=No
-5	»	»	PUNCT	PUNC	_	3	punct	_	_
+5	»	»	PUNCT	PUNC	_	4	punct	_	_
 6	را	را	ADP	POSTP	_	1	case	_	_
 7	نام	نام	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	ببرید	برد#بر	VERB	V_ACT	Mood=Imp|Number=Plur|Person=2|Tense=Pres|Voice=Act	0	root	_	_
@@ -17585,7 +17585,7 @@
 26	مراجعت	مراجعت	NOUN	N_IANM	Number=Sing	27	compound:lvc	_	_
 27	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	12	acl	_	_
 28	بودیم	بود#باش	AUX	AUX	Number=Plur|Person=1|Tense=Past	27	aux	_	SpaceAfter=No
-29	.	.	PUNCT	PUNC	_	10	punct	_	_
+29	.	.	PUNCT	PUNC	_	28	punct	_	_
 
 # sent_id = test-s915
 # text = در این بازی شما مسئول مکانی هستید که در آنجا مرد را مداوا می‌کنید.
@@ -17603,7 +17603,7 @@
 12	را	را	ADP	POSTP	_	11	case	_	_
 13	مداوا	مداوا	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	می‌کنید	کرد#کن	VERB	V_ACT	Number=Plur|Person=2|Tense=Pres|Voice=Act	6	acl	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	5	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s916
 # text = بر این امر همیشه مداومت بکن.
@@ -17751,7 +17751,7 @@
 6	اسهال	اسهال	NOUN	N_IANM	Number=Sing	7	compound:lvc	_	_
 7	شده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	1	acl	_	_
 8	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	7	aux	_	SpaceAfter=No
-9	.	.	PUNCT	PUNC	_	2	punct	_	_
+9	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = test-s926
 # text = شیخ شیراز سعدی‌نامه را این گونه آغاز نهاده است.
@@ -17873,7 +17873,7 @@
 28	مؤمنان	مؤمن	NOUN	N_ANM	Number=Plur	30	obl:arg	_	_
 29	دلربایی	دلربایی	NOUN	N_IANM	Number=Sing	30	compound:lvc	_	_
 30	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	22	acl	_	SpaceAfter=No
-31	.	.	PUNCT	PUNC	_	18	punct	_	_
+31	.	.	PUNCT	PUNC	_	30	punct	_	_
 
 # sent_id = test-s933
 # text = قیمت‌های نفت از بازار بورس جهانی دنباله‌روی کرد.
@@ -17908,7 +17908,7 @@
 16	دوام	دوام	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 17	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	5	acl	_	_
 18	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	17	aux	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	_	7	punct	_	_
+19	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = test-s935
 # text = نخجوانی‌ها شیعه‌اند اما در سایهٔ دولت سکولار، در فضای عمومی شهر اثری از دین دیده نمی‌شود.
@@ -18087,7 +18087,7 @@
 24	"	"	PUNCT	PUNC	_	23	punct	_	_
 25	پیدا	پیدا	ADJ	ADJ_AJP	_	26	compound:lvc	_	_
 26	نمایید	نمود#نما	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	13	acl	_	SpaceAfter=No
-27	.	.	PUNCT	PUNC	_	15	punct	_	_
+27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s943
 # text = عادل‌ترین، باتقواترین و الهی‌ترین انسان‌ها حق دارند که برای مردم سیاست‌گذاری کنند.
@@ -18151,7 +18151,7 @@
 18	به	به	ADP	PREP	_	19	case	_	_
 19	خاطر	خاطر	NOUN	N_IANM	Number=Sing	20	obl:arg	_	_
 20	آید	آمد#آ	VERB	V_ACT	Voice=Act	15	ccomp	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	16	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s947
 # text = وی پیش از آغاز سخنرانی به یکی از حاضرین چشمک زده است.
@@ -18333,14 +18333,14 @@
 5	وادار	وادار	ADJ	ADJ_AJP	_	6	xcomp	_	_
 6	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	_
 7	بودند	بود#باش	AUX	AUX	Number=Plur|Person=3|Tense=Past	6	aux	_	SpaceAfter=No
-8	،	،	PUNCT	PUNC	_	6	punct	_	_
+8	،	،	PUNCT	PUNC	_	7	punct	_	_
 9	تا	تا	SCONJ	SUBR	_	14	mark	_	_
 10	به	به	ADP	PREP	_	11	case	_	_
 11	سوی	سو	NOUN	N_IANM	Number=Sing	14	obl:arg	_	_
 12	پیامبر	پیامبر	PROPN	N_ANM	Number=Sing	11	nmod	_	_
 13	سنگ‌پرانی	سنگ‌پرانی	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	5	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	6	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s955
 # text = شعله‌های سرخ بر گونه‌های سپیدم شراره کشیده‌اند.
@@ -19539,7 +19539,7 @@
 23	در	در	ADP	PREP	_	24	case	_	_
 24	کنترل	کنترل	NOUN	N_IANM	Number=Sing	25	xcomp	_	_
 25	داشته‌اند	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	1	acl	_	SpaceAfter=No
-26	.	.	PUNCT	PUNC	_	10	punct	_	_
+26	.	.	PUNCT	PUNC	_	25	punct	_	_
 
 # sent_id = test-s1014
 # text = روزانه چند خانواده توافقی از هم می‌پاشد؟
@@ -19642,7 +19642,7 @@
 27	پای	پای	NOUN	N_IANM	Number=Sing	29	compound:lvc	_	_
 28	درخواهد	در#خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	aux	_	_
 29	آمد	آمد#آ	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	24	conj	_	SpaceAfter=No
-30	.	.	PUNCT	PUNC	_	14	punct	_	_
+30	.	.	PUNCT	PUNC	_	29	punct	_	_
 
 # sent_id = test-s1018
 # text = هوگو چاوز، رئیس جمهوری ونزوئلا، که به خاطر بیماری، برنامهٔ تلویزیونی‌اش را متوقف کرده بود، دوباره آن را از سر گرفت.
@@ -19702,7 +19702,7 @@
 15	باد	باد	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 16	خواهند	خواست#خواه	AUX	AUX	Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	17	aux	_	_
 17	رفت	رفت#رو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	2	acl	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	4	punct	_	_
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s1021
 # text = چگونه جنگجو هدف‌گذاری می‌کند؟
@@ -20057,7 +20057,7 @@
 49	،	،	PUNCT	PUNC	_	47	punct	_	_
 50	عهدشکنی	عهدشکنی	NOUN	N_IANM	Number=Sing	51	compound:lvc	_	_
 51	می‌کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	43	acl	_	SpaceAfter=No
-52	.	.	PUNCT	PUNC	_	5	punct	_	_
+52	.	.	PUNCT	PUNC	_	51	punct	_	_
 
 # sent_id = test-s1034
 # text = اسرائیل از غزه عقب‌نشینی خواهد کرد.
@@ -20199,7 +20199,7 @@
 16	بغض	بغض	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 17	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	14	conj	_	_
 18	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	17	aux	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	_	8	punct	_	_
+19	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = test-s1043
 # text = از بیمارستان‌ها گروکشی نکنید!
@@ -20284,7 +20284,7 @@
 22	بایستی	بایست#باید	AUX	V_MODL	_	24	aux	_	_
 23	همنوازی	همنوازی	NOUN	N_IANM	Number=Sing	24	compound:lvc	_	_
 24	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	18	ccomp	_	SpaceAfter=No
-25	.	.	PUNCT	PUNC	_	10	punct	_	_
+25	.	.	PUNCT	PUNC	_	24	punct	_	_
 
 # sent_id = test-s1046
 # text = با اهل دین و معرفت همنشینی کنید.
@@ -20666,7 +20666,7 @@
 24	ریش	ریش	NOUN	N_IANM	Number=Sing	25	obj	_	_
 25	داشته	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	20	ccomp	_	_
 26	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	25	aux	_	SpaceAfter=No
-27	!	!	PUNCT	PUNC	_	20	punct	_	_
+27	!	!	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s1060
 # text = جایگاه بین‌المللی اسرائیل نزول کرده است.
@@ -20886,7 +20886,7 @@
 9	آلمان	آلمان	PROPN	N_IANM	Number=Sing	11	obl	_	_
 10	وکالت	وکالت	NOUN	N_IANM	Number=Sing	11	compound:lvc	_	_
 11	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	7	ccomp	_	SpaceAfter=No
-12	.	.	PUNCT	PUNC	_	3	punct	_	_
+12	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = test-s1073
 # text = اگر اصلاح‌طلبان قدرت را در دست گیرند، محمد خاتمی و شرکا ضمن حراج نفت، وراجی خواهند کرد.
@@ -21599,7 +21599,7 @@
 26	به	به	ADP	PREP	_	27	case	_	_
 27	زانو	زانو	NOUN	N_IANM	Number=Sing	28	compound:lvc	_	_
 28	درمی‌آوردند	در#آورد#آور	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	11	acl	_	SpaceAfter=No
-29	.	.	PUNCT	PUNC	_	13	punct	_	_
+29	.	.	PUNCT	PUNC	_	28	punct	_	_
 
 # sent_id = test-s1107
 # text = ایرانی که توسط غرب به زانو درآمده باشد بسیار بدتر از ایران نفت‌خیز و مسلح به تسلیحات هسته‌ای است.
@@ -21820,7 +21820,7 @@
 19	بقای	بقا	NOUN	N_IANM	Number=Sing	18	nmod	_	_
 20	نسل	نسل	NOUN	N_IANM	Number=Sing	19	nmod	_	_
 21	است	#است	AUX	AUX	Number=Sing|Person=3	18	cop	_	SpaceAfter=No
-22	.	.	PUNCT	PUNC	_	16	punct	_	_
+22	.	.	PUNCT	PUNC	_	21	punct	_	_
 
 # sent_id = test-s1116
 # text = در سال گذشته با 190 کشور مبادله داشته‌ایم.
@@ -21996,7 +21996,7 @@
 10	به	به	ADP	PREP	_	11	case	_	_
 11	باد	باد	NOUN	N_IANM	Number=Sing	12	compound:lvc	_	_
 12	بدهد	داد#ده	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	7	ccomp	_	SpaceAfter=No
-13	.	.	PUNCT	PUNC	_	5	punct	_	_
+13	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s1127
 # text = با شکست استقلال دل هواداران را به دست بیاورید.
@@ -22060,7 +22060,7 @@
 21	و	و	CCONJ	CONJ	_	22	cc	_	_
 22	ضداخلاقی	ضداخلاقی	ADJ	ADJ_AJP	_	20	conj	_	_
 23	نیست	#هست	AUX	AUX	Number=Sing|Person=3|Polarity=Neg	18	cop	_	SpaceAfter=No
-24	.	.	PUNCT	PUNC	_	8	punct	_	_
+24	.	.	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s1131
 # text = تیم زیر 18 ساله‌های آکادمی لیورپول آخرین دیدار فصل خود را با باخت 3-2 مقابل آکادمی نیوکاسل یونایتد به پایان برد.
@@ -22134,7 +22134,7 @@
 16	درج	درج	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 17	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	5	ccomp	_	_
 18	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	17	aux	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	_	5	punct	_	_
+19	.	.	PUNCT	PUNC	_	18	punct	_	_
 
 # sent_id = test-s1135
 # text = برای اجرای سند تحول بنیادین در نظام تعلیم و تربیت معلمان، مدیران، اولیا و دانش‌آموزان دوره خواهنددید.
@@ -22189,7 +22189,7 @@
 25	ان	آن	PRON	PR_DEMON	Number=Sing	27	obl:arg	_	_
 26	استناد	استناد	NOUN	N_IANM	Number=Sing	27	compound:lvc	_	_
 27	میجست	جست#جو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	22	conj	_	SpaceAfter=No
-28	!	!	PUNCT	PUNC	_	6	punct	_	_
+28	!	!	PUNCT	PUNC	_	27	punct	_	_
 
 # sent_id = test-s1137
 # text = اقدامات لازم اتخاذ بدارید.
@@ -22462,7 +22462,7 @@
 10	حسابی	حسابی	ADV	ADV_SADV	_	11	advmod	_	_
 11	عصبی	عصبی	ADJ	ADJ_AJP	_	1	acl	_	_
 12	بودم	بود#باش	AUX	AUX	Number=Sing|Person=1	11	cop	_	SpaceAfter=No
-13	.	.	PUNCT	PUNC	_	7	punct	_	_
+13	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = test-s1151
 # text = هنگام رانندگی با ماشین پدر و وقتی که همراه دوستان خود هستید جوگیر نشوید و ویراژ ندهید.
@@ -22506,7 +22506,7 @@
 17	تلخی‌ها	تلخی	NOUN	N_IANM	Number=Plur	16	nmod	_	_
 18	یک‌تنه	یک‌تنه	ADJ	ADJ_AJP	_	19	advmod	_	_
 19	بایستد	ایستاد#ایست	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	13	csubj	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	10	punct	_	_
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s1153
 # text = همین که از سرما یخ نبندید و تشنگی و گرسنگی به درونتان چنگ نزند، کافی است.
@@ -22716,7 +22716,7 @@
 50	قران	قران	NOUN	N_IANM	Number=Sing	49	nmod	_	_
 51	و	و	CCONJ	CONJ	_	52	cc	_	_
 52	افراد	فرد	NOUN	N_ANM	Number=Plur	50	conj	_	SpaceAfter=No
-53	.	.	PUNCT	PUNC	_	40	punct	_	_
+53	.	.	PUNCT	PUNC	_	52	punct	_	_
 
 # sent_id = test-s1160
 # text = در راه خدا با جان و مال خود مجاهده کرده‌اند.
@@ -22789,7 +22789,7 @@
 20	او	او	PRON	PR_SEPER	Number=Sing|Person=3	22	obl:arg	_	_
 21	عشق‌ورزی	عشق‌ورزی	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
 22	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	5	acl	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	3	punct	_	_
+23	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s1165
 # text = با هم معاشرت کنید اما همخوابگی نکنید.
@@ -23486,7 +23486,7 @@
 30	به	به	ADP	PREP	_	31	case	_	_
 31	ارمغان	ارمغان	NOUN	N_IANM	Number=Sing	32	compound:lvc	_	_
 32	می‌فرستد	فرستاد#فرست	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	21	csubj	_	SpaceAfter=No
-33	.	.	PUNCT	PUNC	_	4	punct	_	_
+33	.	.	PUNCT	PUNC	_	32	punct	_	_
 
 # sent_id = test-s1202
 # text = هنوز آهنگ کلمات مرحوم شریعتی در گوش من طنین می‌کند.
@@ -23722,7 +23722,7 @@
 34	آینده	آینده	NOUN	N_IANM	Number=Sing	36	obl	_	_
 35	مرقوم	مرقوم	ADJ	ADJ_AJP	_	36	compound:lvc	_	_
 36	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	20	acl	_	SpaceAfter=No
-37	.	.	PUNCT	PUNC	_	19	punct	_	_
+37	.	.	PUNCT	PUNC	_	36	punct	_	_
 
 # sent_id = test-s1215
 # text = با توجه به آیین‌نامهٔ 2800 چگونه می‌توان شتاب نگاشت زلزله‌ای مانند طبس را برای تحلیل غیرخطی دینامیکی مقیاس کرد؟
@@ -23845,7 +23845,7 @@
 20	رو	رو	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
 21	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	5	ccomp	_	_
 22	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	21	aux	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	5	punct	_	_
+23	.	.	PUNCT	PUNC	_	22	punct	_	_
 
 # sent_id = test-s1220
 # text = الهام علی‌اف، رئیس جمهوری آذربایجان برای شرکت در اجلاس شورای امنیت سازمان ملل متحد در ماه می به آمریکا سفر خواهد کرد.
@@ -24068,7 +24068,7 @@
 25	را	را	ADP	POSTP	_	22	case	_	_
 26	دفع	دفع	NOUN	N_IANM	Number=Sing	27	compound:lvc	_	_
 27	کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	20	advcl	_	SpaceAfter=No
-28	.	.	PUNCT	PUNC	_	4	punct	_	_
+28	.	.	PUNCT	PUNC	_	27	punct	_	_
 
 # sent_id = test-s1231
 # text = آمبولانس‌ها و اتوبوس آمبولانس‌ها در مناطق اصلی و نقاطی که دسترسی به مصدومان احتمالی را سرعت می‌بخشد، استقرار خواهند داشت.
@@ -24148,7 +24148,7 @@
 35	کشور	کشور	NOUN	N_IANM	Number=Sing	37	obl	_	_
 36	ادامه	ادامه	NOUN	N_IANM	Number=Sing	37	compound:lvc	_	_
 37	یابد	یافت#یاب	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	25	ccomp	_	SpaceAfter=No
-38	.	.	PUNCT	PUNC	_	9	punct	_	_
+38	.	.	PUNCT	PUNC	_	37	punct	_	_
 
 # sent_id = test-s1234
 # text = به قوت خود مرا اعانت کنید.
@@ -24191,7 +24191,7 @@
 25	واکاوی	واکاوی	NOUN	N_IANM	Number=Sing	27	obl:arg	_	_
 26	چراها	چرا	NOUN	N_IANM	Number=Plur	25	nmod	_	_
 27	بپردازیم	پرداخت#پرداز	VERB	V_ACT	Number=Plur|Person=1|Voice=Act	22	conj	_	SpaceAfter=No
-28	.	.	PUNCT	PUNC	_	5	punct	_	_
+28	.	.	PUNCT	PUNC	_	27	punct	_	_
 
 # sent_id = test-s1236
 # text = آن حضرت نمایندگانی از صحابهٔ خود را برای آموزش احکام دینی به مردم اعزام می‌داشت.
@@ -24422,7 +24422,7 @@
 18	شخصی	شخص	NOUN	N_ANM	Number=Sing	16	nmod	_	_
 19	نشده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Polarity=Neg|Tense=Past|Voice=Act	10	acl	_	_
 20	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	19	aux	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	12	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s1245
 # text = این مردی است که به جوار جد من التجا کرده است.
@@ -24495,7 +24495,7 @@
 12	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	11	nmod	_	_
 13	سیر	سیر	NOUN	N_IANM	Number=Sing	14	xcomp	_	_
 14	نمی‌شود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Polarity=Neg|Tense=Pres|Voice=Act	2	acl	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	3	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s1249
 # text = تنها گذر زمان است که شعر خوب و بد را الک خواهد کرد!
@@ -24713,7 +24713,7 @@
 44	جماعت‌ها	جماعت	NOUN	N_IANM	Number=Plur	40	nmod	_	_
 45	غلیان	غلیان	NOUN	N_IANM	Number=Sing	46	compound:lvc	_	_
 46	بکند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	34	conj	_	SpaceAfter=No
-47	.	.	PUNCT	PUNC	_	12	punct	_	_
+47	.	.	PUNCT	PUNC	_	46	punct	_	_
 
 # sent_id = test-s1261
 # text = آیا اگر شخصی مژه‌هایش را قیچی کند دوباره بلند می‌شود؟
@@ -24856,7 +24856,7 @@
 29	هم	هم	ADV	ADV_SADV	_	23	dep	_	_
 30	سوراخ	سوراخ	NOUN	N_IANM	Number=Sing	31	xcomp	_	_
 31	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	22	ccomp	_	SpaceAfter=No
-32	.	.	PUNCT	PUNC	_	10	punct	_	_
+32	.	.	PUNCT	PUNC	_	31	punct	_	_
 
 # sent_id = test-s1267
 # text = ما صرفاً برای این که شفاف‌سازی کرده باشیم بخشی از دلیل این کارمان را می‌گوییم.
@@ -24895,7 +24895,7 @@
 12	را	را	ADP	POSTP	_	11	case	_	_
 13	چاره	چاره	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 14	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	10	ccomp	_	SpaceAfter=No
-15	.	.	PUNCT	PUNC	_	5	punct	_	_
+15	.	.	PUNCT	PUNC	_	14	punct	_	_
 
 # sent_id = test-s1269
 # text = برای مشکلات کودکان و نوجوانان چاره‌جویی کنید.
@@ -25190,7 +25190,7 @@
 25	ریاضت	ریاضت	NOUN	N_IANM	Number=Sing	23	conj	_	_
 26	نموده	نمود#نما	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	18	conj	_	_
 27	بودند	بود#باش	AUX	AUX	Number=Plur|Person=3|Tense=Past	26	aux	_	SpaceAfter=No
-28	.	.	PUNCT	PUNC	_	13	punct	_	_
+28	.	.	PUNCT	PUNC	_	27	punct	_	_
 
 # sent_id = test-s1285
 # text = سفیانی طبق روایتی از امیرالمؤمنین (ع) فردی است با نام عثمان از نوادگان ابوسفیان و بسیار خبیث و قسی‌القلب و مدت 8 یا 9 ماه غارت و کشورگشایی می‌کند.
@@ -25286,7 +25286,7 @@
 11	با	با	ADP	PREP	_	12	case	_	_
 12	Arthur	Arthur	PROPN	N_ANM	Number=Sing	10	nmod	_	_
 13	Kornberg	Kornberg	PROPN	N_ANM	Number=Sing	12	flat:name	_	SpaceAfter=No
-14	)	)	PUNCT	PUNC	_	10	punct	_	_
+14	)	)	PUNCT	PUNC	_	13	punct	_	_
 15	برنده	برنده	ADJ	ADJ_AJP	_	16	xcomp	_	_
 16	شد	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 17	،	،	PUNCT	PUNC	_	16	punct	_	_
@@ -25306,7 +25306,7 @@
 31	آزمایشگاه	آزمایشگاه	NOUN	N_IANM	Number=Sing	33	obl	_	_
 32	سنتز	سنتز	NOUN	N_IANM	Number=Sing	33	compound:lvc	_	_
 33	می‌کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	23	acl	_	SpaceAfter=No
-34	.	.	PUNCT	PUNC	_	15	punct	_	_
+34	.	.	PUNCT	PUNC	_	33	punct	_	_
 
 # sent_id = test-s1289
 # text = سامسونگ طی سه ماههٔ چهارم سال 2003 توانست از غول بزرگ رشتهٔ LCD در جهان یعنی LG که آن هم کره‌ای است سبقت بجوید.
@@ -25835,7 +25835,7 @@
 13	ایشان	ایشان	PRON	PR_SEPER	Number=Plur|Person=3	14	obl:arg	_	_
 14	بازگرفته	باز#گرفت#گیر	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	3	advcl	_	_
 15	شود	شد#شو	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	14	aux:pass	_	SpaceAfter=No
-16	.	.	PUNCT	PUNC	_	3	punct	_	_
+16	.	.	PUNCT	PUNC	_	15	punct	_	_
 
 # sent_id = test-s1319
 # text = بنابراین ریسک کردیم و کار را به این شیوه بازآفرینی کردیم.
@@ -26047,7 +26047,7 @@
 18	راحتی	راحتی	NOUN	N_IANM	Number=Sing	20	obl	_	_
 19	لگدمال	لگدمال	NOUN	N_IANM	Number=Sing	20	compound:lvc	_	_
 20	بکنی	کرد#کن	VERB	V_ACT	Number=Sing|Person=2|Voice=Act	6	acl	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	8	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s1330
 # text = بازیکنان لوطی‌گری کردند.
@@ -26078,7 +26078,7 @@
 17	له‌له	له‌له	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 18	خواهی	خواست#خواه	AUX	AUX	Number=Sing|Person=2|Tense=Fut|VerbForm=Fin	19	aux	_	_
 19	زد	زد#زن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	6	ccomp	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	8	punct	_	_
+20	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s1332
 # text = مواد را به خوبی مخلوط کنید و به مدت 15 دقیقه روی صورتتان قرار دهید و در پایان با آب سرد آب‌کشی کنید.
@@ -26517,7 +26517,7 @@
 15	هم	هم	PRON	PR_RECPR	_	17	obl:arg	_	_
 16	بخیه	بخیه	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 17	می‌خورند	خورد#خور	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	9	conj	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	6	punct	_	_
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s1354
 # text = گاهی برای بند آوردن خون و درمان زخم‌های عمیق به ناچار باید به پزشک مراجعه کنید در این صورت به ناچار پوست را بخیه خواهند زد.
@@ -26647,7 +26647,7 @@
 25	،	،	PUNCT	PUNC	_	24	punct	_	_
 26	برف‌روبی	برف‌روبی	NOUN	N_IANM	Number=Sing	27	compound:lvc	_	_
 27	می‌کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	10	conj	_	SpaceAfter=No
-28	.	.	PUNCT	PUNC	_	4	punct	_	_
+28	.	.	PUNCT	PUNC	_	27	punct	_	_
 
 # sent_id = test-s1361
 # text = خداوند عمرشان را پربرکت بکند.
@@ -26708,7 +26708,7 @@
 5	افتراق‌ها	افتراق	NOUN	N_IANM	Number=Plur	7	obl:arg	_	_
 6	انگشت	انگشت	NOUN	N_IANM	Number=Sing	7	obj	_	_
 7	بگذاریم	گذاشت#گذار	VERB	V_ACT	Number=Plur|Person=1|Voice=Act	1	acl	_	SpaceAfter=No
-8	.	.	PUNCT	PUNC	_	2	punct	_	_
+8	.	.	PUNCT	PUNC	_	7	punct	_	_
 
 # sent_id = test-s1365
 # text = مدیریت انقلابی به معنی بی‌تدبیری و بی‌منطقی و رفتار مطلقاً سلبی که برخی مغرضانه از آن انتزاع می‌کنند، نیست.
@@ -27392,7 +27392,7 @@
 18	خاکی	خاکی	ADJ	ADJ_AJP	_	17	amod	_	_
 19	افزوده	افزود#افزا	VERB	V_PASS	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 20	می‌شود	شد#شو	AUX	AUX	Number=Sing|Person=3|Tense=Pres	19	aux:pass	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	19	punct	_	_
+21	.	.	PUNCT	PUNC	_	20	punct	_	_
 
 # sent_id = test-s1396
 # text = علوم تفسیر و حدیث و فقه ظاهر گشته و اطلاع از تاریخ خلفای راشدین نیز مانند دور رسالت لزوم پیدا کرده است.
@@ -27430,8 +27430,8 @@
 6	(	(	PUNCT	PUNC	_	7	punct	_	SpaceAfter=No
 7	آی‌پی	آی‌پی	NOUN	N_IANM	Number=Sing	4	appos	_	_
 8	آدرس	آدرس	NOUN	N_IANM	Number=Sing	7	nmod	_	SpaceAfter=No
-9	)	)	PUNCT	PUNC	_	7	punct	_	SpaceAfter=No
-10	،	،	PUNCT	PUNC	_	5	punct	_	_
+9	)	)	PUNCT	PUNC	_	8	punct	_	SpaceAfter=No
+10	،	،	PUNCT	PUNC	_	9	punct	_	_
 11	شما	شما	PRON	PR_SEPER	Number=Plur|Person=2	16	nsubj	_	_
 12	در	در	ADP	PREP	_	13	case	_	_
 13	اینترنت	اینترنت	NOUN	N_IANM	Number=Sing	16	obl	_	_
@@ -27532,7 +27532,7 @@
 14	وسعت	وسعت	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
 15	پیدا	پیدا	ADJ	ADJ_AJP	_	16	compound:lv	_	_
 16	کردم	کرد#کن	VERB	V_ACT	Number=Sing|Person=1|Tense=Past|Voice=Act	2	acl	_	SpaceAfter=No
-17	.	.	PUNCT	PUNC	_	8	punct	_	_
+17	.	.	PUNCT	PUNC	_	16	punct	_	_
 
 # sent_id = test-s1403
 # text = در «وقوع» این جهت قید نشده یعنی شی اگر وجود بعد از عدم پیدا کند وقوع پیدا کرده است و اگر وجودش بعد از عدم هم نباشد باز واقعیت و واقع است.
@@ -27741,7 +27741,7 @@
 59	بر	بر	ADP	PREP	_	60	case	_	_
 60	صورت	صورت	NOUN	N_IANM	Number=Sing	61	obl:arg	_	_
 61	دارند	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	34	conj	_	SpaceAfter=No
-62	.	.	PUNCT	PUNC	_	30	punct	_	_
+62	.	.	PUNCT	PUNC	_	61	punct	_	_
 
 # sent_id = test-s1412
 # text = دو پلیس حجم زیادی از گاز فلفل را به سمت صورت وی اسپری کرده‌اند.
@@ -27932,7 +27932,7 @@
 77	کنترل	کنترل	NOUN	N_IANM	Number=Sing	79	obl:arg	_	_
 78	خود	خود	PRON	PR_CREFX	_	77	nmod	_	_
 79	داشتند	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|Tense=Past|Voice=Act	71	conj	_	SpaceAfter=No
-80	.	.	PUNCT	PUNC	_	62	punct	_	_
+80	.	.	PUNCT	PUNC	_	79	punct	_	_
 
 # sent_id = test-s1417
 # text = با این چای گریهٔ کودک خود را بند بیاورید.
@@ -28168,7 +28168,7 @@
 24	شرمندهٔ	شرمنده	ADJ	ADJ_AJP	_	26	xcomp	_	_
 25	آن‌ها	آنها	PRON	PR_SEPER	Number=Plur|Person=3	24	obl:arg	_	_
 26	نشود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Polarity=Neg|Voice=Act	15	conj	_	SpaceAfter=No
-27	.	.	PUNCT	PUNC	_	4	punct	_	_
+27	.	.	PUNCT	PUNC	_	26	punct	_	_
 
 # sent_id = test-s1429
 # text = حضرت درخواست عالم یهودی را پذیرفت و با آنان به تورات و انجیل و زبور برای اثبات پیامبری پیامبر اسلام صلی‌الله علیه و آله و سلم به تفصیل استدلال فرمود.
@@ -28219,7 +28219,7 @@
 11	باید	بایست#باید	AUX	V_MODL	_	13	aux	_	_
 12	فقاهت	فقاهت	NOUN	N_IANM	Number=Sing	13	compound:lvc	_	_
 13	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	4	acl	_	SpaceAfter=No
-14	.	.	PUNCT	PUNC	_	8	punct	_	_
+14	.	.	PUNCT	PUNC	_	13	punct	_	_
 
 # sent_id = test-s1431
 # text = نویسندهٔ «تنگسیر» هم همهٔ عمر ابراز پشیمانی می‌کرد که چرا اجازه داده امیر نادری رمانش را فیلم کند و اینکه چرا او داستانش را خراب کرده.
@@ -28255,7 +28255,7 @@
 28	را	را	ADP	POSTP	_	26	case	_	_
 29	خراب	خراب	ADJ	ADJ_AJP	_	30	xcomp	_	_
 30	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|VerbForm=Part|Voice=Act	21	conj	_	SpaceAfter=No
-31	.	.	PUNCT	PUNC	_	10	punct	_	_
+31	.	.	PUNCT	PUNC	_	30	punct	_	_
 
 # sent_id = test-s1432
 # text = مسئول غرفه از من غلط گرفت که جانستان غلط است و درستش جان‌ستان است.
@@ -28300,7 +28300,7 @@
 17	خدا	خدا	NOUN	N_ANM	Number=Sing	19	obl:arg	_	_
 18	غریبی	غریبی	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	کنید	کرد#کن	VERB	V_ACT	Number=Plur|Person=2|Voice=Act	8	conj	_	SpaceAfter=No
-20	؟	؟	PUNCT	PUNC	_	2	punct	_	_
+20	؟	؟	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = test-s1434
 # text = من شبهه را می‌پذیرم و اگر تفکر فلسفی را با آسیب‌هایی که گفتیم در نظر بگیریم، بسیار طبیعی است که ذهن بتواند خودکامگی بکند.
@@ -28434,7 +28434,7 @@
 15	حرف	حرف	NOUN	N_IANM	Number=Sing	17	obl:arg	_	_
 16	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	15	nmod	_	_
 17	بایستد	ایستاد#ایست	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	10	conj	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	6	punct	_	_
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s1440
 # text = افرادی که از یک زبان و از یک نژاد هستند، به انگیزهٔ وجه اشتراکشان با هم اتحاد پیدا خواهند کرد.
@@ -28643,7 +28643,7 @@
 21	پشت	پشت	ADP	PREP	_	22	case	_	_
 22	دفاع	دفاع	NOUN	N_IANM	Number=Sing	20	amod	_	_
 23	بیندازد	انداخت#انداز	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	17	conj	_	SpaceAfter=No
-24	.	.	PUNCT	PUNC	_	11	punct	_	_
+24	.	.	PUNCT	PUNC	_	23	punct	_	_
 
 # sent_id = test-s1449
 # text = این آهنگ یکی از آهنگ‌های آلبوم زیبای پرچم سفید می‌باشد که در سال 1391 انتشار پیدا کرد.
@@ -28664,7 +28664,7 @@
 15	انتشار	انتشار	NOUN	N_IANM	Number=Sing	17	compound:lvc	_	_
 16	پیدا	پیدا	ADJ	ADJ_AJP	_	17	compound:lv	_	_
 17	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	6	acl	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	3	punct	_	_
+18	.	.	PUNCT	PUNC	_	17	punct	_	_
 
 # sent_id = test-s1450
 # text = در برابر مسائل مختلف و پیش‌آمدهای گوناگون، قدرت ایستادگی نخواهد داشت، و دچار سستی و لغزش خواهد شد و از راه راست، انحراف پیدا خواهد کرد.
