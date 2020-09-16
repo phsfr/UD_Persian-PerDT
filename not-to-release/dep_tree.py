@@ -1596,6 +1596,9 @@ class DependencyTree:
             self.labels[37] = "conj"
         if self.sen_id == 43970:
             self.heads[-1] = 5
+        if self.sen_id == 25955:
+            self.heads[19] = 19
+
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
