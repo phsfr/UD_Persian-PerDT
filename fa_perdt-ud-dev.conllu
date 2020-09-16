@@ -3209,7 +3209,7 @@
 8-10	بیجایشان،	_	_	_	_	_	_	_	_
 8	بیجا	بیجا	ADJ	ADJ_AJP	_	5	amod	_	_
 9	یشان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	5	nmod	_	_
-10	،	،	PUNCT	PUNC	_	9	punct	_	_
+10	،	،	PUNCT	PUNC	_	8	punct	_	_
 11	علت	علت	NOUN	N_IANM	Number=Sing	0	root	_	_
 12	اصلی	اصلی	ADJ	ADJ_AJP	_	11	amod	_	_
 13	این	این	DET	PREM_DEMAJ	_	14	det	_	_
@@ -5194,7 +5194,7 @@
 9-11	غرغرهایش،	_	_	_	_	_	_	_	_
 9	غرغرهای	غرغر	NOUN	N_IANM	Number=Plur	8	nmod	_	_
 10	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	9	nmod	_	_
-11	،	،	PUNCT	PUNC	_	10	punct	_	_
+11	،	،	PUNCT	PUNC	_	9	punct	_	_
 12	با	با	ADP	PREP	_	13	case	_	_
 13	ضربهٔ	ضربه	NOUN	N_IANM	Number=Sing	19	obl	_	_
 14	آرنج	آرنج	NOUN	N_IANM	Number=Sing	13	nmod	_	SpaceAfter=No
@@ -5853,7 +5853,7 @@
 38-40	بچه‌هایش،	_	_	_	_	_	_	_	_
 38	بچه‌های	بچه	NOUN	N_ANM	Number=Plur	37	nmod	_	_
 39	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	38	nmod	_	_
-40	،	،	PUNCT	PUNC	_	39	punct	_	_
+40	،	،	PUNCT	PUNC	_	38	punct	_	_
 41-42	برایش	_	_	_	_	_	_	_	_
 41	برای	برای	ADP	PREP	_	42	case	_	_
 42	ش	او	PRON	PR_JOPER	Number=Sing|Person=3	44	obl	_	_
@@ -7628,7 +7628,7 @@
 2	همکلاس	همکلاس	NOUN	N_ANM	Number=Sing	0	root	_	_
 3	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	2	nmod	_	_
 4	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	2	cop	_	SpaceAfter=No
-5	،	،	PUNCT	PUNC	_	3	punct	_	_
+5	،	،	PUNCT	PUNC	_	2	punct	_	_
 6	ایشان	ایشان	PRON	PR_SEPER	Number=Plur|Person=3	7	nsubj	_	_
 7	دکتر	دکتر	NOUN	N_ANM	Number=Sing	2	conj	_	_
 8	بودند	بود#باش	AUX	AUX	Number=Plur|Person=3	7	cop	_	SpaceAfter=No
@@ -15570,7 +15570,7 @@
 7	رو	رو	NOUN	N_IANM	Number=Sing	3	acl	_	_
 8	یش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	7	nmod	_	_
 9	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	7	cop	_	SpaceAfter=No
-10	،	،	PUNCT	PUNC	_	8	punct	_	_
+10	،	،	PUNCT	PUNC	_	7	punct	_	_
 11	می‌رفت	رفت#رو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	0	root	_	_
 12	و	و	CCONJ	CONJ	_	18	cc	_	_
 13	در	در	ADP	PREP	_	14	case	_	_
@@ -17151,7 +17151,7 @@
 4-6	زندگی‌ام،	_	_	_	_	_	_	_	_
 4	زندگی‌	زندگی	NOUN	N_IANM	Number=Sing	2	nmod	_	_
 5	ام	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	4	nmod	_	_
-6	،	،	PUNCT	PUNC	_	5	punct	_	_
+6	،	،	PUNCT	PUNC	_	4	punct	_	_
 7	نخستین	نخستین	ADJ	PRENUM	_	8	amod	_	_
 8	باری	بار	NOUN	N_IANM	Number=Sing	0	root	_	_
 9	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	8	cop	_	_
@@ -18593,7 +18593,7 @@
 5-7	اتاقش،	_	_	_	_	_	_	_	_
 5	اتاق	اتاق	NOUN	N_IANM	Number=Sing	3	nmod	_	_
 6	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	5	nmod	_	_
-7	،	،	PUNCT	PUNC	_	6	punct	_	_
+7	،	،	PUNCT	PUNC	_	5	punct	_	_
 8	کنار	کنار	NOUN	N_IANM	_	18	obl	_	_
 9	قفسهٔ	قفسه	NOUN	N_IANM	Number=Sing	8	obl	_	_
 10	کتاب‌ها	کتاب	NOUN	N_IANM	Number=Plur	9	nmod	_	_
@@ -19654,7 +19654,7 @@
 3-5	امیدم،	_	_	_	_	_	_	_	_
 3	امید	امید	NOUN	N_IANM	Number=Sing	2	nmod	_	_
 4	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	3	nmod	_	_
-5	،	،	PUNCT	PUNC	_	4	punct	_	_
+5	،	،	PUNCT	PUNC	_	3	punct	_	_
 6	همه	همه	NOUN	N_IANM	Number=Plur	1	appos	_	_
 7	سوسو	سوسو	NOUN	N_IANM	Number=Sing	8	compound:lvc	_	_
 8	می‌کنند	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
@@ -24534,7 +24534,7 @@
 3	تصرف	تصرف	NOUN	N_IANM	Number=Sing	0	root	_	_
 4	مان	ما	PRON	PR_JOPER	Number=Plur|Person=1|PronType=Prs	3	nmod	_	_
 5	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	3	cop	_	SpaceAfter=No
-6	،	،	PUNCT	PUNC	_	4	punct	_	_
+6	،	،	PUNCT	PUNC	_	3	punct	_	_
 7	غمی	غم	NOUN	N_IANM	Number=Sing	8	obj	_	_
 8	نداشتیم	داشت#دار	VERB	V_ACT	Number=Plur|Person=1|Polarity=Neg|Tense=Past|Voice=Act	3	conj	_	SpaceAfter=No
 9	،	،	PUNCT	PUNC	_	8	punct	_	_
@@ -27248,7 +27248,7 @@
 7-9	دخترم،	_	_	_	_	_	_	_	_
 7	دختر	دختر	NOUN	N_ANM	Number=Sing	5	ccomp	_	_
 8	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	7	nmod	_	_
-9	،	،	PUNCT	PUNC	_	8	punct	_	_
+9	،	،	PUNCT	PUNC	_	7	punct	_	_
 10	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	16	nsubj	_	_
 11	داری	داشت#دار	AUX	V_ACT	Number=Sing|Person=2|Voice=Act	16	aux	_	_
 12	از	از	ADP	PREP	_	13	case	_	_
