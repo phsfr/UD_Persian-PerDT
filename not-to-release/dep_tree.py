@@ -1778,6 +1778,9 @@ class DependencyTree:
             self.final_tags[16] = '_'
         if self.sen_id == 55648:
             self.final_tags[23] = '_'
+        if self.sen_id == 26782:
+            self.final_tags[27] = '_'
+
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
