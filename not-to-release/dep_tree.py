@@ -1697,7 +1697,6 @@ class DependencyTree:
             self.heads[164] = 15
             self.rebuild_children()
 
-
         #fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:
             self.final_tags[21]='_'
