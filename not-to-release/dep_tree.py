@@ -1653,7 +1653,53 @@ class DependencyTree:
             self.heads[9] = 3
             self.rebuild_children()
 
-
+        #fixing punctuations wih wrong spaceAfter=No attribute
+        if self.sen_id == 24250:
+            self.final_tags[21]='_'
+        if self.sen_id == 26797:
+            self.final_tags[9]='_'
+        if self.sen_id == 31604: 
+            self.final_tags[22]='_'
+        if self.sen_id == 31991:
+            self.final_tags[19]='_'
+        if self.sen_id == 46436:
+            self.final_tags[9]='_'
+        if self.sen_id == 47619:
+            self.final_tags[16]='_'
+        if self.sen_id == 37678:
+            self.final_tags[3]='_'
+        if self.sen_id == 38698:
+            self.final_tags[3]='_'
+        if self.sen_id == 39639:
+            self.final_tags[24]='_'
+        if self.sen_id == 43063:
+            self.final_tags[11]='_'
+        if self.sen_id == 46982:
+            self.final_tags[7]='_'
+        if self.sen_id == 44481:
+            self.final_tags[5]='_'  
+        if self.sen_id == 51871:
+            self.final_tags[2]='_'   
+        if self.sen_id == 51891:
+            self.final_tags[3]='_'    
+        if self.sen_id == 52496:
+            self.final_tags[10]='_'    
+        if self.sen_id == 53360:
+            self.final_tags[8]='_'   
+        if self.sen_id == 54078:
+            self.final_tags[13]='_'   
+        if self.sen_id == 54485:
+            self.final_tags[0]='_' 
+        if self.sen_id == 55574:
+            self.final_tags[11]='_' 
+        if self.sen_id == 57356:
+            self.final_tags[10]='_'    
+        if self.sen_id == 57548:
+            self.final_tags[14]='_'  
+        if self.sen_id == 48396:
+            self.final_tags[5]='_' 
+        if self.sen_id == 54741:
+            self.final_tags[0]='_'              
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
@@ -1696,7 +1742,7 @@ class DependencyTree:
             self.tags[6] = "PROPN"
             self.heads[6] = 6
             self.labels[6] = "flat:name"
-            self.heads[7] = 5
+            self.heads[7] = 5   
 
         self.ud_validate_fix()
 
