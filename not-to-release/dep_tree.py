@@ -1726,6 +1726,12 @@ class DependencyTree:
             self.labels[10] = "advcl"
             self.labels[15] = "ccomp"
             self.rebuild_children()
+        if self.sen_id == 39684:
+            self.heads[29] = 28
+            self.heads[49] = 49
+            self.labels[29] = "conj"
+            self.labels[49] = "amod"
+            self.rebuild_children()
 
         # fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:
