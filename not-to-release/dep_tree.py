@@ -1563,6 +1563,7 @@ class DependencyTree:
                     for dhc in self.children[dh]:
                         if self.labels[dhc - 1] == "punct" and self.heads[drange[0] - 1] == drange[-1]:
                             self.heads[dhc - 1] = drange[-1]
+                            
         self.rebuild_children()
         for i in range(len(self.words)):
             if self.labels[i] == "flat:name":
@@ -1655,6 +1656,19 @@ class DependencyTree:
         if self.sen_id == 28623:
             self.heads[9] = 3
             self.rebuild_children()
+        if self.sen_id == 26040:
+            self.heads[6] = 1
+            self.rebuild_children()
+        if self.sen_id == 26134:
+            self.heads[26] = 28
+            self.rebuild_children()
+        if self.sen_id == 26135:
+            self.heads[10] = 13
+            self.rebuild_children()
+        if self.sen_id == 26182:
+            self.heads[5] = 7
+            self.rebuild_children()
+
 
     def manual_postprocess(self):
         if self.sen_id == 47788:
