@@ -1555,6 +1555,13 @@ class DependencyTree:
 
     def ud_validate_fix(self):
         # Fixes errors by validator
+        if len(self.mw_line)>0:
+            for mw in self.mw_line.values():
+                drange = [int(x) for x in mw.strip().split("\t")[0].split("-")]
+                for dh in range(drange[0], drange[1]):
+                    for dhc in self.children[dh]:
+                        if self.labels[dhc-1] == "punct":
+                            self.heads[dhc-1] = drange[-1]
         for i in range(len(self.words)):
             if (self.words[i] == "و" or self.ftags[i] == "CONJ") and self.tags[i] == "PUNCT":
                 self.labels[i] = "cc"

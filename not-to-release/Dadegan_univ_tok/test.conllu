@@ -961,7 +961,7 @@
 9-11	کارتان،	_	_	_	_	_	_	_	_
 9	کار	کار	N	IANM	attachment=ISO|number=SING|senID=40308	8	MOZ	_	_
 10	تان	شما	PR	JOPER	number=PLUR|person=2|pronType=Prs|senID=40308	9	MOZ	_	_
-11	،	،	PUNC	PUNC	attachment=ISO|senID=40308	9	PUNC	_	_
+11	،	،	PUNC	PUNC	attachment=ISO|senID=40308	10	PUNC	_	_
 12	پست	پست	N	IANM	attachment=ISO|number=SING|senID=40308	14	NVE	_	_
 13	خواهید	خواست#خواه	AUX	AUX	number=PLUR|person=2|senID=40308|tense=Fut|verbForm=Fin	14	aux	_	_
 14	کرد	کرد#کن	V	ACT	Dadeg_fpos=ACT|number=SING|person=3|senID=40308|tense=Past|tma=AY	0	root	_	SpaceAfter=No
@@ -1628,7 +1628,7 @@
 10-12	پاچه‌اش،	_	_	_	_	_	_	_	_
 10	پاچه‌	پاچه	N	IANM	attachment=ISO|number=SING|senID=40688	9	MOZ	_	_
 11	اش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=40688	10	MOZ	_	_
-12	،	،	PUNC	PUNC	attachment=ISO|senID=40688	10	PUNC	_	_
+12	،	،	PUNC	PUNC	attachment=ISO|senID=40688	11	PUNC	_	_
 13	شلوار	شلوار	N	IANM	attachment=ISO|number=SING|senID=40688	15	PREDEP	_	_
 14	خود	خود	PR	CREFX	attachment=ISO|senID=40688	13	MOZ	_	_
 15	را	را	POSTP	POSTP	attachment=ISO|senID=40688	17	OBJ	_	_
@@ -3281,7 +3281,7 @@
 12-14	شوهرش،	_	_	_	_	_	_	_	_
 12	شوهر	شوهر	N	ANM	attachment=ISO|number=SING|senID=41643	10	APP	_	_
 13	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=41643	12	MOZ	_	_
-14	،	،	PUNC	PUNC	attachment=ISO|senID=41643	12	PUNC	_	_
+14	،	،	PUNC	PUNC	attachment=ISO|senID=41643	13	PUNC	_	_
 15	یک	یک	PRENUM	PRENUM	attachment=ISO|senID=41643	16	NPREMOD	_	_
 16	زندگی	زندگی	N	IANM	attachment=ISO|number=SING|senID=41643	18	PREDEP	_	_
 17	خانوادگی	خانوادگی	ADJ	AJP	attachment=ISO|senID=41643	16	NPOSTMOD	_	_
@@ -4671,7 +4671,7 @@
 11-13	عقلم،	_	_	_	_	_	_	_	_
 11	عقل	عقل	N	IANM	attachment=ISO|number=SING|senID=42390	10	POSDEP	_	_
 12	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=42390	11	MOZ	_	_
-13	،	،	PUNC	PUNC	attachment=ISO|senID=42390	11	PUNC	_	_
+13	،	،	PUNC	PUNC	attachment=ISO|senID=42390	12	PUNC	_	_
 14	طبیعت	طبیعت	N	IANM	attachment=ISO|number=SING|senID=42390	17	PREDEP	_	_
 15-16	اطرافم	_	_	_	_	_	_	_	_
 15	اطراف	اطراف	N	IANM	attachment=ISO|number=SING|senID=42390	14	MOZ	_	_
@@ -5518,7 +5518,7 @@
 13-15	ندیدمت.	_	_	_	_	_	_	_	_
 13	ندیدم	دید#بین	V	ACT	attachment=NXT|number=SING|person=1|polarity=NEG|senID=42862|tma=GS	0	root	_	_
 14	ت	تو	PR	JOPER	attachment=PRV|number=SING|person=2|senID=42862	13	OBJ	_	_
-15	.	.	PUNC	PUNC	attachment=ISO|senID=42862	13	PUNC	_	_
+15	.	.	PUNC	PUNC	attachment=ISO|senID=42862	14	PUNC	_	_
 
 # sent_id = test-s299
 # text = به مردم بگو به این موضع (مسجد مقدس جمکران) رغبت کنند و آن را عزیز دارند.
@@ -20054,7 +20054,7 @@
 47-49	پدرش،	_	_	_	_	_	_	_	_
 47	پدر	پدر	N	ANM	attachment=ISO|number=SING|senID=48546	46	POSDEP	_	_
 48	ش	او	PR	JOPER	number=SING|person=3|pronType=Prs|senID=48546	47	MOZ	_	_
-49	،	،	PUNC	PUNC	attachment=ISO|senID=48546	47	PUNC	_	_
+49	،	،	PUNC	PUNC	attachment=ISO|senID=48546	48	PUNC	_	_
 50	عهدشکنی	عهدشکنی	N	IANM	attachment=ISO|number=SING|senID=48546	51	NVE	_	_
 51	می‌کرد	کرد#کن	V	ACT	attachment=ISO|number=SING|person=3|senID=48546|tma=GES	43	NCL	_	SpaceAfter=No
 52	.	.	PUNC	PUNC	attachment=ISO|senID=48546	5	PUNC	_	_
@@ -20861,7 +20861,7 @@
 7-8	زینبم	_	_	_	_	_	_	_	_
 7	زینب	زینب	N	IANM	attachment=ISO|number=SING|senID=54442	4	VCONJ	_	_
 8	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=54442	7	MOZ	_	_
-9	!	!	PUNC	PUNC	attachment=ISO|senID=54442	7	PUNC	_	_
+9	!	!	PUNC	PUNC	attachment=ISO|senID=54442	8	PUNC	_	_
 10-11	عزیزم	_	_	_	_	_	_	_	_
 10	عزیز	عزیز	N	IANM	attachment=ISO|number=SING|senID=54442	7	VCONJ	_	_
 11	م	من	PR	JOPER	number=SING|person=1|pronType=Prs|senID=54442	10	MOZ	_	_
@@ -25069,7 +25069,7 @@
 4-6	فرزندانمان،	_	_	_	_	_	_	_	_
 4	فرزندان	فرزند	N	ANM	attachment=ISO|number=PLUR|senID=44232	3	MOZ	_	_
 5	مان	ما	PR	JOPER	number=PLUR|person=1|pronType=Prs|senID=44232	4	MOZ	_	_
-6	،	،	PUNC	PUNC	attachment=ISO|senID=44232	4	PUNC	_	_
+6	،	،	PUNC	PUNC	attachment=ISO|senID=44232	5	PUNC	_	_
 7	صبر	صبر	N	IANM	attachment=ISO|number=SING|senID=44232	10	NVE	_	_
 8	و	و	CONJ	CONJ	attachment=ISO|senID=44232	7	NCONJ	_	_
 9	بردباری	بردباری	N	IANM	attachment=ISO|number=SING|senID=44232	8	POSDEP	_	_
