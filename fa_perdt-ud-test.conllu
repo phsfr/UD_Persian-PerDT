@@ -961,7 +961,7 @@
 9-11	کارتان،	_	_	_	_	_	_	_	_
 9	کار	کار	NOUN	N_IANM	Number=Sing	8	nmod	_	_
 10	تان	شما	PRON	PR_JOPER	Number=Plur|Person=2|PronType=Prs	9	nmod	_	_
-11	،	،	PUNCT	PUNC	_	10	punct	_	_
+11	،	،	PUNCT	PUNC	_	9	punct	_	_
 12	پست	پست	NOUN	N_IANM	Number=Sing	14	compound:lvc	_	_
 13	خواهید	خواست#خواه	AUX	AUX	Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	14	aux	_	_
 14	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
@@ -1628,7 +1628,7 @@
 10-12	پاچه‌اش،	_	_	_	_	_	_	_	_
 10	پاچه‌	پاچه	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 11	اش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	10	nmod	_	_
-12	،	،	PUNCT	PUNC	_	11	punct	_	_
+12	،	،	PUNCT	PUNC	_	10	punct	_	_
 13	شلوار	شلوار	NOUN	N_IANM	Number=Sing	17	obj	_	_
 14	خود	خود	PRON	PR_CREFX	_	13	nmod	_	_
 15	را	را	ADP	POSTP	_	13	case	_	_
@@ -2006,7 +2006,7 @@
 10	به	به	ADP	PREP	_	11	case	_	_
 11	قانون	قانون	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 12	نداشته	داشت#دار	VERB	V_ACT	Number=Plur|Person=3|Polarity=Neg|Tense=Pres|Voice=Act	0	root	_	_
-13	و	و	PUNCT	CONJ	_	12	punct	_	_
+13	و	و	CCONJ	CONJ	_	12	cc	_	_
 14	به	به	ADP	PREP	_	15	case	_	_
 15	بهانه‌های	بهانه	NOUN	N_IANM	Number=Plur	22	obl	_	_
 16	مختلف	مختلف	ADJ	ADJ_AJP	_	15	amod	_	_
@@ -3281,7 +3281,7 @@
 12-14	شوهرش،	_	_	_	_	_	_	_	_
 12	شوهر	شوهر	NOUN	N_ANM	Number=Sing	10	appos	_	_
 13	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	12	nmod	_	_
-14	،	،	PUNCT	PUNC	_	13	punct	_	_
+14	،	،	PUNCT	PUNC	_	12	punct	_	_
 15	یک	یک	NUM	PRENUM	_	16	nummod	_	_
 16	زندگی	زندگی	NOUN	N_IANM	Number=Sing	20	obj	_	_
 17	خانوادگی	خانوادگی	ADJ	ADJ_AJP	_	16	amod	_	_
@@ -3297,7 +3297,7 @@
 26	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	25	nmod	_	_
 27	وول	وول	NOUN	N_IANM	Number=Sing	28	compound:lvc	_	_
 28	بخورند	خورد#خور	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	20	advcl	_	SpaceAfter=No
-29	.	.	PUNCT	PUNC	_	4	punct	_	_
+29	.	.	PUNCT	PUNC	_	3	punct	_	_
 
 # sent_id = test-s178
 # text = کودک ساعت‌ها برای ساخت یک خانهٔ گلی یا نقاشی وقت می‌گذارد.
@@ -4671,7 +4671,7 @@
 11-13	عقلم،	_	_	_	_	_	_	_	_
 11	عقل	عقل	NOUN	N_IANM	Number=Sing	9	nmod	_	_
 12	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	11	nmod	_	_
-13	،	،	PUNCT	PUNC	_	12	punct	_	_
+13	،	،	PUNCT	PUNC	_	11	punct	_	_
 14	طبیعت	طبیعت	NOUN	N_IANM	Number=Sing	19	obj	_	_
 15-16	اطرافم	_	_	_	_	_	_	_	_
 15	اطراف	اطراف	NOUN	N_IANM	Number=Sing	14	nmod	_	_
@@ -5518,7 +5518,7 @@
 13-15	ندیدمت.	_	_	_	_	_	_	_	_
 13	ندیدم	دید#بین	VERB	V_ACT	Number=Sing|Person=1|Polarity=Neg|Tense=Past|Voice=Act	0	root	_	_
 14	ت	تو	PRON	PR_JOPER	Number=Sing|Person=2	13	obj	_	_
-15	.	.	PUNCT	PUNC	_	14	punct	_	_
+15	.	.	PUNCT	PUNC	_	13	punct	_	_
 
 # sent_id = test-s299
 # text = به مردم بگو به این موضع (مسجد مقدس جمکران) رغبت کنند و آن را عزیز دارند.
@@ -17751,7 +17751,7 @@
 6	اسهال	اسهال	NOUN	N_IANM	Number=Sing	7	compound:lvc	_	_
 7	شده	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	1	acl	_	_
 8	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	7	aux	_	SpaceAfter=No
-9	.	.	PUNCT	PUNC	_	3	punct	_	_
+9	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = test-s926
 # text = شیخ شیراز سعدی‌نامه را این گونه آغاز نهاده است.
@@ -20054,7 +20054,7 @@
 47-49	پدرش،	_	_	_	_	_	_	_	_
 47	پدر	پدر	NOUN	N_ANM	Number=Sing	51	obl	_	_
 48	ش	او	PRON	PR_JOPER	Number=Sing|Person=3|PronType=Prs	47	nmod	_	_
-49	،	،	PUNCT	PUNC	_	48	punct	_	_
+49	،	،	PUNCT	PUNC	_	47	punct	_	_
 50	عهدشکنی	عهدشکنی	NOUN	N_IANM	Number=Sing	51	compound:lvc	_	_
 51	می‌کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	43	acl	_	SpaceAfter=No
 52	.	.	PUNCT	PUNC	_	5	punct	_	_
@@ -20861,7 +20861,7 @@
 7-8	زینبم	_	_	_	_	_	_	_	_
 7	زینب	زینب	PROPN	N_IANM	Number=Sing	1	conj	_	_
 8	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	7	nmod	_	_
-9	!	!	PUNCT	PUNC	_	8	punct	_	_
+9	!	!	PUNCT	PUNC	_	7	punct	_	_
 10-11	عزیزم	_	_	_	_	_	_	_	_
 10	عزیز	عزیز	NOUN	N_IANM	Number=Sing	1	conj	_	_
 11	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	10	nmod	_	_
@@ -23369,7 +23369,7 @@
 20	را	را	ADP	POSTP	_	16	case	_	_
 21	عصاره‌گیری	عصاره‌گیری	NOUN	N_IANM	Number=Sing	22	compound:lvc	_	_
 22	کرده	کرد#کن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	13	conj	_	_
-23	و	و	PUNCT	CONJ	_	28	punct	_	_
+23	و	و	CCONJ	CONJ	_	28	cc	_	_
 24	با	با	ADP	PREP	_	26	case	_	_
 25	راسب	راسب	ADJ	ADJ_AJP	_	26	advmod	_	_
 26	کردن	کردن	NOUN	N_IANM	Number=Sing	28	obl	_	_
@@ -24690,7 +24690,7 @@
 21	قذافی	قذافی	NOUN	N_ANM	Number=Sing	17	nmod	_	_
 22	ظاهر	ظاهر	NOUN	N_IANM	Number=Sing	23	compound:lvc	_	_
 23	بشود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	24	nmod	_	_
-24	و	و	PUNCT	CONJ	_	34	punct	_	_
+24	و	و	CCONJ	CONJ	_	34	cc	_	_
 25	ابتدایی‌ترین	ابتدایی	ADJ	ADJ_AJSUP	_	26	amod	_	_
 26	حقوق	حق	NOUN	N_IANM	Number=Plur	34	obj	_	_
 27	مخالفان	مخالف	NOUN	N_ANM	Number=Plur	26	nmod	_	_
@@ -25069,7 +25069,7 @@
 4-6	فرزندانمان،	_	_	_	_	_	_	_	_
 4	فرزندان	فرزند	NOUN	N_ANM	Number=Plur	3	nmod	_	_
 5	مان	ما	PRON	PR_JOPER	Number=Plur|Person=1|PronType=Prs	4	nmod	_	_
-6	،	،	PUNCT	PUNC	_	5	punct	_	_
+6	،	،	PUNCT	PUNC	_	4	punct	_	_
 7	صبر	صبر	NOUN	N_IANM	Number=Sing	10	compound:lvc	_	_
 8	و	و	CCONJ	CONJ	_	9	cc	_	_
 9	بردباری	بردباری	NOUN	N_IANM	Number=Sing	7	conj	_	_

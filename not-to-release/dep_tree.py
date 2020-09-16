@@ -1556,19 +1556,22 @@ class DependencyTree:
     def ud_validate_fix(self):
         # Fixes errors by validator
         self.rebuild_children()
-        if len(self.mw_line)>0:
+        if len(self.mw_line) > 0:
             for mw in self.mw_line.values():
                 drange = [int(x) for x in mw.strip().split("\t")[0].split("-")]
                 for dh in range(drange[0], drange[1]):
                     for dhc in self.children[dh]:
-                        if self.labels[dhc-1] == "punct":
-                            self.heads[dhc-1] = drange[-1]
+                        if self.labels[dhc - 1] == "punct" and self.heads[drange[0] - 1] == drange[-1]:
+                            self.heads[dhc - 1] = drange[-1]
+                        if self.labels[dhc - 1] == "punct" and self.heads[drange[0] - 1] == self.heads[drange[-1] - 1]:
+                            self.heads[dhc - 1] = self.heads[drange[0] - 1]
+
         self.rebuild_children()
         for i in range(len(self.words)):
             if self.labels[i] == "flat:name":
-                for lchild in self.children[i+1]:
-                    self.heads[lchild-1] = self.heads[i]
-            if (self.words[i] == "و" or self.ftags[i] == "CONJ") and self.tags[i] == "PUNCT":
+                for lchild in self.children[i + 1]:
+                    self.heads[lchild - 1] = self.heads[i]
+            if self.ftags[i] == "CONJ" and self.labels[i] == "punct":
                 self.labels[i] = "cc"
                 self.tags[i] = "CCONJ"
             if self.tags[i] == "PUNCT":
@@ -1579,7 +1582,7 @@ class DependencyTree:
                 self.final_tags[i] = "SpaceAfter=No"
             if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"aux", "aux:pass", "cop", "cc"}:
                 self.heads[i] = self.heads[self.heads[i] - 1]
-            self.rebuild_children()
+                self.rebuild_children()
             if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"case"} and self.labels[i] == "fixed":
                 self.heads[i] = self.heads[self.heads[i] - 1]
                 self.rebuild_children()
@@ -1589,6 +1592,9 @@ class DependencyTree:
                 self.rebuild_children()
                 if self.tags[i] == "PRON":
                     self.labels[i] = "nmod"
+            if self.labels[i] == "punct" and self.labels[self.heads[i] - 1] == "cop":
+                self.heads[i] = self.heads[self.heads[i] - 1]
+                self.rebuild_children()
             if self.labels[i] == "case" and self.tags[i] == "ADV":
                 self.labels[i] = "advmod"
             if self.labels[i] == "case" and self.tags[i] == "NUM":
@@ -1652,6 +1658,45 @@ class DependencyTree:
         if self.sen_id == 28623:
             self.heads[9] = 3
             self.rebuild_children()
+        if self.sen_id == 26040:
+            self.heads[6] = 1
+            self.rebuild_children()
+        if self.sen_id == 26134:
+            self.heads[26] = 28
+            self.rebuild_children()
+        if self.sen_id == 26135:
+            self.heads[10] = 13
+            self.rebuild_children()
+        if self.sen_id == 26182:
+            self.heads[5] = 7
+            self.rebuild_children()
+        if self.heads == 26240:
+            self.heads[8] = 10
+            self.heads[13] = 10
+            self.rebuild_children()
+        if self.sen_id == 26270:
+            self.heads[8] = 10
+            self.heads[15] = 15
+            self.heads[16] = 10
+            self.rebuild_children()
+        if self.sen_id == 26280:
+            self.heads[4] = 6
+            self.heads[8] = 6
+            self.rebuild_children()
+        if self.sen_id == 26385:
+            self.heads[12] = 14
+            self.heads[16] = 14
+            self.heads[17] = 14
+            self.rebuild_children()
+        if self.sen_id == 26403:
+            self.heads[8] = 12
+            self.heads[13] = 12
+            self.heads[14] = 12
+            self.rebuild_children()
+        if self.sen_id == 26782:
+            self.heads[164] = 15
+            self.rebuild_children()
+
 
         #fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:

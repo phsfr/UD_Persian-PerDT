@@ -26,8 +26,8 @@ if not os.path.exists("parser_data/d+s-nt"):
 dir_path = os.path.dirname(os.path.realpath(__file__))
 os.chdir(dir_path)
 
-# print("fix_dadegan_deps.py")
-# os.system("python3 -u fix_dadegan_deps.py")
+print("fix_dadegan_deps.py")
+os.system("python3 -u fix_dadegan_deps.py")
 
 print("convertNERtoPrn.py")
 os.system("python3 -u convertNERtoPrn.py")
