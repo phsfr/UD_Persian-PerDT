@@ -1772,6 +1772,11 @@ class DependencyTree:
             self.heads[18] = 18
             self.labels[17] = "ccomp"
             self.rebuild_children()
+        if self.sen_id == 23558:
+            self.heads[17] = 19
+            self.heads[18] = 15
+            self.labels[18] = "conj"
+            self.rebuild_children()
 
 
 
@@ -1830,6 +1835,8 @@ class DependencyTree:
             self.final_tags[27] = '_'
         if self.sen_id == 51300:
             self.final_tags[14] = '_'
+        if tree.sen_id == 35524:
+            tree.final_tags[16] = '_'
 
 
 

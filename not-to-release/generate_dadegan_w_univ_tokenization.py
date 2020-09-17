@@ -25,6 +25,7 @@ if __name__ == '__main__':
                 tag, fpos = ftag.split("_") if "_" in ftag else (ftag, ftag)
                 tree.tags[t] = tag
                 tree.ftags[t] = fpos
-
+            if tree.sen_id == 35524:
+                tree.final_tags[16] = '_'
 
         DependencyTree.write_to_conllu(trees, output_files[f_idx])

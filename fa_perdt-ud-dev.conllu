@@ -241,8 +241,8 @@
 15	ذوب‌آهن	ذوب‌آهن	PROPN	N_IANM	Number=Sing	21	obl:arg	_	_
 16	و	و	CCONJ	CONJ	_	15	case	_	_
 17	سپس	سپس	ADV	ADV_SADV	_	19	advmod	_	_
-18	با	با	ADP	PREP	_	17	case	_	_
-19	جگوار	جگوار	PROPN	N_IANM	Number=Sing	17	nmod	_	_
+18	با	با	ADP	PREP	_	19	case	_	_
+19	جگوار	جگوار	PROPN	N_IANM	Number=Sing	15	conj	_	_
 20	دیدار	دیدار	NOUN	N_IANM	Number=Sing	21	compound:lvc	_	_
 21	می‌کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	SpaceAfter=No
 22	.	.	PUNCT	PUNC	_	21	punct	_	_
@@ -16688,7 +16688,7 @@
 14	زمین	زمین	NOUN	N_IANM	Number=Sing	13	nmod	_	_
 15	ارتفاع	ارتفاع	NOUN	N_IANM	Number=Sing	16	compound:lvc	_	_
 16	گرفته	گرفت#گیر	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	7	acl	_	_
-17	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	16	aux	_	SpaceAfter=No
+17	باشد	بود#باش	AUX	AUX	Mood=Sub|Number=Sing|Person=3|Tense=Pres	16	aux	_	_
 18	"	"	PUNCT	PUNC	_	19	punct	_	SpaceAfter=No
 19	هه‌ور	هه‌ور	NOUN	N_IANM	Number=Sing	21	xcomp	_	SpaceAfter=No
 20	"	"	PUNCT	PUNC	_	19	punct	_	_
