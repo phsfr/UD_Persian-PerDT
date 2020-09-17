@@ -26,9 +26,9 @@ In the last step, dependency mapping, there was a lot of challenges. PerDT conta
 | Test  |  1455  |  24K  |  6.7K |     5.1K    |  1671  |
 | All   |  29107 |  509K | 36.7K |    21.6K    |  5413  |
 
-#Dep. relations: 36 of which 3 are language-specific.
+* Dep. relations: 36 of which 3 are language-specific.
 
-#POS tags: 17
+* POS tags: 17
 
 # Data Split
 We followed the same split used in PerDT: 89% of data dedicated to trainle 5% regarded for each dev and test sections. 
@@ -39,9 +39,13 @@ For feedback and bug reports, please contact rasooli@seas.upenn.edu and pegh.saf
 
 # References
 
-1. Rasooli, Mohammad Sadegh, Manouchehr Kouhestani, and Amirsaeid Moloodi. "Development of a Persian syntactic dependency treebank." Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2013.
-2. Taher, Ehsan, Seyed Abbas Hoseini, and Mehrnoush Shamsfard. "Beheshti-NER: Persian named entity recognition Using BERT." arXiv preprint arXiv:2003.08875 (2020).
-3. Rasooli, Mohammad Sadegh, Safari, Pegah, AmirSaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020. (To appear).
+*  Rasooli, Mohammad Sadegh, Manouchehr Kouhestani, and Amirsaeid Moloodi. "Development of a Persian syntactic dependency treebank." Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2013.
+
+*  Taher, Ehsan, Seyed Abbas Hoseini, and Mehrnoush Shamsfard. "Beheshti-NER: Persian named entity recognition Using BERT." arXiv preprint arXiv:2003.08875 (2020).
+
+*  Rasooli, Mohammad Sadegh, Safari, Pegah, AmirSaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020. (To appear).
+
+
 
 
 <pre>
