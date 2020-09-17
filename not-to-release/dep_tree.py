@@ -1751,6 +1751,12 @@ class DependencyTree:
             self.rebuild_children()
         if self.sen_id == 50038:
             self.tags[10] = "PROPN"
+        if self.sen_id == 38715:
+            self.heads[65] = 68
+            self.heads[66] = 68
+            self.heads[67] = 64
+            self.labels[67] = "conj"
+            self.rebuild_children()
         # if self.sen_id == 32219:
         #     self.heads[1]= 0
         #     self.labels[1] ="root"
