@@ -1560,14 +1560,29 @@ class DependencyTree:
         for i in range(len(self.words)):
             if self.labels[i] == "punct":
                 punc_dep = i + 1
+                original_punc_head = self.heads[i]
                 punc_head = self.heads[i]
 
                 if punc_head in non_projs:
-                    if punc_dep < punc_head:
-                        self.heads[i] = i + 2
-                    else:
-                        self.heads[i] = i
+                    changed = False
+                    while True:
+                        punc_head = self.heads[punc_head - 1]
+                        if punc_head > 0:
+                            self.heads[i] = punc_head
+                            non_projs = self.get_nonprojective_arcs(self.heads)
+                            if punc_head not in non_projs:
+                                changed = True
+                                break
+                        else:
+                            break
+
+                    if not changed:
+                        if punc_dep < original_punc_head:
+                            self.heads[i] = i + 2
+                        else:
+                            self.heads[i] = i
                     self.rebuild_children()
+                    non_projs = self.get_nonprojective_arcs(self.heads)
 
     def ud_validate_fix(self):
         # Fixes errors by validator
@@ -1584,15 +1599,13 @@ class DependencyTree:
 
         self.rebuild_children()
 
-
-
         for i in range(len(self.words)):
-            if self.labels[i]=="nsubj":
-                for ch in self.children[self.heads[i]]: #multi-subj addressing
-                    if self.labels[ch-1]=="nsubj":
-                        if ch-1 != i:
-                            self.heads[ch-1] = i + 1
-                            self.labels[ch-1] = "conj"
+            if self.labels[i] == "nsubj":
+                for ch in self.children[self.heads[i]]:  # multi-subj addressing
+                    if self.labels[ch - 1] == "nsubj":
+                        if ch - 1 != i:
+                            self.heads[ch - 1] = i + 1
+                            self.labels[ch - 1] = "conj"
 
             if self.labels[i] == "flat:name":
                 for lchild in self.children[i + 1]:
@@ -1641,11 +1654,11 @@ class DependencyTree:
             if self.labels[i] in {"cc", "punct"} and len(self.children[i + 1]) > 0:
                 for pch in self.children[i + 1]:
                     self.heads[pch - 1] = self.heads[i]
-            if self.labels[i]=="conj" and self.heads[i]-1>i:
-                h = self.heads[i]-1
+            if self.labels[i] == "conj" and self.heads[i] - 1 > i:
+                h = self.heads[i] - 1
                 self.labels[i] = self.labels[h]
                 self.heads[i] = self.heads[h]
-                self.heads[h] = i+1
+                self.heads[h] = i + 1
                 self.labels[h] = "conj"
                 self.rebuild_children()
 
@@ -1786,8 +1799,6 @@ class DependencyTree:
             self.heads[0] = 9
             self.rebuild_children()
 
-
-
         # fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:
             self.final_tags[21] = '_'
@@ -1845,8 +1856,6 @@ class DependencyTree:
             self.final_tags[14] = '_'
         if tree.sen_id == 35524:
             tree.final_tags[16] = '_'
-
-
 
     def manual_postprocess(self):
         if self.sen_id == 47788:

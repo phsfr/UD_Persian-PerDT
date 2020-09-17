@@ -1048,7 +1048,7 @@
 56	بار	بار	NOUN	N_IANM	Number=Sing	57	obl:arg	_	_
 57	نشسته	نشست#نشین	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|VerbForm=Part|Voice=Act	26	acl	_	_
 58	است	#است	AUX	AUX	Number=Sing|Person=3|Tense=Pres	57	aux	_	SpaceAfter=No
-59	.	.	PUNCT	PUNC	_	58	punct	_	_
+59	.	.	PUNCT	PUNC	_	19	punct	_	_
 
 # sent_id = dev-s28
 # text = به همین خاطر زمین دچار فشردگی شده بود که هوادهی و افزایش اکسیژن زمین برای رفع این مشکل انجام شد.
@@ -3209,7 +3209,7 @@
 8-10	بیجایشان،	_	_	_	_	_	_	_	_
 8	بیجا	بیجا	ADJ	ADJ_AJP	_	5	amod	_	_
 9	یشان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	5	nmod	_	_
-10	،	،	PUNCT	PUNC	_	9	punct	_	_
+10	،	،	PUNCT	PUNC	_	11	punct	_	_
 11	علت	علت	NOUN	N_IANM	Number=Sing	0	root	_	_
 12	اصلی	اصلی	ADJ	ADJ_AJP	_	11	amod	_	_
 13	این	این	DET	PREM_DEMAJ	_	14	det	_	_
@@ -4916,7 +4916,7 @@
 38	در	در	ADP	PREP	_	39	case	_	_
 39	خطر	خطر	NOUN	N_IANM	Number=Sing	35	ccomp	_	_
 40	است	#است	AUX	AUX	Number=Sing|Person=3	39	cop	_	SpaceAfter=No
-41	»	»	PUNCT	PUNC	_	40	punct	_	SpaceAfter=No
+41	»	»	PUNCT	PUNC	_	35	punct	_	SpaceAfter=No
 42	.	.	PUNCT	PUNC	_	41	punct	_	_
 
 # sent_id = dev-s198
@@ -5056,7 +5056,7 @@
 8	جمال‌لو	جمال‌لو	PROPN	N_ANM	Number=Sing	7	nmod	_	_
 9	بفرمایید	فرمود#فرما	VERB	V_ACT	Mood=Imp|Number=Plur|Person=2|Tense=Pres|Voice=Act	7	conj	_	SpaceAfter=No
 10	»	»	PUNCT	PUNC	_	9	punct	_	SpaceAfter=No
-11	.	.	PUNCT	PUNC	_	10	punct	_	_
+11	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = dev-s205
 # text = به خاطر تشکر از هشدار سرپرست، گفتم: «دمت گرم، آقای جمال‌لو».
@@ -5069,7 +5069,7 @@
 7	،	،	PUNCT	PUNC	_	6	punct	_	_
 8	گفتم	گفت#گو	VERB	V_ACT	Number=Sing|Person=1|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 9	:	:	PUNCT	PUNC	_	8	punct	_	_
-10	«	«	PUNCT	PUNC	_	11	punct	_	SpaceAfter=No
+10	«	«	PUNCT	PUNC	_	13	punct	_	SpaceAfter=No
 11-12	دمت	_	_	_	_	_	_	_	_
 11	دم	دم	NOUN	N_IANM	Number=Sing	13	nmod	_	_
 12	ت	تو	PRON	PR_JOPER	Number=Sing|Person=2|PronType=Prs	11	nmod	_	_
@@ -5077,8 +5077,8 @@
 14	،	،	PUNCT	PUNC	_	13	punct	_	_
 15	آقای	آقا	NOUN	N_ANM	Number=Sing	13	conj	_	_
 16	جمال‌لو	جمال‌لو	PROPN	N_ANM	Number=Sing	15	nmod	_	SpaceAfter=No
-17	»	»	PUNCT	PUNC	_	16	punct	_	SpaceAfter=No
-18	.	.	PUNCT	PUNC	_	17	punct	_	_
+17	»	»	PUNCT	PUNC	_	15	punct	_	SpaceAfter=No
+18	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = dev-s206
 # text = کارخانه را با آن دوز و کلک به این روز سیاه نشاند تا حالا خودش به نصف قیمت، آن هم از دم قسط، بالا بکشد.
@@ -5239,7 +5239,7 @@
 16	پیمانکار	پیمانکار	NOUN	N_ANM	Number=Sing	15	nmod	_	_
 17	است	#است	AUX	AUX	Number=Sing|Person=3	15	cop	_	SpaceAfter=No
 18	.	.	PUNCT	PUNC	_	17	punct	_	SpaceAfter=No
-19	»	»	PUNCT	PUNC	_	18	punct	_	_
+19	»	»	PUNCT	PUNC	_	15	punct	_	_
 
 # sent_id = dev-s214
 # text = بار اول متوجه منظور متن آگهی نشدم.
@@ -5821,7 +5821,7 @@
 7	بعد	بعد	ADV	ADV_SADV	_	8	advmod	_	_
 8	گفت	گفت#گو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	5	conj	_	SpaceAfter=No
 9	:	:	PUNCT	PUNC	_	8	punct	_	_
-10	"	"	PUNCT	PUNC	_	11	punct	_	SpaceAfter=No
+10	"	"	PUNCT	PUNC	_	20	punct	_	SpaceAfter=No
 11	بعد	بعد	ADP	PREP	_	14	case	_	_
 12	از	از	ADP	PREP	_	14	case	_	_
 13	آن	آن	DET	PREM_DEMAJ	_	14	det	_	_
@@ -5859,8 +5859,8 @@
 42	ش	او	PRON	PR_JOPER	Number=Sing|Person=3	44	obl	_	_
 43	قبری	قبر	NOUN	N_IANM	Number=Sing	44	obj	_	_
 44	کند	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	31	advcl	_	SpaceAfter=No
-45	"	"	PUNCT	PUNC	_	44	punct	_	SpaceAfter=No
-46	.	.	PUNCT	PUNC	_	45	punct	_	_
+45	"	"	PUNCT	PUNC	_	27	punct	_	SpaceAfter=No
+46	.	.	PUNCT	PUNC	_	8	punct	_	_
 
 # sent_id = dev-s245
 # text = شنیده بودند که پدرم یک پسر کوچک هم دارد.
@@ -6085,7 +6085,7 @@
 18	و	و	CCONJ	CONJ	_	19	cc	_	_
 19	نغمه‌ها	نغمه	NOUN	N_IANM	Number=Plur	17	conj	_	_
 20	بودند	بود#باش	AUX	AUX	Number=Plur|Person=3	15	cop	_	SpaceAfter=No
-21	.	.	PUNCT	PUNC	_	20	punct	_	_
+21	.	.	PUNCT	PUNC	_	4	punct	_	_
 
 # sent_id = dev-s252
 # text = درست است که در قدیم صداهای جادویی فراوانی در عرصه‌های محدود محلی جلوه می‌کردند و بعد در عین گمنامی، هم خود و هم آثارشان توأمان راهی دیار فراموشی می‌شوند، اما هر یک از آن‌ها صاحب شناسنامه و هویت مخصوصی بودند و رنگ و بوی ویژهٔ خود را داشتند.
@@ -8015,7 +8015,7 @@
 29	سیدنی	سیدنی	PROPN	N_IANM	Number=Sing	28	flat:name	_	_
 30	دریافت	دریافت	NOUN	N_IANM	Number=Sing	31	compound:lvc	_	_
 31	کردم	کرد#کن	VERB	V_ACT	Number=Sing|Person=1|Tense=Past|Voice=Act	12	conj	_	SpaceAfter=No
-32	.	.	PUNCT	PUNC	_	31	punct	_	_
+32	.	.	PUNCT	PUNC	_	12	punct	_	_
 
 # sent_id = dev-s352
 # text = شما با آن همه اکسیژن که در اختیار داشته‌اید چه کردید جز از نفس افتادن؟
@@ -8354,7 +8354,7 @@
 10	جیغ	جیغ	NOUN	N_IANM	Number=Sing	11	compound:lvc	_	_
 11	می‌زنند	زد#زن	VERB	V_ACT	Number=Plur|Person=3|Tense=Pres|Voice=Act	6	ccomp	_	SpaceAfter=No
 12	:	:	PUNCT	PUNC	_	11	punct	_	_
-13	«	«	PUNCT	PUNC	_	14	punct	_	SpaceAfter=No
+13	«	«	PUNCT	PUNC	_	16	punct	_	SpaceAfter=No
 14	نهضت	نهضت	NOUN	N_IANM	Number=Sing	16	nmod	_	_
 15	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	14	nmod	_	_
 16	حسینی	حسینی	PROPN	ADJ_AJP	_	11	ccomp	_	SpaceAfter=No
@@ -8363,7 +8363,7 @@
 19	ما	ما	PRON	PR_SEPER	Number=Plur|Person=1	18	nmod	_	_
 20	خمینی	خمینی	PROPN	N_ANM	Number=Sing	16	conj	_	SpaceAfter=No
 21	»	»	PUNCT	PUNC	_	20	punct	_	SpaceAfter=No
-22	.	.	PUNCT	PUNC	_	21	punct	_	_
+22	.	.	PUNCT	PUNC	_	11	punct	_	_
 
 # sent_id = dev-s376
 # text = می‌گویند سر پشت‌بام‌ها مسلسل‌چی‌ها کمین کرده‌اند.
@@ -9125,7 +9125,7 @@
 16	و	و	CCONJ	CONJ	_	17	cc	_	_
 17	لغزشی	لغزش	NOUN	N_IANM	Number=Sing	15	conj	_	_
 18	بازگرفته‌اند	باز#گرفت#گیر	VERB	V_ACT	Number=Plur|Person=3|VerbForm=Part|Voice=Act	10	conj	_	SpaceAfter=No
-19	.	.	PUNCT	PUNC	_	18	punct	_	_
+19	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = dev-s419
 # text = آموزگارانی که از سال‌های گذشته از آزمون بازمانده بودند و کسانی که در سال‌های گذشته در این برنامه بی‌نتیجه مانده بودند، شامل آزمون شده و آزمونشان گرفته شده است.
@@ -14575,7 +14575,7 @@
 18	خیاطی	خیاطی	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 19	کرده	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	15	acl	_	_
 20	بود	بود#باش	AUX	AUX	Number=Sing|Person=3|Tense=Past	19	aux	_	SpaceAfter=No
-21	،	،	PUNCT	PUNC	_	20	punct	_	_
+21	،	،	PUNCT	PUNC	_	23	punct	_	_
 22	مدت‌ها	مدت	NOUN	N_IANM	Number=Plur	23	obl	_	_
 23	نتوانست	توانست#توان	VERB	V_ACT	Number=Sing|Person=3|Polarity=Neg|Tense=Past|Voice=Act	12	conj	_	_
 24	بدوزد	دوخت#دوز	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	23	ccomp	_	SpaceAfter=No
@@ -21647,7 +21647,7 @@
 25	صحنه	صحنه	NOUN	N_IANM	Number=Sing	20	conj	_	_
 26	عکاسی	عکاسی	NOUN	N_IANM	Number=Sing	27	compound:lvc	_	_
 27	می‌کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Voice=Act	17	acl	_	SpaceAfter=No
-28	.	.	PUNCT	PUNC	_	27	punct	_	_
+28	.	.	PUNCT	PUNC	_	2	punct	_	_
 
 # sent_id = dev-s1096
 # text = هر جا از سنت‌های الهی فاصله گرفتیم با مشکلات و معضلات زیادی مواجه شده‌ایم.
@@ -24561,7 +24561,7 @@
 30	"	"	PUNCT	PUNC	_	31	punct	_	SpaceAfter=No
 31	کثیف	کثیف	ADJ	ADJ_AJP	_	29	amod	_	_
 32	فعلی	فعلی	ADJ	ADJ_AJP	_	29	amod	_	SpaceAfter=No
-33	"	"	PUNCT	PUNC	_	32	punct	_	_
+33	"	"	PUNCT	PUNC	_	29	punct	_	_
 34	آرزوهایی	آرزو	NOUN	N_IANM	Number=Plur	35	compound:lvc	_	_
 35	کرده	کرد#کن	VERB	V_ACT	Number=Plur|Person=1|Voice=Act	3	conj	_	SpaceAfter=No
 36	،	،	PUNCT	PUNC	_	35	punct	_	_
@@ -24967,7 +24967,7 @@
 # text = گفت: «تو مرا نمی‌بینی، مرا به این گندگی، عشقم را به این بزرگی، و علی را که لبخندش دنیا را می‌ارزد، اینها را نمی‌بینی، بعد می‌نشینی در مورد آن کارگر افغانی می‌نویسی، او که مجموع دقایقی که دیدمش به پنج نمی‌رسد، می‌نشینی و ساعت‌ها در موردش فکر می‌کنی و ساعت‌ها می‌نویسی.».
 1	گفت	گفت#گو	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	PUNC	_	1	punct	_	_
-3	«	«	PUNCT	PUNC	_	4	punct	_	SpaceAfter=No
+3	«	«	PUNCT	PUNC	_	1	punct	_	SpaceAfter=No
 4	تو	تو	PRON	PR_SEPER	Number=Sing|Person=2	7	nsubj	_	_
 5-6	مرا	_	_	_	_	_	_	_	_
 5	م	من	PRON	PR_SEPER	Number=Sing|Person=1	7	obj	_	_
@@ -25038,8 +25038,8 @@
 65	ساعت‌ها	ساعت	NOUN	N_IANM	Number=Plur	66	obl	_	_
 66	می‌نویسی	نوشت#نویس	VERB	V_ACT	Number=Sing|Person=2|Tense=Pres|Voice=Act	7	conj	_	SpaceAfter=No
 67	.	.	PUNCT	PUNC	_	66	punct	_	SpaceAfter=No
-68	»	»	PUNCT	PUNC	_	67	punct	_	SpaceAfter=No
-69	.	.	PUNCT	PUNC	_	68	punct	_	_
+68	»	»	PUNCT	PUNC	_	66	punct	_	SpaceAfter=No
+69	.	.	PUNCT	PUNC	_	1	punct	_	_
 
 # sent_id = dev-s1265
 # text = اما از تمام این 99 مرد، همه ازدواج نمی‌کنند و از هر 100 زن، 61 زن بیشتر شانس زناشویی ندارد.
@@ -25065,7 +25065,7 @@
 20	شانس	شانس	NOUN	N_IANM	Number=Sing	22	obj	_	_
 21	زناشویی	زناشویی	NOUN	N_IANM	Number=Sing	20	nmod	_	_
 22	ندارد	داشت#دار	VERB	V_ACT	Number=Sing|Person=3|Polarity=Neg|Tense=Pres|Voice=Act	10	conj	_	SpaceAfter=No
-23	.	.	PUNCT	PUNC	_	22	punct	_	_
+23	.	.	PUNCT	PUNC	_	10	punct	_	_
 
 # sent_id = dev-s1266
 # text = حالا باز درد آمد و گرفت و کوفت و ماند.
@@ -26666,7 +26666,7 @@
 10	و	و	CCONJ	CONJ	_	11	cc	_	_
 11	زنان	زن	NOUN	N_ANM	Number=Plur	6	conj	_	_
 12	باایمان	باایمان	ADJ	ADJ_AJP	_	9	amod	_	SpaceAfter=No
-13	،	،	PUNCT	PUNC	_	12	punct	_	_
+13	،	،	PUNCT	PUNC	_	14	punct	_	_
 14	پشت	پشت	NOUN	N_IANM	Number=Sing	4	ccomp	_	_
 15	و	و	CCONJ	CONJ	_	16	cc	_	_
 16	پناه	پناه	NOUN	N_IANM	Number=Sing	14	conj	_	_
@@ -29834,7 +29834,7 @@
 4	که	که	SCONJ	SUBR	_	5	mark	_	_
 5	زودگذر	زودگذر	ADJ	ADJ_AJP	_	2	acl	_	_
 6	است	#است	AUX	AUX	Number=Sing|Person=3	5	cop	_	SpaceAfter=No
-7	،	،	PUNCT	PUNC	_	6	punct	_	_
+7	،	،	PUNCT	PUNC	_	8	punct	_	_
 8	بدانید	دانست#دان	VERB	V_ACT	Mood=Imp|Number=Plur|Person=2|Tense=Pres|Voice=Act	0	root	_	_
 9	چراکه	چراکه	SCONJ	SUBR	_	16	mark	_	_
 10	اساس	اساس	NOUN	N_IANM	Number=Sing	16	nsubj	_	_
