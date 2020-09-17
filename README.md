@@ -2,7 +2,7 @@
 
 # Summary
 Universal Persian Dependency Treebank (UPerDT) is the result of automatic coversion of Persian Dependency Treebank (PerDT) with extensive manual corrections. Please refer to the follwoing work, if you use this data:
-*  Rasooli, Mohammad Sadegh, Safari, Pegah, Amirsaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020 (to appear).
+*  Mohammad Sadegh Rasooli, Pegah Safari, Amirsaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020 (to appear).
 
 
 # Introduction
@@ -42,11 +42,11 @@ For feedback and bug reports, please contact rasooli@seas.upenn.edu and pegh.saf
 
 # References
 
-*  Rasooli, Mohammad Sadegh, Manouchehr Kouhestani, and Amirsaeid Moloodi. "Development of a Persian syntactic dependency treebank." Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2013.
+*  Mohammad Sadegh Rasooli, Manouchehr Kouhestani, and Amirsaeid Moloodi. "Development of a Persian syntactic dependency treebank." Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2013.
 
-*  Taher, Ehsan, Seyed Abbas Hoseini, and Mehrnoush Shamsfard. "Beheshti-NER: Persian named entity recognition Using BERT." arXiv preprint arXiv:2003.08875 (2020).
+*  Ehsan Taher, Seyed Abbas Hoseini, and Mehrnoush Shamsfard. "Beheshti-NER: Persian named entity recognition Using BERT." arXiv preprint arXiv:2003.08875 (2020).
 
-*  Rasooli, Mohammad Sadegh, Safari, Pegah, Amirsaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020. (To appear).
+*  Mohammad Sadegh Rasooli, Pegah Safari, Amirsaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020 (to appear).
 
 
 
