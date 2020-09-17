@@ -31,7 +31,7 @@ In the last step, dependency mapping, there was a lot of challenges. PerDT conta
 * POS tags: 17
 
 # Data Split
-We followed the same split used in PerDT: 89% of data dedicated to trainle 5% regarded for each dev and test sections. 
+We followed the same split used in PerDT: 89% of data dedicated to train while 5% regarded for each dev and test sections. 
 
 # Feedback and Bug Reports
 For feedback and bug reports, please contact rasooli@seas.upenn.edu and pegh.safari@gmail.com.
