@@ -1757,12 +1757,12 @@ class DependencyTree:
             self.heads[67] = 64
             self.labels[67] = "conj"
             self.rebuild_children()
-        # if self.sen_id == 32219:
-        #     self.heads[1]= 0
-        #     self.labels[1] ="root"
-        #     self.heads[14] = 2
-        #     self.labels[14] = "conj"
-        #     self.rebuild_children()
+        if self.sen_id == 30702:
+            self.labels[0] = "obl:arg"
+            self.rebuild_children()
+        if self.sen_id == 41590:
+            self.labels[0] = "obl:arg"
+            self.rebuild_children()
 
         # fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:
