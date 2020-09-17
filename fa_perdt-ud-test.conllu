@@ -6496,7 +6496,7 @@
 
 # sent_id = test-s348
 # text = بیماری که متوجه می‌شود با اضطراب و استرس گوش او خارش می‌کند، پس این خارش ناشی از مسائل روحی و روانی است.
-1	بیماری	بیماری	NOUN	N_ANM	Number=Sing	10	appos	_	_
+1	بیماری	بیماری	NOUN	N_ANM	Number=Sing	9	nmod	_	_
 2	که	که	SCONJ	SUBR	_	4	mark	_	_
 3	متوجه	متوجه	ADJ	ADJ_AJP	_	4	xcomp	_	_
 4	می‌شود	شد#شو	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	1	acl	_	_
@@ -15318,8 +15318,8 @@
 # text = فرماندهٔ انتظامی خراسان رضوی خاطرنشان کرد: اگر از منابع طبیعی حفاظت نکنیم آیندگان ما را نفرین خواهند کرد.
 1	فرماندهٔ	فرمانده	PROPN	N_ANM	Number=Sing	6	nsubj	_	_
 2	انتظامی	انتظامی	PROPN	ADJ_AJP	_	1	flat:name	_	_
-3	خراسان	خراسان	PROPN	N_IANM	Number=Sing	0	flat:name	_	_
-4	رضوی	رضوی	PROPN	ADJ_AJP	_	0	flat:name	_	_
+3	خراسان	خراسان	PROPN	N_IANM	Number=Sing	1	flat:name	_	_
+4	رضوی	رضوی	PROPN	ADJ_AJP	_	1	flat:name	_	_
 5	خاطرنشان	خاطرنشان	NOUN	N_IANM	Number=Sing	6	compound:lvc	_	_
 6	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	0	root	_	SpaceAfter=No
 7	:	:	PUNCT	PUNC	_	6	punct	_	_
@@ -15335,7 +15335,7 @@
 17	نفرین	نفرین	NOUN	N_IANM	Number=Sing	19	compound:lvc	_	_
 18	خواهند	خواست#خواه	AUX	AUX	Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	aux	_	_
 19	کرد	کرد#کن	VERB	V_ACT	Number=Sing|Person=3|Tense=Past|Voice=Act	6	ccomp	_	SpaceAfter=No
-20	.	.	PUNCT	PUNC	_	19	punct	_	_
+20	.	.	PUNCT	PUNC	_	6	punct	_	_
 
 # sent_id = test-s800
 # text = دولت عثمانی موقوفات موجود در مکه و دیگر شهرها را ثبت کرده و اسناد آنها را نگهداری کرده است.
@@ -20858,8 +20858,8 @@
 4	حسین	حسین	PROPN	N_ANM	Number=Sing	1	conj	_	_
 5	جان	جان	NOUN	N_IANM	Number=Sing	4	obl	_	SpaceAfter=No
 6	!	!	PUNCT	PUNC	_	5	punct	_	_
-7-8	زینبم	_	_	_	_	_	_	_	_
-7	زینب	زینب	PROPN	N_IANM	Number=Sing	1	conj	_	_
+7-9	زینبم!	_	_	_	_	_	_	_	_
+7	زینب	زینب	NOUN	N_IANM	Number=Sing	1	conj	_	_
 8	م	من	PRON	PR_JOPER	Number=Sing|Person=1|PronType=Prs	7	nmod	_	_
 9	!	!	PUNCT	PUNC	_	7	punct	_	_
 10-11	عزیزم	_	_	_	_	_	_	_	_

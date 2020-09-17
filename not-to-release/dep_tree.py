@@ -1777,6 +1777,14 @@ class DependencyTree:
             self.heads[18] = 15
             self.labels[18] = "conj"
             self.rebuild_children()
+        if self.sen_id == 51672:
+            self.heads[2] = 1
+            self.heads[3] = 1
+            self.rebuild_children()
+        if self.sen_id == 46679:
+            self.labels[0] = "nmod"
+            self.heads[0] = 9
+            self.rebuild_children()
 
 
 

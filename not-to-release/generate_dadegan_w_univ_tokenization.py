@@ -27,5 +27,8 @@ if __name__ == '__main__':
                 tree.ftags[t] = fpos
             if tree.sen_id == 35524:
                 tree.final_tags[16] = '_'
+            if tree.sen_id == 54442:
+                tree.tags[6] = 'PROPN'
+                tree.ftags[6] = "N_ANM"
 
         DependencyTree.write_to_conllu(trees, output_files[f_idx])
