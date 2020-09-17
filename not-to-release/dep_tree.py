@@ -1583,7 +1583,17 @@ class DependencyTree:
                             self.heads[dhc - 1] = self.heads[drange[0] - 1]
 
         self.rebuild_children()
+
+
+
         for i in range(len(self.words)):
+            if self.labels[i]=="nsubj":
+                for ch in self.children[self.heads[i]]: #multi-subj addressing
+                    if self.labels[ch-1]=="nsubj":
+                        if ch-1 != i:
+                            self.heads[ch-1] = i + 1
+                            self.labels[ch-1] = "conj"
+
             if self.labels[i] == "flat:name":
                 for lchild in self.children[i + 1]:
                     self.heads[lchild - 1] = self.heads[i]
@@ -1786,6 +1796,9 @@ class DependencyTree:
             self.final_tags[23] = '_'
         if self.sen_id == 26782:
             self.final_tags[27] = '_'
+        if self.sen_id == 51300:
+            self.final_tags[14] = '_'
+
 
 
     def manual_postprocess(self):

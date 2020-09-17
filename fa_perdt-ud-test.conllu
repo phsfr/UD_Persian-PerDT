@@ -6569,7 +6569,7 @@
 8	بی‌سابقه‌ای	بی‌سابقه	ADJ	ADJ_AJP	_	7	amod	_	_
 9	از	از	ADP	PREP	_	10	case	_	_
 10	بانک‌ها	بانک	NOUN	N_IANM	Number=Plur	12	obl:arg	_	_
-11	وام	وام	NOUN	N_IANM	Number=Sing	12	nsubj	_	_
+11	وام	وام	NOUN	N_IANM	Number=Sing	4	conj	_	_
 12	می‌گرفتند	گرفت#گیر	VERB	V_ACT	Number=Plur|Person=3|Voice=Act	0	root	_	_
 13	و	و	CCONJ	CONJ	_	19	cc	_	_
 14	به	به	ADP	PREP	_	15	case	_	_
@@ -10668,20 +10668,20 @@
 16	و	و	CCONJ	CONJ	_	26	cc	_	_
 17	بعضی‌ها	بعضی	NOUN	N_ANM	Number=Plur	26	nsubj	_	_
 18-19	نگاهشان	_	_	_	_	_	_	_	_
-18	نگاه	نگاه	NOUN	N_IANM	Number=Sing	26	nsubj	_	_
+18	نگاه	نگاه	NOUN	N_IANM	Number=Sing	17	conj	_	_
 19	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	18	nmod	_	_
 20	در	در	ADP	PREP	_	21	case	_	_
 21	کلاس	کلاس	NOUN	N_IANM	Number=Sing	26	obl	_	_
 22	بود	بود#باش	AUX	AUX	Number=Sing|Person=3	26	cop	_	_
 23	و	و	CCONJ	CONJ	_	26	cc	_	_
 24-25	فکرشان	_	_	_	_	_	_	_	_
-24	فکر	فکر	NOUN	N_IANM	Number=Sing	26	nsubj	_	_
+24	فکر	فکر	NOUN	N_IANM	Number=Sing	17	conj	_	_
 25	شان	آنها	PRON	PR_JOPER	Number=Plur|Person=3|PronType=Prs	24	nmod	_	_
 26	سمت	سمت	NOUN	N_IANM	Number=Sing	8	conj	_	_
 27	و	و	CCONJ	CONJ	_	28	cc	_	_
 28	سوی	سو	NOUN	N_IANM	Number=Sing	26	conj	_	_
 29	دیگر	دیگر	ADJ	ADJ_AJP	_	26	amod	_	SpaceAfter=No
-30	.	.	PUNCT	PUNC	_	26	punct	_	_
+30	.	.	PUNCT	PUNC	_	29	punct	_	_
 
 # sent_id = test-s557
 # text = ما از ساعت 3 تا 6 بعد از ظهر کل جزیره را گشت زدیم.
@@ -12829,7 +12829,7 @@
 29	دینی	دینی	ADJ	ADJ_AJP	_	28	amod	_	_
 30	با	با	ADP	PREP	_	31	case	_	_
 31	اینها	اینها	PRON	PR_DEMON	Number=Plur|Person=3	32	nmod	_	_
-32	تساهل	تساهل	NOUN	N_IANM	Number=Sing	36	nsubj	_	_
+32	تساهل	تساهل	NOUN	N_IANM	Number=Sing	28	conj	_	_
 33	و	و	CCONJ	CONJ	_	34	cc	_	_
 34	تسامح	تسامح	NOUN	N_IANM	Number=Sing	32	conj	_	_
 35	خواهد	خواست#خواه	AUX	AUX	Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	36	aux	_	_
@@ -14275,7 +14275,7 @@
 # text = گاهی اوقات ارزش‌های کیفی آن قدر مهم می‌شوند که معیارهای کمی خود را به ثریا هم برسانند فایده نخواهد کرد.
 1	گاهی	گاهی	DET	PREM_AMBAJ	_	2	det	_	_
 2	اوقات	وقت	NOUN	N_IANM	Number=Sing	8	nsubj	_	_
-3	ارزش‌های	ارزش	NOUN	N_IANM	Number=Plur	8	nsubj	_	_
+3	ارزش‌های	ارزش	NOUN	N_IANM	Number=Plur	2	conj	_	_
 4	کیفی	کیفی	ADJ	ADJ_AJP	_	3	amod	_	_
 5	آن	آن	DET	PREM_DEMAJ	_	6	det	_	_
 6	قدر	قدر	NOUN	N_IANM	Number=Sing	8	obl	_	_
@@ -15967,7 +15967,7 @@
 1	حاج	حاج	PROPN	IDEN	Number=Sing	7	nsubj	_	_
 2	حبیب	حبیب	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	چاهشوری	چاهشوری	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
-4	صدای	صدا	NOUN	N_IANM	Number=Sing	7	nsubj	_	_
+4	صدای	صدا	NOUN	N_IANM	Number=Sing	1	conj	_	_
 5	جاودانهٔ	جاودانه	ADJ	ADJ_AJP	_	4	amod	_	_
 6	مداحی	مداحی	NOUN	N_IANM	Number=Sing	4	nmod	_	_
 7	اهل	اهل	NOUN	N_IANM	Number=Sing	0	root	_	_
@@ -21035,7 +21035,7 @@
 17	به	به	ADP	PREP	_	18	case	_	_
 18	او	او	PRON	PR_SEPER	Number=Sing|Person=3	16	obl:arg	_	_
 19	و	و	CCONJ	CONJ	_	28	cc	_	_
-20	جلال‌الدین	جلال‌الدین	PROPN	N_ANM	Number=Sing	28	nsubj	_	_
+20	جلال‌الدین	جلال‌الدین	PROPN	N_ANM	Number=Sing	9	conj	_	_
 21	همایی	همایی	PROPN	N_ANM	Number=Sing	20	flat:name	_	_
 22	ذیل	ذیل	ADP	PREP	_	24	case	_	_
 23	559	559	NUM	PRENUM	_	24	nummod	_	_
@@ -22495,7 +22495,7 @@
 6	و	و	CCONJ	CONJ	_	8	cc	_	_
 7	آن	آن	DET	PREM_DEMAJ	_	8	det	_	_
 8	سخن	سخن	NOUN	N_IANM	Number=Sing	5	conj	_	_
-9	یقین	یقین	NOUN	N_IANM	Number=Sing	10	nsubj	_	_
+9	یقین	یقین	NOUN	N_IANM	Number=Sing	1	conj	_	_
 10	می‌آورد	آورد#آور	VERB	V_ACT	Number=Sing|Person=3|Tense=Pres|Voice=Act	0	root	_	_
 11	که	که	SCONJ	SUBR	_	13	mark	_	_
 12	آماده	آماده	ADJ	ADJ_AJP	_	13	xcomp	_	_
@@ -23645,7 +23645,7 @@
 # sent_id = test-s1212
 # text = اینک نماز عشق آنان مقبول آمده است.
 1	اینک	اینک	NOUN	N_IANM	Number=Sing	6	nsubj	_	_
-2	نماز	نماز	NOUN	N_IANM	Number=Sing	6	nsubj	_	_
+2	نماز	نماز	NOUN	N_IANM	Number=Sing	1	conj	_	_
 3	عشق	عشق	NOUN	N_IANM	Number=Sing	2	nmod	_	_
 4	آنان	آنان	PRON	PR_SEPER	Number=Plur|Person=3	3	nmod	_	_
 5	مقبول	مقبول	ADJ	ADJ_AJP	_	6	xcomp	_	_
@@ -24654,7 +24654,7 @@
 9	پول	پول	NOUN	N_IANM	Number=Sing	20	obl:arg	_	_
 10	و	و	CCONJ	CONJ	_	20	cc	_	_
 11	یک	یک	NUM	PRENUM	_	12	nummod	_	_
-12	آدم	آدم	NOUN	N_ANM	Number=Sing	20	nsubj	_	_
+12	آدم	آدم	NOUN	N_ANM	Number=Sing	6	conj	_	_
 13	جاه‌پرست	جاه‌پرست	ADJ	ADJ_AJP	_	12	amod	_	_
 14	برای	برای	ADP	PREP	_	15	case	_	_
 15	جاه	جاه	NOUN	N_IANM	Number=Sing	20	obl:arg	_	_
@@ -28419,7 +28419,7 @@
 1	علی	علی	PROPN	N_ANM	Number=Sing	6	nsubj	_	_
 2	دایی	دایی	PROPN	N_ANM	Number=Sing	1	flat:name	_	_
 3	وقتی	وقت	NOUN	N_IANM	Number=Sing	6	obl	_	_
-4	علی	علی	PROPN	N_ANM	Number=Sing	6	nsubj	_	_
+4	علی	علی	PROPN	N_ANM	Number=Sing	1	conj	_	_
 5	دایی	دایی	PROPN	N_ANM	Number=Sing	4	flat:name	_	_
 6	است	#است	AUX	AUX	Number=Sing|Person=3	0	root	_	_
 7	که	که	SCONJ	SUBR	_	3	acl	_	_
@@ -28480,7 +28480,7 @@
 13	دین	دین	NOUN	N_IANM	Number=Sing	20	nsubj	_	_
 14	اکمال	اکمال	NOUN	N_IANM	Number=Sing	20	obj	_	_
 15	و	و	CCONJ	CONJ	_	20	cc	_	_
-16	نعمت	نعمت	NOUN	N_IANM	Number=Sing	20	nsubj	_	_
+16	نعمت	نعمت	NOUN	N_IANM	Number=Sing	13	conj	_	_
 17	الهی	الهی	ADJ	ADJ_AJP	_	16	amod	_	_
 18	اتمام	اتمام	NOUN	N_IANM	Number=Sing	20	obj	_	_
 19	پیدا	پیدا	ADJ	ADJ_AJP	_	20	compound:lvc	_	_
