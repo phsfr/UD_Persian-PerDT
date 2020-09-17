@@ -1641,6 +1641,13 @@ class DependencyTree:
             if self.labels[i] in {"cc", "punct"} and len(self.children[i + 1]) > 0:
                 for pch in self.children[i + 1]:
                     self.heads[pch - 1] = self.heads[i]
+            if self.labels[i]=="conj" and self.heads[i]-1>i:
+                h = self.heads[i]-1
+                self.labels[i] = self.labels[h]
+                self.heads[i] = self.heads[h]
+                self.heads[h] = i+1
+                self.labels[h] = "conj"
+                self.rebuild_children()
 
         if self.sen_id == 23558:
             self.heads[16] = 19
@@ -1742,6 +1749,14 @@ class DependencyTree:
             self.labels[29] = "conj"
             self.labels[49] = "amod"
             self.rebuild_children()
+        if self.sen_id == 50038:
+            self.tags[10] = "PROPN"
+        # if self.sen_id == 32219:
+        #     self.heads[1]= 0
+        #     self.labels[1] ="root"
+        #     self.heads[14] = 2
+        #     self.labels[14] = "conj"
+        #     self.rebuild_children()
 
         # fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:
