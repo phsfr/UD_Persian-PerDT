@@ -1,20 +1,23 @@
 # Universal Persian Dependency Treebank (v1.0)
 
 # Summary
-Universal Persian Dependency Treebank (UPerDT) is the result of automatic coversion of Persian Dependency Treebank (PerDT) with extensive manual corrections. 
+Universal Persian Dependency Treebank (UPerDT) is the result of automatic coversion of Persian Dependency Treebank (PerDT) with extensive manual corrections. Please refer to the follwoing work, if you use this data:
+*  Rasooli, Mohammad Sadegh, Safari, Pegah, Amirsaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020 (to appear).
+
 
 # Introduction
 Universal Persian Dependency Treebank (UPerDT) is based on <a href="https://www.aclweb.org/anthology/N13-1031v1.pdf"> Persian Dependency Treebank (PerDT) </a>(Rasooli et al.,2013). The original Treebank consists of 29K sentences sampled from contemporary Persian text in different genres including: news, academic papers, magazine articles and fictions. 
 
-Treebank was annotated based on language specific schema and its automatic conversion involved three main steps: revising tokenization, POS mapping and dependency mapping. 
+This treebank was annotated based on a language-specific schema and its automatic conversion involved three main steps: revising tokenization, POS mapping and dependency mapping. 
 
 In tokenization step, in order to separate multiword inflections of simple verbs grouped as one token in PerDT, we followed the guidelines in (Rasooli et al., 2013, Table 3) to automatically find the main verbs. Also we automatically separated pronominal clitics. 
 
 In POS conversion step, we used the state of the art <a href="https://arxiv.org/abs/2003.08875"> BERT-based Persian NER tagger</a> (Taher et al.,2020) with manual corrections to extend recall. Through seven different entities detected by tagger, we used Person and Location to mark PROPN tags. 
 
-In the last step, dependency mapping, there was a lot of challenges. PerDT contains 43 syntactic relations with no straightforward mapping for most of them, conjunctions arranged from the beginning of the sentence to the end and more importantly, prepositions regarded as the head of prepositional phrases and auxiliary verbs as the head of sentences. So we rearranged the order of conjunctions from end to the beginning through a script and tailored rules to convert each kind of relation to its UD version properly. Through the whole process and at the end of each step, we investigated the results and applied manual corrections if it was needed.  
+PerDT contains 43 syntactic relations with no straightforward mapping for most of them, conjunctions arranged from the beginning of the sentence to the end and more importantly, prepositions regarded as the head of prepositional phrases and auxiliary verbs as the head of sentences. So we rearranged the order of conjunctions from end to the beginning through a script and tailored rules to convert each kind of relation to its UD version properly. Through the whole process and at the end of each step, we investigated the results and applied manual corrections if it was needed.  
 
 # Acknowledgements
+Thanks to Morteza Rezaei-Sharifabadi for helping with the copyright of this data.
 
 #
 
@@ -43,7 +46,7 @@ For feedback and bug reports, please contact rasooli@seas.upenn.edu and pegh.saf
 
 *  Taher, Ehsan, Seyed Abbas Hoseini, and Mehrnoush Shamsfard. "Beheshti-NER: Persian named entity recognition Using BERT." arXiv preprint arXiv:2003.08875 (2020).
 
-*  Rasooli, Mohammad Sadegh, Safari, Pegah, AmirSaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020. (To appear).
+*  Rasooli, Mohammad Sadegh, Safari, Pegah, Amirsaeid Moloodi, and Alireza Nourian. "The Persian Dependency Treebank Made Universal". 2020. (To appear).
 
 
 
@@ -59,7 +62,7 @@ UPOS: converted from manual
 XPOS: manual native
 Features: converted with corrections
 Relations: converted with corrections 
-Contributors: Rasooli, Mohammad Sadegh; Safari, Pegah; Moloodi, AmirSaeid; Nourian, Alireza
+Contributors: Rasooli, Mohammad Sadegh; Safari, Pegah; Moloodi, Amirsaeid; Nourian, Alireza
 Contributing: here source
 Contact: rasooli@seas.upenn.edu, pegh.safari@gmail.com
 ===============================================================================
