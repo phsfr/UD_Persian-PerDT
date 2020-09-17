@@ -1763,6 +1763,10 @@ class DependencyTree:
         if self.sen_id == 41590:
             self.labels[0] = "obl:arg"
             self.rebuild_children()
+        if self.sen_id == 54106:
+            self.heads[7] = 9
+            self.rebuild_children()
+
 
         # fixing punctuations wih wrong spaceAfter=No attribute
         if self.sen_id == 24250:
