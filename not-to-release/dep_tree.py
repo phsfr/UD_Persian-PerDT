@@ -31,7 +31,8 @@ class Features:
                 pass
 
     def __str__(self):
-        return "|".join([feat + "=" + v for feat, v in self.feat_dict.items()]) if len(self.feat_dict) > 0 else "_"
+        return "|".join([feat + "=" + v for feat, v in dict(sorted(self.feat_dict.items())).items()]) if len(
+            self.feat_dict) > 0 else "_"
 
     def feat(self, feat):  # get the value of a specific feature (feat)
         return self.feat_dict[feat]
@@ -211,15 +212,15 @@ class DependencyTree:
     def get_nonprojective_arcs(heads):
         non_projectives = set()
         for i in range(len(heads)):
-            if i in non_projectives:
-                continue
             dep1, head1 = i + 1, heads[i]
             for j in range(len(heads)):
                 if i == j: continue
                 dep2, head2 = j + 1, heads[j]
                 if DependencyTree.is_nonprojective_arc(dep1, head1, dep2, head2):
-                    non_projectives.add(i + 1)
-                    non_projectives.add(j + 1)
+                    non_projectives.add(dep1)
+                    non_projectives.add(dep2)
+                    non_projectives.add(head1)
+                    non_projectives.add(head2)
         return non_projectives
 
     @staticmethod
@@ -324,14 +325,30 @@ class DependencyTree:
         """
         lst = list()
         lst.append(self.sent_descript)  # adding first line as sentence number
-        lst.append(
-            " ".join([w for w in self.sent_str.split(" ")]))  # adding second line as sentence string
+        self.sent_str = remove_semispace(self.sent_str.strip())
+
+        lst.append(self.sent_str)  # adding second line as sentence string
         for i in range(len(self.words)):
             word_indx = str(i + 1)
             if word_indx in self.mw_line.keys():
-                mwline = "\t".join(self.mw_line[word_indx].strip().split("\t")[:10])
+                mw_spl = self.mw_line[word_indx].strip().split("\t")[:10]
+                indices = [int(x) for x in mw_spl[0].split("-")]
+                if mw_spl[-1] != "_":
+                    while True:
+                        indices.append(indices[-1] + 1)
+                        mw_spl[0] = str(indices[0]) + '-' + str(indices[-1])
+                        mw_spl[1] += self.words[indices[-1] - 1]
+                        if self.final_tags[indices[-1] - 1] == "_":
+                            break
+                        self.final_tags[indices[-1] - 1] = "_"
+                        # self.final_tags[indices[-1] - 1] = mw_spl[-1]
+                    mw_spl[-1] = "_"
+                # for f in indices[:-1]:
+                #     self.final_tags[f - 1] = "SpaceAfter=No"
+
+                mwline = "\t".join(mw_spl)
                 lst.append(mwline)
-            feats = [word_indx, self.words[i], self.lemmas[i], self.tags[i],
+            feats = [word_indx, self.words[i].replace(" ", ""), self.lemmas[i].replace(" ", ""), self.tags[i],
                      self.ftags[i], str(self.other_features[i]),
                      str(self.heads[i]), self.labels[i], self.semiFinal_tags[i], self.final_tags[i]]
             lst.append('\t'.join(feats))
@@ -472,10 +489,10 @@ class DependencyTree:
         pass
 
     def verb_mood_detection(self, verb_idx):
-        dadeg_fpos = self.ftags[verb_idx]
-        if 'dadeg_fpos' in self.other_features[verb_idx].feat_dict.keys():
-            dadeg_fpos = self.other_features[verb_idx].feat_dict['dadeg_fpos']
-        return dadeg_fpos
+        Dadeg_fpos = self.ftags[verb_idx]
+        if 'Dadeg_fpos' in self.other_features[verb_idx].feat_dict.keys():
+            Dadeg_fpos = self.other_features[verb_idx].feat_dict['Dadeg_fpos']
+        return Dadeg_fpos
 
     def exchange_pars_with_PRD(self, par_idx, par_new_role, child_new_role):
         prd_child = self.find_children_with_role(self.index[par_idx], 'PRD')
@@ -714,9 +731,9 @@ class DependencyTree:
             old_head = self.heads[idx]
             old_pos = self.tags[idx]
             word = self.words[idx]
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
+            Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
             rol_changed = False
-            if dadeg_pos == 'PREP' or dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
+            if Dadeg_pos == 'PREP' or Dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
                 children = self.find_all_children(self.index[idx], ['PUNCT'])
                 if len(children) == 2:
                     ch1_w = self.words[children[0]]
@@ -773,12 +790,12 @@ class DependencyTree:
             old_pos = self.tags[idx]
             word = self.words[idx]
             rol_changed = False
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
+            Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
 
-            if dadeg_pos == 'ADR' and (self.labels[idx] == 'PREDEP' or self.labels[idx] == 'POSDEP'):
+            if Dadeg_pos == 'ADR' and (self.labels[idx] == 'PREDEP' or self.labels[idx] == 'POSDEP'):
                 self.labels[idx] = 'case'
                 rol_changed = True
-            elif dadeg_pos == 'ADR':
+            elif Dadeg_pos == 'ADR':
                 pre_pos_child = [key for key, val in enumerate(self.heads) if val == self.index[idx] and (
                         self.labels[key] == 'PREDEP' or self.labels[key] == 'POSDEP')]
                 if len(pre_pos_child) > 0:
@@ -800,6 +817,15 @@ class DependencyTree:
             if old_role == 'MESU':
                 # 'MESU':'nmod' and change child and parent position; before case because of ...kilogram of ra in sentid=23499
                 self.exchange_child_parent(self.reverse_index[old_head], idx, 'nmod')
+                mesu_children = self.find_all_children(old_head)
+                for ch in mesu_children:
+                    if self.labels[ch] in {'punct'}:
+                        old_ch_h = self.heads[ch]
+                        old_ch_r = self.labels[ch]
+                        self.heads[ch] = self.index[idx]
+                        self.other_features[ch].add_feat('old_h', str(old_ch_h))
+                        self.other_features[ch].add_feat('old_r', old_ch_r)
+
                 rol_changed = True
 
             if old_role == 'COMPPP':
@@ -820,7 +846,7 @@ class DependencyTree:
                     raise Exception("SHOULD NOT HAVE MORE THAN ONE DEP!")
                 rol_changed = True
 
-            if dadeg_pos == 'PREP' or dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
+            if Dadeg_pos == 'PREP' or Dadeg_pos == 'POSTP':  # because of PCONJ rel, we need to implement case, before PCONJ change
                 children = self.find_all_children(self.index[idx], ['PUNCT'])  # because of را in sent=44271
                 if len(children) == 2:
                     if self.words[children[0]] == 'هم' or self.words[children[0]] == 'نیز':
@@ -962,9 +988,25 @@ class DependencyTree:
                     self.labels[idx] = 'advmod'
                     rol_changed = True
 
-            if old_role == "APREMOD" and self.tags[idx] == "NUM":
-                self.labels[idx] = 'nummod'
-                rol_changed = True
+            if old_role == "APREMOD":
+                if self.tags[idx] == "NUM":
+                    self.labels[idx] = 'nummod'
+                    rol_changed = True
+                elif self.tags[idx] == "ADJ":
+                    self.labels[idx] = 'amod'
+                    rol_changed = True
+                elif self.tags[idx] == "ADP":
+                    self.labels[idx] = 'obl'
+                    rol_changed = True
+                elif self.tags[idx] == "ADV":
+                    self.labels[idx] = 'advmod'
+                    rol_changed = True
+                elif self.tags[idx] == "DET":
+                    self.labels[idx] = 'det'
+                    rol_changed = True
+                elif self.tags[idx] in {"NOUN", "PRON", "PROPN"}:
+                    self.labels[idx] = 'nmod'
+                    rol_changed = True
             if self.tags[idx] == "PART" and self.words[idx] == "را":
                 head_children = self.children[self.heads[idx]]
                 head_children_labels = [self.labels[child - 1] for child in head_children]
@@ -1044,7 +1086,7 @@ class DependencyTree:
         # TAM is third level cause: اخطارهای نیروهای دولتی را به هیچ انگاشتند.
         simple_dep_map = {'TAM': 'xcomp', 'VPP': 'obl:arg', 'PART': 'mark', 'NPRT': 'compound:lvc',
                           'NVE': 'compound:lvc', 'ENC': 'compound:lvc', 'LVP': 'compound:lv', 'NE': 'compound:lvc',
-                          'APREMOD': 'advmod', 'ADVC': 'obl:arg', 'AJPP': 'obl:arg', 'NEZ': 'obl:arg',
+                          'ADVC': 'obl:arg', 'AJPP': 'obl:arg', 'NEZ': 'obl:arg',
                           'VPRT': 'compound:lvc'}
         v_copula = ['کرد#کن', 'گشت#گرد', 'گردید#گرد']
         for idx in range(0, len(self.words)):
@@ -1054,7 +1096,7 @@ class DependencyTree:
             lemma = self.lemmas[idx]
             word = self.words[idx]
             rol_changed = False
-            dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
+            Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
             # *************************************************
             # **** It's so important to put nsubj mapping after case in second level: because of this example:
             # (the dep role of child of را is SBJ)
@@ -1102,17 +1144,17 @@ class DependencyTree:
             # if word in adj_prenums and self.words[idx-1]=='و':
             #    print(self.words[idx-2]+' '+self.words[idx-1]+' '+word+' in sent='+self.sent_descript)
             if old_role == 'NPREMOD':
-                dadeg_pos = self.other_features[idx].feat_dict['dadeg_pos']
-                if dadeg_pos == 'PREM':
+                Dadeg_pos = self.other_features[idx].feat_dict['Dadeg_pos']
+                if Dadeg_pos == 'PREM':
                     self.labels[idx] = 'det'
-                # elif dadeg_pos=='PRENUM' and word not in adj_prenums:
+                # elif Dadeg_pos=='PRENUM' and word not in adj_prenums:
                 elif old_pos == 'NUM':
                     self.labels[idx] = 'nummod'
                 else:
                     # if word=='نصف' or word=='تک' or word=='چند':
                     # print('word {} in sent={}'.format(word,self.sent_descript))
                     self.labels[idx] = 'amod'
-                # if dadeg_pos=='POSNUM':
+                # if Dadeg_pos=='POSNUM':
                 #    print('POSTNUM in NPREMOD {}'.format(self.sent_descript))
                 rol_changed = True
             if old_role == 'NPOSTMOD':
@@ -1161,6 +1203,8 @@ class DependencyTree:
                     self.heads[idx] = self.index[head_idx]
                     if old_pos == 'ADV':
                         self.labels[idx] = 'advmod'
+                    elif old_pos == 'NUM':
+                        self.labels[idx] = 'nummod'
                     elif old_pos == 'NOUN' or old_pos == 'PROPN' or old_pos == 'PRON':
                         self.labels[idx] = 'nmod'
                     elif old_pos == 'ADJ':
@@ -1192,7 +1236,7 @@ class DependencyTree:
                     self.exchange_child_parent(self.reverse_index[old_head], idx, 'cop')
                     cop_child = self.find_all_children(old_head)
                     for ch in cop_child:
-                        if self.labels[ch] != 'aux' and self.labels[ch] != 'aux:pass':
+                        if self.labels[ch] not in {'aux', 'aux:pass'}:
                             old_ch_h = self.heads[ch]
                             old_ch_r = self.labels[ch]
                             self.heads[ch] = self.index[idx]
@@ -1291,8 +1335,12 @@ class DependencyTree:
                     self.labels[l] = "dep"
                 elif self.tags[l] == "NUM":
                     self.labels[l] = "nummod"
-                else:
+                elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
+                elif self.tags[l] == "CCONJ":
+                    self.labels[l] = "cc"
+                else:
+                    self.labels[l] = "nmod"
                 changed = True
             if label == "POSDEP":
                 if self.words[l] in {"نیز", "هم"}:
@@ -1301,8 +1349,16 @@ class DependencyTree:
                     self.labels[l] = "fixed"
                 elif self.tags[l] == "NUM":
                     self.labels[l] = "nummod"
-                else:
+                elif self.tags[l] == "CCONJ":
+                    self.labels[l] = "cc"
+                elif self.tags[l] == "ADV" or self.tags[l] == "ADJ":
                     self.labels[l] = "advmod"
+                else:
+                    if self.labels[self.heads[l] - 1] in {"obl:arg"}:
+                        self.labels[l] = self.labels[self.heads[l] - 1]
+                    else:
+                        self.labels[l] = "obl"
+
                 changed = True
 
             if not changed and label.split(":")[0] not in univ_dep_labels:
@@ -1497,6 +1553,310 @@ class DependencyTree:
         self.final_refinement()
         self.manual_postprocess()
 
+    def punc_nonproj_postprocess(self):
+        # HACKY WAY to fix non-projective punctuation problems (#TODO)
+        non_projs = self.get_nonprojective_arcs(self.heads)
+
+        for i in range(len(self.words)):
+            if self.labels[i] == "punct":
+                punc_dep = i + 1
+                original_punc_head = self.heads[i]
+                punc_head = self.heads[i]
+
+                if punc_head in non_projs:
+                    changed = False
+                    while True:
+                        punc_head = self.heads[punc_head - 1]
+                        if punc_head > 0:
+                            self.heads[i] = punc_head
+                            non_projs = self.get_nonprojective_arcs(self.heads)
+                            if punc_head not in non_projs:
+                                changed = True
+                                break
+                        else:
+                            break
+
+                    if not changed:
+                        if punc_dep < original_punc_head:
+                            self.heads[i] = i + 2
+                        else:
+                            self.heads[i] = i
+                    self.rebuild_children()
+                    non_projs = self.get_nonprojective_arcs(self.heads)
+
+    def ud_validate_fix(self):
+        # Fixes errors by validator
+        self.rebuild_children()
+        if len(self.mw_line) > 0:
+            for mw in self.mw_line.values():
+                drange = [int(x) for x in mw.strip().split("\t")[0].split("-")]
+                for dh in range(drange[0], drange[1]):
+                    for dhc in self.children[dh]:
+                        if self.labels[dhc - 1] == "punct" and self.heads[drange[0] - 1] == drange[-1]:
+                            self.heads[dhc - 1] = drange[-1]
+                        if self.labels[dhc - 1] == "punct" and self.heads[drange[0] - 1] == self.heads[drange[-1] - 1]:
+                            self.heads[dhc - 1] = self.heads[drange[0] - 1]
+
+        self.rebuild_children()
+
+        for i in range(len(self.words)):
+            if self.labels[i] == "nsubj":
+                for ch in self.children[self.heads[i]]:  # multi-subj addressing
+                    if self.labels[ch - 1] == "nsubj":
+                        if ch - 1 != i:
+                            self.heads[ch - 1] = i + 1
+                            self.labels[ch - 1] = "conj"
+
+            if self.labels[i] == "flat:name":
+                for lchild in self.children[i + 1]:
+                    self.heads[lchild - 1] = self.heads[i]
+            if self.ftags[i] == "CONJ" and self.labels[i] == "punct":
+                self.labels[i] = "cc"
+                self.tags[i] = "CCONJ"
+            if self.tags[i] == "PUNCT":
+                self.labels[i] = "punct"
+            if self.tags[i] == "NOUN" and self.labels[i] == "advmod":
+                self.labels[i] = "obl"
+            if (self.tags[i] == "PUNCT" and self.words[i] != "-") and self.heads[i] > i:
+                self.final_tags[i] = "SpaceAfter=No"
+            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"aux", "aux:pass", "cop", "cc"}:
+                self.heads[i] = self.heads[self.heads[i] - 1]
+                self.rebuild_children()
+            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"case"} and self.labels[i] == "fixed":
+                self.heads[i] = self.heads[self.heads[i] - 1]
+                self.rebuild_children()
+                self.labels[i] = "case"
+            if self.heads[i] > 0 and self.labels[self.heads[i] - 1] in {"case"} and self.labels[i] != "fixed":
+                self.heads[i] = self.heads[self.heads[i] - 1]
+                self.rebuild_children()
+                if self.tags[i] == "PRON":
+                    self.labels[i] = "nmod"
+            if self.labels[i] == "punct" and self.labels[self.heads[i] - 1] == "cop":
+                self.heads[i] = self.heads[self.heads[i] - 1]
+                self.rebuild_children()
+            if self.labels[i] == "case" and self.tags[i] == "ADV":
+                self.labels[i] = "advmod"
+            if self.labels[i] == "case" and self.tags[i] == "NUM":
+                self.labels[i] = "nummod"
+            if self.labels[i] == "case" and self.tags[i] in {"PRON", "PROPN", "NOUN"}:
+                self.labels[i] = "nmod"
+            if self.tags[i] == "ADP" and self.labels[i] == "advmod":
+                self.labels[i] = "case"
+            if self.tags[i] == "VERB" and self.labels[i] == "aux":
+                self.tags[i] = "AUX"
+
+            if self.tags[i] == "PUNCT":
+                self.labels[i] = "punct"
+            if self.labels[i] == "punct" and self.tags[i] == "CONJ":
+                self.labels[i] = "cc"
+            if self.labels[i] == "punct" and self.tags[i] != "CONJ":
+                self.tags[i] = "PUNCT"
+            if self.labels[i] in {"cc", "punct"} and len(self.children[i + 1]) > 0:
+                for pch in self.children[i + 1]:
+                    self.heads[pch - 1] = self.heads[i]
+            if self.labels[i] == "conj" and self.heads[i] - 1 > i:
+                h = self.heads[i] - 1
+                self.labels[i] = self.labels[h]
+                self.heads[i] = self.heads[h]
+                self.heads[h] = i + 1
+                self.labels[h] = "conj"
+                self.rebuild_children()
+
+        if self.sen_id == 23558:
+            self.heads[16] = 19
+            self.rebuild_children()
+        if self.sen_id == 23480:
+            self.heads[10] = 9
+            self.heads[13] = 3
+            self.rebuild_children()
+
+        if self.sen_id == 24209:
+            self.heads[24] = 18
+            self.heads[31] = 18
+            self.heads[37] = 18
+            self.labels[24] = "conj"
+            self.labels[31] = "conj"
+            self.labels[37] = "conj"
+            self.rebuild_children()
+
+        if self.sen_id == 43970:
+            self.heads[-1] = 5
+            self.rebuild_children()
+
+        if self.sen_id == 25955:
+            self.heads[19] = 19
+            self.rebuild_children()
+
+        if self.sen_id == 23847:
+            self.heads[17] = 17
+            self.heads[18] = 10
+            self.rebuild_children()
+
+        if self.sen_id == 23877:
+            self.heads[17] = 19
+            self.heads[24] = 19
+            self.rebuild_children()
+
+        if self.sen_id == 24095:
+            self.heads[30] = 28
+            self.rebuild_children()
+
+        if self.sen_id == 25782:
+            self.heads[9] = 9
+            self.rebuild_children()
+
+        if self.sen_id == 28623:
+            self.heads[9] = 3
+            self.rebuild_children()
+        if self.sen_id == 26040:
+            self.heads[6] = 1
+            self.rebuild_children()
+        if self.sen_id == 26134:
+            self.heads[26] = 28
+            self.rebuild_children()
+        if self.sen_id == 26135:
+            self.heads[10] = 13
+            self.rebuild_children()
+        if self.sen_id == 26182:
+            self.heads[5] = 7
+            self.rebuild_children()
+        if self.heads == 26240:
+            self.heads[8] = 10
+            self.heads[13] = 10
+            self.rebuild_children()
+        if self.sen_id == 26270:
+            self.heads[8] = 10
+            self.heads[15] = 15
+            self.heads[16] = 10
+            self.rebuild_children()
+        if self.sen_id == 26280:
+            self.heads[4] = 6
+            self.heads[8] = 6
+            self.rebuild_children()
+        if self.sen_id == 26385:
+            self.heads[12] = 14
+            self.heads[16] = 14
+            self.heads[17] = 14
+            self.rebuild_children()
+        if self.sen_id == 26403:
+            self.heads[8] = 12
+            self.heads[13] = 12
+            self.heads[14] = 12
+            self.rebuild_children()
+        if self.sen_id == 26782:
+            self.heads[164] = 15
+            self.rebuild_children()
+        if self.sen_id == 26649:
+            self.heads[0] = 3
+            self.heads[17] = 3
+            self.rebuild_children()
+        if self.sen_id == 31162:
+            self.heads[10] = 9
+            self.heads[15] = 11
+            self.labels[10] = "advcl"
+            self.labels[15] = "ccomp"
+            self.rebuild_children()
+        if self.sen_id == 39684:
+            self.heads[29] = 28
+            self.heads[49] = 49
+            self.labels[29] = "conj"
+            self.labels[49] = "amod"
+            self.rebuild_children()
+        if self.sen_id == 50038:
+            self.tags[10] = "PROPN"
+        if self.sen_id == 38715:
+            self.heads[65] = 68
+            self.heads[66] = 68
+            self.heads[67] = 64
+            self.labels[67] = "conj"
+            self.rebuild_children()
+        if self.sen_id == 30702:
+            self.labels[0] = "obl:arg"
+            self.rebuild_children()
+        if self.sen_id == 41590:
+            self.labels[0] = "obl:arg"
+            self.rebuild_children()
+        if self.sen_id == 54106:
+            self.heads[7] = 9
+            self.rebuild_children()
+        if self.sen_id == 48378:
+            self.heads[17] = 16
+            self.labels[17] = "ccomp"
+            self.heads[18] = 18
+            self.labels[17] = "ccomp"
+            self.rebuild_children()
+        if self.sen_id == 23558:
+            self.heads[17] = 19
+            self.heads[18] = 15
+            self.labels[18] = "conj"
+            self.rebuild_children()
+        if self.sen_id == 51672:
+            self.heads[2] = 1
+            self.heads[3] = 1
+            self.rebuild_children()
+        if self.sen_id == 46679:
+            self.labels[0] = "nmod"
+            self.heads[0] = 9
+            self.rebuild_children()
+
+        # fixing punctuations wih wrong spaceAfter=No attribute
+        if self.sen_id == 24250:
+            self.final_tags[21] = '_'
+        if self.sen_id == 26797:
+            self.final_tags[9] = '_'
+        if self.sen_id == 31604:
+            self.final_tags[22] = '_'
+        if self.sen_id == 31991:
+            self.final_tags[18] = '_'
+        if self.sen_id == 46436:
+            self.final_tags[8] = '_'
+        if self.sen_id == 47619:
+            self.final_tags[15] = '_'
+        if self.sen_id == 37678:
+            self.final_tags[2] = '_'
+        if self.sen_id == 38698:
+            self.final_tags[2] = '_'
+        if self.sen_id == 39639:
+            self.final_tags[23] = '_'
+        if self.sen_id == 43063:
+            self.final_tags[10] = '_'
+        if self.sen_id == 46982:
+            self.final_tags[6] = '_'
+        if self.sen_id == 44481:
+            self.final_tags[4] = '_'
+        if self.sen_id == 51871:
+            self.final_tags[2] = '_'
+        if self.sen_id == 51891:
+            self.final_tags[3] = '_'
+        if self.sen_id == 52496:
+            self.final_tags[10] = '_'
+        if self.sen_id == 53360:
+            self.final_tags[8] = '_'
+        if self.sen_id == 54078:
+            self.final_tags[13] = '_'
+        if self.sen_id == 54485:
+            self.final_tags[0] = '_'
+        if self.sen_id == 55574:
+            self.final_tags[11] = '_'
+        if self.sen_id == 57356:
+            self.final_tags[10] = '_'
+        if self.sen_id == 57548:
+            self.final_tags[14] = '_'
+        if self.sen_id == 48396:
+            self.final_tags[5] = '_'
+        if self.sen_id == 54741:
+            self.final_tags[0] = '_'
+        if self.sen_id == 55648:
+            self.final_tags[16] = '_'
+        if self.sen_id == 55648:
+            self.final_tags[23] = '_'
+        if self.sen_id == 26782:
+            self.final_tags[27] = '_'
+        if self.sen_id == 51300:
+            self.final_tags[14] = '_'
+        if tree.sen_id == 35524:
+            tree.final_tags[16] = '_'
+
     def manual_postprocess(self):
         if self.sen_id == 47788:
             self.tags[1] = "ADJ"
@@ -1515,7 +1875,7 @@ class DependencyTree:
             self.labels[1] = "flat:name"
             self.heads[2] = 0
             self.heads[3] = 0
-        elif self.sen_id==34084:
+        elif self.sen_id == 34084:
             self.tags[11] = "PROPN"
             self.labels[11] = "flat:name"
             self.heads[11] = 10
@@ -1540,8 +1900,8 @@ class DependencyTree:
             self.labels[6] = "flat:name"
             self.heads[7] = 5
 
-
-
+        self.ud_validate_fix()
+        self.punc_nonproj_postprocess()
 
     @staticmethod
     def fix_mwe_entries(tree_list):

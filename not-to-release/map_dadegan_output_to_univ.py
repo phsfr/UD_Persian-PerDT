@@ -10,8 +10,8 @@ convert_path = os.path.abspath(sys.argv[3])
 mapping = {"PR": "PRON", "AUX": "AUX", "N": "NOUN"}
 for gtree, stree in zip(gold_standard, system_output):
     for t, tag in enumerate(stree.tags):
-        stree.other_features[t].add_feat("dadeg_pos", tag)
-        stree.other_features[t].add_feat("dadeg_fpos", stree.ftags[t])
+        stree.other_features[t].add_feat("Dadeg_pos", tag)
+        stree.other_features[t].add_feat("Dadeg_fpos", stree.ftags[t])
 
     if len(gtree) > len(stree):
         j = 0

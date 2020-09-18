@@ -44,5 +44,7 @@ if __name__ == '__main__':
 
                 # print(" ".join(stanza_tree.words))
 
+            univ_tree.punc_nonproj_postprocess()
+
         DependencyTree.write_to_conllu(univ_trees, output_files[f_idx])
     # print("\n".join(stanza_fixed))
