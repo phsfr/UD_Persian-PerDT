@@ -6,7 +6,7 @@ The Persian Universal Dependency Treebank (PerUDT) is the result of automatic co
 
 
 # Introduction
-The Persian Universal Dependency Treebank (PerUDT) is based on <a href="https://www.aclweb.org/anthology/N13-1031v1.pdf"> Persian Dependency Treebank (PerDT) </a>(Rasooli et al.,2013). The original Treebank consists of 29K sentences sampled from contemporary Persian text in different genres including: news, academic papers, magazine articles and fictions. 
+[The Persian Universal Dependency Treebank (PerUDT)](https://universaldependencies.org/treebanks/fa_perdt/index.html) is based on <a href="https://www.aclweb.org/anthology/N13-1031v1.pdf"> Persian Dependency Treebank (PerDT) </a>(Rasooli et al.,2013). The original Treebank consists of 29K sentences sampled from contemporary Persian text in different genres including: news, academic papers, magazine articles and fictions. 
 
 This treebank was annotated based on a language-specific schema and its automatic conversion involved three main steps: revising tokenization, POS mapping and dependency mapping. 
 
@@ -15,6 +15,7 @@ In tokenization step, in order to separate multiword inflections of simple verbs
 In POS conversion step, we used the state of the art <a href="https://arxiv.org/abs/2003.08875"> BERT-based Persian NER tagger</a> (Taher et al.,2020) with manual corrections to extend recall. Through seven different entities detected by tagger, we used Person and Location to mark PROPN tags. 
 
 PerDT contains 43 syntactic relations with no straightforward mapping for most of them, conjunctions arranged from the beginning of the sentence to the end and more importantly, prepositions regarded as the head of prepositional phrases and auxiliary verbs as the head of sentences. So we rearranged the order of conjunctions from end to the beginning through a script and tailored rules to convert each kind of relation to its UD version properly. Through the whole process and at the end of each step, we investigated the results and applied manual corrections if it was needed.  
+
 
 # Acknowledgements
 Thanks to Morteza Rezaei-Sharifabadi for helping with the copyright of this data.
