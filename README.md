@@ -1,4 +1,4 @@
-# The Persian َUniversal Dependency Treebank (PerUDT) (v1.0)
+# The Persian Universal Dependency Treebank (PerUDT) (v1.0)
 
 # Summary
 The Persian Universal Dependency Treebank (PerUDT) is the result of automatic coversion of Persian Dependency Treebank (PerDT) with extensive manual corrections. Please refer to the follwoing work, if you use this data:
