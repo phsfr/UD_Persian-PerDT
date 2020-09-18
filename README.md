@@ -33,7 +33,7 @@ Thanks to Morteza Rezaei-Sharifabadi for helping with the copyright of this data
 * POS tags: 17
 
 # Data Split
-We followed the same split used in PerDT: 89% of data dedicated to train while 5% regarded for each dev and test sections. 
+We followed the same split used in PerDT: 89% of data is dedicated to train while 5% of it is used for each dev and test sections. 
 
 # Feedback and Bug Reports
 For feedback and bug reports, please contact rasooli@seas.upenn.edu and pegh.safari@gmail.com.
